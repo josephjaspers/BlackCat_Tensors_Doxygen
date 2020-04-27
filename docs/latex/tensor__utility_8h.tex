@@ -1,0 +1,88 @@
+\hypertarget{tensor__utility_8h}{}\section{blackcat/tensors/tensor\+\_\+utility.h File Reference}
+\label{tensor__utility_8h}\index{blackcat/tensors/tensor\+\_\+utility.\+h@{blackcat/tensors/tensor\+\_\+utility.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{tensor__utility_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Xpr $>$ }\\void \hyperlink{tensor__utility_8h_aef49432640ea9d0daf2be2cb6e2bd5f7}{copy} (const Tensor\+\_\+\+Base$<$ Xpr $>$ \&rv)
+\item 
+std\+::string \hyperlink{tensor__utility_8h_a91e853210f899de5fdda36081b569473}{to\+\_\+string} (int precision=8, bool pretty=true, bool sparse=false) const
+\item 
+std\+::string \hyperlink{tensor__utility_8h_a4c5b0444261fd8b274b0000c17dbb2ad}{to\+\_\+raw\+\_\+string} (int precision=8) const
+\item 
+void \hyperlink{tensor__utility_8h_a4210eed2cba9499471c779d8ad962e63}{print} (int precision=8, bool pretty=true, bool sparse=false) const
+\item 
+void \hyperlink{tensor__utility_8h_a1d9f2fa538d47b7b931d81ef57412bb3}{print\+\_\+sparse} (int precision=8, bool pretty=true) const
+\item 
+void \hyperlink{tensor__utility_8h_a6a4ec8aca9a79d46c878c99b0961c498}{raw\+\_\+print} (int precision=0, bool sparse=false) const
+\item 
+void \hyperlink{tensor__utility_8h_a26855a609048c099bc5648ee016e280b}{print\+\_\+dims} () const
+\item 
+void \hyperlink{tensor__utility_8h_a43cc89de0f865777cd7386cd8230cd4b}{print\+\_\+leading\+\_\+dims} () const
+\item 
+std\+::ostream \& \hyperlink{tensor__utility_8h_a3803db8fd2343cb7ebc5e4da8852417c}{operator$<$$<$} (std\+::ostream \&os, const Tensor\+\_\+\+Base \&self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{tensor__utility_8h_aef49432640ea9d0daf2be2cb6e2bd5f7}\label{tensor__utility_8h_aef49432640ea9d0daf2be2cb6e2bd5f7}} 
+\index{tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}!copy@{copy}}
+\index{copy@{copy}!tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily template$<$class Xpr $>$ \\
+void copy (\begin{DoxyParamCaption}\item[{const Tensor\+\_\+\+Base$<$ Xpr $>$ \&}]{rv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tensor__utility_8h_a3803db8fd2343cb7ebc5e4da8852417c}\label{tensor__utility_8h_a3803db8fd2343cb7ebc5e4da8852417c}} 
+\index{tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily friend std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const Tensor\+\_\+\+Base \&}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tensor__utility_8h_a4210eed2cba9499471c779d8ad962e63}\label{tensor__utility_8h_a4210eed2cba9499471c779d8ad962e63}} 
+\index{tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}!print@{print}}
+\index{print@{print}!tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void print (\begin{DoxyParamCaption}\item[{int}]{precision = {\ttfamily 8},  }\item[{bool}]{pretty = {\ttfamily true},  }\item[{bool}]{sparse = {\ttfamily false} }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{tensor__utility_8h_a26855a609048c099bc5648ee016e280b}\label{tensor__utility_8h_a26855a609048c099bc5648ee016e280b}} 
+\index{tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}!print\+\_\+dims@{print\+\_\+dims}}
+\index{print\+\_\+dims@{print\+\_\+dims}!tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+dims()}{print\_dims()}}
+{\footnotesize\ttfamily void print\+\_\+dims (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{tensor__utility_8h_a43cc89de0f865777cd7386cd8230cd4b}\label{tensor__utility_8h_a43cc89de0f865777cd7386cd8230cd4b}} 
+\index{tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}!print\+\_\+leading\+\_\+dims@{print\+\_\+leading\+\_\+dims}}
+\index{print\+\_\+leading\+\_\+dims@{print\+\_\+leading\+\_\+dims}!tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+leading\+\_\+dims()}{print\_leading\_dims()}}
+{\footnotesize\ttfamily void print\+\_\+leading\+\_\+dims (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{tensor__utility_8h_a1d9f2fa538d47b7b931d81ef57412bb3}\label{tensor__utility_8h_a1d9f2fa538d47b7b931d81ef57412bb3}} 
+\index{tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}!print\+\_\+sparse@{print\+\_\+sparse}}
+\index{print\+\_\+sparse@{print\+\_\+sparse}!tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+sparse()}{print\_sparse()}}
+{\footnotesize\ttfamily void print\+\_\+sparse (\begin{DoxyParamCaption}\item[{int}]{precision = {\ttfamily 8},  }\item[{bool}]{pretty = {\ttfamily true} }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{tensor__utility_8h_a6a4ec8aca9a79d46c878c99b0961c498}\label{tensor__utility_8h_a6a4ec8aca9a79d46c878c99b0961c498}} 
+\index{tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}!raw\+\_\+print@{raw\+\_\+print}}
+\index{raw\+\_\+print@{raw\+\_\+print}!tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}}
+\subsubsection{\texorpdfstring{raw\+\_\+print()}{raw\_print()}}
+{\footnotesize\ttfamily void raw\+\_\+print (\begin{DoxyParamCaption}\item[{int}]{precision = {\ttfamily 0},  }\item[{bool}]{sparse = {\ttfamily false} }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{tensor__utility_8h_a4c5b0444261fd8b274b0000c17dbb2ad}\label{tensor__utility_8h_a4c5b0444261fd8b274b0000c17dbb2ad}} 
+\index{tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}!to\+\_\+raw\+\_\+string@{to\+\_\+raw\+\_\+string}}
+\index{to\+\_\+raw\+\_\+string@{to\+\_\+raw\+\_\+string}!tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}}
+\subsubsection{\texorpdfstring{to\+\_\+raw\+\_\+string()}{to\_raw\_string()}}
+{\footnotesize\ttfamily std\+::string to\+\_\+raw\+\_\+string (\begin{DoxyParamCaption}\item[{int}]{precision = {\ttfamily 8} }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{tensor__utility_8h_a91e853210f899de5fdda36081b569473}\label{tensor__utility_8h_a91e853210f899de5fdda36081b569473}} 
+\index{tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}!to\+\_\+string@{to\+\_\+string}}
+\index{to\+\_\+string@{to\+\_\+string}!tensor\+\_\+utility.\+h@{tensor\+\_\+utility.\+h}}
+\subsubsection{\texorpdfstring{to\+\_\+string()}{to\_string()}}
+{\footnotesize\ttfamily std\+::string to\+\_\+string (\begin{DoxyParamCaption}\item[{int}]{precision = {\ttfamily 8},  }\item[{bool}]{pretty = {\ttfamily true},  }\item[{bool}]{sparse = {\ttfamily false} }\end{DoxyParamCaption}) const}
+

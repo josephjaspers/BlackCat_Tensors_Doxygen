@@ -1,0 +1,142 @@
+\hypertarget{structbc_1_1allocators_1_1Basic__Allocator__Base}{}\section{bc\+:\+:allocators\+:\+:Basic\+\_\+\+Allocator\+\_\+\+Base$<$ Value\+Type, System\+Tag $>$ Struct Template Reference}
+\label{structbc_1_1allocators_1_1Basic__Allocator__Base}\index{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base$<$ Value\+Type, System\+Tag $>$@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base$<$ Value\+Type, System\+Tag $>$}}
+
+
+{\ttfamily \#include $<$basic\+\_\+allocators.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a625be36f2aedbec274f8524ac72c8d28}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a7d9eca7878880a820908b57bdcb94501}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_aa91ec01a2520836062d1c21eb710a3cc}{pointer} = \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a7d9eca7878880a820908b57bdcb94501}{value\+\_\+type} $\ast$
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_ac6e458ef842011190bc702a5e373850a}{const\+\_\+pointer} = \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a7d9eca7878880a820908b57bdcb94501}{value\+\_\+type} $\ast$
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_ad7fe7255772b954d581c75ae2ee0d959}{size\+\_\+type} = std\+::size\+\_\+t
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a9900b1de8ba282c40f6b5c3576f39b35}{reference} = \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a7d9eca7878880a820908b57bdcb94501}{value\+\_\+type} \&
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a5b5edb3ecfd3e5e210f95a9349ed4676}{const\+\_\+reference} = const \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a7d9eca7878880a820908b57bdcb94501}{value\+\_\+type} \&
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_ae33a042e54a5257608e3e354a6890edc}{propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment} = std\+::false\+\_\+type
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a7c726fe1953f8dcb66e515edcf0d52ef}{propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment} = std\+::false\+\_\+type
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a43d9999061677b23d0d03a56427e39f5}{propagate\+\_\+on\+\_\+container\+\_\+swap} = std\+::false\+\_\+type
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a93df6b95cdc21c0d35bd34450d260a62}{is\+\_\+always\+\_\+equal} = std\+::true\+\_\+type
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class U $>$ }\\bool \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_ab70dcd6aa078ce7b3d5a43c36397d8e9}{operator==} (const \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ U, System\+Tag $>$ \&) const
+\item 
+{\footnotesize template$<$class U $>$ }\\bool \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a595df39ca6edee505366ff39ab6d2a4f}{operator!=} (const \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ U, System\+Tag $>$ \&) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Basic__Allocator__Base_ac6e458ef842011190bc702a5e373850a}\label{structbc_1_1allocators_1_1Basic__Allocator__Base_ac6e458ef842011190bc702a5e373850a}} 
+\index{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}!const\+\_\+pointer@{const\+\_\+pointer}}
+\index{const\+\_\+pointer@{const\+\_\+pointer}!bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{const\+\_\+pointer}{const\_pointer}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_ac6e458ef842011190bc702a5e373850a}{const\+\_\+pointer} =  \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a7d9eca7878880a820908b57bdcb94501}{value\+\_\+type}$\ast$}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Basic__Allocator__Base_a5b5edb3ecfd3e5e210f95a9349ed4676}\label{structbc_1_1allocators_1_1Basic__Allocator__Base_a5b5edb3ecfd3e5e210f95a9349ed4676}} 
+\index{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}!const\+\_\+reference@{const\+\_\+reference}}
+\index{const\+\_\+reference@{const\+\_\+reference}!bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{const\+\_\+reference}{const\_reference}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a5b5edb3ecfd3e5e210f95a9349ed4676}{const\+\_\+reference} =  const \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a7d9eca7878880a820908b57bdcb94501}{value\+\_\+type}\&}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Basic__Allocator__Base_a93df6b95cdc21c0d35bd34450d260a62}\label{structbc_1_1allocators_1_1Basic__Allocator__Base_a93df6b95cdc21c0d35bd34450d260a62}} 
+\index{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}!is\+\_\+always\+\_\+equal@{is\+\_\+always\+\_\+equal}}
+\index{is\+\_\+always\+\_\+equal@{is\+\_\+always\+\_\+equal}!bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{is\+\_\+always\+\_\+equal}{is\_always\_equal}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a93df6b95cdc21c0d35bd34450d260a62}{is\+\_\+always\+\_\+equal} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Basic__Allocator__Base_aa91ec01a2520836062d1c21eb710a3cc}\label{structbc_1_1allocators_1_1Basic__Allocator__Base_aa91ec01a2520836062d1c21eb710a3cc}} 
+\index{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}!pointer@{pointer}}
+\index{pointer@{pointer}!bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_aa91ec01a2520836062d1c21eb710a3cc}{pointer} =  \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a7d9eca7878880a820908b57bdcb94501}{value\+\_\+type}$\ast$}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Basic__Allocator__Base_ae33a042e54a5257608e3e354a6890edc}\label{structbc_1_1allocators_1_1Basic__Allocator__Base_ae33a042e54a5257608e3e354a6890edc}} 
+\index{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}!propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment@{propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment}}
+\index{propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment@{propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment}!bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment}{propagate\_on\_container\_copy\_assignment}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_ae33a042e54a5257608e3e354a6890edc}{propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment} =  std\+::false\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Basic__Allocator__Base_a7c726fe1953f8dcb66e515edcf0d52ef}\label{structbc_1_1allocators_1_1Basic__Allocator__Base_a7c726fe1953f8dcb66e515edcf0d52ef}} 
+\index{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}!propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment@{propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment}}
+\index{propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment@{propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment}!bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment}{propagate\_on\_container\_move\_assignment}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a7c726fe1953f8dcb66e515edcf0d52ef}{propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment} =  std\+::false\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Basic__Allocator__Base_a43d9999061677b23d0d03a56427e39f5}\label{structbc_1_1allocators_1_1Basic__Allocator__Base_a43d9999061677b23d0d03a56427e39f5}} 
+\index{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}!propagate\+\_\+on\+\_\+container\+\_\+swap@{propagate\+\_\+on\+\_\+container\+\_\+swap}}
+\index{propagate\+\_\+on\+\_\+container\+\_\+swap@{propagate\+\_\+on\+\_\+container\+\_\+swap}!bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{propagate\+\_\+on\+\_\+container\+\_\+swap}{propagate\_on\_container\_swap}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a43d9999061677b23d0d03a56427e39f5}{propagate\+\_\+on\+\_\+container\+\_\+swap} =  std\+::false\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Basic__Allocator__Base_a9900b1de8ba282c40f6b5c3576f39b35}\label{structbc_1_1allocators_1_1Basic__Allocator__Base_a9900b1de8ba282c40f6b5c3576f39b35}} 
+\index{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}!reference@{reference}}
+\index{reference@{reference}!bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a9900b1de8ba282c40f6b5c3576f39b35}{reference} =  \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a7d9eca7878880a820908b57bdcb94501}{value\+\_\+type}\&}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Basic__Allocator__Base_ad7fe7255772b954d581c75ae2ee0d959}\label{structbc_1_1allocators_1_1Basic__Allocator__Base_ad7fe7255772b954d581c75ae2ee0d959}} 
+\index{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{size\+\_\+type}{size\_type}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_ad7fe7255772b954d581c75ae2ee0d959}{size\+\_\+type} =  std\+::size\+\_\+t}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Basic__Allocator__Base_a625be36f2aedbec274f8524ac72c8d28}\label{structbc_1_1allocators_1_1Basic__Allocator__Base_a625be36f2aedbec274f8524ac72c8d28}} 
+\index{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a625be36f2aedbec274f8524ac72c8d28}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Basic__Allocator__Base_a7d9eca7878880a820908b57bdcb94501}\label{structbc_1_1allocators_1_1Basic__Allocator__Base_a7d9eca7878880a820908b57bdcb94501}} 
+\index{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base_a7d9eca7878880a820908b57bdcb94501}{value\+\_\+type} =  Value\+Type}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Basic__Allocator__Base_a595df39ca6edee505366ff39ab6d2a4f}\label{structbc_1_1allocators_1_1Basic__Allocator__Base_a595df39ca6edee505366ff39ab6d2a4f}} 
+\index{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+template$<$class U $>$ \\
+bool \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ Value\+Type, System\+Tag $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ U, System\+Tag $>$ \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Basic__Allocator__Base_ab70dcd6aa078ce7b3d5a43c36397d8e9}\label{structbc_1_1allocators_1_1Basic__Allocator__Base_ab70dcd6aa078ce7b3d5a43c36397d8e9}} 
+\index{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}!operator==@{operator==}}
+\index{operator==@{operator==}!bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+template$<$class U $>$ \\
+bool \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{bc\+::allocators\+::\+Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ Value\+Type, System\+Tag $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{Basic\+\_\+\+Allocator\+\_\+\+Base}$<$ U, System\+Tag $>$ \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/allocators/\hyperlink{basic__allocators_8h}{basic\+\_\+allocators.\+h}\end{DoxyCompactItemize}

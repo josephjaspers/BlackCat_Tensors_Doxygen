@@ -1,0 +1,233 @@
+\hypertarget{binary_8h}{}\section{blackcat/operations/binary.h File Reference}
+\label{binary_8h}\index{blackcat/operations/binary.\+h@{blackcat/operations/binary.\+h}}
+{\ttfamily \#include \char`\"{}operation\+\_\+traits.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tags.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../common.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for binary.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{binary_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{binary_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Assign}{bc\+::oper\+::\+Assign}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Add__Assign}{bc\+::oper\+::\+Add\+\_\+\+Assign}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Sub__Assign}{bc\+::oper\+::\+Sub\+\_\+\+Assign}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Alias__Assign}{bc\+::oper\+::\+Alias\+\_\+\+Assign}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Alias__Add__Assign}{bc\+::oper\+::\+Alias\+\_\+\+Add\+\_\+\+Assign}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Alias__Sub__Assign}{bc\+::oper\+::\+Alias\+\_\+\+Sub\+\_\+\+Assign}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Mul__Assign}{bc\+::oper\+::\+Mul\+\_\+\+Assign}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Div__Assign}{bc\+::oper\+::\+Div\+\_\+\+Assign}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Scalar__Mul}{bc\+::oper\+::\+Scalar\+\_\+\+Mul}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Add}{bc\+::oper\+::\+Add}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Mul}{bc\+::oper\+::\+Mul}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Sub}{bc\+::oper\+::\+Sub}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Div}{bc\+::oper\+::\+Div}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Equal}{bc\+::oper\+::\+Equal}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Approx__Equal}{bc\+::oper\+::\+Approx\+\_\+\+Equal}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Greater}{bc\+::oper\+::\+Greater}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Lesser}{bc\+::oper\+::\+Lesser}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Greater__Equal}{bc\+::oper\+::\+Greater\+\_\+\+Equal}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Lesser__Equal}{bc\+::oper\+::\+Lesser\+\_\+\+Equal}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Max}{bc\+::oper\+::\+Max}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Min}{bc\+::oper\+::\+Min}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1And}{bc\+::oper\+::\+And}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Or}{bc\+::oper\+::\+Or}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Xor}{bc\+::oper\+::\+Xor}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Host__Atomic__Add}{bc\+::oper\+::\+Host\+\_\+\+Atomic\+\_\+\+Add}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Host__Atomic__Mul}{bc\+::oper\+::\+Host\+\_\+\+Atomic\+\_\+\+Mul}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Host__Atomic__Sub}{bc\+::oper\+::\+Host\+\_\+\+Atomic\+\_\+\+Sub}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Host__Atomic__Div}{bc\+::oper\+::\+Host\+\_\+\+Atomic\+\_\+\+Div}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Device__Atomic__Add}{bc\+::oper\+::\+Device\+\_\+\+Atomic\+\_\+\+Add}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Device__Atomic__Mul}{bc\+::oper\+::\+Device\+\_\+\+Atomic\+\_\+\+Mul}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Device__Atomic__Sub}{bc\+::oper\+::\+Device\+\_\+\+Atomic\+\_\+\+Sub}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Device__Atomic__Div}{bc\+::oper\+::\+Device\+\_\+\+Atomic\+\_\+\+Div}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1oper}{bc\+::oper}
+\item 
+ \hyperlink{namespacebc_1_1oper_1_1detail}{bc\+::oper\+::detail}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{binary_8h_af96ea8ac0f4517cc4ea4c32166bd988e}{B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+T\+O\+\_\+\+A\+P\+P\+LY}
+\item 
+\#define \hyperlink{binary_8h_aa8eb41ceb40844abdfc96b2240740eb8}{B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+EF}(...)
+\item 
+\#define \hyperlink{binary_8h_a1df42133d8d328885a747a067d211476}{B\+C\+\_\+\+A\+D\+V\+A\+N\+C\+E\+D\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+EF}(...)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class System\+Tag $>$ }\\using \hyperlink{namespacebc_1_1oper_acbaeedfea4454f26a03fa796f5695f1e}{bc\+::oper\+::\+Atomic\+\_\+\+Add} = std\+::conditional\+\_\+t$<$ detail\+::is\+\_\+host$<$ System\+Tag $>$, Host\+\_\+\+Atomic\+\_\+\+Add, Device\+\_\+\+Atomic\+\_\+\+Add $>$
+\item 
+{\footnotesize template$<$class System\+Tag $>$ }\\using \hyperlink{namespacebc_1_1oper_a2c653b5c683b56d4bc7766130831fa8a}{bc\+::oper\+::\+Atomic\+\_\+\+Sub} = std\+::conditional\+\_\+t$<$ detail\+::is\+\_\+host$<$ System\+Tag $>$, Host\+\_\+\+Atomic\+\_\+\+Add, Device\+\_\+\+Atomic\+\_\+\+Sub $>$
+\item 
+{\footnotesize template$<$class System\+Tag $>$ }\\using \hyperlink{namespacebc_1_1oper_a771719f0c74d9cf102904d49dc4f238b}{bc\+::oper\+::\+Atomic\+\_\+\+Div} = std\+::conditional\+\_\+t$<$ detail\+::is\+\_\+host$<$ System\+Tag $>$, Host\+\_\+\+Atomic\+\_\+\+Add, Device\+\_\+\+Atomic\+\_\+\+Div $>$
+\item 
+{\footnotesize template$<$class System\+Tag $>$ }\\using \hyperlink{namespacebc_1_1oper_aff547ee764d8dc38221c93bca5f9f159}{bc\+::oper\+::\+Atomic\+\_\+\+Mul} = std\+::conditional\+\_\+t$<$ detail\+::is\+\_\+host$<$ System\+Tag $>$, Host\+\_\+\+Atomic\+\_\+\+Add, Device\+\_\+\+Atomic\+\_\+\+Mul $>$
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1oper_1_1Assign}{bc\+::oper\+::\+Assign} \hyperlink{namespacebc_1_1oper_a0182ff2349a83f5d60df9228c81f4c86}{bc\+::oper\+::assign}
+\item 
+\hyperlink{structbc_1_1oper_1_1Add__Assign}{bc\+::oper\+::\+Add\+\_\+\+Assign} \hyperlink{namespacebc_1_1oper_a3630ef463dc9cd3b2d81a721c54b3de0}{bc\+::oper\+::add\+\_\+assign}
+\item 
+\hyperlink{structbc_1_1oper_1_1Sub__Assign}{bc\+::oper\+::\+Sub\+\_\+\+Assign} \hyperlink{namespacebc_1_1oper_ada648e2c665e51826f9994439416fd35}{bc\+::oper\+::sub\+\_\+assign}
+\item 
+\hyperlink{structbc_1_1oper_1_1Alias__Assign}{bc\+::oper\+::\+Alias\+\_\+\+Assign} \hyperlink{namespacebc_1_1oper_aa3845643e60ff3ef51e8e6086dc95da5}{bc\+::oper\+::alias\+\_\+assign}
+\item 
+\hyperlink{structbc_1_1oper_1_1Alias__Add__Assign}{bc\+::oper\+::\+Alias\+\_\+\+Add\+\_\+\+Assign} \hyperlink{namespacebc_1_1oper_a068551b415b7681632991fa236684223}{bc\+::oper\+::alias\+\_\+add\+\_\+assign}
+\item 
+\hyperlink{structbc_1_1oper_1_1Alias__Sub__Assign}{bc\+::oper\+::\+Alias\+\_\+\+Sub\+\_\+\+Assign} \hyperlink{namespacebc_1_1oper_aab8c10f0ec9df51deb1e55093958cff6}{bc\+::oper\+::alias\+\_\+sub\+\_\+assign}
+\item 
+\hyperlink{structbc_1_1oper_1_1Mul__Assign}{bc\+::oper\+::\+Mul\+\_\+\+Assign} \hyperlink{namespacebc_1_1oper_a8c70c1a663341d06aa30bccdb8e0a33f}{bc\+::oper\+::mul\+\_\+assign}
+\item 
+\hyperlink{structbc_1_1oper_1_1Div__Assign}{bc\+::oper\+::\+Div\+\_\+\+Assign} \hyperlink{namespacebc_1_1oper_a68691708c95bf8edf5b3f36760c7cc7b}{bc\+::oper\+::div\+\_\+assign}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Scalar__Mul}{bc\+::oper\+::\+Scalar\+\_\+\+Mul} \hyperlink{namespacebc_1_1oper_a88023efbb639886b4b6b1a6ec5686633}{bc\+::oper\+::scalar\+\_\+mul}
+\item 
+\hyperlink{structbc_1_1oper_1_1Add}{bc\+::oper\+::\+Add} \hyperlink{namespacebc_1_1oper_ae9f350183a664bc9c8209185a379d9df}{bc\+::oper\+::add}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Mul}{bc\+::oper\+::\+Mul} \hyperlink{namespacebc_1_1oper_a3b668db0194c37001f9c9a0183bfc0a7}{bc\+::oper\+::mul}
+\item 
+\hyperlink{structbc_1_1oper_1_1Sub}{bc\+::oper\+::\+Sub} \hyperlink{namespacebc_1_1oper_adb76fb39747577e1be7e372917f2953d}{bc\+::oper\+::sub}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Div}{bc\+::oper\+::\+Div} \hyperlink{namespacebc_1_1oper_a842fe83591207a9bdccea656eea9c319}{bc\+::oper\+::div}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Equal}{bc\+::oper\+::\+Equal} \hyperlink{namespacebc_1_1oper_a512ea37049135ce5d4a49c14f8a26b4c}{bc\+::oper\+::equal}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Approx__Equal}{bc\+::oper\+::\+Approx\+\_\+\+Equal} \hyperlink{namespacebc_1_1oper_ab423959a4cf314f69e5b7393450ab0df}{bc\+::oper\+::approx\+\_\+equal}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Greater}{bc\+::oper\+::\+Greater} \hyperlink{namespacebc_1_1oper_ada692f833a60b6e0de8e6e8dc3530eac}{bc\+::oper\+::greater}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Lesser}{bc\+::oper\+::\+Lesser} \hyperlink{namespacebc_1_1oper_a6086a4cf366a7fcb211e73bd0a9e596f}{bc\+::oper\+::lesser}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Greater__Equal}{bc\+::oper\+::\+Greater\+\_\+\+Equal} \hyperlink{namespacebc_1_1oper_a671b7a2b674429ccb5de5512d8659f4d}{bc\+::oper\+::greater\+\_\+equal}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Lesser__Equal}{bc\+::oper\+::\+Lesser\+\_\+\+Equal} \hyperlink{namespacebc_1_1oper_a0a4d4b963b710fdc5a6b34fc40265789}{bc\+::oper\+::lesser\+\_\+equal}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Max}{bc\+::oper\+::\+Max} \hyperlink{namespacebc_1_1oper_a54026e924e1ba487f32d89ca00d838ff}{bc\+::oper\+::max}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Min}{bc\+::oper\+::\+Min} \hyperlink{namespacebc_1_1oper_a14ab62485e33f427474770fd16d0016b}{bc\+::oper\+::min}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1And}{bc\+::oper\+::\+And} \hyperlink{namespacebc_1_1oper_a953cc8d782a4f5cd2c3d3e7fd7661fa0}{bc\+::oper\+::and\+\_\+}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Or}{bc\+::oper\+::\+Or} \hyperlink{namespacebc_1_1oper_a0c17a7caafc6126a7671822bfd9ef031}{bc\+::oper\+::or\+\_\+}
+\item 
+struct \hyperlink{structbc_1_1oper_1_1Xor}{bc\+::oper\+::\+Xor} \hyperlink{namespacebc_1_1oper_a22bc35b5efc90b8534e7473dec57e2cb}{bc\+::oper\+::xor\+\_\+}
+\item 
+\hyperlink{structbc_1_1oper_1_1Host__Atomic__Add}{bc\+::oper\+::\+Host\+\_\+\+Atomic\+\_\+\+Add} \hyperlink{namespacebc_1_1oper_aca1354c2574fc3d7d6667a119b8c6b11}{bc\+::oper\+::host\+\_\+atomic\+\_\+add}
+\item 
+\hyperlink{structbc_1_1oper_1_1Host__Atomic__Mul}{bc\+::oper\+::\+Host\+\_\+\+Atomic\+\_\+\+Mul} \hyperlink{namespacebc_1_1oper_a4e6bd126cfaa0f0dce337ec491be102c}{bc\+::oper\+::host\+\_\+atomic\+\_\+mul}
+\item 
+\hyperlink{structbc_1_1oper_1_1Host__Atomic__Sub}{bc\+::oper\+::\+Host\+\_\+\+Atomic\+\_\+\+Sub} \hyperlink{namespacebc_1_1oper_a56dfde445385bd8b21aeded666ead99e}{bc\+::oper\+::host\+\_\+atomic\+\_\+sub}
+\item 
+\hyperlink{structbc_1_1oper_1_1Host__Atomic__Div}{bc\+::oper\+::\+Host\+\_\+\+Atomic\+\_\+\+Div} \hyperlink{namespacebc_1_1oper_ac6138d1f1ea5b3ab813728c0cb9e5a22}{bc\+::oper\+::host\+\_\+atomic\+\_\+div}
+\item 
+\hyperlink{structbc_1_1oper_1_1Device__Atomic__Add}{bc\+::oper\+::\+Device\+\_\+\+Atomic\+\_\+\+Add} \hyperlink{namespacebc_1_1oper_aafd9108f735dbf10d6c0ab179eba26ad}{bc\+::oper\+::device\+\_\+atomic\+\_\+add}
+\item 
+\hyperlink{structbc_1_1oper_1_1Device__Atomic__Mul}{bc\+::oper\+::\+Device\+\_\+\+Atomic\+\_\+\+Mul} \hyperlink{namespacebc_1_1oper_a645f972d17fac4c9a269a9cfb0dd28b9}{bc\+::oper\+::device\+\_\+atomic\+\_\+mul}
+\item 
+\hyperlink{structbc_1_1oper_1_1Device__Atomic__Sub}{bc\+::oper\+::\+Device\+\_\+\+Atomic\+\_\+\+Sub} \hyperlink{namespacebc_1_1oper_a71459ca0994a71749da5172e9fbf11e1}{bc\+::oper\+::device\+\_\+atomic\+\_\+sub}
+\item 
+\hyperlink{structbc_1_1oper_1_1Device__Atomic__Div}{bc\+::oper\+::\+Device\+\_\+\+Atomic\+\_\+\+Div} \hyperlink{namespacebc_1_1oper_ac131a45947dab375e9d6a608986b13f5}{bc\+::oper\+::device\+\_\+atomic\+\_\+div}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{binary_8h_a1df42133d8d328885a747a067d211476}\label{binary_8h_a1df42133d8d328885a747a067d211476}} 
+\index{binary.\+h@{binary.\+h}!B\+C\+\_\+\+A\+D\+V\+A\+N\+C\+E\+D\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+EF@{B\+C\+\_\+\+A\+D\+V\+A\+N\+C\+E\+D\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+EF}}
+\index{B\+C\+\_\+\+A\+D\+V\+A\+N\+C\+E\+D\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+EF@{B\+C\+\_\+\+A\+D\+V\+A\+N\+C\+E\+D\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+EF}!binary.\+h@{binary.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+A\+D\+V\+A\+N\+C\+E\+D\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+EF}{BC\_ADVANCED\_FORWARD\_DEF}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+A\+D\+V\+A\+N\+C\+E\+D\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{template}<\textcolor{keyword}{class} Lv, \textcolor{keyword}{class} Rv>                        \(\backslash\)
+    BCINLINE                                            \(\backslash\)
+    static \textcolor{keyword}{auto} apply (Lv&& lv, Rv&& rv)                \(\backslash\)
+    \{                                                   \(\backslash\)
+        \_\_VA\_ARGS\_\_;                                    \(\backslash\)
+    \}                                                   \(\backslash\)
+    BC\_FORWARD\_TO\_APPLY
+\end{DoxyCode}
+\mbox{\Hypertarget{binary_8h_aa8eb41ceb40844abdfc96b2240740eb8}\label{binary_8h_aa8eb41ceb40844abdfc96b2240740eb8}} 
+\index{binary.\+h@{binary.\+h}!B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+EF@{B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+EF}}
+\index{B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+EF@{B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+EF}!binary.\+h@{binary.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+EF}{BC\_FORWARD\_DEF}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{template}<\textcolor{keyword}{class} Lv, \textcolor{keyword}{class} Rv>                        \(\backslash\)
+    BCINLINE                                            \(\backslash\)
+    static \textcolor{keyword}{auto} apply (Lv&& lv, Rv&& rv)                \(\backslash\)
+    -> decltype(\_\_VA\_ARGS\_\_) \{                          \(\backslash\)
+        return \_\_VA\_ARGS\_\_;                         \(\backslash\)
+    \}                                                   \(\backslash\)
+    BC\_FORWARD\_TO\_APPLY
+\end{DoxyCode}
+\mbox{\Hypertarget{binary_8h_af96ea8ac0f4517cc4ea4c32166bd988e}\label{binary_8h_af96ea8ac0f4517cc4ea4c32166bd988e}} 
+\index{binary.\+h@{binary.\+h}!B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+T\+O\+\_\+\+A\+P\+P\+LY@{B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+T\+O\+\_\+\+A\+P\+P\+LY}}
+\index{B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+T\+O\+\_\+\+A\+P\+P\+LY@{B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+T\+O\+\_\+\+A\+P\+P\+LY}!binary.\+h@{binary.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+T\+O\+\_\+\+A\+P\+P\+LY}{BC\_FORWARD\_TO\_APPLY}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+T\+O\+\_\+\+A\+P\+P\+LY}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{template}<\textcolor{keyword}{class} Lv, \textcolor{keyword}{class} Rv>                        \(\backslash\)
+    BCINLINE \textcolor{keyword}{auto} operator () (Lv&& lv, Rv&& rv) \textcolor{keyword}{const}  \(\backslash\)
+    -> decltype(apply(lv, rv)) \{                        \(\backslash\)
+        return apply(lv, rv);                       \(\backslash\)
+\}
+\end{DoxyCode}

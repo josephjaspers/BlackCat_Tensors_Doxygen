@@ -1,0 +1,165 @@
+\hypertarget{structbc_1_1nn_1_1Flatten}{}\section{bc\+:\+:nn\+:\+:Flatten$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1Flatten}\index{bc\+::nn\+::\+Flatten$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$@{bc\+::nn\+::\+Flatten$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$}}
+
+
+{\ttfamily \#include $<$flatten.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:nn\+:\+:Flatten$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Flatten__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Flatten$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Flatten__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Flatten_a3691e26f7d05a76e7c84f86930e4a5ed}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1Flatten_af6a4f22abc0a8e8f8bb1624abd97b500}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Flatten_aac419d81dc54ef6d11b042a0ad05cc11}{allocator\+\_\+type} = \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{nn\+\_\+default\+\_\+allocator\+\_\+type}$<$ Value\+Type, System\+Tag $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Flatten_a8bf8c3ab507fae549695110b4c1d4762}{self\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Flatten}{Flatten}$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Flatten_adad203394f78c9d3bd9b0962c8ca195e}{parent\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1Flatten_a8bf8c3ab507fae549695110b4c1d4762}{self\+\_\+type}, Input\+Descriptor, Output\+Descriptor $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Flatten_afd38f0f24bbf98d7f5ecb70198a16b16}{greedy\+\_\+evaluate\+\_\+delta} = std\+::true\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Flatten_a33099a8688031a672bd911871d9ae0d2}{input\+\_\+tensor\+\_\+dim} = Input\+Tensor\+Dimension
+\item 
+using \hyperlink{structbc_1_1nn_1_1Flatten_a15ddd4e65597ff56624b08d498a47c6d}{output\+\_\+tensor\+\_\+dim} = \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$ 1 $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Flatten_a09f418b2c69a0675443ea4f86d94dffc}{defines\+\_\+single\+\_\+predict} = std\+::true\+\_\+type
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1Flatten_a89db66a90f1de37dce20b230c631199c}{Flatten} (\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ input\+\_\+tensor\+\_\+dim\+::value $>$ \hyperlink{classbc_1_1nn_1_1Layer__Input__Base_ab7d41ba8f59817a76ceecd13b47f101a}{input\+\_\+shape})
+\item 
+{\footnotesize template$<$class Matrix $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Flatten_af1e268a0fbb0cd6a6ccd7bfc5f9ca234}{forward\+\_\+propagation} (const \hyperlink{namespacebc_a92dd1e243183b382432a5fac3ed8b89f}{Matrix} \&x)
+\item 
+{\footnotesize template$<$class Vector $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Flatten_a0d46bfe5ed2d540c9f9ef355c1704585}{single\+\_\+predict} (const \hyperlink{namespacebc_a14d40e8e95957f92a57853921837a15d}{Vector} \&x)
+\item 
+{\footnotesize template$<$class X , class Delta $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Flatten_aec50c8f60d24fbac0cbd9fe98d4a3d1d}{back\+\_\+propagation} (const X \&x, const Delta \&dy)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Flatten_aac419d81dc54ef6d11b042a0ad05cc11}\label{structbc_1_1nn_1_1Flatten_aac419d81dc54ef6d11b042a0ad05cc11}} 
+\index{bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Input\+Tensor\+Dimension  = bc\+::traits\+::\+Integer$<$3$>$, class Input\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Input\+Tensor\+Dimension$>$, class Output\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Integer$<$1$>$$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Flatten}{bc\+::nn\+::\+Flatten}$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Flatten_aac419d81dc54ef6d11b042a0ad05cc11}{allocator\+\_\+type} =  \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{nn\+\_\+default\+\_\+allocator\+\_\+type}$<$Value\+Type, System\+Tag$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Flatten_a09f418b2c69a0675443ea4f86d94dffc}\label{structbc_1_1nn_1_1Flatten_a09f418b2c69a0675443ea4f86d94dffc}} 
+\index{bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}!defines\+\_\+single\+\_\+predict@{defines\+\_\+single\+\_\+predict}}
+\index{defines\+\_\+single\+\_\+predict@{defines\+\_\+single\+\_\+predict}!bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}}
+\subsubsection{\texorpdfstring{defines\+\_\+single\+\_\+predict}{defines\_single\_predict}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Input\+Tensor\+Dimension  = bc\+::traits\+::\+Integer$<$3$>$, class Input\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Input\+Tensor\+Dimension$>$, class Output\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Integer$<$1$>$$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Flatten}{bc\+::nn\+::\+Flatten}$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Flatten_a09f418b2c69a0675443ea4f86d94dffc}{defines\+\_\+single\+\_\+predict} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Flatten_afd38f0f24bbf98d7f5ecb70198a16b16}\label{structbc_1_1nn_1_1Flatten_afd38f0f24bbf98d7f5ecb70198a16b16}} 
+\index{bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}!greedy\+\_\+evaluate\+\_\+delta@{greedy\+\_\+evaluate\+\_\+delta}}
+\index{greedy\+\_\+evaluate\+\_\+delta@{greedy\+\_\+evaluate\+\_\+delta}!bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}}
+\subsubsection{\texorpdfstring{greedy\+\_\+evaluate\+\_\+delta}{greedy\_evaluate\_delta}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Input\+Tensor\+Dimension  = bc\+::traits\+::\+Integer$<$3$>$, class Input\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Input\+Tensor\+Dimension$>$, class Output\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Integer$<$1$>$$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Flatten}{bc\+::nn\+::\+Flatten}$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Flatten_afd38f0f24bbf98d7f5ecb70198a16b16}{greedy\+\_\+evaluate\+\_\+delta} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Flatten_a33099a8688031a672bd911871d9ae0d2}\label{structbc_1_1nn_1_1Flatten_a33099a8688031a672bd911871d9ae0d2}} 
+\index{bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}!input\+\_\+tensor\+\_\+dim@{input\+\_\+tensor\+\_\+dim}}
+\index{input\+\_\+tensor\+\_\+dim@{input\+\_\+tensor\+\_\+dim}!bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}}
+\subsubsection{\texorpdfstring{input\+\_\+tensor\+\_\+dim}{input\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Input\+Tensor\+Dimension  = bc\+::traits\+::\+Integer$<$3$>$, class Input\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Input\+Tensor\+Dimension$>$, class Output\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Integer$<$1$>$$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Flatten}{bc\+::nn\+::\+Flatten}$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Flatten_a33099a8688031a672bd911871d9ae0d2}{input\+\_\+tensor\+\_\+dim} =  Input\+Tensor\+Dimension}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Flatten_a15ddd4e65597ff56624b08d498a47c6d}\label{structbc_1_1nn_1_1Flatten_a15ddd4e65597ff56624b08d498a47c6d}} 
+\index{bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}!output\+\_\+tensor\+\_\+dim@{output\+\_\+tensor\+\_\+dim}}
+\index{output\+\_\+tensor\+\_\+dim@{output\+\_\+tensor\+\_\+dim}!bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}}
+\subsubsection{\texorpdfstring{output\+\_\+tensor\+\_\+dim}{output\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Input\+Tensor\+Dimension  = bc\+::traits\+::\+Integer$<$3$>$, class Input\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Input\+Tensor\+Dimension$>$, class Output\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Integer$<$1$>$$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Flatten}{bc\+::nn\+::\+Flatten}$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Flatten_a15ddd4e65597ff56624b08d498a47c6d}{output\+\_\+tensor\+\_\+dim} =  \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$1$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Flatten_adad203394f78c9d3bd9b0962c8ca195e}\label{structbc_1_1nn_1_1Flatten_adad203394f78c9d3bd9b0962c8ca195e}} 
+\index{bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}!parent\+\_\+type@{parent\+\_\+type}}
+\index{parent\+\_\+type@{parent\+\_\+type}!bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}}
+\subsubsection{\texorpdfstring{parent\+\_\+type}{parent\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Input\+Tensor\+Dimension  = bc\+::traits\+::\+Integer$<$3$>$, class Input\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Input\+Tensor\+Dimension$>$, class Output\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Integer$<$1$>$$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Flatten}{bc\+::nn\+::\+Flatten}$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Flatten_adad203394f78c9d3bd9b0962c8ca195e}{parent\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$\hyperlink{structbc_1_1nn_1_1Flatten_a8bf8c3ab507fae549695110b4c1d4762}{self\+\_\+type}, Input\+Descriptor, Output\+Descriptor$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Flatten_a8bf8c3ab507fae549695110b4c1d4762}\label{structbc_1_1nn_1_1Flatten_a8bf8c3ab507fae549695110b4c1d4762}} 
+\index{bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}!self\+\_\+type@{self\+\_\+type}}
+\index{self\+\_\+type@{self\+\_\+type}!bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}}
+\subsubsection{\texorpdfstring{self\+\_\+type}{self\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Input\+Tensor\+Dimension  = bc\+::traits\+::\+Integer$<$3$>$, class Input\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Input\+Tensor\+Dimension$>$, class Output\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Integer$<$1$>$$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Flatten}{bc\+::nn\+::\+Flatten}$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Flatten_a8bf8c3ab507fae549695110b4c1d4762}{self\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Flatten}{Flatten}$<$System\+Tag, Value\+Type, Input\+Tensor\+Dimension$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Flatten_a3691e26f7d05a76e7c84f86930e4a5ed}\label{structbc_1_1nn_1_1Flatten_a3691e26f7d05a76e7c84f86930e4a5ed}} 
+\index{bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Input\+Tensor\+Dimension  = bc\+::traits\+::\+Integer$<$3$>$, class Input\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Input\+Tensor\+Dimension$>$, class Output\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Integer$<$1$>$$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Flatten}{bc\+::nn\+::\+Flatten}$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Flatten_a3691e26f7d05a76e7c84f86930e4a5ed}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Flatten_af6a4f22abc0a8e8f8bb1624abd97b500}\label{structbc_1_1nn_1_1Flatten_af6a4f22abc0a8e8f8bb1624abd97b500}} 
+\index{bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Input\+Tensor\+Dimension  = bc\+::traits\+::\+Integer$<$3$>$, class Input\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Input\+Tensor\+Dimension$>$, class Output\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Integer$<$1$>$$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Flatten}{bc\+::nn\+::\+Flatten}$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Flatten_af6a4f22abc0a8e8f8bb1624abd97b500}{value\+\_\+type} =  Value\+Type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Flatten_a89db66a90f1de37dce20b230c631199c}\label{structbc_1_1nn_1_1Flatten_a89db66a90f1de37dce20b230c631199c}} 
+\index{bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}!Flatten@{Flatten}}
+\index{Flatten@{Flatten}!bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}}
+\subsubsection{\texorpdfstring{Flatten()}{Flatten()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Input\+Tensor\+Dimension  = bc\+::traits\+::\+Integer$<$3$>$, class Input\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Input\+Tensor\+Dimension$>$, class Output\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Integer$<$1$>$$>$$>$ \\
+\hyperlink{structbc_1_1nn_1_1Flatten}{bc\+::nn\+::\+Flatten}$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Flatten}{Flatten} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ input\+\_\+tensor\+\_\+dim\+::value $>$}]{input\+\_\+shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Flatten_aec50c8f60d24fbac0cbd9fe98d4a3d1d}\label{structbc_1_1nn_1_1Flatten_aec50c8f60d24fbac0cbd9fe98d4a3d1d}} 
+\index{bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}!back\+\_\+propagation@{back\+\_\+propagation}}
+\index{back\+\_\+propagation@{back\+\_\+propagation}!bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}}
+\subsubsection{\texorpdfstring{back\+\_\+propagation()}{back\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Input\+Tensor\+Dimension  = bc\+::traits\+::\+Integer$<$3$>$, class Input\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Input\+Tensor\+Dimension$>$, class Output\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Integer$<$1$>$$>$$>$ \\
+template$<$class X , class Delta $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Flatten}{bc\+::nn\+::\+Flatten}$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$\+::back\+\_\+propagation (\begin{DoxyParamCaption}\item[{const X \&}]{x,  }\item[{const Delta \&}]{dy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Flatten_af1e268a0fbb0cd6a6ccd7bfc5f9ca234}\label{structbc_1_1nn_1_1Flatten_af1e268a0fbb0cd6a6ccd7bfc5f9ca234}} 
+\index{bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Input\+Tensor\+Dimension  = bc\+::traits\+::\+Integer$<$3$>$, class Input\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Input\+Tensor\+Dimension$>$, class Output\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Integer$<$1$>$$>$$>$ \\
+template$<$class Matrix $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Flatten}{bc\+::nn\+::\+Flatten}$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacebc_a92dd1e243183b382432a5fac3ed8b89f}{Matrix} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Flatten_a0d46bfe5ed2d540c9f9ef355c1704585}\label{structbc_1_1nn_1_1Flatten_a0d46bfe5ed2d540c9f9ef355c1704585}} 
+\index{bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}!single\+\_\+predict@{single\+\_\+predict}}
+\index{single\+\_\+predict@{single\+\_\+predict}!bc\+::nn\+::\+Flatten@{bc\+::nn\+::\+Flatten}}
+\subsubsection{\texorpdfstring{single\+\_\+predict()}{single\_predict()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Input\+Tensor\+Dimension  = bc\+::traits\+::\+Integer$<$3$>$, class Input\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Input\+Tensor\+Dimension$>$, class Output\+Descriptor  = Tensor\+\_\+\+Descriptor$<$\+Value\+Type, System\+Tag, Integer$<$1$>$$>$$>$ \\
+template$<$class Vector $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Flatten}{bc\+::nn\+::\+Flatten}$<$ System\+Tag, Value\+Type, Input\+Tensor\+Dimension, Input\+Descriptor, Output\+Descriptor $>$\+::single\+\_\+predict (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacebc_a14d40e8e95957f92a57853921837a15d}{Vector} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/layers/\hyperlink{flatten_8h}{flatten.\+h}\end{DoxyCompactItemize}

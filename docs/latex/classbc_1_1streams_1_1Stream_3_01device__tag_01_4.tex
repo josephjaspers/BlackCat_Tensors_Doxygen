@@ -1,0 +1,203 @@
+\hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4}{}\section{bc\+:\+:streams\+:\+:Stream$<$ device\+\_\+tag $>$ Class Template Reference}
+\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4}\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+
+
+{\ttfamily \#include $<$device.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a03675e8b1fac42f89e8ef8b7fc6db22b}{system\+\_\+tag} = \hyperlink{structbc_1_1device__tag}{device\+\_\+tag}
+\item 
+using \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ad6e752fa317da0549e72b1d5118887ee}{allocator\+\_\+type} = \hyperlink{classbc_1_1allocators_1_1Stack__Allocator}{bc\+::allocators\+::\+Stack\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Byte}{bc\+::\+Byte}, \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ad6e752fa317da0549e72b1d5118887ee}{allocator\+\_\+type} \& \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_adbe0962ec7ea1cf8b5fb335dc2a76480}{get\+\_\+allocator} ()
+\item 
+{\footnotesize template$<$class Rebind\+Type $>$ }\\auto \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a0fc407f470b3852a202bccc90704e0d2}{get\+\_\+allocator\+\_\+rebound} ()
+\item 
+auto \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ac7fd6cd1f5b80d582799dc334bb2cf6d}{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+host} ()
+\item 
+auto \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a3b36054fc729c84bacc6db1e3c88dde5}{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+device} ()
+\item 
+cublas\+Handle\+\_\+t \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_abad1bfebb6aceb6dbbc8742c4c0fb891}{get\+\_\+cublas\+\_\+handle} () const
+\item 
+\hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a161ebe574d652fb8c0836866b1f0c127}{operator cuda\+Stream\+\_\+t} () const
+\item 
+void \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a36c32c96ed807fd40421d8437e1919f4}{set\+\_\+stream} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} dev)
+\item 
+void \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ace2a13dccd1c778b669d1de1a4a8a040}{record\+\_\+event} ()
+\item 
+void \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a47262ffd70637e5ed8efcde04cffc27b}{wait\+\_\+event} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} \&stream)
+\item 
+void \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_aa9fc028f6213e1d90ed9b464400f1551}{wait\+\_\+stream} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} \&stream)
+\item 
+void \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a3a96fec6eefed73405080be57b386d51}{wait\+\_\+event} (cuda\+Event\+\_\+t event)
+\item 
+bool \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a36a2ac18cb901c755e5885d0a96a9c42}{is\+\_\+default} ()
+\item 
+void \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_af8e8fb55779a89aec8ba132e25dc7a1d}{create} ()
+\item 
+void \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ac82cc272085638ed69a9de6c7146b15f}{destroy} ()
+\item 
+void \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_afc2e619f75d90c96a253db36b235caaf}{sync} ()
+\item 
+{\footnotesize template$<$class Function $>$ }\\void \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ae893fe2fa7e6141cf7865979896220b6}{enqueue} (Function f)
+\item 
+{\footnotesize template$<$class function , class  = std\+::enable\+\_\+if\+\_\+t$<$				std\+::is\+\_\+void$<$						decltype(std\+::declval$<$function$>$()())$>$\+::value$>$$>$ }\\void \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a192d44e2c6eda47b3bda66567ae23cd7}{enqueue\+\_\+callback} (function func)
+\item 
+{\footnotesize template$<$class function , class  = std\+::enable\+\_\+if\+\_\+t$<$				!std\+::is\+\_\+void$<$						decltype(std\+::declval$<$function$>$()())$>$\+::value$>$, int A\+DL = 0$>$ }\\auto \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a094bcf56ef60a630cef64dbadb7e9040}{enqueue\+\_\+callback} (function func)
+\item 
+bool \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_aee2c55379b2a053466078c004d382f83}{operator==} (const \hyperlink{classbc_1_1streams_1_1Stream}{Stream} \&dev)
+\item 
+bool \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_aa031f65322c674ee9106a9471f8508fe}{operator!=} (const \hyperlink{classbc_1_1streams_1_1Stream}{Stream} \&dev)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ad6e752fa317da0549e72b1d5118887ee}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ad6e752fa317da0549e72b1d5118887ee}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily using \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::\hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ad6e752fa317da0549e72b1d5118887ee}{allocator\+\_\+type} =  \hyperlink{classbc_1_1allocators_1_1Stack__Allocator}{bc\+::allocators\+::\+Stack\+\_\+\+Allocator}$<$\hyperlink{classbc_1_1allocators_1_1Byte}{bc\+::\+Byte}, \hyperlink{structbc_1_1device__tag}{device\+\_\+tag}$>$}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a03675e8b1fac42f89e8ef8b7fc6db22b}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a03675e8b1fac42f89e8ef8b7fc6db22b}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily using \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::\hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a03675e8b1fac42f89e8ef8b7fc6db22b}{system\+\_\+tag} =  \hyperlink{structbc_1_1device__tag}{device\+\_\+tag}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_af8e8fb55779a89aec8ba132e25dc7a1d}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_af8e8fb55779a89aec8ba132e25dc7a1d}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!create@{create}}
+\index{create@{create}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ac82cc272085638ed69a9de6c7146b15f}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ac82cc272085638ed69a9de6c7146b15f}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!destroy@{destroy}}
+\index{destroy@{destroy}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ae893fe2fa7e6141cf7865979896220b6}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ae893fe2fa7e6141cf7865979896220b6}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily template$<$class Function $>$ \\
+void \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::enqueue (\begin{DoxyParamCaption}\item[{Function}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a192d44e2c6eda47b3bda66567ae23cd7}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a192d44e2c6eda47b3bda66567ae23cd7}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!enqueue\+\_\+callback@{enqueue\+\_\+callback}}
+\index{enqueue\+\_\+callback@{enqueue\+\_\+callback}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{enqueue\+\_\+callback()}{enqueue\_callback()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class function , class  = std\+::enable\+\_\+if\+\_\+t$<$				std\+::is\+\_\+void$<$						decltype(std\+::declval$<$function$>$()())$>$\+::value$>$$>$ \\
+void \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::enqueue\+\_\+callback (\begin{DoxyParamCaption}\item[{function}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a094bcf56ef60a630cef64dbadb7e9040}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a094bcf56ef60a630cef64dbadb7e9040}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!enqueue\+\_\+callback@{enqueue\+\_\+callback}}
+\index{enqueue\+\_\+callback@{enqueue\+\_\+callback}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{enqueue\+\_\+callback()}{enqueue\_callback()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class function , class  = std\+::enable\+\_\+if\+\_\+t$<$				!std\+::is\+\_\+void$<$						decltype(std\+::declval$<$function$>$()())$>$\+::value$>$, int A\+DL = 0$>$ \\
+auto \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::enqueue\+\_\+callback (\begin{DoxyParamCaption}\item[{function}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_adbe0962ec7ea1cf8b5fb335dc2a76480}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_adbe0962ec7ea1cf8b5fb335dc2a76480}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!get\+\_\+allocator@{get\+\_\+allocator}}
+\index{get\+\_\+allocator@{get\+\_\+allocator}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{get\+\_\+allocator()}{get\_allocator()}}
+{\footnotesize\ttfamily \hyperlink{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ad6e752fa317da0549e72b1d5118887ee}{allocator\+\_\+type}\& \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::get\+\_\+allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a0fc407f470b3852a202bccc90704e0d2}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a0fc407f470b3852a202bccc90704e0d2}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!get\+\_\+allocator\+\_\+rebound@{get\+\_\+allocator\+\_\+rebound}}
+\index{get\+\_\+allocator\+\_\+rebound@{get\+\_\+allocator\+\_\+rebound}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{get\+\_\+allocator\+\_\+rebound()}{get\_allocator\_rebound()}}
+{\footnotesize\ttfamily template$<$class Rebind\+Type $>$ \\
+auto \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::get\+\_\+allocator\+\_\+rebound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_abad1bfebb6aceb6dbbc8742c4c0fb891}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_abad1bfebb6aceb6dbbc8742c4c0fb891}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!get\+\_\+cublas\+\_\+handle@{get\+\_\+cublas\+\_\+handle}}
+\index{get\+\_\+cublas\+\_\+handle@{get\+\_\+cublas\+\_\+handle}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{get\+\_\+cublas\+\_\+handle()}{get\_cublas\_handle()}}
+{\footnotesize\ttfamily cublas\+Handle\+\_\+t \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::get\+\_\+cublas\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a36a2ac18cb901c755e5885d0a96a9c42}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a36a2ac18cb901c755e5885d0a96a9c42}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!is\+\_\+default@{is\+\_\+default}}
+\index{is\+\_\+default@{is\+\_\+default}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{is\+\_\+default()}{is\_default()}}
+{\footnotesize\ttfamily bool \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::is\+\_\+default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a161ebe574d652fb8c0836866b1f0c127}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a161ebe574d652fb8c0836866b1f0c127}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!operator cuda\+Stream\+\_\+t@{operator cuda\+Stream\+\_\+t}}
+\index{operator cuda\+Stream\+\_\+t@{operator cuda\+Stream\+\_\+t}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{operator cuda\+Stream\+\_\+t()}{operator cudaStream\_t()}}
+{\footnotesize\ttfamily \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::operator cuda\+Stream\+\_\+t (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_aa031f65322c674ee9106a9471f8508fe}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_aa031f65322c674ee9106a9471f8508fe}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1streams_1_1Stream}{Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$ \&}]{dev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_aee2c55379b2a053466078c004d382f83}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_aee2c55379b2a053466078c004d382f83}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1streams_1_1Stream}{Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$ \&}]{dev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ace2a13dccd1c778b669d1de1a4a8a040}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ace2a13dccd1c778b669d1de1a4a8a040}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!record\+\_\+event@{record\+\_\+event}}
+\index{record\+\_\+event@{record\+\_\+event}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{record\+\_\+event()}{record\_event()}}
+{\footnotesize\ttfamily void \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::record\+\_\+event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a3b36054fc729c84bacc6db1e3c88dde5}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a3b36054fc729c84bacc6db1e3c88dde5}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+device@{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+device}}
+\index{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+device@{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+device}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+device()}{set\_blas\_pointer\_mode\_device()}}
+{\footnotesize\ttfamily auto \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ac7fd6cd1f5b80d582799dc334bb2cf6d}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_ac7fd6cd1f5b80d582799dc334bb2cf6d}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+host@{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+host}}
+\index{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+host@{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+host}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+host()}{set\_blas\_pointer\_mode\_host()}}
+{\footnotesize\ttfamily auto \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a36c32c96ed807fd40421d8437e1919f4}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a36c32c96ed807fd40421d8437e1919f4}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!set\+\_\+stream@{set\+\_\+stream}}
+\index{set\+\_\+stream@{set\+\_\+stream}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{set\+\_\+stream()}{set\_stream()}}
+{\footnotesize\ttfamily void \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::set\+\_\+stream (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$}]{dev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_afc2e619f75d90c96a253db36b235caaf}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_afc2e619f75d90c96a253db36b235caaf}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!sync@{sync}}
+\index{sync@{sync}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{sync()}{sync()}}
+{\footnotesize\ttfamily void \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::sync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a47262ffd70637e5ed8efcde04cffc27b}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a47262ffd70637e5ed8efcde04cffc27b}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!wait\+\_\+event@{wait\+\_\+event}}
+\index{wait\+\_\+event@{wait\+\_\+event}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{wait\+\_\+event()}{wait\_event()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::wait\+\_\+event (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$ \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a3a96fec6eefed73405080be57b386d51}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_a3a96fec6eefed73405080be57b386d51}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!wait\+\_\+event@{wait\+\_\+event}}
+\index{wait\+\_\+event@{wait\+\_\+event}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{wait\+\_\+event()}{wait\_event()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::wait\+\_\+event (\begin{DoxyParamCaption}\item[{cuda\+Event\+\_\+t}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_aa9fc028f6213e1d90ed9b464400f1551}\label{classbc_1_1streams_1_1Stream_3_01device__tag_01_4_aa9fc028f6213e1d90ed9b464400f1551}} 
+\index{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}!wait\+\_\+stream@{wait\+\_\+stream}}
+\index{wait\+\_\+stream@{wait\+\_\+stream}!bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$@{bc\+::streams\+::\+Stream$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{wait\+\_\+stream()}{wait\_stream()}}
+{\footnotesize\ttfamily void \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::wait\+\_\+stream (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$ \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/streams/\hyperlink{streams_2device_8h}{device.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,39 @@
+\hypertarget{structbc_1_1tensors_1_1exprs_1_1GreedyEvaluator}{}\section{bc\+:\+:tensors\+:\+:exprs\+:\+:Greedy\+Evaluator Struct Reference}
+\label{structbc_1_1tensors_1_1exprs_1_1GreedyEvaluator}\index{bc\+::tensors\+::exprs\+::\+Greedy\+Evaluator@{bc\+::tensors\+::exprs\+::\+Greedy\+Evaluator}}
+
+
+{\ttfamily \#include $<$tree\+\_\+evaluator.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Xpr , class Stream , class  = std\+::enable\+\_\+if\+\_\+t$<$expression\+\_\+traits$<$\+Xpr$>$\+::is\+\_\+array\+::value$>$$>$ }\\static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1GreedyEvaluator_af36e3e7c9b14bade7ef511d25e9a534f}{evaluate} (Xpr expression, \hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream)
+\item 
+{\footnotesize template$<$class Xpr , class Stream , class  = std\+::enable\+\_\+if\+\_\+t$<$expression\+\_\+traits$<$\+Xpr$>$\+::is\+\_\+expr\+::value$>$, int  = 0$>$ }\\static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1GreedyEvaluator_aac54457c2b42be3206a7c666e2acad51}{evaluate} (Xpr expression, \hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream)
+\begin{DoxyCompactList}\small\item\em Returns a kernel\+\_\+array containing the tag \hyperlink{structbc_1_1tensors_1_1exprs_1_1temporary__tag}{temporary\+\_\+tag}, the caller of the function is responsible for its deallocation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1GreedyEvaluator_af36e3e7c9b14bade7ef511d25e9a534f}\label{structbc_1_1tensors_1_1exprs_1_1GreedyEvaluator_af36e3e7c9b14bade7ef511d25e9a534f}} 
+\index{bc\+::tensors\+::exprs\+::\+Greedy\+Evaluator@{bc\+::tensors\+::exprs\+::\+Greedy\+Evaluator}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!bc\+::tensors\+::exprs\+::\+Greedy\+Evaluator@{bc\+::tensors\+::exprs\+::\+Greedy\+Evaluator}}
+\subsubsection{\texorpdfstring{evaluate()}{evaluate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Xpr , class Stream , class  = std\+::enable\+\_\+if\+\_\+t$<$expression\+\_\+traits$<$\+Xpr$>$\+::is\+\_\+array\+::value$>$$>$ \\
+static auto bc\+::tensors\+::exprs\+::\+Greedy\+Evaluator\+::evaluate (\begin{DoxyParamCaption}\item[{Xpr}]{expression,  }\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1GreedyEvaluator_aac54457c2b42be3206a7c666e2acad51}\label{structbc_1_1tensors_1_1exprs_1_1GreedyEvaluator_aac54457c2b42be3206a7c666e2acad51}} 
+\index{bc\+::tensors\+::exprs\+::\+Greedy\+Evaluator@{bc\+::tensors\+::exprs\+::\+Greedy\+Evaluator}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!bc\+::tensors\+::exprs\+::\+Greedy\+Evaluator@{bc\+::tensors\+::exprs\+::\+Greedy\+Evaluator}}
+\subsubsection{\texorpdfstring{evaluate()}{evaluate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Xpr , class Stream , class  = std\+::enable\+\_\+if\+\_\+t$<$expression\+\_\+traits$<$\+Xpr$>$\+::is\+\_\+expr\+::value$>$, int  = 0$>$ \\
+static auto bc\+::tensors\+::exprs\+::\+Greedy\+Evaluator\+::evaluate (\begin{DoxyParamCaption}\item[{Xpr}]{expression,  }\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a kernel\+\_\+array containing the tag \hyperlink{structbc_1_1tensors_1_1exprs_1_1temporary__tag}{temporary\+\_\+tag}, the caller of the function is responsible for its deallocation. 
+
+query this tag via \textquotesingle{}\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ab5b69e55697b1e78cf9272ac1e9214a0}{exprs\+::expression\+\_\+traits$<$\+Xpr$>$\+::is\+\_\+temporary}\textquotesingle{} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/tensors/expression\+\_\+templates/\hyperlink{tree__evaluator_8h}{tree\+\_\+evaluator.\+h}\end{DoxyCompactItemize}

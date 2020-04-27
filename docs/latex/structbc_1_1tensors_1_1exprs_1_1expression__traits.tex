@@ -1,0 +1,188 @@
+\hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits}{}\section{bc\+:\+:tensors\+:\+:exprs\+:\+:expression\+\_\+traits$<$ T $>$ Struct Template Reference}
+\label{structbc_1_1tensors_1_1exprs_1_1expression__traits}\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits$<$ T $>$@{bc\+::tensors\+::exprs\+::expression\+\_\+traits$<$ T $>$}}
+
+
+{\ttfamily \#include $<$expression\+\_\+template\+\_\+traits.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:tensors\+:\+:exprs\+:\+:expression\+\_\+traits$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{structbc_1_1tensors_1_1exprs_1_1expression__traits__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a13a9bbc7ab291f35143c611ff93f69de}{system\+\_\+tag} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa067b2ce78c8e7218f47bded8aec80a8}{detail\+::query\+\_\+system\+\_\+tag}, T, \hyperlink{structbc_1_1host__tag}{host\+\_\+tag} $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ac3601870cb49bcd8048d3321b833a733}{allocation\+\_\+tag} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa48f3a00816d9b230e5f0ce720323f57}{detail\+::query\+\_\+allocation\+\_\+type}, T, \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a13a9bbc7ab291f35143c611ff93f69de}{system\+\_\+tag} $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ab4830d8c42c308632e269d6a8de49e83}{value\+\_\+type} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa60e0a71bcf8048661b38b904c620fb0}{detail\+::query\+\_\+value\+\_\+type}, T, void $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a9542c99877b734bea43fe8e42b3d3c04}{is\+\_\+const\+\_\+view} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a701fb55d84ce81a94fc5552092b64138}{detail\+::query\+\_\+is\+\_\+const\+\_\+view}, T, std\+::false\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ab6593beaa9f6774c56756001287176d9}{is\+\_\+view} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a6ed62ca06012f06dc8f6143998de1e9f}{detail\+::query\+\_\+is\+\_\+view}, T, \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a9542c99877b734bea43fe8e42b3d3c04}{is\+\_\+const\+\_\+view} $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a79f84851dcb50d4b56daa25301a3f9fb}{is\+\_\+move\+\_\+constructible} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a19fd04baa3f6d8fcce66c01e51b7399d}{detail\+::query\+\_\+move\+\_\+constructible}, T, std\+::true\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a1d26ea54c18b367ffb22646e46ad2872}{is\+\_\+copy\+\_\+constructible} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_abac935bf36b4924c73532023e11f75c2}{detail\+::query\+\_\+copy\+\_\+constructible}, T, std\+::true\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ae32e2d333f9a7eed4baee44455cf7b46}{is\+\_\+move\+\_\+assignable} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_ac325e0e2cef5518953db86853d9780fc}{detail\+::query\+\_\+move\+\_\+assignable}, T, std\+::true\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ae5b90ffbe5ee242543685ac0905d8aec}{is\+\_\+copy\+\_\+assignable} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a48ce13185316802e0ca8ad8cee7d5870}{detail\+::query\+\_\+copy\+\_\+assignable}, T, std\+::true\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a09c158f1e3caf8a09be668795c294aed}{is\+\_\+blas\+\_\+expression} = std\+::is\+\_\+base\+\_\+of$<$ \hyperlink{structbc_1_1oper_1_1BLAS__Function}{bc\+::oper\+::\+B\+L\+A\+S\+\_\+\+Function}, T $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a0e96f494a14aad16cc6c65195fa325a6}{requires\+\_\+greedy\+\_\+evaluation} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a0e9b0b3486b5ec529b2c622f14b688f9}{detail\+::query\+\_\+requires\+\_\+greedy\+\_\+evaluation}, T, std\+::false\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a625cfb1838e83a8551e197b56b2ef2e4}{is\+\_\+array} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a4f6ef9491d82383737761491907159ae}{detail\+::query\+\_\+expression\+\_\+template\+\_\+array\+\_\+type}, T, std\+::false\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_aa6285131817b13ba8776a246b318cff4}{is\+\_\+expr} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a8daec353fcf1440e3e610f412a2228d8}{detail\+::query\+\_\+expression\+\_\+template\+\_\+expression\+\_\+type}, T, std\+::false\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a0495b9445a4aaec1596b5b0c4a05c4c4}{is\+\_\+expression\+\_\+template} = \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{bc\+::traits\+::truth\+\_\+type}$<$ is\+\_\+array\+::value$\vert$$\vert$is\+\_\+expr\+::value $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ab5b69e55697b1e78cf9272ac1e9214a0}{is\+\_\+temporary} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a78329f6a449e413ac38baeaf0574e64d}{detail\+::query\+\_\+is\+\_\+temporary\+\_\+value}, T, std\+::false\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_aab101a01178cf1ed824cb15709429055}{is\+\_\+stack\+\_\+allocated} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a35543bad82197de0bb8d50c079e7cbaf}{detail\+::query\+\_\+stack\+\_\+allocated}, T, std\+::false\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a2c5c0695ef22b12b53db910f40ff32a4}{is\+\_\+noncontinuous} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa6d73fadec8691f52ebcd7254c6ec9bb}{detail\+::query\+\_\+is\+\_\+noncontinuous\+\_\+in\+\_\+memory}, T, std\+::false\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_af63d98e5f071259f2b90677629991c2a}{is\+\_\+continuous} = \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{bc\+::traits\+::truth\+\_\+type}$<$!is\+\_\+noncontinuous\+::value $>$
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_ac3601870cb49bcd8048d3321b833a733}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_ac3601870cb49bcd8048d3321b833a733}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!allocation\+\_\+tag@{allocation\+\_\+tag}}
+\index{allocation\+\_\+tag@{allocation\+\_\+tag}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{allocation\+\_\+tag}{allocation\_tag}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ac3601870cb49bcd8048d3321b833a733}{allocation\+\_\+tag} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa48f3a00816d9b230e5f0ce720323f57}{detail\+::query\+\_\+allocation\+\_\+type}, T, \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a13a9bbc7ab291f35143c611ff93f69de}{system\+\_\+tag}$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_a625cfb1838e83a8551e197b56b2ef2e4}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_a625cfb1838e83a8551e197b56b2ef2e4}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!is\+\_\+array@{is\+\_\+array}}
+\index{is\+\_\+array@{is\+\_\+array}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+array}{is\_array}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a625cfb1838e83a8551e197b56b2ef2e4}{is\+\_\+array} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a4f6ef9491d82383737761491907159ae}{detail\+::query\+\_\+expression\+\_\+template\+\_\+array\+\_\+type}, T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_a09c158f1e3caf8a09be668795c294aed}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_a09c158f1e3caf8a09be668795c294aed}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!is\+\_\+blas\+\_\+expression@{is\+\_\+blas\+\_\+expression}}
+\index{is\+\_\+blas\+\_\+expression@{is\+\_\+blas\+\_\+expression}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+blas\+\_\+expression}{is\_blas\_expression}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a09c158f1e3caf8a09be668795c294aed}{is\+\_\+blas\+\_\+expression} =  std\+::is\+\_\+base\+\_\+of$<$\hyperlink{structbc_1_1oper_1_1BLAS__Function}{bc\+::oper\+::\+B\+L\+A\+S\+\_\+\+Function}, T$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_a9542c99877b734bea43fe8e42b3d3c04}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_a9542c99877b734bea43fe8e42b3d3c04}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!is\+\_\+const\+\_\+view@{is\+\_\+const\+\_\+view}}
+\index{is\+\_\+const\+\_\+view@{is\+\_\+const\+\_\+view}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+const\+\_\+view}{is\_const\_view}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a9542c99877b734bea43fe8e42b3d3c04}{is\+\_\+const\+\_\+view} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a701fb55d84ce81a94fc5552092b64138}{detail\+::query\+\_\+is\+\_\+const\+\_\+view}, T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_af63d98e5f071259f2b90677629991c2a}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_af63d98e5f071259f2b90677629991c2a}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!is\+\_\+continuous@{is\+\_\+continuous}}
+\index{is\+\_\+continuous@{is\+\_\+continuous}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+continuous}{is\_continuous}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_af63d98e5f071259f2b90677629991c2a}{is\+\_\+continuous} =  \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{bc\+::traits\+::truth\+\_\+type}$<$!is\+\_\+noncontinuous\+::value$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_ae5b90ffbe5ee242543685ac0905d8aec}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_ae5b90ffbe5ee242543685ac0905d8aec}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!is\+\_\+copy\+\_\+assignable@{is\+\_\+copy\+\_\+assignable}}
+\index{is\+\_\+copy\+\_\+assignable@{is\+\_\+copy\+\_\+assignable}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+copy\+\_\+assignable}{is\_copy\_assignable}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ae5b90ffbe5ee242543685ac0905d8aec}{is\+\_\+copy\+\_\+assignable} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a48ce13185316802e0ca8ad8cee7d5870}{detail\+::query\+\_\+copy\+\_\+assignable}, T, std\+::true\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_a1d26ea54c18b367ffb22646e46ad2872}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_a1d26ea54c18b367ffb22646e46ad2872}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!is\+\_\+copy\+\_\+constructible@{is\+\_\+copy\+\_\+constructible}}
+\index{is\+\_\+copy\+\_\+constructible@{is\+\_\+copy\+\_\+constructible}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+copy\+\_\+constructible}{is\_copy\_constructible}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a1d26ea54c18b367ffb22646e46ad2872}{is\+\_\+copy\+\_\+constructible} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_abac935bf36b4924c73532023e11f75c2}{detail\+::query\+\_\+copy\+\_\+constructible}, T, std\+::true\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_aa6285131817b13ba8776a246b318cff4}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_aa6285131817b13ba8776a246b318cff4}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!is\+\_\+expr@{is\+\_\+expr}}
+\index{is\+\_\+expr@{is\+\_\+expr}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+expr}{is\_expr}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_aa6285131817b13ba8776a246b318cff4}{is\+\_\+expr} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a8daec353fcf1440e3e610f412a2228d8}{detail\+::query\+\_\+expression\+\_\+template\+\_\+expression\+\_\+type}, T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_a0495b9445a4aaec1596b5b0c4a05c4c4}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_a0495b9445a4aaec1596b5b0c4a05c4c4}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!is\+\_\+expression\+\_\+template@{is\+\_\+expression\+\_\+template}}
+\index{is\+\_\+expression\+\_\+template@{is\+\_\+expression\+\_\+template}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+expression\+\_\+template}{is\_expression\_template}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a0495b9445a4aaec1596b5b0c4a05c4c4}{is\+\_\+expression\+\_\+template} =  \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{bc\+::traits\+::truth\+\_\+type}$<$is\+\_\+array\+::value $\vert$$\vert$ is\+\_\+expr\+::value$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_ae32e2d333f9a7eed4baee44455cf7b46}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_ae32e2d333f9a7eed4baee44455cf7b46}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!is\+\_\+move\+\_\+assignable@{is\+\_\+move\+\_\+assignable}}
+\index{is\+\_\+move\+\_\+assignable@{is\+\_\+move\+\_\+assignable}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+move\+\_\+assignable}{is\_move\_assignable}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ae32e2d333f9a7eed4baee44455cf7b46}{is\+\_\+move\+\_\+assignable} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_ac325e0e2cef5518953db86853d9780fc}{detail\+::query\+\_\+move\+\_\+assignable}, T, std\+::true\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_a79f84851dcb50d4b56daa25301a3f9fb}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_a79f84851dcb50d4b56daa25301a3f9fb}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!is\+\_\+move\+\_\+constructible@{is\+\_\+move\+\_\+constructible}}
+\index{is\+\_\+move\+\_\+constructible@{is\+\_\+move\+\_\+constructible}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+move\+\_\+constructible}{is\_move\_constructible}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a79f84851dcb50d4b56daa25301a3f9fb}{is\+\_\+move\+\_\+constructible} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a19fd04baa3f6d8fcce66c01e51b7399d}{detail\+::query\+\_\+move\+\_\+constructible}, T, std\+::true\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_a2c5c0695ef22b12b53db910f40ff32a4}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_a2c5c0695ef22b12b53db910f40ff32a4}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!is\+\_\+noncontinuous@{is\+\_\+noncontinuous}}
+\index{is\+\_\+noncontinuous@{is\+\_\+noncontinuous}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+noncontinuous}{is\_noncontinuous}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a2c5c0695ef22b12b53db910f40ff32a4}{is\+\_\+noncontinuous} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa6d73fadec8691f52ebcd7254c6ec9bb}{detail\+::query\+\_\+is\+\_\+noncontinuous\+\_\+in\+\_\+memory}, T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_aab101a01178cf1ed824cb15709429055}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_aab101a01178cf1ed824cb15709429055}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!is\+\_\+stack\+\_\+allocated@{is\+\_\+stack\+\_\+allocated}}
+\index{is\+\_\+stack\+\_\+allocated@{is\+\_\+stack\+\_\+allocated}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+stack\+\_\+allocated}{is\_stack\_allocated}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_aab101a01178cf1ed824cb15709429055}{is\+\_\+stack\+\_\+allocated} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a35543bad82197de0bb8d50c079e7cbaf}{detail\+::query\+\_\+stack\+\_\+allocated}, T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_ab5b69e55697b1e78cf9272ac1e9214a0}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_ab5b69e55697b1e78cf9272ac1e9214a0}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!is\+\_\+temporary@{is\+\_\+temporary}}
+\index{is\+\_\+temporary@{is\+\_\+temporary}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+temporary}{is\_temporary}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ab5b69e55697b1e78cf9272ac1e9214a0}{is\+\_\+temporary} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a78329f6a449e413ac38baeaf0574e64d}{detail\+::query\+\_\+is\+\_\+temporary\+\_\+value}, T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_ab6593beaa9f6774c56756001287176d9}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_ab6593beaa9f6774c56756001287176d9}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!is\+\_\+view@{is\+\_\+view}}
+\index{is\+\_\+view@{is\+\_\+view}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+view}{is\_view}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ab6593beaa9f6774c56756001287176d9}{is\+\_\+view} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a6ed62ca06012f06dc8f6143998de1e9f}{detail\+::query\+\_\+is\+\_\+view}, T, \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a9542c99877b734bea43fe8e42b3d3c04}{is\+\_\+const\+\_\+view}$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_a0e96f494a14aad16cc6c65195fa325a6}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_a0e96f494a14aad16cc6c65195fa325a6}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!requires\+\_\+greedy\+\_\+evaluation@{requires\+\_\+greedy\+\_\+evaluation}}
+\index{requires\+\_\+greedy\+\_\+evaluation@{requires\+\_\+greedy\+\_\+evaluation}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{requires\+\_\+greedy\+\_\+evaluation}{requires\_greedy\_evaluation}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a0e96f494a14aad16cc6c65195fa325a6}{requires\+\_\+greedy\+\_\+evaluation} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a0e9b0b3486b5ec529b2c622f14b688f9}{detail\+::query\+\_\+requires\+\_\+greedy\+\_\+evaluation},T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_a13a9bbc7ab291f35143c611ff93f69de}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_a13a9bbc7ab291f35143c611ff93f69de}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a13a9bbc7ab291f35143c611ff93f69de}{system\+\_\+tag} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa067b2ce78c8e7218f47bded8aec80a8}{detail\+::query\+\_\+system\+\_\+tag}, T, \hyperlink{structbc_1_1host__tag}{host\+\_\+tag}$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1expression__traits_ab4830d8c42c308632e269d6a8de49e83}\label{structbc_1_1tensors_1_1exprs_1_1expression__traits_ab4830d8c42c308632e269d6a8de49e83}} 
+\index{bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::tensors\+::exprs\+::expression\+\_\+traits@{bc\+::tensors\+::exprs\+::expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ab4830d8c42c308632e269d6a8de49e83}{value\+\_\+type} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa60e0a71bcf8048661b38b904c620fb0}{detail\+::query\+\_\+value\+\_\+type}, T, void$>$}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/tensors/expression\+\_\+templates/\hyperlink{expression__template__traits_8h}{expression\+\_\+template\+\_\+traits.\+h}\end{DoxyCompactItemize}

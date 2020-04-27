@@ -1,0 +1,49 @@
+\hypertarget{polymorphic__layers_2polymorphic__layer__base_8h}{}\section{blackcat/neural\+\_\+networks/polymorphic\+\_\+layers/polymorphic\+\_\+layer\+\_\+base.h File Reference}
+\label{polymorphic__layers_2polymorphic__layer__base_8h}\index{blackcat/neural\+\_\+networks/polymorphic\+\_\+layers/polymorphic\+\_\+layer\+\_\+base.\+h@{blackcat/neural\+\_\+networks/polymorphic\+\_\+layers/polymorphic\+\_\+layer\+\_\+base.\+h}}
+{\ttfamily \#include \char`\"{}../layer\+\_\+loader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}layer\+\_\+traits.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$ostream$>$}\newline
+Include dependency graph for polymorphic\+\_\+layer\+\_\+base.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{polymorphic__layers_2polymorphic__layer__base_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1network__runtime__traits}{bc\+::nn\+::network\+\_\+runtime\+\_\+traits$<$ Learning\+Rate\+Value\+Type $>$}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base$<$ Dimension, Value\+Type, System\+Tag, Allocator, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1nn}{bc\+::nn}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{polymorphic__layers_2polymorphic__layer__base_8h_ad46f3db0227fd6d18f643132a665a23e}{L\+A\+Y\+E\+R\+\_\+\+H\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... ArgsA, class... ArgsB$>$ }\\void \hyperlink{namespacebc_1_1nn_ad126cb88738312204f33d5e21a03bf06}{bc\+::nn\+::link} (std\+::shared\+\_\+ptr$<$ Layer\+\_\+\+Base$<$ Args\+A... $>$$>$ prev, std\+::shared\+\_\+ptr$<$ Layer\+\_\+\+Base$<$ Args\+B... $>$$>$ next)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{polymorphic__layers_2polymorphic__layer__base_8h_ad46f3db0227fd6d18f643132a665a23e}\label{polymorphic__layers_2polymorphic__layer__base_8h_ad46f3db0227fd6d18f643132a665a23e}} 
+\index{polymorphic\+\_\+layers/polymorphic\+\_\+layer\+\_\+base.\+h@{polymorphic\+\_\+layers/polymorphic\+\_\+layer\+\_\+base.\+h}!L\+A\+Y\+E\+R\+\_\+\+H\+\_\+@{L\+A\+Y\+E\+R\+\_\+\+H\+\_\+}}
+\index{L\+A\+Y\+E\+R\+\_\+\+H\+\_\+@{L\+A\+Y\+E\+R\+\_\+\+H\+\_\+}!polymorphic\+\_\+layers/polymorphic\+\_\+layer\+\_\+base.\+h@{polymorphic\+\_\+layers/polymorphic\+\_\+layer\+\_\+base.\+h}}
+\subsubsection{\texorpdfstring{L\+A\+Y\+E\+R\+\_\+\+H\+\_\+}{LAYER\_H\_}}
+{\footnotesize\ttfamily \#define L\+A\+Y\+E\+R\+\_\+\+H\+\_\+}
+

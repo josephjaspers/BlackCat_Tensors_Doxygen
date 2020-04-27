@@ -1,0 +1,163 @@
+\hypertarget{structbc_1_1nn_1_1Layer__Loader}{}\section{bc\+:\+:nn\+:\+:Layer\+\_\+\+Loader Struct Reference}
+\label{structbc_1_1nn_1_1Layer__Loader}\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+
+
+{\ttfamily \#include $<$layer\+\_\+loader.\+h$>$}
+
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Layer\+\_\+\+Loader\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{structbc_1_1nn_1_1Layer__Loader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1Layer__Loader_a6c0c0841d1783a7086914db80c806abd}{Layer\+\_\+\+Loader} (\hyperlink{structbc_1_1string}{string} \hyperlink{structbc_1_1nn_1_1Layer__Loader_a8447f957112de14989e567aab56d847b}{root\+\_\+directory})
+\item 
+void \hyperlink{structbc_1_1nn_1_1Layer__Loader_af679b0095e96922dfbb9dea7e4e1dcfb}{set\+\_\+current\+\_\+layer\+\_\+name} (\hyperlink{structbc_1_1string}{string} \hyperlink{structbc_1_1nn_1_1Layer__Loader_a51ea68daf7551573c3bd85d805c25da6}{current\+\_\+layername})
+\item 
+void \hyperlink{structbc_1_1nn_1_1Layer__Loader_a453dfb4c484e36b23c0d5d7c436efba2}{set\+\_\+current\+\_\+layer\+\_\+index} (int layer\+\_\+index)
+\item 
+\hyperlink{structbc_1_1string}{string} \hyperlink{structbc_1_1nn_1_1Layer__Loader_a16b97a62f8687323772d18f8ff2fb7ec}{current\+\_\+layer\+\_\+subdir} () const
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{structbc_1_1nn_1_1Layer__Loader_a41c022ea61234a753938fcc139a2ae85}{save\+\_\+variable} (const T \&tensor, \hyperlink{structbc_1_1string}{string} variable\+\_\+name)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{structbc_1_1nn_1_1Layer__Loader_a3ac73abe3a2f8e760cd85a31a6f80e40}{load\+\_\+variable} (T \&tensor, \hyperlink{structbc_1_1string}{string} variable\+\_\+name)
+\item 
+{\footnotesize template$<$class Tensor $>$ }\\void \hyperlink{structbc_1_1nn_1_1Layer__Loader_ada98829d9ceb58adce067c3e1e99ed9d}{load\+\_\+variable} (\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&tensor, \hyperlink{structbc_1_1string}{string} variable\+\_\+name, \hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ 1 $>$)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{structbc_1_1nn_1_1Layer__Loader_ac1785de99dd005ba3c5ecc53ec35bb14}{load\+\_\+variable} (T \&tensor, \hyperlink{structbc_1_1string}{string} variable\+\_\+name, \hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ 2 $>$)
+\item 
+{\footnotesize template$<$class T , int X$>$ }\\void \hyperlink{structbc_1_1nn_1_1Layer__Loader_a1f23f8e38f957267f2169281e79b4103}{load\+\_\+variable} (T \&tensor, \hyperlink{structbc_1_1string}{string} variable\+\_\+name, \hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ X $>$)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Layer__Loader_accce0f02309037abf68531b2b9f2c13d}{make\+\_\+current\+\_\+directory} ()
+\item 
+bool \hyperlink{structbc_1_1nn_1_1Layer__Loader_aa92b4f66ab53cad2bbb3def3303b6d30}{file\+\_\+exists} (int \hyperlink{namespacebc_a28c12b5b6f9955c77a8c4b0cf047cfb6}{dim}, \hyperlink{structbc_1_1string}{string} filename)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structbc_1_1string}{string} \hyperlink{structbc_1_1nn_1_1Layer__Loader_a94752be70d96b1f676a716b220da6075}{dim\+\_\+to\+\_\+extension} (int \hyperlink{namespacebc_a28c12b5b6f9955c77a8c4b0cf047cfb6}{dim})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1string}{string} \hyperlink{structbc_1_1nn_1_1Layer__Loader_a8447f957112de14989e567aab56d847b}{root\+\_\+directory}
+\item 
+\hyperlink{structbc_1_1string}{string} \hyperlink{structbc_1_1nn_1_1Layer__Loader_a51ea68daf7551573c3bd85d805c25da6}{current\+\_\+layername}
+\item 
+int \hyperlink{structbc_1_1nn_1_1Layer__Loader_a2d5ed0d0fcbe2acb9442861655f6b72d}{current\+\_\+layer\+\_\+index} = -\/1
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Loader_a6c0c0841d1783a7086914db80c806abd}\label{structbc_1_1nn_1_1Layer__Loader_a6c0c0841d1783a7086914db80c806abd}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}!Layer\+\_\+\+Loader@{Layer\+\_\+\+Loader}}
+\index{Layer\+\_\+\+Loader@{Layer\+\_\+\+Loader}!bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{Layer\+\_\+\+Loader()}{Layer\_Loader()}}
+{\footnotesize\ttfamily bc\+::nn\+::\+Layer\+\_\+\+Loader\+::\+Layer\+\_\+\+Loader (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1string}{string}}]{root\+\_\+directory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Loader_a16b97a62f8687323772d18f8ff2fb7ec}\label{structbc_1_1nn_1_1Layer__Loader_a16b97a62f8687323772d18f8ff2fb7ec}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}!current\+\_\+layer\+\_\+subdir@{current\+\_\+layer\+\_\+subdir}}
+\index{current\+\_\+layer\+\_\+subdir@{current\+\_\+layer\+\_\+subdir}!bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{current\+\_\+layer\+\_\+subdir()}{current\_layer\_subdir()}}
+{\footnotesize\ttfamily \hyperlink{structbc_1_1string}{string} bc\+::nn\+::\+Layer\+\_\+\+Loader\+::current\+\_\+layer\+\_\+subdir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Loader_a94752be70d96b1f676a716b220da6075}\label{structbc_1_1nn_1_1Layer__Loader_a94752be70d96b1f676a716b220da6075}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}!dim\+\_\+to\+\_\+extension@{dim\+\_\+to\+\_\+extension}}
+\index{dim\+\_\+to\+\_\+extension@{dim\+\_\+to\+\_\+extension}!bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{dim\+\_\+to\+\_\+extension()}{dim\_to\_extension()}}
+{\footnotesize\ttfamily static \hyperlink{structbc_1_1string}{string} bc\+::nn\+::\+Layer\+\_\+\+Loader\+::dim\+\_\+to\+\_\+extension (\begin{DoxyParamCaption}\item[{int}]{dim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Loader_aa92b4f66ab53cad2bbb3def3303b6d30}\label{structbc_1_1nn_1_1Layer__Loader_aa92b4f66ab53cad2bbb3def3303b6d30}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}!file\+\_\+exists@{file\+\_\+exists}}
+\index{file\+\_\+exists@{file\+\_\+exists}!bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{file\+\_\+exists()}{file\_exists()}}
+{\footnotesize\ttfamily bool bc\+::nn\+::\+Layer\+\_\+\+Loader\+::file\+\_\+exists (\begin{DoxyParamCaption}\item[{int}]{dim,  }\item[{\hyperlink{structbc_1_1string}{string}}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Loader_a3ac73abe3a2f8e760cd85a31a6f80e40}\label{structbc_1_1nn_1_1Layer__Loader_a3ac73abe3a2f8e760cd85a31a6f80e40}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}!load\+\_\+variable@{load\+\_\+variable}}
+\index{load\+\_\+variable@{load\+\_\+variable}!bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{load\+\_\+variable()}{load\_variable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void bc\+::nn\+::\+Layer\+\_\+\+Loader\+::load\+\_\+variable (\begin{DoxyParamCaption}\item[{T \&}]{tensor,  }\item[{\hyperlink{structbc_1_1string}{string}}]{variable\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Loader_ada98829d9ceb58adce067c3e1e99ed9d}\label{structbc_1_1nn_1_1Layer__Loader_ada98829d9ceb58adce067c3e1e99ed9d}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}!load\+\_\+variable@{load\+\_\+variable}}
+\index{load\+\_\+variable@{load\+\_\+variable}!bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{load\+\_\+variable()}{load\_variable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+void bc\+::nn\+::\+Layer\+\_\+\+Loader\+::load\+\_\+variable (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&}]{tensor,  }\item[{\hyperlink{structbc_1_1string}{string}}]{variable\+\_\+name,  }\item[{\hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ 1 $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Loader_ac1785de99dd005ba3c5ecc53ec35bb14}\label{structbc_1_1nn_1_1Layer__Loader_ac1785de99dd005ba3c5ecc53ec35bb14}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}!load\+\_\+variable@{load\+\_\+variable}}
+\index{load\+\_\+variable@{load\+\_\+variable}!bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{load\+\_\+variable()}{load\_variable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void bc\+::nn\+::\+Layer\+\_\+\+Loader\+::load\+\_\+variable (\begin{DoxyParamCaption}\item[{T \&}]{tensor,  }\item[{\hyperlink{structbc_1_1string}{string}}]{variable\+\_\+name,  }\item[{\hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ 2 $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Loader_a1f23f8e38f957267f2169281e79b4103}\label{structbc_1_1nn_1_1Layer__Loader_a1f23f8e38f957267f2169281e79b4103}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}!load\+\_\+variable@{load\+\_\+variable}}
+\index{load\+\_\+variable@{load\+\_\+variable}!bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{load\+\_\+variable()}{load\_variable()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class T , int X$>$ \\
+void bc\+::nn\+::\+Layer\+\_\+\+Loader\+::load\+\_\+variable (\begin{DoxyParamCaption}\item[{T \&}]{tensor,  }\item[{\hyperlink{structbc_1_1string}{string}}]{variable\+\_\+name,  }\item[{\hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ X $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Loader_accce0f02309037abf68531b2b9f2c13d}\label{structbc_1_1nn_1_1Layer__Loader_accce0f02309037abf68531b2b9f2c13d}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}!make\+\_\+current\+\_\+directory@{make\+\_\+current\+\_\+directory}}
+\index{make\+\_\+current\+\_\+directory@{make\+\_\+current\+\_\+directory}!bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{make\+\_\+current\+\_\+directory()}{make\_current\_directory()}}
+{\footnotesize\ttfamily void bc\+::nn\+::\+Layer\+\_\+\+Loader\+::make\+\_\+current\+\_\+directory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Loader_a41c022ea61234a753938fcc139a2ae85}\label{structbc_1_1nn_1_1Layer__Loader_a41c022ea61234a753938fcc139a2ae85}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}!save\+\_\+variable@{save\+\_\+variable}}
+\index{save\+\_\+variable@{save\+\_\+variable}!bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{save\+\_\+variable()}{save\_variable()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void bc\+::nn\+::\+Layer\+\_\+\+Loader\+::save\+\_\+variable (\begin{DoxyParamCaption}\item[{const T \&}]{tensor,  }\item[{\hyperlink{structbc_1_1string}{string}}]{variable\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Loader_a453dfb4c484e36b23c0d5d7c436efba2}\label{structbc_1_1nn_1_1Layer__Loader_a453dfb4c484e36b23c0d5d7c436efba2}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}!set\+\_\+current\+\_\+layer\+\_\+index@{set\+\_\+current\+\_\+layer\+\_\+index}}
+\index{set\+\_\+current\+\_\+layer\+\_\+index@{set\+\_\+current\+\_\+layer\+\_\+index}!bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{set\+\_\+current\+\_\+layer\+\_\+index()}{set\_current\_layer\_index()}}
+{\footnotesize\ttfamily void bc\+::nn\+::\+Layer\+\_\+\+Loader\+::set\+\_\+current\+\_\+layer\+\_\+index (\begin{DoxyParamCaption}\item[{int}]{layer\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Loader_af679b0095e96922dfbb9dea7e4e1dcfb}\label{structbc_1_1nn_1_1Layer__Loader_af679b0095e96922dfbb9dea7e4e1dcfb}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}!set\+\_\+current\+\_\+layer\+\_\+name@{set\+\_\+current\+\_\+layer\+\_\+name}}
+\index{set\+\_\+current\+\_\+layer\+\_\+name@{set\+\_\+current\+\_\+layer\+\_\+name}!bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{set\+\_\+current\+\_\+layer\+\_\+name()}{set\_current\_layer\_name()}}
+{\footnotesize\ttfamily void bc\+::nn\+::\+Layer\+\_\+\+Loader\+::set\+\_\+current\+\_\+layer\+\_\+name (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1string}{string}}]{current\+\_\+layername }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Loader_a2d5ed0d0fcbe2acb9442861655f6b72d}\label{structbc_1_1nn_1_1Layer__Loader_a2d5ed0d0fcbe2acb9442861655f6b72d}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}!current\+\_\+layer\+\_\+index@{current\+\_\+layer\+\_\+index}}
+\index{current\+\_\+layer\+\_\+index@{current\+\_\+layer\+\_\+index}!bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{current\+\_\+layer\+\_\+index}{current\_layer\_index}}
+{\footnotesize\ttfamily int bc\+::nn\+::\+Layer\+\_\+\+Loader\+::current\+\_\+layer\+\_\+index = -\/1}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Loader_a51ea68daf7551573c3bd85d805c25da6}\label{structbc_1_1nn_1_1Layer__Loader_a51ea68daf7551573c3bd85d805c25da6}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}!current\+\_\+layername@{current\+\_\+layername}}
+\index{current\+\_\+layername@{current\+\_\+layername}!bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{current\+\_\+layername}{current\_layername}}
+{\footnotesize\ttfamily \hyperlink{structbc_1_1string}{string} bc\+::nn\+::\+Layer\+\_\+\+Loader\+::current\+\_\+layername}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Loader_a8447f957112de14989e567aab56d847b}\label{structbc_1_1nn_1_1Layer__Loader_a8447f957112de14989e567aab56d847b}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}!root\+\_\+directory@{root\+\_\+directory}}
+\index{root\+\_\+directory@{root\+\_\+directory}!bc\+::nn\+::\+Layer\+\_\+\+Loader@{bc\+::nn\+::\+Layer\+\_\+\+Loader}}
+\subsubsection{\texorpdfstring{root\+\_\+directory}{root\_directory}}
+{\footnotesize\ttfamily \hyperlink{structbc_1_1string}{string} bc\+::nn\+::\+Layer\+\_\+\+Loader\+::root\+\_\+directory}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/\hyperlink{layer__loader_8h}{layer\+\_\+loader.\+h}\end{DoxyCompactItemize}

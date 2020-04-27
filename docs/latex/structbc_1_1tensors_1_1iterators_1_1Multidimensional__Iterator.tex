@@ -1,0 +1,356 @@
+\hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{}\section{bc\+:\+:tensors\+:\+:iterators\+:\+:Multidimensional\+\_\+\+Iterator$<$ direction, Tensor $>$ Struct Template Reference}
+\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator$<$ direction, Tensor $>$@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator$<$ direction, Tensor $>$}}
+
+
+{\ttfamily \#include $<$multidimensional\+\_\+iterator.\+h$>$}
+
+
+
+Collaboration diagram for bc\+:\+:tensors\+:\+:iterators\+:\+:Multidimensional\+\_\+\+Iterator$<$ direction, Tensor $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ab6cf67ef1131231cac6c58b7c821dc95}{self} = \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} = \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ad66df67ffb1885221a867f76b99ce4e6}{iterator\+\_\+category} = std\+::random\+\_\+access\+\_\+iterator\+\_\+tag
+\item 
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a7d62a3cfbac2dd345ffcbc854aae0e42}{value\+\_\+type} = decltype(std\+::declval$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$().slice(0))
+\item 
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a040272bdf9c6d98261ebf0f710dbdd49}{difference\+\_\+type} = int
+\item 
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a67c5790d500ffb8719140e7ab9861b51}{reference} = \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a7d62a3cfbac2dd345ffcbc854aae0e42}{value\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ad1a73829a7e3eb32ef92915377d0b061}{Multidimensional\+\_\+\+Iterator} (\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&tensor\+\_\+, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} index\+\_\+=0)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a3ba7c23b9d6ef1db03005f86577d44a2}{operator$<$} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&iter)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a69caddf233012cda5fcb564ab705d746}{operator$<$} (int p\+\_\+index)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a8d7f58b99901c4a98a49b556a66284bc}{operator$>$} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&iter)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_af6b26c5e1e7616d5e69ab1ee6bb5eb62}{operator$>$} (int p\+\_\+index)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a24cc26f559cac21831f96621623263f5}{operator$<$=} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&iter)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a4b18ef5219534e2fa93959c3bb829346}{operator$<$=} (int p\+\_\+index)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a5d28bafcc6d7d5a8d9d639a98cf4d952}{operator$>$=} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&iter)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ab6e2e24fb380a3a48a92b489e28f22bb}{operator$>$=} (int p\+\_\+index)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a26f81e587a02821c511c623b7b7072b5}{operator bc\+::size\+\_\+t} () const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a191f9599715f6ef292d22eaab0b5885d}{operator==} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&iter)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a34232f9cda8098d53b487b96ad560bdc}{operator!=} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&iter)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a33a1f1695bd0c44be32b1b728545b4ff}{operator=} (int index\+\_\+)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a989d6ef27f53f889a8f4c98295c233e8}{operator++} ()
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ac92f227fcbb037ab120156a3bdc327bc}{operator-\/-\/} ()
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a1f013db927e7f2d7bf6c029144957ced}{operator++} (int)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a5ed377b6970536b1be3955bde108a815}{operator-\/-\/} (int)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a8d5b1343083dce2357a050839c18c6f8}{operator+=} (int dist)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a79549af1c847709069ab24b2ea1851b8}{operator-\/=} (int dist)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_aef8639021c4a633db864c1cba60ebc21}{operator+} (int dist) const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a7ce1d3be727ba58f15bba8c202dd3fe6}{operator-\/} (int dist) const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a9962d996f063f390f82b380095d29667}{operator+=} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&dist)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ae04f5c8ef0d5d7235391565b59ad8946}{operator-\/=} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&dist)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a36833bd31ecb7f55fecdcf695065ef01}{operator+} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&dist) const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a5ec0af9612c3053645d447a7cf7c7671}{operator-\/} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&dist) const
+\item 
+const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a7d62a3cfbac2dd345ffcbc854aae0e42}{value\+\_\+type} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ac3474f8fdc111d4614d96eef217ab98a}{operator$\ast$} () const
+\item 
+\hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a7d62a3cfbac2dd345ffcbc854aae0e42}{value\+\_\+type} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ac89859344d474e76d5f2586492efdbad}{operator$\ast$} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ab8b259469874b4ed8e9abfa5d293603e}{tensor}
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ac11ada5f5f79b107b2c21b5bb947918f}{index}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a040272bdf9c6d98261ebf0f710dbdd49}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a040272bdf9c6d98261ebf0f710dbdd49}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{difference\+\_\+type}{difference\_type}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::\hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a040272bdf9c6d98261ebf0f710dbdd49}{difference\+\_\+type} =  int}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::\hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} =  \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{Multidimensional\+\_\+\+Iterator}$<$\hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ad66df67ffb1885221a867f76b99ce4e6}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ad66df67ffb1885221a867f76b99ce4e6}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!iterator\+\_\+category@{iterator\+\_\+category}}
+\index{iterator\+\_\+category@{iterator\+\_\+category}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{iterator\+\_\+category}{iterator\_category}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::\hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ad66df67ffb1885221a867f76b99ce4e6}{iterator\+\_\+category} =  std\+::random\+\_\+access\+\_\+iterator\+\_\+tag}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a67c5790d500ffb8719140e7ab9861b51}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a67c5790d500ffb8719140e7ab9861b51}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!reference@{reference}}
+\index{reference@{reference}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::\hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a67c5790d500ffb8719140e7ab9861b51}{reference} =  \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a7d62a3cfbac2dd345ffcbc854aae0e42}{value\+\_\+type}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ab6cf67ef1131231cac6c58b7c821dc95}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ab6cf67ef1131231cac6c58b7c821dc95}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!self@{self}}
+\index{self@{self}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{self}{self}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::\hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ab6cf67ef1131231cac6c58b7c821dc95}{self} =  \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{Multidimensional\+\_\+\+Iterator}$<$\hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a7d62a3cfbac2dd345ffcbc854aae0e42}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a7d62a3cfbac2dd345ffcbc854aae0e42}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::\hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a7d62a3cfbac2dd345ffcbc854aae0e42}{value\+\_\+type} =  decltype(std\+::declval$<$\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}$>$().slice(0))}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ad1a73829a7e3eb32ef92915377d0b061}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ad1a73829a7e3eb32ef92915377d0b061}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!Multidimensional\+\_\+\+Iterator@{Multidimensional\+\_\+\+Iterator}}
+\index{Multidimensional\+\_\+\+Iterator@{Multidimensional\+\_\+\+Iterator}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{Multidimensional\+\_\+\+Iterator()}{Multidimensional\_Iterator()}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::\hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{Multidimensional\+\_\+\+Iterator} (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&}]{tensor\+\_\+,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{index\+\_\+ = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a26f81e587a02821c511c623b7b7072b5}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a26f81e587a02821c511c623b7b7072b5}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator bc\+::size\+\_\+t@{operator bc\+::size\+\_\+t}}
+\index{operator bc\+::size\+\_\+t@{operator bc\+::size\+\_\+t}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator bc\+::size\+\_\+t()}{operator bc::size\_t()}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a34232f9cda8098d53b487b96ad560bdc}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a34232f9cda8098d53b487b96ad560bdc}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ac3474f8fdc111d4614d96eef217ab98a}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ac3474f8fdc111d4614d96eef217ab98a}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a7d62a3cfbac2dd345ffcbc854aae0e42}{value\+\_\+type} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ac89859344d474e76d5f2586492efdbad}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ac89859344d474e76d5f2586492efdbad}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a7d62a3cfbac2dd345ffcbc854aae0e42}{value\+\_\+type} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_aef8639021c4a633db864c1cba60ebc21}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_aef8639021c4a633db864c1cba60ebc21}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator+@{operator+}}
+\index{operator+@{operator+}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator+ (\begin{DoxyParamCaption}\item[{int}]{dist }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a36833bd31ecb7f55fecdcf695065ef01}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a36833bd31ecb7f55fecdcf695065ef01}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator+@{operator+}}
+\index{operator+@{operator+}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator+ (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&}]{dist }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a989d6ef27f53f889a8f4c98295c233e8}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a989d6ef27f53f889a8f4c98295c233e8}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a1f013db927e7f2d7bf6c029144957ced}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a1f013db927e7f2d7bf6c029144957ced}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a8d5b1343083dce2357a050839c18c6f8}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a8d5b1343083dce2357a050839c18c6f8}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator+= (\begin{DoxyParamCaption}\item[{int}]{dist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a9962d996f063f390f82b380095d29667}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a9962d996f063f390f82b380095d29667}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&}]{dist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a7ce1d3be727ba58f15bba8c202dd3fe6}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a7ce1d3be727ba58f15bba8c202dd3fe6}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{int}]{dist }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a5ec0af9612c3053645d447a7cf7c7671}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a5ec0af9612c3053645d447a7cf7c7671}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&}]{dist }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ac92f227fcbb037ab120156a3bdc327bc}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ac92f227fcbb037ab120156a3bdc327bc}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a5ed377b6970536b1be3955bde108a815}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a5ed377b6970536b1be3955bde108a815}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a79549af1c847709069ab24b2ea1851b8}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a79549af1c847709069ab24b2ea1851b8}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{int}]{dist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ae04f5c8ef0d5d7235391565b59ad8946}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ae04f5c8ef0d5d7235391565b59ad8946}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&}]{dist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a69caddf233012cda5fcb564ab705d746}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a69caddf233012cda5fcb564ab705d746}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a3ba7c23b9d6ef1db03005f86577d44a2}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a3ba7c23b9d6ef1db03005f86577d44a2}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a24cc26f559cac21831f96621623263f5}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a24cc26f559cac21831f96621623263f5}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a4b18ef5219534e2fa93959c3bb829346}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a4b18ef5219534e2fa93959c3bb829346}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator$<$= (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a33a1f1695bd0c44be32b1b728545b4ff}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a33a1f1695bd0c44be32b1b728545b4ff}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator= (\begin{DoxyParamCaption}\item[{int}]{index\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a191f9599715f6ef292d22eaab0b5885d}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a191f9599715f6ef292d22eaab0b5885d}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a8d7f58b99901c4a98a49b556a66284bc}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a8d7f58b99901c4a98a49b556a66284bc}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_af6b26c5e1e7616d5e69ab1ee6bb5eb62}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_af6b26c5e1e7616d5e69ab1ee6bb5eb62}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator$>$ (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a5d28bafcc6d7d5a8d9d639a98cf4d952}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a5d28bafcc6d7d5a8d9d639a98cf4d952}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_a12d78eb95b3b0fbee7c824f0a79c1513}{Iterator} \&}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ab6e2e24fb380a3a48a92b489e28f22bb}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ab6e2e24fb380a3a48a92b489e28f22bb}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::operator$>$= (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ac11ada5f5f79b107b2c21b5bb947918f}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ac11ada5f5f79b107b2c21b5bb947918f}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!index@{index}}
+\index{index@{index}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::index}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ab8b259469874b4ed8e9abfa5d293603e}\label{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator_ab8b259469874b4ed8e9abfa5d293603e}} 
+\index{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}!tensor@{tensor}}
+\index{tensor@{tensor}!bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{tensor}{tensor}}
+{\footnotesize\ttfamily template$<$direction direction, class Tensor$>$ \\
+\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator}$<$ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction}, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::tensor}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/tensors/iterators/\hyperlink{multidimensional__iterator_8h}{multidimensional\+\_\+iterator.\+h}\end{DoxyCompactItemize}

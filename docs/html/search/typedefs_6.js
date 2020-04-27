@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['greedy_5fevaluate_5fdelta',['greedy_evaluate_delta',['../structbc_1_1nn_1_1Convolution.html#a5e9292df10095f5c69ef52837f523290',1,'bc::nn::Convolution::greedy_evaluate_delta()'],['../structbc_1_1nn_1_1FeedForward.html#a88c28010efe8e3b192bf94c57d26affe',1,'bc::nn::FeedForward::greedy_evaluate_delta()'],['../structbc_1_1nn_1_1Flatten.html#afd38f0f24bbf98d7f5ecb70198a16b16',1,'bc::nn::Flatten::greedy_evaluate_delta()'],['../structbc_1_1nn_1_1layer__traits.html#a07a975e03a39e8b1c9040f970e5efe1c',1,'bc::nn::layer_traits::greedy_evaluate_delta()'],['../structbc_1_1nn_1_1LSTM.html#aa147016269d4e28e85e6ecfa224be9e0',1,'bc::nn::LSTM::greedy_evaluate_delta()'],['../structbc_1_1nn_1_1Max__Pooling.html#aced0066829bfb298110f9de43ef27b93',1,'bc::nn::Max_Pooling::greedy_evaluate_delta()'],['../structbc_1_1nn_1_1Recurrent.html#ab97457c29f8666ce83b9ea94b0ad1053',1,'bc::nn::Recurrent::greedy_evaluate_delta()']]]
+];

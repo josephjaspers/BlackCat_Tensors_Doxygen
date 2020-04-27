@@ -1,0 +1,266 @@
+\hypertarget{tensor__operations_8h}{}\section{blackcat/tensors/tensor\+\_\+operations.h File Reference}
+\label{tensor__operations_8h}\index{blackcat/tensors/tensor\+\_\+operations.\+h@{blackcat/tensors/tensor\+\_\+operations.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{tensor__operations_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structAlias}{Alias}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{tensor__base_8h_ad6d736d629e6a673b171c1b0a4ed11e1}{B\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+I\+G\+N\+A\+B\+LE}(literal)
+\item 
+\#define \hyperlink{tensor__base_8h_ab862766b675d05a49f1da839d57f9c5f}{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+B\+A\+S\+I\+C\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}(op,  op\+\_\+functor)
+\item 
+\#define \hyperlink{tensor__base_8h_a4d8d054f0c14239381f79b7622541801}{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}(op,  op\+\_\+functor)
+\item 
+\#define \hyperlink{tensor__base_8h_a0819e6ec22671c7ffc46d1d95b508bcb}{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}(op,  op\+\_\+functor)
+\item 
+\#define \hyperlink{tensor__operations_8h_ad6d736d629e6a673b171c1b0a4ed11e1}{B\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+I\+G\+N\+A\+B\+LE}(literal)
+\item 
+\#define \hyperlink{tensor__operations_8h_ab862766b675d05a49f1da839d57f9c5f}{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+B\+A\+S\+I\+C\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}(op,  op\+\_\+functor)
+\item 
+\#define \hyperlink{tensor__operations_8h_a4d8d054f0c14239381f79b7622541801}{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}(op,  op\+\_\+functor)
+\item 
+\#define \hyperlink{tensor__operations_8h_a0819e6ec22671c7ffc46d1d95b508bcb}{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}(op,  op\+\_\+functor)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Xpr $>$ }\\\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} self\+\_\+type \& \hyperlink{tensor__operations_8h_a3013fd8751751775edd4b23073cf90b2}{operator=} (const Expression\+\_\+\+Base$<$ Xpr $>$ \&param)
+\item 
+{\footnotesize template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ }\\self\+\_\+type \& \hyperlink{tensor__operations_8h_ae89becfd9b421bd50e0f802f3068459c}{operator=} (const Scalar\+Type \&param)
+\item 
+{\footnotesize template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ }\\self\+\_\+type \& \hyperlink{tensor__operations_8h_a2f1a4c71928b4045d36fc1bb2ef07b92}{operator+=} (const Scalar\+Type \&param)
+\item 
+{\footnotesize template$<$class Xpr $>$ }\\\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} self\+\_\+type \& \hyperlink{tensor__operations_8h_a92096eeba63b345007f5c53cc1f70c7b}{operator+=} (const Expression\+\_\+\+Base$<$ Xpr $>$ \&param)
+\item 
+{\footnotesize template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ }\\self\+\_\+type \& \hyperlink{tensor__operations_8h_a7354bb5790a67c4fd591bd54d5edab8d}{operator-\/=} (const Scalar\+Type \&param)
+\item 
+{\footnotesize template$<$class Xpr $>$ }\\\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} self\+\_\+type \& \hyperlink{tensor__operations_8h_ad2951de7e4baaf961a9bdf6ff73fe30a}{operator-\/=} (const Expression\+\_\+\+Base$<$ Xpr $>$ \&param)
+\item 
+{\footnotesize template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ }\\self\+\_\+type \& \hyperlink{tensor__operations_8h_a0993a786ca0a5d0925c99e223d6679d1}{operator\%=} (const Scalar\+Type \&param)
+\item 
+{\footnotesize template$<$class Xpr $>$ }\\\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} self\+\_\+type \& \hyperlink{tensor__operations_8h_a3b0f3fe8e57a6f6e4bf9edd6e648e2a0}{operator\%=} (const Expression\+\_\+\+Base$<$ Xpr $>$ \&param)
+\item 
+{\footnotesize template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ }\\self\+\_\+type \& \hyperlink{tensor__operations_8h_a1a18ca9216e2e474f781e3aed6619857}{operator/=} (const Scalar\+Type \&param)
+\item 
+{\footnotesize template$<$class Xpr $>$ }\\\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} self\+\_\+type \& \hyperlink{tensor__operations_8h_a2e4b38943c596e7efe979f4e61fb9e0b}{operator/=} (const Expression\+\_\+\+Base$<$ Xpr $>$ \&param)
+\item 
+\hyperlink{structAlias}{Alias} \hyperlink{tensor__operations_8h_acde7d9cad311285b721098f6337de28e}{alias} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{tensor__base_8h_ad6d736d629e6a673b171c1b0a4ed11e1}\label{tensor__base_8h_ad6d736d629e6a673b171c1b0a4ed11e1}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!B\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+I\+G\+N\+A\+B\+LE@{B\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+I\+G\+N\+A\+B\+LE}}
+\index{B\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+I\+G\+N\+A\+B\+LE@{B\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+I\+G\+N\+A\+B\+LE}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+I\+G\+N\+A\+B\+LE}{BC\_ASSERT\_ASSIGNABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+I\+G\+N\+A\+B\+LE(\begin{DoxyParamCaption}\item[{}]{literal }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+static\_assert(                                  \(\backslash\)
+        traits\_type::is\_copy\_assignable::value, \(\backslash\)
+        \textcolor{stringliteral}{"ASSERT COPY ASSIGNABLE: "} literal)
+\end{DoxyCode}
+\mbox{\Hypertarget{tensor__operations_8h_ad6d736d629e6a673b171c1b0a4ed11e1}\label{tensor__operations_8h_ad6d736d629e6a673b171c1b0a4ed11e1}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!B\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+I\+G\+N\+A\+B\+LE@{B\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+I\+G\+N\+A\+B\+LE}}
+\index{B\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+I\+G\+N\+A\+B\+LE@{B\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+I\+G\+N\+A\+B\+LE}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+I\+G\+N\+A\+B\+LE}{BC\_ASSERT\_ASSIGNABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+A\+S\+S\+I\+G\+N\+A\+B\+LE(\begin{DoxyParamCaption}\item[{}]{literal }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+static\_assert(                                  \(\backslash\)
+        traits\_type::is\_copy\_assignable::value, \(\backslash\)
+        \textcolor{stringliteral}{"ASSERT COPY ASSIGNABLE: "} literal)
+\end{DoxyCode}
+\mbox{\Hypertarget{tensor__operations_8h_a0819e6ec22671c7ffc46d1d95b508bcb}\label{tensor__operations_8h_a0819e6ec22671c7ffc46d1d95b508bcb}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF@{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}}
+\index{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF@{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}{BC\_OPER\_ASSIGNMENT\_DEF}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{op,  }\item[{}]{op\+\_\+functor }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{tensor__operations_8h_a4d8d054f0c14239381f79b7622541801}{BC\_OPER\_SCALAR\_ASSIGNMENT\_DEF}(op, op\_functor)    \(\backslash\)
+        BC\_OPER\_BASIC\_ASSIGNMENT\_DEF(op, op\_functor)
+\end{DoxyCode}
+\mbox{\Hypertarget{tensor__base_8h_a0819e6ec22671c7ffc46d1d95b508bcb}\label{tensor__base_8h_a0819e6ec22671c7ffc46d1d95b508bcb}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF@{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}}
+\index{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF@{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}{BC\_OPER\_ASSIGNMENT\_DEF}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{op,  }\item[{}]{op\+\_\+functor }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{tensor__base_8h_a4d8d054f0c14239381f79b7622541801}{BC\_OPER\_SCALAR\_ASSIGNMENT\_DEF}(op, op\_functor)    \(\backslash\)
+        BC\_OPER\_BASIC\_ASSIGNMENT\_DEF(op, op\_functor)
+\end{DoxyCode}
+\mbox{\Hypertarget{tensor__base_8h_ab862766b675d05a49f1da839d57f9c5f}\label{tensor__base_8h_ab862766b675d05a49f1da839d57f9c5f}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+B\+A\+S\+I\+C\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF@{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+B\+A\+S\+I\+C\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}}
+\index{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+B\+A\+S\+I\+C\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF@{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+B\+A\+S\+I\+C\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+B\+A\+S\+I\+C\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}{BC\_OPER\_BASIC\_ASSIGNMENT\_DEF}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+B\+A\+S\+I\+C\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{op,  }\item[{}]{op\+\_\+functor }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\(\backslash\)
+    template<class Xpr> BCHOT                                              \(\backslash\)
+    self\_type& \textcolor{keyword}{operator} op (\textcolor{keyword}{const} Expression\_Base<Xpr>& param) \{           \(\backslash\)
+        BC\_ASSERT\_ASSIGNABLE(                                              \(\backslash\)
+                \textcolor{stringliteral}{"operator "} #op \textcolor{stringliteral}{"(const Expression\_Base<Xpr>& param)"});    \(\backslash\)
+        assert\_valid(param);                                               \(\backslash\)
+        using operation = std::conditional\_t<                              \(\backslash\)
+                (tensor\_dim >= Xpr::tensor\_dim),                           \(\backslash\)
+                oper::op\_functor##\_Assign,                                 \(\backslash\)
+                oper::Atomic\_##op\_functor<system\_tag>>;                    \(\backslash\)
+        return evaluate(assignment\_bi\_expr(operation(), param));           \(\backslash\)
+    \}                                                                      \(\backslash\)
+\end{DoxyCode}
+\mbox{\Hypertarget{tensor__operations_8h_ab862766b675d05a49f1da839d57f9c5f}\label{tensor__operations_8h_ab862766b675d05a49f1da839d57f9c5f}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+B\+A\+S\+I\+C\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF@{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+B\+A\+S\+I\+C\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}}
+\index{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+B\+A\+S\+I\+C\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF@{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+B\+A\+S\+I\+C\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+B\+A\+S\+I\+C\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}{BC\_OPER\_BASIC\_ASSIGNMENT\_DEF}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+B\+A\+S\+I\+C\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{op,  }\item[{}]{op\+\_\+functor }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\(\backslash\)
+    template<class Xpr> BCHOT                                              \(\backslash\)
+    self\_type& \textcolor{keyword}{operator} op (\textcolor{keyword}{const} Expression\_Base<Xpr>& param) \{           \(\backslash\)
+        BC\_ASSERT\_ASSIGNABLE(                                              \(\backslash\)
+                \textcolor{stringliteral}{"operator "} #op \textcolor{stringliteral}{"(const Expression\_Base<Xpr>& param)"});    \(\backslash\)
+        assert\_valid(param);                                               \(\backslash\)
+        using operation = std::conditional\_t<                              \(\backslash\)
+                (tensor\_dim >= Xpr::tensor\_dim),                           \(\backslash\)
+                oper::op\_functor##\_Assign,                                 \(\backslash\)
+                oper::Atomic\_##op\_functor<system\_tag>>;                    \(\backslash\)
+        return evaluate(assignment\_bi\_expr(operation(), param));           \(\backslash\)
+    \}                                                                      \(\backslash\)
+\end{DoxyCode}
+\mbox{\Hypertarget{tensor__base_8h_a4d8d054f0c14239381f79b7622541801}\label{tensor__base_8h_a4d8d054f0c14239381f79b7622541801}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF@{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}}
+\index{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF@{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}{BC\_OPER\_SCALAR\_ASSIGNMENT\_DEF}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{op,  }\item[{}]{op\+\_\+functor }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\(\backslash\)
+    template<class ScalarType, class=enable\_if\_scalar<ScalarType>>         \(\backslash\)
+    self\_type& \textcolor{keyword}{operator}  op (\textcolor{keyword}{const} ScalarType& param) \{                    \(\backslash\)
+        BC\_ASSERT\_ASSIGNABLE(                                              \(\backslash\)
+                \textcolor{stringliteral}{"operator "} #op \textcolor{stringliteral}{" (const Expression\_Base<Xpr>& param)"});   \(\backslash\)
+        value\_type value = param;                                          \(\backslash\)
+        return evaluate(assignment\_bi\_expr(                                \(\backslash\)
+                        oper:: op\_functor##\_Assign(),                      \(\backslash\)
+                        exprs::make\_scalar\_constant<system\_tag>(value)));  \(\backslash\)
+    \}                                                                      \(\backslash\)
+\end{DoxyCode}
+\mbox{\Hypertarget{tensor__operations_8h_a4d8d054f0c14239381f79b7622541801}\label{tensor__operations_8h_a4d8d054f0c14239381f79b7622541801}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF@{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}}
+\index{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF@{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF}{BC\_OPER\_SCALAR\_ASSIGNMENT\_DEF}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+O\+P\+E\+R\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+A\+S\+S\+I\+G\+N\+M\+E\+N\+T\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{op,  }\item[{}]{op\+\_\+functor }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\(\backslash\)
+    template<class ScalarType, class=enable\_if\_scalar<ScalarType>>         \(\backslash\)
+    self\_type& \textcolor{keyword}{operator}  op (\textcolor{keyword}{const} ScalarType& param) \{                    \(\backslash\)
+        BC\_ASSERT\_ASSIGNABLE(                                              \(\backslash\)
+                \textcolor{stringliteral}{"operator "} #op \textcolor{stringliteral}{" (const Expression\_Base<Xpr>& param)"});   \(\backslash\)
+        value\_type value = param;                                          \(\backslash\)
+        return evaluate(assignment\_bi\_expr(                                \(\backslash\)
+                        oper:: op\_functor##\_Assign(),                      \(\backslash\)
+                        exprs::make\_scalar\_constant<system\_tag>(value)));  \(\backslash\)
+    \}                                                                      \(\backslash\)
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{tensor__operations_8h_acde7d9cad311285b721098f6337de28e}\label{tensor__operations_8h_acde7d9cad311285b721098f6337de28e}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!alias@{alias}}
+\index{alias@{alias}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{alias()}{alias()}}
+{\footnotesize\ttfamily \hyperlink{structAlias}{Alias} alias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tensor__operations_8h_a0993a786ca0a5d0925c99e223d6679d1}\label{tensor__operations_8h_a0993a786ca0a5d0925c99e223d6679d1}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!operator\%=@{operator\%=}}
+\index{operator\%=@{operator\%=}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{operator\%=()}{operator\%=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ \\
+self\+\_\+type\& operator\%= (\begin{DoxyParamCaption}\item[{const Scalar\+Type \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tensor__operations_8h_a3b0f3fe8e57a6f6e4bf9edd6e648e2a0}\label{tensor__operations_8h_a3b0f3fe8e57a6f6e4bf9edd6e648e2a0}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!operator\%=@{operator\%=}}
+\index{operator\%=@{operator\%=}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{operator\%=()}{operator\%=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Xpr $>$ \\
+\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} self\+\_\+type\& operator\%= (\begin{DoxyParamCaption}\item[{const Expression\+\_\+\+Base$<$ Xpr $>$ \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tensor__operations_8h_a92096eeba63b345007f5c53cc1f70c7b}\label{tensor__operations_8h_a92096eeba63b345007f5c53cc1f70c7b}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Xpr $>$ \\
+\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} self\+\_\+type\& operator+= (\begin{DoxyParamCaption}\item[{const Expression\+\_\+\+Base$<$ Xpr $>$ \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tensor__operations_8h_a2f1a4c71928b4045d36fc1bb2ef07b92}\label{tensor__operations_8h_a2f1a4c71928b4045d36fc1bb2ef07b92}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ \\
+self\+\_\+type\& operator+= (\begin{DoxyParamCaption}\item[{const Scalar\+Type \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tensor__operations_8h_a7354bb5790a67c4fd591bd54d5edab8d}\label{tensor__operations_8h_a7354bb5790a67c4fd591bd54d5edab8d}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ \\
+self\+\_\+type\& operator-\/= (\begin{DoxyParamCaption}\item[{const Scalar\+Type \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tensor__operations_8h_ad2951de7e4baaf961a9bdf6ff73fe30a}\label{tensor__operations_8h_ad2951de7e4baaf961a9bdf6ff73fe30a}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Xpr $>$ \\
+\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} self\+\_\+type\& operator-\/= (\begin{DoxyParamCaption}\item[{const Expression\+\_\+\+Base$<$ Xpr $>$ \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tensor__operations_8h_a1a18ca9216e2e474f781e3aed6619857}\label{tensor__operations_8h_a1a18ca9216e2e474f781e3aed6619857}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ \\
+self\+\_\+type\& operator/= (\begin{DoxyParamCaption}\item[{const Scalar\+Type \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tensor__operations_8h_a2e4b38943c596e7efe979f4e61fb9e0b}\label{tensor__operations_8h_a2e4b38943c596e7efe979f4e61fb9e0b}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Xpr $>$ \\
+\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} self\+\_\+type\& operator/= (\begin{DoxyParamCaption}\item[{const Expression\+\_\+\+Base$<$ Xpr $>$ \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tensor__operations_8h_a3013fd8751751775edd4b23073cf90b2}\label{tensor__operations_8h_a3013fd8751751775edd4b23073cf90b2}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!operator=@{operator=}}
+\index{operator=@{operator=}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Xpr $>$ \\
+\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} self\+\_\+type\& operator= (\begin{DoxyParamCaption}\item[{const Expression\+\_\+\+Base$<$ Xpr $>$ \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{tensor__operations_8h_ae89becfd9b421bd50e0f802f3068459c}\label{tensor__operations_8h_ae89becfd9b421bd50e0f802f3068459c}} 
+\index{tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}!operator=@{operator=}}
+\index{operator=@{operator=}!tensor\+\_\+operations.\+h@{tensor\+\_\+operations.\+h}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ \\
+self\+\_\+type\& operator= (\begin{DoxyParamCaption}\item[{const Scalar\+Type \&}]{param }\end{DoxyParamCaption})}
+

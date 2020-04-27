@@ -1,0 +1,255 @@
+\hypertarget{structbc_1_1nn_1_1Layer__Manager}{}\section{bc\+:\+:nn\+:\+:Layer\+\_\+\+Manager$<$ Derived, Layer $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1Layer__Manager}\index{bc\+::nn\+::\+Layer\+\_\+\+Manager$<$ Derived, Layer $>$@{bc\+::nn\+::\+Layer\+\_\+\+Manager$<$ Derived, Layer $>$}}
+
+
+{\ttfamily \#include $<$layer\+\_\+manager.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:nn\+:\+:Layer\+\_\+\+Manager$<$ Derived, Layer $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{structbc_1_1nn_1_1Layer__Manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Layer\+\_\+\+Manager$<$ Derived, Layer $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{structbc_1_1nn_1_1Layer__Manager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Manager_a2f124b1c1df68e184adf91d16cf0a5c3}{input\+\_\+tensor\+\_\+dim} = typename \hyperlink{structbc_1_1nn_1_1layer__traits}{layer\+\_\+traits}$<$ Layer $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_a2f124b1c1df68e184adf91d16cf0a5c3}{input\+\_\+tensor\+\_\+dim}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Manager_aabdbf2c4a435aa8256a9a7fac4ee3fc2}{output\+\_\+tensor\+\_\+dim} = typename \hyperlink{structbc_1_1nn_1_1layer__traits}{layer\+\_\+traits}$<$ Layer $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_aabdbf2c4a435aa8256a9a7fac4ee3fc2}{output\+\_\+tensor\+\_\+dim}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Manager_a6618b1c4afdad0eafd781b319f27f230}{allocator\+\_\+type} = typename \hyperlink{structbc_1_1nn_1_1layer__traits}{layer\+\_\+traits}$<$ Layer $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_a6618b1c4afdad0eafd781b319f27f230}{allocator\+\_\+type}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Manager_af6edd9edf47c73bfc1b200b3cbf2155f}{value\+\_\+type} = typename \hyperlink{structbc_1_1nn_1_1layer__traits}{layer\+\_\+traits}$<$ Layer $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_af6edd9edf47c73bfc1b200b3cbf2155f}{value\+\_\+type}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Manager_aad655a7315acde4c1ff5530b8d4331d3}{input\+\_\+tensor\+\_\+type} = \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$ input\+\_\+tensor\+\_\+dim\+::value, \hyperlink{structbc_1_1nn_1_1Layer__Manager_af6edd9edf47c73bfc1b200b3cbf2155f}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Layer__Manager_a6618b1c4afdad0eafd781b319f27f230}{allocator\+\_\+type} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Manager_a6e6cd6d324cc79ca740eea2f2438eccb}{batched\+\_\+input\+\_\+tensor\+\_\+type} = \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$ input\+\_\+tensor\+\_\+dim\+::value+1, \hyperlink{structbc_1_1nn_1_1Layer__Manager_af6edd9edf47c73bfc1b200b3cbf2155f}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Layer__Manager_a6618b1c4afdad0eafd781b319f27f230}{allocator\+\_\+type} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Manager_af930e926669a5c4130511dcddc289539}{batched\+\_\+output\+\_\+tensor\+\_\+type} = \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$ output\+\_\+tensor\+\_\+dim\+::value+1, \hyperlink{structbc_1_1nn_1_1Layer__Manager_af6edd9edf47c73bfc1b200b3cbf2155f}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Layer__Manager_a6618b1c4afdad0eafd781b319f27f230}{allocator\+\_\+type} $>$
+\item 
+{\footnotesize template$<$char C, class Tensor , cache\+\_\+key\+\_\+type override = cache\+\_\+key\+\_\+type\+::inherit$>$ }\\using \hyperlink{structbc_1_1nn_1_1Layer__Manager_a7b70f92269eee6d1110acf65cc988b67}{key\+\_\+type} = \hyperlink{structbc_1_1nn_1_1cache__key}{cache\+\_\+key}$<$ \hyperlink{structbc_1_1utility_1_1Name}{bc\+::utility\+::\+Name}$<$ C $>$, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, override $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{structbc_1_1nn_1_1Layer__Manager_a6380a6af1c2939a1c8ddb85f7afdc56d}{Layer\+\_\+\+Manager} (Args... args)
+\item 
+{\footnotesize template$<$class T , class l  = Layer$>$ }\\auto \hyperlink{structbc_1_1nn_1_1Layer__Manager_a92fe4d1139a4e6a06918241e5869dd04}{forward\+\_\+propagation} (const T \&expression)
+\item 
+{\footnotesize template$<$class T $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Layer__Manager_ae3ce714c4ab44c3b0422e4f496c41467}{back\+\_\+propagation} (const T \&dy)
+\item 
+{\footnotesize template$<$class T $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Layer__Manager_a1cfda4ed795fa9a5193673f0e62e428a}{predict} (const T \&expression)
+\item 
+{\footnotesize template$<$class T $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Layer__Manager_a1d600aa19f078f6f922134c87542a5c4}{single\+\_\+predict} (const T \&expression)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Layer__Manager_a778156e80b4ede0516bb20d11c52cf3c}{update\+\_\+weights} ()
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Manager_a56a0178f1067476e6891cbee68a0aacc}{save} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader) const override
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Manager_a1802dc0cfb6a4287ff5d45de6446feab}{load} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader) override
+\item 
+void \hyperlink{structbc_1_1nn_1_1Layer__Manager_a3bf74352097075b764c7c5196f4c2218}{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict} (int batch\+\_\+index)
+\item 
+const \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \& \hyperlink{structbc_1_1nn_1_1Layer__Manager_a4a6ff0e6ae647c1df47183cf17c7ad73}{get\+\_\+cache} () const
+\item 
+\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \& \hyperlink{structbc_1_1nn_1_1Layer__Manager_a2fb6e5be07e3a0972c1e42ed5675927d}{get\+\_\+cache} ()
+\item 
+void \hyperlink{structbc_1_1nn_1_1Layer__Manager_ad0b46a663ef46dee13c2dffbd4c8b1f3}{zero\+\_\+time\+\_\+index} ()
+\item 
+void \hyperlink{structbc_1_1nn_1_1Layer__Manager_aa05263df7411cc3be9384d834eeb5525}{increment\+\_\+time\+\_\+index} ()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class D , class L $>$ }\\class \hyperlink{structbc_1_1nn_1_1Layer__Manager_ad8aa8062ca6d04ccdeff27cf28c1eb4e}{Layer\+\_\+\+Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_a6618b1c4afdad0eafd781b319f27f230}\label{structbc_1_1nn_1_1Layer__Manager_a6618b1c4afdad0eafd781b319f27f230}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_a6618b1c4afdad0eafd781b319f27f230}{allocator\+\_\+type} =  typename \hyperlink{structbc_1_1nn_1_1layer__traits}{layer\+\_\+traits}$<$Layer$>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_a6618b1c4afdad0eafd781b319f27f230}{allocator\+\_\+type}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_a6e6cd6d324cc79ca740eea2f2438eccb}\label{structbc_1_1nn_1_1Layer__Manager_a6e6cd6d324cc79ca740eea2f2438eccb}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!batched\+\_\+input\+\_\+tensor\+\_\+type@{batched\+\_\+input\+\_\+tensor\+\_\+type}}
+\index{batched\+\_\+input\+\_\+tensor\+\_\+type@{batched\+\_\+input\+\_\+tensor\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{batched\+\_\+input\+\_\+tensor\+\_\+type}{batched\_input\_tensor\_type}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_a6e6cd6d324cc79ca740eea2f2438eccb}{batched\+\_\+input\+\_\+tensor\+\_\+type} =  \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$input\+\_\+tensor\+\_\+dim\+::value+1, \hyperlink{structbc_1_1nn_1_1Layer__Manager_af6edd9edf47c73bfc1b200b3cbf2155f}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Layer__Manager_a6618b1c4afdad0eafd781b319f27f230}{allocator\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_af930e926669a5c4130511dcddc289539}\label{structbc_1_1nn_1_1Layer__Manager_af930e926669a5c4130511dcddc289539}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!batched\+\_\+output\+\_\+tensor\+\_\+type@{batched\+\_\+output\+\_\+tensor\+\_\+type}}
+\index{batched\+\_\+output\+\_\+tensor\+\_\+type@{batched\+\_\+output\+\_\+tensor\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{batched\+\_\+output\+\_\+tensor\+\_\+type}{batched\_output\_tensor\_type}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_af930e926669a5c4130511dcddc289539}{batched\+\_\+output\+\_\+tensor\+\_\+type} =  \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$output\+\_\+tensor\+\_\+dim\+::value+1, \hyperlink{structbc_1_1nn_1_1Layer__Manager_af6edd9edf47c73bfc1b200b3cbf2155f}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Layer__Manager_a6618b1c4afdad0eafd781b319f27f230}{allocator\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_a2f124b1c1df68e184adf91d16cf0a5c3}\label{structbc_1_1nn_1_1Layer__Manager_a2f124b1c1df68e184adf91d16cf0a5c3}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!input\+\_\+tensor\+\_\+dim@{input\+\_\+tensor\+\_\+dim}}
+\index{input\+\_\+tensor\+\_\+dim@{input\+\_\+tensor\+\_\+dim}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{input\+\_\+tensor\+\_\+dim}{input\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_a2f124b1c1df68e184adf91d16cf0a5c3}{input\+\_\+tensor\+\_\+dim} =  typename \hyperlink{structbc_1_1nn_1_1layer__traits}{layer\+\_\+traits}$<$Layer$>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_a2f124b1c1df68e184adf91d16cf0a5c3}{input\+\_\+tensor\+\_\+dim}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_aad655a7315acde4c1ff5530b8d4331d3}\label{structbc_1_1nn_1_1Layer__Manager_aad655a7315acde4c1ff5530b8d4331d3}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!input\+\_\+tensor\+\_\+type@{input\+\_\+tensor\+\_\+type}}
+\index{input\+\_\+tensor\+\_\+type@{input\+\_\+tensor\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{input\+\_\+tensor\+\_\+type}{input\_tensor\_type}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_aad655a7315acde4c1ff5530b8d4331d3}{input\+\_\+tensor\+\_\+type} =  \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$input\+\_\+tensor\+\_\+dim\+::value, \hyperlink{structbc_1_1nn_1_1Layer__Manager_af6edd9edf47c73bfc1b200b3cbf2155f}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Layer__Manager_a6618b1c4afdad0eafd781b319f27f230}{allocator\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_a7b70f92269eee6d1110acf65cc988b67}\label{structbc_1_1nn_1_1Layer__Manager_a7b70f92269eee6d1110acf65cc988b67}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!key\+\_\+type@{key\+\_\+type}}
+\index{key\+\_\+type@{key\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{key\+\_\+type}{key\_type}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+template$<$char C, class Tensor , cache\+\_\+key\+\_\+type override = cache\+\_\+key\+\_\+type\+::inherit$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_a7b70f92269eee6d1110acf65cc988b67}{key\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1cache__key}{cache\+\_\+key}$<$\hyperlink{structbc_1_1utility_1_1Name}{bc\+::utility\+::\+Name}$<$C$>$, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, override$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_aabdbf2c4a435aa8256a9a7fac4ee3fc2}\label{structbc_1_1nn_1_1Layer__Manager_aabdbf2c4a435aa8256a9a7fac4ee3fc2}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!output\+\_\+tensor\+\_\+dim@{output\+\_\+tensor\+\_\+dim}}
+\index{output\+\_\+tensor\+\_\+dim@{output\+\_\+tensor\+\_\+dim}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{output\+\_\+tensor\+\_\+dim}{output\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_aabdbf2c4a435aa8256a9a7fac4ee3fc2}{output\+\_\+tensor\+\_\+dim} =  typename \hyperlink{structbc_1_1nn_1_1layer__traits}{layer\+\_\+traits}$<$Layer$>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_aabdbf2c4a435aa8256a9a7fac4ee3fc2}{output\+\_\+tensor\+\_\+dim}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_af6edd9edf47c73bfc1b200b3cbf2155f}\label{structbc_1_1nn_1_1Layer__Manager_af6edd9edf47c73bfc1b200b3cbf2155f}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_af6edd9edf47c73bfc1b200b3cbf2155f}{value\+\_\+type} =  typename \hyperlink{structbc_1_1nn_1_1layer__traits}{layer\+\_\+traits}$<$Layer$>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager_af6edd9edf47c73bfc1b200b3cbf2155f}{value\+\_\+type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_a6380a6af1c2939a1c8ddb85f7afdc56d}\label{structbc_1_1nn_1_1Layer__Manager_a6380a6af1c2939a1c8ddb85f7afdc56d}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!Layer\+\_\+\+Manager@{Layer\+\_\+\+Manager}}
+\index{Layer\+\_\+\+Manager@{Layer\+\_\+\+Manager}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{Layer\+\_\+\+Manager()}{Layer\_Manager()}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+template$<$class... Args$>$ \\
+\hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Manager}{Layer\+\_\+\+Manager} (\begin{DoxyParamCaption}\item[{Args...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_ae3ce714c4ab44c3b0422e4f496c41467}\label{structbc_1_1nn_1_1Layer__Manager_ae3ce714c4ab44c3b0422e4f496c41467}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!back\+\_\+propagation@{back\+\_\+propagation}}
+\index{back\+\_\+propagation@{back\+\_\+propagation}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{back\+\_\+propagation()}{back\_propagation()}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+template$<$class T $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::back\+\_\+propagation (\begin{DoxyParamCaption}\item[{const T \&}]{dy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_a3bf74352097075b764c7c5196f4c2218}\label{structbc_1_1nn_1_1Layer__Manager_a3bf74352097075b764c7c5196f4c2218}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict@{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict}}
+\index{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict@{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict()}{copy\_training\_data\_to\_single\_predict()}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict (\begin{DoxyParamCaption}\item[{int}]{batch\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_a92fe4d1139a4e6a06918241e5869dd04}\label{structbc_1_1nn_1_1Layer__Manager_a92fe4d1139a4e6a06918241e5869dd04}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+template$<$class T , class l  = Layer$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const T \&}]{expression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_a4a6ff0e6ae647c1df47183cf17c7ad73}\label{structbc_1_1nn_1_1Layer__Manager_a4a6ff0e6ae647c1df47183cf17c7ad73}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!get\+\_\+cache@{get\+\_\+cache}}
+\index{get\+\_\+cache@{get\+\_\+cache}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{get\+\_\+cache()}{get\_cache()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+const \hyperlink{structbc_1_1nn_1_1Cache}{Cache}\& \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::get\+\_\+cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_a2fb6e5be07e3a0972c1e42ed5675927d}\label{structbc_1_1nn_1_1Layer__Manager_a2fb6e5be07e3a0972c1e42ed5675927d}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!get\+\_\+cache@{get\+\_\+cache}}
+\index{get\+\_\+cache@{get\+\_\+cache}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{get\+\_\+cache()}{get\_cache()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+\hyperlink{structbc_1_1nn_1_1Cache}{Cache}\& \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::get\+\_\+cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_aa05263df7411cc3be9384d834eeb5525}\label{structbc_1_1nn_1_1Layer__Manager_aa05263df7411cc3be9384d834eeb5525}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!increment\+\_\+time\+\_\+index@{increment\+\_\+time\+\_\+index}}
+\index{increment\+\_\+time\+\_\+index@{increment\+\_\+time\+\_\+index}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{increment\+\_\+time\+\_\+index()}{increment\_time\_index()}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::increment\+\_\+time\+\_\+index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_a1802dc0cfb6a4287ff5d45de6446feab}\label{structbc_1_1nn_1_1Layer__Manager_a1802dc0cfb6a4287ff5d45de6446feab}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_a1cfda4ed795fa9a5193673f0e62e428a}\label{structbc_1_1nn_1_1Layer__Manager_a1cfda4ed795fa9a5193673f0e62e428a}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!predict@{predict}}
+\index{predict@{predict}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+template$<$class T $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::predict (\begin{DoxyParamCaption}\item[{const T \&}]{expression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_a56a0178f1067476e6891cbee68a0aacc}\label{structbc_1_1nn_1_1Layer__Manager_a56a0178f1067476e6891cbee68a0aacc}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!save@{save}}
+\index{save@{save}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::save (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_a1d600aa19f078f6f922134c87542a5c4}\label{structbc_1_1nn_1_1Layer__Manager_a1d600aa19f078f6f922134c87542a5c4}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!single\+\_\+predict@{single\+\_\+predict}}
+\index{single\+\_\+predict@{single\+\_\+predict}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{single\+\_\+predict()}{single\_predict()}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+template$<$class T $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::single\+\_\+predict (\begin{DoxyParamCaption}\item[{const T \&}]{expression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_a778156e80b4ede0516bb20d11c52cf3c}\label{structbc_1_1nn_1_1Layer__Manager_a778156e80b4ede0516bb20d11c52cf3c}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!update\+\_\+weights@{update\+\_\+weights}}
+\index{update\+\_\+weights@{update\+\_\+weights}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{update\+\_\+weights()}{update\_weights()}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::update\+\_\+weights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_ad0b46a663ef46dee13c2dffbd4c8b1f3}\label{structbc_1_1nn_1_1Layer__Manager_ad0b46a663ef46dee13c2dffbd4c8b1f3}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!zero\+\_\+time\+\_\+index@{zero\+\_\+time\+\_\+index}}
+\index{zero\+\_\+time\+\_\+index@{zero\+\_\+time\+\_\+index}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{zero\+\_\+time\+\_\+index()}{zero\_time\_index()}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Layer__Manager}{bc\+::nn\+::\+Layer\+\_\+\+Manager}$<$ Derived, Layer $>$\+::zero\+\_\+time\+\_\+index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Manager_ad8aa8062ca6d04ccdeff27cf28c1eb4e}\label{structbc_1_1nn_1_1Layer__Manager_ad8aa8062ca6d04ccdeff27cf28c1eb4e}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}!Layer\+\_\+\+Manager@{Layer\+\_\+\+Manager}}
+\index{Layer\+\_\+\+Manager@{Layer\+\_\+\+Manager}!bc\+::nn\+::\+Layer\+\_\+\+Manager@{bc\+::nn\+::\+Layer\+\_\+\+Manager}}
+\subsubsection{\texorpdfstring{Layer\+\_\+\+Manager}{Layer\_Manager}}
+{\footnotesize\ttfamily template$<$class Derived, class Layer$>$ \\
+template$<$class D , class L $>$ \\
+friend class \hyperlink{structbc_1_1nn_1_1Layer__Manager}{Layer\+\_\+\+Manager}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/\hyperlink{layer__manager_8h}{layer\+\_\+manager.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+<map id="blackcat/streams.h" name="blackcat/streams.h">
+<area shape="rect" id="node2" href="$common_8h.html" title="common.h" alt="" coords="376,453,459,480"/>
+<area shape="rect" id="node8" href="$allocator_8h.html" title="allocator.h" alt="" coords="561,80,644,107"/>
+<area shape="rect" id="node34" href="$streams_2streams_8h.html" title="streams/streams.h" alt="" coords="1441,155,1572,181"/>
+<area shape="rect" id="node9" href="$type__traits_8h.html" title="type_traits.h" alt="" coords="285,155,379,181"/>
+<area shape="rect" id="node18" href="$allocators_8h.html" title="allocators/allocators.h" alt="" coords="785,155,935,181"/>
+<area shape="rect" id="node10" href="$type__traits_2type__traits_8h.html" title="type_traits/type_traits.h" alt="" coords="134,229,293,256"/>
+<area shape="rect" id="node11" href="$type__traits_2common_8h.html" title="common.h" alt="" coords="5,453,88,480"/>
+<area shape="rect" id="node13" href="$get_8h.html" title="get.h" alt="" coords="228,379,279,405"/>
+<area shape="rect" id="node16" href="$constexpr__if_8h.html" title="constexpr_if.h" alt="" coords="124,304,228,331"/>
+<area shape="rect" id="node14" href="$constexpr__int_8h.html" title="constexpr_int.h" alt="" coords="113,453,223,480"/>
+<area shape="rect" id="node17" href="$bind_8h.html" title="bind.h" alt="" coords="77,379,134,405"/>
+<area shape="rect" id="node19" href="$basic__allocators_8h.html" title="basic_allocators.h" alt="" coords="622,304,749,331"/>
+<area shape="rect" id="node20" href="$allocator__traits_8h.html" title="allocator_traits.h" alt="" coords="1050,379,1169,405"/>
+<area shape="rect" id="node22" href="$polymorphic__allocator_8h.html" title="polymorphic_allocator.h" alt="" coords="1042,304,1201,331"/>
+<area shape="rect" id="node24" href="$stack__allocator_8h.html" title="stack_allocator.h" alt="" coords="1011,229,1133,256"/>
+<area shape="rect" id="node26" href="$recycle__allocator_8h.html" title="recycle_allocator.h" alt="" coords="723,229,853,256"/>
+<area shape="rect" id="node29" href="$logging__allocator_8h.html" title="logging_allocator.h" alt="" coords="489,229,620,256"/>
+<area shape="rect" id="node33" href="$null__allocator_8h.html" title="null_allocator.h" alt="" coords="877,229,987,256"/>
+<area shape="rect" id="node30" href="$allocator__forwarder_8h.html" title="allocator_forwarder.h" alt="" coords="455,304,598,331"/>
+<area shape="rect" id="node35" href="$stream__synchronization_8h.html" title="stream_synchronization.h" alt="" coords="1428,379,1599,405"/>
+<area shape="rect" id="node36" href="$streams_2host_8h.html" title="host.h" alt="" coords="1951,229,2009,256"/>
+<area shape="rect" id="node42" href="$streams_2device_8h.html" title="device.h" alt="" coords="1629,229,1699,256"/>
+<area shape="rect" id="node47" href="$logging__stream_8h.html" title="logging_stream.h" alt="" coords="1723,229,1845,256"/>
+<area shape="rect" id="node37" href="$host__stream_8h.html" title="host_stream.h" alt="" coords="1998,304,2103,331"/>
+</map>

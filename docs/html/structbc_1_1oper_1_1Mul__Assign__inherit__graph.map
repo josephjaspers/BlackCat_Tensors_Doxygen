@@ -1,0 +1,6 @@
+<map id="bc::oper::Mul_Assign" name="bc::oper::Mul_Assign">
+<area shape="rect" id="node4" href="$structbc_1_1oper_1_1Device__Atomic__Mul.html" title="bc::oper::Device_Atomic_Mul" alt="" coords="5,244,200,271"/>
+<area shape="rect" id="node5" href="$structbc_1_1oper_1_1Host__Atomic__Mul.html" title="bc::oper::Host_Atomic_Mul" alt="" coords="224,244,405,271"/>
+<area shape="rect" id="node2" href="$structbc_1_1oper_1_1assignment__operation.html" title="bc::oper::assignment\l_operation" alt="" coords="136,80,280,121"/>
+<area shape="rect" id="node3" href="$structbc_1_1oper_1_1basic__operation.html" title="bc::oper::basic_operation" alt="" coords="124,5,292,32"/>
+</map>

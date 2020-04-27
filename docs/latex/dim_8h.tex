@@ -1,0 +1,128 @@
+\hypertarget{dim_8h}{}\section{blackcat/shape/dim.h File Reference}
+\label{dim_8h}\index{blackcat/shape/dim.\+h@{blackcat/shape/dim.\+h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$ostream$>$}\newline
+Include dependency graph for dim.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{dim_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{dim_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1Dim}{bc\+::\+Dim$<$ N $>$}
+\item 
+struct \hyperlink{structbc_1_1Dim_3_010_01_4}{bc\+::\+Dim$<$ 0 $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{dim_8h_a4800176a9c27936dab5b393408de9270}{B\+C\+\_\+\+D\+I\+M\+\_\+\+OP}(op,  functor)
+\item 
+\#define \hyperlink{dim_8h_a4efebdd335a8492d8baa047697146e3e}{B\+C\+\_\+\+D\+I\+M\+\_\+\+I\+N\+P\+L\+A\+C\+E\+\_\+\+OP}(op,  functor)
+\item 
+\#define \hyperlink{dim_8h_a22e7412a9419276f5f14a5a3d4cbf01d}{B\+C\+\_\+\+D\+I\+M\+\_\+\+I\+N\+P\+L\+A\+C\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+OP}(op,  functor)
+\item 
+\#define \hyperlink{dim_8h_a2734b1ffcbc222d763aa4c9a8618bdd3}{B\+C\+\_\+\+D\+I\+M\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+OP}(op,  functor)
+\item 
+\#define \hyperlink{dim_8h_af1b3fe2a7c0399fb27c494d4a4977f33}{B\+C\+\_\+\+D\+I\+M\+\_\+\+O\+P\+\_\+\+F\+A\+C\+T\+O\+RY}(op,  functor)
+\item 
+\#define \hyperlink{dim_8h_accc3b76d81c87f55570c67a325cc6f6c}{B\+C\+\_\+\+D\+I\+M\+\_\+\+O\+P\+\_\+\+B\+O\+TH}(op,  functor)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Integers$>$ }\\\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{namespacebc_a28c12b5b6f9955c77a8c4b0cf047cfb6}{bc\+::dim} (const Integers \&... ints)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{dim_8h_a4efebdd335a8492d8baa047697146e3e}\label{dim_8h_a4efebdd335a8492d8baa047697146e3e}} 
+\index{dim.\+h@{dim.\+h}!B\+C\+\_\+\+D\+I\+M\+\_\+\+I\+N\+P\+L\+A\+C\+E\+\_\+\+OP@{B\+C\+\_\+\+D\+I\+M\+\_\+\+I\+N\+P\+L\+A\+C\+E\+\_\+\+OP}}
+\index{B\+C\+\_\+\+D\+I\+M\+\_\+\+I\+N\+P\+L\+A\+C\+E\+\_\+\+OP@{B\+C\+\_\+\+D\+I\+M\+\_\+\+I\+N\+P\+L\+A\+C\+E\+\_\+\+OP}!dim.\+h@{dim.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+D\+I\+M\+\_\+\+I\+N\+P\+L\+A\+C\+E\+\_\+\+OP}{BC\_DIM\_INPLACE\_OP}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+D\+I\+M\+\_\+\+I\+N\+P\+L\+A\+C\+E\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{op,  }\item[{}]{functor }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+Dim \textcolor{keyword}{operator} op##=(\textcolor{keyword}{const} Dim& other) \{                              \(\backslash\)
+        return this->inplace\_op\_impl(bc::oper::functor(), other);       \(\backslash\)
+    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{dim_8h_a22e7412a9419276f5f14a5a3d4cbf01d}\label{dim_8h_a22e7412a9419276f5f14a5a3d4cbf01d}} 
+\index{dim.\+h@{dim.\+h}!B\+C\+\_\+\+D\+I\+M\+\_\+\+I\+N\+P\+L\+A\+C\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+OP@{B\+C\+\_\+\+D\+I\+M\+\_\+\+I\+N\+P\+L\+A\+C\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+OP}}
+\index{B\+C\+\_\+\+D\+I\+M\+\_\+\+I\+N\+P\+L\+A\+C\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+OP@{B\+C\+\_\+\+D\+I\+M\+\_\+\+I\+N\+P\+L\+A\+C\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+OP}!dim.\+h@{dim.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+D\+I\+M\+\_\+\+I\+N\+P\+L\+A\+C\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+OP}{BC\_DIM\_INPLACE\_SCALAR\_OP}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+D\+I\+M\+\_\+\+I\+N\+P\+L\+A\+C\+E\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{op,  }\item[{}]{functor }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{friend} Dim \textcolor{keyword}{operator} op##=(Dim &\hyperlink{namespacebc_a28c12b5b6f9955c77a8c4b0cf047cfb6}{dim}, \textcolor{keyword}{const} value\_type& scalar) \{     \(\backslash\)
+        return \hyperlink{namespacebc_a28c12b5b6f9955c77a8c4b0cf047cfb6}{dim}.inplace\_scalar\_op\_impl(bc::oper::functor(), scalar); \(\backslash\)
+    \}                                                                   \(\backslash\)
+\end{DoxyCode}
+\mbox{\Hypertarget{dim_8h_a4800176a9c27936dab5b393408de9270}\label{dim_8h_a4800176a9c27936dab5b393408de9270}} 
+\index{dim.\+h@{dim.\+h}!B\+C\+\_\+\+D\+I\+M\+\_\+\+OP@{B\+C\+\_\+\+D\+I\+M\+\_\+\+OP}}
+\index{B\+C\+\_\+\+D\+I\+M\+\_\+\+OP@{B\+C\+\_\+\+D\+I\+M\+\_\+\+OP}!dim.\+h@{dim.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+D\+I\+M\+\_\+\+OP}{BC\_DIM\_OP}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+D\+I\+M\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{op,  }\item[{}]{functor }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+Dim \textcolor{keyword}{operator} op(\textcolor{keyword}{const} Dim& other)\textcolor{keyword}{ const }\{                           \(\backslash\)
+        return this->op\_impl(bc::oper::functor(), other);               \(\backslash\)
+    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{dim_8h_accc3b76d81c87f55570c67a325cc6f6c}\label{dim_8h_accc3b76d81c87f55570c67a325cc6f6c}} 
+\index{dim.\+h@{dim.\+h}!B\+C\+\_\+\+D\+I\+M\+\_\+\+O\+P\+\_\+\+B\+O\+TH@{B\+C\+\_\+\+D\+I\+M\+\_\+\+O\+P\+\_\+\+B\+O\+TH}}
+\index{B\+C\+\_\+\+D\+I\+M\+\_\+\+O\+P\+\_\+\+B\+O\+TH@{B\+C\+\_\+\+D\+I\+M\+\_\+\+O\+P\+\_\+\+B\+O\+TH}!dim.\+h@{dim.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+D\+I\+M\+\_\+\+O\+P\+\_\+\+B\+O\+TH}{BC\_DIM\_OP\_BOTH}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+D\+I\+M\+\_\+\+O\+P\+\_\+\+B\+O\+TH(\begin{DoxyParamCaption}\item[{}]{op,  }\item[{}]{functor }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{dim_8h_af1b3fe2a7c0399fb27c494d4a4977f33}{BC\_DIM\_OP\_FACTORY}(op, functor)        \(\backslash\)
+BC\_DIM\_INPLACE\_OP(op, functor)        \(\backslash\)
+BC\_DIM\_INPLACE\_SCALAR\_OP(op, functor)
+\end{DoxyCode}
+\mbox{\Hypertarget{dim_8h_af1b3fe2a7c0399fb27c494d4a4977f33}\label{dim_8h_af1b3fe2a7c0399fb27c494d4a4977f33}} 
+\index{dim.\+h@{dim.\+h}!B\+C\+\_\+\+D\+I\+M\+\_\+\+O\+P\+\_\+\+F\+A\+C\+T\+O\+RY@{B\+C\+\_\+\+D\+I\+M\+\_\+\+O\+P\+\_\+\+F\+A\+C\+T\+O\+RY}}
+\index{B\+C\+\_\+\+D\+I\+M\+\_\+\+O\+P\+\_\+\+F\+A\+C\+T\+O\+RY@{B\+C\+\_\+\+D\+I\+M\+\_\+\+O\+P\+\_\+\+F\+A\+C\+T\+O\+RY}!dim.\+h@{dim.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+D\+I\+M\+\_\+\+O\+P\+\_\+\+F\+A\+C\+T\+O\+RY}{BC\_DIM\_OP\_FACTORY}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+D\+I\+M\+\_\+\+O\+P\+\_\+\+F\+A\+C\+T\+O\+RY(\begin{DoxyParamCaption}\item[{}]{op,  }\item[{}]{functor }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{dim_8h_a4800176a9c27936dab5b393408de9270}{BC\_DIM\_OP}(op, functor)                 \(\backslash\)
+BC\_DIM\_SCALAR\_OP(op, functor)
+\end{DoxyCode}
+\mbox{\Hypertarget{dim_8h_a2734b1ffcbc222d763aa4c9a8618bdd3}\label{dim_8h_a2734b1ffcbc222d763aa4c9a8618bdd3}} 
+\index{dim.\+h@{dim.\+h}!B\+C\+\_\+\+D\+I\+M\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+OP@{B\+C\+\_\+\+D\+I\+M\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+OP}}
+\index{B\+C\+\_\+\+D\+I\+M\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+OP@{B\+C\+\_\+\+D\+I\+M\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+OP}!dim.\+h@{dim.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+D\+I\+M\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+OP}{BC\_DIM\_SCALAR\_OP}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+D\+I\+M\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{op,  }\item[{}]{functor }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{friend} Dim \textcolor{keyword}{operator} op(\textcolor{keyword}{const} Dim &\hyperlink{namespacebc_a28c12b5b6f9955c77a8c4b0cf047cfb6}{dim}, \textcolor{keyword}{const} value\_type& scalar) \{  \(\backslash\)
+        return dim.scalar\_op\_impl(bc::oper::functor(), scalar);         \(\backslash\)
+    \}                                                                   \(\backslash\)
+                                                                        \(\backslash\)
+    friend Dim \textcolor{keyword}{operator} op(\textcolor{keyword}{const} value\_type& scalar, \textcolor{keyword}{const} Dim &dim) \{  \(\backslash\)
+        return dim.scalar\_op\_impl(bc::oper::functor(), scalar);         \(\backslash\)
+    \}
+\end{DoxyCode}

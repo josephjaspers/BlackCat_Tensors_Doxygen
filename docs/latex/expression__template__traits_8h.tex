@@ -1,0 +1,114 @@
+\hypertarget{expression__template__traits_8h}{}\section{blackcat/tensors/expression\+\_\+templates/expression\+\_\+template\+\_\+traits.h File Reference}
+\label{expression__template__traits_8h}\index{blackcat/tensors/expression\+\_\+templates/expression\+\_\+template\+\_\+traits.\+h@{blackcat/tensors/expression\+\_\+templates/expression\+\_\+template\+\_\+traits.\+h}}
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+Include dependency graph for expression\+\_\+template\+\_\+traits.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{expression__template__traits_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{expression__template__traits_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op$<$ Operation, Lv, Rv $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1Un__Op}{bc\+::tensors\+::exprs\+::\+Un\+\_\+\+Op$<$ Operation, Array\+Type $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1temporary__tag}{bc\+::tensors\+::exprs\+::temporary\+\_\+tag}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1noncontinuous__memory__tag}{bc\+::tensors\+::exprs\+::noncontinuous\+\_\+memory\+\_\+tag}
+\item 
+class \hyperlink{classbc_1_1tensors_1_1exprs_1_1BC__View}{bc\+::tensors\+::exprs\+::\+B\+C\+\_\+\+View}
+\item 
+class \hyperlink{classbc_1_1tensors_1_1exprs_1_1BC__Const__View}{bc\+::tensors\+::exprs\+::\+B\+C\+\_\+\+Const\+\_\+\+View}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits}{bc\+::tensors\+::exprs\+::expression\+\_\+traits$<$ T $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1tensors}{bc\+::tensors}
+\item 
+ \hyperlink{namespacebc_1_1tensors_1_1exprs}{bc\+::tensors\+::exprs}
+\item 
+ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail}{bc\+::tensors\+::exprs\+::detail}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{expression__template__traits_8h_a59935b465cec1250f624434a7715efb4}{B\+C\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+T\+AG}(tag\+\_\+name)
+\item 
+\#define \hyperlink{expression__template__traits_8h_a12ea642d4d962d2328138a8f7fed4fa0}{B\+C\+\_\+\+T\+A\+G\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON}(name,  using\+\_\+name,  default\+\_\+value)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa067b2ce78c8e7218f47bded8aec80a8}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+system\+\_\+tag} = typename T\+::system\+\_\+tag
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa60e0a71bcf8048661b38b904c620fb0}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+value\+\_\+type} = typename T\+::value\+\_\+type
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa48f3a00816d9b230e5f0ce720323f57}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+allocation\+\_\+type} = typename T\+::allocation\+\_\+type
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a48ce13185316802e0ca8ad8cee7d5870}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+copy\+\_\+assignable} = typename T\+::copy\+\_\+assignable
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_abac935bf36b4924c73532023e11f75c2}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+copy\+\_\+constructible} = typename T\+::copy\+\_\+constructible
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_ac325e0e2cef5518953db86853d9780fc}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+move\+\_\+assignable} = typename T\+::move\+\_\+assignable
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a19fd04baa3f6d8fcce66c01e51b7399d}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+move\+\_\+constructible} = typename T\+::move\+\_\+constructible
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a0e9b0b3486b5ec529b2c622f14b688f9}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+requires\+\_\+greedy\+\_\+evaluation} = typename T\+::requires\+\_\+greedy\+\_\+evaluation
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a35543bad82197de0bb8d50c079e7cbaf}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+stack\+\_\+allocated} = typename T\+::stack\+\_\+allocated
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_acc14ea393b9060eea11b720233170f80}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+optimizer\+\_\+temporary} = typename T\+::optimizer\+\_\+temporary
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a8daec353fcf1440e3e610f412a2228d8}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+expression\+\_\+template\+\_\+expression\+\_\+type} = typename T\+::expression\+\_\+template\+\_\+expression\+\_\+type
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a4f6ef9491d82383737761491907159ae}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+expression\+\_\+template\+\_\+array\+\_\+type} = typename T\+::expression\+\_\+template\+\_\+array\+\_\+type
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a6ed62ca06012f06dc8f6143998de1e9f}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+is\+\_\+view} = typename T\+::is\+\_\+view
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a701fb55d84ce81a94fc5552092b64138}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+is\+\_\+const\+\_\+view} = typename T\+::is\+\_\+const\+\_\+view
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a78329f6a449e413ac38baeaf0574e64d}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+is\+\_\+temporary\+\_\+value} = typename T\+::is\+\_\+temporary\+\_\+value
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa6d73fadec8691f52ebcd7254c6ec9bb}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+is\+\_\+noncontinuous\+\_\+in\+\_\+memory} = typename T\+::is\+\_\+noncontinuous\+\_\+in\+\_\+memory
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_af39d29f1c790dbc0fdcb388eb3764ce8}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+is\+\_\+view\+\_\+type} = typename T\+::is\+\_\+view\+\_\+type
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{expression__template__traits_8h_a59935b465cec1250f624434a7715efb4}\label{expression__template__traits_8h_a59935b465cec1250f624434a7715efb4}} 
+\index{expression\+\_\+template\+\_\+traits.\+h@{expression\+\_\+template\+\_\+traits.\+h}!B\+C\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+T\+AG@{B\+C\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+T\+AG}}
+\index{B\+C\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+T\+AG@{B\+C\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+T\+AG}!expression\+\_\+template\+\_\+traits.\+h@{expression\+\_\+template\+\_\+traits.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+T\+AG}{BC\_QUERY\_TAG}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+T\+AG(\begin{DoxyParamCaption}\item[{}]{tag\+\_\+name }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{template}<\textcolor{keyword}{class} T>\(\backslash\)
+using query\_##tag\_name = \textcolor{keyword}{typename} T::tag\_name;
+\end{DoxyCode}
+\mbox{\Hypertarget{expression__template__traits_8h_a12ea642d4d962d2328138a8f7fed4fa0}\label{expression__template__traits_8h_a12ea642d4d962d2328138a8f7fed4fa0}} 
+\index{expression\+\_\+template\+\_\+traits.\+h@{expression\+\_\+template\+\_\+traits.\+h}!B\+C\+\_\+\+T\+A\+G\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON@{B\+C\+\_\+\+T\+A\+G\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON}}
+\index{B\+C\+\_\+\+T\+A\+G\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON@{B\+C\+\_\+\+T\+A\+G\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON}!expression\+\_\+template\+\_\+traits.\+h@{expression\+\_\+template\+\_\+traits.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+T\+A\+G\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON}{BC\_TAG\_DEFINITION}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+T\+A\+G\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON(\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{using\+\_\+name,  }\item[{}]{default\+\_\+value }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{struct }name \{ \textcolor{keyword}{using} using\_name = default\_value; \};\(\backslash\)
+namespace detail \{  \hyperlink{expression__template__traits_8h_a59935b465cec1250f624434a7715efb4}{BC\_QUERY\_TAG}(using\_name) \}
+\end{DoxyCode}

@@ -1,0 +1,231 @@
+\hypertarget{structbc_1_1nn_1_1Cache}{}\section{bc\+:\+:nn\+:\+:Cache Struct Reference}
+\label{structbc_1_1nn_1_1Cache}\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+
+
+A Dictionary designed to store any type using the \textquotesingle{}store\textquotesingle{} and \textquotesingle{}load\textquotesingle{} functions.  
+
+
+
+
+{\ttfamily \#include $<$layer\+\_\+cache.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class K , class V , cache\+\_\+key\+\_\+type R$>$ }\\using \hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type} = \hyperlink{structbc_1_1nn_1_1cache__key}{cache\+\_\+key}$<$ K, V, R $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structbc_1_1nn_1_1Cache_a9fcf5a41d0e0a818ab29db438db392f0}{enable\+\_\+recurrent\+\_\+caching} (bool enable=true)
+\item 
+{\footnotesize template$<$class K , class V , cache\+\_\+key\+\_\+type R$>$ }\\bool \hyperlink{structbc_1_1nn_1_1Cache_a7aa132ff36acd0bff790e4c68f60b40b}{contains} (\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, R $>$ key) const
+\item 
+{\footnotesize template$<$class K , class V $>$ }\\auto \& \hyperlink{structbc_1_1nn_1_1Cache_a0234b2950dfb3bd7152090ce6ee4c521}{load} (\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::inherit $>$ key, int t\+\_\+modifier=0) const
+\item 
+{\footnotesize template$<$class K , class V , class Factory $>$ }\\auto \& \hyperlink{structbc_1_1nn_1_1Cache_ae86e94f09dad94f95ed404493bf276b1}{load} (\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::inherit $>$ key, int t\+\_\+modifier, Factory factory) const
+\item 
+{\footnotesize template$<$class K , class V , class Factory $>$ }\\auto \& \hyperlink{structbc_1_1nn_1_1Cache_a1e82cb0f2285c277b716f5509b785b76}{load} (\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::inherit $>$ key, Factory factory) const
+\item 
+{\footnotesize template$<$class K , class V , class U $>$ }\\auto \& \hyperlink{structbc_1_1nn_1_1Cache_a69df8779e44138168af98b688af9c0d1}{store} (\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::inherit $>$ key, U \&\&expression)
+\item 
+{\footnotesize template$<$class K , class V $>$ }\\auto \& \hyperlink{structbc_1_1nn_1_1Cache_acbee3bebd817f7bfebe16311a6e1f091}{load} (\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+recurrent $>$ key, int t\+\_\+modifier=0) const
+\begin{DoxyCompactList}\small\item\em Loads the current value at the current time\+\_\+index. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class K , class V $>$ }\\auto \& \hyperlink{structbc_1_1nn_1_1Cache_a0147ffcacb937b2477aff74a40f8884c}{load} (\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+forward $>$ key, int t\+\_\+modifier=0) const
+\item 
+{\footnotesize template$<$class K , class V , class Default\+Factory $>$ }\\auto \& \hyperlink{structbc_1_1nn_1_1Cache_ae0d930bedea24e5afc933c2ddb361770}{load} (\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+recurrent $>$ key, int t\+\_\+modifier, Default\+Factory \hyperlink{namespacebc_1_1nn_a0fef36d0002a6d7c7cb619d7e27d5c1e}{function}) const
+\item 
+{\footnotesize template$<$class K , class V , class Default\+Factory $>$ }\\auto \& \hyperlink{structbc_1_1nn_1_1Cache_a8cddd3d99d6e5b2a8999aed78159e83e}{load} (\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+recurrent $>$ key, Default\+Factory \hyperlink{namespacebc_1_1nn_a0fef36d0002a6d7c7cb619d7e27d5c1e}{function}) const
+\item 
+{\footnotesize template$<$class K , class V , class Default\+Factory $>$ }\\auto \& \hyperlink{structbc_1_1nn_1_1Cache_a62ccfaf7cce58a593c3793b187380a46}{load} (\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+forward $>$ key, Default\+Factory \hyperlink{namespacebc_1_1nn_a0fef36d0002a6d7c7cb619d7e27d5c1e}{function}) const
+\item 
+{\footnotesize template$<$class K , class V , class U $>$ }\\auto \& \hyperlink{structbc_1_1nn_1_1Cache_a8bab29fabb515c53dd65b1c82f91df96}{store} (\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+recurrent $>$ key, U \&\&expression)
+\item 
+{\footnotesize template$<$class K , class V , class U $>$ }\\auto \& \hyperlink{structbc_1_1nn_1_1Cache_af86f0bbe8821b5671b2ffa34ab9443d9}{store} (\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+forward $>$ key, U \&\&expression)
+\item 
+int \hyperlink{structbc_1_1nn_1_1Cache_a39b3c45a4c4f14c02c190957329bd6dc}{get\+\_\+time\+\_\+index} () const
+\item 
+void \hyperlink{structbc_1_1nn_1_1Cache_ae2fcde96a0ef66f8c3aa31e6f3125804}{increment\+\_\+time\+\_\+index} ()
+\item 
+void \hyperlink{structbc_1_1nn_1_1Cache_ae67689af283aadf9ccc5f05a68959bbe}{decrement\+\_\+time\+\_\+index} ()
+\item 
+void \hyperlink{structbc_1_1nn_1_1Cache_ad2ffef3741713197af3149c0f4356572}{zero\+\_\+time\+\_\+index} ()
+\item 
+void \hyperlink{structbc_1_1nn_1_1Cache_a696ba8a7e1c35c243d37cce7e87aed58}{set\+\_\+time\+\_\+index} (int idx)
+\item 
+{\footnotesize template$<$class K , class V $>$ }\\void \hyperlink{structbc_1_1nn_1_1Cache_a94b464a2aadc62eacc8e3c38898d6f41}{clear\+\_\+bp\+\_\+storage} (\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+forward $>$ key)
+\item 
+{\footnotesize template$<$class K , class V $>$ }\\void \hyperlink{structbc_1_1nn_1_1Cache_a254786e78b5e6b65f98d9c76a8038431}{clear\+\_\+bp\+\_\+storage} (\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::inherit $>$ key)
+\item 
+{\footnotesize template$<$class K , class V $>$ }\\void \hyperlink{structbc_1_1nn_1_1Cache_a8717570a6da7f67b192894f44ffb5c32}{clear\+\_\+bp\+\_\+storage} (\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+recurrent $>$ key)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Dictionary designed to store any type using the \textquotesingle{}store\textquotesingle{} and \textquotesingle{}load\textquotesingle{} functions. 
+
+The cache object stores any object that can be mapped from a unique \hyperlink{structbc_1_1nn_1_1cache__key}{cache\+\_\+key}. Additionally the \hyperlink{structbc_1_1nn_1_1Cache}{Cache} object stores an integer time-\/index which determines the current \textquotesingle{}time\textquotesingle{} to return when loading a Value from a \hyperlink{structbc_1_1nn_1_1Recurrent}{Recurrent} key.
+
+The time\+\_\+index is only relevant with recurrent keys. 
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}\label{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!key\+\_\+type@{key\+\_\+type}}
+\index{key\+\_\+type@{key\+\_\+type}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{key\+\_\+type}{key\_type}}
+{\footnotesize\ttfamily template$<$class K , class V , cache\+\_\+key\+\_\+type R$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{bc\+::nn\+::\+Cache\+::key\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1cache__key}{cache\+\_\+key}$<$K, V, R$>$}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_a94b464a2aadc62eacc8e3c38898d6f41}\label{structbc_1_1nn_1_1Cache_a94b464a2aadc62eacc8e3c38898d6f41}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!clear\+\_\+bp\+\_\+storage@{clear\+\_\+bp\+\_\+storage}}
+\index{clear\+\_\+bp\+\_\+storage@{clear\+\_\+bp\+\_\+storage}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{clear\+\_\+bp\+\_\+storage()}{clear\_bp\_storage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+void bc\+::nn\+::\+Cache\+::clear\+\_\+bp\+\_\+storage (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+forward $>$}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_a254786e78b5e6b65f98d9c76a8038431}\label{structbc_1_1nn_1_1Cache_a254786e78b5e6b65f98d9c76a8038431}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!clear\+\_\+bp\+\_\+storage@{clear\+\_\+bp\+\_\+storage}}
+\index{clear\+\_\+bp\+\_\+storage@{clear\+\_\+bp\+\_\+storage}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{clear\+\_\+bp\+\_\+storage()}{clear\_bp\_storage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+void bc\+::nn\+::\+Cache\+::clear\+\_\+bp\+\_\+storage (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::inherit $>$}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_a8717570a6da7f67b192894f44ffb5c32}\label{structbc_1_1nn_1_1Cache_a8717570a6da7f67b192894f44ffb5c32}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!clear\+\_\+bp\+\_\+storage@{clear\+\_\+bp\+\_\+storage}}
+\index{clear\+\_\+bp\+\_\+storage@{clear\+\_\+bp\+\_\+storage}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{clear\+\_\+bp\+\_\+storage()}{clear\_bp\_storage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+void bc\+::nn\+::\+Cache\+::clear\+\_\+bp\+\_\+storage (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+recurrent $>$}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_a7aa132ff36acd0bff790e4c68f60b40b}\label{structbc_1_1nn_1_1Cache_a7aa132ff36acd0bff790e4c68f60b40b}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!contains@{contains}}
+\index{contains@{contains}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily template$<$class K , class V , cache\+\_\+key\+\_\+type R$>$ \\
+bool bc\+::nn\+::\+Cache\+::contains (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, R $>$}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_ae67689af283aadf9ccc5f05a68959bbe}\label{structbc_1_1nn_1_1Cache_ae67689af283aadf9ccc5f05a68959bbe}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!decrement\+\_\+time\+\_\+index@{decrement\+\_\+time\+\_\+index}}
+\index{decrement\+\_\+time\+\_\+index@{decrement\+\_\+time\+\_\+index}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{decrement\+\_\+time\+\_\+index()}{decrement\_time\_index()}}
+{\footnotesize\ttfamily void bc\+::nn\+::\+Cache\+::decrement\+\_\+time\+\_\+index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_a9fcf5a41d0e0a818ab29db438db392f0}\label{structbc_1_1nn_1_1Cache_a9fcf5a41d0e0a818ab29db438db392f0}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!enable\+\_\+recurrent\+\_\+caching@{enable\+\_\+recurrent\+\_\+caching}}
+\index{enable\+\_\+recurrent\+\_\+caching@{enable\+\_\+recurrent\+\_\+caching}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{enable\+\_\+recurrent\+\_\+caching()}{enable\_recurrent\_caching()}}
+{\footnotesize\ttfamily void bc\+::nn\+::\+Cache\+::enable\+\_\+recurrent\+\_\+caching (\begin{DoxyParamCaption}\item[{bool}]{enable = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_a39b3c45a4c4f14c02c190957329bd6dc}\label{structbc_1_1nn_1_1Cache_a39b3c45a4c4f14c02c190957329bd6dc}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!get\+\_\+time\+\_\+index@{get\+\_\+time\+\_\+index}}
+\index{get\+\_\+time\+\_\+index@{get\+\_\+time\+\_\+index}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{get\+\_\+time\+\_\+index()}{get\_time\_index()}}
+{\footnotesize\ttfamily int bc\+::nn\+::\+Cache\+::get\+\_\+time\+\_\+index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_ae2fcde96a0ef66f8c3aa31e6f3125804}\label{structbc_1_1nn_1_1Cache_ae2fcde96a0ef66f8c3aa31e6f3125804}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!increment\+\_\+time\+\_\+index@{increment\+\_\+time\+\_\+index}}
+\index{increment\+\_\+time\+\_\+index@{increment\+\_\+time\+\_\+index}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{increment\+\_\+time\+\_\+index()}{increment\_time\_index()}}
+{\footnotesize\ttfamily void bc\+::nn\+::\+Cache\+::increment\+\_\+time\+\_\+index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_a0234b2950dfb3bd7152090ce6ee4c521}\label{structbc_1_1nn_1_1Cache_a0234b2950dfb3bd7152090ce6ee4c521}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+auto\& bc\+::nn\+::\+Cache\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::inherit $>$}]{key,  }\item[{int}]{t\+\_\+modifier = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_ae86e94f09dad94f95ed404493bf276b1}\label{structbc_1_1nn_1_1Cache_ae86e94f09dad94f95ed404493bf276b1}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily template$<$class K , class V , class Factory $>$ \\
+auto\& bc\+::nn\+::\+Cache\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::inherit $>$}]{key,  }\item[{int}]{t\+\_\+modifier,  }\item[{Factory}]{factory }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_a1e82cb0f2285c277b716f5509b785b76}\label{structbc_1_1nn_1_1Cache_a1e82cb0f2285c277b716f5509b785b76}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily template$<$class K , class V , class Factory $>$ \\
+auto\& bc\+::nn\+::\+Cache\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::inherit $>$}]{key,  }\item[{Factory}]{factory }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_acbee3bebd817f7bfebe16311a6e1f091}\label{structbc_1_1nn_1_1Cache_acbee3bebd817f7bfebe16311a6e1f091}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+auto\& bc\+::nn\+::\+Cache\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+recurrent $>$}]{key,  }\item[{int}]{t\+\_\+modifier = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads the current value at the current time\+\_\+index. 
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_a0147ffcacb937b2477aff74a40f8884c}\label{structbc_1_1nn_1_1Cache_a0147ffcacb937b2477aff74a40f8884c}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+auto\& bc\+::nn\+::\+Cache\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+forward $>$}]{key,  }\item[{int}]{t\+\_\+modifier = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_ae0d930bedea24e5afc933c2ddb361770}\label{structbc_1_1nn_1_1Cache_ae0d930bedea24e5afc933c2ddb361770}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily template$<$class K , class V , class Default\+Factory $>$ \\
+auto\& bc\+::nn\+::\+Cache\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+recurrent $>$}]{key,  }\item[{int}]{t\+\_\+modifier,  }\item[{Default\+Factory}]{function }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_a8cddd3d99d6e5b2a8999aed78159e83e}\label{structbc_1_1nn_1_1Cache_a8cddd3d99d6e5b2a8999aed78159e83e}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily template$<$class K , class V , class Default\+Factory $>$ \\
+auto\& bc\+::nn\+::\+Cache\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+recurrent $>$}]{key,  }\item[{Default\+Factory}]{function }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_a62ccfaf7cce58a593c3793b187380a46}\label{structbc_1_1nn_1_1Cache_a62ccfaf7cce58a593c3793b187380a46}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily template$<$class K , class V , class Default\+Factory $>$ \\
+auto\& bc\+::nn\+::\+Cache\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+forward $>$}]{key,  }\item[{Default\+Factory}]{function }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_a696ba8a7e1c35c243d37cce7e87aed58}\label{structbc_1_1nn_1_1Cache_a696ba8a7e1c35c243d37cce7e87aed58}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!set\+\_\+time\+\_\+index@{set\+\_\+time\+\_\+index}}
+\index{set\+\_\+time\+\_\+index@{set\+\_\+time\+\_\+index}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{set\+\_\+time\+\_\+index()}{set\_time\_index()}}
+{\footnotesize\ttfamily void bc\+::nn\+::\+Cache\+::set\+\_\+time\+\_\+index (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_a69df8779e44138168af98b688af9c0d1}\label{structbc_1_1nn_1_1Cache_a69df8779e44138168af98b688af9c0d1}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!store@{store}}
+\index{store@{store}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{store()}{store()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class K , class V , class U $>$ \\
+auto\& bc\+::nn\+::\+Cache\+::store (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::inherit $>$}]{key,  }\item[{U \&\&}]{expression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_a8bab29fabb515c53dd65b1c82f91df96}\label{structbc_1_1nn_1_1Cache_a8bab29fabb515c53dd65b1c82f91df96}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!store@{store}}
+\index{store@{store}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{store()}{store()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class K , class V , class U $>$ \\
+auto\& bc\+::nn\+::\+Cache\+::store (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+recurrent $>$}]{key,  }\item[{U \&\&}]{expression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_af86f0bbe8821b5671b2ffa34ab9443d9}\label{structbc_1_1nn_1_1Cache_af86f0bbe8821b5671b2ffa34ab9443d9}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!store@{store}}
+\index{store@{store}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{store()}{store()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class K , class V , class U $>$ \\
+auto\& bc\+::nn\+::\+Cache\+::store (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache_aedd77c5710dcb5f9edd8ecb3c3041048}{key\+\_\+type}$<$ K, V, cache\+\_\+key\+\_\+type\+::always\+\_\+forward $>$}]{key,  }\item[{U \&\&}]{expression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Cache_ad2ffef3741713197af3149c0f4356572}\label{structbc_1_1nn_1_1Cache_ad2ffef3741713197af3149c0f4356572}} 
+\index{bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}!zero\+\_\+time\+\_\+index@{zero\+\_\+time\+\_\+index}}
+\index{zero\+\_\+time\+\_\+index@{zero\+\_\+time\+\_\+index}!bc\+::nn\+::\+Cache@{bc\+::nn\+::\+Cache}}
+\subsubsection{\texorpdfstring{zero\+\_\+time\+\_\+index()}{zero\_time\_index()}}
+{\footnotesize\ttfamily void bc\+::nn\+::\+Cache\+::zero\+\_\+time\+\_\+index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/\hyperlink{layer__cache_8h}{layer\+\_\+cache.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['scalar',['scalar',['../structbc_1_1tensors_1_1exprs_1_1Scalar__Constant.html#abd370a68cb7496699dc4805955658856',1,'bc::tensors::exprs::Scalar_Constant']]],
+  ['scalar_5fmul',['scalar_mul',['../namespacebc_1_1oper.html#a88023efbb639886b4b6b1a6ec5686633',1,'bc::oper']]],
+  ['scalbln',['scalbln',['../namespacebc_1_1oper_1_1cmath__functions.html#ab0b9b7f20aadbdb8f4be104a4cb160e3',1,'bc::oper::cmath_functions']]],
+  ['scalbn',['scalbn',['../namespacebc_1_1oper_1_1cmath__functions.html#aebd30a0fe772ea9056e3a7b321d8fba3',1,'bc::oper::cmath_functions']]],
+  ['sec',['sec',['../namespacebc_1_1oper_1_1cmath__functions.html#a5957c7023f2fa332e8639937150a0370',1,'bc::oper::cmath_functions']]],
+  ['sgd',['sgd',['../namespacebc_1_1nn.html#a4b614663e3ff7f18425e5dc00ebbb67c',1,'bc::nn']]],
+  ['sin',['sin',['../namespacebc_1_1oper_1_1cmath__functions.html#a5dc50359e97edb2956aebd961c3887bf',1,'bc::oper::cmath_functions']]],
+  ['sinh',['sinh',['../namespacebc_1_1oper_1_1cmath__functions.html#ac77a026f6f63e4497760a6a0619b2f80',1,'bc::oper::cmath_functions']]],
+  ['skip_5fcols_5f',['skip_cols_',['../structbc_1_1io_1_1csv__descriptor.html#afd7cf1029e002d3f0cad76366c576737',1,'bc::io::csv_descriptor']]],
+  ['skip_5fevery_5fn_5fbackprops',['skip_every_n_backprops',['../structbc_1_1nn_1_1Logging__Output__Layer.html#a112dfc7bcd55a2e1691ab29c4894ae70',1,'bc::nn::Logging_Output_Layer']]],
+  ['skip_5frows_5f',['skip_rows_',['../structbc_1_1io_1_1csv__descriptor.html#ac5cac888e83985fa43b67ae927ce9fc5',1,'bc::io::csv_descriptor']]],
+  ['softplus',['softplus',['../namespacebc_1_1oper_1_1cmath__functions.html#a47ed73f57df7e47d19f5ea67a5f6cd37',1,'bc::oper::cmath_functions']]],
+  ['sparse',['sparse',['../structbc_1_1tensors_1_1io_1_1features.html#a4527bedd42d68b3e3668e0de5c05bfa8',1,'bc::tensors::io::features']]],
+  ['sqrt',['sqrt',['../namespacebc_1_1oper_1_1cmath__functions.html#ac4449711290e599a4227690d5fe4babe',1,'bc::oper::cmath_functions']]],
+  ['sub',['sub',['../namespacebc_1_1oper.html#adb76fb39747577e1be7e372917f2953d',1,'bc::oper']]],
+  ['sub_5fassign',['sub_assign',['../namespacebc_1_1oper.html#ada648e2c665e51826f9994439416fd35',1,'bc::oper']]]
+];

@@ -1,0 +1,729 @@
+\hypertarget{namespacebc_1_1nn}{}\section{bc\+:\+:nn Namespace Reference}
+\label{namespacebc_1_1nn}\index{bc\+::nn@{bc\+::nn}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc_1_1nn_1_1detail}{detail}
+\item 
+ \hyperlink{namespacebc_1_1nn_1_1functions}{functions}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Adam}{Adam}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Cache}{Cache}
+\begin{DoxyCompactList}\small\item\em A Dictionary designed to store any type using the \textquotesingle{}store\textquotesingle{} and \textquotesingle{}load\textquotesingle{} functions. \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1nn_1_1cache__key}{cache\+\_\+key}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Convolution}{Convolution}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1FeedForward}{Feed\+Forward}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Flatten}{Flatten}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Function}{Function}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}
+\item 
+class \hyperlink{classbc_1_1nn_1_1Layer__Input__Base}{Layer\+\_\+\+Input\+\_\+\+Base}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Layer__Manager}{Layer\+\_\+\+Manager}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Layer__Output__Base}{Layer\+\_\+\+Output\+\_\+\+Base}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1layer__traits}{layer\+\_\+traits}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1LayerChain}{Layer\+Chain}
+\begin{DoxyCompactList}\small\item\em Layer\+\_\+\+Chain is an iterator-\/like object that connects different types of neural-\/network layers and defines convenient iterator-\/like methods. \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1nn_1_1LayerChain_3_01Index_00_01Derived_00_01CurrentLayer_00_01Layers_8_8_8_01_4}{Layer\+Chain$<$ Index, Derived, Current\+Layer, Layers... $>$}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{Logging\+\_\+\+Output\+\_\+\+Layer}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1LSTM}{L\+S\+TM}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Max__Pooling}{Max\+\_\+\+Pooling}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Mean__Absolute__Error}{Mean\+\_\+\+Absolute\+\_\+\+Error}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Mean__Absolute__Percent__Error}{Mean\+\_\+\+Absolute\+\_\+\+Percent\+\_\+\+Error}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Mean__Squared__Error}{Mean\+\_\+\+Squared\+\_\+\+Error}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Momentum}{Momentum}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1network__runtime__traits}{network\+\_\+runtime\+\_\+traits}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{Neural\+Network}
+\begin{DoxyCompactList}\small\item\em the Neural\+\_\+\+Network \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1nn_1_1Optimizer__Base}{Optimizer\+\_\+\+Base}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Output__Layer}{Output\+\_\+\+Layer}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{Polymorphic\+\_\+\+Layer\+\_\+\+Base}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Recurrent}{Recurrent}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Root__Mean__Squared__Error}{Root\+\_\+\+Mean\+\_\+\+Squared\+\_\+\+Error}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1SoftMax}{Soft\+Max}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Stochastic__Gradient__Descent}{Stochastic\+\_\+\+Gradient\+\_\+\+Descent}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1tensor__descriptor}{tensor\+\_\+descriptor}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag , class... Alt\+Allocator$>$ }\\using \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{nn\+\_\+default\+\_\+allocator\+\_\+type} = \hyperlink{structbc_1_1allocators_1_1Recycle__Allocator}{bc\+::allocators\+::\+Recycle\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag, Alt\+Allocator... $>$
+\item 
+using \hyperlink{namespacebc_1_1nn_a17bbb7ff945016ee40da7ebbd272f4a2}{nn\+\_\+default\+\_\+system\+\_\+tag} = \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag}
+\item 
+using \hyperlink{namespacebc_1_1nn_ad8fbb567f69851a9636db98901712535}{nn\+\_\+default\+\_\+optimizer\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Momentum}{Momentum}
+\item 
+{\footnotesize template$<$class System\+Tag , class Value\+Type $>$ }\\using \hyperlink{namespacebc_1_1nn_ada5847e5a4ac1bbdcc0b8dbcfcbf320e}{layer\+\_\+default\+\_\+allocator} = \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}$<$ System\+Tag, Value\+Type $>$
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacebc_1_1nn_a6973f1eb052448a0a62bae16c2ffd227}{cache\+\_\+key\+\_\+type} \{ \hyperlink{namespacebc_1_1nn_a6973f1eb052448a0a62bae16c2ffd227adb9556ae635e4b90a32cd0e2d4b623f5}{inherit}, 
+\hyperlink{namespacebc_1_1nn_a6973f1eb052448a0a62bae16c2ffd227a696a94358808d670d9d9bbbd1b395dea}{always\+\_\+recurrent}, 
+\hyperlink{namespacebc_1_1nn_a6973f1eb052448a0a62bae16c2ffd227ab21e4901079ed9d29f7a4b39e470d795}{always\+\_\+forward}
+ \}\begin{DoxyCompactList}\small\item\em A type designed to act as a key to the Cache object. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class System\+Tag  = B\+L\+A\+C\+K\+C\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+T, class Optimizer  = nn\+\_\+default\+\_\+optimizer\+\_\+type$>$ }\\auto \hyperlink{namespacebc_1_1nn_a52abc08f24905dc8029f3a913bdd07e1}{convolution} (System\+Tag system\+\_\+tag, \hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$ img\+\_\+dims, \hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$ krnl\+\_\+dims, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ padding=\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0), \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ strides=\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ dilation=\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), Optimizer=Optimizer())
+\item 
+{\footnotesize template$<$class System\+Tag  = B\+L\+A\+C\+K\+C\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+T, class Optimizer  = nn\+\_\+default\+\_\+optimizer\+\_\+type$>$ }\\auto \hyperlink{namespacebc_1_1nn_a64f5640dcd0235509fbbc88e49051d58}{recurrent\+\_\+convolution} (System\+Tag system\+\_\+tag, \hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$ img\+\_\+dims, \hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$ krnl\+\_\+dims, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ padding=\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0), \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ strides=\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ dilation=\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), Optimizer=Optimizer())
+\item 
+{\footnotesize template$<$class System\+Tag , class Optimizer $>$ }\\auto \hyperlink{namespacebc_1_1nn_a4029ec07d94f518e19c06c5bea63bd17}{convolution} (System\+Tag system\+\_\+tag, \hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$ img\+\_\+dims, \hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$ krnl\+\_\+dims, Optimizer, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ padding=\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0), \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ strides=\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ dilation=\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1))
+\item 
+{\footnotesize template$<$class System\+Tag , class Optimizer $>$ }\\auto \hyperlink{namespacebc_1_1nn_af1f206cd72b05e2745666402f91a5b72}{recurrent\+\_\+convolution} (System\+Tag system\+\_\+tag, \hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$ img\+\_\+dims, \hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$ krnl\+\_\+dims, Optimizer, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ padding=\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0), \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ strides=\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ dilation=\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1))
+\item 
+{\footnotesize template$<$class System\+Tag , class Optimizer  = nn\+\_\+default\+\_\+optimizer\+\_\+type$>$ }\\auto \hyperlink{namespacebc_1_1nn_a2aa178844eb976dd07e0254e5047b897}{feedforward} (System\+Tag system\+\_\+tag, int inputs, int outputs, Optimizer=Optimizer())
+\item 
+{\footnotesize template$<$class Optimizer  = nn\+\_\+default\+\_\+optimizer\+\_\+type$>$ }\\auto \hyperlink{namespacebc_1_1nn_ab37956d86d4c9663196041a734e4383e}{feedforward} (int inputs, int outputs, Optimizer=Optimizer())
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag , int X$>$ }\\auto \hyperlink{namespacebc_1_1nn_ad3ccbb13b94637fc40bcd46d2cd5b1e4}{flatten} (System\+Tag system\+\_\+tag, \hyperlink{structbc_1_1Dim}{Dim}$<$ X $>$ \hyperlink{namespacebc_a1bc6dec532973ac024c738c0fd32cca3}{shape})
+\item 
+{\footnotesize template$<$class System\+Tag , int X$>$ }\\auto \hyperlink{namespacebc_1_1nn_afcf9752c3b29c98ef665dd710b18c7fd}{flatten} (System\+Tag system\+\_\+tag, \hyperlink{structbc_1_1Dim}{Dim}$<$ X $>$ \hyperlink{namespacebc_a1bc6dec532973ac024c738c0fd32cca3}{shape})
+\item 
+{\footnotesize template$<$int X$>$ }\\auto \hyperlink{namespacebc_1_1nn_ac038324e88b3931fb3f8fb92b809a4f5}{flatten} (\hyperlink{structbc_1_1Dim}{Dim}$<$ X $>$ \hyperlink{namespacebc_a1bc6dec532973ac024c738c0fd32cca3}{shape})
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag , class Error\+Function  = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ }\\\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{Logging\+\_\+\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type $>$ \hyperlink{namespacebc_1_1nn_a0e09424bd9585d7fac8f168894315054}{logging\+\_\+output\+\_\+layer} (System\+Tag system\+\_\+tag, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs, Error\+Function error\+\_\+function=Error\+Function(), std\+::ostream \&os=std\+::cout)
+\item 
+{\footnotesize template$<$class System\+Tag , class Error\+Function  = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ }\\auto \hyperlink{namespacebc_1_1nn_acb61279448bd2071e5ecdb743b6109a4}{logging\+\_\+output\+\_\+layer} (System\+Tag system\+\_\+tag, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs, Error\+Function error\+\_\+function=Error\+Function(), std\+::ostream \&os=std\+::cout)
+\item 
+{\footnotesize template$<$class Error\+Function  = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ }\\auto \hyperlink{namespacebc_1_1nn_ab353668fc04b2496759be76e26c1697d}{logging\+\_\+output\+\_\+layer} (int inputs, Error\+Function error\+\_\+function=Error\+Function(), std\+::ostream \&os=std\+::cout)
+\item 
+{\footnotesize template$<$class System\+Tag , class Optimizer  = nn\+\_\+default\+\_\+optimizer\+\_\+type$>$ }\\auto \hyperlink{namespacebc_1_1nn_a0a16bba0c1484ef3e4c1785b18a08333}{lstm} (System\+Tag system\+\_\+tag, int inputs, int outputs, Optimizer=Optimizer())
+\item 
+{\footnotesize template$<$class Optimizer  = nn\+\_\+default\+\_\+optimizer\+\_\+type$>$ }\\auto \hyperlink{namespacebc_1_1nn_a0a21d00395e6af5b4c8b3c298b677195}{lstm} (int inputs, int outputs, Optimizer=Optimizer())
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag $>$ }\\\hyperlink{structbc_1_1nn_1_1Max__Pooling}{Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$ \hyperlink{namespacebc_1_1nn_a767fb1c413a31da42831d6bdc91b10af}{max\+\_\+pooling} (System\+Tag system\+\_\+tag, \hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$ img\+\_\+dims, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ krnl\+\_\+dims=\{3, 3\}, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ padding=\{0, 0\}, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ strides=\{-\/1,-\/1\})
+\item 
+{\footnotesize template$<$class System\+Tag $>$ }\\auto \hyperlink{namespacebc_1_1nn_a03cb186fd7f64df5668d4c6ada3047c7}{max\+\_\+pooling} (System\+Tag system\+\_\+tag, \hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$ img\+\_\+dims, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ krnl\+\_\+dims=\{3, 3\}, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ padding=\{0, 0\}, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ strides=\{-\/1,-\/1\})
+\item 
+auto \hyperlink{namespacebc_1_1nn_ad265b01898441246ba30799156b0158b}{max\+\_\+pooling} (\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$ img\+\_\+dims, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ krnl\+\_\+dims=\{3, 3\}, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ padding=\{0, 0\}, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ strides=\{-\/1,-\/1\})
+\item 
+auto \hyperlink{namespacebc_1_1nn_a0f16fef3ad5fcb1481ba386da77a8208}{tanh} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs)
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag $>$ }\\auto \hyperlink{namespacebc_1_1nn_a852717a17dfaf0dee293b5765dfc5528}{tanh} (System\+Tag system, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs)
+\item 
+{\footnotesize template$<$class System\+Tag $>$ }\\auto \hyperlink{namespacebc_1_1nn_a1ef53f76e9c68aa315b86accaf67cf67}{tanh} (System\+Tag system, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs)
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag , int X$>$ }\\auto \hyperlink{namespacebc_1_1nn_a6b846b0ef196badcc603133bec5e67e9}{tanh} (System\+Tag system, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$ inputs)
+\item 
+{\footnotesize template$<$class System\+Tag , int X$>$ }\\auto \hyperlink{namespacebc_1_1nn_a1146aec7724cb368342261c32b77341b}{tanh} (System\+Tag system, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$ inputs)
+\item 
+auto \hyperlink{namespacebc_1_1nn_a377a17e29fde2477e1098bc74ff38963}{logistic} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs)
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag $>$ }\\auto \hyperlink{namespacebc_1_1nn_a56e8a819ad99c89d7e2dbb5359f72fba}{logistic} (System\+Tag system, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs)
+\item 
+{\footnotesize template$<$class System\+Tag $>$ }\\auto \hyperlink{namespacebc_1_1nn_ab2671a4c0d9e2e4f2b6abeb7290e9c61}{logistic} (System\+Tag system, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs)
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag , int X$>$ }\\auto \hyperlink{namespacebc_1_1nn_a2f995cbb0542f096ceac9e6d5df6408f}{logistic} (System\+Tag system, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$ inputs)
+\item 
+{\footnotesize template$<$class System\+Tag , int X$>$ }\\auto \hyperlink{namespacebc_1_1nn_a6ae0cff41285566585676c1ea3c392ec}{logistic} (System\+Tag system, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$ inputs)
+\item 
+auto \hyperlink{namespacebc_1_1nn_a44b0c2822ad51e7b6832ae7305728332}{relu} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs)
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag $>$ }\\auto \hyperlink{namespacebc_1_1nn_aead5ec7f5331b0334e7b41c922360236}{relu} (System\+Tag system, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs)
+\item 
+{\footnotesize template$<$class System\+Tag $>$ }\\auto \hyperlink{namespacebc_1_1nn_a863a41473186e29b827b21b6009144e7}{relu} (System\+Tag system, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs)
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag , int X$>$ }\\auto \hyperlink{namespacebc_1_1nn_a38872deedfd974a835678e32fc2cb5ce}{relu} (System\+Tag system, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$ inputs)
+\item 
+{\footnotesize template$<$class System\+Tag , int X$>$ }\\auto \hyperlink{namespacebc_1_1nn_a6858f92eebf902014b9981cc8859d3c1}{relu} (System\+Tag system, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$ inputs)
+\item 
+auto \hyperlink{namespacebc_1_1nn_a2da6aad8df7a81917589a72c77aa04e1}{softplus} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs)
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag $>$ }\\auto \hyperlink{namespacebc_1_1nn_a714a2159626268241bb644688f6cab47}{softplus} (System\+Tag system, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs)
+\item 
+{\footnotesize template$<$class System\+Tag $>$ }\\auto \hyperlink{namespacebc_1_1nn_a184b8d441f45f985daba7536d86e5f04}{softplus} (System\+Tag system, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs)
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag , int X$>$ }\\auto \hyperlink{namespacebc_1_1nn_ad623041ec1815227dcfcde29e6c41761}{softplus} (System\+Tag system, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$ inputs)
+\item 
+{\footnotesize template$<$class System\+Tag , int X$>$ }\\auto \hyperlink{namespacebc_1_1nn_a9f5f7e6d8257036f54139f9a984aa22e}{softplus} (System\+Tag system, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$ inputs)
+\item 
+auto \hyperlink{namespacebc_1_1nn_a4caea62ecbd9888f7d0a77661a2e7832}{mish} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs)
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag $>$ }\\auto \hyperlink{namespacebc_1_1nn_aa3c0961368fefa7b538affb32f1e4e05}{mish} (System\+Tag system, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs)
+\item 
+{\footnotesize template$<$class System\+Tag $>$ }\\auto \hyperlink{namespacebc_1_1nn_abf3d50f04ead7ada621648fc8ef0dbdc}{mish} (System\+Tag system, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs)
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag , int X$>$ }\\auto \hyperlink{namespacebc_1_1nn_a65e90e567d7f2dc29cf67f9885b17811}{mish} (System\+Tag system, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$ inputs)
+\item 
+{\footnotesize template$<$class System\+Tag , int X$>$ }\\auto \hyperlink{namespacebc_1_1nn_afb1231c7a3de4aec64f3de944173df84}{mish} (System\+Tag system, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$ inputs)
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag $>$ }\\\hyperlink{structbc_1_1nn_1_1Output__Layer}{Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type $>$ \hyperlink{namespacebc_1_1nn_ae84edaf9ec82c2af64a8f3aa54b4828e}{output\+\_\+layer} (System\+Tag system\+\_\+tag, int inputs)
+\item 
+{\footnotesize template$<$class System\+Tag $>$ }\\auto \hyperlink{namespacebc_1_1nn_abbaad8d9e2085fa6e976f944b7e9e894}{output\+\_\+layer} (System\+Tag system\+\_\+tag, int inputs)
+\item 
+auto \hyperlink{namespacebc_1_1nn_a56a762fa913ca0ac7399cae1713b9d5a}{output\+\_\+layer} (int inputs)
+\item 
+{\footnotesize template$<$class... ArgsA, class... ArgsB$>$ }\\void \hyperlink{namespacebc_1_1nn_ad126cb88738312204f33d5e21a03bf06}{link} (std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$ Args\+A... $>$$>$ prev, std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$ Args\+B... $>$$>$ next)
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag $>$ }\\\hyperlink{structbc_1_1nn_1_1Recurrent}{Recurrent}$<$ System\+Tag, Value\+Type $>$ \hyperlink{namespacebc_1_1nn_ae3f19f032dee5e9dd4916e0caf6ae21b}{recurrent} (System\+Tag system\+\_\+tag, int inputs, int outputs)
+\item 
+{\footnotesize template$<$class System\+Tag $>$ }\\auto \hyperlink{namespacebc_1_1nn_af907049010c811e5f6d1f094935e8b07}{recurrent} (System\+Tag system\+\_\+tag, int inputs, int outputs)
+\item 
+auto \hyperlink{namespacebc_1_1nn_ad12df9d8a92450f4ed84d3ccf0144ef9}{recurrent} (int inputs, int outputs)
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag $>$ }\\\hyperlink{structbc_1_1nn_1_1SoftMax}{Soft\+Max}$<$ System\+Tag, Value\+Type $>$ \hyperlink{namespacebc_1_1nn_a02fb410ce3a9154636fa6dd70be6c573}{softmax} (System\+Tag system\+\_\+tag, int inputs)
+\item 
+{\footnotesize template$<$class System\+Tag $>$ }\\auto \hyperlink{namespacebc_1_1nn_a59289071157643a5f945692daec05a95}{softmax} (System\+Tag system\+\_\+tag, int inputs)
+\item 
+auto \hyperlink{namespacebc_1_1nn_a2c4469fa8ee39e64ffc2e0d5f1d6d0a6}{softmax} (int inputs)
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag , class Functor $>$ }\\\hyperlink{structbc_1_1nn_1_1Function}{Function}$<$ System\+Tag, Value\+Type, Functor $>$ \hyperlink{namespacebc_1_1nn_a0fef36d0002a6d7c7cb619d7e27d5c1e}{function} (System\+Tag system\+\_\+tag, int inputs, Functor function=Functor())
+\item 
+{\footnotesize template$<$class System\+Tag , class Functor $>$ }\\auto \hyperlink{namespacebc_1_1nn_a276a5ca53a08ea4d75b06e49c29ba08b}{function} (System\+Tag system\+\_\+tag, int inputs, Functor function=Functor())
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag , class Functor , int X$>$ }\\\hyperlink{structbc_1_1nn_1_1Function}{Function}$<$ System\+Tag, Value\+Type, Functor $>$ \hyperlink{namespacebc_1_1nn_a096e40e3a123e5596200426da91ec617}{function} (System\+Tag system\+\_\+tag, \hyperlink{structbc_1_1Dim}{Dim}$<$ X $>$ \hyperlink{namespacebc_a1bc6dec532973ac024c738c0fd32cca3}{shape}, Functor function=Functor())
+\item 
+{\footnotesize template$<$class System\+Tag , class Functor , int X$>$ }\\auto \hyperlink{namespacebc_1_1nn_a8d19df0b93be99f409be6e2a65ca1052}{function} (System\+Tag system\+\_\+tag, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$ \hyperlink{namespacebc_a1bc6dec532973ac024c738c0fd32cca3}{shape}, Functor function=Functor())
+\item 
+{\footnotesize template$<$class ... Layers$>$ }\\auto \hyperlink{namespacebc_1_1nn_aed1958e9d71be2ebdf0c51c26e97b947}{neuralnetwork} (Layers ... layers)
+\begin{DoxyCompactList}\small\item\em Factory method for creating neural\+\_\+networks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Mean__Absolute__Error}{bc\+::nn\+::\+Mean\+\_\+\+Absolute\+\_\+\+Error} \hyperlink{namespacebc_1_1nn_a750f7a0e2cf0394b33d96d0ed4215324}{M\+AE}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Root__Mean__Squared__Error}{bc\+::nn\+::\+Root\+\_\+\+Mean\+\_\+\+Squared\+\_\+\+Error} \hyperlink{namespacebc_1_1nn_ab1183e69180fb5a708babd6a2b1108b9}{R\+M\+SE}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Mean__Squared__Error}{bc\+::nn\+::\+Mean\+\_\+\+Squared\+\_\+\+Error} \hyperlink{namespacebc_1_1nn_a68f287847db51c1b954a80b67254ea30}{M\+SE}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Mean__Absolute__Percent__Error}{bc\+::nn\+::\+Mean\+\_\+\+Absolute\+\_\+\+Percent\+\_\+\+Error} \hyperlink{namespacebc_1_1nn_a79e2cb825afd655959942b256380f212}{M\+A\+PE}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Adam}{bc\+::nn\+::\+Adam} \hyperlink{namespacebc_1_1nn_a8c31de21c1ca1a76f7888b8eecce7774}{adam}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Momentum}{bc\+::nn\+::\+Momentum} \hyperlink{namespacebc_1_1nn_a103e3ff34c6a6b393908837f39947b73}{momentum}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Stochastic__Gradient__Descent}{bc\+::nn\+::\+Stochastic\+\_\+\+Gradient\+\_\+\+Descent} \hyperlink{namespacebc_1_1nn_a4b614663e3ff7f18425e5dc00ebbb67c}{sgd}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacebc_1_1nn_ada5847e5a4ac1bbdcc0b8dbcfcbf320e}\label{namespacebc_1_1nn_ada5847e5a4ac1bbdcc0b8dbcfcbf320e}} 
+\index{bc\+::nn@{bc\+::nn}!layer\+\_\+default\+\_\+allocator@{layer\+\_\+default\+\_\+allocator}}
+\index{layer\+\_\+default\+\_\+allocator@{layer\+\_\+default\+\_\+allocator}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{layer\+\_\+default\+\_\+allocator}{layer\_default\_allocator}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+using \hyperlink{namespacebc_1_1nn_ada5847e5a4ac1bbdcc0b8dbcfcbf320e}{bc\+::nn\+::layer\+\_\+default\+\_\+allocator} = typedef \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}$<$System\+Tag, Value\+Type$>$}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}\label{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}} 
+\index{bc\+::nn@{bc\+::nn}!nn\+\_\+default\+\_\+allocator\+\_\+type@{nn\+\_\+default\+\_\+allocator\+\_\+type}}
+\index{nn\+\_\+default\+\_\+allocator\+\_\+type@{nn\+\_\+default\+\_\+allocator\+\_\+type}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{nn\+\_\+default\+\_\+allocator\+\_\+type}{nn\_default\_allocator\_type}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag , class... Alt\+Allocator$>$ \\
+using \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{bc\+::nn\+::nn\+\_\+default\+\_\+allocator\+\_\+type} = typedef \hyperlink{structbc_1_1allocators_1_1Recycle__Allocator}{bc\+::allocators\+::\+Recycle\+\_\+\+Allocator}$<$Value\+Type, System\+Tag, Alt\+Allocator...$>$}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_ad8fbb567f69851a9636db98901712535}\label{namespacebc_1_1nn_ad8fbb567f69851a9636db98901712535}} 
+\index{bc\+::nn@{bc\+::nn}!nn\+\_\+default\+\_\+optimizer\+\_\+type@{nn\+\_\+default\+\_\+optimizer\+\_\+type}}
+\index{nn\+\_\+default\+\_\+optimizer\+\_\+type@{nn\+\_\+default\+\_\+optimizer\+\_\+type}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{nn\+\_\+default\+\_\+optimizer\+\_\+type}{nn\_default\_optimizer\_type}}
+{\footnotesize\ttfamily using \hyperlink{namespacebc_1_1nn_ad8fbb567f69851a9636db98901712535}{bc\+::nn\+::nn\+\_\+default\+\_\+optimizer\+\_\+type} = typedef \hyperlink{structbc_1_1nn_1_1Momentum}{Momentum}}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a17bbb7ff945016ee40da7ebbd272f4a2}\label{namespacebc_1_1nn_a17bbb7ff945016ee40da7ebbd272f4a2}} 
+\index{bc\+::nn@{bc\+::nn}!nn\+\_\+default\+\_\+system\+\_\+tag@{nn\+\_\+default\+\_\+system\+\_\+tag}}
+\index{nn\+\_\+default\+\_\+system\+\_\+tag@{nn\+\_\+default\+\_\+system\+\_\+tag}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{nn\+\_\+default\+\_\+system\+\_\+tag}{nn\_default\_system\_tag}}
+{\footnotesize\ttfamily using \hyperlink{namespacebc_1_1nn_a17bbb7ff945016ee40da7ebbd272f4a2}{bc\+::nn\+::nn\+\_\+default\+\_\+system\+\_\+tag} = typedef \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag}}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacebc_1_1nn_a6973f1eb052448a0a62bae16c2ffd227}\label{namespacebc_1_1nn_a6973f1eb052448a0a62bae16c2ffd227}} 
+\index{bc\+::nn@{bc\+::nn}!cache\+\_\+key\+\_\+type@{cache\+\_\+key\+\_\+type}}
+\index{cache\+\_\+key\+\_\+type@{cache\+\_\+key\+\_\+type}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{cache\+\_\+key\+\_\+type}{cache\_key\_type}}
+{\footnotesize\ttfamily enum \hyperlink{namespacebc_1_1nn_a6973f1eb052448a0a62bae16c2ffd227}{bc\+::nn\+::cache\+\_\+key\+\_\+type}}
+
+
+
+A type designed to act as a key to the \hyperlink{structbc_1_1nn_1_1Cache}{Cache} object. 
+
+Arguments\+: K -\/ any class to use as a key, generally \char`\"{}\+Name$<$char...$>$\char`\"{} class is used to create a constexpr name to the class. V -\/ the type to return from the given key Cache\+Key\+Overrider -\/ Determines if the storing should override the most recent member store or if it should be stored in a separate location for back-\/propagation through time. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{inherit@{inherit}!bc\+::nn@{bc\+::nn}}\index{bc\+::nn@{bc\+::nn}!inherit@{inherit}}}\mbox{\Hypertarget{namespacebc_1_1nn_a6973f1eb052448a0a62bae16c2ffd227adb9556ae635e4b90a32cd0e2d4b623f5}\label{namespacebc_1_1nn_a6973f1eb052448a0a62bae16c2ffd227adb9556ae635e4b90a32cd0e2d4b623f5}} 
+inherit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{always\+\_\+recurrent@{always\+\_\+recurrent}!bc\+::nn@{bc\+::nn}}\index{bc\+::nn@{bc\+::nn}!always\+\_\+recurrent@{always\+\_\+recurrent}}}\mbox{\Hypertarget{namespacebc_1_1nn_a6973f1eb052448a0a62bae16c2ffd227a696a94358808d670d9d9bbbd1b395dea}\label{namespacebc_1_1nn_a6973f1eb052448a0a62bae16c2ffd227a696a94358808d670d9d9bbbd1b395dea}} 
+always\+\_\+recurrent&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{always\+\_\+forward@{always\+\_\+forward}!bc\+::nn@{bc\+::nn}}\index{bc\+::nn@{bc\+::nn}!always\+\_\+forward@{always\+\_\+forward}}}\mbox{\Hypertarget{namespacebc_1_1nn_a6973f1eb052448a0a62bae16c2ffd227ab21e4901079ed9d29f7a4b39e470d795}\label{namespacebc_1_1nn_a6973f1eb052448a0a62bae16c2ffd227ab21e4901079ed9d29f7a4b39e470d795}} 
+always\+\_\+forward&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacebc_1_1nn_a52abc08f24905dc8029f3a913bdd07e1}\label{namespacebc_1_1nn_a52abc08f24905dc8029f3a913bdd07e1}} 
+\index{bc\+::nn@{bc\+::nn}!convolution@{convolution}}
+\index{convolution@{convolution}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{convolution()}{convolution()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag  = B\+L\+A\+C\+K\+C\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+T, class Optimizer  = nn\+\_\+default\+\_\+optimizer\+\_\+type$>$ \\
+auto bc\+::nn\+::convolution (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$}]{img\+\_\+dims,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$}]{krnl\+\_\+dims,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{padding = {\ttfamily \hyperlink{structbc_1_1Dim}{Dim}$<$2$>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0)},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{strides = {\ttfamily \hyperlink{structbc_1_1Dim}{Dim}$<$2$>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1)},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{dilation = {\ttfamily \hyperlink{structbc_1_1Dim}{Dim}$<$2$>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1)},  }\item[{Optimizer}]{ = {\ttfamily Optimizer()} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a4029ec07d94f518e19c06c5bea63bd17}\label{namespacebc_1_1nn_a4029ec07d94f518e19c06c5bea63bd17}} 
+\index{bc\+::nn@{bc\+::nn}!convolution@{convolution}}
+\index{convolution@{convolution}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{convolution()}{convolution()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Optimizer $>$ \\
+auto bc\+::nn\+::convolution (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$}]{img\+\_\+dims,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$}]{krnl\+\_\+dims,  }\item[{Optimizer}]{,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{padding = {\ttfamily \hyperlink{structbc_1_1Dim}{Dim}$<$2$>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0)},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{strides = {\ttfamily \hyperlink{structbc_1_1Dim}{Dim}$<$2$>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1)},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{dilation = {\ttfamily \hyperlink{structbc_1_1Dim}{Dim}$<$2$>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1)} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a2aa178844eb976dd07e0254e5047b897}\label{namespacebc_1_1nn_a2aa178844eb976dd07e0254e5047b897}} 
+\index{bc\+::nn@{bc\+::nn}!feedforward@{feedforward}}
+\index{feedforward@{feedforward}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{feedforward()}{feedforward()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Optimizer  = nn\+\_\+default\+\_\+optimizer\+\_\+type$>$ \\
+auto bc\+::nn\+::feedforward (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{int}]{inputs,  }\item[{int}]{outputs,  }\item[{Optimizer}]{ = {\ttfamily Optimizer()} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_ab37956d86d4c9663196041a734e4383e}\label{namespacebc_1_1nn_ab37956d86d4c9663196041a734e4383e}} 
+\index{bc\+::nn@{bc\+::nn}!feedforward@{feedforward}}
+\index{feedforward@{feedforward}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{feedforward()}{feedforward()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Optimizer  = nn\+\_\+default\+\_\+optimizer\+\_\+type$>$ \\
+auto bc\+::nn\+::feedforward (\begin{DoxyParamCaption}\item[{int}]{inputs,  }\item[{int}]{outputs,  }\item[{Optimizer}]{ = {\ttfamily Optimizer()} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_ad3ccbb13b94637fc40bcd46d2cd5b1e4}\label{namespacebc_1_1nn_ad3ccbb13b94637fc40bcd46d2cd5b1e4}} 
+\index{bc\+::nn@{bc\+::nn}!flatten@{flatten}}
+\index{flatten@{flatten}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{flatten()}{flatten()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag , int X$>$ \\
+auto bc\+::nn\+::flatten (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ X $>$}]{shape }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_afcf9752c3b29c98ef665dd710b18c7fd}\label{namespacebc_1_1nn_afcf9752c3b29c98ef665dd710b18c7fd}} 
+\index{bc\+::nn@{bc\+::nn}!flatten@{flatten}}
+\index{flatten@{flatten}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{flatten()}{flatten()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , int X$>$ \\
+auto bc\+::nn\+::flatten (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ X $>$}]{shape }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_ac038324e88b3931fb3f8fb92b809a4f5}\label{namespacebc_1_1nn_ac038324e88b3931fb3f8fb92b809a4f5}} 
+\index{bc\+::nn@{bc\+::nn}!flatten@{flatten}}
+\index{flatten@{flatten}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{flatten()}{flatten()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$int X$>$ \\
+auto bc\+::nn\+::flatten (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ X $>$}]{shape }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a0fef36d0002a6d7c7cb619d7e27d5c1e}\label{namespacebc_1_1nn_a0fef36d0002a6d7c7cb619d7e27d5c1e}} 
+\index{bc\+::nn@{bc\+::nn}!function@{function}}
+\index{function@{function}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{function()}{function()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag , class Functor $>$ \\
+\hyperlink{structbc_1_1nn_1_1Function}{Function}$<$System\+Tag, Value\+Type, Functor$>$ bc\+::nn\+::function (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{int}]{inputs,  }\item[{Functor}]{function = {\ttfamily Functor()} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a276a5ca53a08ea4d75b06e49c29ba08b}\label{namespacebc_1_1nn_a276a5ca53a08ea4d75b06e49c29ba08b}} 
+\index{bc\+::nn@{bc\+::nn}!function@{function}}
+\index{function@{function}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{function()}{function()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Functor $>$ \\
+auto bc\+::nn\+::function (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{int}]{inputs,  }\item[{Functor}]{function = {\ttfamily Functor()} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a096e40e3a123e5596200426da91ec617}\label{namespacebc_1_1nn_a096e40e3a123e5596200426da91ec617}} 
+\index{bc\+::nn@{bc\+::nn}!function@{function}}
+\index{function@{function}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{function()}{function()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag , class Functor , int X$>$ \\
+\hyperlink{structbc_1_1nn_1_1Function}{Function}$<$System\+Tag, Value\+Type, Functor$>$ bc\+::nn\+::function (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ X $>$}]{shape,  }\item[{Functor}]{function = {\ttfamily Functor()} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a8d19df0b93be99f409be6e2a65ca1052}\label{namespacebc_1_1nn_a8d19df0b93be99f409be6e2a65ca1052}} 
+\index{bc\+::nn@{bc\+::nn}!function@{function}}
+\index{function@{function}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{function()}{function()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Functor , int X$>$ \\
+auto bc\+::nn\+::function (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$}]{shape,  }\item[{Functor}]{function = {\ttfamily Functor()} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_ad126cb88738312204f33d5e21a03bf06}\label{namespacebc_1_1nn_ad126cb88738312204f33d5e21a03bf06}} 
+\index{bc\+::nn@{bc\+::nn}!link@{link}}
+\index{link@{link}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{link()}{link()}}
+{\footnotesize\ttfamily template$<$class... ArgsA, class... ArgsB$>$ \\
+void bc\+::nn\+::link (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$ Args\+A... $>$$>$}]{prev,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$ Args\+B... $>$$>$}]{next }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a0e09424bd9585d7fac8f168894315054}\label{namespacebc_1_1nn_a0e09424bd9585d7fac8f168894315054}} 
+\index{bc\+::nn@{bc\+::nn}!logging\+\_\+output\+\_\+layer@{logging\+\_\+output\+\_\+layer}}
+\index{logging\+\_\+output\+\_\+layer@{logging\+\_\+output\+\_\+layer}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{logging\+\_\+output\+\_\+layer()}{logging\_output\_layer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag , class Error\+Function  = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{Logging\+\_\+\+Output\+\_\+\+Layer}$<$System\+Tag, Value\+Type$>$ bc\+::nn\+::logging\+\_\+output\+\_\+layer (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs,  }\item[{Error\+Function}]{error\+\_\+function = {\ttfamily ErrorFunction()},  }\item[{std\+::ostream \&}]{os = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_acb61279448bd2071e5ecdb743b6109a4}\label{namespacebc_1_1nn_acb61279448bd2071e5ecdb743b6109a4}} 
+\index{bc\+::nn@{bc\+::nn}!logging\+\_\+output\+\_\+layer@{logging\+\_\+output\+\_\+layer}}
+\index{logging\+\_\+output\+\_\+layer@{logging\+\_\+output\+\_\+layer}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{logging\+\_\+output\+\_\+layer()}{logging\_output\_layer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Error\+Function  = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+auto bc\+::nn\+::logging\+\_\+output\+\_\+layer (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs,  }\item[{Error\+Function}]{error\+\_\+function = {\ttfamily ErrorFunction()},  }\item[{std\+::ostream \&}]{os = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_ab353668fc04b2496759be76e26c1697d}\label{namespacebc_1_1nn_ab353668fc04b2496759be76e26c1697d}} 
+\index{bc\+::nn@{bc\+::nn}!logging\+\_\+output\+\_\+layer@{logging\+\_\+output\+\_\+layer}}
+\index{logging\+\_\+output\+\_\+layer@{logging\+\_\+output\+\_\+layer}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{logging\+\_\+output\+\_\+layer()}{logging\_output\_layer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class Error\+Function  = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+auto bc\+::nn\+::logging\+\_\+output\+\_\+layer (\begin{DoxyParamCaption}\item[{int}]{inputs,  }\item[{Error\+Function}]{error\+\_\+function = {\ttfamily ErrorFunction()},  }\item[{std\+::ostream \&}]{os = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a377a17e29fde2477e1098bc74ff38963}\label{namespacebc_1_1nn_a377a17e29fde2477e1098bc74ff38963}} 
+\index{bc\+::nn@{bc\+::nn}!logistic@{logistic}}
+\index{logistic@{logistic}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{logistic()}{logistic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily auto bc\+::nn\+::logistic (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a56e8a819ad99c89d7e2dbb5359f72fba}\label{namespacebc_1_1nn_a56e8a819ad99c89d7e2dbb5359f72fba}} 
+\index{bc\+::nn@{bc\+::nn}!logistic@{logistic}}
+\index{logistic@{logistic}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{logistic()}{logistic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag $>$ \\
+auto bc\+::nn\+::logistic (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_ab2671a4c0d9e2e4f2b6abeb7290e9c61}\label{namespacebc_1_1nn_ab2671a4c0d9e2e4f2b6abeb7290e9c61}} 
+\index{bc\+::nn@{bc\+::nn}!logistic@{logistic}}
+\index{logistic@{logistic}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{logistic()}{logistic()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+auto bc\+::nn\+::logistic (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a2f995cbb0542f096ceac9e6d5df6408f}\label{namespacebc_1_1nn_a2f995cbb0542f096ceac9e6d5df6408f}} 
+\index{bc\+::nn@{bc\+::nn}!logistic@{logistic}}
+\index{logistic@{logistic}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{logistic()}{logistic()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag , int X$>$ \\
+auto bc\+::nn\+::logistic (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a6ae0cff41285566585676c1ea3c392ec}\label{namespacebc_1_1nn_a6ae0cff41285566585676c1ea3c392ec}} 
+\index{bc\+::nn@{bc\+::nn}!logistic@{logistic}}
+\index{logistic@{logistic}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{logistic()}{logistic()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , int X$>$ \\
+auto bc\+::nn\+::logistic (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a0a16bba0c1484ef3e4c1785b18a08333}\label{namespacebc_1_1nn_a0a16bba0c1484ef3e4c1785b18a08333}} 
+\index{bc\+::nn@{bc\+::nn}!lstm@{lstm}}
+\index{lstm@{lstm}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{lstm()}{lstm()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Optimizer  = nn\+\_\+default\+\_\+optimizer\+\_\+type$>$ \\
+auto bc\+::nn\+::lstm (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{int}]{inputs,  }\item[{int}]{outputs,  }\item[{Optimizer}]{ = {\ttfamily Optimizer()} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a0a21d00395e6af5b4c8b3c298b677195}\label{namespacebc_1_1nn_a0a21d00395e6af5b4c8b3c298b677195}} 
+\index{bc\+::nn@{bc\+::nn}!lstm@{lstm}}
+\index{lstm@{lstm}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{lstm()}{lstm()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Optimizer  = nn\+\_\+default\+\_\+optimizer\+\_\+type$>$ \\
+auto bc\+::nn\+::lstm (\begin{DoxyParamCaption}\item[{int}]{inputs,  }\item[{int}]{outputs,  }\item[{Optimizer}]{ = {\ttfamily Optimizer()} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a767fb1c413a31da42831d6bdc91b10af}\label{namespacebc_1_1nn_a767fb1c413a31da42831d6bdc91b10af}} 
+\index{bc\+::nn@{bc\+::nn}!max\+\_\+pooling@{max\+\_\+pooling}}
+\index{max\+\_\+pooling@{max\+\_\+pooling}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{max\+\_\+pooling()}{max\_pooling()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag $>$ \\
+\hyperlink{structbc_1_1nn_1_1Max__Pooling}{Max\+\_\+\+Pooling}$<$System\+Tag, Value\+Type$>$ bc\+::nn\+::max\+\_\+pooling (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$}]{img\+\_\+dims,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{krnl\+\_\+dims = {\ttfamily \{3,3\}},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{padding = {\ttfamily \{0,0\}},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{strides = {\ttfamily \{-\/1,-\/1\}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a03cb186fd7f64df5668d4c6ada3047c7}\label{namespacebc_1_1nn_a03cb186fd7f64df5668d4c6ada3047c7}} 
+\index{bc\+::nn@{bc\+::nn}!max\+\_\+pooling@{max\+\_\+pooling}}
+\index{max\+\_\+pooling@{max\+\_\+pooling}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{max\+\_\+pooling()}{max\_pooling()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+auto bc\+::nn\+::max\+\_\+pooling (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$}]{img\+\_\+dims,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{krnl\+\_\+dims = {\ttfamily \{3,3\}},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{padding = {\ttfamily \{0,0\}},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{strides = {\ttfamily \{-\/1,-\/1\}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_ad265b01898441246ba30799156b0158b}\label{namespacebc_1_1nn_ad265b01898441246ba30799156b0158b}} 
+\index{bc\+::nn@{bc\+::nn}!max\+\_\+pooling@{max\+\_\+pooling}}
+\index{max\+\_\+pooling@{max\+\_\+pooling}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{max\+\_\+pooling()}{max\_pooling()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily auto bc\+::nn\+::max\+\_\+pooling (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$}]{img\+\_\+dims,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{krnl\+\_\+dims = {\ttfamily \{3,3\}},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{padding = {\ttfamily \{0,0\}},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{strides = {\ttfamily \{-\/1,-\/1\}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a4caea62ecbd9888f7d0a77661a2e7832}\label{namespacebc_1_1nn_a4caea62ecbd9888f7d0a77661a2e7832}} 
+\index{bc\+::nn@{bc\+::nn}!mish@{mish}}
+\index{mish@{mish}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{mish()}{mish()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily auto bc\+::nn\+::mish (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_aa3c0961368fefa7b538affb32f1e4e05}\label{namespacebc_1_1nn_aa3c0961368fefa7b538affb32f1e4e05}} 
+\index{bc\+::nn@{bc\+::nn}!mish@{mish}}
+\index{mish@{mish}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{mish()}{mish()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag $>$ \\
+auto bc\+::nn\+::mish (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_abf3d50f04ead7ada621648fc8ef0dbdc}\label{namespacebc_1_1nn_abf3d50f04ead7ada621648fc8ef0dbdc}} 
+\index{bc\+::nn@{bc\+::nn}!mish@{mish}}
+\index{mish@{mish}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{mish()}{mish()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+auto bc\+::nn\+::mish (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a65e90e567d7f2dc29cf67f9885b17811}\label{namespacebc_1_1nn_a65e90e567d7f2dc29cf67f9885b17811}} 
+\index{bc\+::nn@{bc\+::nn}!mish@{mish}}
+\index{mish@{mish}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{mish()}{mish()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag , int X$>$ \\
+auto bc\+::nn\+::mish (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_afb1231c7a3de4aec64f3de944173df84}\label{namespacebc_1_1nn_afb1231c7a3de4aec64f3de944173df84}} 
+\index{bc\+::nn@{bc\+::nn}!mish@{mish}}
+\index{mish@{mish}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{mish()}{mish()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , int X$>$ \\
+auto bc\+::nn\+::mish (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_aed1958e9d71be2ebdf0c51c26e97b947}\label{namespacebc_1_1nn_aed1958e9d71be2ebdf0c51c26e97b947}} 
+\index{bc\+::nn@{bc\+::nn}!neuralnetwork@{neuralnetwork}}
+\index{neuralnetwork@{neuralnetwork}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{neuralnetwork()}{neuralnetwork()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+auto bc\+::nn\+::neuralnetwork (\begin{DoxyParamCaption}\item[{Layers ...}]{layers }\end{DoxyParamCaption})}
+
+
+
+Factory method for creating neural\+\_\+networks. 
+
+Each layer defines its own respective factory\+\_\+methods. It is generally recommended to use these factory methods opposed to instantiating a layer object manually. \mbox{\Hypertarget{namespacebc_1_1nn_ae84edaf9ec82c2af64a8f3aa54b4828e}\label{namespacebc_1_1nn_ae84edaf9ec82c2af64a8f3aa54b4828e}} 
+\index{bc\+::nn@{bc\+::nn}!output\+\_\+layer@{output\+\_\+layer}}
+\index{output\+\_\+layer@{output\+\_\+layer}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{output\+\_\+layer()}{output\_layer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag $>$ \\
+\hyperlink{structbc_1_1nn_1_1Output__Layer}{Output\+\_\+\+Layer}$<$System\+Tag, Value\+Type$>$ bc\+::nn\+::output\+\_\+layer (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{int}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_abbaad8d9e2085fa6e976f944b7e9e894}\label{namespacebc_1_1nn_abbaad8d9e2085fa6e976f944b7e9e894}} 
+\index{bc\+::nn@{bc\+::nn}!output\+\_\+layer@{output\+\_\+layer}}
+\index{output\+\_\+layer@{output\+\_\+layer}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{output\+\_\+layer()}{output\_layer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+auto bc\+::nn\+::output\+\_\+layer (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{int}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a56a762fa913ca0ac7399cae1713b9d5a}\label{namespacebc_1_1nn_a56a762fa913ca0ac7399cae1713b9d5a}} 
+\index{bc\+::nn@{bc\+::nn}!output\+\_\+layer@{output\+\_\+layer}}
+\index{output\+\_\+layer@{output\+\_\+layer}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{output\+\_\+layer()}{output\_layer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily auto bc\+::nn\+::output\+\_\+layer (\begin{DoxyParamCaption}\item[{int}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_ae3f19f032dee5e9dd4916e0caf6ae21b}\label{namespacebc_1_1nn_ae3f19f032dee5e9dd4916e0caf6ae21b}} 
+\index{bc\+::nn@{bc\+::nn}!recurrent@{recurrent}}
+\index{recurrent@{recurrent}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{recurrent()}{recurrent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag $>$ \\
+\hyperlink{structbc_1_1nn_1_1Recurrent}{Recurrent}$<$System\+Tag, Value\+Type$>$ bc\+::nn\+::recurrent (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{int}]{inputs,  }\item[{int}]{outputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_af907049010c811e5f6d1f094935e8b07}\label{namespacebc_1_1nn_af907049010c811e5f6d1f094935e8b07}} 
+\index{bc\+::nn@{bc\+::nn}!recurrent@{recurrent}}
+\index{recurrent@{recurrent}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{recurrent()}{recurrent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+auto bc\+::nn\+::recurrent (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{int}]{inputs,  }\item[{int}]{outputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_ad12df9d8a92450f4ed84d3ccf0144ef9}\label{namespacebc_1_1nn_ad12df9d8a92450f4ed84d3ccf0144ef9}} 
+\index{bc\+::nn@{bc\+::nn}!recurrent@{recurrent}}
+\index{recurrent@{recurrent}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{recurrent()}{recurrent()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily auto bc\+::nn\+::recurrent (\begin{DoxyParamCaption}\item[{int}]{inputs,  }\item[{int}]{outputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a64f5640dcd0235509fbbc88e49051d58}\label{namespacebc_1_1nn_a64f5640dcd0235509fbbc88e49051d58}} 
+\index{bc\+::nn@{bc\+::nn}!recurrent\+\_\+convolution@{recurrent\+\_\+convolution}}
+\index{recurrent\+\_\+convolution@{recurrent\+\_\+convolution}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{recurrent\+\_\+convolution()}{recurrent\_convolution()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag  = B\+L\+A\+C\+K\+C\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+T, class Optimizer  = nn\+\_\+default\+\_\+optimizer\+\_\+type$>$ \\
+auto bc\+::nn\+::recurrent\+\_\+convolution (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$}]{img\+\_\+dims,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$}]{krnl\+\_\+dims,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{padding = {\ttfamily \hyperlink{structbc_1_1Dim}{Dim}$<$2$>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0)},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{strides = {\ttfamily \hyperlink{structbc_1_1Dim}{Dim}$<$2$>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1)},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{dilation = {\ttfamily \hyperlink{structbc_1_1Dim}{Dim}$<$2$>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1)},  }\item[{Optimizer}]{ = {\ttfamily Optimizer()} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_af1f206cd72b05e2745666402f91a5b72}\label{namespacebc_1_1nn_af1f206cd72b05e2745666402f91a5b72}} 
+\index{bc\+::nn@{bc\+::nn}!recurrent\+\_\+convolution@{recurrent\+\_\+convolution}}
+\index{recurrent\+\_\+convolution@{recurrent\+\_\+convolution}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{recurrent\+\_\+convolution()}{recurrent\_convolution()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Optimizer $>$ \\
+auto bc\+::nn\+::recurrent\+\_\+convolution (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$}]{img\+\_\+dims,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$}]{krnl\+\_\+dims,  }\item[{Optimizer}]{,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{padding = {\ttfamily \hyperlink{structbc_1_1Dim}{Dim}$<$2$>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0)},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{strides = {\ttfamily \hyperlink{structbc_1_1Dim}{Dim}$<$2$>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1)},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{dilation = {\ttfamily \hyperlink{structbc_1_1Dim}{Dim}$<$2$>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1)} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a6858f92eebf902014b9981cc8859d3c1}\label{namespacebc_1_1nn_a6858f92eebf902014b9981cc8859d3c1}} 
+\index{bc\+::nn@{bc\+::nn}!relu@{relu}}
+\index{relu@{relu}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{relu()}{relu()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , int X$>$ \\
+auto bc\+::nn\+::relu (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a38872deedfd974a835678e32fc2cb5ce}\label{namespacebc_1_1nn_a38872deedfd974a835678e32fc2cb5ce}} 
+\index{bc\+::nn@{bc\+::nn}!relu@{relu}}
+\index{relu@{relu}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{relu()}{relu()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag , int X$>$ \\
+auto bc\+::nn\+::relu (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a863a41473186e29b827b21b6009144e7}\label{namespacebc_1_1nn_a863a41473186e29b827b21b6009144e7}} 
+\index{bc\+::nn@{bc\+::nn}!relu@{relu}}
+\index{relu@{relu}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{relu()}{relu()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+auto bc\+::nn\+::relu (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_aead5ec7f5331b0334e7b41c922360236}\label{namespacebc_1_1nn_aead5ec7f5331b0334e7b41c922360236}} 
+\index{bc\+::nn@{bc\+::nn}!relu@{relu}}
+\index{relu@{relu}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{relu()}{relu()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag $>$ \\
+auto bc\+::nn\+::relu (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a44b0c2822ad51e7b6832ae7305728332}\label{namespacebc_1_1nn_a44b0c2822ad51e7b6832ae7305728332}} 
+\index{bc\+::nn@{bc\+::nn}!relu@{relu}}
+\index{relu@{relu}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{relu()}{relu()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily auto bc\+::nn\+::relu (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a02fb410ce3a9154636fa6dd70be6c573}\label{namespacebc_1_1nn_a02fb410ce3a9154636fa6dd70be6c573}} 
+\index{bc\+::nn@{bc\+::nn}!softmax@{softmax}}
+\index{softmax@{softmax}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{softmax()}{softmax()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag $>$ \\
+\hyperlink{structbc_1_1nn_1_1SoftMax}{Soft\+Max}$<$System\+Tag, Value\+Type$>$ bc\+::nn\+::softmax (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{int}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a59289071157643a5f945692daec05a95}\label{namespacebc_1_1nn_a59289071157643a5f945692daec05a95}} 
+\index{bc\+::nn@{bc\+::nn}!softmax@{softmax}}
+\index{softmax@{softmax}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{softmax()}{softmax()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+auto bc\+::nn\+::softmax (\begin{DoxyParamCaption}\item[{System\+Tag}]{system\+\_\+tag,  }\item[{int}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a2c4469fa8ee39e64ffc2e0d5f1d6d0a6}\label{namespacebc_1_1nn_a2c4469fa8ee39e64ffc2e0d5f1d6d0a6}} 
+\index{bc\+::nn@{bc\+::nn}!softmax@{softmax}}
+\index{softmax@{softmax}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{softmax()}{softmax()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily auto bc\+::nn\+::softmax (\begin{DoxyParamCaption}\item[{int}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a184b8d441f45f985daba7536d86e5f04}\label{namespacebc_1_1nn_a184b8d441f45f985daba7536d86e5f04}} 
+\index{bc\+::nn@{bc\+::nn}!softplus@{softplus}}
+\index{softplus@{softplus}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{softplus()}{softplus()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+auto bc\+::nn\+::softplus (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a714a2159626268241bb644688f6cab47}\label{namespacebc_1_1nn_a714a2159626268241bb644688f6cab47}} 
+\index{bc\+::nn@{bc\+::nn}!softplus@{softplus}}
+\index{softplus@{softplus}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{softplus()}{softplus()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag $>$ \\
+auto bc\+::nn\+::softplus (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_ad623041ec1815227dcfcde29e6c41761}\label{namespacebc_1_1nn_ad623041ec1815227dcfcde29e6c41761}} 
+\index{bc\+::nn@{bc\+::nn}!softplus@{softplus}}
+\index{softplus@{softplus}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{softplus()}{softplus()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag , int X$>$ \\
+auto bc\+::nn\+::softplus (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a2da6aad8df7a81917589a72c77aa04e1}\label{namespacebc_1_1nn_a2da6aad8df7a81917589a72c77aa04e1}} 
+\index{bc\+::nn@{bc\+::nn}!softplus@{softplus}}
+\index{softplus@{softplus}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{softplus()}{softplus()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily auto bc\+::nn\+::softplus (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a9f5f7e6d8257036f54139f9a984aa22e}\label{namespacebc_1_1nn_a9f5f7e6d8257036f54139f9a984aa22e}} 
+\index{bc\+::nn@{bc\+::nn}!softplus@{softplus}}
+\index{softplus@{softplus}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{softplus()}{softplus()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , int X$>$ \\
+auto bc\+::nn\+::softplus (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a6b846b0ef196badcc603133bec5e67e9}\label{namespacebc_1_1nn_a6b846b0ef196badcc603133bec5e67e9}} 
+\index{bc\+::nn@{bc\+::nn}!tanh@{tanh}}
+\index{tanh@{tanh}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{tanh()}{tanh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag , int X$>$ \\
+auto bc\+::nn\+::tanh (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a1146aec7724cb368342261c32b77341b}\label{namespacebc_1_1nn_a1146aec7724cb368342261c32b77341b}} 
+\index{bc\+::nn@{bc\+::nn}!tanh@{tanh}}
+\index{tanh@{tanh}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{tanh()}{tanh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , int X$>$ \\
+auto bc\+::nn\+::tanh (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ X $>$}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a852717a17dfaf0dee293b5765dfc5528}\label{namespacebc_1_1nn_a852717a17dfaf0dee293b5765dfc5528}} 
+\index{bc\+::nn@{bc\+::nn}!tanh@{tanh}}
+\index{tanh@{tanh}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{tanh()}{tanh()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class System\+Tag $>$ \\
+auto bc\+::nn\+::tanh (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a0f16fef3ad5fcb1481ba386da77a8208}\label{namespacebc_1_1nn_a0f16fef3ad5fcb1481ba386da77a8208}} 
+\index{bc\+::nn@{bc\+::nn}!tanh@{tanh}}
+\index{tanh@{tanh}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{tanh()}{tanh()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily auto bc\+::nn\+::tanh (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a1ef53f76e9c68aa315b86accaf67cf67}\label{namespacebc_1_1nn_a1ef53f76e9c68aa315b86accaf67cf67}} 
+\index{bc\+::nn@{bc\+::nn}!tanh@{tanh}}
+\index{tanh@{tanh}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{tanh()}{tanh()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+auto bc\+::nn\+::tanh (\begin{DoxyParamCaption}\item[{System\+Tag}]{system,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacebc_1_1nn_a8c31de21c1ca1a76f7888b8eecce7774}\label{namespacebc_1_1nn_a8c31de21c1ca1a76f7888b8eecce7774}} 
+\index{bc\+::nn@{bc\+::nn}!adam@{adam}}
+\index{adam@{adam}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{adam}{adam}}
+{\footnotesize\ttfamily struct \hyperlink{structbc_1_1nn_1_1Adam}{bc\+::nn\+::\+Adam}  bc\+::nn\+::adam}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a750f7a0e2cf0394b33d96d0ed4215324}\label{namespacebc_1_1nn_a750f7a0e2cf0394b33d96d0ed4215324}} 
+\index{bc\+::nn@{bc\+::nn}!M\+AE@{M\+AE}}
+\index{M\+AE@{M\+AE}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{M\+AE}{MAE}}
+{\footnotesize\ttfamily struct \hyperlink{structbc_1_1nn_1_1Mean__Absolute__Error}{bc\+::nn\+::\+Mean\+\_\+\+Absolute\+\_\+\+Error}  bc\+::nn\+::\+M\+AE}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a79e2cb825afd655959942b256380f212}\label{namespacebc_1_1nn_a79e2cb825afd655959942b256380f212}} 
+\index{bc\+::nn@{bc\+::nn}!M\+A\+PE@{M\+A\+PE}}
+\index{M\+A\+PE@{M\+A\+PE}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{M\+A\+PE}{MAPE}}
+{\footnotesize\ttfamily struct \hyperlink{structbc_1_1nn_1_1Mean__Absolute__Percent__Error}{bc\+::nn\+::\+Mean\+\_\+\+Absolute\+\_\+\+Percent\+\_\+\+Error}  bc\+::nn\+::\+M\+A\+PE}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a103e3ff34c6a6b393908837f39947b73}\label{namespacebc_1_1nn_a103e3ff34c6a6b393908837f39947b73}} 
+\index{bc\+::nn@{bc\+::nn}!momentum@{momentum}}
+\index{momentum@{momentum}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{momentum}{momentum}}
+{\footnotesize\ttfamily struct \hyperlink{structbc_1_1nn_1_1Momentum}{bc\+::nn\+::\+Momentum}  bc\+::nn\+::momentum}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a68f287847db51c1b954a80b67254ea30}\label{namespacebc_1_1nn_a68f287847db51c1b954a80b67254ea30}} 
+\index{bc\+::nn@{bc\+::nn}!M\+SE@{M\+SE}}
+\index{M\+SE@{M\+SE}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{M\+SE}{MSE}}
+{\footnotesize\ttfamily struct \hyperlink{structbc_1_1nn_1_1Mean__Squared__Error}{bc\+::nn\+::\+Mean\+\_\+\+Squared\+\_\+\+Error}  bc\+::nn\+::\+M\+SE}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_ab1183e69180fb5a708babd6a2b1108b9}\label{namespacebc_1_1nn_ab1183e69180fb5a708babd6a2b1108b9}} 
+\index{bc\+::nn@{bc\+::nn}!R\+M\+SE@{R\+M\+SE}}
+\index{R\+M\+SE@{R\+M\+SE}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{R\+M\+SE}{RMSE}}
+{\footnotesize\ttfamily struct \hyperlink{structbc_1_1nn_1_1Root__Mean__Squared__Error}{bc\+::nn\+::\+Root\+\_\+\+Mean\+\_\+\+Squared\+\_\+\+Error}  bc\+::nn\+::\+R\+M\+SE}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_a4b614663e3ff7f18425e5dc00ebbb67c}\label{namespacebc_1_1nn_a4b614663e3ff7f18425e5dc00ebbb67c}} 
+\index{bc\+::nn@{bc\+::nn}!sgd@{sgd}}
+\index{sgd@{sgd}!bc\+::nn@{bc\+::nn}}
+\subsubsection{\texorpdfstring{sgd}{sgd}}
+{\footnotesize\ttfamily struct \hyperlink{structbc_1_1nn_1_1Stochastic__Gradient__Descent}{bc\+::nn\+::\+Stochastic\+\_\+\+Gradient\+\_\+\+Descent}  bc\+::nn\+::sgd}
+

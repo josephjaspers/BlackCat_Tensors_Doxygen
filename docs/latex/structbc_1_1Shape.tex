@@ -1,0 +1,259 @@
+\hypertarget{structbc_1_1Shape}{}\section{bc\+:\+:Shape$<$ N $>$ Struct Template Reference}
+\label{structbc_1_1Shape}\index{bc\+::\+Shape$<$ N $>$@{bc\+::\+Shape$<$ N $>$}}
+
+
+{\ttfamily \#include $<$shape.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:Shape$<$ N $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1Shape__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} = \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}
+\item 
+using \hyperlink{structbc_1_1Shape_a52aafd6585a5eae8a3b82f650d3afc1c}{value\+\_\+type} = \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a1f9f9b18b122fbee5880a5b6a456781f}{Shape} ()
+\item 
+{\footnotesize template$<$class... Integers, class  = std\+::enable\+\_\+if\+\_\+t$<$			bc\+::traits\+::sequence\+\_\+of\+\_\+v$<$size\+\_\+t, Integers...$>$ \&\&			(sizeof...(\+Integers) == N)$>$$>$ }\\\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a89c3b942f4818a773c4550cb71075160}{Shape} (Integers... ints)
+\item 
+{\footnotesize template$<$int X, class  = std\+::enable\+\_\+if\+\_\+t$<$(\+X $>$ N$>$ }\\\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a4bfb7c3ce4b36b3528d31656526a2a7a}{Shape} (const \hyperlink{structbc_1_1Shape}{Shape}$<$ X $>$ \&\hyperlink{namespacebc_a1bc6dec532973ac024c738c0fd32cca3}{shape})
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a1ea8742dc5c980c524a2d10eae7b8816}{Shape} (\hyperlink{structbc_1_1Dim}{Dim}$<$ N $>$ new\+\_\+shape, const \hyperlink{structbc_1_1Shape}{Shape}$<$ N $>$ \&parent\+\_\+shape)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a79f445db712d0ee7126413ba57377b34}{Shape} (const \hyperlink{structbc_1_1Shape}{Shape}$<$ N $>$ \&new\+\_\+shape, const \hyperlink{structbc_1_1Shape}{Shape}$<$ N $>$ \&parent\+\_\+shape)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a54d66d5709fc58c31a5d3b29fee03fec}{Shape} (\hyperlink{structbc_1_1Dim}{Dim}$<$ N $>$ dims)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} const auto \& \hyperlink{structbc_1_1Shape_a41fcf9207099d9434a7779e53f91d229}{inner\+\_\+shape} () const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} const auto \& \hyperlink{structbc_1_1Shape_a693859c37be584f1001ce309067fc165}{outer\+\_\+shape} () const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape_a3843811a9a21dfc515d156f7482c2db0}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} i) const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape_ad060b7cb938ac27e710901026ac46a01}{size} () const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape_a528691cf43e9d1bdbb4c8405292092f2}{rows} () const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape_aa92f7525e2f0860ad271ebbae1cf29fb}{cols} () const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape_acced7d5436419a46dbb2736457f6585c}{dim} (int i) const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape_a949fecc85ed922edd5ffb185825ef22e}{outer\+\_\+dim} () const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape_ab0f160384387b063fa2198cc0a5b1597}{leading\+\_\+dim} (int i=N-\/1) const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1Shape_a378fc6e7baaa057cee70a0b691e194a6}{operator==} (const \hyperlink{structbc_1_1Shape}{Shape} \&other) const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape_a6fad543e17ae86758fa40ecb0aa3cbf7}{coefficientwise\+\_\+dims\+\_\+to\+\_\+index} (\hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} index) const
+\item 
+{\footnotesize template$<$class... Integers, class  = std\+::enable\+\_\+if\+\_\+t$<$			bc\+::traits\+::sequence\+\_\+of\+\_\+v$<$size\+\_\+t, Integers...$>$ \&\&			(sizeof...(\+Integers) $>$= N$>$ }\\\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape_a84e2316eaa358ff0fa23987623057c3f}{dims\+\_\+to\+\_\+index} (Integers... ints) const
+\item 
+{\footnotesize template$<$int D, class  = std\+::enable\+\_\+if\+\_\+t$<$(\+D$>$=N$>$ }\\\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape_a13997bdb38b401a797f411d8630895e7}{dims\+\_\+to\+\_\+index} (const \hyperlink{structbc_1_1Dim}{Dim}$<$ D $>$ \&var) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr int \hyperlink{structbc_1_1Shape_a1f75fffa8b4aec4405025de308adb169}{tensor\+\_\+dim} = N
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int $>$ }\\struct \hyperlink{structbc_1_1Shape_ab0bde87b11c5c08fec2f2325317820de}{Shape}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}\label{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!size\+\_\+t@{size\+\_\+t}}
+\index{size\+\_\+t@{size\+\_\+t}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{size\+\_\+t}{size\_t}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+using \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::\hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} =  \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_a52aafd6585a5eae8a3b82f650d3afc1c}\label{structbc_1_1Shape_a52aafd6585a5eae8a3b82f650d3afc1c}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+using \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::\hyperlink{structbc_1_1Shape_a52aafd6585a5eae8a3b82f650d3afc1c}{value\+\_\+type} =  \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1Shape_a1f9f9b18b122fbee5880a5b6a456781f}\label{structbc_1_1Shape_a1f9f9b18b122fbee5880a5b6a456781f}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{Shape()}{Shape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::\hyperlink{structbc_1_1Shape}{Shape} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_a89c3b942f4818a773c4550cb71075160}\label{structbc_1_1Shape_a89c3b942f4818a773c4550cb71075160}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{Shape()}{Shape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+template$<$class... Integers, class  = std\+::enable\+\_\+if\+\_\+t$<$			bc\+::traits\+::sequence\+\_\+of\+\_\+v$<$size\+\_\+t, Integers...$>$ \&\&			(sizeof...(\+Integers) == N)$>$$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::\hyperlink{structbc_1_1Shape}{Shape} (\begin{DoxyParamCaption}\item[{Integers...}]{ints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_a4bfb7c3ce4b36b3528d31656526a2a7a}\label{structbc_1_1Shape_a4bfb7c3ce4b36b3528d31656526a2a7a}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{Shape()}{Shape()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+template$<$int X, class  = std\+::enable\+\_\+if\+\_\+t$<$(\+X $>$ N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::\hyperlink{structbc_1_1Shape}{Shape} (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1Shape}{Shape}$<$ X $>$ \&}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_a1ea8742dc5c980c524a2d10eae7b8816}\label{structbc_1_1Shape_a1ea8742dc5c980c524a2d10eae7b8816}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{Shape()}{Shape()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::\hyperlink{structbc_1_1Shape}{Shape} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ N $>$}]{new\+\_\+shape,  }\item[{const \hyperlink{structbc_1_1Shape}{Shape}$<$ N $>$ \&}]{parent\+\_\+shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_a79f445db712d0ee7126413ba57377b34}\label{structbc_1_1Shape_a79f445db712d0ee7126413ba57377b34}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{Shape()}{Shape()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::\hyperlink{structbc_1_1Shape}{Shape} (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1Shape}{Shape}$<$ N $>$ \&}]{new\+\_\+shape,  }\item[{const \hyperlink{structbc_1_1Shape}{Shape}$<$ N $>$ \&}]{parent\+\_\+shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_a54d66d5709fc58c31a5d3b29fee03fec}\label{structbc_1_1Shape_a54d66d5709fc58c31a5d3b29fee03fec}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{Shape()}{Shape()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::\hyperlink{structbc_1_1Shape}{Shape} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ N $>$}]{dims }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1Shape_a6fad543e17ae86758fa40ecb0aa3cbf7}\label{structbc_1_1Shape_a6fad543e17ae86758fa40ecb0aa3cbf7}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!coefficientwise\+\_\+dims\+\_\+to\+\_\+index@{coefficientwise\+\_\+dims\+\_\+to\+\_\+index}}
+\index{coefficientwise\+\_\+dims\+\_\+to\+\_\+index@{coefficientwise\+\_\+dims\+\_\+to\+\_\+index}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{coefficientwise\+\_\+dims\+\_\+to\+\_\+index()}{coefficientwise\_dims\_to\_index()}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::coefficientwise\+\_\+dims\+\_\+to\+\_\+index (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_aa92f7525e2f0860ad271ebbae1cf29fb}\label{structbc_1_1Shape_aa92f7525e2f0860ad271ebbae1cf29fb}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!cols@{cols}}
+\index{cols@{cols}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{cols()}{cols()}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_acced7d5436419a46dbb2736457f6585c}\label{structbc_1_1Shape_acced7d5436419a46dbb2736457f6585c}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!dim@{dim}}
+\index{dim@{dim}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{dim()}{dim()}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::dim (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_a84e2316eaa358ff0fa23987623057c3f}\label{structbc_1_1Shape_a84e2316eaa358ff0fa23987623057c3f}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!dims\+\_\+to\+\_\+index@{dims\+\_\+to\+\_\+index}}
+\index{dims\+\_\+to\+\_\+index@{dims\+\_\+to\+\_\+index}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{dims\+\_\+to\+\_\+index()}{dims\_to\_index()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+template$<$class... Integers, class  = std\+::enable\+\_\+if\+\_\+t$<$			bc\+::traits\+::sequence\+\_\+of\+\_\+v$<$size\+\_\+t, Integers...$>$ \&\&			(sizeof...(\+Integers) $>$= N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::dims\+\_\+to\+\_\+index (\begin{DoxyParamCaption}\item[{Integers...}]{ints }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_a13997bdb38b401a797f411d8630895e7}\label{structbc_1_1Shape_a13997bdb38b401a797f411d8630895e7}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!dims\+\_\+to\+\_\+index@{dims\+\_\+to\+\_\+index}}
+\index{dims\+\_\+to\+\_\+index@{dims\+\_\+to\+\_\+index}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{dims\+\_\+to\+\_\+index()}{dims\_to\_index()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+template$<$int D, class  = std\+::enable\+\_\+if\+\_\+t$<$(\+D$>$=N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::dims\+\_\+to\+\_\+index (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1Dim}{Dim}$<$ D $>$ \&}]{var }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_a41fcf9207099d9434a7779e53f91d229}\label{structbc_1_1Shape_a41fcf9207099d9434a7779e53f91d229}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!inner\+\_\+shape@{inner\+\_\+shape}}
+\index{inner\+\_\+shape@{inner\+\_\+shape}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{inner\+\_\+shape()}{inner\_shape()}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} const auto\& \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::inner\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_ab0f160384387b063fa2198cc0a5b1597}\label{structbc_1_1Shape_ab0f160384387b063fa2198cc0a5b1597}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!leading\+\_\+dim@{leading\+\_\+dim}}
+\index{leading\+\_\+dim@{leading\+\_\+dim}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{leading\+\_\+dim()}{leading\_dim()}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::leading\+\_\+dim (\begin{DoxyParamCaption}\item[{int}]{i = {\ttfamily N-\/1} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_a378fc6e7baaa057cee70a0b691e194a6}\label{structbc_1_1Shape_a378fc6e7baaa057cee70a0b691e194a6}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!operator==@{operator==}}
+\index{operator==@{operator==}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1Shape}{Shape}$<$ N $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_a3843811a9a21dfc515d156f7482c2db0}\label{structbc_1_1Shape_a3843811a9a21dfc515d156f7482c2db0}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t}}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_a949fecc85ed922edd5ffb185825ef22e}\label{structbc_1_1Shape_a949fecc85ed922edd5ffb185825ef22e}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!outer\+\_\+dim@{outer\+\_\+dim}}
+\index{outer\+\_\+dim@{outer\+\_\+dim}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{outer\+\_\+dim()}{outer\_dim()}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::outer\+\_\+dim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_a693859c37be584f1001ce309067fc165}\label{structbc_1_1Shape_a693859c37be584f1001ce309067fc165}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!outer\+\_\+shape@{outer\+\_\+shape}}
+\index{outer\+\_\+shape@{outer\+\_\+shape}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{outer\+\_\+shape()}{outer\_shape()}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} const auto\& \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::outer\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_a528691cf43e9d1bdbb4c8405292092f2}\label{structbc_1_1Shape_a528691cf43e9d1bdbb4c8405292092f2}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!rows@{rows}}
+\index{rows@{rows}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{rows()}{rows()}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1Shape_ad060b7cb938ac27e710901026ac46a01}\label{structbc_1_1Shape_ad060b7cb938ac27e710901026ac46a01}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!size@{size}}
+\index{size@{size}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1Shape_a63f974ebdb0e3755ef3140b17abcf235}{size\+\_\+t} \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structbc_1_1Shape_ab0bde87b11c5c08fec2f2325317820de}\label{structbc_1_1Shape_ab0bde87b11c5c08fec2f2325317820de}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{Shape}{Shape}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+template$<$int $>$ \\
+friend struct \hyperlink{structbc_1_1Shape}{Shape}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1Shape_a1f75fffa8b4aec4405025de308adb169}\label{structbc_1_1Shape_a1f75fffa8b4aec4405025de308adb169}} 
+\index{bc\+::\+Shape@{bc\+::\+Shape}!tensor\+\_\+dim@{tensor\+\_\+dim}}
+\index{tensor\+\_\+dim@{tensor\+\_\+dim}!bc\+::\+Shape@{bc\+::\+Shape}}
+\subsubsection{\texorpdfstring{tensor\+\_\+dim}{tensor\_dim}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+constexpr int \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ N $>$\+::tensor\+\_\+dim = N\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/shape/\hyperlink{shape_2shape_8h}{shape.\+h}\end{DoxyCompactItemize}

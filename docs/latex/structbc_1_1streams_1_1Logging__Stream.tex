@@ -1,0 +1,242 @@
+\hypertarget{structbc_1_1streams_1_1Logging__Stream}{}\section{bc\+:\+:streams\+:\+:Logging\+\_\+\+Stream$<$ System\+Tag $>$ Struct Template Reference}
+\label{structbc_1_1streams_1_1Logging__Stream}\index{bc\+::streams\+::\+Logging\+\_\+\+Stream$<$ System\+Tag $>$@{bc\+::streams\+::\+Logging\+\_\+\+Stream$<$ System\+Tag $>$}}
+
+
+{\ttfamily \#include $<$logging\+\_\+stream.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:streams\+:\+:Logging\+\_\+\+Stream$<$ System\+Tag $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{structbc_1_1streams_1_1Logging__Stream__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:streams\+:\+:Logging\+\_\+\+Stream$<$ System\+Tag $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1streams_1_1Logging__Stream__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1streams_1_1Logging__Stream_a1bbd6f37cd048ff4bd6f60dd715bca70}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1streams_1_1Logging__Stream_a8f20249b75af292f8b50c8bb09a82b38}{allocator\+\_\+type} = \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}$<$ \hyperlink{structbc_1_1allocators_1_1Null__Allocator}{bc\+::allocators\+::\+Null\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Byte}{bc\+::allocators\+::\+Byte}, \hyperlink{structbc_1_1streams_1_1Logging__Stream_a1bbd6f37cd048ff4bd6f60dd715bca70}{system\+\_\+tag} $>$ $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1streams_1_1Logging__Stream_a8f20249b75af292f8b50c8bb09a82b38}{allocator\+\_\+type} \hyperlink{structbc_1_1streams_1_1Logging__Stream_aad1765cc934756cf8070c7dbcbc7a3f5}{get\+\_\+allocator} () const
+\item 
+{\footnotesize template$<$class Value\+Type $>$ }\\auto \hyperlink{structbc_1_1streams_1_1Logging__Stream_ad589e971e82052785fa3b1750bef1f88}{get\+\_\+allocator\+\_\+rebound} () const
+\item 
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream_a19102963d3bb6835417334f4c2820d40}{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+device} () const
+\item 
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream_a0b8dcbea3aa70c6f131f5038bc81d593}{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+host} () const
+\item 
+unsigned \hyperlink{structbc_1_1streams_1_1Logging__Stream_ab810973b3205fccd805f8a96b7245fa0}{get\+\_\+max\+\_\+allocated} () const
+\item 
+unsigned \hyperlink{structbc_1_1streams_1_1Logging__Stream_a14436a0b3b7dd144a57260ce98e8fdaf}{get\+\_\+current\+\_\+allocated} () const
+\item 
+bool \hyperlink{structbc_1_1streams_1_1Logging__Stream_a3e02e28b85328d667b0cc0ff6f27c9c1}{is\+\_\+default} ()
+\item 
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream_a22847a19126bba1a9eab775c5f6133df}{create} ()
+\item 
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream_a74ed4c6a60bf32c125c212d2fb07de10}{destroy} ()
+\item 
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream_a6a045ca3bb0c8b607b8a3d5e7fb350d0}{sync} ()
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{structbc_1_1streams_1_1Logging__Stream_ae0f41d235013dfcd68199f15964320b1}{set\+\_\+stream} (const T \&)
+\item 
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream_a053b8879f3940a865cfadbc297ff2855}{record\+\_\+event} ()
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{structbc_1_1streams_1_1Logging__Stream_acffaf62d148bb839bb2700351cf8ce66}{wait\+\_\+event} (const T \&)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{structbc_1_1streams_1_1Logging__Stream_ad42d7d3cc4c947190335dbea13e80fe2}{wait\+\_\+stream} (const T \&)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\void \hyperlink{structbc_1_1streams_1_1Logging__Stream_a02f3be7b4c71e932a6b948680bf22f35}{enqueue} (const Functor \&functor)
+\item 
+{\footnotesize template$<$class Functor $>$ }\\void \hyperlink{structbc_1_1streams_1_1Logging__Stream_a3fda59dde0522bc6dc33e340b2e42181}{enqueue\+\_\+callback} (const Functor \&functor)
+\item 
+bool \hyperlink{structbc_1_1streams_1_1Logging__Stream_a5c6ac3d7be471ef30364664944c7f689}{operator==} (const \hyperlink{structbc_1_1streams_1_1Logging__Stream}{Logging\+\_\+\+Stream}$<$ System\+Tag $>$ \&dev)
+\item 
+bool \hyperlink{structbc_1_1streams_1_1Logging__Stream_a37020a107e60ec7a684eaacd099b4aca}{operator!=} (const \hyperlink{structbc_1_1streams_1_1Logging__Stream}{Logging\+\_\+\+Stream}$<$ System\+Tag $>$ \&dev)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1streams_1_1Logging__Stream_a8f20249b75af292f8b50c8bb09a82b38}{allocator\+\_\+type} \hyperlink{structbc_1_1streams_1_1Logging__Stream_a635c2bdad82fdd1ee9782c761a5c2131}{allocator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_a8f20249b75af292f8b50c8bb09a82b38}\label{structbc_1_1streams_1_1Logging__Stream_a8f20249b75af292f8b50c8bb09a82b38}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+using \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::\hyperlink{structbc_1_1streams_1_1Logging__Stream_a8f20249b75af292f8b50c8bb09a82b38}{allocator\+\_\+type} =  \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}$<$ \hyperlink{structbc_1_1allocators_1_1Null__Allocator}{bc\+::allocators\+::\+Null\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Byte}{bc\+::allocators\+::\+Byte}, \hyperlink{structbc_1_1streams_1_1Logging__Stream_a1bbd6f37cd048ff4bd6f60dd715bca70}{system\+\_\+tag}$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_a1bbd6f37cd048ff4bd6f60dd715bca70}\label{structbc_1_1streams_1_1Logging__Stream_a1bbd6f37cd048ff4bd6f60dd715bca70}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+using \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::\hyperlink{structbc_1_1streams_1_1Logging__Stream_a1bbd6f37cd048ff4bd6f60dd715bca70}{system\+\_\+tag} =  System\+Tag}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_a22847a19126bba1a9eab775c5f6133df}\label{structbc_1_1streams_1_1Logging__Stream_a22847a19126bba1a9eab775c5f6133df}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!create@{create}}
+\index{create@{create}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_a74ed4c6a60bf32c125c212d2fb07de10}\label{structbc_1_1streams_1_1Logging__Stream_a74ed4c6a60bf32c125c212d2fb07de10}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!destroy@{destroy}}
+\index{destroy@{destroy}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_a02f3be7b4c71e932a6b948680bf22f35}\label{structbc_1_1streams_1_1Logging__Stream_a02f3be7b4c71e932a6b948680bf22f35}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+template$<$class Functor $>$ \\
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::enqueue (\begin{DoxyParamCaption}\item[{const Functor \&}]{functor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_a3fda59dde0522bc6dc33e340b2e42181}\label{structbc_1_1streams_1_1Logging__Stream_a3fda59dde0522bc6dc33e340b2e42181}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!enqueue\+\_\+callback@{enqueue\+\_\+callback}}
+\index{enqueue\+\_\+callback@{enqueue\+\_\+callback}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{enqueue\+\_\+callback()}{enqueue\_callback()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+template$<$class Functor $>$ \\
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::enqueue\+\_\+callback (\begin{DoxyParamCaption}\item[{const Functor \&}]{functor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_aad1765cc934756cf8070c7dbcbc7a3f5}\label{structbc_1_1streams_1_1Logging__Stream_aad1765cc934756cf8070c7dbcbc7a3f5}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!get\+\_\+allocator@{get\+\_\+allocator}}
+\index{get\+\_\+allocator@{get\+\_\+allocator}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{get\+\_\+allocator()}{get\_allocator()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+\hyperlink{structbc_1_1streams_1_1Logging__Stream_a8f20249b75af292f8b50c8bb09a82b38}{allocator\+\_\+type} \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::get\+\_\+allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_ad589e971e82052785fa3b1750bef1f88}\label{structbc_1_1streams_1_1Logging__Stream_ad589e971e82052785fa3b1750bef1f88}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!get\+\_\+allocator\+\_\+rebound@{get\+\_\+allocator\+\_\+rebound}}
+\index{get\+\_\+allocator\+\_\+rebound@{get\+\_\+allocator\+\_\+rebound}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{get\+\_\+allocator\+\_\+rebound()}{get\_allocator\_rebound()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+template$<$class Value\+Type $>$ \\
+auto \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::get\+\_\+allocator\+\_\+rebound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_a14436a0b3b7dd144a57260ce98e8fdaf}\label{structbc_1_1streams_1_1Logging__Stream_a14436a0b3b7dd144a57260ce98e8fdaf}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!get\+\_\+current\+\_\+allocated@{get\+\_\+current\+\_\+allocated}}
+\index{get\+\_\+current\+\_\+allocated@{get\+\_\+current\+\_\+allocated}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{get\+\_\+current\+\_\+allocated()}{get\_current\_allocated()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+unsigned \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::get\+\_\+current\+\_\+allocated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_ab810973b3205fccd805f8a96b7245fa0}\label{structbc_1_1streams_1_1Logging__Stream_ab810973b3205fccd805f8a96b7245fa0}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!get\+\_\+max\+\_\+allocated@{get\+\_\+max\+\_\+allocated}}
+\index{get\+\_\+max\+\_\+allocated@{get\+\_\+max\+\_\+allocated}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{get\+\_\+max\+\_\+allocated()}{get\_max\_allocated()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+unsigned \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::get\+\_\+max\+\_\+allocated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_a3e02e28b85328d667b0cc0ff6f27c9c1}\label{structbc_1_1streams_1_1Logging__Stream_a3e02e28b85328d667b0cc0ff6f27c9c1}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!is\+\_\+default@{is\+\_\+default}}
+\index{is\+\_\+default@{is\+\_\+default}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{is\+\_\+default()}{is\_default()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+bool \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::is\+\_\+default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_a37020a107e60ec7a684eaacd099b4aca}\label{structbc_1_1streams_1_1Logging__Stream_a37020a107e60ec7a684eaacd099b4aca}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+bool \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1streams_1_1Logging__Stream}{Logging\+\_\+\+Stream}$<$ System\+Tag $>$ \&}]{dev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_a5c6ac3d7be471ef30364664944c7f689}\label{structbc_1_1streams_1_1Logging__Stream_a5c6ac3d7be471ef30364664944c7f689}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!operator==@{operator==}}
+\index{operator==@{operator==}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+bool \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1streams_1_1Logging__Stream}{Logging\+\_\+\+Stream}$<$ System\+Tag $>$ \&}]{dev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_a053b8879f3940a865cfadbc297ff2855}\label{structbc_1_1streams_1_1Logging__Stream_a053b8879f3940a865cfadbc297ff2855}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!record\+\_\+event@{record\+\_\+event}}
+\index{record\+\_\+event@{record\+\_\+event}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{record\+\_\+event()}{record\_event()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::record\+\_\+event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_a19102963d3bb6835417334f4c2820d40}\label{structbc_1_1streams_1_1Logging__Stream_a19102963d3bb6835417334f4c2820d40}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+device@{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+device}}
+\index{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+device@{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+device}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+device()}{set\_blas\_pointer\_mode\_device()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_a0b8dcbea3aa70c6f131f5038bc81d593}\label{structbc_1_1streams_1_1Logging__Stream_a0b8dcbea3aa70c6f131f5038bc81d593}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+host@{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+host}}
+\index{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+host@{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+host}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+host()}{set\_blas\_pointer\_mode\_host()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::set\+\_\+blas\+\_\+pointer\+\_\+mode\+\_\+host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_ae0f41d235013dfcd68199f15964320b1}\label{structbc_1_1streams_1_1Logging__Stream_ae0f41d235013dfcd68199f15964320b1}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!set\+\_\+stream@{set\+\_\+stream}}
+\index{set\+\_\+stream@{set\+\_\+stream}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{set\+\_\+stream()}{set\_stream()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+template$<$class T $>$ \\
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::set\+\_\+stream (\begin{DoxyParamCaption}\item[{const T \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_a6a045ca3bb0c8b607b8a3d5e7fb350d0}\label{structbc_1_1streams_1_1Logging__Stream_a6a045ca3bb0c8b607b8a3d5e7fb350d0}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!sync@{sync}}
+\index{sync@{sync}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{sync()}{sync()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::sync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_acffaf62d148bb839bb2700351cf8ce66}\label{structbc_1_1streams_1_1Logging__Stream_acffaf62d148bb839bb2700351cf8ce66}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!wait\+\_\+event@{wait\+\_\+event}}
+\index{wait\+\_\+event@{wait\+\_\+event}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{wait\+\_\+event()}{wait\_event()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+template$<$class T $>$ \\
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::wait\+\_\+event (\begin{DoxyParamCaption}\item[{const T \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_ad42d7d3cc4c947190335dbea13e80fe2}\label{structbc_1_1streams_1_1Logging__Stream_ad42d7d3cc4c947190335dbea13e80fe2}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!wait\+\_\+stream@{wait\+\_\+stream}}
+\index{wait\+\_\+stream@{wait\+\_\+stream}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{wait\+\_\+stream()}{wait\_stream()}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+template$<$class T $>$ \\
+void \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::wait\+\_\+stream (\begin{DoxyParamCaption}\item[{const T \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1streams_1_1Logging__Stream_a635c2bdad82fdd1ee9782c761a5c2131}\label{structbc_1_1streams_1_1Logging__Stream_a635c2bdad82fdd1ee9782c761a5c2131}} 
+\index{bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}!allocator@{allocator}}
+\index{allocator@{allocator}!bc\+::streams\+::\+Logging\+\_\+\+Stream@{bc\+::streams\+::\+Logging\+\_\+\+Stream}}
+\subsubsection{\texorpdfstring{allocator}{allocator}}
+{\footnotesize\ttfamily template$<$class System\+Tag$>$ \\
+\hyperlink{structbc_1_1streams_1_1Logging__Stream_a8f20249b75af292f8b50c8bb09a82b38}{allocator\+\_\+type} \hyperlink{structbc_1_1streams_1_1Logging__Stream}{bc\+::streams\+::\+Logging\+\_\+\+Stream}$<$ System\+Tag $>$\+::allocator}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/streams/\hyperlink{logging__stream_8h}{logging\+\_\+stream.\+h}\end{DoxyCompactItemize}

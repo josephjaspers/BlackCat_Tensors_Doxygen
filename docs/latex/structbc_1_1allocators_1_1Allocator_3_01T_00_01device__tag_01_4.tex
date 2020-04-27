@@ -1,0 +1,92 @@
+\hypertarget{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4}{}\section{bc\+:\+:allocators\+:\+:Allocator$<$ T, device\+\_\+tag $>$ Struct Template Reference}
+\label{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4}\index{bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$@{bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$}}
+
+
+The \textquotesingle{}std\+::allocator\textquotesingle{} of G\+P\+U-\/allocators. Memory is allocated via \textquotesingle{}cuda\+Malloc\textquotesingle{}.  
+
+
+
+
+{\ttfamily \#include $<$basic\+\_\+allocators.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:allocators\+:\+:Allocator$<$ T, device\+\_\+tag $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:allocators\+:\+:Allocator$<$ T, device\+\_\+tag $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4_1_1rebind}{rebind}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class U $>$ }\\\hyperlink{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4_a88d0cc2114abb58361cfa739f1e190e7}{Allocator} (const \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}$<$ U, \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$ \&)
+\item 
+\hyperlink{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4_aef910f60bb75fdfc303d99aa779d1de1}{Allocator} ()=default
+\item 
+T $\ast$ \hyperlink{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4_a140957d76e4b582ca2b85b52a8417cd0}{allocate} (std\+::size\+\_\+t sz) const
+\item 
+void \hyperlink{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4_a80060f1c76c04adb6f48e4645896ec77}{deallocate} (T $\ast$data\+\_\+ptr, std\+::size\+\_\+t size) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+struct bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$}
+
+The \textquotesingle{}std\+::allocator\textquotesingle{} of G\+P\+U-\/allocators. Memory is allocated via \textquotesingle{}cuda\+Malloc\textquotesingle{}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4_a88d0cc2114abb58361cfa739f1e190e7}\label{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4_a88d0cc2114abb58361cfa739f1e190e7}} 
+\index{bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$@{bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$}!Allocator@{Allocator}}
+\index{Allocator@{Allocator}!bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$@{bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{Allocator()}{Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+template$<$class U $>$ \\
+\hyperlink{classbc_1_1allocators_1_1Allocator}{bc\+::allocators\+::\+Allocator}$<$ T, \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::\hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}$<$ U, \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4_aef910f60bb75fdfc303d99aa779d1de1}\label{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4_aef910f60bb75fdfc303d99aa779d1de1}} 
+\index{bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$@{bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$}!Allocator@{Allocator}}
+\index{Allocator@{Allocator}!bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$@{bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{Allocator()}{Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{classbc_1_1allocators_1_1Allocator}{bc\+::allocators\+::\+Allocator}$<$ T, \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::\hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4_a140957d76e4b582ca2b85b52a8417cd0}\label{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4_a140957d76e4b582ca2b85b52a8417cd0}} 
+\index{bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$@{bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$}!allocate@{allocate}}
+\index{allocate@{allocate}!bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$@{bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T$\ast$ \hyperlink{classbc_1_1allocators_1_1Allocator}{bc\+::allocators\+::\+Allocator}$<$ T, \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::allocate (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{sz }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4_a80060f1c76c04adb6f48e4645896ec77}\label{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4_a80060f1c76c04adb6f48e4645896ec77}} 
+\index{bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$@{bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$@{bc\+::allocators\+::\+Allocator$<$ T, device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classbc_1_1allocators_1_1Allocator}{bc\+::allocators\+::\+Allocator}$<$ T, \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::deallocate (\begin{DoxyParamCaption}\item[{T $\ast$}]{data\+\_\+ptr,  }\item[{std\+::size\+\_\+t}]{size }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/allocators/\hyperlink{basic__allocators_8h}{basic\+\_\+allocators.\+h}\end{DoxyCompactItemize}

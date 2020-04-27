@@ -1,0 +1,194 @@
+\hypertarget{structbc_1_1nn_1_1FeedForward}{}\section{bc\+:\+:nn\+:\+:Feed\+Forward$<$ System\+Tag, Value\+Type, Optimizer $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1FeedForward}\index{bc\+::nn\+::\+Feed\+Forward$<$ System\+Tag, Value\+Type, Optimizer $>$@{bc\+::nn\+::\+Feed\+Forward$<$ System\+Tag, Value\+Type, Optimizer $>$}}
+
+
+{\ttfamily \#include $<$feedforward.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:nn\+:\+:Feed\+Forward$<$ System\+Tag, Value\+Type, Optimizer $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1FeedForward__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Feed\+Forward$<$ System\+Tag, Value\+Type, Optimizer $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1FeedForward__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1FeedForward_ab1ef75eb0a5da610e739f11a29a2cc37}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1FeedForward_ac5c2aca3fbe5dc0274874f302ad027fd}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1FeedForward_aed5e64ba066faee4ed589d71a5d8dd56}{self\+\_\+type} = \hyperlink{structbc_1_1nn_1_1FeedForward}{Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1FeedForward_ab2b920592729859e37b474e4b0356c63}{input\+\_\+descriptor\+\_\+t} = \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$ Value\+Type, System\+Tag, \hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ 1 $>$ $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1FeedForward_add1247c27cdb81aaec0082593d27250d}{parent\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1FeedForward_aed5e64ba066faee4ed589d71a5d8dd56}{self\+\_\+type}, \hyperlink{structbc_1_1nn_1_1FeedForward_ab2b920592729859e37b474e4b0356c63}{input\+\_\+descriptor\+\_\+t} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1FeedForward_abacb25e939f5f9ac89fb49c88dd13043}{allocator\+\_\+type} = \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{nn\+\_\+default\+\_\+allocator\+\_\+type}$<$ Value\+Type, System\+Tag $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1FeedForward_a133dfeb1b5d39d9226c1a45489d71e17}{optimizer\+\_\+type} = Optimizer
+\item 
+using \hyperlink{structbc_1_1nn_1_1FeedForward_a88c28010efe8e3b192bf94c57d26affe}{greedy\+\_\+evaluate\+\_\+delta} = std\+::true\+\_\+type
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1FeedForward_a98c53bf9790896a468efff3e8c4ac651}{Feed\+Forward} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} outputs)
+\item 
+{\footnotesize template$<$class Matrix $>$ }\\auto \hyperlink{structbc_1_1nn_1_1FeedForward_a8606a0a356a01693127e34ab3483b5d1}{forward\+\_\+propagation} (const \hyperlink{namespacebc_a92dd1e243183b382432a5fac3ed8b89f}{Matrix} \&x)
+\item 
+{\footnotesize template$<$class X , class Delta $>$ }\\auto \hyperlink{structbc_1_1nn_1_1FeedForward_a3f712a67e12f12634ecd6ff40d7d0727}{back\+\_\+propagation} (const X \&x, const Delta \&dy)
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1FeedForward_a9a3f78006d1796787166bd1bc278b13f}{set\+\_\+learning\+\_\+rate\+\_\+hook} (\hyperlink{structbc_1_1nn_1_1FeedForward_ac5c2aca3fbe5dc0274874f302ad027fd}{value\+\_\+type} lr) override
+\item 
+void \hyperlink{structbc_1_1nn_1_1FeedForward_a2583b7f6eb69867ba439e63524ed7dfa}{update\+\_\+weights} ()
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1FeedForward_afd962933712eacd56880bbba0fb5948b}{save} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader) const override
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1FeedForward_a8fccd9e87dda10e01e74732ad8c71f3d}{load} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1FeedForward_abacb25e939f5f9ac89fb49c88dd13043}\label{structbc_1_1nn_1_1FeedForward_abacb25e939f5f9ac89fb49c88dd13043}} 
+\index{bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Optimizer = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1FeedForward}{bc\+::nn\+::\+Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1FeedForward_abacb25e939f5f9ac89fb49c88dd13043}{allocator\+\_\+type} =  \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{nn\+\_\+default\+\_\+allocator\+\_\+type}$<$Value\+Type, System\+Tag$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1FeedForward_a88c28010efe8e3b192bf94c57d26affe}\label{structbc_1_1nn_1_1FeedForward_a88c28010efe8e3b192bf94c57d26affe}} 
+\index{bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}!greedy\+\_\+evaluate\+\_\+delta@{greedy\+\_\+evaluate\+\_\+delta}}
+\index{greedy\+\_\+evaluate\+\_\+delta@{greedy\+\_\+evaluate\+\_\+delta}!bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}}
+\subsubsection{\texorpdfstring{greedy\+\_\+evaluate\+\_\+delta}{greedy\_evaluate\_delta}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Optimizer = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1FeedForward}{bc\+::nn\+::\+Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1FeedForward_a88c28010efe8e3b192bf94c57d26affe}{greedy\+\_\+evaluate\+\_\+delta} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1FeedForward_ab2b920592729859e37b474e4b0356c63}\label{structbc_1_1nn_1_1FeedForward_ab2b920592729859e37b474e4b0356c63}} 
+\index{bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}!input\+\_\+descriptor\+\_\+t@{input\+\_\+descriptor\+\_\+t}}
+\index{input\+\_\+descriptor\+\_\+t@{input\+\_\+descriptor\+\_\+t}!bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}}
+\subsubsection{\texorpdfstring{input\+\_\+descriptor\+\_\+t}{input\_descriptor\_t}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Optimizer = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1FeedForward}{bc\+::nn\+::\+Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1FeedForward_ab2b920592729859e37b474e4b0356c63}{input\+\_\+descriptor\+\_\+t} =  \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$Value\+Type, System\+Tag, \hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$1$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1FeedForward_a133dfeb1b5d39d9226c1a45489d71e17}\label{structbc_1_1nn_1_1FeedForward_a133dfeb1b5d39d9226c1a45489d71e17}} 
+\index{bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}!optimizer\+\_\+type@{optimizer\+\_\+type}}
+\index{optimizer\+\_\+type@{optimizer\+\_\+type}!bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}}
+\subsubsection{\texorpdfstring{optimizer\+\_\+type}{optimizer\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Optimizer = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1FeedForward}{bc\+::nn\+::\+Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1FeedForward_a133dfeb1b5d39d9226c1a45489d71e17}{optimizer\+\_\+type} =  Optimizer}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1FeedForward_add1247c27cdb81aaec0082593d27250d}\label{structbc_1_1nn_1_1FeedForward_add1247c27cdb81aaec0082593d27250d}} 
+\index{bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}!parent\+\_\+type@{parent\+\_\+type}}
+\index{parent\+\_\+type@{parent\+\_\+type}!bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}}
+\subsubsection{\texorpdfstring{parent\+\_\+type}{parent\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Optimizer = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1FeedForward}{bc\+::nn\+::\+Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1FeedForward_add1247c27cdb81aaec0082593d27250d}{parent\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$\hyperlink{structbc_1_1nn_1_1FeedForward_aed5e64ba066faee4ed589d71a5d8dd56}{self\+\_\+type}, \hyperlink{structbc_1_1nn_1_1FeedForward_ab2b920592729859e37b474e4b0356c63}{input\+\_\+descriptor\+\_\+t}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1FeedForward_aed5e64ba066faee4ed589d71a5d8dd56}\label{structbc_1_1nn_1_1FeedForward_aed5e64ba066faee4ed589d71a5d8dd56}} 
+\index{bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}!self\+\_\+type@{self\+\_\+type}}
+\index{self\+\_\+type@{self\+\_\+type}!bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}}
+\subsubsection{\texorpdfstring{self\+\_\+type}{self\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Optimizer = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1FeedForward}{bc\+::nn\+::\+Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1FeedForward_aed5e64ba066faee4ed589d71a5d8dd56}{self\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1FeedForward}{Feed\+Forward}$<$System\+Tag, Value\+Type, Optimizer$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1FeedForward_ab1ef75eb0a5da610e739f11a29a2cc37}\label{structbc_1_1nn_1_1FeedForward_ab1ef75eb0a5da610e739f11a29a2cc37}} 
+\index{bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Optimizer = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1FeedForward}{bc\+::nn\+::\+Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1FeedForward_ab1ef75eb0a5da610e739f11a29a2cc37}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1FeedForward_ac5c2aca3fbe5dc0274874f302ad027fd}\label{structbc_1_1nn_1_1FeedForward_ac5c2aca3fbe5dc0274874f302ad027fd}} 
+\index{bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Optimizer = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1FeedForward}{bc\+::nn\+::\+Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1FeedForward_ac5c2aca3fbe5dc0274874f302ad027fd}{value\+\_\+type} =  Value\+Type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1FeedForward_a98c53bf9790896a468efff3e8c4ac651}\label{structbc_1_1nn_1_1FeedForward_a98c53bf9790896a468efff3e8c4ac651}} 
+\index{bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}!Feed\+Forward@{Feed\+Forward}}
+\index{Feed\+Forward@{Feed\+Forward}!bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}}
+\subsubsection{\texorpdfstring{Feed\+Forward()}{FeedForward()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Optimizer = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+\hyperlink{structbc_1_1nn_1_1FeedForward}{bc\+::nn\+::\+Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1FeedForward}{Feed\+Forward} (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{outputs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1FeedForward_a3f712a67e12f12634ecd6ff40d7d0727}\label{structbc_1_1nn_1_1FeedForward_a3f712a67e12f12634ecd6ff40d7d0727}} 
+\index{bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}!back\+\_\+propagation@{back\+\_\+propagation}}
+\index{back\+\_\+propagation@{back\+\_\+propagation}!bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}}
+\subsubsection{\texorpdfstring{back\+\_\+propagation()}{back\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Optimizer = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+template$<$class X , class Delta $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1FeedForward}{bc\+::nn\+::\+Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::back\+\_\+propagation (\begin{DoxyParamCaption}\item[{const X \&}]{x,  }\item[{const Delta \&}]{dy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1FeedForward_a8606a0a356a01693127e34ab3483b5d1}\label{structbc_1_1nn_1_1FeedForward_a8606a0a356a01693127e34ab3483b5d1}} 
+\index{bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Optimizer = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+template$<$class Matrix $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1FeedForward}{bc\+::nn\+::\+Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacebc_a92dd1e243183b382432a5fac3ed8b89f}{Matrix} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1FeedForward_a8fccd9e87dda10e01e74732ad8c71f3d}\label{structbc_1_1nn_1_1FeedForward_a8fccd9e87dda10e01e74732ad8c71f3d}} 
+\index{bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Optimizer = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1FeedForward}{bc\+::nn\+::\+Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{structbc_1_1nn_1_1Layer__Base_a5b3a9854215815f810bef4922b74efaf}{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ Feed\+Forward$<$ System\+Tag, Value\+Type, Optimizer $>$, Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Integer$<$ 1 $>$ $>$ $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1FeedForward_afd962933712eacd56880bbba0fb5948b}\label{structbc_1_1nn_1_1FeedForward_afd962933712eacd56880bbba0fb5948b}} 
+\index{bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}!save@{save}}
+\index{save@{save}!bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Optimizer = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1FeedForward}{bc\+::nn\+::\+Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::save (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{structbc_1_1nn_1_1Layer__Base_a9613e51db3c27e64ced09e41d2e7f15c}{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ Feed\+Forward$<$ System\+Tag, Value\+Type, Optimizer $>$, Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Integer$<$ 1 $>$ $>$ $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1FeedForward_a9a3f78006d1796787166bd1bc278b13f}\label{structbc_1_1nn_1_1FeedForward_a9a3f78006d1796787166bd1bc278b13f}} 
+\index{bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}!set\+\_\+learning\+\_\+rate\+\_\+hook@{set\+\_\+learning\+\_\+rate\+\_\+hook}}
+\index{set\+\_\+learning\+\_\+rate\+\_\+hook@{set\+\_\+learning\+\_\+rate\+\_\+hook}!bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}}
+\subsubsection{\texorpdfstring{set\+\_\+learning\+\_\+rate\+\_\+hook()}{set\_learning\_rate\_hook()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Optimizer = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1FeedForward}{bc\+::nn\+::\+Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::set\+\_\+learning\+\_\+rate\+\_\+hook (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1FeedForward_ac5c2aca3fbe5dc0274874f302ad027fd}{value\+\_\+type}}]{lr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{structbc_1_1nn_1_1Layer__Base_a126da3cf45e1b4a24deeff82c93772ce}{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ Feed\+Forward$<$ System\+Tag, Value\+Type, Optimizer $>$, Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Integer$<$ 1 $>$ $>$ $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1FeedForward_a2583b7f6eb69867ba439e63524ed7dfa}\label{structbc_1_1nn_1_1FeedForward_a2583b7f6eb69867ba439e63524ed7dfa}} 
+\index{bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}!update\+\_\+weights@{update\+\_\+weights}}
+\index{update\+\_\+weights@{update\+\_\+weights}!bc\+::nn\+::\+Feed\+Forward@{bc\+::nn\+::\+Feed\+Forward}}
+\subsubsection{\texorpdfstring{update\+\_\+weights()}{update\_weights()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Optimizer = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+void \hyperlink{structbc_1_1nn_1_1FeedForward}{bc\+::nn\+::\+Feed\+Forward}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::update\+\_\+weights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/layers/\hyperlink{feedforward_8h}{feedforward.\+h}\end{DoxyCompactItemize}

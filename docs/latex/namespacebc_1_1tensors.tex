@@ -1,0 +1,92 @@
+\hypertarget{namespacebc_1_1tensors}{}\section{bc\+:\+:tensors Namespace Reference}
+\label{namespacebc_1_1tensors}\index{bc\+::tensors@{bc\+::tensors}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc_1_1tensors_1_1detail}{detail}
+\item 
+ \hyperlink{namespacebc_1_1tensors_1_1exprs}{exprs}
+\item 
+ \hyperlink{namespacebc_1_1tensors_1_1io}{io}
+\item 
+ \hyperlink{namespacebc_1_1tensors_1_1iterators}{iterators}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1Scalar__Accessor}{Scalar\+\_\+\+Accessor}
+\item 
+class \hyperlink{classbc_1_1tensors_1_1Tensor__Accessor__Base}{Tensor\+\_\+\+Accessor\+\_\+\+Base}
+\item 
+class \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1Tensor__Dim}{Tensor\+\_\+\+Dim}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Expression\+Template $>$ }\\using \hyperlink{namespacebc_1_1tensors_ac97d14866c50588a3fd111f362caf9f1}{Tensor\+\_\+\+Accessor} = std\+::conditional\+\_\+t$<$ Expression\+Template\+::tensor\+\_\+dim==0, \hyperlink{structbc_1_1tensors_1_1Scalar__Accessor}{Scalar\+\_\+\+Accessor}, \hyperlink{classbc_1_1tensors_1_1Tensor__Accessor__Base}{Tensor\+\_\+\+Accessor\+\_\+\+Base}$<$ Expression\+Template\+::tensor\+\_\+dim, \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base}$<$ Expression\+Template $>$ $>$$>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Expression\+Template $>$ }\\auto \hyperlink{namespacebc_1_1tensors_a233ba24319d0e30ec3026f1643f8facb}{make\+\_\+tensor} (Expression\+Template expression)
+\item 
+{\footnotesize template$<$class Expression\+Template $>$ }\\auto \hyperlink{namespacebc_1_1tensors_a9340c1c54caa73ef6af71c5f7d378d07}{make\+\_\+expression} (Expression\+Template expression)
+\item 
+{\footnotesize template$<$class Expression $>$ }\\auto \hyperlink{namespacebc_1_1tensors_ab1c0098cd07860d0dd6e123553fa9816}{sum} (const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Expression $>$ \&tensor)
+\item 
+{\footnotesize template$<$class Expression $>$ }\\auto \hyperlink{namespacebc_1_1tensors_a7fe17de15a2dbdb35c53c2096415b10c}{value\+\_\+sum} (const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Expression $>$ \&tensor)
+\item 
+{\footnotesize template$<$class Expression $>$ }\\auto \hyperlink{namespacebc_1_1tensors_adc4bc353674317539fe28f7a8e13a515}{prod} (const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Expression $>$ \&tensor)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacebc_1_1tensors_ac97d14866c50588a3fd111f362caf9f1}\label{namespacebc_1_1tensors_ac97d14866c50588a3fd111f362caf9f1}} 
+\index{bc\+::tensors@{bc\+::tensors}!Tensor\+\_\+\+Accessor@{Tensor\+\_\+\+Accessor}}
+\index{Tensor\+\_\+\+Accessor@{Tensor\+\_\+\+Accessor}!bc\+::tensors@{bc\+::tensors}}
+\subsubsection{\texorpdfstring{Tensor\+\_\+\+Accessor}{Tensor\_Accessor}}
+{\footnotesize\ttfamily template$<$class Expression\+Template $>$ \\
+using \hyperlink{namespacebc_1_1tensors_ac97d14866c50588a3fd111f362caf9f1}{bc\+::tensors\+::\+Tensor\+\_\+\+Accessor} = typedef std\+::conditional\+\_\+t$<$ Expression\+Template\+::tensor\+\_\+dim == 0, \hyperlink{structbc_1_1tensors_1_1Scalar__Accessor}{Scalar\+\_\+\+Accessor}, \hyperlink{classbc_1_1tensors_1_1Tensor__Accessor__Base}{Tensor\+\_\+\+Accessor\+\_\+\+Base}$<$ Expression\+Template\+::tensor\+\_\+dim, \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base}$<$Expression\+Template$>$ $>$$>$}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacebc_1_1tensors_a9340c1c54caa73ef6af71c5f7d378d07}\label{namespacebc_1_1tensors_a9340c1c54caa73ef6af71c5f7d378d07}} 
+\index{bc\+::tensors@{bc\+::tensors}!make\+\_\+expression@{make\+\_\+expression}}
+\index{make\+\_\+expression@{make\+\_\+expression}!bc\+::tensors@{bc\+::tensors}}
+\subsubsection{\texorpdfstring{make\+\_\+expression()}{make\_expression()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template $>$ \\
+auto bc\+::tensors\+::make\+\_\+expression (\begin{DoxyParamCaption}\item[{Expression\+Template}]{expression }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_a233ba24319d0e30ec3026f1643f8facb}\label{namespacebc_1_1tensors_a233ba24319d0e30ec3026f1643f8facb}} 
+\index{bc\+::tensors@{bc\+::tensors}!make\+\_\+tensor@{make\+\_\+tensor}}
+\index{make\+\_\+tensor@{make\+\_\+tensor}!bc\+::tensors@{bc\+::tensors}}
+\subsubsection{\texorpdfstring{make\+\_\+tensor()}{make\_tensor()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template $>$ \\
+auto bc\+::tensors\+::make\+\_\+tensor (\begin{DoxyParamCaption}\item[{Expression\+Template}]{expression }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_adc4bc353674317539fe28f7a8e13a515}\label{namespacebc_1_1tensors_adc4bc353674317539fe28f7a8e13a515}} 
+\index{bc\+::tensors@{bc\+::tensors}!prod@{prod}}
+\index{prod@{prod}!bc\+::tensors@{bc\+::tensors}}
+\subsubsection{\texorpdfstring{prod()}{prod()}}
+{\footnotesize\ttfamily template$<$class Expression $>$ \\
+auto bc\+::tensors\+::prod (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Expression $>$ \&}]{tensor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_ab1c0098cd07860d0dd6e123553fa9816}\label{namespacebc_1_1tensors_ab1c0098cd07860d0dd6e123553fa9816}} 
+\index{bc\+::tensors@{bc\+::tensors}!sum@{sum}}
+\index{sum@{sum}!bc\+::tensors@{bc\+::tensors}}
+\subsubsection{\texorpdfstring{sum()}{sum()}}
+{\footnotesize\ttfamily template$<$class Expression $>$ \\
+auto bc\+::tensors\+::sum (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Expression $>$ \&}]{tensor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_a7fe17de15a2dbdb35c53c2096415b10c}\label{namespacebc_1_1tensors_a7fe17de15a2dbdb35c53c2096415b10c}} 
+\index{bc\+::tensors@{bc\+::tensors}!value\+\_\+sum@{value\+\_\+sum}}
+\index{value\+\_\+sum@{value\+\_\+sum}!bc\+::tensors@{bc\+::tensors}}
+\subsubsection{\texorpdfstring{value\+\_\+sum()}{value\_sum()}}
+{\footnotesize\ttfamily template$<$class Expression $>$ \\
+auto bc\+::tensors\+::value\+\_\+sum (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Expression $>$ \&}]{tensor }\end{DoxyParamCaption})}
+

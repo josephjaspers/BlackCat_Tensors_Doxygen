@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['derivative',['Derivative',['../structbc_1_1oper_1_1cmath__functions_1_1Tan_1_1Derivative.html',1,'bc::oper::cmath_functions::Tan::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Cos_1_1Derivative.html',1,'bc::oper::cmath_functions::Cos::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Sinh_1_1Derivative.html',1,'bc::oper::cmath_functions::Sinh::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Cosh_1_1Derivative.html',1,'bc::oper::cmath_functions::Cosh::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Tanh_1_1Derivative.html',1,'bc::oper::cmath_functions::Tanh::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Asin_1_1Derivative.html',1,'bc::oper::cmath_functions::Asin::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Acos_1_1Derivative.html',1,'bc::oper::cmath_functions::Acos::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Atan_1_1Derivative.html',1,'bc::oper::cmath_functions::Atan::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Log_1_1Derivative.html',1,'bc::oper::cmath_functions::Log::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Pow2_1_1Derivative.html',1,'bc::oper::cmath_functions::Pow2::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Logistic_1_1Derivative.html',1,'bc::oper::cmath_functions::Logistic::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Pow3_1_1Derivative.html',1,'bc::oper::cmath_functions::Pow3::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Relu_1_1Derivative.html',1,'bc::oper::cmath_functions::Relu::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1SoftPlus_1_1Derivative.html',1,'bc::oper::cmath_functions::SoftPlus::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Mish_1_1Derivative.html',1,'bc::oper::cmath_functions::Mish::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Pass_1_1Derivative.html',1,'bc::oper::cmath_functions::Pass::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Exp_1_1Derivative.html',1,'bc::oper::cmath_functions::Exp::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Sqrt_1_1Derivative.html',1,'bc::oper::cmath_functions::Sqrt::Derivative'],['../structbc_1_1oper_1_1cmath__functions_1_1Sin_1_1Derivative.html',1,'bc::oper::cmath_functions::Sin::Derivative']]],
+  ['derived_5fallocator',['Derived_Allocator',['../structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator.html',1,'bc::allocators::pa_detail']]],
+  ['device_5fatomic_5fadd',['Device_Atomic_Add',['../structbc_1_1oper_1_1Device__Atomic__Add.html',1,'bc::oper']]],
+  ['device_5fatomic_5fdiv',['Device_Atomic_Div',['../structbc_1_1oper_1_1Device__Atomic__Div.html',1,'bc::oper']]],
+  ['device_5fatomic_5fmul',['Device_Atomic_Mul',['../structbc_1_1oper_1_1Device__Atomic__Mul.html',1,'bc::oper']]],
+  ['device_5fatomic_5fsub',['Device_Atomic_Sub',['../structbc_1_1oper_1_1Device__Atomic__Sub.html',1,'bc::oper']]],
+  ['device_5fmanaged',['Device_Managed',['../structbc_1_1allocators_1_1Device__Managed.html',1,'bc::allocators']]],
+  ['device_5ftag',['device_tag',['../structbc_1_1device__tag.html',1,'bc']]],
+  ['dim',['Dim',['../structbc_1_1Dim.html',1,'bc']]],
+  ['dim_3c_200_20_3e',['Dim&lt; 0 &gt;',['../structbc_1_1Dim_3_010_01_4.html',1,'bc']]],
+  ['dim_3c_201_20_3e',['Dim&lt; 1 &gt;',['../structbc_1_1Dim.html',1,'bc']]],
+  ['dim_3c_202_20_3e',['Dim&lt; 2 &gt;',['../structbc_1_1Dim.html',1,'bc']]],
+  ['dim_3c_203_20_3e',['Dim&lt; 3 &gt;',['../structbc_1_1Dim.html',1,'bc']]],
+  ['dim_3c_20input_5ftensor_5fdim_3a_3avalue_20_3e',['Dim&lt; input_tensor_dim::value &gt;',['../structbc_1_1Dim.html',1,'bc']]],
+  ['dim_3c_20input_5ftensor_5fdimension_3a_3avalue_20_3e',['Dim&lt; input_tensor_dimension::value &gt;',['../structbc_1_1Dim.html',1,'bc']]],
+  ['dim_3c_20output_5ftensor_5fdim_3a_3avalue_20_3e',['Dim&lt; output_tensor_dim::value &gt;',['../structbc_1_1Dim.html',1,'bc']]],
+  ['dim_3c_20output_5ftensor_5fdimension_3a_3avalue_20_3e',['Dim&lt; output_tensor_dimension::value &gt;',['../structbc_1_1Dim.html',1,'bc']]],
+  ['disable',['DISABLE',['../structbc_1_1traits_1_1detail_1_1DISABLE.html',1,'bc::traits::detail']]],
+  ['div',['Div',['../structbc_1_1oper_1_1Div.html',1,'bc::oper']]],
+  ['div_5fassign',['Div_Assign',['../structbc_1_1oper_1_1Div__Assign.html',1,'bc::oper']]],
+  ['dot',['dot',['../structbc_1_1oper_1_1dot.html',1,'bc::oper']]],
+  ['dot_3c_20systemtag_20_3e',['dot&lt; SystemTag &gt;',['../structbc_1_1oper_1_1dot.html',1,'bc::oper']]]
+];

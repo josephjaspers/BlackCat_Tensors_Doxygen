@@ -1,0 +1,40 @@
+\hypertarget{convolution_8h}{}\section{blackcat/neural\+\_\+networks/layers/convolution.h File Reference}
+\label{convolution_8h}\index{blackcat/neural\+\_\+networks/layers/convolution.\+h@{blackcat/neural\+\_\+networks/layers/convolution.\+h}}
+{\ttfamily \#include \char`\"{}layer\+\_\+base.\+h\char`\"{}}\newline
+Include dependency graph for convolution.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{convolution_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{convolution_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution$<$ System\+Tag, Value\+Type, Optimizer $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1nn}{bc\+::nn}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class System\+Tag  = B\+L\+A\+C\+K\+C\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+T, class Optimizer  = nn\+\_\+default\+\_\+optimizer\+\_\+type$>$ }\\auto \hyperlink{namespacebc_1_1nn_a52abc08f24905dc8029f3a913bdd07e1}{bc\+::nn\+::convolution} (System\+Tag system\+\_\+tag, Dim$<$ 3 $>$ img\+\_\+dims, Dim$<$ 3 $>$ krnl\+\_\+dims, Dim$<$ 2 $>$ padding=Dim$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0), Dim$<$ 2 $>$ strides=Dim$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), Dim$<$ 2 $>$ dilation=Dim$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), Optimizer=Optimizer())
+\item 
+{\footnotesize template$<$class System\+Tag  = B\+L\+A\+C\+K\+C\+A\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+T, class Optimizer  = nn\+\_\+default\+\_\+optimizer\+\_\+type$>$ }\\auto \hyperlink{namespacebc_1_1nn_a64f5640dcd0235509fbbc88e49051d58}{bc\+::nn\+::recurrent\+\_\+convolution} (System\+Tag system\+\_\+tag, Dim$<$ 3 $>$ img\+\_\+dims, Dim$<$ 3 $>$ krnl\+\_\+dims, Dim$<$ 2 $>$ padding=Dim$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0), Dim$<$ 2 $>$ strides=Dim$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), Dim$<$ 2 $>$ dilation=Dim$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), Optimizer=Optimizer())
+\item 
+{\footnotesize template$<$class System\+Tag , class Optimizer $>$ }\\auto \hyperlink{namespacebc_1_1nn_a4029ec07d94f518e19c06c5bea63bd17}{bc\+::nn\+::convolution} (System\+Tag system\+\_\+tag, Dim$<$ 3 $>$ img\+\_\+dims, Dim$<$ 3 $>$ krnl\+\_\+dims, Optimizer, Dim$<$ 2 $>$ padding=Dim$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0), Dim$<$ 2 $>$ strides=Dim$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), Dim$<$ 2 $>$ dilation=Dim$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1))
+\item 
+{\footnotesize template$<$class System\+Tag , class Optimizer $>$ }\\auto \hyperlink{namespacebc_1_1nn_af1f206cd72b05e2745666402f91a5b72}{bc\+::nn\+::recurrent\+\_\+convolution} (System\+Tag system\+\_\+tag, Dim$<$ 3 $>$ img\+\_\+dims, Dim$<$ 3 $>$ krnl\+\_\+dims, Optimizer, Dim$<$ 2 $>$ padding=Dim$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0), Dim$<$ 2 $>$ strides=Dim$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), Dim$<$ 2 $>$ dilation=Dim$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1))
+\end{DoxyCompactItemize}

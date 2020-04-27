@@ -1,0 +1,34 @@
+\hypertarget{namespacebc_1_1caffe}{}\section{bc\+:\+:caffe Namespace Reference}
+\label{namespacebc_1_1caffe}\index{bc\+::caffe@{bc\+::caffe}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespacebc_1_1caffe_a1595969011d7a9a82c4a0fbafa04c452}{is\+\_\+a\+\_\+ge\+\_\+zero\+\_\+and\+\_\+a\+\_\+lt\+\_\+b} (int a, int b)
+\item 
+{\footnotesize template$<$class Dtype $>$ }\\void \hyperlink{namespacebc_1_1caffe_aba6971ea7a2796ad0ab683b9b63a9270}{Max\+Pool\+Forward} (\hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag}, const Dtype $\ast$img\+\_\+data, const int num, const int channels, const int height, const int width, const int pool\+\_\+h, const int pool\+\_\+w, const int krnl\+\_\+h, const int krnl\+\_\+w, const int stride\+\_\+h, const int stride\+\_\+w, const int pad\+\_\+h, const int pad\+\_\+w, Dtype $\ast$out\+\_\+data, int $\ast$mask)
+\item 
+{\footnotesize template$<$typename Dtype $>$ }\\void \hyperlink{namespacebc_1_1caffe_a58b8b5cb4f1834cbf79a204f50776890}{Max\+Pool\+Backward} (\hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag}, const Dtype $\ast$top\+\_\+diff, const int $\ast$mask, const int num, const int channels, const int height, const int width, const int pool\+\_\+h, const int pool\+\_\+w, const int krnl\+\_\+h, const int krnl\+\_\+w, const int stride\+\_\+h, const int stride\+\_\+w, const int pad\+\_\+h, const int pad\+\_\+w, Dtype $\ast$bottom\+\_\+diff)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacebc_1_1caffe_a1595969011d7a9a82c4a0fbafa04c452}\label{namespacebc_1_1caffe_a1595969011d7a9a82c4a0fbafa04c452}} 
+\index{bc\+::caffe@{bc\+::caffe}!is\+\_\+a\+\_\+ge\+\_\+zero\+\_\+and\+\_\+a\+\_\+lt\+\_\+b@{is\+\_\+a\+\_\+ge\+\_\+zero\+\_\+and\+\_\+a\+\_\+lt\+\_\+b}}
+\index{is\+\_\+a\+\_\+ge\+\_\+zero\+\_\+and\+\_\+a\+\_\+lt\+\_\+b@{is\+\_\+a\+\_\+ge\+\_\+zero\+\_\+and\+\_\+a\+\_\+lt\+\_\+b}!bc\+::caffe@{bc\+::caffe}}
+\subsubsection{\texorpdfstring{is\+\_\+a\+\_\+ge\+\_\+zero\+\_\+and\+\_\+a\+\_\+lt\+\_\+b()}{is\_a\_ge\_zero\_and\_a\_lt\_b()}}
+{\footnotesize\ttfamily bool bc\+::caffe\+::is\+\_\+a\+\_\+ge\+\_\+zero\+\_\+and\+\_\+a\+\_\+lt\+\_\+b (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacebc_1_1caffe_a58b8b5cb4f1834cbf79a204f50776890}\label{namespacebc_1_1caffe_a58b8b5cb4f1834cbf79a204f50776890}} 
+\index{bc\+::caffe@{bc\+::caffe}!Max\+Pool\+Backward@{Max\+Pool\+Backward}}
+\index{Max\+Pool\+Backward@{Max\+Pool\+Backward}!bc\+::caffe@{bc\+::caffe}}
+\subsubsection{\texorpdfstring{Max\+Pool\+Backward()}{MaxPoolBackward()}}
+{\footnotesize\ttfamily template$<$typename Dtype $>$ \\
+void bc\+::caffe\+::\+Max\+Pool\+Backward (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag}}]{,  }\item[{const Dtype $\ast$}]{top\+\_\+diff,  }\item[{const int $\ast$}]{mask,  }\item[{const int}]{num,  }\item[{const int}]{channels,  }\item[{const int}]{height,  }\item[{const int}]{width,  }\item[{const int}]{pool\+\_\+h,  }\item[{const int}]{pool\+\_\+w,  }\item[{const int}]{krnl\+\_\+h,  }\item[{const int}]{krnl\+\_\+w,  }\item[{const int}]{stride\+\_\+h,  }\item[{const int}]{stride\+\_\+w,  }\item[{const int}]{pad\+\_\+h,  }\item[{const int}]{pad\+\_\+w,  }\item[{Dtype $\ast$}]{bottom\+\_\+diff }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1caffe_aba6971ea7a2796ad0ab683b9b63a9270}\label{namespacebc_1_1caffe_aba6971ea7a2796ad0ab683b9b63a9270}} 
+\index{bc\+::caffe@{bc\+::caffe}!Max\+Pool\+Forward@{Max\+Pool\+Forward}}
+\index{Max\+Pool\+Forward@{Max\+Pool\+Forward}!bc\+::caffe@{bc\+::caffe}}
+\subsubsection{\texorpdfstring{Max\+Pool\+Forward()}{MaxPoolForward()}}
+{\footnotesize\ttfamily template$<$class Dtype $>$ \\
+void bc\+::caffe\+::\+Max\+Pool\+Forward (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag}}]{,  }\item[{const Dtype $\ast$}]{img\+\_\+data,  }\item[{const int}]{num,  }\item[{const int}]{channels,  }\item[{const int}]{height,  }\item[{const int}]{width,  }\item[{const int}]{pool\+\_\+h,  }\item[{const int}]{pool\+\_\+w,  }\item[{const int}]{krnl\+\_\+h,  }\item[{const int}]{krnl\+\_\+w,  }\item[{const int}]{stride\+\_\+h,  }\item[{const int}]{stride\+\_\+w,  }\item[{const int}]{pad\+\_\+h,  }\item[{const int}]{pad\+\_\+w,  }\item[{Dtype $\ast$}]{out\+\_\+data,  }\item[{int $\ast$}]{mask }\end{DoxyParamCaption})}
+

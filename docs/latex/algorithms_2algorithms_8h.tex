@@ -1,0 +1,285 @@
+\hypertarget{algorithms_2algorithms_8h}{}\section{blackcat/algorithms/algorithms.h File Reference}
+\label{algorithms_2algorithms_8h}\index{blackcat/algorithms/algorithms.\+h@{blackcat/algorithms/algorithms.\+h}}
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$thrust/generate.\+h$>$}\newline
+{\ttfamily \#include $<$thrust/sort.\+h$>$}\newline
+{\ttfamily \#include $<$thrust/copy.\+h$>$}\newline
+{\ttfamily \#include $<$thrust/reduce.\+h$>$}\newline
+Include dependency graph for algorithms.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{algorithms_2algorithms_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{algorithms_2algorithms_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1algorithms}{bc\+::algorithms}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{algorithms_2algorithms_8h_a8dc73f0bc29b43358f3af1bfcaa0c926}{B\+C\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+EF}(function)
+\item 
+\#define \hyperlink{algorithms_2algorithms_8h_a1ed557e86415a8142e35577f1c3e666b}{B\+C\+\_\+\+R\+E\+D\+U\+C\+E\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+EF}(function)
+\item 
+\#define \hyperlink{algorithms_2algorithms_8h_a6d89338b6c346160028f64704a9e58f4}{B\+C\+\_\+\+R\+E\+D\+U\+C\+E\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+E\+F\+\_\+\+F\+I\+X\+\_\+\+T\+H\+R\+U\+ST}(function)
+\begin{DoxyCompactList}\small\item\em -- thrust fails to compile certain functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacebc_1_1algorithms_a1fca691445bcc8682def79b07442d781}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto \hyperlink{tensor__iteralgos_8h_a20824e5505174a5ef93a96bf5a483350}{for\+\_\+each}(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return \hyperlink{tensor__iteralgos_8h_a20824e5505174a5ef93a96bf5a483350}{thrust\+::for\+\_\+each}(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a950818852a34ad7c112c6d432b62ab56}{bc\+::algorithms\+::for\+\_\+each} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_acbea96c6be1f3640ba2a0c16762f8518}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto count(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::count(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_ae6f41bde30aacfe8b76975e715c52bd7}{bc\+::algorithms\+::count} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_a2527ffbb014b4d45d414b3632b05df4f}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto count\+\_\+if(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::count\+\_\+if(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_aa3027db1b5fa7bf7ced1841792da560a}{bc\+::algorithms\+::count\+\_\+if} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_acbb5455c8fe9c5f9e530bab556b50351}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto find(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::find(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_afc2b2f65f158bc232b0245a1c1240580}{bc\+::algorithms\+::find} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_af89c40742157456b78d3c5890c71decb}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto find\+\_\+if(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::find\+\_\+if(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a92182a82cdfb1b0a6ad3e4d4e4367404}{bc\+::algorithms\+::find\+\_\+if} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_a56b897a6a517f83757f23acd2ea8e909}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto find\+\_\+if\+\_\+not(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::find\+\_\+if\+\_\+not(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a24ea4f55c7904296a82c1e6f6515cc46}{bc\+::algorithms\+::find\+\_\+if\+\_\+not} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_aa9d173a186c6e2baa71cc25153bf43ba}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto \hyperlink{tensor__utility_8h_aef49432640ea9d0daf2be2cb6e2bd5f7}{copy}(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return \hyperlink{tensor__utility_8h_aef49432640ea9d0daf2be2cb6e2bd5f7}{thrust\+::copy}(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a2f21a8743360da646967e9e2f402b560}{bc\+::algorithms\+::copy} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_a2bbbed92b3cca0cffb91f0c7239eeee7}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto copy\+\_\+if(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::copy\+\_\+if(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a1bae159c938465c4632a83a8fdbb5a0f}{bc\+::algorithms\+::copy\+\_\+if} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_a161e599f5cf14530122981793708e331}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto copy\+\_\+n(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::copy\+\_\+n(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a597f05cc11712b045091b2ae51de5414}{bc\+::algorithms\+::copy\+\_\+n} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_a6cf62203967e416b6c0e90403797c478}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto \hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return \hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{thrust\+::fill}(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a0e18d09bd76be25a93a20e9e0a2f07a9}{bc\+::algorithms\+::fill} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_ace471eaeb93b9d31899320949f0dea7e}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto fill\+\_\+n(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::fill\+\_\+n(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_aac60a867fc181d8dde75d4198a4f3e5d}{bc\+::algorithms\+::fill\+\_\+n} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_abc433ba5300c35144928062a6adad131}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto transform(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::transform(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a56a3d18b6c2d6ece7a0b06c2583032d2}{bc\+::algorithms\+::transform} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_a00fdd407b1bd98ee4fcf0deb88eeb2f9}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto generate(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::generate(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a9377b5d8710a009d9746680a1d3e7016}{bc\+::algorithms\+::generate} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_a0ead3fbb16c6bd61241ddc8b9cd3082d}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto generate\+\_\+n(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::generate\+\_\+n(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a327b4d58fa795cac167a69a3450791a5}{bc\+::algorithms\+::generate\+\_\+n} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_ae0682a09ecb1a1c4b35f51b8ec5fb122}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto replace(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::replace(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_ac61f6fc5e5556baadc24249bc26d789f}{bc\+::algorithms\+::replace} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_af8931991c0bc424294f11e10b21bc2c3}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto replace\+\_\+if(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::replace\+\_\+if(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a82d4bf30ced3ed3664e9415fa28e7198}{bc\+::algorithms\+::replace\+\_\+if} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_aa27e90d868575b1233c25545ab5ba093}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto replace\+\_\+copy(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::replace\+\_\+copy(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_ae396db51eb91930c575f9f81bc445d3c}{bc\+::algorithms\+::replace\+\_\+copy} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_aadf2e327b8cb70c815253989d38f4e4f}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto replace\+\_\+copy\+\_\+if(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::replace\+\_\+copy\+\_\+if(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_aeff94887b8b785a757aa0c183a686d58}{bc\+::algorithms\+::replace\+\_\+copy\+\_\+if} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_a47e1b1106d9aa8d3e55064143957af4a}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto swap(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::swap(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a85e269467990595f74e2723ac77ca978}{bc\+::algorithms\+::swap} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_a2919a40c80751a424661748ebd0b3884}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto swap\+\_\+ranges(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::swap\+\_\+ranges(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_aa7e4438a64dd70ccf829a31d377dd183}{bc\+::algorithms\+::swap\+\_\+ranges} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_af284529916bb84a5144b4f616f35de0f}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto reverse(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::reverse(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_abb783ac679bb0f75ee3a5ec7defed717}{bc\+::algorithms\+::reverse} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_a3a26792cd5c28bc9b78db4214670103a}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto reverse\+\_\+copy(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::reverse\+\_\+copy(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a3a74918fac3854d0a24a5052f58d7d01}{bc\+::algorithms\+::reverse\+\_\+copy} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_a37c8c1c3f5100026d63c022dcc5f26a9}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto is\+\_\+sorted(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::is\+\_\+sorted(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a594cc8e5bcd2484bd994f4301cc5f448}{bc\+::algorithms\+::is\+\_\+sorted} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_a3284ffc9b6592ebae025026a49b934ef}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto is\+\_\+sorted\+\_\+until(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::is\+\_\+sorted\+\_\+until(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_ae61a19a001cd4acf6528f9bf5e6aef32}{bc\+::algorithms\+::is\+\_\+sorted\+\_\+until} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_adab5c8ffaca0db90c63b1ef77019fb5f}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto \hyperlink{tensor__iteralgos_8h_a00092f5e74737e013885b09b9c76db9b}{sort}(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return \hyperlink{tensor__iteralgos_8h_a00092f5e74737e013885b09b9c76db9b}{thrust\+::sort}(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_ace8c8eef42a9a58eb05722b682f38f69}{bc\+::algorithms\+::sort} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_a22a806056dfc049cc3fd8612c6459f21}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto stable\+\_\+sort(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::stable\+\_\+sort(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a3a3cce900a03fac5d37184bd7a2faf52}{bc\+::algorithms\+::stable\+\_\+sort} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_a9ba98264154ac75b0f8fadf3fbcac557}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto max(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ static\+\_\+assert(std\+::is\+\_\+same$<$ std\+::random\+\_\+access\+\_\+iterator\+\_\+tag, typename Begin\+::iterator\+\_\+category $>$\+::value, \char`\"{}Assert random\+\_\+access\+\_\+iterator\+\_\+tag\char`\"{});return thrust\+::max(thrust\+::cuda\+::par.\+on(stream), \&$\ast$begin, \&$\ast$end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a8dc3d1069caa869dfff3d0b9c7b52325}{bc\+::algorithms\+::max} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_aac8a9a31f5b60dd618dd3c6ba37b1d5f}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto max\+\_\+element(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ static\+\_\+assert(std\+::is\+\_\+same$<$ std\+::random\+\_\+access\+\_\+iterator\+\_\+tag, typename Begin\+::iterator\+\_\+category $>$\+::value, \char`\"{}Assert random\+\_\+access\+\_\+iterator\+\_\+tag\char`\"{});return thrust\+::max\+\_\+element(thrust\+::cuda\+::par.\+on(stream), \&$\ast$begin, \&$\ast$end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a5948d3b24a0cb64879ed07cbb56d5443}{bc\+::algorithms\+::max\+\_\+element} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_aafcccde499f184a209e8dafe7441be9f}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto min(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ static\+\_\+assert(std\+::is\+\_\+same$<$ std\+::random\+\_\+access\+\_\+iterator\+\_\+tag, typename Begin\+::iterator\+\_\+category $>$\+::value, \char`\"{}Assert random\+\_\+access\+\_\+iterator\+\_\+tag\char`\"{});return thrust\+::min(thrust\+::cuda\+::par.\+on(stream), \&$\ast$begin, \&$\ast$end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a46bd0046dd7009497caf765c7a035cc3}{bc\+::algorithms\+::min} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_aa283dc889b39fdce83ca44ad0f5f411f}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto min\+\_\+element(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ static\+\_\+assert(std\+::is\+\_\+same$<$ std\+::random\+\_\+access\+\_\+iterator\+\_\+tag, typename Begin\+::iterator\+\_\+category $>$\+::value, \char`\"{}Assert random\+\_\+access\+\_\+iterator\+\_\+tag\char`\"{});return thrust\+::min\+\_\+element(thrust\+::cuda\+::par.\+on(stream), \&$\ast$begin, \&$\ast$end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_a79de57ecdb13600a50218db36c1e8102}{bc\+::algorithms\+::min\+\_\+element} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\item 
+\hyperlink{namespacebc_1_1algorithms_abc8e0fa774625ec682265e98e18b5283}{bc\+::algorithms\+::\+B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA} (template$<$ class Begin, class End, class... Args $>$ static auto minmax\+\_\+element(\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag} $>$ stream, Begin begin, End end, Args... args) \{ return thrust\+::minmax\+\_\+element(thrust\+::cuda\+::par.\+on(stream), begin, end, args...);\}) template$<$ class Begin
+\item 
+class\+::::::\+Args static auto \hyperlink{namespacebc_1_1algorithms_afce1a4f97716bc7f382dd42dade0f257}{bc\+::algorithms\+::minmax\+\_\+element} (\hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$ stream, Begin begin, End end, Args... args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{algorithms_2algorithms_8h_a8dc73f0bc29b43358f3af1bfcaa0c926}\label{algorithms_2algorithms_8h_a8dc73f0bc29b43358f3af1bfcaa0c926}} 
+\index{algorithms/algorithms.\+h@{algorithms/algorithms.\+h}!B\+C\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+EF@{B\+C\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+EF}}
+\index{B\+C\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+EF@{B\+C\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+EF}!algorithms/algorithms.\+h@{algorithms/algorithms.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+EF}{BC\_ALGORITHM\_DEF}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{function }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\(\backslash\)
+BC\_IF\_CUDA(                                                               \(\backslash\)
+template<class Begin, class End, class... Args>                           \(\backslash\)
+\textcolor{keyword}{static} \textcolor{keyword}{auto} \textcolor{keyword}{function}(                                                     \(\backslash\)
+        \hyperlink{classbc_1_1streams_1_1Stream}{bc::streams::Stream<bc::device\_tag>} stream,                     
+        \(\backslash\)
+        Begin begin,                                                      \(\backslash\)
+        End \hyperlink{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876eab558a540d38cc75942ed86578e792027}{end},                                                          \(\backslash\)
+        Args... args)                                                     \(\backslash\)
+\{                                                                         \(\backslash\)
+    return thrust::function(                                              \(\backslash\)
+            thrust::cuda::par.on(stream), begin, end, args...);           \(\backslash\)
+\})                                                                        \(\backslash\)
+                                                                          \(\backslash\)
+template<\textcolor{keyword}{class }Begin, class End, class... Args>                           \(\backslash\)
+static auto \hyperlink{namespacebc_1_1nn_a0fef36d0002a6d7c7cb619d7e27d5c1e}{function} (                                                    \(\backslash\)
+        \hyperlink{namespacebc}{bc}::streams::Stream<bc::host\_tag> stream,                         \(\backslash\)
+        Begin begin,                                                      \(\backslash\)
+        End \hyperlink{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876eab558a540d38cc75942ed86578e792027}{end},                                                          \(\backslash\)
+        Args... args)                                                     \(\backslash\)
+\{                                                                         \(\backslash\)
+    return stream.enqueue([&]()\{ \hyperlink{namespacebc_1_1nn_a0fef36d0002a6d7c7cb619d7e27d5c1e}{std::function}(begin, \hyperlink{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876eab558a540d38cc75942ed86578e792027}{end}, args...); \});  \(\backslash\)
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{algorithms_2algorithms_8h_a1ed557e86415a8142e35577f1c3e666b}\label{algorithms_2algorithms_8h_a1ed557e86415a8142e35577f1c3e666b}} 
+\index{algorithms/algorithms.\+h@{algorithms/algorithms.\+h}!B\+C\+\_\+\+R\+E\+D\+U\+C\+E\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+EF@{B\+C\+\_\+\+R\+E\+D\+U\+C\+E\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+EF}}
+\index{B\+C\+\_\+\+R\+E\+D\+U\+C\+E\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+EF@{B\+C\+\_\+\+R\+E\+D\+U\+C\+E\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+EF}!algorithms/algorithms.\+h@{algorithms/algorithms.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+R\+E\+D\+U\+C\+E\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+EF}{BC\_REDUCE\_ALGORITHM\_DEF}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+R\+E\+D\+U\+C\+E\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{function }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{common_8h_a86f4e2210c4647476c960638e87e390a}{BC\_IF\_CUDA}(                                                               \(\backslash\)
+template<class Begin, class End, class... Args>                           \(\backslash\)
+\textcolor{keyword}{static} \textcolor{keyword}{auto} \textcolor{keyword}{function}(                                                     \(\backslash\)
+        \hyperlink{classbc_1_1streams_1_1Stream}{bc::streams::Stream<bc::device\_tag>} stream,                     
+        \(\backslash\)
+        Begin begin,                                                      \(\backslash\)
+        End \hyperlink{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876eab558a540d38cc75942ed86578e792027}{end},                                                          \(\backslash\)
+        Args... args)                                                     \(\backslash\)
+\{                                                                         \(\backslash\)
+    return thrust::function(                                              \(\backslash\)
+            thrust::cuda::par.on(stream), begin, end, args...);           \(\backslash\)
+\})                                                                        \(\backslash\)
+                                                                          \(\backslash\)
+template<\textcolor{keyword}{class }Begin, class End, class... Args>                           \(\backslash\)
+static auto \hyperlink{namespacebc_1_1nn_a0fef36d0002a6d7c7cb619d7e27d5c1e}{function} (                                                    \(\backslash\)
+        \hyperlink{namespacebc}{bc}::streams::Stream<bc::host\_tag> stream,                         \(\backslash\)
+        Begin begin,                                                      \(\backslash\)
+        End \hyperlink{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876eab558a540d38cc75942ed86578e792027}{end},                                                          \(\backslash\)
+        Args... args)                                                     \(\backslash\)
+    \{                                                                     \(\backslash\)
+        using value\_type = std::decay\_t<                                  \(\backslash\)
+                decltype(\hyperlink{namespacebc_1_1nn_a0fef36d0002a6d7c7cb619d7e27d5c1e}{std::function}(begin, \hyperlink{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876eab558a540d38cc75942ed86578e792027}{end}, args...))>;            \(\backslash\)
+                                                                          \(\backslash\)
+        value\_type value;                                                 \(\backslash\)
+        stream.enqueue([&]() \{                                            \(\backslash\)
+                value = \hyperlink{namespacebc_1_1nn_a0fef36d0002a6d7c7cb619d7e27d5c1e}{std::function}(begin, \hyperlink{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876eab558a540d38cc75942ed86578e792027}{end}, args...);               \(\backslash\)
+        \});                                                               \(\backslash\)
+                                                                          \(\backslash\)
+        stream.sync();                                                    \(\backslash\)
+        return value;                                                     \(\backslash\)
+    \}                                                                     \(\backslash\)
+\end{DoxyCode}
+\mbox{\Hypertarget{algorithms_2algorithms_8h_a6d89338b6c346160028f64704a9e58f4}\label{algorithms_2algorithms_8h_a6d89338b6c346160028f64704a9e58f4}} 
+\index{algorithms/algorithms.\+h@{algorithms/algorithms.\+h}!B\+C\+\_\+\+R\+E\+D\+U\+C\+E\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+E\+F\+\_\+\+F\+I\+X\+\_\+\+T\+H\+R\+U\+ST@{B\+C\+\_\+\+R\+E\+D\+U\+C\+E\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+E\+F\+\_\+\+F\+I\+X\+\_\+\+T\+H\+R\+U\+ST}}
+\index{B\+C\+\_\+\+R\+E\+D\+U\+C\+E\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+E\+F\+\_\+\+F\+I\+X\+\_\+\+T\+H\+R\+U\+ST@{B\+C\+\_\+\+R\+E\+D\+U\+C\+E\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+E\+F\+\_\+\+F\+I\+X\+\_\+\+T\+H\+R\+U\+ST}!algorithms/algorithms.\+h@{algorithms/algorithms.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+R\+E\+D\+U\+C\+E\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+E\+F\+\_\+\+F\+I\+X\+\_\+\+T\+H\+R\+U\+ST}{BC\_REDUCE\_ALGORITHM\_DEF\_FIX\_THRUST}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+R\+E\+D\+U\+C\+E\+\_\+\+A\+L\+G\+O\+R\+I\+T\+H\+M\+\_\+\+D\+E\+F\+\_\+\+F\+I\+X\+\_\+\+T\+H\+R\+U\+ST(\begin{DoxyParamCaption}\item[{}]{function }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{common_8h_a86f4e2210c4647476c960638e87e390a}{BC\_IF\_CUDA}(                                                               \(\backslash\)
+template<class Begin, class End, class... Args>                           \(\backslash\)
+\textcolor{keyword}{static} \textcolor{keyword}{auto} \textcolor{keyword}{function}(                                                     \(\backslash\)
+        \hyperlink{classbc_1_1streams_1_1Stream}{bc::streams::Stream<bc::device\_tag>} stream,                     
+        \(\backslash\)
+        Begin begin,                                                      \(\backslash\)
+        End \hyperlink{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876eab558a540d38cc75942ed86578e792027}{end},                                                          \(\backslash\)
+        Args... args)                                                     \(\backslash\)
+\{                                                                         \(\backslash\)
+    static\_assert(std::is\_same<                                           \(\backslash\)
+            std::random\_access\_iterator\_tag,                              \(\backslash\)
+            typename Begin::iterator\_category>::value,                    \(\backslash\)
+            \textcolor{stringliteral}{"Assert random\_access\_iterator\_tag"});                         \(\backslash\)
+                                                                          \(\backslash\)
+    return thrust::function(                                              \(\backslash\)
+            thrust::cuda::par.on(stream), &*begin, &*end, args...);       \(\backslash\)
+\})                                                                        \(\backslash\)
+                                                                          \(\backslash\)
+template<\textcolor{keyword}{class }Begin, class End, class... Args>                           \(\backslash\)
+static auto \hyperlink{namespacebc_1_1nn_a0fef36d0002a6d7c7cb619d7e27d5c1e}{function} (                                                    \(\backslash\)
+        \hyperlink{namespacebc}{bc}::streams::Stream<bc::host\_tag> stream,                         \(\backslash\)
+        Begin begin,                                                      \(\backslash\)
+        End \hyperlink{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876eab558a540d38cc75942ed86578e792027}{end},                                                          \(\backslash\)
+        Args... args)                                                     \(\backslash\)
+    \{                                                                     \hyperlink{namespacebc_1_1streams_a83bc11f49b9ce1547ccc691044d1c442}{\(\backslash\)}
+\hyperlink{namespacebc_1_1streams_a83bc11f49b9ce1547ccc691044d1c442}{        bc::streams::host\_sync}();                                         \(\backslash\)
+        return &*begin + \hyperlink{namespacebc_1_1nn_a0fef36d0002a6d7c7cb619d7e27d5c1e}{std::function}(begin, \hyperlink{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876eab558a540d38cc75942ed86578e792027}{end}, args...);              \(\backslash\)
+    \}                                                                     \(\backslash\)
+\end{DoxyCode}
+
+
+-- thrust fails to compile certain functions. 
+
+/usr/local/cuda/bin/.. /targets/x86\+\_\+64-\/linux/include/thrust/iterator/detail/zip\+\_\+iterator\+\_\+base.h(96)\+: error\+: qualifiers dropped in binding reference of type \char`\"{}bc\+::device\+\_\+tag\+::default\+\_\+floating\+\_\+point\+\_\+type \&\char`\"{}
+
+Likewise functions that returns iterators in thrust may return integers in std\+::library (namely max\+\_\+element/min\+\_\+element), this will always return an iterator therefor unifying the two different interfaces 

@@ -1,0 +1,43 @@
+\hypertarget{constexpr__int_8h}{}\section{blackcat/type\+\_\+traits/constexpr\+\_\+int.h File Reference}
+\label{constexpr__int_8h}\index{blackcat/type\+\_\+traits/constexpr\+\_\+int.\+h@{blackcat/type\+\_\+traits/constexpr\+\_\+int.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{constexpr__int_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer$<$ X $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1traits}{bc\+::traits}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{constexpr__int_8h_a0d2c9ce6221250ac22c93c74ef475310}{B\+C\+\_\+\+I\+N\+T\+E\+G\+E\+R\+\_\+\+OP}(op)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{constexpr__int_8h_a0d2c9ce6221250ac22c93c74ef475310}\label{constexpr__int_8h_a0d2c9ce6221250ac22c93c74ef475310}} 
+\index{constexpr\+\_\+int.\+h@{constexpr\+\_\+int.\+h}!B\+C\+\_\+\+I\+N\+T\+E\+G\+E\+R\+\_\+\+OP@{B\+C\+\_\+\+I\+N\+T\+E\+G\+E\+R\+\_\+\+OP}}
+\index{B\+C\+\_\+\+I\+N\+T\+E\+G\+E\+R\+\_\+\+OP@{B\+C\+\_\+\+I\+N\+T\+E\+G\+E\+R\+\_\+\+OP}!constexpr\+\_\+int.\+h@{constexpr\+\_\+int.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+I\+N\+T\+E\+G\+E\+R\+\_\+\+OP}{BC\_INTEGER\_OP}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+I\+N\+T\+E\+G\+E\+R\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{op }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\(\backslash\)
+    template<int Y>                                     \(\backslash\)
+    auto \textcolor{keyword}{operator} op (\textcolor{keyword}{const} Integer<Y>& other)\textcolor{keyword}{ const }\{  \(\backslash\)
+        return Integer<X op Y>();                       \(\backslash\)
+    \}
+\end{DoxyCode}

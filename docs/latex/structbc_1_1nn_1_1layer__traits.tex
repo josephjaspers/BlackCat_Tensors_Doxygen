@@ -1,0 +1,193 @@
+\hypertarget{structbc_1_1nn_1_1layer__traits}{}\section{bc\+:\+:nn\+:\+:layer\+\_\+traits$<$ T $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1layer__traits}\index{bc\+::nn\+::layer\+\_\+traits$<$ T $>$@{bc\+::nn\+::layer\+\_\+traits$<$ T $>$}}
+
+
+{\ttfamily \#include $<$layer\+\_\+traits.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:nn\+:\+:layer\+\_\+traits$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{structbc_1_1nn_1_1layer__traits__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:layer\+\_\+traits$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{structbc_1_1nn_1_1layer__traits__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1layer__traits_a95a88b919abd7c9ebe295a3f5171b31e}{system\+\_\+tag} = typename T\+::system\+\_\+tag
+\begin{DoxyCompactList}\small\item\em Layers have the function\+: backward\+\_\+propagate(Args...); -- The arguments supplied are based upon these traits. \end{DoxyCompactList}\item 
+using \hyperlink{structbc_1_1nn_1_1layer__traits_a998c8708310306546aa5edb3ad1b46b8}{value\+\_\+type} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1traits_a40b9437a2ec1bb34ee7d506c8053f906}{bc\+::traits\+::query\+\_\+value\+\_\+type}, T, typename system\+\_\+tag\+::default\+\_\+floating\+\_\+point\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1layer__traits_afbe9ab9133f903efde7f3d307836d489}{allocator\+\_\+type} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1traits_ab141f0cc8348b4b7ebcb48e6bbb50d09}{bc\+::traits\+::query\+\_\+allocator\+\_\+type}, T, \hyperlink{classbc_1_1allocators_1_1Allocator}{bc\+::\+Allocator}$<$ \hyperlink{structbc_1_1nn_1_1layer__traits_a998c8708310306546aa5edb3ad1b46b8}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1layer__traits_a95a88b919abd7c9ebe295a3f5171b31e}{system\+\_\+tag} $>$ $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1layer__traits_a7702010ac1dd6f1776bdc089e62c5da4}{requires\+\_\+extra\+\_\+cache} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_a7cfff1896ea5ef55f6410bb7c6ff3bf3}{detail\+::query\+\_\+requires\+\_\+extra\+\_\+cache}, T, std\+::false\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1layer__traits_ad59c13867670e4e117d657881bc2afe8}{input\+\_\+tensor\+\_\+dim} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_a4bdf240452d0d96d1f433e7f0f5dd3e7}{detail\+::query\+\_\+input\+\_\+tensor\+\_\+dim}, T, \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$ 1 $>$ $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1layer__traits_adee5a74fd6b7ae72f1bcfb483f2e3fd4}{output\+\_\+tensor\+\_\+dim} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_aa16772b430fc14eb1bf4b82ad6f679fd}{detail\+::query\+\_\+output\+\_\+tensor\+\_\+dim}, T, \hyperlink{structbc_1_1nn_1_1layer__traits_ad59c13867670e4e117d657881bc2afe8}{input\+\_\+tensor\+\_\+dim} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1layer__traits_acc45436e4f0539af616a07204eef707b}{forward\+\_\+requires\+\_\+inputs} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_a93de41b72dd88c58d8f1d74276da87b3}{detail\+::query\+\_\+forward\+\_\+requires\+\_\+inputs}, T, std\+::true\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1layer__traits_ace8ad3b761d12ad18a3b2982389b88d6}{forward\+\_\+requires\+\_\+outputs} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_a10314a67405b06863c6384de87e36bad}{detail\+::query\+\_\+forward\+\_\+requires\+\_\+outputs}, T, std\+::false\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1layer__traits_ab46948010fcdbbdf2270619d2644d4a8}{forward\+\_\+requires\+\_\+extra\+\_\+cache} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_a51767bf55cf9cdf8cdff0f2929304390}{detail\+::query\+\_\+forward\+\_\+requires\+\_\+extra\+\_\+cache}, T, std\+::false\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1layer__traits_af530493c93863e1f30a4f8c19fdcfceb}{backward\+\_\+requires\+\_\+inputs} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_acb9ab0f627cee62dd68d673afc443608}{detail\+::query\+\_\+backward\+\_\+requires\+\_\+inputs}, T, std\+::true\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1layer__traits_adb5ce9f80eb56e874462cf49a02bf2d4}{backward\+\_\+requires\+\_\+outputs} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_ad187de638865a7fbfe0e3c1db1511e4a}{detail\+::query\+\_\+backward\+\_\+requires\+\_\+outputs}, T, std\+::false\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1layer__traits_a20815b34dc94e460aabd4eba8ad9baec}{backward\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_ad187de638865a7fbfe0e3c1db1511e4a}{detail\+::query\+\_\+backward\+\_\+requires\+\_\+outputs}, T, std\+::false\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1layer__traits_adb08bd29c79f30ddfbe4cc256ff5c822}{backward\+\_\+requires\+\_\+extra\+\_\+cache} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_a1599626f3fdc7ffbe459d9abf8325465}{detail\+::query\+\_\+backward\+\_\+requires\+\_\+extra\+\_\+cache}, T, std\+::false\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1layer__traits_a07a975e03a39e8b1c9040f970e5efe1c}{greedy\+\_\+evaluate\+\_\+delta} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_aee17a95f5bdf1a2903f755a7de7ac632}{detail\+::query\+\_\+greedy\+\_\+evaluate\+\_\+delta}, T, std\+::false\+\_\+type $>$
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\static auto \hyperlink{structbc_1_1nn_1_1layer__traits_abcbd25ae68c8b16363005cee09696142}{select\+\_\+on\+\_\+predict} (T \&layer, Args \&\&... args)
+\item 
+{\footnotesize template$<$class... Args$>$ }\\static auto \hyperlink{structbc_1_1nn_1_1layer__traits_a5810b5f90ef816acd95955372fe7223f}{select\+\_\+on\+\_\+single\+\_\+predict} (T \&layer, Args \&\&... args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_afbe9ab9133f903efde7f3d307836d489}\label{structbc_1_1nn_1_1layer__traits_afbe9ab9133f903efde7f3d307836d489}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1nn_1_1layer__traits_afbe9ab9133f903efde7f3d307836d489}{allocator\+\_\+type} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1traits_ab141f0cc8348b4b7ebcb48e6bbb50d09}{bc\+::traits\+::query\+\_\+allocator\+\_\+type}, T, \hyperlink{classbc_1_1allocators_1_1Allocator}{bc\+::\+Allocator}$<$\hyperlink{structbc_1_1nn_1_1layer__traits_a998c8708310306546aa5edb3ad1b46b8}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1layer__traits_a95a88b919abd7c9ebe295a3f5171b31e}{system\+\_\+tag}$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_a20815b34dc94e460aabd4eba8ad9baec}\label{structbc_1_1nn_1_1layer__traits_a20815b34dc94e460aabd4eba8ad9baec}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!backward\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached@{backward\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached}}
+\index{backward\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached@{backward\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{backward\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached}{backward\_delta\_should\_be\_cached}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1nn_1_1layer__traits_a20815b34dc94e460aabd4eba8ad9baec}{backward\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_ad187de638865a7fbfe0e3c1db1511e4a}{detail\+::query\+\_\+backward\+\_\+requires\+\_\+outputs}, T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_adb08bd29c79f30ddfbe4cc256ff5c822}\label{structbc_1_1nn_1_1layer__traits_adb08bd29c79f30ddfbe4cc256ff5c822}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!backward\+\_\+requires\+\_\+extra\+\_\+cache@{backward\+\_\+requires\+\_\+extra\+\_\+cache}}
+\index{backward\+\_\+requires\+\_\+extra\+\_\+cache@{backward\+\_\+requires\+\_\+extra\+\_\+cache}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{backward\+\_\+requires\+\_\+extra\+\_\+cache}{backward\_requires\_extra\_cache}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1nn_1_1layer__traits_adb08bd29c79f30ddfbe4cc256ff5c822}{backward\+\_\+requires\+\_\+extra\+\_\+cache} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_a1599626f3fdc7ffbe459d9abf8325465}{detail\+::query\+\_\+backward\+\_\+requires\+\_\+extra\+\_\+cache}, T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_af530493c93863e1f30a4f8c19fdcfceb}\label{structbc_1_1nn_1_1layer__traits_af530493c93863e1f30a4f8c19fdcfceb}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!backward\+\_\+requires\+\_\+inputs@{backward\+\_\+requires\+\_\+inputs}}
+\index{backward\+\_\+requires\+\_\+inputs@{backward\+\_\+requires\+\_\+inputs}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{backward\+\_\+requires\+\_\+inputs}{backward\_requires\_inputs}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1nn_1_1layer__traits_af530493c93863e1f30a4f8c19fdcfceb}{backward\+\_\+requires\+\_\+inputs} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_acb9ab0f627cee62dd68d673afc443608}{detail\+::query\+\_\+backward\+\_\+requires\+\_\+inputs}, T, std\+::true\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_adb5ce9f80eb56e874462cf49a02bf2d4}\label{structbc_1_1nn_1_1layer__traits_adb5ce9f80eb56e874462cf49a02bf2d4}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!backward\+\_\+requires\+\_\+outputs@{backward\+\_\+requires\+\_\+outputs}}
+\index{backward\+\_\+requires\+\_\+outputs@{backward\+\_\+requires\+\_\+outputs}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{backward\+\_\+requires\+\_\+outputs}{backward\_requires\_outputs}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1nn_1_1layer__traits_adb5ce9f80eb56e874462cf49a02bf2d4}{backward\+\_\+requires\+\_\+outputs} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_ad187de638865a7fbfe0e3c1db1511e4a}{detail\+::query\+\_\+backward\+\_\+requires\+\_\+outputs}, T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_ab46948010fcdbbdf2270619d2644d4a8}\label{structbc_1_1nn_1_1layer__traits_ab46948010fcdbbdf2270619d2644d4a8}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!forward\+\_\+requires\+\_\+extra\+\_\+cache@{forward\+\_\+requires\+\_\+extra\+\_\+cache}}
+\index{forward\+\_\+requires\+\_\+extra\+\_\+cache@{forward\+\_\+requires\+\_\+extra\+\_\+cache}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{forward\+\_\+requires\+\_\+extra\+\_\+cache}{forward\_requires\_extra\_cache}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1nn_1_1layer__traits_ab46948010fcdbbdf2270619d2644d4a8}{forward\+\_\+requires\+\_\+extra\+\_\+cache} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_a51767bf55cf9cdf8cdff0f2929304390}{detail\+::query\+\_\+forward\+\_\+requires\+\_\+extra\+\_\+cache}, T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_acc45436e4f0539af616a07204eef707b}\label{structbc_1_1nn_1_1layer__traits_acc45436e4f0539af616a07204eef707b}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!forward\+\_\+requires\+\_\+inputs@{forward\+\_\+requires\+\_\+inputs}}
+\index{forward\+\_\+requires\+\_\+inputs@{forward\+\_\+requires\+\_\+inputs}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{forward\+\_\+requires\+\_\+inputs}{forward\_requires\_inputs}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1nn_1_1layer__traits_acc45436e4f0539af616a07204eef707b}{forward\+\_\+requires\+\_\+inputs} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_a93de41b72dd88c58d8f1d74276da87b3}{detail\+::query\+\_\+forward\+\_\+requires\+\_\+inputs}, T, std\+::true\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_ace8ad3b761d12ad18a3b2982389b88d6}\label{structbc_1_1nn_1_1layer__traits_ace8ad3b761d12ad18a3b2982389b88d6}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!forward\+\_\+requires\+\_\+outputs@{forward\+\_\+requires\+\_\+outputs}}
+\index{forward\+\_\+requires\+\_\+outputs@{forward\+\_\+requires\+\_\+outputs}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{forward\+\_\+requires\+\_\+outputs}{forward\_requires\_outputs}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1nn_1_1layer__traits_ace8ad3b761d12ad18a3b2982389b88d6}{forward\+\_\+requires\+\_\+outputs} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_a10314a67405b06863c6384de87e36bad}{detail\+::query\+\_\+forward\+\_\+requires\+\_\+outputs}, T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_a07a975e03a39e8b1c9040f970e5efe1c}\label{structbc_1_1nn_1_1layer__traits_a07a975e03a39e8b1c9040f970e5efe1c}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!greedy\+\_\+evaluate\+\_\+delta@{greedy\+\_\+evaluate\+\_\+delta}}
+\index{greedy\+\_\+evaluate\+\_\+delta@{greedy\+\_\+evaluate\+\_\+delta}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{greedy\+\_\+evaluate\+\_\+delta}{greedy\_evaluate\_delta}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1nn_1_1layer__traits_a07a975e03a39e8b1c9040f970e5efe1c}{greedy\+\_\+evaluate\+\_\+delta} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_aee17a95f5bdf1a2903f755a7de7ac632}{detail\+::query\+\_\+greedy\+\_\+evaluate\+\_\+delta}, T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_ad59c13867670e4e117d657881bc2afe8}\label{structbc_1_1nn_1_1layer__traits_ad59c13867670e4e117d657881bc2afe8}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!input\+\_\+tensor\+\_\+dim@{input\+\_\+tensor\+\_\+dim}}
+\index{input\+\_\+tensor\+\_\+dim@{input\+\_\+tensor\+\_\+dim}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{input\+\_\+tensor\+\_\+dim}{input\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1nn_1_1layer__traits_ad59c13867670e4e117d657881bc2afe8}{input\+\_\+tensor\+\_\+dim} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_a4bdf240452d0d96d1f433e7f0f5dd3e7}{detail\+::query\+\_\+input\+\_\+tensor\+\_\+dim}, T, \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$1$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_adee5a74fd6b7ae72f1bcfb483f2e3fd4}\label{structbc_1_1nn_1_1layer__traits_adee5a74fd6b7ae72f1bcfb483f2e3fd4}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!output\+\_\+tensor\+\_\+dim@{output\+\_\+tensor\+\_\+dim}}
+\index{output\+\_\+tensor\+\_\+dim@{output\+\_\+tensor\+\_\+dim}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{output\+\_\+tensor\+\_\+dim}{output\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1nn_1_1layer__traits_adee5a74fd6b7ae72f1bcfb483f2e3fd4}{output\+\_\+tensor\+\_\+dim} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_aa16772b430fc14eb1bf4b82ad6f679fd}{detail\+::query\+\_\+output\+\_\+tensor\+\_\+dim}, T, \hyperlink{structbc_1_1nn_1_1layer__traits_ad59c13867670e4e117d657881bc2afe8}{input\+\_\+tensor\+\_\+dim}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_a7702010ac1dd6f1776bdc089e62c5da4}\label{structbc_1_1nn_1_1layer__traits_a7702010ac1dd6f1776bdc089e62c5da4}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!requires\+\_\+extra\+\_\+cache@{requires\+\_\+extra\+\_\+cache}}
+\index{requires\+\_\+extra\+\_\+cache@{requires\+\_\+extra\+\_\+cache}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{requires\+\_\+extra\+\_\+cache}{requires\_extra\_cache}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1nn_1_1layer__traits_a7702010ac1dd6f1776bdc089e62c5da4}{requires\+\_\+extra\+\_\+cache} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_a7cfff1896ea5ef55f6410bb7c6ff3bf3}{detail\+::query\+\_\+requires\+\_\+extra\+\_\+cache}, T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_a95a88b919abd7c9ebe295a3f5171b31e}\label{structbc_1_1nn_1_1layer__traits_a95a88b919abd7c9ebe295a3f5171b31e}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1nn_1_1layer__traits_a95a88b919abd7c9ebe295a3f5171b31e}{system\+\_\+tag} =  typename T\+::system\+\_\+tag}
+
+
+
+Layers have the function\+: backward\+\_\+propagate(Args...); -- The arguments supplied are based upon these traits. 
+
+If forwards\+\_\+requires\+\_\+inputs==std\+::true\+\_\+type, inputs will be supplied in forward prop If forwards\+\_\+requires\+\_\+outputs==std\+::true\+\_\+type, outputs will be supplied in forward prop
+
+If backwards\+\_\+requires\+\_\+inputs==std\+::true\+\_\+type, inputs will be supplied in backward prop If backwards\+\_\+requires\+\_\+outputs==std\+::true\+\_\+type, outputs will be supplied in backward prop \mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_a998c8708310306546aa5edb3ad1b46b8}\label{structbc_1_1nn_1_1layer__traits_a998c8708310306546aa5edb3ad1b46b8}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+using \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1nn_1_1layer__traits_a998c8708310306546aa5edb3ad1b46b8}{value\+\_\+type} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1traits_a40b9437a2ec1bb34ee7d506c8053f906}{bc\+::traits\+::query\+\_\+value\+\_\+type}, T, typename system\+\_\+tag\+::default\+\_\+floating\+\_\+point\+\_\+type$>$}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_abcbd25ae68c8b16363005cee09696142}\label{structbc_1_1nn_1_1layer__traits_abcbd25ae68c8b16363005cee09696142}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!select\+\_\+on\+\_\+predict@{select\+\_\+on\+\_\+predict}}
+\index{select\+\_\+on\+\_\+predict@{select\+\_\+on\+\_\+predict}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{select\+\_\+on\+\_\+predict()}{select\_on\_predict()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+template$<$class... Args$>$ \\
+static auto \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::select\+\_\+on\+\_\+predict (\begin{DoxyParamCaption}\item[{T \&}]{layer,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1layer__traits_a5810b5f90ef816acd95955372fe7223f}\label{structbc_1_1nn_1_1layer__traits_a5810b5f90ef816acd95955372fe7223f}} 
+\index{bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}!select\+\_\+on\+\_\+single\+\_\+predict@{select\+\_\+on\+\_\+single\+\_\+predict}}
+\index{select\+\_\+on\+\_\+single\+\_\+predict@{select\+\_\+on\+\_\+single\+\_\+predict}!bc\+::nn\+::layer\+\_\+traits@{bc\+::nn\+::layer\+\_\+traits}}
+\subsubsection{\texorpdfstring{select\+\_\+on\+\_\+single\+\_\+predict()}{select\_on\_single\_predict()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+template$<$class... Args$>$ \\
+static auto \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits}$<$ T $>$\+::select\+\_\+on\+\_\+single\+\_\+predict (\begin{DoxyParamCaption}\item[{T \&}]{layer,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/layers/\hyperlink{layer__traits_8h}{layer\+\_\+traits.\+h}\end{DoxyCompactItemize}

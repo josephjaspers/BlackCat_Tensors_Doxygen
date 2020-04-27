@@ -1,0 +1,92 @@
+\hypertarget{structbc_1_1oper_1_1operation__traits}{}\section{bc\+:\+:oper\+:\+:operation\+\_\+traits$<$ T $>$ Struct Template Reference}
+\label{structbc_1_1oper_1_1operation__traits}\index{bc\+::oper\+::operation\+\_\+traits$<$ T $>$@{bc\+::oper\+::operation\+\_\+traits$<$ T $>$}}
+
+
+{\ttfamily \#include $<$operation\+\_\+traits.\+h$>$}
+
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr int \hyperlink{structbc_1_1oper_1_1operation__traits_acb09b3c89cc154e01c8948a1996e1df2}{alpha\+\_\+modifier}
+\item 
+static constexpr int \hyperlink{structbc_1_1oper_1_1operation__traits_a18401bbd284e30d4af842462e5a0e49a}{beta\+\_\+modifier}
+\item 
+static constexpr bool \hyperlink{structbc_1_1oper_1_1operation__traits_a5c6b55625ee7aa6ea197fa8e3ad98ba6}{is\+\_\+linear\+\_\+operation} = std\+::is\+\_\+base\+\_\+of$<$\hyperlink{structbc_1_1oper_1_1linear__operation}{linear\+\_\+operation},T$>$\+::value
+\item 
+static constexpr bool \hyperlink{structbc_1_1oper_1_1operation__traits_a50978967240801dd4b9ca029e9e003f4}{is\+\_\+linear\+\_\+assignment\+\_\+operation} = std\+::is\+\_\+base\+\_\+of$<$\hyperlink{structbc_1_1oper_1_1linear__assignment__operation}{linear\+\_\+assignment\+\_\+operation}, T$>$\+::value
+\item 
+static constexpr bool \hyperlink{structbc_1_1oper_1_1operation__traits_a25bdb0c5116cbafc2adfffda6ad5e0e8}{is\+\_\+assignment\+\_\+operation} = std\+::is\+\_\+base\+\_\+of$<$\hyperlink{structbc_1_1oper_1_1assignment__operation}{assignment\+\_\+operation}, T$>$\+::value
+\item 
+static constexpr bool \hyperlink{structbc_1_1oper_1_1operation__traits_a330c3f46193bcb67fb5c65464ea9c0fa}{is\+\_\+blas\+\_\+function} = std\+::is\+\_\+base\+\_\+of$<$\hyperlink{structbc_1_1oper_1_1BLAS__Function}{B\+L\+A\+S\+\_\+\+Function}, T$>$\+::value
+\item 
+static constexpr bool \hyperlink{structbc_1_1oper_1_1operation__traits_aa90cc400c5e92fb822069d146df37e23}{is\+\_\+nonlinear\+\_\+operation} = !\hyperlink{structbc_1_1oper_1_1operation__traits_a330c3f46193bcb67fb5c65464ea9c0fa}{is\+\_\+blas\+\_\+function} \&\& !\hyperlink{structbc_1_1oper_1_1operation__traits_a5c6b55625ee7aa6ea197fa8e3ad98ba6}{is\+\_\+linear\+\_\+operation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1oper_1_1operation__traits_acb09b3c89cc154e01c8948a1996e1df2}\label{structbc_1_1oper_1_1operation__traits_acb09b3c89cc154e01c8948a1996e1df2}} 
+\index{bc\+::oper\+::operation\+\_\+traits@{bc\+::oper\+::operation\+\_\+traits}!alpha\+\_\+modifier@{alpha\+\_\+modifier}}
+\index{alpha\+\_\+modifier@{alpha\+\_\+modifier}!bc\+::oper\+::operation\+\_\+traits@{bc\+::oper\+::operation\+\_\+traits}}
+\subsubsection{\texorpdfstring{alpha\+\_\+modifier}{alpha\_modifier}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+constexpr int \hyperlink{structbc_1_1oper_1_1operation__traits}{bc\+::oper\+::operation\+\_\+traits}$<$ T $>$\+::alpha\+\_\+modifier\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc::traits::conditional\_detected\_t}<
+            \hyperlink{namespacebc_1_1oper_1_1detail_a5fe5a0f1d0c660f34cb4f975ad4d29bf}{detail::query\_alpha\_modifier}, T, 
+      \hyperlink{structbc_1_1traits_1_1Integer}{bc::traits::Integer<1>}>::value
+\end{DoxyCode}
+\mbox{\Hypertarget{structbc_1_1oper_1_1operation__traits_a18401bbd284e30d4af842462e5a0e49a}\label{structbc_1_1oper_1_1operation__traits_a18401bbd284e30d4af842462e5a0e49a}} 
+\index{bc\+::oper\+::operation\+\_\+traits@{bc\+::oper\+::operation\+\_\+traits}!beta\+\_\+modifier@{beta\+\_\+modifier}}
+\index{beta\+\_\+modifier@{beta\+\_\+modifier}!bc\+::oper\+::operation\+\_\+traits@{bc\+::oper\+::operation\+\_\+traits}}
+\subsubsection{\texorpdfstring{beta\+\_\+modifier}{beta\_modifier}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+constexpr int \hyperlink{structbc_1_1oper_1_1operation__traits}{bc\+::oper\+::operation\+\_\+traits}$<$ T $>$\+::beta\+\_\+modifier\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc::traits::conditional\_detected\_t}<
+            \hyperlink{namespacebc_1_1oper_1_1detail_abb9645396fc587030351c50ca6b427e2}{detail::query\_beta\_modifier}, T, 
+      \hyperlink{structbc_1_1traits_1_1Integer}{bc::traits::Integer<1>}>::value
+\end{DoxyCode}
+\mbox{\Hypertarget{structbc_1_1oper_1_1operation__traits_a25bdb0c5116cbafc2adfffda6ad5e0e8}\label{structbc_1_1oper_1_1operation__traits_a25bdb0c5116cbafc2adfffda6ad5e0e8}} 
+\index{bc\+::oper\+::operation\+\_\+traits@{bc\+::oper\+::operation\+\_\+traits}!is\+\_\+assignment\+\_\+operation@{is\+\_\+assignment\+\_\+operation}}
+\index{is\+\_\+assignment\+\_\+operation@{is\+\_\+assignment\+\_\+operation}!bc\+::oper\+::operation\+\_\+traits@{bc\+::oper\+::operation\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+assignment\+\_\+operation}{is\_assignment\_operation}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+constexpr bool \hyperlink{structbc_1_1oper_1_1operation__traits}{bc\+::oper\+::operation\+\_\+traits}$<$ T $>$\+::is\+\_\+assignment\+\_\+operation = std\+::is\+\_\+base\+\_\+of$<$\hyperlink{structbc_1_1oper_1_1assignment__operation}{assignment\+\_\+operation}, T$>$\+::value\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1oper_1_1operation__traits_a330c3f46193bcb67fb5c65464ea9c0fa}\label{structbc_1_1oper_1_1operation__traits_a330c3f46193bcb67fb5c65464ea9c0fa}} 
+\index{bc\+::oper\+::operation\+\_\+traits@{bc\+::oper\+::operation\+\_\+traits}!is\+\_\+blas\+\_\+function@{is\+\_\+blas\+\_\+function}}
+\index{is\+\_\+blas\+\_\+function@{is\+\_\+blas\+\_\+function}!bc\+::oper\+::operation\+\_\+traits@{bc\+::oper\+::operation\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+blas\+\_\+function}{is\_blas\_function}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+constexpr bool \hyperlink{structbc_1_1oper_1_1operation__traits}{bc\+::oper\+::operation\+\_\+traits}$<$ T $>$\+::is\+\_\+blas\+\_\+function = std\+::is\+\_\+base\+\_\+of$<$\hyperlink{structbc_1_1oper_1_1BLAS__Function}{B\+L\+A\+S\+\_\+\+Function}, T$>$\+::value\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1oper_1_1operation__traits_a50978967240801dd4b9ca029e9e003f4}\label{structbc_1_1oper_1_1operation__traits_a50978967240801dd4b9ca029e9e003f4}} 
+\index{bc\+::oper\+::operation\+\_\+traits@{bc\+::oper\+::operation\+\_\+traits}!is\+\_\+linear\+\_\+assignment\+\_\+operation@{is\+\_\+linear\+\_\+assignment\+\_\+operation}}
+\index{is\+\_\+linear\+\_\+assignment\+\_\+operation@{is\+\_\+linear\+\_\+assignment\+\_\+operation}!bc\+::oper\+::operation\+\_\+traits@{bc\+::oper\+::operation\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+linear\+\_\+assignment\+\_\+operation}{is\_linear\_assignment\_operation}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+constexpr bool \hyperlink{structbc_1_1oper_1_1operation__traits}{bc\+::oper\+::operation\+\_\+traits}$<$ T $>$\+::is\+\_\+linear\+\_\+assignment\+\_\+operation = std\+::is\+\_\+base\+\_\+of$<$\hyperlink{structbc_1_1oper_1_1linear__assignment__operation}{linear\+\_\+assignment\+\_\+operation}, T$>$\+::value\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1oper_1_1operation__traits_a5c6b55625ee7aa6ea197fa8e3ad98ba6}\label{structbc_1_1oper_1_1operation__traits_a5c6b55625ee7aa6ea197fa8e3ad98ba6}} 
+\index{bc\+::oper\+::operation\+\_\+traits@{bc\+::oper\+::operation\+\_\+traits}!is\+\_\+linear\+\_\+operation@{is\+\_\+linear\+\_\+operation}}
+\index{is\+\_\+linear\+\_\+operation@{is\+\_\+linear\+\_\+operation}!bc\+::oper\+::operation\+\_\+traits@{bc\+::oper\+::operation\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+linear\+\_\+operation}{is\_linear\_operation}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+constexpr bool \hyperlink{structbc_1_1oper_1_1operation__traits}{bc\+::oper\+::operation\+\_\+traits}$<$ T $>$\+::is\+\_\+linear\+\_\+operation = std\+::is\+\_\+base\+\_\+of$<$\hyperlink{structbc_1_1oper_1_1linear__operation}{linear\+\_\+operation},T$>$\+::value\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1oper_1_1operation__traits_aa90cc400c5e92fb822069d146df37e23}\label{structbc_1_1oper_1_1operation__traits_aa90cc400c5e92fb822069d146df37e23}} 
+\index{bc\+::oper\+::operation\+\_\+traits@{bc\+::oper\+::operation\+\_\+traits}!is\+\_\+nonlinear\+\_\+operation@{is\+\_\+nonlinear\+\_\+operation}}
+\index{is\+\_\+nonlinear\+\_\+operation@{is\+\_\+nonlinear\+\_\+operation}!bc\+::oper\+::operation\+\_\+traits@{bc\+::oper\+::operation\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+nonlinear\+\_\+operation}{is\_nonlinear\_operation}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+constexpr bool \hyperlink{structbc_1_1oper_1_1operation__traits}{bc\+::oper\+::operation\+\_\+traits}$<$ T $>$\+::is\+\_\+nonlinear\+\_\+operation = !\hyperlink{structbc_1_1oper_1_1operation__traits_a330c3f46193bcb67fb5c65464ea9c0fa}{is\+\_\+blas\+\_\+function} \&\& !\hyperlink{structbc_1_1oper_1_1operation__traits_a5c6b55625ee7aa6ea197fa8e3ad98ba6}{is\+\_\+linear\+\_\+operation}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/operations/\hyperlink{operation__traits_8h}{operation\+\_\+traits.\+h}\end{DoxyCompactItemize}

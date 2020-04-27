@@ -1,0 +1,185 @@
+\hypertarget{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{}\section{bc\+:\+:allocators\+:\+:pa\+\_\+detail\+:\+:Derived\+\_\+\+Allocator$<$ Allocator $>$ Struct Template Reference}
+\label{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}\index{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator$<$ Allocator $>$@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator$<$ Allocator $>$}}
+
+
+{\ttfamily \#include $<$polymorphic\+\_\+allocator.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:allocators\+:\+:pa\+\_\+detail\+:\+:Derived\+\_\+\+Allocator$<$ Allocator $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:allocators\+:\+:pa\+\_\+detail\+:\+:Derived\+\_\+\+Allocator$<$ Allocator $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_1_1rebind}{rebind}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a99adbba950946cb42cb6f2ad3e18d9ca}{traits\+\_\+type} = \hyperlink{structbc_1_1allocators_1_1allocator__traits}{bc\+::allocator\+\_\+traits}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$
+\item 
+using \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a42f99505929fa39c067d186f5f623045}{system\+\_\+tag} = typename \hyperlink{structbc_1_1allocators_1_1allocator__traits_a527cf77071c45a9dcc2c8213f65f37b3}{traits\+\_\+type\+::system\+\_\+tag}
+\item 
+using \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a997c60e64ca7028da4c9eb15b5bf553d}{value\+\_\+type} = typename traits\+\_\+type\+::value\+\_\+type
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Allocator__Base}{Allocator\+\_\+\+Base}$<$ \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a997c60e64ca7028da4c9eb15b5bf553d}{value\+\_\+type}, \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a42f99505929fa39c067d186f5f623045}{system\+\_\+tag} $>$ $\ast$ \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_af11b1d876a4b0f7c7eb54231730eb3a8}{clone} () const override
+\item 
+\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_ae9f01e2b16db4fc2fec9e69947659bb9}{Derived\+\_\+\+Allocator} ()
+\item 
+\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a72853b8b5e37a81c2f766d8dab779153}{Derived\+\_\+\+Allocator} (const \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} \&alloc)
+\item 
+\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a3b6c03c5af767dd9912c12b7ec8ae18e}{Derived\+\_\+\+Allocator} (\hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} \&\&alloc)
+\item 
+virtual \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a4640d317cab7d3bcd42fe5b975551dc1}{$\sim$\+Derived\+\_\+\+Allocator} () override
+\item 
+virtual std\+::string \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a167659ce0c822b659fbd6ff3ced83876}{rebound\+\_\+to\+\_\+byte\+\_\+hash} () const final
+\item 
+virtual \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a997c60e64ca7028da4c9eb15b5bf553d}{value\+\_\+type} $\ast$ \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_acbfe2862777bf8810e925d78c9511a66}{allocate} (std\+::size\+\_\+t sz) override final
+\item 
+virtual void \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a14b837c6cc64fe049f9c18d219e13cf5}{deallocate} (\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a997c60e64ca7028da4c9eb15b5bf553d}{value\+\_\+type} $\ast$data, std\+::size\+\_\+t sz) override final
+\item 
+virtual bool \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_ad4aa49cda67ab382b2e91225dc3d8b36}{operator==} (const \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Allocator__Base}{Allocator\+\_\+\+Base}$<$ \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a997c60e64ca7028da4c9eb15b5bf553d}{value\+\_\+type}, \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a42f99505929fa39c067d186f5f623045}{system\+\_\+tag} $>$ \&other) const override
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_ac8b23f4729cf661a1bb874d1ff3fb83e}{static\+\_\+hash} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a42f99505929fa39c067d186f5f623045}\label{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a42f99505929fa39c067d186f5f623045}} 
+\index{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class Allocator $>$ \\
+using \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a42f99505929fa39c067d186f5f623045}{system\+\_\+tag} =  typename \hyperlink{structbc_1_1allocators_1_1allocator__traits_a527cf77071c45a9dcc2c8213f65f37b3}{traits\+\_\+type\+::system\+\_\+tag}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a99adbba950946cb42cb6f2ad3e18d9ca}\label{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a99adbba950946cb42cb6f2ad3e18d9ca}} 
+\index{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}!traits\+\_\+type@{traits\+\_\+type}}
+\index{traits\+\_\+type@{traits\+\_\+type}!bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{traits\+\_\+type}{traits\_type}}
+{\footnotesize\ttfamily template$<$class Allocator $>$ \\
+using \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a99adbba950946cb42cb6f2ad3e18d9ca}{traits\+\_\+type} =  \hyperlink{structbc_1_1allocators_1_1allocator__traits}{bc\+::allocator\+\_\+traits}$<$\hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}$>$}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a997c60e64ca7028da4c9eb15b5bf553d}\label{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a997c60e64ca7028da4c9eb15b5bf553d}} 
+\index{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class Allocator $>$ \\
+using \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a997c60e64ca7028da4c9eb15b5bf553d}{value\+\_\+type} =  typename traits\+\_\+type\+::value\+\_\+type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_ae9f01e2b16db4fc2fec9e69947659bb9}\label{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_ae9f01e2b16db4fc2fec9e69947659bb9}} 
+\index{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}!Derived\+\_\+\+Allocator@{Derived\+\_\+\+Allocator}}
+\index{Derived\+\_\+\+Allocator@{Derived\+\_\+\+Allocator}!bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{Derived\+\_\+\+Allocator()}{Derived\_Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class Allocator $>$ \\
+\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{Derived\+\_\+\+Allocator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a72853b8b5e37a81c2f766d8dab779153}\label{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a72853b8b5e37a81c2f766d8dab779153}} 
+\index{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}!Derived\+\_\+\+Allocator@{Derived\+\_\+\+Allocator}}
+\index{Derived\+\_\+\+Allocator@{Derived\+\_\+\+Allocator}!bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{Derived\+\_\+\+Allocator()}{Derived\_Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class Allocator $>$ \\
+\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{Derived\+\_\+\+Allocator} (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} \&}]{alloc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a3b6c03c5af767dd9912c12b7ec8ae18e}\label{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a3b6c03c5af767dd9912c12b7ec8ae18e}} 
+\index{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}!Derived\+\_\+\+Allocator@{Derived\+\_\+\+Allocator}}
+\index{Derived\+\_\+\+Allocator@{Derived\+\_\+\+Allocator}!bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{Derived\+\_\+\+Allocator()}{Derived\_Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class Allocator $>$ \\
+\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{Derived\+\_\+\+Allocator} (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} \&\&}]{alloc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a4640d317cab7d3bcd42fe5b975551dc1}\label{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a4640d317cab7d3bcd42fe5b975551dc1}} 
+\index{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}!````~Derived\+\_\+\+Allocator@{$\sim$\+Derived\+\_\+\+Allocator}}
+\index{````~Derived\+\_\+\+Allocator@{$\sim$\+Derived\+\_\+\+Allocator}!bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{$\sim$\+Derived\+\_\+\+Allocator()}{~Derived\_Allocator()}}
+{\footnotesize\ttfamily template$<$class Allocator $>$ \\
+virtual \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::$\sim$\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{Derived\+\_\+\+Allocator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_acbfe2862777bf8810e925d78c9511a66}\label{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_acbfe2862777bf8810e925d78c9511a66}} 
+\index{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}!allocate@{allocate}}
+\index{allocate@{allocate}!bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}}
+{\footnotesize\ttfamily template$<$class Allocator $>$ \\
+virtual \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a997c60e64ca7028da4c9eb15b5bf553d}{value\+\_\+type}$\ast$ \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::allocate (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Allocator__Base_aa22794436cb3abefc059bde0eb08a23f}{bc\+::allocators\+::pa\+\_\+detail\+::\+Allocator\+\_\+\+Base$<$ bc\+::allocator\+\_\+traits$<$ Allocator $>$\+::value\+\_\+type, bc\+::allocator\+\_\+traits$<$ Allocator $>$\+::system\+\_\+tag $>$}.
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_af11b1d876a4b0f7c7eb54231730eb3a8}\label{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_af11b1d876a4b0f7c7eb54231730eb3a8}} 
+\index{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}!clone@{clone}}
+\index{clone@{clone}!bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$class Allocator $>$ \\
+\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Allocator__Base}{Allocator\+\_\+\+Base}$<$\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a997c60e64ca7028da4c9eb15b5bf553d}{value\+\_\+type}, \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a42f99505929fa39c067d186f5f623045}{system\+\_\+tag}$>$$\ast$ \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Allocator__Base_abb9ba3168afaead6638e81f618f74b48}{bc\+::allocators\+::pa\+\_\+detail\+::\+Allocator\+\_\+\+Base$<$ bc\+::allocator\+\_\+traits$<$ Allocator $>$\+::value\+\_\+type, bc\+::allocator\+\_\+traits$<$ Allocator $>$\+::system\+\_\+tag $>$}.
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a14b837c6cc64fe049f9c18d219e13cf5}\label{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a14b837c6cc64fe049f9c18d219e13cf5}} 
+\index{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}}
+{\footnotesize\ttfamily template$<$class Allocator $>$ \\
+virtual void \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::deallocate (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a997c60e64ca7028da4c9eb15b5bf553d}{value\+\_\+type} $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Allocator__Base_a02eb1291b28c3d83c53f973df47b9caa}{bc\+::allocators\+::pa\+\_\+detail\+::\+Allocator\+\_\+\+Base$<$ bc\+::allocator\+\_\+traits$<$ Allocator $>$\+::value\+\_\+type, bc\+::allocator\+\_\+traits$<$ Allocator $>$\+::system\+\_\+tag $>$}.
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_ad4aa49cda67ab382b2e91225dc3d8b36}\label{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_ad4aa49cda67ab382b2e91225dc3d8b36}} 
+\index{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}!operator==@{operator==}}
+\index{operator==@{operator==}!bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$class Allocator $>$ \\
+virtual bool \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Allocator__Base}{Allocator\+\_\+\+Base}$<$ \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a997c60e64ca7028da4c9eb15b5bf553d}{value\+\_\+type}, \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a42f99505929fa39c067d186f5f623045}{system\+\_\+tag} $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a167659ce0c822b659fbd6ff3ced83876}\label{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_a167659ce0c822b659fbd6ff3ced83876}} 
+\index{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}!rebound\+\_\+to\+\_\+byte\+\_\+hash@{rebound\+\_\+to\+\_\+byte\+\_\+hash}}
+\index{rebound\+\_\+to\+\_\+byte\+\_\+hash@{rebound\+\_\+to\+\_\+byte\+\_\+hash}!bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{rebound\+\_\+to\+\_\+byte\+\_\+hash()}{rebound\_to\_byte\_hash()}}
+{\footnotesize\ttfamily template$<$class Allocator $>$ \\
+virtual std\+::string \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::rebound\+\_\+to\+\_\+byte\+\_\+hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Allocator__Base_a2a90a282042dc49c3c43306b2766ba83}{bc\+::allocators\+::pa\+\_\+detail\+::\+Allocator\+\_\+\+Base$<$ bc\+::allocator\+\_\+traits$<$ Allocator $>$\+::value\+\_\+type, bc\+::allocator\+\_\+traits$<$ Allocator $>$\+::system\+\_\+tag $>$}.
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_ac8b23f4729cf661a1bb874d1ff3fb83e}\label{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_ac8b23f4729cf661a1bb874d1ff3fb83e}} 
+\index{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}!static\+\_\+hash@{static\+\_\+hash}}
+\index{static\+\_\+hash@{static\+\_\+hash}!bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator@{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{static\+\_\+hash()}{static\_hash()}}
+{\footnotesize\ttfamily template$<$class Allocator $>$ \\
+static std\+::string \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{bc\+::allocators\+::pa\+\_\+detail\+::\+Derived\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::static\+\_\+hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/allocators/\hyperlink{polymorphic__allocator_8h}{polymorphic\+\_\+allocator.\+h}\end{DoxyCompactItemize}

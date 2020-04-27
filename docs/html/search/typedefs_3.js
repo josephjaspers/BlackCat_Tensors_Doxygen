@@ -1,0 +1,16 @@
+var searchData=
+[
+  ['default_5fallocator',['default_allocator',['../namespacebc_1_1tensors_1_1detail.html#a2f9f79ccf87ba1999f0d01623cf7e471',1,'bc::tensors::detail']]],
+  ['default_5ffloating_5fpoint_5ftype',['default_floating_point_type',['../structbc_1_1host__tag.html#a3a077e5d182f39ce0ec5348e87f8a3b4',1,'bc::host_tag::default_floating_point_type()'],['../structbc_1_1device__tag.html#a7062e9d6db16c17b5291154ef5955ce8',1,'bc::device_tag::default_floating_point_type()']]],
+  ['default_5finteger_5ftype',['default_integer_type',['../structbc_1_1host__tag.html#a6fef6c33463875f632625a010660582c',1,'bc::host_tag::default_integer_type()'],['../structbc_1_1device__tag.html#a84c33f280498abc2a0f6441cead04d71',1,'bc::device_tag::default_integer_type()']]],
+  ['default_5fshape',['default_shape',['../namespacebc_1_1tensors_1_1detail.html#aea990a08131aca54e30c234f68b18c73',1,'bc::tensors::detail']]],
+  ['default_5fsystem_5ftag_5ft',['default_system_tag_t',['../namespacebc.html#afc523ebfb2766ca065901d60e7f58ede',1,'bc']]],
+  ['defines_5fallocator_5ftype',['defines_allocator_type',['../structbc_1_1traits_1_1common__traits.html#a34ec53adbbda52eb2f30cb3ea1e07aac',1,'bc::traits::common_traits']]],
+  ['defines_5fget_5fallocator',['defines_get_allocator',['../structbc_1_1traits_1_1common__traits.html#a411e56449816c80e601cd7b0a177d274',1,'bc::traits::common_traits']]],
+  ['defines_5fget_5fstream',['defines_get_stream',['../structbc_1_1traits_1_1common__traits.html#a4446bc2c0010c6a2a4062fff4970a7e1',1,'bc::traits::common_traits']]],
+  ['defines_5fpredict',['defines_predict',['../structbc_1_1nn_1_1LSTM.html#af773cc2ae3cf395af8ce9e921db39ba1',1,'bc::nn::LSTM']]],
+  ['defines_5fsingle_5fpredict',['defines_single_predict',['../structbc_1_1nn_1_1Convolution.html#a10d2913efe2df593fd0491fc1cc39dc6',1,'bc::nn::Convolution::defines_single_predict()'],['../structbc_1_1nn_1_1Flatten.html#a09f418b2c69a0675443ea4f86d94dffc',1,'bc::nn::Flatten::defines_single_predict()'],['../structbc_1_1nn_1_1LSTM.html#adaf632d0c0b59449d7e4c2885abf96a8',1,'bc::nn::LSTM::defines_single_predict()'],['../structbc_1_1nn_1_1Max__Pooling.html#a5814b6009b1a7591e2ec281fbcc85e0a',1,'bc::nn::Max_Pooling::defines_single_predict()']]],
+  ['defines_5fsystem_5ftag',['defines_system_tag',['../structbc_1_1traits_1_1common__traits.html#a4d07315e9b67c49aa0d8271645975616',1,'bc::traits::common_traits']]],
+  ['defines_5fvalue_5ftype',['defines_value_type',['../structbc_1_1traits_1_1common__traits.html#ab2572a37cb2db47047767e1d4ea2def0',1,'bc::traits::common_traits']]],
+  ['difference_5ftype',['difference_type',['../structbc_1_1allocators_1_1Allocator__Forwarder.html#a672771feb1a146a20d28d59651d7a3f4',1,'bc::allocators::Allocator_Forwarder::difference_type()'],['../structbc_1_1allocators_1_1Thrust__Allocator__Forwarder.html#a9e16371c961dd61923bc88863d76846f',1,'bc::allocators::Thrust_Allocator_Forwarder::difference_type()'],['../structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator.html#ae14251c51e153d27da01687742e1e7b0',1,'bc::tensors::iterators::Coefficientwise_Iterator::difference_type()'],['../structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator.html#a040272bdf9c6d98261ebf0f710dbdd49',1,'bc::tensors::iterators::Multidimensional_Iterator::difference_type()']]]
+];

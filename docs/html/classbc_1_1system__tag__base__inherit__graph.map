@@ -1,0 +1,7 @@
+<map id="bc::system_tag_base" name="bc::system_tag_base">
+<area shape="rect" id="node2" href="$structbc_1_1system__tag__type.html" title="bc::system_tag_type\l\&lt; DerivedTag \&gt;" alt="" coords="200,5,344,47"/>
+<area shape="rect" id="node3" href="$structbc_1_1system__tag__type.html" title="bc::system_tag_type\l\&lt; device_tag \&gt;" alt="" coords="200,71,344,112"/>
+<area shape="rect" id="node5" href="$structbc_1_1system__tag__type.html" title="bc::system_tag_type\l\&lt; host_tag \&gt;" alt="" coords="200,136,344,177"/>
+<area shape="rect" id="node4" href="$structbc_1_1device__tag.html" title="bc::device_tag" alt="" coords="392,78,499,105"/>
+<area shape="rect" id="node6" href="$structbc_1_1host__tag.html" title="bc::host_tag" alt="" coords="398,143,493,170"/>
+</map>

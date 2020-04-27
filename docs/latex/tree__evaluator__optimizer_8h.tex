@@ -1,0 +1,56 @@
+\hypertarget{tree__evaluator__optimizer_8h}{}\section{blackcat/tensors/expression\+\_\+templates/tree\+\_\+evaluator\+\_\+optimizer.h File Reference}
+\label{tree__evaluator__optimizer_8h}\index{blackcat/tensors/expression\+\_\+templates/tree\+\_\+evaluator\+\_\+optimizer.\+h@{blackcat/tensors/expression\+\_\+templates/tree\+\_\+evaluator\+\_\+optimizer.\+h}}
+{\ttfamily \#include \char`\"{}tree\+\_\+output\+\_\+data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}array.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}expression\+\_\+binary.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}expression\+\_\+unary.\+h\char`\"{}}\newline
+Include dependency graph for tree\+\_\+evaluator\+\_\+optimizer.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tree__evaluator__optimizer_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tree__evaluator__optimizer_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer}{bc\+::tensors\+::exprs\+::optimizer$<$ T, voider $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__default}{bc\+::tensors\+::exprs\+::optimizer\+\_\+default$<$ T $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1unary__optimizer__default}{bc\+::tensors\+::exprs\+::unary\+\_\+optimizer\+\_\+default$<$ Op, Array $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1binary__optimizer__default}{bc\+::tensors\+::exprs\+::binary\+\_\+optimizer\+\_\+default$<$ op, lv, rv $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer_3_01T_00_01std_1_1enable__if__t_3_01expression__traits827da0847239e19d0d58ed2226e62750}{bc\+::tensors\+::exprs\+::optimizer$<$ T, std\+::enable\+\_\+if\+\_\+t$<$ expression\+\_\+traits$<$ T $>$\+::is\+\_\+array\+::value \&\&!expression\+\_\+traits$<$ T $>$\+::is\+\_\+temporary\+::value $>$ $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer_3_01Array_00_01std_1_1enable__if__t_3_01expression__tr6f024f979d44d7dd29d94a5b5f9e889b}{bc\+::tensors\+::exprs\+::optimizer$<$ Array, std\+::enable\+\_\+if\+\_\+t$<$ expression\+\_\+traits$<$ Array $>$\+::is\+\_\+temporary\+::value $>$ $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations}{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations$<$ Xpr $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer_3_01Bin__Op_3_01op_00_01lv_00_01rv_01_4_00_01std_1_1en9f7937e0476e741d2784c5c0f63b3f8d}{bc\+::tensors\+::exprs\+::optimizer$<$ Bin\+\_\+\+Op$<$ op, lv, rv $>$, std\+::enable\+\_\+if\+\_\+t$<$ expression\+\_\+traits$<$ Bin\+\_\+\+Op$<$ op, lv, rv $>$ $>$ \+::requires\+\_\+greedy\+\_\+evaluation\+::value $>$ $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer_3_01Un__Op_3_01op_00_01value_01_4_00_01std_1_1enable__9d73ff143e1f6fbd1ef35f0907cdad0c}{bc\+::tensors\+::exprs\+::optimizer$<$ Un\+\_\+\+Op$<$ op, value $>$, std\+::enable\+\_\+if\+\_\+t$<$ expression\+\_\+traits$<$ Un\+\_\+\+Op$<$ op, value $>$ $>$ \+::requires\+\_\+greedy\+\_\+evaluation\+::value $>$ $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer_3_01Bin__Op_3_01op_00_01lv_00_01rv_01_4_00_01std_1_1en0dcf27d7e2238f62469eab81d847c552}{bc\+::tensors\+::exprs\+::optimizer$<$ Bin\+\_\+\+Op$<$ op, lv, rv $>$, std\+::enable\+\_\+if\+\_\+t$<$ oper\+::operation\+\_\+traits$<$ op $>$\+::is\+\_\+linear\+\_\+operation $>$ $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer_3_01Bin__Op_3_01op_00_01lv_00_01rv_01_4_00_01std_1_1enfb9b185ed6056cdbdfe04ef149dd3f73}{bc\+::tensors\+::exprs\+::optimizer$<$ Bin\+\_\+\+Op$<$ op, lv, rv $>$, std\+::enable\+\_\+if\+\_\+t$<$ oper\+::operation\+\_\+traits$<$ op $>$\+::is\+\_\+nonlinear\+\_\+operation \&\&!expression\+\_\+traits$<$ Bin\+\_\+\+Op$<$ op, lv, rv $>$ $>$ \+::requires\+\_\+greedy\+\_\+evaluation\+::value $>$ $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer_3_01Un__Op_3_01Op_00_01Array_01_4_00_01std_1_1enable__66b812e276696f18c9c03b5fec72f8f7}{bc\+::tensors\+::exprs\+::optimizer$<$ Un\+\_\+\+Op$<$ Op, Array $>$, std\+::enable\+\_\+if\+\_\+t$<$!expression\+\_\+traits$<$ Un\+\_\+\+Op$<$ Op, Array $>$ $>$ \+::requires\+\_\+greedy\+\_\+evaluation\+::value $>$ $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1tensors}{bc\+::tensors}
+\item 
+ \hyperlink{namespacebc_1_1tensors_1_1exprs}{bc\+::tensors\+::exprs}
+\end{DoxyCompactItemize}

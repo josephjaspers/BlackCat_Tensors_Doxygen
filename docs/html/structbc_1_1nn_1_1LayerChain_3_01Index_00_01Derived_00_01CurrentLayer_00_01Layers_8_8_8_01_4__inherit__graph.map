@@ -1,0 +1,4 @@
+<map id="bc::nn::LayerChain&lt; Index, Derived, CurrentLayer, Layers... &gt;" name="bc::nn::LayerChain&lt; Index, Derived, CurrentLayer, Layers... &gt;">
+<area shape="rect" id="node2" href="$structbc_1_1nn_1_1LayerChain.html" title="bc::nn::LayerChain\l\&lt; bc::traits::Integer\l\&lt; Index::value+1 \&gt;, LayerChain\l\&lt; Index, Derived, CurrentLayer,\l Layers... \&gt;, Layers... \&gt;" alt="" coords="151,5,357,91"/>
+<area shape="rect" id="node3" href="$structbc_1_1nn_1_1Layer__Manager.html" title="bc::nn::Layer_Manager\l\&lt; LayerChain\&lt; Index,\l Derived, CurrentLayer,\l Layers... \&gt;, CurrentLayer \&gt;" alt="" coords="162,115,346,186"/>
+</map>

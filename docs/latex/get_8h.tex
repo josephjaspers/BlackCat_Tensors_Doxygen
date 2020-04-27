@@ -1,0 +1,42 @@
+\hypertarget{get_8h}{}\section{blackcat/type\+\_\+traits/get.h File Reference}
+\label{get_8h}\index{blackcat/type\+\_\+traits/get.\+h@{blackcat/type\+\_\+traits/get.\+h}}
+{\ttfamily \#include \char`\"{}constexpr\+\_\+int.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../common.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+Include dependency graph for get.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{get_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{get_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1traits}{bc\+::traits}
+\item 
+ \hyperlink{namespacebc_1_1traits_1_1detail}{bc\+::traits\+::detail}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Arg , class... Args$>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ auto \hyperlink{namespacebc_1_1traits_1_1detail_a7f1703c90df0f8695969542729765428}{bc\+::traits\+::detail\+::get\+\_\+impl} (Integer$<$ 0 $>$, Arg \&\&arg, Args \&\&... args) -\/$>$ decltype(std\+::forward$<$ Arg $>$(arg))
+\item 
+{\footnotesize template$<$int Index, class Arg , class... Args$>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ auto \hyperlink{namespacebc_1_1traits_1_1detail_a637e145f0095c679f44a1efcba22aa22}{bc\+::traits\+::detail\+::get\+\_\+impl} (Integer$<$ Index $>$, Arg \&\&, Args \&\&... args) -\/$>$ decltype(get\+\_\+impl(Integer$<$ Index-\/1 $>$(), std\+::forward$<$ Args $>$(args)...))
+\item 
+{\footnotesize template$<$int Index, class... Args$>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ auto \hyperlink{namespacebc_1_1traits_a4de446de235c05a01f9143b54df5a136}{bc\+::traits\+::get} (Args \&\&... args) -\/$>$ decltype(detail\+::get\+\_\+impl(Integer$<$ Index $>$(), std\+::forward$<$ Args $>$(args)...))
+\item 
+{\footnotesize template$<$class... Args$>$ }\\auto \hyperlink{namespacebc_1_1traits_a96ff03a1928b8a28225a152f7a093cdf}{bc\+::traits\+::get\+\_\+last} (Args \&\&... args) -\/$>$ decltype(get$<$ sizeof...(Args) -\/1 $>$(std\+::forward$<$ Args $>$(args)...))
+\item 
+{\footnotesize template$<$class Arg , class... Args$>$ }\\auto \hyperlink{namespacebc_1_1traits_ad9cf2c4adfbd50e98364152dfd32174a}{bc\+::traits\+::get\+\_\+first} (Arg \&\&arg, Args \&\&... args) -\/$>$ decltype(std\+::forward$<$ Arg $>$(arg))
+\end{DoxyCompactItemize}

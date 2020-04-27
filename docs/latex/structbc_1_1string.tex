@@ -1,0 +1,144 @@
+\hypertarget{structbc_1_1string}{}\section{bc\+:\+:string Struct Reference}
+\label{structbc_1_1string}\index{bc\+::string@{bc\+::string}}
+
+
+Inherits from std\+::string.  
+
+
+
+
+{\ttfamily \#include $<$string.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:string\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{structbc_1_1string__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:string\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{structbc_1_1string__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1string_a319ddebd8b82a18c2beb42f6ea6a7486}{string} ()=default
+\item 
+\hyperlink{structbc_1_1string_a8d252fb505358ae1114ce0f68f41cae0}{string} (const \hyperlink{structbc_1_1string}{string} \&)=default
+\item 
+\hyperlink{structbc_1_1string_ad6d97f4a6ff8d2ce60d01d30884570fd}{string} (\hyperlink{structbc_1_1string}{string} \&\&)=default
+\item 
+\hyperlink{structbc_1_1string}{string} \& \hyperlink{structbc_1_1string_a3874531b3865038fd50d992f681c4469}{operator=} (const \hyperlink{structbc_1_1string}{string} \&)=default
+\item 
+\hyperlink{structbc_1_1string}{string} \& \hyperlink{structbc_1_1string_ab37c2b8c95686510ad6344ac01fe8061}{operator=} (\hyperlink{structbc_1_1string}{string} \&\&)=default
+\item 
+\hyperlink{structbc_1_1string_ab6a5b41e2db3d0efef579df370105625}{string} (std\+::string s)
+\item 
+int \hyperlink{structbc_1_1string_ab434782ceccd7373dbf8bfdb546e35b0}{count} (char value) const
+\item 
+bool \hyperlink{structbc_1_1string_a4369807153dd45ee85ff11c384e3e573}{startswith} (const std\+::string \&str) const
+\item 
+bool \hyperlink{structbc_1_1string_aa939350fbd278d9a7848bccca012b065}{endswith} (const \hyperlink{structbc_1_1string}{bc\+::string} \&str) const
+\item 
+bool \hyperlink{structbc_1_1string_a6e70c02a3a308ceac1da6506bc4680f2}{startswith} (char c) const
+\item 
+bool \hyperlink{structbc_1_1string_ab1c88afd1da0390046facb85eb63a1a1}{endswith} (char c) const
+\item 
+std\+::vector$<$ \hyperlink{structbc_1_1string}{bc\+::string} $>$ \hyperlink{structbc_1_1string_ac4240df9fd8d9b4a082f85910e6af7cd}{split} (char delim) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Inherits from std\+::string. 
+
+Simply defines additional \char`\"{}extensions\char`\"{} to std\+::string. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1string_a319ddebd8b82a18c2beb42f6ea6a7486}\label{structbc_1_1string_a319ddebd8b82a18c2beb42f6ea6a7486}} 
+\index{bc\+::string@{bc\+::string}!string@{string}}
+\index{string@{string}!bc\+::string@{bc\+::string}}
+\subsubsection{\texorpdfstring{string()}{string()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily bc\+::string\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structbc_1_1string_a8d252fb505358ae1114ce0f68f41cae0}\label{structbc_1_1string_a8d252fb505358ae1114ce0f68f41cae0}} 
+\index{bc\+::string@{bc\+::string}!string@{string}}
+\index{string@{string}!bc\+::string@{bc\+::string}}
+\subsubsection{\texorpdfstring{string()}{string()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily bc\+::string\+::string (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1string}{string} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structbc_1_1string_ad6d97f4a6ff8d2ce60d01d30884570fd}\label{structbc_1_1string_ad6d97f4a6ff8d2ce60d01d30884570fd}} 
+\index{bc\+::string@{bc\+::string}!string@{string}}
+\index{string@{string}!bc\+::string@{bc\+::string}}
+\subsubsection{\texorpdfstring{string()}{string()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily bc\+::string\+::string (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1string}{string} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structbc_1_1string_ab6a5b41e2db3d0efef579df370105625}\label{structbc_1_1string_ab6a5b41e2db3d0efef579df370105625}} 
+\index{bc\+::string@{bc\+::string}!string@{string}}
+\index{string@{string}!bc\+::string@{bc\+::string}}
+\subsubsection{\texorpdfstring{string()}{string()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily bc\+::string\+::string (\begin{DoxyParamCaption}\item[{std\+::string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1string_ab434782ceccd7373dbf8bfdb546e35b0}\label{structbc_1_1string_ab434782ceccd7373dbf8bfdb546e35b0}} 
+\index{bc\+::string@{bc\+::string}!count@{count}}
+\index{count@{count}!bc\+::string@{bc\+::string}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int bc\+::string\+::count (\begin{DoxyParamCaption}\item[{char}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1string_aa939350fbd278d9a7848bccca012b065}\label{structbc_1_1string_aa939350fbd278d9a7848bccca012b065}} 
+\index{bc\+::string@{bc\+::string}!endswith@{endswith}}
+\index{endswith@{endswith}!bc\+::string@{bc\+::string}}
+\subsubsection{\texorpdfstring{endswith()}{endswith()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool bc\+::string\+::endswith (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1string}{bc\+::string} \&}]{str }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1string_ab1c88afd1da0390046facb85eb63a1a1}\label{structbc_1_1string_ab1c88afd1da0390046facb85eb63a1a1}} 
+\index{bc\+::string@{bc\+::string}!endswith@{endswith}}
+\index{endswith@{endswith}!bc\+::string@{bc\+::string}}
+\subsubsection{\texorpdfstring{endswith()}{endswith()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool bc\+::string\+::endswith (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1string_a3874531b3865038fd50d992f681c4469}\label{structbc_1_1string_a3874531b3865038fd50d992f681c4469}} 
+\index{bc\+::string@{bc\+::string}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::string@{bc\+::string}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{structbc_1_1string}{string}\& bc\+::string\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1string}{string} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structbc_1_1string_ab37c2b8c95686510ad6344ac01fe8061}\label{structbc_1_1string_ab37c2b8c95686510ad6344ac01fe8061}} 
+\index{bc\+::string@{bc\+::string}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::string@{bc\+::string}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{structbc_1_1string}{string}\& bc\+::string\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1string}{string} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structbc_1_1string_ac4240df9fd8d9b4a082f85910e6af7cd}\label{structbc_1_1string_ac4240df9fd8d9b4a082f85910e6af7cd}} 
+\index{bc\+::string@{bc\+::string}!split@{split}}
+\index{split@{split}!bc\+::string@{bc\+::string}}
+\subsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{structbc_1_1string}{bc\+::string}$>$ bc\+::string\+::split (\begin{DoxyParamCaption}\item[{char}]{delim }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1string_a4369807153dd45ee85ff11c384e3e573}\label{structbc_1_1string_a4369807153dd45ee85ff11c384e3e573}} 
+\index{bc\+::string@{bc\+::string}!startswith@{startswith}}
+\index{startswith@{startswith}!bc\+::string@{bc\+::string}}
+\subsubsection{\texorpdfstring{startswith()}{startswith()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool bc\+::string\+::startswith (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1string_a6e70c02a3a308ceac1da6506bc4680f2}\label{structbc_1_1string_a6e70c02a3a308ceac1da6506bc4680f2}} 
+\index{bc\+::string@{bc\+::string}!startswith@{startswith}}
+\index{startswith@{startswith}!bc\+::string@{bc\+::string}}
+\subsubsection{\texorpdfstring{startswith()}{startswith()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool bc\+::string\+::startswith (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/\hyperlink{string_8h}{string.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\hypertarget{multidimensional__iterator_8h}{}\section{blackcat/tensors/iterators/multidimensional\+\_\+iterator.h File Reference}
+\label{multidimensional__iterator_8h}\index{blackcat/tensors/iterators/multidimensional\+\_\+iterator.\+h@{blackcat/tensors/iterators/multidimensional\+\_\+iterator.\+h}}
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+Include dependency graph for multidimensional\+\_\+iterator.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{multidimensional__iterator_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{multidimensional__iterator_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{bc\+::tensors\+::iterators\+::\+Multidimensional\+\_\+\+Iterator$<$ direction, Tensor $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1tensors}{bc\+::tensors}
+\item 
+ \hyperlink{namespacebc_1_1tensors_1_1iterators}{bc\+::tensors\+::iterators}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{multidimensional__iterator_8h_ab8b93ca0b534dfb7c559f7643f8d426e}{B\+C\+\_\+\+N\+D\+\_\+\+Iter\+\_\+\+Compare}(sign,  rev)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Tensor $>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1iterators_a9c925f805ae73b63485c066ba67cdb81}{bc\+::tensors\+::iterators\+::iter\+\_\+begin} (Tensor \&derived)
+\item 
+{\footnotesize template$<$class Tensor $>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1iterators_a150207dbd04324121e494c8745c8c01d}{bc\+::tensors\+::iterators\+::iter\+\_\+end} (Tensor \&derived)
+\item 
+{\footnotesize template$<$class Tensor $>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1iterators_a3f743f477e49a0711119adb34e56c5fc}{bc\+::tensors\+::iterators\+::iter\+\_\+rbegin} (Tensor \&derived)
+\item 
+{\footnotesize template$<$class Tensor $>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1iterators_aecd2f684f561e9b78f7e71f0dbb09e01}{bc\+::tensors\+::iterators\+::iter\+\_\+rend} (Tensor \&derived)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{multidimensional__iterator_8h_ab8b93ca0b534dfb7c559f7643f8d426e}\label{multidimensional__iterator_8h_ab8b93ca0b534dfb7c559f7643f8d426e}} 
+\index{multidimensional\+\_\+iterator.\+h@{multidimensional\+\_\+iterator.\+h}!B\+C\+\_\+\+N\+D\+\_\+\+Iter\+\_\+\+Compare@{B\+C\+\_\+\+N\+D\+\_\+\+Iter\+\_\+\+Compare}}
+\index{B\+C\+\_\+\+N\+D\+\_\+\+Iter\+\_\+\+Compare@{B\+C\+\_\+\+N\+D\+\_\+\+Iter\+\_\+\+Compare}!multidimensional\+\_\+iterator.\+h@{multidimensional\+\_\+iterator.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+N\+D\+\_\+\+Iter\+\_\+\+Compare}{BC\_ND\_Iter\_Compare}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+N\+D\+\_\+\+Iter\+\_\+\+Compare(\begin{DoxyParamCaption}\item[{}]{sign,  }\item[{}]{rev }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+BCINLINE                                            \(\backslash\)
+    bool \textcolor{keyword}{operator} sign (\textcolor{keyword}{const} Iterator& iter) \{             \(\backslash\)
+        if (\hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction} == \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296a4c6d44dd04b548a4e8e0a6f7a2f2ecca}{direction::forward})                \(\backslash\)
+            return index sign iter.index;                   \(\backslash\)
+        else                                                \(\backslash\)
+            return index rev iter.index;                    \(\backslash\)
+    \}                                                       \(\backslash\)
+    BCINLINE                                            \(\backslash\)
+    bool \textcolor{keyword}{operator} sign (\textcolor{keywordtype}{int} p\_index) \{                      \(\backslash\)
+        if (\hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction} == \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296a4c6d44dd04b548a4e8e0a6f7a2f2ecca}{direction::forward})                \(\backslash\)
+            return index sign p\_index;                      \(\backslash\)
+        else                                                \(\backslash\)
+            return index rev  p\_index;                      \(\backslash\)
+    \}
+\end{DoxyCode}

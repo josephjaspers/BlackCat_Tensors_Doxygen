@@ -1,0 +1,383 @@
+\hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{}\section{bc\+:\+:tensors\+:\+:iterators\+:\+:Coefficientwise\+\_\+\+Iterator$<$ Direction, Tensor, enabler $>$ Struct Template Reference}
+\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator$<$ Direction, Tensor, enabler $>$@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator$<$ Direction, Tensor, enabler $>$}}
+
+
+{\ttfamily \#include $<$coefficientwise\+\_\+iterator.\+h$>$}
+
+
+
+Collaboration diagram for bc\+:\+:tensors\+:\+:iterators\+:\+:Coefficientwise\+\_\+\+Iterator$<$ Direction, Tensor, enabler $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} = \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ab2b61b8aa5dd97ce857a0988e640d74e}{iterator\+\_\+category} = std\+::random\+\_\+access\+\_\+iterator\+\_\+tag
+\item 
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a84e737fc2a829453cf0c7bb5997a487a}{value\+\_\+type} = typename \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ae7e5c0119f62f43ef74c5a463d3eaf13}{Tensor\+::value\+\_\+type}
+\item 
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ae14251c51e153d27da01687742e1e7b0}{difference\+\_\+type} = \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}
+\item 
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a03f4d14739b564e4052b6f6de3fd7749}{reference} = \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a84e737fc2a829453cf0c7bb5997a487a}{value\+\_\+type} \&
+\item 
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_abad3e3527997ec4cfe787bcf062595ee}{pointer} = \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a84e737fc2a829453cf0c7bb5997a487a}{value\+\_\+type} $\ast$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ab65b21459892c1371d3b48c822d4d4f2}{Coefficientwise\+\_\+\+Iterator} (\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a57cc6a9c7df0597c90d03309e367cbd2}{tensor}, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a746b74f8681813da3829e96e0e9b8273}{index}=0)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{Coefficientwise\+\_\+\+Iterator} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a81e6dd1d06f313dff3889c290f2ba6f9}{operator=} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{Coefficientwise\+\_\+\+Iterator} \&iter)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a5ae9fb82012fb8cb602b6554b943ce6d}{operator$<$} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&iter)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a1096597a2e6d99b6cb7b3a85caf15e5b}{operator$<$} (int p\+\_\+index)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_abc7a6543da031f9748a774966557ae0d}{operator$>$} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&iter)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a22b4586524af2b25fae962b9e3c26e72}{operator$>$} (int p\+\_\+index)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ad5f83683471c6a514c19054952410b51}{operator$<$=} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&iter)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_aff0446837dda90526bddb24d9d6b7a9a}{operator$<$=} (int p\+\_\+index)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a0030f0c39f8c92d9853d5ca7ea48d41d}{operator$>$=} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&iter)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a895442b6aa0ea75aa9a48fb3a8e76e73}{operator$>$=} (int p\+\_\+index)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ab0653f42585a433a4b4da90e89cb651c}{operator bc\+::size\+\_\+t} () const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a5482024588a281ed6f0cd499243a4c87}{operator==} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&iter)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a5e2cd966c7ba239235f041ac5a13b147}{operator!=} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&iter)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a11c75860fdf2c9b0ddcb56c12365d7f8}{operator=} (int index\+\_\+)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a947dae462bfcfc1da03237218b42d7ea}{operator++} ()
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a1cb9dc7f2eef7b65539d6672c1841ae4}{operator-\/-\/} ()
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a1128553de4ca2ca1cc6ed0daf704fe77}{operator++} (int)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a6718bb97a66d11d4c3c69236232dfe33}{operator-\/-\/} (int)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ac8891a968b79f49cdedad41a794bc281}{operator+=} (int dist)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a579a4cd29c3de67d0d4e5056e610de7f}{operator-\/=} (int dist)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ac264ed170ebf14793249a844e533bace}{operator+} (int dist) const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ae777ff965501b65efd84d08a686800e7}{operator-\/} (int dist) const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a5f12767577562cbd019996c695a60b22}{operator+=} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&dist)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a7e2d3b20e178c55d9de5806fe8b4bbc7}{operator-\/=} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&dist)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ac7e5cc478ff9a0bb6df3498634dc2a55}{operator+} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&dist) const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a6f3888545967312204ea364c77db25fd}{operator-\/} (const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&dist) const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a1547cd8dfafe35e02aa96c15205327da}{operator$\ast$} () const -\/$>$ decltype(this-\/$>$\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a57cc6a9c7df0597c90d03309e367cbd2}{tensor}\mbox{[}this-\/$>$\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a746b74f8681813da3829e96e0e9b8273}{index}\mbox{]})
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a38e2d0a36ab0f30cc7e827dbc9977b31}{operator$\ast$} () -\/$>$ decltype(this-\/$>$\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a57cc6a9c7df0597c90d03309e367cbd2}{tensor}\mbox{[}this-\/$>$\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a746b74f8681813da3829e96e0e9b8273}{index}\mbox{]})
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a1d1ebbe672ef4fd995d70f5530537dab}{operator\mbox{[}$\,$\mbox{]}} (int i) const -\/$>$ decltype(this-\/$>$\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a57cc6a9c7df0597c90d03309e367cbd2}{tensor}\mbox{[}i\mbox{]})
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_aa83865144da81c74772107784b20a307}{operator\mbox{[}$\,$\mbox{]}} (int i) -\/$>$ decltype(this-\/$>$\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a57cc6a9c7df0597c90d03309e367cbd2}{tensor}\mbox{[}i\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a57cc6a9c7df0597c90d03309e367cbd2}{tensor}
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a746b74f8681813da3829e96e0e9b8273}{index}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ae14251c51e153d27da01687742e1e7b0}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ae14251c51e153d27da01687742e1e7b0}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{difference\+\_\+type}{difference\_type}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ae14251c51e153d27da01687742e1e7b0}{difference\+\_\+type} =  \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} =  \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{Coefficientwise\+\_\+\+Iterator}$<$Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ab2b61b8aa5dd97ce857a0988e640d74e}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ab2b61b8aa5dd97ce857a0988e640d74e}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!iterator\+\_\+category@{iterator\+\_\+category}}
+\index{iterator\+\_\+category@{iterator\+\_\+category}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{iterator\+\_\+category}{iterator\_category}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ab2b61b8aa5dd97ce857a0988e640d74e}{iterator\+\_\+category} =  std\+::random\+\_\+access\+\_\+iterator\+\_\+tag}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_abad3e3527997ec4cfe787bcf062595ee}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_abad3e3527997ec4cfe787bcf062595ee}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!pointer@{pointer}}
+\index{pointer@{pointer}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_abad3e3527997ec4cfe787bcf062595ee}{pointer} =  \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a84e737fc2a829453cf0c7bb5997a487a}{value\+\_\+type}$\ast$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a03f4d14739b564e4052b6f6de3fd7749}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a03f4d14739b564e4052b6f6de3fd7749}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!reference@{reference}}
+\index{reference@{reference}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a03f4d14739b564e4052b6f6de3fd7749}{reference} =  \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a84e737fc2a829453cf0c7bb5997a487a}{value\+\_\+type}\&}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a84e737fc2a829453cf0c7bb5997a487a}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a84e737fc2a829453cf0c7bb5997a487a}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a84e737fc2a829453cf0c7bb5997a487a}{value\+\_\+type} =  typename \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ae7e5c0119f62f43ef74c5a463d3eaf13}{Tensor\+::value\+\_\+type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ab65b21459892c1371d3b48c822d4d4f2}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ab65b21459892c1371d3b48c822d4d4f2}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!Coefficientwise\+\_\+\+Iterator@{Coefficientwise\+\_\+\+Iterator}}
+\index{Coefficientwise\+\_\+\+Iterator@{Coefficientwise\+\_\+\+Iterator}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{Coefficientwise\+\_\+\+Iterator()}{Coefficientwise\_Iterator()}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{Coefficientwise\+\_\+\+Iterator} (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}}]{tensor,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{index = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ab0653f42585a433a4b4da90e89cb651c}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ab0653f42585a433a4b4da90e89cb651c}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator bc\+::size\+\_\+t@{operator bc\+::size\+\_\+t}}
+\index{operator bc\+::size\+\_\+t@{operator bc\+::size\+\_\+t}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator bc\+::size\+\_\+t()}{operator bc::size\_t()}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a5e2cd966c7ba239235f041ac5a13b147}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a5e2cd966c7ba239235f041ac5a13b147}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a1547cd8dfafe35e02aa96c15205327da}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a1547cd8dfafe35e02aa96c15205327da}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const -\/$>$ decltype(this-\/$>$\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a57cc6a9c7df0597c90d03309e367cbd2}{tensor}\mbox{[}this-\/$>$\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a746b74f8681813da3829e96e0e9b8273}{index}\mbox{]}) \hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a38e2d0a36ab0f30cc7e827dbc9977b31}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a38e2d0a36ab0f30cc7e827dbc9977b31}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) -\/$>$ decltype(this-\/$>$\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a57cc6a9c7df0597c90d03309e367cbd2}{tensor}\mbox{[}this-\/$>$\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a746b74f8681813da3829e96e0e9b8273}{index}\mbox{]}) \hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ac264ed170ebf14793249a844e533bace}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ac264ed170ebf14793249a844e533bace}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator+@{operator+}}
+\index{operator+@{operator+}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator+ (\begin{DoxyParamCaption}\item[{int}]{dist }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ac7e5cc478ff9a0bb6df3498634dc2a55}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ac7e5cc478ff9a0bb6df3498634dc2a55}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator+@{operator+}}
+\index{operator+@{operator+}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator+ (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&}]{dist }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a947dae462bfcfc1da03237218b42d7ea}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a947dae462bfcfc1da03237218b42d7ea}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a1128553de4ca2ca1cc6ed0daf704fe77}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a1128553de4ca2ca1cc6ed0daf704fe77}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ac8891a968b79f49cdedad41a794bc281}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ac8891a968b79f49cdedad41a794bc281}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator+= (\begin{DoxyParamCaption}\item[{int}]{dist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a5f12767577562cbd019996c695a60b22}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a5f12767577562cbd019996c695a60b22}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&}]{dist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ae777ff965501b65efd84d08a686800e7}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ae777ff965501b65efd84d08a686800e7}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{int}]{dist }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a6f3888545967312204ea364c77db25fd}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a6f3888545967312204ea364c77db25fd}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&}]{dist }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a1cb9dc7f2eef7b65539d6672c1841ae4}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a1cb9dc7f2eef7b65539d6672c1841ae4}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a6718bb97a66d11d4c3c69236232dfe33}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a6718bb97a66d11d4c3c69236232dfe33}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a579a4cd29c3de67d0d4e5056e610de7f}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a579a4cd29c3de67d0d4e5056e610de7f}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{int}]{dist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a7e2d3b20e178c55d9de5806fe8b4bbc7}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a7e2d3b20e178c55d9de5806fe8b4bbc7}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&}]{dist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a5ae9fb82012fb8cb602b6554b943ce6d}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a5ae9fb82012fb8cb602b6554b943ce6d}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a1096597a2e6d99b6cb7b3a85caf15e5b}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a1096597a2e6d99b6cb7b3a85caf15e5b}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ad5f83683471c6a514c19054952410b51}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_ad5f83683471c6a514c19054952410b51}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_aff0446837dda90526bddb24d9d6b7a9a}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_aff0446837dda90526bddb24d9d6b7a9a}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator$<$= (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a81e6dd1d06f313dff3889c290f2ba6f9}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a81e6dd1d06f313dff3889c290f2ba6f9}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{Coefficientwise\+\_\+\+Iterator}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$ \&}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a11c75860fdf2c9b0ddcb56c12365d7f8}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a11c75860fdf2c9b0ddcb56c12365d7f8}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator}\& \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator= (\begin{DoxyParamCaption}\item[{int}]{index\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a5482024588a281ed6f0cd499243a4c87}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a5482024588a281ed6f0cd499243a4c87}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_abc7a6543da031f9748a774966557ae0d}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_abc7a6543da031f9748a774966557ae0d}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a22b4586524af2b25fae962b9e3c26e72}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a22b4586524af2b25fae962b9e3c26e72}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator$>$ (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a0030f0c39f8c92d9853d5ca7ea48d41d}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a0030f0c39f8c92d9853d5ca7ea48d41d}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a313f76f47e60a806035279a36a84f835}{Iterator} \&}]{iter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a895442b6aa0ea75aa9a48fb3a8e76e73}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a895442b6aa0ea75aa9a48fb3a8e76e73}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} bool \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator$>$= (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a1d1ebbe672ef4fd995d70f5530537dab}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a1d1ebbe672ef4fd995d70f5530537dab}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const -\/$>$ decltype(this-\/$>$\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a57cc6a9c7df0597c90d03309e367cbd2}{tensor}\mbox{[}i\mbox{]}) \hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_aa83865144da81c74772107784b20a307}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_aa83865144da81c74772107784b20a307}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) -\/$>$ decltype(this-\/$>$\hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a57cc6a9c7df0597c90d03309e367cbd2}{tensor}\mbox{[}i\mbox{]}) \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a746b74f8681813da3829e96e0e9b8273}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a746b74f8681813da3829e96e0e9b8273}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!index@{index}}
+\index{index@{index}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::index}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a57cc6a9c7df0597c90d03309e367cbd2}\label{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator_a57cc6a9c7df0597c90d03309e367cbd2}} 
+\index{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}!tensor@{tensor}}
+\index{tensor@{tensor}!bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator@{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{tensor}{tensor}}
+{\footnotesize\ttfamily template$<$direction Direction, class Tensor, class enabler = void$>$ \\
+\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{bc\+::tensors\+::iterators\+::\+Coefficientwise\+\_\+\+Iterator}$<$ Direction, \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor}, enabler $>$\+::tensor}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/tensors/iterators/\hyperlink{coefficientwise__iterator_8h}{coefficientwise\+\_\+iterator.\+h}\end{DoxyCompactItemize}

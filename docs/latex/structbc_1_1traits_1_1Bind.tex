@@ -1,0 +1,88 @@
+\hypertarget{structbc_1_1traits_1_1Bind}{}\section{bc\+:\+:traits\+:\+:Bind$<$ Function, Args $>$ Struct Template Reference}
+\label{structbc_1_1traits_1_1Bind}\index{bc\+::traits\+::\+Bind$<$ Function, Args $>$@{bc\+::traits\+::\+Bind$<$ Function, Args $>$}}
+
+
+Similar to std\+::bind but the evaluation of the function in respect to its bound arguments are deduced if and only if the function is called.  
+
+
+
+
+{\ttfamily \#include $<$bind.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:traits\+:\+:Bind$<$ Function, Args $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{structbc_1_1traits_1_1Bind__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:traits\+:\+:Bind$<$ Function, Args $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{structbc_1_1traits_1_1Bind__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1traits_1_1Bind_a1969900854a26d59661d5b9c159d7fc4}{Bind} (Function \hyperlink{structbc_1_1traits_1_1Bind_ac7c74786597ebc607ba416eb842a184d}{func}, Args... Additional\+Args)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Function \hyperlink{structbc_1_1traits_1_1Bind_ac7c74786597ebc607ba416eb842a184d}{func}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr int \hyperlink{structbc_1_1traits_1_1Bind_a77891c8bf25f4fc19e2b226cf906a7a8}{num\+\_\+args} = sizeof...(Args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Function, class... Args$>$\newline
+struct bc\+::traits\+::\+Bind$<$ Function, Args $>$}
+
+Similar to std\+::bind but the evaluation of the function in respect to its bound arguments are deduced if and only if the function is called. 
+
+IE \begin{DoxyVerb}auto func = bc::traits::bind([](int x) {}, std::vector<double>());
+
+will compile, even though a std::vector is not a valid argument
+for the given lambda.\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1traits_1_1Bind_a1969900854a26d59661d5b9c159d7fc4}\label{structbc_1_1traits_1_1Bind_a1969900854a26d59661d5b9c159d7fc4}} 
+\index{bc\+::traits\+::\+Bind@{bc\+::traits\+::\+Bind}!Bind@{Bind}}
+\index{Bind@{Bind}!bc\+::traits\+::\+Bind@{bc\+::traits\+::\+Bind}}
+\subsubsection{\texorpdfstring{Bind()}{Bind()}}
+{\footnotesize\ttfamily template$<$class Function , class... Args$>$ \\
+\hyperlink{structbc_1_1traits_1_1Bind}{bc\+::traits\+::\+Bind}$<$ Function, Args $>$\+::\hyperlink{structbc_1_1traits_1_1Bind}{Bind} (\begin{DoxyParamCaption}\item[{Function}]{func,  }\item[{Args...}]{Additional\+Args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1traits_1_1Bind_ac7c74786597ebc607ba416eb842a184d}\label{structbc_1_1traits_1_1Bind_ac7c74786597ebc607ba416eb842a184d}} 
+\index{bc\+::traits\+::\+Bind@{bc\+::traits\+::\+Bind}!func@{func}}
+\index{func@{func}!bc\+::traits\+::\+Bind@{bc\+::traits\+::\+Bind}}
+\subsubsection{\texorpdfstring{func}{func}}
+{\footnotesize\ttfamily template$<$class Function , class... Args$>$ \\
+Function \hyperlink{structbc_1_1traits_1_1Bind}{bc\+::traits\+::\+Bind}$<$ Function, Args $>$\+::func}
+
+\mbox{\Hypertarget{structbc_1_1traits_1_1Bind_a77891c8bf25f4fc19e2b226cf906a7a8}\label{structbc_1_1traits_1_1Bind_a77891c8bf25f4fc19e2b226cf906a7a8}} 
+\index{bc\+::traits\+::\+Bind@{bc\+::traits\+::\+Bind}!num\+\_\+args@{num\+\_\+args}}
+\index{num\+\_\+args@{num\+\_\+args}!bc\+::traits\+::\+Bind@{bc\+::traits\+::\+Bind}}
+\subsubsection{\texorpdfstring{num\+\_\+args}{num\_args}}
+{\footnotesize\ttfamily template$<$class Function , class... Args$>$ \\
+constexpr int \hyperlink{structbc_1_1traits_1_1Bind}{bc\+::traits\+::\+Bind}$<$ Function, Args $>$\+::num\+\_\+args = sizeof...(Args)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/type\+\_\+traits/\hyperlink{bind_8h}{bind.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,119 @@
+\hypertarget{structbc_1_1nn_1_1Output__Layer}{}\section{bc\+:\+:nn\+:\+:Output\+\_\+\+Layer$<$ System\+Tag, Value\+Type $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1Output__Layer}\index{bc\+::nn\+::\+Output\+\_\+\+Layer$<$ System\+Tag, Value\+Type $>$@{bc\+::nn\+::\+Output\+\_\+\+Layer$<$ System\+Tag, Value\+Type $>$}}
+
+
+{\ttfamily \#include $<$output\+\_\+layer.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:nn\+:\+:Output\+\_\+\+Layer$<$ System\+Tag, Value\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Output__Layer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Output\+\_\+\+Layer$<$ System\+Tag, Value\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Output__Layer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Output__Layer_ab5c2079fa05605177c4d9e1553fe1f59}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1Output__Layer_a042986d141dc7ddda55273c8b50320c4}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Output__Layer_ab795d02d54671c4235286a01e6bca7b9}{self\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Output__Layer}{Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Output__Layer_adbc7c287b6f4b0dda68801784a6c6ca9}{input\+\_\+descriptor\+\_\+t} = \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$ Value\+Type, System\+Tag, \hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ 1 $>$ $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Output__Layer_ad625d63978c4e6b396d4ef52062515d0}{parent\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1Output__Layer_ab795d02d54671c4235286a01e6bca7b9}{self\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Output__Layer_adbc7c287b6f4b0dda68801784a6c6ca9}{input\+\_\+descriptor\+\_\+t} $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1Output__Layer_af2ea2ff4ed24a9ec365c80728b9eb0e0}{Output\+\_\+\+Layer} (int inputs)
+\item 
+{\footnotesize template$<$class Tensor $>$ }\\const auto \hyperlink{structbc_1_1nn_1_1Output__Layer_ab55ef92dd44d2319b84776a9edf9da9a}{forward\+\_\+propagation} (const \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&x)
+\item 
+{\footnotesize template$<$class TensorX , class TensorY $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Output__Layer_ae17199c4928823b57fea1f9549dc9c9b}{back\+\_\+propagation} (const TensorX \&x, const TensorY \&y)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Output__Layer_adbc7c287b6f4b0dda68801784a6c6ca9}\label{structbc_1_1nn_1_1Output__Layer_adbc7c287b6f4b0dda68801784a6c6ca9}} 
+\index{bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}!input\+\_\+descriptor\+\_\+t@{input\+\_\+descriptor\+\_\+t}}
+\index{input\+\_\+descriptor\+\_\+t@{input\+\_\+descriptor\+\_\+t}!bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{input\+\_\+descriptor\+\_\+t}{input\_descriptor\_t}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+using \hyperlink{structbc_1_1nn_1_1Output__Layer}{bc\+::nn\+::\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Output__Layer_adbc7c287b6f4b0dda68801784a6c6ca9}{input\+\_\+descriptor\+\_\+t} =  \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$Value\+Type, System\+Tag, \hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$1$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Output__Layer_ad625d63978c4e6b396d4ef52062515d0}\label{structbc_1_1nn_1_1Output__Layer_ad625d63978c4e6b396d4ef52062515d0}} 
+\index{bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}!parent\+\_\+type@{parent\+\_\+type}}
+\index{parent\+\_\+type@{parent\+\_\+type}!bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{parent\+\_\+type}{parent\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+using \hyperlink{structbc_1_1nn_1_1Output__Layer}{bc\+::nn\+::\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Output__Layer_ad625d63978c4e6b396d4ef52062515d0}{parent\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$\hyperlink{structbc_1_1nn_1_1Output__Layer_ab795d02d54671c4235286a01e6bca7b9}{self\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Output__Layer_adbc7c287b6f4b0dda68801784a6c6ca9}{input\+\_\+descriptor\+\_\+t}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Output__Layer_ab795d02d54671c4235286a01e6bca7b9}\label{structbc_1_1nn_1_1Output__Layer_ab795d02d54671c4235286a01e6bca7b9}} 
+\index{bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}!self\+\_\+type@{self\+\_\+type}}
+\index{self\+\_\+type@{self\+\_\+type}!bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{self\+\_\+type}{self\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+using \hyperlink{structbc_1_1nn_1_1Output__Layer}{bc\+::nn\+::\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Output__Layer_ab795d02d54671c4235286a01e6bca7b9}{self\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Output__Layer}{Output\+\_\+\+Layer}$<$System\+Tag, Value\+Type$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Output__Layer_ab5c2079fa05605177c4d9e1553fe1f59}\label{structbc_1_1nn_1_1Output__Layer_ab5c2079fa05605177c4d9e1553fe1f59}} 
+\index{bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+using \hyperlink{structbc_1_1nn_1_1Output__Layer}{bc\+::nn\+::\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Output__Layer_ab5c2079fa05605177c4d9e1553fe1f59}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Output__Layer_a042986d141dc7ddda55273c8b50320c4}\label{structbc_1_1nn_1_1Output__Layer_a042986d141dc7ddda55273c8b50320c4}} 
+\index{bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+using \hyperlink{structbc_1_1nn_1_1Output__Layer}{bc\+::nn\+::\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Output__Layer_a042986d141dc7ddda55273c8b50320c4}{value\+\_\+type} =  Value\+Type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Output__Layer_af2ea2ff4ed24a9ec365c80728b9eb0e0}\label{structbc_1_1nn_1_1Output__Layer_af2ea2ff4ed24a9ec365c80728b9eb0e0}} 
+\index{bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}!Output\+\_\+\+Layer@{Output\+\_\+\+Layer}}
+\index{Output\+\_\+\+Layer@{Output\+\_\+\+Layer}!bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{Output\+\_\+\+Layer()}{Output\_Layer()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+\hyperlink{structbc_1_1nn_1_1Output__Layer}{bc\+::nn\+::\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Output__Layer}{Output\+\_\+\+Layer} (\begin{DoxyParamCaption}\item[{int}]{inputs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Output__Layer_ae17199c4928823b57fea1f9549dc9c9b}\label{structbc_1_1nn_1_1Output__Layer_ae17199c4928823b57fea1f9549dc9c9b}} 
+\index{bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}!back\+\_\+propagation@{back\+\_\+propagation}}
+\index{back\+\_\+propagation@{back\+\_\+propagation}!bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{back\+\_\+propagation()}{back\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+template$<$class TensorX , class TensorY $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Output__Layer}{bc\+::nn\+::\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type $>$\+::back\+\_\+propagation (\begin{DoxyParamCaption}\item[{const TensorX \&}]{x,  }\item[{const TensorY \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Output__Layer_ab55ef92dd44d2319b84776a9edf9da9a}\label{structbc_1_1nn_1_1Output__Layer_ab55ef92dd44d2319b84776a9edf9da9a}} 
+\index{bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+template$<$class Tensor $>$ \\
+const auto \hyperlink{structbc_1_1nn_1_1Output__Layer}{bc\+::nn\+::\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/layers/\hyperlink{output__layer_8h}{output\+\_\+layer.\+h}\end{DoxyCompactItemize}

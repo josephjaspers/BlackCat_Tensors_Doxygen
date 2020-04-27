@@ -1,0 +1,107 @@
+\hypertarget{structbc_1_1traits_1_1common__traits}{}\section{bc\+:\+:traits\+:\+:common\+\_\+traits$<$ T $>$ Struct Template Reference}
+\label{structbc_1_1traits_1_1common__traits}\index{bc\+::traits\+::common\+\_\+traits$<$ T $>$@{bc\+::traits\+::common\+\_\+traits$<$ T $>$}}
+
+
+{\ttfamily \#include $<$type\+\_\+traits.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:traits\+:\+:common\+\_\+traits$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{structbc_1_1traits_1_1common__traits__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1traits_1_1common__traits_ae7549f5bfa9a9b046fa6441cc27c1d2b}{type} = T
+\item 
+using \hyperlink{structbc_1_1traits_1_1common__traits_ab2572a37cb2db47047767e1d4ea2def0}{defines\+\_\+value\+\_\+type} = \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{truth\+\_\+type}$<$ is\+\_\+detected\+\_\+v$<$ \hyperlink{namespacebc_1_1traits_a40b9437a2ec1bb34ee7d506c8053f906}{query\+\_\+value\+\_\+type}, T $>$ $>$
+\item 
+using \hyperlink{structbc_1_1traits_1_1common__traits_a34ec53adbbda52eb2f30cb3ea1e07aac}{defines\+\_\+allocator\+\_\+type} = \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{truth\+\_\+type}$<$ is\+\_\+detected\+\_\+v$<$ \hyperlink{namespacebc_1_1traits_ab141f0cc8348b4b7ebcb48e6bbb50d09}{query\+\_\+allocator\+\_\+type}, T $>$ $>$
+\item 
+using \hyperlink{structbc_1_1traits_1_1common__traits_a4d07315e9b67c49aa0d8271645975616}{defines\+\_\+system\+\_\+tag} = \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{truth\+\_\+type}$<$ is\+\_\+detected\+\_\+v$<$ \hyperlink{namespacebc_1_1traits_acfa34d40f06d5122586d7adefdfeb42f}{query\+\_\+system\+\_\+tag}, T $>$ $>$
+\item 
+using \hyperlink{structbc_1_1traits_1_1common__traits_a4446bc2c0010c6a2a4062fff4970a7e1}{defines\+\_\+get\+\_\+stream} = \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{truth\+\_\+type}$<$ is\+\_\+detected\+\_\+v$<$ \hyperlink{namespacebc_1_1traits_ae56dfced2583c1fbec104bcbdc2f1b44}{query\+\_\+get\+\_\+stream}, T $>$ $>$
+\item 
+using \hyperlink{structbc_1_1traits_1_1common__traits_a411e56449816c80e601cd7b0a177d274}{defines\+\_\+get\+\_\+allocator} = \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{truth\+\_\+type}$<$ is\+\_\+detected\+\_\+v$<$ \hyperlink{namespacebc_1_1traits_a7843a6596fe24415ac9e5eb4d804726a}{query\+\_\+get\+\_\+allocator}, T $>$ $>$
+\item 
+using \hyperlink{structbc_1_1traits_1_1common__traits_aa9c4393dd536fe43e9b5c09fc02c534b}{value\+\_\+type} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1traits_a40b9437a2ec1bb34ee7d506c8053f906}{query\+\_\+value\+\_\+type}, T, \hyperlink{classbc_1_1traits_1_1None}{None} $>$
+\item 
+using \hyperlink{structbc_1_1traits_1_1common__traits_af4d9ac2b53be674f74c465c2c09ac332}{allocator\+\_\+type} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1traits_ab141f0cc8348b4b7ebcb48e6bbb50d09}{query\+\_\+allocator\+\_\+type}, T, \hyperlink{classbc_1_1traits_1_1None}{None} $>$
+\item 
+using \hyperlink{structbc_1_1traits_1_1common__traits_a630fda1311989a031781f6e228dc0523}{system\+\_\+tag} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1traits_acfa34d40f06d5122586d7adefdfeb42f}{query\+\_\+system\+\_\+tag}, T, \hyperlink{structbc_1_1host__tag}{host\+\_\+tag} $>$
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1traits_1_1common__traits_af4d9ac2b53be674f74c465c2c09ac332}\label{structbc_1_1traits_1_1common__traits_af4d9ac2b53be674f74c465c2c09ac332}} 
+\index{bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1traits_1_1common__traits}{bc\+::traits\+::common\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1traits_1_1common__traits_af4d9ac2b53be674f74c465c2c09ac332}{allocator\+\_\+type} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{conditional\+\_\+detected\+\_\+t}$<$\hyperlink{namespacebc_1_1traits_ab141f0cc8348b4b7ebcb48e6bbb50d09}{query\+\_\+allocator\+\_\+type}, T, \hyperlink{classbc_1_1traits_1_1None}{None}$>$}
+
+\mbox{\Hypertarget{structbc_1_1traits_1_1common__traits_a34ec53adbbda52eb2f30cb3ea1e07aac}\label{structbc_1_1traits_1_1common__traits_a34ec53adbbda52eb2f30cb3ea1e07aac}} 
+\index{bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}!defines\+\_\+allocator\+\_\+type@{defines\+\_\+allocator\+\_\+type}}
+\index{defines\+\_\+allocator\+\_\+type@{defines\+\_\+allocator\+\_\+type}!bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}}
+\subsubsection{\texorpdfstring{defines\+\_\+allocator\+\_\+type}{defines\_allocator\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1traits_1_1common__traits}{bc\+::traits\+::common\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1traits_1_1common__traits_a34ec53adbbda52eb2f30cb3ea1e07aac}{defines\+\_\+allocator\+\_\+type} =  \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{truth\+\_\+type}$<$is\+\_\+detected\+\_\+v$<$\hyperlink{namespacebc_1_1traits_ab141f0cc8348b4b7ebcb48e6bbb50d09}{query\+\_\+allocator\+\_\+type}, T$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1traits_1_1common__traits_a411e56449816c80e601cd7b0a177d274}\label{structbc_1_1traits_1_1common__traits_a411e56449816c80e601cd7b0a177d274}} 
+\index{bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}!defines\+\_\+get\+\_\+allocator@{defines\+\_\+get\+\_\+allocator}}
+\index{defines\+\_\+get\+\_\+allocator@{defines\+\_\+get\+\_\+allocator}!bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}}
+\subsubsection{\texorpdfstring{defines\+\_\+get\+\_\+allocator}{defines\_get\_allocator}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1traits_1_1common__traits}{bc\+::traits\+::common\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1traits_1_1common__traits_a411e56449816c80e601cd7b0a177d274}{defines\+\_\+get\+\_\+allocator} =  \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{truth\+\_\+type}$<$is\+\_\+detected\+\_\+v$<$\hyperlink{namespacebc_1_1traits_a7843a6596fe24415ac9e5eb4d804726a}{query\+\_\+get\+\_\+allocator}, T$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1traits_1_1common__traits_a4446bc2c0010c6a2a4062fff4970a7e1}\label{structbc_1_1traits_1_1common__traits_a4446bc2c0010c6a2a4062fff4970a7e1}} 
+\index{bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}!defines\+\_\+get\+\_\+stream@{defines\+\_\+get\+\_\+stream}}
+\index{defines\+\_\+get\+\_\+stream@{defines\+\_\+get\+\_\+stream}!bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}}
+\subsubsection{\texorpdfstring{defines\+\_\+get\+\_\+stream}{defines\_get\_stream}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1traits_1_1common__traits}{bc\+::traits\+::common\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1traits_1_1common__traits_a4446bc2c0010c6a2a4062fff4970a7e1}{defines\+\_\+get\+\_\+stream} =  \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{truth\+\_\+type}$<$is\+\_\+detected\+\_\+v$<$\hyperlink{namespacebc_1_1traits_ae56dfced2583c1fbec104bcbdc2f1b44}{query\+\_\+get\+\_\+stream}, T$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1traits_1_1common__traits_a4d07315e9b67c49aa0d8271645975616}\label{structbc_1_1traits_1_1common__traits_a4d07315e9b67c49aa0d8271645975616}} 
+\index{bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}!defines\+\_\+system\+\_\+tag@{defines\+\_\+system\+\_\+tag}}
+\index{defines\+\_\+system\+\_\+tag@{defines\+\_\+system\+\_\+tag}!bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}}
+\subsubsection{\texorpdfstring{defines\+\_\+system\+\_\+tag}{defines\_system\_tag}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1traits_1_1common__traits}{bc\+::traits\+::common\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1traits_1_1common__traits_a4d07315e9b67c49aa0d8271645975616}{defines\+\_\+system\+\_\+tag} =  \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{truth\+\_\+type}$<$is\+\_\+detected\+\_\+v$<$\hyperlink{namespacebc_1_1traits_acfa34d40f06d5122586d7adefdfeb42f}{query\+\_\+system\+\_\+tag}, T$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1traits_1_1common__traits_ab2572a37cb2db47047767e1d4ea2def0}\label{structbc_1_1traits_1_1common__traits_ab2572a37cb2db47047767e1d4ea2def0}} 
+\index{bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}!defines\+\_\+value\+\_\+type@{defines\+\_\+value\+\_\+type}}
+\index{defines\+\_\+value\+\_\+type@{defines\+\_\+value\+\_\+type}!bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}}
+\subsubsection{\texorpdfstring{defines\+\_\+value\+\_\+type}{defines\_value\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1traits_1_1common__traits}{bc\+::traits\+::common\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1traits_1_1common__traits_ab2572a37cb2db47047767e1d4ea2def0}{defines\+\_\+value\+\_\+type} =  \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{truth\+\_\+type}$<$is\+\_\+detected\+\_\+v$<$\hyperlink{namespacebc_1_1traits_a40b9437a2ec1bb34ee7d506c8053f906}{query\+\_\+value\+\_\+type}, T$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1traits_1_1common__traits_a630fda1311989a031781f6e228dc0523}\label{structbc_1_1traits_1_1common__traits_a630fda1311989a031781f6e228dc0523}} 
+\index{bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1traits_1_1common__traits}{bc\+::traits\+::common\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1traits_1_1common__traits_a630fda1311989a031781f6e228dc0523}{system\+\_\+tag} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{conditional\+\_\+detected\+\_\+t}$<$\hyperlink{namespacebc_1_1traits_acfa34d40f06d5122586d7adefdfeb42f}{query\+\_\+system\+\_\+tag}, T, \hyperlink{structbc_1_1host__tag}{host\+\_\+tag}$>$}
+
+\mbox{\Hypertarget{structbc_1_1traits_1_1common__traits_ae7549f5bfa9a9b046fa6441cc27c1d2b}\label{structbc_1_1traits_1_1common__traits_ae7549f5bfa9a9b046fa6441cc27c1d2b}} 
+\index{bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}!type@{type}}
+\index{type@{type}!bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1traits_1_1common__traits}{bc\+::traits\+::common\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1traits_1_1common__traits_ae7549f5bfa9a9b046fa6441cc27c1d2b}{type} =  T}
+
+\mbox{\Hypertarget{structbc_1_1traits_1_1common__traits_aa9c4393dd536fe43e9b5c09fc02c534b}\label{structbc_1_1traits_1_1common__traits_aa9c4393dd536fe43e9b5c09fc02c534b}} 
+\index{bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::traits\+::common\+\_\+traits@{bc\+::traits\+::common\+\_\+traits}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1traits_1_1common__traits}{bc\+::traits\+::common\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1traits_1_1common__traits_aa9c4393dd536fe43e9b5c09fc02c534b}{value\+\_\+type} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{conditional\+\_\+detected\+\_\+t}$<$\hyperlink{namespacebc_1_1traits_a40b9437a2ec1bb34ee7d506c8053f906}{query\+\_\+value\+\_\+type}, T, \hyperlink{classbc_1_1traits_1_1None}{None}$>$}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/type\+\_\+traits/\hyperlink{type__traits_2type__traits_8h}{type\+\_\+traits.\+h}\end{DoxyCompactItemize}

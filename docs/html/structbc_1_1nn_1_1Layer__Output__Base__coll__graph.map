@@ -1,0 +1,5 @@
+<map id="bc::nn::Layer_Output_Base&lt; OutputTensorDescriptor &gt;" name="bc::nn::Layer_Output_Base&lt; OutputTensorDescriptor &gt;">
+<area shape="rect" id="node3" href="$classbc_1_1nn_1_1Layer__Input__Base.html" title="bc::nn::Layer_Input\l_Base\&lt; InputTensorDescriptor \&gt;" alt="" coords="677,51,889,92"/>
+<area shape="rect" id="node2" href="$structbc_1_1Dim.html" title="bc::Dim\&lt; output_tensor\l_dim::value \&gt;" alt="" coords="5,83,164,124"/>
+<area shape="rect" id="node4" href="$structbc_1_1Dim.html" title="bc::Dim\&lt; input_tensor\l_dim::value \&gt;" alt="" coords="349,5,500,47"/>
+</map>

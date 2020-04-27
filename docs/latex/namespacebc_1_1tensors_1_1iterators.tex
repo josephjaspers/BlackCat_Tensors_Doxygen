@@ -1,0 +1,135 @@
+\hypertarget{namespacebc_1_1tensors_1_1iterators}{}\section{bc\+:\+:tensors\+:\+:iterators Namespace Reference}
+\label{namespacebc_1_1tensors_1_1iterators}\index{bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1iterators_1_1Coefficientwise__Iterator}{Coefficientwise\+\_\+\+Iterator}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1iterators_1_1iterator__traits}{iterator\+\_\+traits}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1iterators_1_1Multidimensional__Iterator}{Multidimensional\+\_\+\+Iterator}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{direction} \{ \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296a4c6d44dd04b548a4e8e0a6f7a2f2ecca}{forward} = 1, 
+\hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296ab27391fd31026cbed964d12f30ba6a41}{reverse} = -\/1
+ \}
+\item 
+enum \hyperlink{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876e}{initpos} \{ \hyperlink{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876ea81ae03c111f0b56026c966788c4c278e}{start} =0, 
+\hyperlink{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876eab558a540d38cc75942ed86578e792027}{end} =1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Tensor $>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1iterators_a8b8d5f3a94b1ad2e8e06ddff1cbb83be}{iter\+\_\+cw\+\_\+begin} (\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&tensor)
+\item 
+{\footnotesize template$<$class Tensor $>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1iterators_a27bc0ad8dd49827fd98426df362798d5}{iter\+\_\+cw\+\_\+end} (\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&tensor)
+\item 
+{\footnotesize template$<$class Tensor $>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1iterators_a53c8943b4ce77f69fe9ac2e7c27c1536}{iter\+\_\+cw\+\_\+rbegin} (\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&tensor)
+\item 
+{\footnotesize template$<$class Tensor $>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1iterators_aa659f3aedac1544e30c9f6bba811b084}{iter\+\_\+cw\+\_\+rend} (\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&tensor)
+\item 
+{\footnotesize template$<$class Tensor $>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1iterators_a9c925f805ae73b63485c066ba67cdb81}{iter\+\_\+begin} (\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&derived)
+\item 
+{\footnotesize template$<$class Tensor $>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1iterators_a150207dbd04324121e494c8745c8c01d}{iter\+\_\+end} (\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&derived)
+\item 
+{\footnotesize template$<$class Tensor $>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1iterators_a3f743f477e49a0711119adb34e56c5fc}{iter\+\_\+rbegin} (\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&derived)
+\item 
+{\footnotesize template$<$class Tensor $>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1iterators_aecd2f684f561e9b78f7e71f0dbb09e01}{iter\+\_\+rend} (\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&derived)
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}\label{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}} 
+\index{bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}!direction@{direction}}
+\index{direction@{direction}!bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}}
+\subsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily enum \hyperlink{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296}{bc\+::tensors\+::iterators\+::direction}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{forward@{forward}!bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}}\index{bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}!forward@{forward}}}\mbox{\Hypertarget{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296a4c6d44dd04b548a4e8e0a6f7a2f2ecca}\label{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296a4c6d44dd04b548a4e8e0a6f7a2f2ecca}} 
+forward&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{reverse@{reverse}!bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}}\index{bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}!reverse@{reverse}}}\mbox{\Hypertarget{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296ab27391fd31026cbed964d12f30ba6a41}\label{namespacebc_1_1tensors_1_1iterators_ae76efe63fb9cb4985d5e4e6af0ebf296ab27391fd31026cbed964d12f30ba6a41}} 
+reverse&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876e}\label{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876e}} 
+\index{bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}!initpos@{initpos}}
+\index{initpos@{initpos}!bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}}
+\subsubsection{\texorpdfstring{initpos}{initpos}}
+{\footnotesize\ttfamily enum \hyperlink{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876e}{bc\+::tensors\+::iterators\+::initpos}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{start@{start}!bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}}\index{bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}!start@{start}}}\mbox{\Hypertarget{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876ea81ae03c111f0b56026c966788c4c278e}\label{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876ea81ae03c111f0b56026c966788c4c278e}} 
+start&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{end@{end}!bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}}\index{bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}!end@{end}}}\mbox{\Hypertarget{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876eab558a540d38cc75942ed86578e792027}\label{namespacebc_1_1tensors_1_1iterators_ac0f260c401cebb2593c531198018876eab558a540d38cc75942ed86578e792027}} 
+end&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1iterators_a9c925f805ae73b63485c066ba67cdb81}\label{namespacebc_1_1tensors_1_1iterators_a9c925f805ae73b63485c066ba67cdb81}} 
+\index{bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}!iter\+\_\+begin@{iter\+\_\+begin}}
+\index{iter\+\_\+begin@{iter\+\_\+begin}!bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}}
+\subsubsection{\texorpdfstring{iter\+\_\+begin()}{iter\_begin()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+auto bc\+::tensors\+::iterators\+::iter\+\_\+begin (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&}]{derived }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1iterators_a8b8d5f3a94b1ad2e8e06ddff1cbb83be}\label{namespacebc_1_1tensors_1_1iterators_a8b8d5f3a94b1ad2e8e06ddff1cbb83be}} 
+\index{bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}!iter\+\_\+cw\+\_\+begin@{iter\+\_\+cw\+\_\+begin}}
+\index{iter\+\_\+cw\+\_\+begin@{iter\+\_\+cw\+\_\+begin}!bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}}
+\subsubsection{\texorpdfstring{iter\+\_\+cw\+\_\+begin()}{iter\_cw\_begin()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+auto bc\+::tensors\+::iterators\+::iter\+\_\+cw\+\_\+begin (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&}]{tensor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1iterators_a27bc0ad8dd49827fd98426df362798d5}\label{namespacebc_1_1tensors_1_1iterators_a27bc0ad8dd49827fd98426df362798d5}} 
+\index{bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}!iter\+\_\+cw\+\_\+end@{iter\+\_\+cw\+\_\+end}}
+\index{iter\+\_\+cw\+\_\+end@{iter\+\_\+cw\+\_\+end}!bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}}
+\subsubsection{\texorpdfstring{iter\+\_\+cw\+\_\+end()}{iter\_cw\_end()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+auto bc\+::tensors\+::iterators\+::iter\+\_\+cw\+\_\+end (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&}]{tensor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1iterators_a53c8943b4ce77f69fe9ac2e7c27c1536}\label{namespacebc_1_1tensors_1_1iterators_a53c8943b4ce77f69fe9ac2e7c27c1536}} 
+\index{bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}!iter\+\_\+cw\+\_\+rbegin@{iter\+\_\+cw\+\_\+rbegin}}
+\index{iter\+\_\+cw\+\_\+rbegin@{iter\+\_\+cw\+\_\+rbegin}!bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}}
+\subsubsection{\texorpdfstring{iter\+\_\+cw\+\_\+rbegin()}{iter\_cw\_rbegin()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+auto bc\+::tensors\+::iterators\+::iter\+\_\+cw\+\_\+rbegin (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&}]{tensor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1iterators_aa659f3aedac1544e30c9f6bba811b084}\label{namespacebc_1_1tensors_1_1iterators_aa659f3aedac1544e30c9f6bba811b084}} 
+\index{bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}!iter\+\_\+cw\+\_\+rend@{iter\+\_\+cw\+\_\+rend}}
+\index{iter\+\_\+cw\+\_\+rend@{iter\+\_\+cw\+\_\+rend}!bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}}
+\subsubsection{\texorpdfstring{iter\+\_\+cw\+\_\+rend()}{iter\_cw\_rend()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+auto bc\+::tensors\+::iterators\+::iter\+\_\+cw\+\_\+rend (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&}]{tensor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1iterators_a150207dbd04324121e494c8745c8c01d}\label{namespacebc_1_1tensors_1_1iterators_a150207dbd04324121e494c8745c8c01d}} 
+\index{bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}!iter\+\_\+end@{iter\+\_\+end}}
+\index{iter\+\_\+end@{iter\+\_\+end}!bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}}
+\subsubsection{\texorpdfstring{iter\+\_\+end()}{iter\_end()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+auto bc\+::tensors\+::iterators\+::iter\+\_\+end (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&}]{derived }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1iterators_a3f743f477e49a0711119adb34e56c5fc}\label{namespacebc_1_1tensors_1_1iterators_a3f743f477e49a0711119adb34e56c5fc}} 
+\index{bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}!iter\+\_\+rbegin@{iter\+\_\+rbegin}}
+\index{iter\+\_\+rbegin@{iter\+\_\+rbegin}!bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}}
+\subsubsection{\texorpdfstring{iter\+\_\+rbegin()}{iter\_rbegin()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+auto bc\+::tensors\+::iterators\+::iter\+\_\+rbegin (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&}]{derived }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1iterators_aecd2f684f561e9b78f7e71f0dbb09e01}\label{namespacebc_1_1tensors_1_1iterators_aecd2f684f561e9b78f7e71f0dbb09e01}} 
+\index{bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}!iter\+\_\+rend@{iter\+\_\+rend}}
+\index{iter\+\_\+rend@{iter\+\_\+rend}!bc\+::tensors\+::iterators@{bc\+::tensors\+::iterators}}
+\subsubsection{\texorpdfstring{iter\+\_\+rend()}{iter\_rend()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+auto bc\+::tensors\+::iterators\+::iter\+\_\+rend (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&}]{derived }\end{DoxyParamCaption})}
+

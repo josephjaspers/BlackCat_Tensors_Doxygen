@@ -1,0 +1,57 @@
+\hypertarget{logging__output__layer_8h}{}\section{blackcat/neural\+\_\+networks/layers/logging\+\_\+output\+\_\+layer.h File Reference}
+\label{logging__output__layer_8h}\index{blackcat/neural\+\_\+networks/layers/logging\+\_\+output\+\_\+layer.\+h@{blackcat/neural\+\_\+networks/layers/logging\+\_\+output\+\_\+layer.\+h}}
+{\ttfamily \#include \char`\"{}output\+\_\+layer.\+h\char`\"{}}\newline
+Include dependency graph for logging\+\_\+output\+\_\+layer.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{logging__output__layer_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{logging__output__layer_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Mean__Absolute__Error}{bc\+::nn\+::\+Mean\+\_\+\+Absolute\+\_\+\+Error}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Root__Mean__Squared__Error}{bc\+::nn\+::\+Root\+\_\+\+Mean\+\_\+\+Squared\+\_\+\+Error}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Mean__Squared__Error}{bc\+::nn\+::\+Mean\+\_\+\+Squared\+\_\+\+Error}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Mean__Absolute__Percent__Error}{bc\+::nn\+::\+Mean\+\_\+\+Absolute\+\_\+\+Percent\+\_\+\+Error}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer$<$ System\+Tag, Value\+Type, Error\+Function $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1nn}{bc\+::nn}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Value\+Type , class System\+Tag , class Error\+Function  = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ }\\Logging\+\_\+\+Output\+\_\+\+Layer$<$ System\+Tag, Value\+Type $>$ \hyperlink{namespacebc_1_1nn_a0e09424bd9585d7fac8f168894315054}{bc\+::nn\+::logging\+\_\+output\+\_\+layer} (System\+Tag system\+\_\+tag, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs, Error\+Function error\+\_\+function=Error\+Function(), std\+::ostream \&os=std\+::cout)
+\item 
+{\footnotesize template$<$class System\+Tag , class Error\+Function  = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ }\\auto \hyperlink{namespacebc_1_1nn_acb61279448bd2071e5ecdb743b6109a4}{bc\+::nn\+::logging\+\_\+output\+\_\+layer} (System\+Tag system\+\_\+tag, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs, Error\+Function error\+\_\+function=Error\+Function(), std\+::ostream \&os=std\+::cout)
+\item 
+{\footnotesize template$<$class Error\+Function  = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ }\\auto \hyperlink{namespacebc_1_1nn_ab353668fc04b2496759be76e26c1697d}{bc\+::nn\+::logging\+\_\+output\+\_\+layer} (int inputs, Error\+Function error\+\_\+function=Error\+Function(), std\+::ostream \&os=std\+::cout)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Mean__Absolute__Error}{bc\+::nn\+::\+Mean\+\_\+\+Absolute\+\_\+\+Error} \hyperlink{namespacebc_1_1nn_a750f7a0e2cf0394b33d96d0ed4215324}{bc\+::nn\+::\+M\+AE}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Root__Mean__Squared__Error}{bc\+::nn\+::\+Root\+\_\+\+Mean\+\_\+\+Squared\+\_\+\+Error} \hyperlink{namespacebc_1_1nn_ab1183e69180fb5a708babd6a2b1108b9}{bc\+::nn\+::\+R\+M\+SE}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Mean__Squared__Error}{bc\+::nn\+::\+Mean\+\_\+\+Squared\+\_\+\+Error} \hyperlink{namespacebc_1_1nn_a68f287847db51c1b954a80b67254ea30}{bc\+::nn\+::\+M\+SE}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1Mean__Absolute__Percent__Error}{bc\+::nn\+::\+Mean\+\_\+\+Absolute\+\_\+\+Percent\+\_\+\+Error} \hyperlink{namespacebc_1_1nn_a79e2cb825afd655959942b256380f212}{bc\+::nn\+::\+M\+A\+PE}
+\end{DoxyCompactItemize}

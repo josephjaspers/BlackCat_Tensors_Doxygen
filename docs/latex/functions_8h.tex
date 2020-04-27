@@ -1,0 +1,36 @@
+\hypertarget{functions_8h}{}\section{blackcat/neural\+\_\+networks/functions/functions.h File Reference}
+\label{functions_8h}\index{blackcat/neural\+\_\+networks/functions/functions.\+h@{blackcat/neural\+\_\+networks/functions/functions.\+h}}
+{\ttfamily \#include \char`\"{}maxpooling.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}maxpooling.\+cu\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}im2col.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}im2col.\+cu\char`\"{}}\newline
+Include dependency graph for functions.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{functions_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{functions_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Stream , class Indexes , class Image , class Image\+Out $>$ }\\void \hyperlink{namespacebc_a679477ae62ae0b0b8af47e929fd3e879}{bc\+::max\+\_\+pooling\+\_\+forward} (Stream stream, Image image, Image\+Out out, Indexes mask, Dim$<$ 2 $>$ krnl\+\_\+shape, Dim$<$ 2 $>$ padding=Dim$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0), Dim$<$ 2 $>$ strides=\{-\/1,-\/1\})
+\item 
+{\footnotesize template$<$class Stream , class Indexes , class Image , class Image\+Out $>$ }\\void \hyperlink{namespacebc_ad90d6df9bf2db4ea2cfaaeb347a12634}{bc\+::max\+\_\+pooling\+\_\+backward} (Stream stream, Image image, Image\+Out delta, Indexes mask, Dim$<$ 2 $>$ krnl\+\_\+shape, Dim$<$ 2 $>$ padding=Dim$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0), Dim$<$ 2 $>$ strides=Dim$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(-\/1))
+\item 
+{\footnotesize template$<$class Stream , class Column\+Image , class Image $>$ }\\void \hyperlink{namespacebc_a92b9689f9fa30f3a6342800888b7cd3b}{bc\+::im2col} (Stream stream, Column\+Image col\+\_\+image, Image image, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 3 $>$ krnl\+\_\+shape, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 2 $>$ padding=\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0), \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 2 $>$ strides=\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 2 $>$ dilation=\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), int numb\+\_\+spatial\+\_\+axis=2)
+\item 
+{\footnotesize template$<$class Stream , class Column\+Image , class Image $>$ }\\void \hyperlink{namespacebc_a317a45582372bf3a2b0c9969f0ea877a}{bc\+::col2im} (Stream stream, Column\+Image col\+\_\+image, Image image, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 3 $>$ krnl\+\_\+shape, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 2 $>$ padding=\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 2 $>$(), \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 2 $>$ strides=\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 2 $>$ dilation=\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1))
+\end{DoxyCompactItemize}

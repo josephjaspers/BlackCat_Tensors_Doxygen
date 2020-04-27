@@ -1,0 +1,52 @@
+\hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools}{}\section{bc\+:\+:tensors\+:\+:exprs\+:\+:blas\+\_\+expression\+\_\+parser\+:\+:Common\+\_\+\+Tools$<$ derived $>$ Struct Template Reference}
+\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools}\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools$<$ derived $>$@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools$<$ derived $>$}}
+
+
+{\ttfamily \#include $<$common.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools_1_1contents}{contents}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Value\+Type , int alpha\+\_\+mod, bool lv\+\_\+scalar, bool rv\+\_\+scalar, class Stream , class lv\+\_\+scalar\+\_\+t , class rv\+\_\+scalar\+\_\+t $>$ }\\static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools_a72c9b6ac05d3885bbfb394b4222e2319}{calculate\+\_\+alpha} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, lv\+\_\+scalar\+\_\+t lv, rv\+\_\+scalar\+\_\+t rv)
+\item 
+{\footnotesize template$<$int alpha\+\_\+mod, int beta\+\_\+mod, class Stream , class Lv , class Rv $>$ }\\static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools_ace5f107f3c541ccecad89f19a6035660}{parse\+\_\+expression} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, Lv left, Rv right)
+\item 
+{\footnotesize template$<$class Stream , class Contents $>$ }\\static void \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools_a1656ea49b54cbd6eae7f418093c7892a}{post\+\_\+parse\+\_\+expression\+\_\+evaluation} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, Contents \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools_1_1contents}{contents})
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools_a72c9b6ac05d3885bbfb394b4222e2319}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools_a72c9b6ac05d3885bbfb394b4222e2319}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools}!calculate\+\_\+alpha@{calculate\+\_\+alpha}}
+\index{calculate\+\_\+alpha@{calculate\+\_\+alpha}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools}}
+\subsubsection{\texorpdfstring{calculate\+\_\+alpha()}{calculate\_alpha()}}
+{\footnotesize\ttfamily template$<$class derived$>$ \\
+template$<$class Value\+Type , int alpha\+\_\+mod, bool lv\+\_\+scalar, bool rv\+\_\+scalar, class Stream , class lv\+\_\+scalar\+\_\+t , class rv\+\_\+scalar\+\_\+t $>$ \\
+static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools}$<$ derived $>$\+::calculate\+\_\+alpha (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{lv\+\_\+scalar\+\_\+t}]{lv,  }\item[{rv\+\_\+scalar\+\_\+t}]{rv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools_ace5f107f3c541ccecad89f19a6035660}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools_ace5f107f3c541ccecad89f19a6035660}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools}!parse\+\_\+expression@{parse\+\_\+expression}}
+\index{parse\+\_\+expression@{parse\+\_\+expression}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools}}
+\subsubsection{\texorpdfstring{parse\+\_\+expression()}{parse\_expression()}}
+{\footnotesize\ttfamily template$<$class derived$>$ \\
+template$<$int alpha\+\_\+mod, int beta\+\_\+mod, class Stream , class Lv , class Rv $>$ \\
+static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools}$<$ derived $>$\+::parse\+\_\+expression (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{Lv}]{left,  }\item[{Rv}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools_a1656ea49b54cbd6eae7f418093c7892a}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools_a1656ea49b54cbd6eae7f418093c7892a}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools}!post\+\_\+parse\+\_\+expression\+\_\+evaluation@{post\+\_\+parse\+\_\+expression\+\_\+evaluation}}
+\index{post\+\_\+parse\+\_\+expression\+\_\+evaluation@{post\+\_\+parse\+\_\+expression\+\_\+evaluation}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools}}
+\subsubsection{\texorpdfstring{post\+\_\+parse\+\_\+expression\+\_\+evaluation()}{post\_parse\_expression\_evaluation()}}
+{\footnotesize\ttfamily template$<$class derived$>$ \\
+template$<$class Stream , class Contents $>$ \\
+static void \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__parser_1_1Common__Tools}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+parser\+::\+Common\+\_\+\+Tools}$<$ derived $>$\+::post\+\_\+parse\+\_\+expression\+\_\+evaluation (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{Contents}]{contents }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/tensors/expression\+\_\+templates/blas\+\_\+expression\+\_\+parser/\hyperlink{tensors_2expression__templates_2blas__expression__parser_2common_8h}{common.\+h}\end{DoxyCompactItemize}

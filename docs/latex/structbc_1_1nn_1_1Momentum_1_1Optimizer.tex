@@ -1,0 +1,133 @@
+\hypertarget{structbc_1_1nn_1_1Momentum_1_1Optimizer}{}\section{bc\+:\+:nn\+:\+:Momentum\+:\+:Optimizer$<$ Tensor $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1Momentum_1_1Optimizer}\index{bc\+::nn\+::\+Momentum\+::\+Optimizer$<$ Tensor $>$@{bc\+::nn\+::\+Momentum\+::\+Optimizer$<$ Tensor $>$}}
+
+
+{\ttfamily \#include $<$momentum.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:nn\+:\+:Momentum\+:\+:Optimizer$<$ Tensor $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{structbc_1_1nn_1_1Momentum_1_1Optimizer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Momentum\+:\+:Optimizer$<$ Tensor $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Momentum_1_1Optimizer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_a53cb161fe0dd2fa29c1647d36e424d35}{value\+\_\+type} = typename \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ae7e5c0119f62f43ef74c5a463d3eaf13}{Tensor\+::value\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_a3d02f515c3cc2724dceb35ff0932b173}{Optimizer} (Args \&\&... args)
+\item 
+{\footnotesize template$<$class TensorX , class Gradients $>$ }\\void \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_a93b6491d017c68b34a6aa7dcd5ab583f}{update} (TensorX \&tensor, Gradients \&\&delta)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_ada29fdc99e684aceb5a15ca458554c22}{set\+\_\+learning\+\_\+rate} (\hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_a53cb161fe0dd2fa29c1647d36e424d35}{value\+\_\+type} lr)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_a66b94850c3ddec0abe3186305e3354ba}{save} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader, std\+::string name) const
+\item 
+void \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_ad33161200f366bc291c9b77b6ca04137}{load} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader, std\+::string name)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_a53cb161fe0dd2fa29c1647d36e424d35}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_adcadc7f2145fd214e70f269849dd4bd6}{alpha} = .\+9
+\item 
+\hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_a53cb161fe0dd2fa29c1647d36e424d35}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_a1b81320c5220f75b8b6311ff9763cf1e}{learning\+\_\+rate} = 0.\+003
+\item 
+\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_ab414f9793b1f7b1484fac6c30087ddc0}{momentum}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Momentum_1_1Optimizer_a53cb161fe0dd2fa29c1647d36e424d35}\label{structbc_1_1nn_1_1Momentum_1_1Optimizer_a53cb161fe0dd2fa29c1647d36e424d35}} 
+\index{bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+using \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer}{bc\+::nn\+::\+Momentum\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::\hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_a53cb161fe0dd2fa29c1647d36e424d35}{value\+\_\+type} =  typename \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ae7e5c0119f62f43ef74c5a463d3eaf13}{Tensor\+::value\+\_\+type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Momentum_1_1Optimizer_a3d02f515c3cc2724dceb35ff0932b173}\label{structbc_1_1nn_1_1Momentum_1_1Optimizer_a3d02f515c3cc2724dceb35ff0932b173}} 
+\index{bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}!Optimizer@{Optimizer}}
+\index{Optimizer@{Optimizer}!bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{Optimizer()}{Optimizer()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+template$<$class... Args$>$ \\
+\hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer}{bc\+::nn\+::\+Momentum\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::\hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer}{Optimizer} (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Momentum_1_1Optimizer_ad33161200f366bc291c9b77b6ca04137}\label{structbc_1_1nn_1_1Momentum_1_1Optimizer_ad33161200f366bc291c9b77b6ca04137}} 
+\index{bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+void \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer}{bc\+::nn\+::\+Momentum\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Momentum_1_1Optimizer_a66b94850c3ddec0abe3186305e3354ba}\label{structbc_1_1nn_1_1Momentum_1_1Optimizer_a66b94850c3ddec0abe3186305e3354ba}} 
+\index{bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}!save@{save}}
+\index{save@{save}!bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+void \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer}{bc\+::nn\+::\+Momentum\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::save (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader,  }\item[{std\+::string}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Momentum_1_1Optimizer_ada29fdc99e684aceb5a15ca458554c22}\label{structbc_1_1nn_1_1Momentum_1_1Optimizer_ada29fdc99e684aceb5a15ca458554c22}} 
+\index{bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}!set\+\_\+learning\+\_\+rate@{set\+\_\+learning\+\_\+rate}}
+\index{set\+\_\+learning\+\_\+rate@{set\+\_\+learning\+\_\+rate}!bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{set\+\_\+learning\+\_\+rate()}{set\_learning\_rate()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+void \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer}{bc\+::nn\+::\+Momentum\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::set\+\_\+learning\+\_\+rate (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_a53cb161fe0dd2fa29c1647d36e424d35}{value\+\_\+type}}]{lr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Momentum_1_1Optimizer_a93b6491d017c68b34a6aa7dcd5ab583f}\label{structbc_1_1nn_1_1Momentum_1_1Optimizer_a93b6491d017c68b34a6aa7dcd5ab583f}} 
+\index{bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}!update@{update}}
+\index{update@{update}!bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+template$<$class TensorX , class Gradients $>$ \\
+void \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer}{bc\+::nn\+::\+Momentum\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::update (\begin{DoxyParamCaption}\item[{TensorX \&}]{tensor,  }\item[{Gradients \&\&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Momentum_1_1Optimizer_adcadc7f2145fd214e70f269849dd4bd6}\label{structbc_1_1nn_1_1Momentum_1_1Optimizer_adcadc7f2145fd214e70f269849dd4bd6}} 
+\index{bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}!alpha@{alpha}}
+\index{alpha@{alpha}!bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{alpha}{alpha}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+\hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_a53cb161fe0dd2fa29c1647d36e424d35}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer}{bc\+::nn\+::\+Momentum\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::alpha = .\+9}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Momentum_1_1Optimizer_a1b81320c5220f75b8b6311ff9763cf1e}\label{structbc_1_1nn_1_1Momentum_1_1Optimizer_a1b81320c5220f75b8b6311ff9763cf1e}} 
+\index{bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}!learning\+\_\+rate@{learning\+\_\+rate}}
+\index{learning\+\_\+rate@{learning\+\_\+rate}!bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{learning\+\_\+rate}{learning\_rate}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+\hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer_a53cb161fe0dd2fa29c1647d36e424d35}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer}{bc\+::nn\+::\+Momentum\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::learning\+\_\+rate = 0.\+003}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Momentum_1_1Optimizer_ab414f9793b1f7b1484fac6c30087ddc0}\label{structbc_1_1nn_1_1Momentum_1_1Optimizer_ab414f9793b1f7b1484fac6c30087ddc0}} 
+\index{bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}!momentum@{momentum}}
+\index{momentum@{momentum}!bc\+::nn\+::\+Momentum\+::\+Optimizer@{bc\+::nn\+::\+Momentum\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{momentum}{momentum}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \hyperlink{structbc_1_1nn_1_1Momentum_1_1Optimizer}{bc\+::nn\+::\+Momentum\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::momentum}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/optimzers/\hyperlink{momentum_8h}{momentum.\+h}\end{DoxyCompactItemize}

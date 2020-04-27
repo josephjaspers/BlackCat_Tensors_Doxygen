@@ -1,0 +1,105 @@
+\hypertarget{structbc_1_1tensors_1_1exprs_1_1optimizer__default}{}\section{bc\+:\+:tensors\+:\+:exprs\+:\+:optimizer\+\_\+default$<$ T $>$ Struct Template Reference}
+\label{structbc_1_1tensors_1_1exprs_1_1optimizer__default}\index{bc\+::tensors\+::exprs\+::optimizer\+\_\+default$<$ T $>$@{bc\+::tensors\+::exprs\+::optimizer\+\_\+default$<$ T $>$}}
+
+
+{\ttfamily \#include $<$tree\+\_\+evaluator\+\_\+optimizer.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:tensors\+:\+:exprs\+:\+:optimizer\+\_\+default$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1tensors_1_1exprs_1_1optimizer__default__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Output\+Data , class Stream $>$ }\\static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__default_a31880c96689c4d99ddd9fdddb0be1303}{linear\+\_\+eval} (T branch, Output\+Data, \hyperlink{classbc_1_1streams_1_1Stream}{Stream})
+\item 
+{\footnotesize template$<$class Output\+Data , class Stream $>$ }\\static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__default_a9669bd5127ec6b48422735ce8e881005}{injection} (T branch, Output\+Data, \hyperlink{classbc_1_1streams_1_1Stream}{Stream})
+\item 
+{\footnotesize template$<$class Stream $>$ }\\static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__default_ac88b821b4dd3acfdb3032a93a4023c1f}{temporary\+\_\+injection} (T branch, \hyperlink{classbc_1_1streams_1_1Stream}{Stream})
+\item 
+{\footnotesize template$<$class Stream $>$ }\\static void \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__default_a24f690395a20095018e132d15e18ee30}{deallocate\+\_\+temporaries} (T, \hyperlink{classbc_1_1streams_1_1Stream}{Stream})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr bool \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__default_ad6506251b58e383a7c9b50d04d4fb634}{entirely\+\_\+blas\+\_\+expr} = false
+\begin{DoxyCompactList}\small\item\em entirely\+\_\+blas\+\_\+expr if we may replace this branch entirely with a temporary/cache expression is +/-\/ ops and B\+L\+AS functions Example -\/$>$ w$\ast$x + y$\ast$z \end{DoxyCompactList}\item 
+static constexpr bool \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__default_aeab6375db3b27ee379b081b67bd62cf4}{partial\+\_\+blas\+\_\+expr} = false
+\item 
+static constexpr bool \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__default_af5e1f7d26972ce361a83e4b61319c1e4}{requires\+\_\+greedy\+\_\+eval} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1optimizer__default_a24f690395a20095018e132d15e18ee30}\label{structbc_1_1tensors_1_1exprs_1_1optimizer__default_a24f690395a20095018e132d15e18ee30}} 
+\index{bc\+::tensors\+::exprs\+::optimizer\+\_\+default@{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}!deallocate\+\_\+temporaries@{deallocate\+\_\+temporaries}}
+\index{deallocate\+\_\+temporaries@{deallocate\+\_\+temporaries}!bc\+::tensors\+::exprs\+::optimizer\+\_\+default@{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}}
+\subsubsection{\texorpdfstring{deallocate\+\_\+temporaries()}{deallocate\_temporaries()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+template$<$class Stream $>$ \\
+static void \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__default}{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}$<$ T $>$\+::deallocate\+\_\+temporaries (\begin{DoxyParamCaption}\item[{T}]{,  }\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1optimizer__default_a9669bd5127ec6b48422735ce8e881005}\label{structbc_1_1tensors_1_1exprs_1_1optimizer__default_a9669bd5127ec6b48422735ce8e881005}} 
+\index{bc\+::tensors\+::exprs\+::optimizer\+\_\+default@{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}!injection@{injection}}
+\index{injection@{injection}!bc\+::tensors\+::exprs\+::optimizer\+\_\+default@{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}}
+\subsubsection{\texorpdfstring{injection()}{injection()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+template$<$class Output\+Data , class Stream $>$ \\
+static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__default}{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}$<$ T $>$\+::injection (\begin{DoxyParamCaption}\item[{T}]{branch,  }\item[{Output\+Data}]{,  }\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1optimizer__default_a31880c96689c4d99ddd9fdddb0be1303}\label{structbc_1_1tensors_1_1exprs_1_1optimizer__default_a31880c96689c4d99ddd9fdddb0be1303}} 
+\index{bc\+::tensors\+::exprs\+::optimizer\+\_\+default@{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}!linear\+\_\+eval@{linear\+\_\+eval}}
+\index{linear\+\_\+eval@{linear\+\_\+eval}!bc\+::tensors\+::exprs\+::optimizer\+\_\+default@{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}}
+\subsubsection{\texorpdfstring{linear\+\_\+eval()}{linear\_eval()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+template$<$class Output\+Data , class Stream $>$ \\
+static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__default}{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}$<$ T $>$\+::linear\+\_\+eval (\begin{DoxyParamCaption}\item[{T}]{branch,  }\item[{Output\+Data}]{,  }\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1optimizer__default_ac88b821b4dd3acfdb3032a93a4023c1f}\label{structbc_1_1tensors_1_1exprs_1_1optimizer__default_ac88b821b4dd3acfdb3032a93a4023c1f}} 
+\index{bc\+::tensors\+::exprs\+::optimizer\+\_\+default@{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}!temporary\+\_\+injection@{temporary\+\_\+injection}}
+\index{temporary\+\_\+injection@{temporary\+\_\+injection}!bc\+::tensors\+::exprs\+::optimizer\+\_\+default@{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}}
+\subsubsection{\texorpdfstring{temporary\+\_\+injection()}{temporary\_injection()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+template$<$class Stream $>$ \\
+static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__default}{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}$<$ T $>$\+::temporary\+\_\+injection (\begin{DoxyParamCaption}\item[{T}]{branch,  }\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1optimizer__default_ad6506251b58e383a7c9b50d04d4fb634}\label{structbc_1_1tensors_1_1exprs_1_1optimizer__default_ad6506251b58e383a7c9b50d04d4fb634}} 
+\index{bc\+::tensors\+::exprs\+::optimizer\+\_\+default@{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}!entirely\+\_\+blas\+\_\+expr@{entirely\+\_\+blas\+\_\+expr}}
+\index{entirely\+\_\+blas\+\_\+expr@{entirely\+\_\+blas\+\_\+expr}!bc\+::tensors\+::exprs\+::optimizer\+\_\+default@{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}}
+\subsubsection{\texorpdfstring{entirely\+\_\+blas\+\_\+expr}{entirely\_blas\_expr}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+constexpr bool \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__default}{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}$<$ T $>$\+::entirely\+\_\+blas\+\_\+expr = false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+entirely\+\_\+blas\+\_\+expr if we may replace this branch entirely with a temporary/cache expression is +/-\/ ops and B\+L\+AS functions Example -\/$>$ w$\ast$x + y$\ast$z 
+
+partial\+\_\+blas\+\_\+expr if part of this branch contains a replaceable branch nested inside it expression is +/-\/ ops and B\+L\+AS functions OR simple cwisefunctions Example -\/$>$ w + x$\ast$y
+
+requires\+\_\+greedy\+\_\+eval does any non-\/lazy functions exist in the expression \mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1optimizer__default_aeab6375db3b27ee379b081b67bd62cf4}\label{structbc_1_1tensors_1_1exprs_1_1optimizer__default_aeab6375db3b27ee379b081b67bd62cf4}} 
+\index{bc\+::tensors\+::exprs\+::optimizer\+\_\+default@{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}!partial\+\_\+blas\+\_\+expr@{partial\+\_\+blas\+\_\+expr}}
+\index{partial\+\_\+blas\+\_\+expr@{partial\+\_\+blas\+\_\+expr}!bc\+::tensors\+::exprs\+::optimizer\+\_\+default@{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}}
+\subsubsection{\texorpdfstring{partial\+\_\+blas\+\_\+expr}{partial\_blas\_expr}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+constexpr bool \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__default}{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}$<$ T $>$\+::partial\+\_\+blas\+\_\+expr = false\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1optimizer__default_af5e1f7d26972ce361a83e4b61319c1e4}\label{structbc_1_1tensors_1_1exprs_1_1optimizer__default_af5e1f7d26972ce361a83e4b61319c1e4}} 
+\index{bc\+::tensors\+::exprs\+::optimizer\+\_\+default@{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}!requires\+\_\+greedy\+\_\+eval@{requires\+\_\+greedy\+\_\+eval}}
+\index{requires\+\_\+greedy\+\_\+eval@{requires\+\_\+greedy\+\_\+eval}!bc\+::tensors\+::exprs\+::optimizer\+\_\+default@{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}}
+\subsubsection{\texorpdfstring{requires\+\_\+greedy\+\_\+eval}{requires\_greedy\_eval}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+constexpr bool \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__default}{bc\+::tensors\+::exprs\+::optimizer\+\_\+default}$<$ T $>$\+::requires\+\_\+greedy\+\_\+eval = false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/tensors/expression\+\_\+templates/\hyperlink{tree__evaluator__optimizer_8h}{tree\+\_\+evaluator\+\_\+optimizer.\+h}\end{DoxyCompactItemize}

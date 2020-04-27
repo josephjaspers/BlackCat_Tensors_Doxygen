@@ -1,0 +1,5 @@
+<map id="bc::nn::Flatten&lt; SystemTag, ValueType, InputTensorDimension, InputDescriptor, OutputDescriptor &gt;" name="bc::nn::Flatten&lt; SystemTag, ValueType, InputTensorDimension, InputDescriptor, OutputDescriptor &gt;">
+<area shape="rect" id="node2" href="$structbc_1_1nn_1_1Layer__Base.html" title="bc::nn::Layer_Base\l\&lt; Flatten\&lt; SystemTag,\l ValueType, InputTensorDimension\l \&gt;, InputDescriptor, OutputDescriptor \&gt;" alt="" coords="236,24,487,95"/>
+<area shape="rect" id="node3" href="$classbc_1_1nn_1_1Layer__Input__Base.html" title="bc::nn::Layer_Input\l_Base\&lt; InputDescriptor \&gt;" alt="" coords="11,5,183,47"/>
+<area shape="rect" id="node4" href="$structbc_1_1nn_1_1Layer__Output__Base.html" title="bc::nn::Layer_Output\l_Base\&lt; OutputDescriptor \&gt;" alt="" coords="5,71,188,112"/>
+</map>

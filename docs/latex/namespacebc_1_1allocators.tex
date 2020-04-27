@@ -1,0 +1,61 @@
+\hypertarget{namespacebc_1_1allocators}{}\section{bc\+:\+:allocators Namespace Reference}
+\label{namespacebc_1_1allocators}\index{bc\+::allocators@{bc\+::allocators}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc_1_1allocators_1_1detail}{detail}
+\item 
+ \hyperlink{namespacebc_1_1allocators_1_1pa__detail}{pa\+\_\+detail}
+\begin{DoxyCompactList}\small\item\em Similar to the C++17 std\+::pmr\+::polymorphic\+\_\+allocator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4}{Allocator$<$ T, device\+\_\+tag $>$}
+\begin{DoxyCompactList}\small\item\em The \textquotesingle{}std\+::allocator\textquotesingle{} of G\+P\+U-\/allocators. Memory is allocated via \textquotesingle{}cuda\+Malloc\textquotesingle{}. \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1allocators_1_1Allocator_3_01T_00_01host__tag_01_4}{Allocator$<$ T, host\+\_\+tag $>$}
+\begin{DoxyCompactList}\small\item\em Comparable to \textquotesingle{}std\+::allocator.\textquotesingle{}. \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1allocators_1_1Allocator__Forwarder}{Allocator\+\_\+\+Forwarder}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1allocator__to__thrust__allocator}{allocator\+\_\+to\+\_\+thrust\+\_\+allocator}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1allocator__to__thrust__allocator_3_01Thrust__Allocator__Forwarder_3_01Vt_00_01Allocator_01_4_01_4}{allocator\+\_\+to\+\_\+thrust\+\_\+allocator$<$ Thrust\+\_\+\+Allocator\+\_\+\+Forwarder$<$ Vt, Allocator $>$ $>$}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1allocator__traits}{allocator\+\_\+traits}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1Basic__Allocator__Base}{Basic\+\_\+\+Allocator\+\_\+\+Base}
+\item 
+class \hyperlink{classbc_1_1allocators_1_1Byte}{Byte}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1Device__Managed}{Device\+\_\+\+Managed}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1Null__Allocator}{Null\+\_\+\+Allocator}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1Recycle__Allocator}{Recycle\+\_\+\+Allocator}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1Recycle__Allocator__Globals}{Recycle\+\_\+\+Allocator\+\_\+\+Globals}
+\item 
+class \hyperlink{classbc_1_1allocators_1_1Stack__Allocator}{Stack\+\_\+\+Allocator}
+\begin{DoxyCompactList}\small\item\em An unsynced memory pool implemented as a stack. \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Allocator $>$ }\\using \hyperlink{namespacebc_1_1allocators_ab6233c0d8d9d7391c3abdbdf1fded326}{allocator\+\_\+to\+\_\+thrust\+\_\+allocator\+\_\+t} = typename \hyperlink{structbc_1_1allocators_1_1allocator__to__thrust__allocator}{allocator\+\_\+to\+\_\+thrust\+\_\+allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::type
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacebc_1_1allocators_ab6233c0d8d9d7391c3abdbdf1fded326}\label{namespacebc_1_1allocators_ab6233c0d8d9d7391c3abdbdf1fded326}} 
+\index{bc\+::allocators@{bc\+::allocators}!allocator\+\_\+to\+\_\+thrust\+\_\+allocator\+\_\+t@{allocator\+\_\+to\+\_\+thrust\+\_\+allocator\+\_\+t}}
+\index{allocator\+\_\+to\+\_\+thrust\+\_\+allocator\+\_\+t@{allocator\+\_\+to\+\_\+thrust\+\_\+allocator\+\_\+t}!bc\+::allocators@{bc\+::allocators}}
+\subsubsection{\texorpdfstring{allocator\+\_\+to\+\_\+thrust\+\_\+allocator\+\_\+t}{allocator\_to\_thrust\_allocator\_t}}
+{\footnotesize\ttfamily template$<$class Allocator $>$ \\
+using \hyperlink{namespacebc_1_1allocators_ab6233c0d8d9d7391c3abdbdf1fded326}{bc\+::allocators\+::allocator\+\_\+to\+\_\+thrust\+\_\+allocator\+\_\+t} = typedef typename \hyperlink{structbc_1_1allocators_1_1allocator__to__thrust__allocator}{allocator\+\_\+to\+\_\+thrust\+\_\+allocator}$<$\hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}$>$\+::type}
+

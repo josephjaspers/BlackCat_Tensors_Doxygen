@@ -1,0 +1,288 @@
+\hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{}\section{bc\+:\+:allocators\+:\+:Thrust\+\_\+\+Allocator\+\_\+\+Forwarder$<$ Value\+Type, Allocator $>$ Struct Template Reference}
+\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder$<$ Value\+Type, Allocator $>$@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder$<$ Value\+Type, Allocator $>$}}
+
+
+{\ttfamily \#include $<$allocator\+\_\+forwarder.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_1_1rebind}{rebind}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_afe95f6b4ea2efb026329137219cde467}{traits} = thrust\+::device\+\_\+allocator$<$ Value\+Type $>$
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a6459096b2908e084eaa8a8efdc16c8ed}{value\+\_\+type} = typename traits\+::value\+\_\+type
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a3f0fd576911b835e873f20b587a6f801}{system\+\_\+tag} = \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag}
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad65c1d99f764c14eb0f65dc78d36e56a}{pointer} = typename traits\+::pointer
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ae97e5b4700a6be8359c5d1fc8f82940a}{const\+\_\+pointer} = const \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad65c1d99f764c14eb0f65dc78d36e56a}{pointer}
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a8278047ac998af0b8799ac01fc78f45d}{void\+\_\+pointer} = typename traits\+::void\+\_\+pointer
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_abc8c9530854de1017446433e27ef8ae1}{reference} = typename traits\+::reference
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad19d3bbcf59373c90bb8aceb3e8444ca}{const\+\_\+reference} = typename traits\+::const\+\_\+reference
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a9e16371c961dd61923bc88863d76846f}{difference\+\_\+type} = typename traits\+::difference\+\_\+type
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a0d59ede93a4c3e6530494375e1e6821e}{size\+\_\+type} = typename traits\+::size\+\_\+type
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a7d6bdf9ea4c72a889c2af0a8b1deb643}{is\+\_\+always\+\_\+equal} = typename \hyperlink{structbc_1_1allocators_1_1allocator__traits}{bc\+::allocator\+\_\+traits}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a7d6bdf9ea4c72a889c2af0a8b1deb643}{is\+\_\+always\+\_\+equal}
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a8059fe6fb33a144ff7e298039fed13e1}{propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment} = typename traits\+::propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_afde660784fc764a5b030a862a4d7dc45}{propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment} = typename traits\+::propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a9c6afa39633de336f2aab1cb8dcd06bb}{propagate\+\_\+on\+\_\+container\+\_\+swap} = typename traits\+::propagate\+\_\+on\+\_\+container\+\_\+swap
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a1029d052cf656bbdd7f3cb48fd37494e}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} ()
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_abd9edf3cb0167ce7ff2f06b7ac27b03c}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} (const Args \&... args)
+\item 
+\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_af1fb55a0630615c5451b303e5347811e}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} (const \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} \&other)
+\item 
+\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a04b641f81889bd88c31f999a09f84ff9}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} (\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} \&\&other)
+\item 
+\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} \& \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad4787c514cb7472361fb3b1f00294e10}{operator=} (const \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} \&other)
+\item 
+\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} \& \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a285d08cd74d4d45a3892dad8b6f29dcb}{operator=} (\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} \&\&other)
+\item 
+{\footnotesize template$<$class Alt\+Vt , class Alt\+Allocator $>$ }\\\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a545bf2ea00f2e13ab1825568b4b57f44}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} (const \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Alt\+Vt, Alt\+Allocator $>$ \&other)
+\item 
+auto \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a442d5ec3e3edaebe880f32f9054f1f52}{select\+\_\+on\+\_\+container\+\_\+copy\+\_\+construction} ()
+\item 
+\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad65c1d99f764c14eb0f65dc78d36e56a}{pointer} \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ab2d6a8af23093dda20c238f25cb468a7}{allocate} (\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a0d59ede93a4c3e6530494375e1e6821e}{size\+\_\+type} size)
+\item 
+void \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a9102877ab68637a741aaf421b62bb2ef}{deallocate} (\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad65c1d99f764c14eb0f65dc78d36e56a}{pointer} ptr, \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a0d59ede93a4c3e6530494375e1e6821e}{size\+\_\+type} size)
+\item 
+{\footnotesize template$<$class... Args$>$ }\\void \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a95b76730a7c648d49b47cb203d39699f}{construct} (\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad65c1d99f764c14eb0f65dc78d36e56a}{pointer} ptr, Args \&\&... args)
+\item 
+void \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a8f9d0dd547130ba530ba576af9eab1f7}{destroy} (\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad65c1d99f764c14eb0f65dc78d36e56a}{pointer} ptr)
+\item 
+{\footnotesize template$<$class Alt\+Allocator $>$ }\\bool \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ab3bbe1ac6dcd53281d99450bc8d09934}{operator==} (const Alt\+Allocator \&other)
+\item 
+{\footnotesize template$<$class Alt\+Allocator $>$ }\\bool \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad1c6787a059e00423c0f763e67300352}{operator!=} (const Alt\+Allocator \&other)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ae97e5b4700a6be8359c5d1fc8f82940a}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ae97e5b4700a6be8359c5d1fc8f82940a}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!const\+\_\+pointer@{const\+\_\+pointer}}
+\index{const\+\_\+pointer@{const\+\_\+pointer}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{const\+\_\+pointer}{const\_pointer}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ae97e5b4700a6be8359c5d1fc8f82940a}{const\+\_\+pointer} =  const \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad65c1d99f764c14eb0f65dc78d36e56a}{pointer}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad19d3bbcf59373c90bb8aceb3e8444ca}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad19d3bbcf59373c90bb8aceb3e8444ca}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!const\+\_\+reference@{const\+\_\+reference}}
+\index{const\+\_\+reference@{const\+\_\+reference}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{const\+\_\+reference}{const\_reference}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad19d3bbcf59373c90bb8aceb3e8444ca}{const\+\_\+reference} =  typename traits\+::const\+\_\+reference}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a9e16371c961dd61923bc88863d76846f}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a9e16371c961dd61923bc88863d76846f}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{difference\+\_\+type}{difference\_type}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a9e16371c961dd61923bc88863d76846f}{difference\+\_\+type} =  typename traits\+::difference\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a7d6bdf9ea4c72a889c2af0a8b1deb643}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a7d6bdf9ea4c72a889c2af0a8b1deb643}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!is\+\_\+always\+\_\+equal@{is\+\_\+always\+\_\+equal}}
+\index{is\+\_\+always\+\_\+equal@{is\+\_\+always\+\_\+equal}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{is\+\_\+always\+\_\+equal}{is\_always\_equal}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a7d6bdf9ea4c72a889c2af0a8b1deb643}{is\+\_\+always\+\_\+equal} =  typename \hyperlink{structbc_1_1allocators_1_1allocator__traits}{bc\+::allocator\+\_\+traits}$<$\hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}$>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a7d6bdf9ea4c72a889c2af0a8b1deb643}{is\+\_\+always\+\_\+equal}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad65c1d99f764c14eb0f65dc78d36e56a}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad65c1d99f764c14eb0f65dc78d36e56a}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!pointer@{pointer}}
+\index{pointer@{pointer}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad65c1d99f764c14eb0f65dc78d36e56a}{pointer} =  typename traits\+::pointer}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a8059fe6fb33a144ff7e298039fed13e1}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a8059fe6fb33a144ff7e298039fed13e1}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment@{propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment}}
+\index{propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment@{propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment}{propagate\_on\_container\_copy\_assignment}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a8059fe6fb33a144ff7e298039fed13e1}{propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment} =  typename traits\+::propagate\+\_\+on\+\_\+container\+\_\+copy\+\_\+assignment}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_afde660784fc764a5b030a862a4d7dc45}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_afde660784fc764a5b030a862a4d7dc45}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment@{propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment}}
+\index{propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment@{propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment}{propagate\_on\_container\_move\_assignment}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_afde660784fc764a5b030a862a4d7dc45}{propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment} =  typename traits\+::propagate\+\_\+on\+\_\+container\+\_\+move\+\_\+assignment}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a9c6afa39633de336f2aab1cb8dcd06bb}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a9c6afa39633de336f2aab1cb8dcd06bb}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!propagate\+\_\+on\+\_\+container\+\_\+swap@{propagate\+\_\+on\+\_\+container\+\_\+swap}}
+\index{propagate\+\_\+on\+\_\+container\+\_\+swap@{propagate\+\_\+on\+\_\+container\+\_\+swap}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{propagate\+\_\+on\+\_\+container\+\_\+swap}{propagate\_on\_container\_swap}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a9c6afa39633de336f2aab1cb8dcd06bb}{propagate\+\_\+on\+\_\+container\+\_\+swap} =  typename traits\+::propagate\+\_\+on\+\_\+container\+\_\+swap}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_abc8c9530854de1017446433e27ef8ae1}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_abc8c9530854de1017446433e27ef8ae1}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!reference@{reference}}
+\index{reference@{reference}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_abc8c9530854de1017446433e27ef8ae1}{reference} =  typename traits\+::reference}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a0d59ede93a4c3e6530494375e1e6821e}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a0d59ede93a4c3e6530494375e1e6821e}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{size\+\_\+type}{size\_type}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a0d59ede93a4c3e6530494375e1e6821e}{size\+\_\+type} =  typename traits\+::size\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a3f0fd576911b835e873f20b587a6f801}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a3f0fd576911b835e873f20b587a6f801}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a3f0fd576911b835e873f20b587a6f801}{system\+\_\+tag} =  \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_afe95f6b4ea2efb026329137219cde467}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_afe95f6b4ea2efb026329137219cde467}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!traits@{traits}}
+\index{traits@{traits}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{traits}{traits}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_afe95f6b4ea2efb026329137219cde467}{traits} =  thrust\+::device\+\_\+allocator$<$Value\+Type$>$}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a6459096b2908e084eaa8a8efdc16c8ed}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a6459096b2908e084eaa8a8efdc16c8ed}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a6459096b2908e084eaa8a8efdc16c8ed}{value\+\_\+type} =  typename traits\+::value\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a8278047ac998af0b8799ac01fc78f45d}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a8278047ac998af0b8799ac01fc78f45d}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!void\+\_\+pointer@{void\+\_\+pointer}}
+\index{void\+\_\+pointer@{void\+\_\+pointer}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{void\+\_\+pointer}{void\_pointer}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a8278047ac998af0b8799ac01fc78f45d}{void\+\_\+pointer} =  typename traits\+::void\+\_\+pointer}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a1029d052cf656bbdd7f3cb48fd37494e}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a1029d052cf656bbdd7f3cb48fd37494e}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\index{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder()}{Thrust\_Allocator\_Forwarder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_abd9edf3cb0167ce7ff2f06b7ac27b03c}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_abd9edf3cb0167ce7ff2f06b7ac27b03c}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\index{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder()}{Thrust\_Allocator\_Forwarder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+template$<$class... Args$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} (\begin{DoxyParamCaption}\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_af1fb55a0630615c5451b303e5347811e}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_af1fb55a0630615c5451b303e5347811e}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\index{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder()}{Thrust\_Allocator\_Forwarder()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a04b641f81889bd88c31f999a09f84ff9}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a04b641f81889bd88c31f999a09f84ff9}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\index{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder()}{Thrust\_Allocator\_Forwarder()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$ \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a545bf2ea00f2e13ab1825568b4b57f44}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a545bf2ea00f2e13ab1825568b4b57f44}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\index{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder()}{Thrust\_Allocator\_Forwarder()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+template$<$class Alt\+Vt , class Alt\+Allocator $>$ \\
+\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder} (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Alt\+Vt, Alt\+Allocator $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ab2d6a8af23093dda20c238f25cb468a7}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ab2d6a8af23093dda20c238f25cb468a7}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!allocate@{allocate}}
+\index{allocate@{allocate}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad65c1d99f764c14eb0f65dc78d36e56a}{pointer} \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::allocate (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a0d59ede93a4c3e6530494375e1e6821e}{size\+\_\+type}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a95b76730a7c648d49b47cb203d39699f}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a95b76730a7c648d49b47cb203d39699f}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!construct@{construct}}
+\index{construct@{construct}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{construct()}{construct()}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+template$<$class... Args$>$ \\
+void \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::construct (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad65c1d99f764c14eb0f65dc78d36e56a}{pointer}}]{ptr,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a9102877ab68637a741aaf421b62bb2ef}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a9102877ab68637a741aaf421b62bb2ef}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+void \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::deallocate (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad65c1d99f764c14eb0f65dc78d36e56a}{pointer}}]{ptr,  }\item[{\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a0d59ede93a4c3e6530494375e1e6821e}{size\+\_\+type}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a8f9d0dd547130ba530ba576af9eab1f7}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a8f9d0dd547130ba530ba576af9eab1f7}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!destroy@{destroy}}
+\index{destroy@{destroy}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+void \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::destroy (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad65c1d99f764c14eb0f65dc78d36e56a}{pointer}}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad1c6787a059e00423c0f763e67300352}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad1c6787a059e00423c0f763e67300352}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+template$<$class Alt\+Allocator $>$ \\
+bool \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const Alt\+Allocator \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad4787c514cb7472361fb3b1f00294e10}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ad4787c514cb7472361fb3b1f00294e10}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}\& \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a285d08cd74d4d45a3892dad8b6f29dcb}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a285d08cd74d4d45a3892dad8b6f29dcb}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}\& \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$ \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ab3bbe1ac6dcd53281d99450bc8d09934}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_ab3bbe1ac6dcd53281d99450bc8d09934}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!operator==@{operator==}}
+\index{operator==@{operator==}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+template$<$class Alt\+Allocator $>$ \\
+bool \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::operator== (\begin{DoxyParamCaption}\item[{const Alt\+Allocator \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a442d5ec3e3edaebe880f32f9054f1f52}\label{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_a442d5ec3e3edaebe880f32f9054f1f52}} 
+\index{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}!select\+\_\+on\+\_\+container\+\_\+copy\+\_\+construction@{select\+\_\+on\+\_\+container\+\_\+copy\+\_\+construction}}
+\index{select\+\_\+on\+\_\+container\+\_\+copy\+\_\+construction@{select\+\_\+on\+\_\+container\+\_\+copy\+\_\+construction}!bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder@{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}}
+\subsubsection{\texorpdfstring{select\+\_\+on\+\_\+container\+\_\+copy\+\_\+construction()}{select\_on\_container\_copy\_construction()}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class Allocator$>$ \\
+auto \hyperlink{structbc_1_1allocators_1_1Thrust__Allocator__Forwarder}{bc\+::allocators\+::\+Thrust\+\_\+\+Allocator\+\_\+\+Forwarder}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::select\+\_\+on\+\_\+container\+\_\+copy\+\_\+construction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/allocators/\hyperlink{allocator__forwarder_8h}{allocator\+\_\+forwarder.\+h}\end{DoxyCompactItemize}

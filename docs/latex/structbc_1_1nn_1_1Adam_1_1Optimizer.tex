@@ -1,0 +1,178 @@
+\hypertarget{structbc_1_1nn_1_1Adam_1_1Optimizer}{}\section{bc\+:\+:nn\+:\+:Adam\+:\+:Optimizer$<$ Tensor $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1Adam_1_1Optimizer}\index{bc\+::nn\+::\+Adam\+::\+Optimizer$<$ Tensor $>$@{bc\+::nn\+::\+Adam\+::\+Optimizer$<$ Tensor $>$}}
+
+
+{\ttfamily \#include $<$adam.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:nn\+:\+:Adam\+:\+:Optimizer$<$ Tensor $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{structbc_1_1nn_1_1Adam_1_1Optimizer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Adam\+:\+:Optimizer$<$ Tensor $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Adam_1_1Optimizer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}{value\+\_\+type} = typename \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ae7e5c0119f62f43ef74c5a463d3eaf13}{Tensor\+::value\+\_\+type}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_aaa59035413615a398b1a0b8738078a54}{system\+\_\+tag} = typename \hyperlink{classbc_1_1tensors_1_1Tensor__Base_aef100d466be9075c6682ae9a2d2bd66d}{Tensor\+::system\+\_\+tag}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a726192bbb8742fb5b00a7e0107754c14}{Optimizer} (Args \&\&... args)
+\item 
+{\footnotesize template$<$class TensorX , class Gradients $>$ }\\void \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6f24191f989e2ee969535ef87c47ac8c}{update} (TensorX \&tensor, Gradients \&\&delta)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a1e31083035a2408d089428cdf48b318c}{set\+\_\+learning\+\_\+rate} (\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}{value\+\_\+type} lr)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_ae205dfb8c1c21f0885660fcafeeaa4b8}{save} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader, std\+::string name) const
+\item 
+void \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6f2a8ae5cbfc888476d90b1edc44d0d8}{load} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader, std\+::string name)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a243fdeaa31efe0e3dfeec06fa2085c9c}{alpha} = bc\+::nn\+::default\+\_\+learning\+\_\+rate
+\item 
+\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_ac4b651475f627b4db5a0976acb2ee065}{beta\+\_\+1} = 0.\+9
+\item 
+\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_ace782b7ce94bce70e21bb0d0fa4f8dbd}{beta\+\_\+2} = 0.\+999
+\item 
+\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a33306eaa695d49731f9065593b5aa7da}{epsilon} = 1e-\/8
+\item 
+\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a8cc7829ee8d768436af25b832b58a80b}{time\+\_\+stamp} = 0
+\item 
+\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_aa715d15f98e2b2828e74abab64f3e047}{m\+\_\+t}
+\item 
+\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_aef1485ae35e3bff1f0bc4e26e84b829c}{v\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Adam_1_1Optimizer_aaa59035413615a398b1a0b8738078a54}\label{structbc_1_1nn_1_1Adam_1_1Optimizer_aaa59035413615a398b1a0b8738078a54}} 
+\index{bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+using \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer}{bc\+::nn\+::\+Adam\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_aaa59035413615a398b1a0b8738078a54}{system\+\_\+tag} =  typename \hyperlink{classbc_1_1tensors_1_1Tensor__Base_aef100d466be9075c6682ae9a2d2bd66d}{Tensor\+::system\+\_\+tag}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}\label{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}} 
+\index{bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+using \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer}{bc\+::nn\+::\+Adam\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}{value\+\_\+type} =  typename \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ae7e5c0119f62f43ef74c5a463d3eaf13}{Tensor\+::value\+\_\+type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Adam_1_1Optimizer_a726192bbb8742fb5b00a7e0107754c14}\label{structbc_1_1nn_1_1Adam_1_1Optimizer_a726192bbb8742fb5b00a7e0107754c14}} 
+\index{bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}!Optimizer@{Optimizer}}
+\index{Optimizer@{Optimizer}!bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{Optimizer()}{Optimizer()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+template$<$class... Args$>$ \\
+\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer}{bc\+::nn\+::\+Adam\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer}{Optimizer} (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Adam_1_1Optimizer_a6f2a8ae5cbfc888476d90b1edc44d0d8}\label{structbc_1_1nn_1_1Adam_1_1Optimizer_a6f2a8ae5cbfc888476d90b1edc44d0d8}} 
+\index{bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+void \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer}{bc\+::nn\+::\+Adam\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Adam_1_1Optimizer_ae205dfb8c1c21f0885660fcafeeaa4b8}\label{structbc_1_1nn_1_1Adam_1_1Optimizer_ae205dfb8c1c21f0885660fcafeeaa4b8}} 
+\index{bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}!save@{save}}
+\index{save@{save}!bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+void \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer}{bc\+::nn\+::\+Adam\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::save (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader,  }\item[{std\+::string}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Adam_1_1Optimizer_a1e31083035a2408d089428cdf48b318c}\label{structbc_1_1nn_1_1Adam_1_1Optimizer_a1e31083035a2408d089428cdf48b318c}} 
+\index{bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}!set\+\_\+learning\+\_\+rate@{set\+\_\+learning\+\_\+rate}}
+\index{set\+\_\+learning\+\_\+rate@{set\+\_\+learning\+\_\+rate}!bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{set\+\_\+learning\+\_\+rate()}{set\_learning\_rate()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+void \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer}{bc\+::nn\+::\+Adam\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::set\+\_\+learning\+\_\+rate (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}{value\+\_\+type}}]{lr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Adam_1_1Optimizer_a6f24191f989e2ee969535ef87c47ac8c}\label{structbc_1_1nn_1_1Adam_1_1Optimizer_a6f24191f989e2ee969535ef87c47ac8c}} 
+\index{bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}!update@{update}}
+\index{update@{update}!bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+template$<$class TensorX , class Gradients $>$ \\
+void \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer}{bc\+::nn\+::\+Adam\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::update (\begin{DoxyParamCaption}\item[{TensorX \&}]{tensor,  }\item[{Gradients \&\&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Adam_1_1Optimizer_a243fdeaa31efe0e3dfeec06fa2085c9c}\label{structbc_1_1nn_1_1Adam_1_1Optimizer_a243fdeaa31efe0e3dfeec06fa2085c9c}} 
+\index{bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}!alpha@{alpha}}
+\index{alpha@{alpha}!bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{alpha}{alpha}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer}{bc\+::nn\+::\+Adam\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::alpha = bc\+::nn\+::default\+\_\+learning\+\_\+rate}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Adam_1_1Optimizer_ac4b651475f627b4db5a0976acb2ee065}\label{structbc_1_1nn_1_1Adam_1_1Optimizer_ac4b651475f627b4db5a0976acb2ee065}} 
+\index{bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}!beta\+\_\+1@{beta\+\_\+1}}
+\index{beta\+\_\+1@{beta\+\_\+1}!bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{beta\+\_\+1}{beta\_1}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer}{bc\+::nn\+::\+Adam\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::beta\+\_\+1 = 0.\+9}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Adam_1_1Optimizer_ace782b7ce94bce70e21bb0d0fa4f8dbd}\label{structbc_1_1nn_1_1Adam_1_1Optimizer_ace782b7ce94bce70e21bb0d0fa4f8dbd}} 
+\index{bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}!beta\+\_\+2@{beta\+\_\+2}}
+\index{beta\+\_\+2@{beta\+\_\+2}!bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{beta\+\_\+2}{beta\_2}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer}{bc\+::nn\+::\+Adam\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::beta\+\_\+2 = 0.\+999}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Adam_1_1Optimizer_a33306eaa695d49731f9065593b5aa7da}\label{structbc_1_1nn_1_1Adam_1_1Optimizer_a33306eaa695d49731f9065593b5aa7da}} 
+\index{bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{epsilon}{epsilon}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer}{bc\+::nn\+::\+Adam\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::epsilon = 1e-\/8}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Adam_1_1Optimizer_aa715d15f98e2b2828e74abab64f3e047}\label{structbc_1_1nn_1_1Adam_1_1Optimizer_aa715d15f98e2b2828e74abab64f3e047}} 
+\index{bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}!m\+\_\+t@{m\+\_\+t}}
+\index{m\+\_\+t@{m\+\_\+t}!bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{m\+\_\+t}{m\_t}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer}{bc\+::nn\+::\+Adam\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::m\+\_\+t}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Adam_1_1Optimizer_a8cc7829ee8d768436af25b832b58a80b}\label{structbc_1_1nn_1_1Adam_1_1Optimizer_a8cc7829ee8d768436af25b832b58a80b}} 
+\index{bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}!time\+\_\+stamp@{time\+\_\+stamp}}
+\index{time\+\_\+stamp@{time\+\_\+stamp}!bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{time\+\_\+stamp}{time\_stamp}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+\hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer_a6c0f45fad49cbec9368339576806cb75}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer}{bc\+::nn\+::\+Adam\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::time\+\_\+stamp = 0}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Adam_1_1Optimizer_aef1485ae35e3bff1f0bc4e26e84b829c}\label{structbc_1_1nn_1_1Adam_1_1Optimizer_aef1485ae35e3bff1f0bc4e26e84b829c}} 
+\index{bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}!v\+\_\+t@{v\+\_\+t}}
+\index{v\+\_\+t@{v\+\_\+t}!bc\+::nn\+::\+Adam\+::\+Optimizer@{bc\+::nn\+::\+Adam\+::\+Optimizer}}
+\subsubsection{\texorpdfstring{v\+\_\+t}{v\_t}}
+{\footnotesize\ttfamily template$<$class Tensor $>$ \\
+\hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \hyperlink{structbc_1_1nn_1_1Adam_1_1Optimizer}{bc\+::nn\+::\+Adam\+::\+Optimizer}$<$ \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} $>$\+::v\+\_\+t}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/optimzers/\hyperlink{adam_8h}{adam.\+h}\end{DoxyCompactItemize}

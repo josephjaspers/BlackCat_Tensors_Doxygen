@@ -1,0 +1,4 @@
+<map id="bc::allocators::Device_Managed&lt; T &gt;" name="bc::allocators::Device_Managed&lt; T &gt;">
+<area shape="rect" id="node2" href="$structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4.html" title="The &#39;std::allocator&#39; of GPU&#45;allocators. Memory is allocated via &#39;cudaMalloc&#39;. " alt="" coords="36,95,195,136"/>
+<area shape="rect" id="node3" href="$structbc_1_1allocators_1_1Basic__Allocator__Base.html" title="bc::allocators::Basic\l_Allocator_Base\&lt; T, device_tag \&gt;" alt="" coords="5,5,225,47"/>
+</map>

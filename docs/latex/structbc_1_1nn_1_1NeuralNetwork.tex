@@ -1,0 +1,367 @@
+\hypertarget{structbc_1_1nn_1_1NeuralNetwork}{}\section{bc\+:\+:nn\+:\+:Neural\+Network$<$ Layers $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1NeuralNetwork}\index{bc\+::nn\+::\+Neural\+Network$<$ Layers $>$@{bc\+::nn\+::\+Neural\+Network$<$ Layers $>$}}
+
+
+the Neural\+\_\+\+Network  
+
+
+
+
+{\ttfamily \#include $<$network.\+h$>$}
+
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Neural\+Network$<$ Layers $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{structbc_1_1nn_1_1NeuralNetwork__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1NeuralNetwork_a4d111884489da78dc5143d0a9ea7361b}{self} = \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{Neural\+Network}$<$ Layers... $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1NeuralNetwork_a5661d3309e97f88e1fe580a9cc41d867}{is\+\_\+recurrent} = \hyperlink{structbc_1_1traits_1_1any}{bc\+::traits\+::any}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_a05af00abf685410896e4af7ebfdc3929}{detail\+::is\+\_\+recurrent\+\_\+layer}, Layers... $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1NeuralNetwork_aa313d17911ed2cfaa9355c2f7a9f6846}{layer\+\_\+chain} = \hyperlink{structbc_1_1nn_1_1LayerChain}{Layer\+Chain}$<$ \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$ 0 $>$, void, Layers... $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1NeuralNetwork_aecab2b320ed500b2a097210410605a24}{Neural\+Network} (Layers... layers)
+\begin{DoxyCompactList}\small\item\em Basic Constructor for Neural Networks. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\auto \hyperlink{structbc_1_1nn_1_1NeuralNetwork_af9aa894ca348fd7c44ec248416dcac41}{forward\+\_\+propagation} (const T \&tensor)
+\begin{DoxyCompactList}\small\item\em Calls forward propagation on each of the neural\+\_\+network\textquotesingle{}s layers The time index will be set to zero prior to each call forward\+\_\+call. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\auto \hyperlink{structbc_1_1nn_1_1NeuralNetwork_ab1cda131c79efc9b13d87a0f323c1752}{back\+\_\+propagation} (const T \&tensor)
+\begin{DoxyCompactList}\small\item\em Calls back-\/propagation on each of the neural\+\_\+network\textquotesingle{}s layers The time index will be incremented after each call to back\+\_\+propagation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\auto \hyperlink{structbc_1_1nn_1_1NeuralNetwork_a3781d20ddd5273b475bbe5abb5fc938d}{predict} (const T \&tensor)
+\begin{DoxyCompactList}\small\item\em Returns the output of a single batch. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\auto \hyperlink{structbc_1_1nn_1_1NeuralNetwork_ac2fbb1a8f2d9cf6cd82427bcf84d79ad}{single\+\_\+predict} (const T \&tensor)
+\begin{DoxyCompactList}\small\item\em Returns the output of a single input. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int X$>$ }\\auto \& \hyperlink{structbc_1_1nn_1_1NeuralNetwork_abac51be609275fbafb7786530f1ffec9}{get\+\_\+layer} () const
+\begin{DoxyCompactList}\small\item\em Returns a const reference to the layer specified by the given index. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int X$>$ }\\auto \& \hyperlink{structbc_1_1nn_1_1NeuralNetwork_a99f24e40c4a36e62896e27ee84040af2}{get\+\_\+layer} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the layer specified by the given index. \end{DoxyCompactList}\item 
+void \hyperlink{structbc_1_1nn_1_1NeuralNetwork_ab8b712ee3726a715990a22b392e07147}{set\+\_\+learning\+\_\+rate} (double lr)
+\begin{DoxyCompactList}\small\item\em Sets the learning for each layer in the Neural\+\_\+\+Network. \end{DoxyCompactList}\item 
+double \hyperlink{structbc_1_1nn_1_1NeuralNetwork_a05de79606c5922a8bf12aa4b2f5a00b9}{get\+\_\+learning\+\_\+rate} () const
+\begin{DoxyCompactList}\small\item\em Returns the current global learning rate. \end{DoxyCompactList}\item 
+void \hyperlink{structbc_1_1nn_1_1NeuralNetwork_a571b56d5df7236d38614b7cedaeb43ab}{set\+\_\+batch\+\_\+size} (int batch\+\_\+sz)
+\begin{DoxyCompactList}\small\item\em Sets the batch\+\_\+size of the entire Neural\+\_\+\+Network The intermediate values are discarded when setting the batch\+\_\+size. \end{DoxyCompactList}\item 
+void \hyperlink{structbc_1_1nn_1_1NeuralNetwork_acb6527b25dade7c62d27dcddfed04a2c}{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict} (int batch\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Copies the given batch\+\_\+index from the training cell\+\_\+state to the inference cell\+\_\+state. \end{DoxyCompactList}\item 
+void \hyperlink{structbc_1_1nn_1_1NeuralNetwork_aead05a9cd78bf9f495c0bcd6ea723bd6}{zero\+\_\+time\+\_\+index} ()
+\begin{DoxyCompactList}\small\item\em Sets the expression\+\_\+template time\+\_\+index to zero. \end{DoxyCompactList}\item 
+void \hyperlink{structbc_1_1nn_1_1NeuralNetwork_a28d1d6cf01f8bf959987cb9bdcd2bf79}{update\+\_\+weights} ()
+\begin{DoxyCompactList}\small\item\em Updates the weights of each Layer based upon the current stored gradients. \end{DoxyCompactList}\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1NeuralNetwork_aaefe5c1d79e9ba9ecae822c50bb8e31d}{input\+\_\+size} () const
+\begin{DoxyCompactList}\small\item\em returns the input\+\_\+size of the first layer \end{DoxyCompactList}\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1NeuralNetwork_a3721f03999058b98349a68d4e1a697db}{output\+\_\+size} () const
+\begin{DoxyCompactList}\small\item\em returns the output\+\_\+size of the last layer \end{DoxyCompactList}\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1NeuralNetwork_a94b394fdf99d41f16ce04585f939927f}{batch\+\_\+size} () const
+\begin{DoxyCompactList}\small\item\em returns the batch\+\_\+size of the neural network. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{structbc_1_1nn_1_1NeuralNetwork_ae5382a83cc99a5e0ff5e8107b7cca8c3}{get\+\_\+string\+\_\+architecture} () const
+\begin{DoxyCompactList}\small\item\em Returns a yaml representation of the neural network. \end{DoxyCompactList}\item 
+void \hyperlink{structbc_1_1nn_1_1NeuralNetwork_a533a431c81ec66797f2349d52d316aa3}{save} (std\+::string directory\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Creates the directory {\ttfamily directory\+\_\+name} using mkdir. \end{DoxyCompactList}\item 
+void \hyperlink{structbc_1_1nn_1_1NeuralNetwork_aa397a644190762a4907668244b46297f}{load} (std\+::string directory\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Loads a neural network from a previously saved instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1NeuralNetwork_aa313d17911ed2cfaa9355c2f7a9f6846}{layer\+\_\+chain} \hyperlink{structbc_1_1nn_1_1NeuralNetwork_ac53f5c966286089bcf3944374bcabe03}{m\+\_\+layer\+\_\+chain}
+\item 
+double \hyperlink{structbc_1_1nn_1_1NeuralNetwork_ac2241797a01d34bca13068d9329fd8fe}{m\+\_\+learning\+\_\+rate} = m\+\_\+layer\+\_\+chain.\+head().layer().\hyperlink{structbc_1_1nn_1_1NeuralNetwork_a05de79606c5922a8bf12aa4b2f5a00b9}{get\+\_\+learning\+\_\+rate}()
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1NeuralNetwork_a134b5b8e3bd6e52f38801022b3ae36a8}{m\+\_\+batch\+\_\+size} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class ... Layers$>$\newline
+struct bc\+::nn\+::\+Neural\+Network$<$ Layers $>$}
+
+the Neural\+\_\+\+Network 
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_a5661d3309e97f88e1fe580a9cc41d867}\label{structbc_1_1nn_1_1NeuralNetwork_a5661d3309e97f88e1fe580a9cc41d867}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!is\+\_\+recurrent@{is\+\_\+recurrent}}
+\index{is\+\_\+recurrent@{is\+\_\+recurrent}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{is\+\_\+recurrent}{is\_recurrent}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+using \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::\hyperlink{structbc_1_1nn_1_1NeuralNetwork_a5661d3309e97f88e1fe580a9cc41d867}{is\+\_\+recurrent} =  \hyperlink{structbc_1_1traits_1_1any}{bc\+::traits\+::any}$<$\hyperlink{namespacebc_1_1nn_1_1detail_a05af00abf685410896e4af7ebfdc3929}{detail\+::is\+\_\+recurrent\+\_\+layer}, Layers...$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_aa313d17911ed2cfaa9355c2f7a9f6846}\label{structbc_1_1nn_1_1NeuralNetwork_aa313d17911ed2cfaa9355c2f7a9f6846}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!layer\+\_\+chain@{layer\+\_\+chain}}
+\index{layer\+\_\+chain@{layer\+\_\+chain}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{layer\+\_\+chain}{layer\_chain}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+using \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::\hyperlink{structbc_1_1nn_1_1NeuralNetwork_aa313d17911ed2cfaa9355c2f7a9f6846}{layer\+\_\+chain} =  \hyperlink{structbc_1_1nn_1_1LayerChain}{Layer\+Chain}$<$ \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$0$>$, void, Layers...$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_a4d111884489da78dc5143d0a9ea7361b}\label{structbc_1_1nn_1_1NeuralNetwork_a4d111884489da78dc5143d0a9ea7361b}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!self@{self}}
+\index{self@{self}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{self}{self}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+using \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::\hyperlink{structbc_1_1nn_1_1NeuralNetwork_a4d111884489da78dc5143d0a9ea7361b}{self} =  \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{Neural\+Network}$<$Layers...$>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_aecab2b320ed500b2a097210410605a24}\label{structbc_1_1nn_1_1NeuralNetwork_aecab2b320ed500b2a097210410605a24}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!Neural\+Network@{Neural\+Network}}
+\index{Neural\+Network@{Neural\+Network}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{Neural\+Network()}{NeuralNetwork()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+\hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::\hyperlink{structbc_1_1nn_1_1NeuralNetwork}{Neural\+Network} (\begin{DoxyParamCaption}\item[{Layers...}]{layers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Basic Constructor for Neural Networks. 
+
+Accepts a variadic parameter pack of Layer-\/like objects. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_ab1cda131c79efc9b13d87a0f323c1752}\label{structbc_1_1nn_1_1NeuralNetwork_ab1cda131c79efc9b13d87a0f323c1752}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!back\+\_\+propagation@{back\+\_\+propagation}}
+\index{back\+\_\+propagation@{back\+\_\+propagation}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{back\+\_\+propagation()}{back\_propagation()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+template$<$class T $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::back\+\_\+propagation (\begin{DoxyParamCaption}\item[{const T \&}]{tensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calls back-\/propagation on each of the neural\+\_\+network\textquotesingle{}s layers The time index will be incremented after each call to back\+\_\+propagation. 
+
+Returns\+: the error of the inputs at the current time\+\_\+index. \mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_a94b394fdf99d41f16ce04585f939927f}\label{structbc_1_1nn_1_1NeuralNetwork_a94b394fdf99d41f16ce04585f939927f}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!batch\+\_\+size@{batch\+\_\+size}}
+\index{batch\+\_\+size@{batch\+\_\+size}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{batch\+\_\+size()}{batch\_size()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::batch\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns the batch\+\_\+size of the neural network. 
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_acb6527b25dade7c62d27dcddfed04a2c}\label{structbc_1_1nn_1_1NeuralNetwork_acb6527b25dade7c62d27dcddfed04a2c}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict@{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict}}
+\index{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict@{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict()}{copy\_training\_data\_to\_single\_predict()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+void \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict (\begin{DoxyParamCaption}\item[{int}]{batch\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copies the given batch\+\_\+index from the training cell\+\_\+state to the inference cell\+\_\+state. 
+
+The time\+\_\+index is set to zero after copying. \mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_af9aa894ca348fd7c44ec248416dcac41}\label{structbc_1_1nn_1_1NeuralNetwork_af9aa894ca348fd7c44ec248416dcac41}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+template$<$class T $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const T \&}]{tensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calls forward propagation on each of the neural\+\_\+network\textquotesingle{}s layers The time index will be set to zero prior to each call forward\+\_\+call. 
+
+Arguments\+: A Tensor type with the same shape as the first layer\textquotesingle{}s return value of \textquotesingle{}get\+\_\+batched\+\_\+input\+\_\+shape()\textquotesingle{}
+
+Returns\+: If the neural-\/network terminates with an \hyperlink{structbc_1_1nn_1_1Output__Layer}{Output\+\_\+\+Layer} forward-\/propagation will return a \textquotesingle{}shallow-\/copy\textquotesingle{} of the output.
+
+A shallow-\/copy will have the behavior of a Tensor class but will act as a handle to the underlying Tensor. (Passing by value will not incur a copy). \mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_abac51be609275fbafb7786530f1ffec9}\label{structbc_1_1nn_1_1NeuralNetwork_abac51be609275fbafb7786530f1ffec9}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!get\+\_\+layer@{get\+\_\+layer}}
+\index{get\+\_\+layer@{get\+\_\+layer}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{get\+\_\+layer()}{get\_layer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+template$<$int X$>$ \\
+auto\& \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::get\+\_\+layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a const reference to the layer specified by the given index. 
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_a99f24e40c4a36e62896e27ee84040af2}\label{structbc_1_1nn_1_1NeuralNetwork_a99f24e40c4a36e62896e27ee84040af2}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!get\+\_\+layer@{get\+\_\+layer}}
+\index{get\+\_\+layer@{get\+\_\+layer}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{get\+\_\+layer()}{get\_layer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+template$<$int X$>$ \\
+auto\& \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::get\+\_\+layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a reference to the layer specified by the given index. 
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_a05de79606c5922a8bf12aa4b2f5a00b9}\label{structbc_1_1nn_1_1NeuralNetwork_a05de79606c5922a8bf12aa4b2f5a00b9}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!get\+\_\+learning\+\_\+rate@{get\+\_\+learning\+\_\+rate}}
+\index{get\+\_\+learning\+\_\+rate@{get\+\_\+learning\+\_\+rate}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{get\+\_\+learning\+\_\+rate()}{get\_learning\_rate()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+double \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::get\+\_\+learning\+\_\+rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the current global learning rate. 
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_ae5382a83cc99a5e0ff5e8107b7cca8c3}\label{structbc_1_1nn_1_1NeuralNetwork_ae5382a83cc99a5e0ff5e8107b7cca8c3}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!get\+\_\+string\+\_\+architecture@{get\+\_\+string\+\_\+architecture}}
+\index{get\+\_\+string\+\_\+architecture@{get\+\_\+string\+\_\+architecture}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{get\+\_\+string\+\_\+architecture()}{get\_string\_architecture()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+std\+::string \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::get\+\_\+string\+\_\+architecture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a yaml representation of the neural network. 
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_aaefe5c1d79e9ba9ecae822c50bb8e31d}\label{structbc_1_1nn_1_1NeuralNetwork_aaefe5c1d79e9ba9ecae822c50bb8e31d}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!input\+\_\+size@{input\+\_\+size}}
+\index{input\+\_\+size@{input\+\_\+size}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{input\+\_\+size()}{input\_size()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::input\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns the input\+\_\+size of the first layer 
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_aa397a644190762a4907668244b46297f}\label{structbc_1_1nn_1_1NeuralNetwork_aa397a644190762a4907668244b46297f}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+void \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::load (\begin{DoxyParamCaption}\item[{std\+::string}]{directory\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads a neural network from a previously saved instance. 
+
+Load expects the neural-\/network to have been unused in the previous state. \mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_a3721f03999058b98349a68d4e1a697db}\label{structbc_1_1nn_1_1NeuralNetwork_a3721f03999058b98349a68d4e1a697db}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!output\+\_\+size@{output\+\_\+size}}
+\index{output\+\_\+size@{output\+\_\+size}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{output\+\_\+size()}{output\_size()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::output\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns the output\+\_\+size of the last layer 
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_a3781d20ddd5273b475bbe5abb5fc938d}\label{structbc_1_1nn_1_1NeuralNetwork_a3781d20ddd5273b475bbe5abb5fc938d}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!predict@{predict}}
+\index{predict@{predict}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+template$<$class T $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::predict (\begin{DoxyParamCaption}\item[{const T \&}]{tensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the output of a single batch. 
+
+Predict is identical to forward propagation except it does not cache the intermediate values required for back\+\_\+propagation. The inputs and outputs of each layer however are cached, as they are required for most recurrent neural networks. \mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_a533a431c81ec66797f2349d52d316aa3}\label{structbc_1_1nn_1_1NeuralNetwork_a533a431c81ec66797f2349d52d316aa3}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!save@{save}}
+\index{save@{save}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+void \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::save (\begin{DoxyParamCaption}\item[{std\+::string}]{directory\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates the directory {\ttfamily directory\+\_\+name} using mkdir. 
+
+Than outputs an architecture.\+yaml file with a description of the neural network. Than iterates through each layer and calls \textquotesingle{}save(int layer\+\_\+index, std\+::string directory\+\_\+name)\textquotesingle{} \mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_a571b56d5df7236d38614b7cedaeb43ab}\label{structbc_1_1nn_1_1NeuralNetwork_a571b56d5df7236d38614b7cedaeb43ab}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!set\+\_\+batch\+\_\+size@{set\+\_\+batch\+\_\+size}}
+\index{set\+\_\+batch\+\_\+size@{set\+\_\+batch\+\_\+size}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{set\+\_\+batch\+\_\+size()}{set\_batch\_size()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+void \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::set\+\_\+batch\+\_\+size (\begin{DoxyParamCaption}\item[{int}]{batch\+\_\+sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the batch\+\_\+size of the entire Neural\+\_\+\+Network The intermediate values are discarded when setting the batch\+\_\+size. 
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_ab8b712ee3726a715990a22b392e07147}\label{structbc_1_1nn_1_1NeuralNetwork_ab8b712ee3726a715990a22b392e07147}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!set\+\_\+learning\+\_\+rate@{set\+\_\+learning\+\_\+rate}}
+\index{set\+\_\+learning\+\_\+rate@{set\+\_\+learning\+\_\+rate}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{set\+\_\+learning\+\_\+rate()}{set\_learning\_rate()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+void \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::set\+\_\+learning\+\_\+rate (\begin{DoxyParamCaption}\item[{double}]{lr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the learning for each layer in the Neural\+\_\+\+Network. 
+
+Individual layer\textquotesingle{}s learning rates can be set by accessing them via \textquotesingle{}\hyperlink{structbc_1_1nn_1_1NeuralNetwork_a99f24e40c4a36e62896e27ee84040af2}{get\+\_\+layer$<$int index$>$()}\textquotesingle{} and calling \textquotesingle{}set\+\_\+learning\+\_\+rate\textquotesingle{} \mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_ac2fbb1a8f2d9cf6cd82427bcf84d79ad}\label{structbc_1_1nn_1_1NeuralNetwork_ac2fbb1a8f2d9cf6cd82427bcf84d79ad}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!single\+\_\+predict@{single\+\_\+predict}}
+\index{single\+\_\+predict@{single\+\_\+predict}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{single\+\_\+predict()}{single\_predict()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+template$<$class T $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::single\+\_\+predict (\begin{DoxyParamCaption}\item[{const T \&}]{tensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the output of a single input. 
+
+single\+\_\+predict is identical to predict except it accepts a non-\/batched input to forward-\/propagate on. \mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_a28d1d6cf01f8bf959987cb9bdcd2bf79}\label{structbc_1_1nn_1_1NeuralNetwork_a28d1d6cf01f8bf959987cb9bdcd2bf79}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!update\+\_\+weights@{update\+\_\+weights}}
+\index{update\+\_\+weights@{update\+\_\+weights}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{update\+\_\+weights()}{update\_weights()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+void \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::update\+\_\+weights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates the weights of each Layer based upon the current stored gradients. 
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_aead05a9cd78bf9f495c0bcd6ea723bd6}\label{structbc_1_1nn_1_1NeuralNetwork_aead05a9cd78bf9f495c0bcd6ea723bd6}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!zero\+\_\+time\+\_\+index@{zero\+\_\+time\+\_\+index}}
+\index{zero\+\_\+time\+\_\+index@{zero\+\_\+time\+\_\+index}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{zero\+\_\+time\+\_\+index()}{zero\_time\_index()}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+void \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::zero\+\_\+time\+\_\+index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the expression\+\_\+template time\+\_\+index to zero. 
+
+The time\+\_\+index dictates what intermediates to return during back\+\_\+propagation and forward\+\_\+propagation of a recurrent neural network.
+
+This value is not relevant in non-\/recurrent neural networks. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_a134b5b8e3bd6e52f38801022b3ae36a8}\label{structbc_1_1nn_1_1NeuralNetwork_a134b5b8e3bd6e52f38801022b3ae36a8}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!m\+\_\+batch\+\_\+size@{m\+\_\+batch\+\_\+size}}
+\index{m\+\_\+batch\+\_\+size@{m\+\_\+batch\+\_\+size}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{m\+\_\+batch\+\_\+size}{m\_batch\_size}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::m\+\_\+batch\+\_\+size = 1}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_ac53f5c966286089bcf3944374bcabe03}\label{structbc_1_1nn_1_1NeuralNetwork_ac53f5c966286089bcf3944374bcabe03}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!m\+\_\+layer\+\_\+chain@{m\+\_\+layer\+\_\+chain}}
+\index{m\+\_\+layer\+\_\+chain@{m\+\_\+layer\+\_\+chain}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{m\+\_\+layer\+\_\+chain}{m\_layer\_chain}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+\hyperlink{structbc_1_1nn_1_1NeuralNetwork_aa313d17911ed2cfaa9355c2f7a9f6846}{layer\+\_\+chain} \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::m\+\_\+layer\+\_\+chain}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1NeuralNetwork_ac2241797a01d34bca13068d9329fd8fe}\label{structbc_1_1nn_1_1NeuralNetwork_ac2241797a01d34bca13068d9329fd8fe}} 
+\index{bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}!m\+\_\+learning\+\_\+rate@{m\+\_\+learning\+\_\+rate}}
+\index{m\+\_\+learning\+\_\+rate@{m\+\_\+learning\+\_\+rate}!bc\+::nn\+::\+Neural\+Network@{bc\+::nn\+::\+Neural\+Network}}
+\subsubsection{\texorpdfstring{m\+\_\+learning\+\_\+rate}{m\_learning\_rate}}
+{\footnotesize\ttfamily template$<$class ... Layers$>$ \\
+double \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network}$<$ Layers $>$\+::m\+\_\+learning\+\_\+rate = m\+\_\+layer\+\_\+chain.\+head().layer().\hyperlink{structbc_1_1nn_1_1NeuralNetwork_a05de79606c5922a8bf12aa4b2f5a00b9}{get\+\_\+learning\+\_\+rate}()}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/\hyperlink{network_8h}{network.\+h}\end{DoxyCompactItemize}

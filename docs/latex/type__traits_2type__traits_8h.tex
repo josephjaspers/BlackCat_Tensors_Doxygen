@@ -1,0 +1,99 @@
+\hypertarget{type__traits_2type__traits_8h}{}\section{blackcat/type\+\_\+traits/type\+\_\+traits.h File Reference}
+\label{type__traits_2type__traits_8h}\index{blackcat/type\+\_\+traits/type\+\_\+traits.\+h@{blackcat/type\+\_\+traits/type\+\_\+traits.\+h}}
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}get.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}constexpr\+\_\+if.\+h\char`\"{}}\newline
+Include dependency graph for type\+\_\+traits.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{type__traits_2type__traits_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{type__traits_2type__traits_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1detail_1_1DISABLE}{bc\+::traits\+::detail\+::\+D\+I\+S\+A\+B\+L\+E$<$ class $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1using__type}{bc\+::traits\+::using\+\_\+type$<$ T $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1is__detected}{bc\+::traits\+::is\+\_\+detected$<$ func, T, voider $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1is__detected_3_01func_00_01T_00_01enable__if__t_3_01true__v_3_01func_3_01T_01_4_01_4_01_4_01_4}{bc\+::traits\+::is\+\_\+detected$<$ func, T, enable\+\_\+if\+\_\+t$<$ true\+\_\+v$<$ func$<$ T $>$ $>$ $>$ $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1conditional__detected}{bc\+::traits\+::conditional\+\_\+detected$<$ func, Test\+Type, Default\+Type, enabler $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1conditional__detected_3_01func_00_01TestType_00_01DefaultType_00_01enable_bd91878b3704fd95a7d312facc7e7c31}{bc\+::traits\+::conditional\+\_\+detected$<$ func, Test\+Type, Default\+Type, enable\+\_\+if\+\_\+t$<$ is\+\_\+detected\+\_\+v$<$ func, Test\+Type $>$ $>$ $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1is__template__same}{bc\+::traits\+::is\+\_\+template\+\_\+same$<$ T, U $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1is__template__same_3_01T_3_01Args1_8_8_8_01_4_00_01T_3_01Args2_8_8_8_01_4_01_4}{bc\+::traits\+::is\+\_\+template\+\_\+same$<$ T$<$ Args1... $>$, T$<$ Args2... $>$ $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1all}{bc\+::traits\+::all$<$ Function, Ts $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1all_3_01Function_00_01T_00_01Ts_8_8_8_01_4}{bc\+::traits\+::all$<$ Function, T, Ts... $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1any}{bc\+::traits\+::any$<$ Function, Ts $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1any_3_01Function_00_01T_00_01Ts_8_8_8_01_4}{bc\+::traits\+::any$<$ Function, T, Ts... $>$}
+\item 
+class \hyperlink{classbc_1_1traits_1_1sequence__of}{bc\+::traits\+::sequence\+\_\+of$<$ T, Ts $>$}
+\item 
+class \hyperlink{classbc_1_1traits_1_1sequence__contains}{bc\+::traits\+::sequence\+\_\+contains$<$ T, Ts $>$}
+\item 
+class \hyperlink{classbc_1_1traits_1_1sequence__first}{bc\+::traits\+::sequence\+\_\+first$<$ T, Ts $>$}
+\item 
+class \hyperlink{classbc_1_1traits_1_1sequence__last}{bc\+::traits\+::sequence\+\_\+last$<$ T, Ts $>$}
+\item 
+class \hyperlink{classbc_1_1traits_1_1sequence__last_3_01T_01_4}{bc\+::traits\+::sequence\+\_\+last$<$ T $>$}
+\item 
+class \hyperlink{classbc_1_1traits_1_1None}{bc\+::traits\+::\+None}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1common__traits}{bc\+::traits\+::common\+\_\+traits$<$ T $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1Type}{bc\+::traits\+::\+Type$<$ T $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1traits}{bc\+::traits}
+\item 
+ \hyperlink{namespacebc_1_1traits_1_1detail}{bc\+::traits\+::detail}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$bool x, class T $>$ }\\using \hyperlink{namespacebc_1_1traits_acd61b56f095b67b85ccbe21d8bb1cd8d}{bc\+::traits\+::only\+\_\+if} = conditional\+\_\+t$<$ x, T, detail\+::\+D\+I\+S\+A\+B\+LE$<$ T $>$ $>$
+\item 
+{\footnotesize template$<$class... $>$ }\\using \hyperlink{namespacebc_1_1traits_a41800b73eece865ca4b2b2faaac9974a}{bc\+::traits\+::void\+\_\+t} = void
+\item 
+{\footnotesize template$<$class... $>$ }\\using \hyperlink{namespacebc_1_1traits_a5753b5335a2644153a1e6a98209b0b22}{bc\+::traits\+::true\+\_\+t} = true\+\_\+type
+\item 
+{\footnotesize template$<$class... $>$ }\\using \hyperlink{namespacebc_1_1traits_a8742be07ccb2e54481314368169dd551}{bc\+::traits\+::false\+\_\+t} = false\+\_\+type
+\item 
+{\footnotesize template$<$bool Bool$>$ }\\using \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{bc\+::traits\+::truth\+\_\+type} = conditional\+\_\+t$<$ Bool, true\+\_\+type, false\+\_\+type $>$
+\item 
+{\footnotesize template$<$bool cond$>$ }\\using \hyperlink{namespacebc_1_1traits_a27454511d91930df60d099d9afdf46ff}{bc\+::traits\+::not\+\_\+type} = conditional\+\_\+t$<$ cond, false\+\_\+type, true\+\_\+type $>$
+\item 
+{\footnotesize template$<$template$<$ class $>$ class func, class Test\+Type , class Default\+Type $>$ }\\using \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t} = typename conditional\+\_\+detected$<$ func, Test\+Type, Default\+Type $>$\+::type
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1traits_a40b9437a2ec1bb34ee7d506c8053f906}{bc\+::traits\+::query\+\_\+value\+\_\+type} = typename T\+::value\+\_\+type
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1traits_ab141f0cc8348b4b7ebcb48e6bbb50d09}{bc\+::traits\+::query\+\_\+allocator\+\_\+type} = typename T\+::allocator\+\_\+type
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1traits_acfa34d40f06d5122586d7adefdfeb42f}{bc\+::traits\+::query\+\_\+system\+\_\+tag} = typename T\+::system\+\_\+tag
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1traits_ae56dfced2583c1fbec104bcbdc2f1b44}{bc\+::traits\+::query\+\_\+get\+\_\+stream} = decltype(std\+::declval$<$ T $>$().get\+\_\+stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1traits_a7843a6596fe24415ac9e5eb4d804726a}{bc\+::traits\+::query\+\_\+get\+\_\+allocator} = decltype(std\+::declval$<$ T $>$().get\+\_\+allocator)
+\end{DoxyCompactItemize}

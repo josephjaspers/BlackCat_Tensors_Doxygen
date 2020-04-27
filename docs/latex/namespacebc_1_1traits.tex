@@ -1,0 +1,277 @@
+\hypertarget{namespacebc_1_1traits}{}\section{bc\+:\+:traits Namespace Reference}
+\label{namespacebc_1_1traits}\index{bc\+::traits@{bc\+::traits}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc_1_1traits_1_1common}{common}
+\item 
+ \hyperlink{namespacebc_1_1traits_1_1detail}{detail}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1all}{all}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1all_3_01Function_00_01T_00_01Ts_8_8_8_01_4}{all$<$ Function, T, Ts... $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1any}{any}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1any_3_01Function_00_01T_00_01Ts_8_8_8_01_4}{any$<$ Function, T, Ts... $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1Bind}{Bind}
+\begin{DoxyCompactList}\small\item\em Similar to std\+::bind but the evaluation of the function in respect to its bound arguments are deduced if and only if the function is called. \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1traits_1_1common__traits}{common\+\_\+traits}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1conditional__detected}{conditional\+\_\+detected}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1conditional__detected_3_01func_00_01TestType_00_01DefaultType_00_01enable_bd91878b3704fd95a7d312facc7e7c31}{conditional\+\_\+detected$<$ func, Test\+Type, Default\+Type, enable\+\_\+if\+\_\+t$<$ is\+\_\+detected\+\_\+v$<$ func, Test\+Type $>$ $>$ $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1Integer}{Integer}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1is__detected}{is\+\_\+detected}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1is__detected_3_01func_00_01T_00_01enable__if__t_3_01true__v_3_01func_3_01T_01_4_01_4_01_4_01_4}{is\+\_\+detected$<$ func, T, enable\+\_\+if\+\_\+t$<$ true\+\_\+v$<$ func$<$ T $>$ $>$ $>$ $>$}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1is__template__same}{is\+\_\+template\+\_\+same}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1is__template__same_3_01T_3_01Args1_8_8_8_01_4_00_01T_3_01Args2_8_8_8_01_4_01_4}{is\+\_\+template\+\_\+same$<$ T$<$ Args1... $>$, T$<$ Args2... $>$ $>$}
+\item 
+class \hyperlink{classbc_1_1traits_1_1None}{None}
+\item 
+class \hyperlink{classbc_1_1traits_1_1sequence__contains}{sequence\+\_\+contains}
+\item 
+class \hyperlink{classbc_1_1traits_1_1sequence__first}{sequence\+\_\+first}
+\item 
+class \hyperlink{classbc_1_1traits_1_1sequence__last}{sequence\+\_\+last}
+\item 
+class \hyperlink{classbc_1_1traits_1_1sequence__last_3_01T_01_4}{sequence\+\_\+last$<$ T $>$}
+\item 
+class \hyperlink{classbc_1_1traits_1_1sequence__of}{sequence\+\_\+of}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1Type}{Type}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1using__type}{using\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$bool x, class T $>$ }\\using \hyperlink{namespacebc_1_1traits_acd61b56f095b67b85ccbe21d8bb1cd8d}{only\+\_\+if} = conditional\+\_\+t$<$ x, T, \hyperlink{structbc_1_1traits_1_1detail_1_1DISABLE}{detail\+::\+D\+I\+S\+A\+B\+LE}$<$ T $>$ $>$
+\item 
+{\footnotesize template$<$class... $>$ }\\using \hyperlink{namespacebc_1_1traits_a41800b73eece865ca4b2b2faaac9974a}{void\+\_\+t} = void
+\item 
+{\footnotesize template$<$class... $>$ }\\using \hyperlink{namespacebc_1_1traits_a5753b5335a2644153a1e6a98209b0b22}{true\+\_\+t} = true\+\_\+type
+\item 
+{\footnotesize template$<$class... $>$ }\\using \hyperlink{namespacebc_1_1traits_a8742be07ccb2e54481314368169dd551}{false\+\_\+t} = false\+\_\+type
+\item 
+{\footnotesize template$<$bool Bool$>$ }\\using \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{truth\+\_\+type} = conditional\+\_\+t$<$ Bool, true\+\_\+type, false\+\_\+type $>$
+\item 
+{\footnotesize template$<$bool cond$>$ }\\using \hyperlink{namespacebc_1_1traits_a27454511d91930df60d099d9afdf46ff}{not\+\_\+type} = conditional\+\_\+t$<$ cond, false\+\_\+type, true\+\_\+type $>$
+\item 
+{\footnotesize template$<$template$<$ class $>$ class func, class Test\+Type , class Default\+Type $>$ }\\using \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{conditional\+\_\+detected\+\_\+t} = typename \hyperlink{structbc_1_1traits_1_1conditional__detected}{conditional\+\_\+detected}$<$ func, Test\+Type, Default\+Type $>$\+::type
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1traits_a40b9437a2ec1bb34ee7d506c8053f906}{query\+\_\+value\+\_\+type} = typename T\+::value\+\_\+type
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1traits_ab141f0cc8348b4b7ebcb48e6bbb50d09}{query\+\_\+allocator\+\_\+type} = typename T\+::allocator\+\_\+type
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1traits_acfa34d40f06d5122586d7adefdfeb42f}{query\+\_\+system\+\_\+tag} = typename T\+::system\+\_\+tag
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1traits_ae56dfced2583c1fbec104bcbdc2f1b44}{query\+\_\+get\+\_\+stream} = decltype(std\+::declval$<$ T $>$().get\+\_\+stream)
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1traits_a7843a6596fe24415ac9e5eb4d804726a}{query\+\_\+get\+\_\+allocator} = decltype(std\+::declval$<$ T $>$().get\+\_\+allocator)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Function , class... Args$>$ }\\\hyperlink{structbc_1_1traits_1_1Bind}{Bind}$<$ Function, Args \&\&... $>$ \hyperlink{namespacebc_1_1traits_aec399a77e3255fad556ea6ed08f792d0}{bind} (Function function, Args \&\&... args)
+\item 
+{\footnotesize template$<$bool cond, class f1 , class f2 $>$ }\\auto \hyperlink{namespacebc_1_1traits_aa4c93747b314d63ac574b3fa27e34eef}{constexpr\+\_\+ternary} (f1 true\+\_\+path, f2 false\+\_\+path)
+\begin{DoxyCompactList}\small\item\em C++ 11/14 version of constexpr if. \end{DoxyCompactList}\item 
+{\footnotesize template$<$bool Bool, class Function $>$ }\\auto \hyperlink{namespacebc_1_1traits_ab6293ec3371433ca2f273e02f72aa70e}{constexpr\+\_\+if} (Function function)
+\item 
+{\footnotesize template$<$bool Bool, class F1 , class F2 $>$ }\\auto \hyperlink{namespacebc_1_1traits_a60d74848292fcb1b276f776b66727e92}{constexpr\+\_\+if} (F1 f1, F2 f2)
+\item 
+{\footnotesize template$<$bool Bool, class Function $>$ }\\auto \hyperlink{namespacebc_1_1traits_a187b6bbba1f4f1c91daf80ae5e4f9813}{constexpr\+\_\+else\+\_\+if} (Function function)
+\item 
+{\footnotesize template$<$bool Bool, class F1 , class F2 $>$ }\\auto \hyperlink{namespacebc_1_1traits_a28fc737e50096740cbbbacb6e45fcb41}{constexpr\+\_\+else\+\_\+if} (F1 f1, F2 f2)
+\item 
+{\footnotesize template$<$class Function $>$ }\\auto \hyperlink{namespacebc_1_1traits_a30bcb0bd6da49472c9289e6ee043c827}{constexpr\+\_\+else} (Function function)
+\item 
+{\footnotesize template$<$int Index, class... Args$>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ auto \hyperlink{namespacebc_1_1traits_a4de446de235c05a01f9143b54df5a136}{get} (Args \&\&... args) -\/$>$ decltype(\hyperlink{namespacebc_1_1traits_1_1detail_a7f1703c90df0f8695969542729765428}{detail\+::get\+\_\+impl}(\hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ Index $>$(), std\+::forward$<$ Args $>$(args)...))
+\item 
+{\footnotesize template$<$class... Args$>$ }\\auto \hyperlink{namespacebc_1_1traits_a96ff03a1928b8a28225a152f7a093cdf}{get\+\_\+last} (Args \&\&... args) -\/$>$ decltype(\hyperlink{namespacebc_1_1traits_a4de446de235c05a01f9143b54df5a136}{get}$<$ sizeof...(Args) -\/1 $>$(std\+::forward$<$ Args $>$(args)...))
+\item 
+{\footnotesize template$<$class Arg , class... Args$>$ }\\auto \hyperlink{namespacebc_1_1traits_ad9cf2c4adfbd50e98364152dfd32174a}{get\+\_\+first} (Arg \&\&arg, Args \&\&... args) -\/$>$ decltype(std\+::forward$<$ Arg $>$(arg))
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}\label{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}} 
+\index{bc\+::traits@{bc\+::traits}!conditional\+\_\+detected\+\_\+t@{conditional\+\_\+detected\+\_\+t}}
+\index{conditional\+\_\+detected\+\_\+t@{conditional\+\_\+detected\+\_\+t}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{conditional\+\_\+detected\+\_\+t}{conditional\_detected\_t}}
+{\footnotesize\ttfamily template$<$template$<$ class $>$ class func, class Test\+Type , class Default\+Type $>$ \\
+using \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t} = typedef typename \hyperlink{structbc_1_1traits_1_1conditional__detected}{conditional\+\_\+detected}$<$func, Test\+Type, Default\+Type$>$\+::type}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_a8742be07ccb2e54481314368169dd551}\label{namespacebc_1_1traits_a8742be07ccb2e54481314368169dd551}} 
+\index{bc\+::traits@{bc\+::traits}!false\+\_\+t@{false\+\_\+t}}
+\index{false\+\_\+t@{false\+\_\+t}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{false\+\_\+t}{false\_t}}
+{\footnotesize\ttfamily template$<$class... $>$ \\
+using \hyperlink{namespacebc_1_1traits_a8742be07ccb2e54481314368169dd551}{bc\+::traits\+::false\+\_\+t} = typedef false\+\_\+type}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_a27454511d91930df60d099d9afdf46ff}\label{namespacebc_1_1traits_a27454511d91930df60d099d9afdf46ff}} 
+\index{bc\+::traits@{bc\+::traits}!not\+\_\+type@{not\+\_\+type}}
+\index{not\+\_\+type@{not\+\_\+type}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{not\+\_\+type}{not\_type}}
+{\footnotesize\ttfamily template$<$bool cond$>$ \\
+using \hyperlink{namespacebc_1_1traits_a27454511d91930df60d099d9afdf46ff}{bc\+::traits\+::not\+\_\+type} = typedef conditional\+\_\+t$<$cond, false\+\_\+type, true\+\_\+type$>$}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_acd61b56f095b67b85ccbe21d8bb1cd8d}\label{namespacebc_1_1traits_acd61b56f095b67b85ccbe21d8bb1cd8d}} 
+\index{bc\+::traits@{bc\+::traits}!only\+\_\+if@{only\+\_\+if}}
+\index{only\+\_\+if@{only\+\_\+if}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{only\+\_\+if}{only\_if}}
+{\footnotesize\ttfamily template$<$bool x, class T $>$ \\
+using \hyperlink{namespacebc_1_1traits_acd61b56f095b67b85ccbe21d8bb1cd8d}{bc\+::traits\+::only\+\_\+if} = typedef conditional\+\_\+t$<$x, T, \hyperlink{structbc_1_1traits_1_1detail_1_1DISABLE}{detail\+::\+D\+I\+S\+A\+B\+LE}$<$T$>$ $>$}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_ab141f0cc8348b4b7ebcb48e6bbb50d09}\label{namespacebc_1_1traits_ab141f0cc8348b4b7ebcb48e6bbb50d09}} 
+\index{bc\+::traits@{bc\+::traits}!query\+\_\+allocator\+\_\+type@{query\+\_\+allocator\+\_\+type}}
+\index{query\+\_\+allocator\+\_\+type@{query\+\_\+allocator\+\_\+type}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{query\+\_\+allocator\+\_\+type}{query\_allocator\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1traits_ab141f0cc8348b4b7ebcb48e6bbb50d09}{bc\+::traits\+::query\+\_\+allocator\+\_\+type} = typedef typename T\+::allocator\+\_\+type}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_a7843a6596fe24415ac9e5eb4d804726a}\label{namespacebc_1_1traits_a7843a6596fe24415ac9e5eb4d804726a}} 
+\index{bc\+::traits@{bc\+::traits}!query\+\_\+get\+\_\+allocator@{query\+\_\+get\+\_\+allocator}}
+\index{query\+\_\+get\+\_\+allocator@{query\+\_\+get\+\_\+allocator}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{query\+\_\+get\+\_\+allocator}{query\_get\_allocator}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1traits_a7843a6596fe24415ac9e5eb4d804726a}{bc\+::traits\+::query\+\_\+get\+\_\+allocator} = typedef decltype(std\+::declval$<$T$>$().get\+\_\+allocator)}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_ae56dfced2583c1fbec104bcbdc2f1b44}\label{namespacebc_1_1traits_ae56dfced2583c1fbec104bcbdc2f1b44}} 
+\index{bc\+::traits@{bc\+::traits}!query\+\_\+get\+\_\+stream@{query\+\_\+get\+\_\+stream}}
+\index{query\+\_\+get\+\_\+stream@{query\+\_\+get\+\_\+stream}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{query\+\_\+get\+\_\+stream}{query\_get\_stream}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1traits_ae56dfced2583c1fbec104bcbdc2f1b44}{bc\+::traits\+::query\+\_\+get\+\_\+stream} = typedef decltype(std\+::declval$<$T$>$().get\+\_\+stream)}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_acfa34d40f06d5122586d7adefdfeb42f}\label{namespacebc_1_1traits_acfa34d40f06d5122586d7adefdfeb42f}} 
+\index{bc\+::traits@{bc\+::traits}!query\+\_\+system\+\_\+tag@{query\+\_\+system\+\_\+tag}}
+\index{query\+\_\+system\+\_\+tag@{query\+\_\+system\+\_\+tag}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{query\+\_\+system\+\_\+tag}{query\_system\_tag}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1traits_acfa34d40f06d5122586d7adefdfeb42f}{bc\+::traits\+::query\+\_\+system\+\_\+tag} = typedef typename T\+::system\+\_\+tag}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_a40b9437a2ec1bb34ee7d506c8053f906}\label{namespacebc_1_1traits_a40b9437a2ec1bb34ee7d506c8053f906}} 
+\index{bc\+::traits@{bc\+::traits}!query\+\_\+value\+\_\+type@{query\+\_\+value\+\_\+type}}
+\index{query\+\_\+value\+\_\+type@{query\+\_\+value\+\_\+type}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{query\+\_\+value\+\_\+type}{query\_value\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1traits_a40b9437a2ec1bb34ee7d506c8053f906}{bc\+::traits\+::query\+\_\+value\+\_\+type} = typedef typename T\+::value\+\_\+type}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_a5753b5335a2644153a1e6a98209b0b22}\label{namespacebc_1_1traits_a5753b5335a2644153a1e6a98209b0b22}} 
+\index{bc\+::traits@{bc\+::traits}!true\+\_\+t@{true\+\_\+t}}
+\index{true\+\_\+t@{true\+\_\+t}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{true\+\_\+t}{true\_t}}
+{\footnotesize\ttfamily template$<$class... $>$ \\
+using \hyperlink{namespacebc_1_1traits_a5753b5335a2644153a1e6a98209b0b22}{bc\+::traits\+::true\+\_\+t} = typedef true\+\_\+type}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}\label{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}} 
+\index{bc\+::traits@{bc\+::traits}!truth\+\_\+type@{truth\+\_\+type}}
+\index{truth\+\_\+type@{truth\+\_\+type}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{truth\+\_\+type}{truth\_type}}
+{\footnotesize\ttfamily template$<$bool Bool$>$ \\
+using \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{bc\+::traits\+::truth\+\_\+type} = typedef conditional\+\_\+t$<$Bool, true\+\_\+type, false\+\_\+type$>$}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_a41800b73eece865ca4b2b2faaac9974a}\label{namespacebc_1_1traits_a41800b73eece865ca4b2b2faaac9974a}} 
+\index{bc\+::traits@{bc\+::traits}!void\+\_\+t@{void\+\_\+t}}
+\index{void\+\_\+t@{void\+\_\+t}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{void\+\_\+t}{void\_t}}
+{\footnotesize\ttfamily template$<$class... $>$ \\
+using \hyperlink{namespacebc_1_1traits_a41800b73eece865ca4b2b2faaac9974a}{bc\+::traits\+::void\+\_\+t} = typedef void}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacebc_1_1traits_aec399a77e3255fad556ea6ed08f792d0}\label{namespacebc_1_1traits_aec399a77e3255fad556ea6ed08f792d0}} 
+\index{bc\+::traits@{bc\+::traits}!bind@{bind}}
+\index{bind@{bind}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily template$<$class Function , class... Args$>$ \\
+\hyperlink{structbc_1_1traits_1_1Bind}{Bind}$<$Function, Args\&\&...$>$ bc\+::traits\+::bind (\begin{DoxyParamCaption}\item[{Function}]{function,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_a30bcb0bd6da49472c9289e6ee043c827}\label{namespacebc_1_1traits_a30bcb0bd6da49472c9289e6ee043c827}} 
+\index{bc\+::traits@{bc\+::traits}!constexpr\+\_\+else@{constexpr\+\_\+else}}
+\index{constexpr\+\_\+else@{constexpr\+\_\+else}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{constexpr\+\_\+else()}{constexpr\_else()}}
+{\footnotesize\ttfamily template$<$class Function $>$ \\
+auto bc\+::traits\+::constexpr\+\_\+else (\begin{DoxyParamCaption}\item[{Function}]{function }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_a187b6bbba1f4f1c91daf80ae5e4f9813}\label{namespacebc_1_1traits_a187b6bbba1f4f1c91daf80ae5e4f9813}} 
+\index{bc\+::traits@{bc\+::traits}!constexpr\+\_\+else\+\_\+if@{constexpr\+\_\+else\+\_\+if}}
+\index{constexpr\+\_\+else\+\_\+if@{constexpr\+\_\+else\+\_\+if}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{constexpr\+\_\+else\+\_\+if()}{constexpr\_else\_if()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$bool Bool, class Function $>$ \\
+auto bc\+::traits\+::constexpr\+\_\+else\+\_\+if (\begin{DoxyParamCaption}\item[{Function}]{function }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_a28fc737e50096740cbbbacb6e45fcb41}\label{namespacebc_1_1traits_a28fc737e50096740cbbbacb6e45fcb41}} 
+\index{bc\+::traits@{bc\+::traits}!constexpr\+\_\+else\+\_\+if@{constexpr\+\_\+else\+\_\+if}}
+\index{constexpr\+\_\+else\+\_\+if@{constexpr\+\_\+else\+\_\+if}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{constexpr\+\_\+else\+\_\+if()}{constexpr\_else\_if()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$bool Bool, class F1 , class F2 $>$ \\
+auto bc\+::traits\+::constexpr\+\_\+else\+\_\+if (\begin{DoxyParamCaption}\item[{F1}]{f1,  }\item[{F2}]{f2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_ab6293ec3371433ca2f273e02f72aa70e}\label{namespacebc_1_1traits_ab6293ec3371433ca2f273e02f72aa70e}} 
+\index{bc\+::traits@{bc\+::traits}!constexpr\+\_\+if@{constexpr\+\_\+if}}
+\index{constexpr\+\_\+if@{constexpr\+\_\+if}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{constexpr\+\_\+if()}{constexpr\_if()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$bool Bool, class Function $>$ \\
+auto bc\+::traits\+::constexpr\+\_\+if (\begin{DoxyParamCaption}\item[{Function}]{function }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_a60d74848292fcb1b276f776b66727e92}\label{namespacebc_1_1traits_a60d74848292fcb1b276f776b66727e92}} 
+\index{bc\+::traits@{bc\+::traits}!constexpr\+\_\+if@{constexpr\+\_\+if}}
+\index{constexpr\+\_\+if@{constexpr\+\_\+if}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{constexpr\+\_\+if()}{constexpr\_if()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$bool Bool, class F1 , class F2 $>$ \\
+auto bc\+::traits\+::constexpr\+\_\+if (\begin{DoxyParamCaption}\item[{F1}]{f1,  }\item[{F2}]{f2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_aa4c93747b314d63ac574b3fa27e34eef}\label{namespacebc_1_1traits_aa4c93747b314d63ac574b3fa27e34eef}} 
+\index{bc\+::traits@{bc\+::traits}!constexpr\+\_\+ternary@{constexpr\+\_\+ternary}}
+\index{constexpr\+\_\+ternary@{constexpr\+\_\+ternary}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{constexpr\+\_\+ternary()}{constexpr\_ternary()}}
+{\footnotesize\ttfamily template$<$bool cond, class f1 , class f2 $>$ \\
+auto bc\+::traits\+::constexpr\+\_\+ternary (\begin{DoxyParamCaption}\item[{f1}]{true\+\_\+path,  }\item[{f2}]{false\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+C++ 11/14 version of constexpr if. 
+
+(Required because N\+V\+CC doesn\textquotesingle{}t support C++17)
+
+Accepts a constexpr bool template argument, and one or two functors (that take no arguments) if true, calls and returns the first functor, else the second.
+
+Example\+:
+
+int main() \{ return \hyperlink{namespacebc_1_1traits_ab6293ec3371433ca2f273e02f72aa70e}{bc\+::traits\+::constexpr\+\_\+if$<$true$>$}( \mbox{[}\mbox{]}() \{ std\+::cout $<$$<$ \char`\"{} constexpr\+\_\+boolean is true  \char`\"{} $<$$<$ std\+::endl; return true; \}, \mbox{[}\mbox{]}() \{ std\+::cout $<$$<$ \char`\"{} constexpr\+\_\+boolean is false \char`\"{} $<$$<$ std\+::endl; return false; \} ); \} output\+: constexpr\+\_\+boolean is true \mbox{\Hypertarget{namespacebc_1_1traits_a4de446de235c05a01f9143b54df5a136}\label{namespacebc_1_1traits_a4de446de235c05a01f9143b54df5a136}} 
+\index{bc\+::traits@{bc\+::traits}!get@{get}}
+\index{get@{get}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$int Index, class... Args$>$ \\
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ auto bc\+::traits\+::get (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption}) -\/$>$ decltype(\hyperlink{namespacebc_1_1traits_1_1detail_a7f1703c90df0f8695969542729765428}{detail\+::get\+\_\+impl}(\hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$Index$>$(), std\+::forward$<$Args$>$(args)...))
+\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_ad9cf2c4adfbd50e98364152dfd32174a}\label{namespacebc_1_1traits_ad9cf2c4adfbd50e98364152dfd32174a}} 
+\index{bc\+::traits@{bc\+::traits}!get\+\_\+first@{get\+\_\+first}}
+\index{get\+\_\+first@{get\+\_\+first}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{get\+\_\+first()}{get\_first()}}
+{\footnotesize\ttfamily template$<$class Arg , class... Args$>$ \\
+auto bc\+::traits\+::get\+\_\+first (\begin{DoxyParamCaption}\item[{Arg \&\&}]{arg,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption}) -\/$>$ decltype(std\+::forward$<$Arg$>$(arg))
+}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_a96ff03a1928b8a28225a152f7a093cdf}\label{namespacebc_1_1traits_a96ff03a1928b8a28225a152f7a093cdf}} 
+\index{bc\+::traits@{bc\+::traits}!get\+\_\+last@{get\+\_\+last}}
+\index{get\+\_\+last@{get\+\_\+last}!bc\+::traits@{bc\+::traits}}
+\subsubsection{\texorpdfstring{get\+\_\+last()}{get\_last()}}
+{\footnotesize\ttfamily template$<$class... Args$>$ \\
+auto bc\+::traits\+::get\+\_\+last (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption}) -\/$>$ decltype(\hyperlink{namespacebc_1_1traits_a4de446de235c05a01f9143b54df5a136}{get}$<$sizeof...(Args)-\/1$>$(std\+::forward$<$Args$>$(args)...))
+}
+

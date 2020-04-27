@@ -1,0 +1,226 @@
+\hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{}\section{bc\+:\+:tensors\+:\+:exprs\+:\+:Kernel\+\_\+\+Array$<$ Shape, Value\+Type, System\+Tag, Tags $>$ Struct Template Reference}
+\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array$<$ Shape, Value\+Type, System\+Tag, Tags $>$@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array$<$ Shape, Value\+Type, System\+Tag, Tags $>$}}
+
+
+{\ttfamily \#include $<$array\+\_\+kernel\+\_\+array.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:tensors\+:\+:exprs\+:\+:Kernel\+\_\+\+Array$<$ Shape, Value\+Type, System\+Tag, Tags $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1tensors_1_1exprs_1_1Kernel__Array__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:tensors\+:\+:exprs\+:\+:Kernel\+\_\+\+Array$<$ Shape, Value\+Type, System\+Tag, Tags $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1tensors_1_1exprs_1_1Kernel__Array__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae8195ebc960dd40b6c731a269c00e37b}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a3e7ac04624aaeb892ed9f2cf2f51c051}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae6a4db456a47818cda06bb76d05a3b6e}{shape\+\_\+type} = \hyperlink{structbc_1_1Shape}{Shape}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_aa95e24993611ac81660689a5f95529e4}{Kernel\+\_\+\+Array} ()
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_aabd83677fd69cc08ffdc444335bcfee5}{Kernel\+\_\+\+Array} (\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae6a4db456a47818cda06bb76d05a3b6e}{shape\+\_\+type} \hyperlink{namespacebc_a1bc6dec532973ac024c738c0fd32cca3}{shape}, \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae8195ebc960dd40b6c731a269c00e37b}{value\+\_\+type} $\ast$ptr)
+\item 
+{\footnotesize template$<$class Allocator\+Type , class  = std\+::enable\+\_\+if\+\_\+t$<$				bc\+::traits\+::true\+\_\+v$<$						decltype(std\+::declval$<$\+Allocator\+Type$>$().\+allocate(0))$>$$>$$>$ }\\\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a07ea2391c45d7a07913bcf361e4ecc22}{Kernel\+\_\+\+Array} (\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae6a4db456a47818cda06bb76d05a3b6e}{shape\+\_\+type} \hyperlink{namespacebc_a1bc6dec532973ac024c738c0fd32cca3}{shape}, Allocator\+Type allocator)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae8195ebc960dd40b6c731a269c00e37b}{value\+\_\+type} $\ast$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a6d9defe5c32be9ebd98ea024e7b748a7}{data} () const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae6a4db456a47818cda06bb76d05a3b6e}{shape\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ade157280b1466add51cecfeca946549a}{get\+\_\+shape} () const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} const return\+\_\+type \& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a29d6f89a439f2abef2236e9552c07e62}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} index) const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} return\+\_\+type \& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a4189673aa2016bbf745afdb38eaaa4bd}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} index)
+\item 
+{\footnotesize template$<$class ... Integers$>$ }\\\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} const return\+\_\+type \& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_aaa2ea8d4e5aea0c8969833c2dc2ed0fb}{operator()} (Integers ... ints) const
+\item 
+{\footnotesize template$<$class ... Integers$>$ }\\\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} return\+\_\+type \& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a53f0cee4dd8a9775ef56b19b9498072d}{operator()} (Integers ... ints)
+\item 
+{\footnotesize template$<$class Allocator $>$ }\\\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a60aebb03b7b8f71975e0d71d43c37087}{deallocate} (\hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} allocator)
+\item 
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_aaa57ddd4b0a9f13a27c80d2ecaf38781}{deallocate} () const
+\item 
+{\footnotesize template$<$class Allocator $>$ }\\\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae551c5aebb87e199c1473a1c9cfa6605}{reset} (\hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} allocator)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr int \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae5d17962cb9d81c7e0d205bb8f454d68}{tensor\+\_\+dim} = Shape\+::tensor\+\_\+dim
+\item 
+static constexpr int \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ab9c51a920183d5e5a99cd642c76d368f}{tensor\+\_\+iterator\+\_\+dim}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae8195ebc960dd40b6c731a269c00e37b}{value\+\_\+type} $\ast$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a945c43b3cb6c54f6b982c84ea93cfae5}{m\+\_\+data} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae6a4db456a47818cda06bb76d05a3b6e}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae6a4db456a47818cda06bb76d05a3b6e}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!shape\+\_\+type@{shape\+\_\+type}}
+\index{shape\+\_\+type@{shape\+\_\+type}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{shape\+\_\+type}{shape\_type}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae6a4db456a47818cda06bb76d05a3b6e}{shape\+\_\+type} =  \hyperlink{structbc_1_1Shape}{Shape}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a3e7ac04624aaeb892ed9f2cf2f51c051}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a3e7ac04624aaeb892ed9f2cf2f51c051}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a3e7ac04624aaeb892ed9f2cf2f51c051}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae8195ebc960dd40b6c731a269c00e37b}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae8195ebc960dd40b6c731a269c00e37b}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae8195ebc960dd40b6c731a269c00e37b}{value\+\_\+type} =  Value\+Type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_aa95e24993611ac81660689a5f95529e4}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_aa95e24993611ac81660689a5f95529e4}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!Kernel\+\_\+\+Array@{Kernel\+\_\+\+Array}}
+\index{Kernel\+\_\+\+Array@{Kernel\+\_\+\+Array}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{Kernel\+\_\+\+Array()}{Kernel\_Array()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{Kernel\+\_\+\+Array} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_aabd83677fd69cc08ffdc444335bcfee5}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_aabd83677fd69cc08ffdc444335bcfee5}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!Kernel\+\_\+\+Array@{Kernel\+\_\+\+Array}}
+\index{Kernel\+\_\+\+Array@{Kernel\+\_\+\+Array}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{Kernel\+\_\+\+Array()}{Kernel\_Array()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{Kernel\+\_\+\+Array} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae6a4db456a47818cda06bb76d05a3b6e}{shape\+\_\+type}}]{shape,  }\item[{\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae8195ebc960dd40b6c731a269c00e37b}{value\+\_\+type} $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a07ea2391c45d7a07913bcf361e4ecc22}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a07ea2391c45d7a07913bcf361e4ecc22}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!Kernel\+\_\+\+Array@{Kernel\+\_\+\+Array}}
+\index{Kernel\+\_\+\+Array@{Kernel\+\_\+\+Array}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{Kernel\+\_\+\+Array()}{Kernel\_Array()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+template$<$class Allocator\+Type , class  = std\+::enable\+\_\+if\+\_\+t$<$				bc\+::traits\+::true\+\_\+v$<$						decltype(std\+::declval$<$\+Allocator\+Type$>$().\+allocate(0))$>$$>$$>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{Kernel\+\_\+\+Array} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae6a4db456a47818cda06bb76d05a3b6e}{shape\+\_\+type}}]{shape,  }\item[{Allocator\+Type}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a6d9defe5c32be9ebd98ea024e7b748a7}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a6d9defe5c32be9ebd98ea024e7b748a7}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!data@{data}}
+\index{data@{data}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae8195ebc960dd40b6c731a269c00e37b}{value\+\_\+type}$\ast$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a60aebb03b7b8f71975e0d71d43c37087}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a60aebb03b7b8f71975e0d71d43c37087}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+template$<$class Allocator $>$ \\
+\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::deallocate (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_aaa57ddd4b0a9f13a27c80d2ecaf38781}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_aaa57ddd4b0a9f13a27c80d2ecaf38781}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::deallocate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ade157280b1466add51cecfeca946549a}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ade157280b1466add51cecfeca946549a}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!get\+\_\+shape@{get\+\_\+shape}}
+\index{get\+\_\+shape@{get\+\_\+shape}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{get\+\_\+shape()}{get\_shape()}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae6a4db456a47818cda06bb76d05a3b6e}{shape\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::get\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_aaa2ea8d4e5aea0c8969833c2dc2ed0fb}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_aaa2ea8d4e5aea0c8969833c2dc2ed0fb}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!operator()@{operator()}}
+\index{operator()@{operator()}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+template$<$class ... Integers$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} const return\+\_\+type\& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::operator() (\begin{DoxyParamCaption}\item[{Integers ...}]{ints }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a53f0cee4dd8a9775ef56b19b9498072d}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a53f0cee4dd8a9775ef56b19b9498072d}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!operator()@{operator()}}
+\index{operator()@{operator()}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+template$<$class ... Integers$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} return\+\_\+type\& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::operator() (\begin{DoxyParamCaption}\item[{Integers ...}]{ints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a29d6f89a439f2abef2236e9552c07e62}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a29d6f89a439f2abef2236e9552c07e62}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} const return\+\_\+type\& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a4189673aa2016bbf745afdb38eaaa4bd}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a4189673aa2016bbf745afdb38eaaa4bd}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} return\+\_\+type\& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae551c5aebb87e199c1473a1c9cfa6605}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae551c5aebb87e199c1473a1c9cfa6605}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!reset@{reset}}
+\index{reset@{reset}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+template$<$class Allocator $>$ \\
+\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::reset (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a945c43b3cb6c54f6b982c84ea93cfae5}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_a945c43b3cb6c54f6b982c84ea93cfae5}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!m\+\_\+data@{m\+\_\+data}}
+\index{m\+\_\+data@{m\+\_\+data}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{m\+\_\+data}{m\_data}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae8195ebc960dd40b6c731a269c00e37b}{value\+\_\+type}$\ast$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::m\+\_\+data = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae5d17962cb9d81c7e0d205bb8f454d68}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae5d17962cb9d81c7e0d205bb8f454d68}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!tensor\+\_\+dim@{tensor\+\_\+dim}}
+\index{tensor\+\_\+dim@{tensor\+\_\+dim}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{tensor\+\_\+dim}{tensor\_dim}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+constexpr int \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::tensor\+\_\+dim = Shape\+::tensor\+\_\+dim\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ab9c51a920183d5e5a99cd642c76d368f}\label{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ab9c51a920183d5e5a99cd642c76d368f}} 
+\index{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}!tensor\+\_\+iterator\+\_\+dim@{tensor\+\_\+iterator\+\_\+dim}}
+\index{tensor\+\_\+iterator\+\_\+dim@{tensor\+\_\+iterator\+\_\+dim}!bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array@{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}}
+\subsubsection{\texorpdfstring{tensor\+\_\+iterator\+\_\+dim}{tensor\_iterator\_dim}}
+{\footnotesize\ttfamily template$<$class Shape, class Value\+Type, class System\+Tag, class... Tags$>$ \\
+constexpr int \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{bc\+::tensors\+::exprs\+::\+Kernel\+\_\+\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, Value\+Type, System\+Tag, Tags $>$\+::tensor\+\_\+iterator\+\_\+dim\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+        bc::traits::sequence\_contains\_v<noncontinuous\_memory\_tag, Tags...> ?
+                \hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array_ae5d17962cb9d81c7e0d205bb8f454d68}{tensor\_dim} : 1
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/tensors/expression\+\_\+templates/\hyperlink{array__kernel__array_8h}{array\+\_\+kernel\+\_\+array.\+h}\end{DoxyCompactItemize}

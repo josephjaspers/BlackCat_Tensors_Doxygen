@@ -1,0 +1,80 @@
+\hypertarget{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations}{}\section{bc\+:\+:tensors\+:\+:exprs\+:\+:optimizer\+\_\+greedy\+\_\+evaluations$<$ Xpr $>$ Struct Template Reference}
+\label{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations}\index{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations$<$ Xpr $>$@{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations$<$ Xpr $>$}}
+
+
+{\ttfamily \#include $<$tree\+\_\+evaluator\+\_\+optimizer.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Output\+Data , class Stream $>$ }\\static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_a75679d36ba105127df81bd50017b1525}{linear\+\_\+eval} (Xpr branch, Output\+Data tensor, \hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream)
+\item 
+{\footnotesize template$<$class Output\+Data , class Stream $>$ }\\static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_a67fe3167e037fd1debbae090bfa09225}{injection} (Xpr branch, Output\+Data tensor, \hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream)
+\item 
+{\footnotesize template$<$class Stream $>$ }\\static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_a1ebd1740233b1fd7aef179c9334d8919}{temporary\+\_\+injection} (Xpr branch, \hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr bool \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_abfc88f3d551ba6ba93a1a4bca2abe973}{entirely\+\_\+blas\+\_\+expr} = true
+\item 
+static constexpr bool \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_a6b46128faa1df0b7e1d6446f951ebf26}{partial\+\_\+blas\+\_\+expr} = true
+\item 
+static constexpr bool \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_a064599222d4c50a96a709aca49632108}{requires\+\_\+greedy\+\_\+eval} = true
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_a67fe3167e037fd1debbae090bfa09225}\label{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_a67fe3167e037fd1debbae090bfa09225}} 
+\index{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations@{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}!injection@{injection}}
+\index{injection@{injection}!bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations@{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}}
+\subsubsection{\texorpdfstring{injection()}{injection()}}
+{\footnotesize\ttfamily template$<$class Xpr$>$ \\
+template$<$class Output\+Data , class Stream $>$ \\
+static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations}{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}$<$ Xpr $>$\+::injection (\begin{DoxyParamCaption}\item[{Xpr}]{branch,  }\item[{Output\+Data}]{tensor,  }\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_a75679d36ba105127df81bd50017b1525}\label{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_a75679d36ba105127df81bd50017b1525}} 
+\index{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations@{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}!linear\+\_\+eval@{linear\+\_\+eval}}
+\index{linear\+\_\+eval@{linear\+\_\+eval}!bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations@{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}}
+\subsubsection{\texorpdfstring{linear\+\_\+eval()}{linear\_eval()}}
+{\footnotesize\ttfamily template$<$class Xpr$>$ \\
+template$<$class Output\+Data , class Stream $>$ \\
+static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations}{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}$<$ Xpr $>$\+::linear\+\_\+eval (\begin{DoxyParamCaption}\item[{Xpr}]{branch,  }\item[{Output\+Data}]{tensor,  }\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_a1ebd1740233b1fd7aef179c9334d8919}\label{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_a1ebd1740233b1fd7aef179c9334d8919}} 
+\index{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations@{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}!temporary\+\_\+injection@{temporary\+\_\+injection}}
+\index{temporary\+\_\+injection@{temporary\+\_\+injection}!bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations@{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}}
+\subsubsection{\texorpdfstring{temporary\+\_\+injection()}{temporary\_injection()}}
+{\footnotesize\ttfamily template$<$class Xpr$>$ \\
+template$<$class Stream $>$ \\
+static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations}{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}$<$ Xpr $>$\+::temporary\+\_\+injection (\begin{DoxyParamCaption}\item[{Xpr}]{branch,  }\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_abfc88f3d551ba6ba93a1a4bca2abe973}\label{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_abfc88f3d551ba6ba93a1a4bca2abe973}} 
+\index{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations@{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}!entirely\+\_\+blas\+\_\+expr@{entirely\+\_\+blas\+\_\+expr}}
+\index{entirely\+\_\+blas\+\_\+expr@{entirely\+\_\+blas\+\_\+expr}!bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations@{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}}
+\subsubsection{\texorpdfstring{entirely\+\_\+blas\+\_\+expr}{entirely\_blas\_expr}}
+{\footnotesize\ttfamily template$<$class Xpr$>$ \\
+constexpr bool \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations}{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}$<$ Xpr $>$\+::entirely\+\_\+blas\+\_\+expr = true\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_a6b46128faa1df0b7e1d6446f951ebf26}\label{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_a6b46128faa1df0b7e1d6446f951ebf26}} 
+\index{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations@{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}!partial\+\_\+blas\+\_\+expr@{partial\+\_\+blas\+\_\+expr}}
+\index{partial\+\_\+blas\+\_\+expr@{partial\+\_\+blas\+\_\+expr}!bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations@{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}}
+\subsubsection{\texorpdfstring{partial\+\_\+blas\+\_\+expr}{partial\_blas\_expr}}
+{\footnotesize\ttfamily template$<$class Xpr$>$ \\
+constexpr bool \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations}{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}$<$ Xpr $>$\+::partial\+\_\+blas\+\_\+expr = true\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_a064599222d4c50a96a709aca49632108}\label{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations_a064599222d4c50a96a709aca49632108}} 
+\index{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations@{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}!requires\+\_\+greedy\+\_\+eval@{requires\+\_\+greedy\+\_\+eval}}
+\index{requires\+\_\+greedy\+\_\+eval@{requires\+\_\+greedy\+\_\+eval}!bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations@{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}}
+\subsubsection{\texorpdfstring{requires\+\_\+greedy\+\_\+eval}{requires\_greedy\_eval}}
+{\footnotesize\ttfamily template$<$class Xpr$>$ \\
+constexpr bool \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations}{bc\+::tensors\+::exprs\+::optimizer\+\_\+greedy\+\_\+evaluations}$<$ Xpr $>$\+::requires\+\_\+greedy\+\_\+eval = true\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/tensors/expression\+\_\+templates/\hyperlink{tree__evaluator__optimizer_8h}{tree\+\_\+evaluator\+\_\+optimizer.\+h}\end{DoxyCompactItemize}

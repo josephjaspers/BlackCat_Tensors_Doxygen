@@ -1,0 +1,92 @@
+\hypertarget{io_8h}{}\section{blackcat/io.h File Reference}
+\label{io_8h}\index{blackcat/io.\+h@{blackcat/io.\+h}}
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tensors.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}string.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+Include dependency graph for io.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{io_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{io_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1io_1_1Range}{bc\+::io\+::\+Range$<$ T $>$}
+\item 
+struct \hyperlink{structbc_1_1io_1_1csv__descriptor}{bc\+::io\+::csv\+\_\+descriptor}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1io}{bc\+::io}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{io_8h_acf302b4735f5b5b963d0201a81ea5e61}{from\+\_\+string\+\_\+def}(dtype, ...)
+\item 
+\#define \hyperlink{io_8h_ac433e61c1a92c67a8f35429887573ef7}{F\+O\+R\+W\+A\+R\+D\+E\+D\+\_\+\+P\+A\+R\+AM}(dtype,  name,  default\+\_\+value)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$$>$ }\\double \hyperlink{namespacebc_1_1io_af515002771a8f5e210f98afe1a84777d}{bc\+::io\+::from\+\_\+string} (const std\+::string \&str)
+\item 
+{\footnotesize template$<$$>$ }\\float \hyperlink{namespacebc_1_1io_a274a01eef477a0e229ff1f66e44641cd}{bc\+::io\+::from\+\_\+string} (const std\+::string \&str)
+\item 
+{\footnotesize template$<$$>$ }\\int \hyperlink{namespacebc_1_1io_a3debf1fdb9e25a53feffe53a9d7059ec}{bc\+::io\+::from\+\_\+string} (const std\+::string \&str)
+\item 
+{\footnotesize template$<$$>$ }\\std\+::string \hyperlink{namespacebc_1_1io_a6c9aff1cd2a85a667f45c7bbaac41848}{bc\+::io\+::from\+\_\+string} (const std\+::string \&str)
+\item 
+{\footnotesize template$<$class T $>$ }\\auto \hyperlink{namespacebc_1_1io_a9665fd460e884af7baac638c11a92111}{bc\+::io\+::range} (T begin, T end=T())
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{io_8h_ac433e61c1a92c67a8f35429887573ef7}\label{io_8h_ac433e61c1a92c67a8f35429887573ef7}} 
+\index{io.\+h@{io.\+h}!F\+O\+R\+W\+A\+R\+D\+E\+D\+\_\+\+P\+A\+R\+AM@{F\+O\+R\+W\+A\+R\+D\+E\+D\+\_\+\+P\+A\+R\+AM}}
+\index{F\+O\+R\+W\+A\+R\+D\+E\+D\+\_\+\+P\+A\+R\+AM@{F\+O\+R\+W\+A\+R\+D\+E\+D\+\_\+\+P\+A\+R\+AM}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{F\+O\+R\+W\+A\+R\+D\+E\+D\+\_\+\+P\+A\+R\+AM}{FORWARDED\_PARAM}}
+{\footnotesize\ttfamily \#define F\+O\+R\+W\+A\+R\+D\+E\+D\+\_\+\+P\+A\+R\+AM(\begin{DoxyParamCaption}\item[{}]{dtype,  }\item[{}]{name,  }\item[{}]{default\+\_\+value }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+dtype name##\_ = default\_value;                          \(\backslash\)
+csv\_descriptor& name(dtype name) \{                      \(\backslash\)
+        name##\_ = name;                                 \(\backslash\)
+        return *\textcolor{keyword}{this};                                   \(\backslash\)
+\}                                                       \(\backslash\)
+const dtype& name()\textcolor{keyword}{ const }\{                             \(\backslash\)
+        return name##\_;                                 \(\backslash\)
+\}                                                       \(\backslash\)
+\end{DoxyCode}
+\mbox{\Hypertarget{io_8h_acf302b4735f5b5b963d0201a81ea5e61}\label{io_8h_acf302b4735f5b5b963d0201a81ea5e61}} 
+\index{io.\+h@{io.\+h}!from\+\_\+string\+\_\+def@{from\+\_\+string\+\_\+def}}
+\index{from\+\_\+string\+\_\+def@{from\+\_\+string\+\_\+def}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{from\+\_\+string\+\_\+def}{from\_string\_def}}
+{\footnotesize\ttfamily \#define from\+\_\+string\+\_\+def(\begin{DoxyParamCaption}\item[{}]{dtype,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{template}<>\(\backslash\)
+inline dtype \hyperlink{namespacebc_1_1io_a6c9aff1cd2a85a667f45c7bbaac41848}{from\_string}(\textcolor{keyword}{const} std::string& str) \{\(\backslash\)
+    return \_\_VA\_ARGS\_\_;\(\backslash\)
+\}
+\end{DoxyCode}

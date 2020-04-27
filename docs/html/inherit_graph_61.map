@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classbc_1_1nn_1_1Layer__Input__Base.html" title="bc::nn::Layer_Input\l_Base\&lt; Tensor_Descriptor\l\&lt; ValueType, SystemTag,\l Integer\&lt; 3 \&gt; \&gt; \&gt;" alt="" coords="5,5,184,76"/>
+<area shape="rect" id="node2" href="$structbc_1_1nn_1_1Layer__Base.html" title="bc::nn::Layer_Base\l\&lt; Max_Pooling\&lt; SystemTag,\l ValueType \&gt;, Tensor_Descriptor\l\&lt; ValueType, SystemTag, Integer\l\&lt; 3 \&gt; \&gt; \&gt;" alt="" coords="232,46,451,131"/>
+<area shape="rect" id="node3" href="$structbc_1_1nn_1_1Max__Pooling.html" title="bc::nn::Max_Pooling\l\&lt; SystemTag, ValueType \&gt;" alt="" coords="499,68,681,109"/>
+<area shape="rect" id="node4" href="$structbc_1_1nn_1_1Layer__Output__Base.html" title="bc::nn::Layer_Output\l_Base\&lt; Tensor_Descriptor\l\&lt; ValueType, SystemTag,\l Integer\&lt; 3 \&gt; \&gt; \&gt;" alt="" coords="5,100,184,171"/>
+</map>

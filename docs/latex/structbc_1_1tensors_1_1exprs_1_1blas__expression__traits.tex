@@ -1,0 +1,169 @@
+\hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{}\section{bc\+:\+:tensors\+:\+:exprs\+:\+:blas\+\_\+expression\+\_\+traits$<$ T $>$ Struct Template Reference}
+\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits$<$ T $>$@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits$<$ T $>$}}
+
+
+{\ttfamily \#include $<$blas\+\_\+expression\+\_\+template\+\_\+traits.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:tensors\+:\+:exprs\+:\+:blas\+\_\+expression\+\_\+traits$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:tensors\+:\+:exprs\+:\+:blas\+\_\+expression\+\_\+traits$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_aa509762c89c44ab6036d4a067c52c714}{requires\+\_\+greedy\+\_\+evaluation} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a0e9b0b3486b5ec529b2c622f14b688f9}{detail\+::query\+\_\+requires\+\_\+greedy\+\_\+evaluation}, T, std\+::false\+\_\+type $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a69dacf887c1ca2cf443865bd4668ccfe}{remove\+\_\+scalar\+\_\+mul\+\_\+type} = typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__scalar__mul}{detail\+::remove\+\_\+scalar\+\_\+mul}$<$ T $>$\+::type
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_afb08d790861ec86e53b6c53f46fbb826}{remove\+\_\+transpose\+\_\+type} = typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__transpose}{detail\+::remove\+\_\+transpose}$<$ T $>$\+::type
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_afa81b694f7f66b5974416f37e90b148f}{remove\+\_\+blas\+\_\+features\+\_\+type} = typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__transpose}{detail\+::remove\+\_\+transpose}$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a69dacf887c1ca2cf443865bd4668ccfe}{remove\+\_\+scalar\+\_\+mul\+\_\+type} $>$\+::type
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_aa755439956950b30c1f850ade614ef72}{scalar\+\_\+multiplier\+\_\+type} = typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__scalar__mul}{detail\+::remove\+\_\+scalar\+\_\+mul}$<$ T $>$\+::scalar\+\_\+type
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a9de7efe501aa96461f4ae6185762cad9}{value\+\_\+type} = typename T\+::value\+\_\+type
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a3222d695a5681e697ad05e73fd765be9}{is\+\_\+scalar\+\_\+multiplied} = \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{bc\+::traits\+::truth\+\_\+type}$<$ !std\+::is\+\_\+same$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a69dacf887c1ca2cf443865bd4668ccfe}{remove\+\_\+scalar\+\_\+mul\+\_\+type}, T $>$\+::value $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_ad944ad00fbdc044e06e7f90771514e3c}{is\+\_\+transposed} = \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{bc\+::traits\+::truth\+\_\+type}$<$ !std\+::is\+\_\+same$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_afb08d790861ec86e53b6c53f46fbb826}{remove\+\_\+transpose\+\_\+type}, T $>$\+::value $>$
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_afb08d790861ec86e53b6c53f46fbb826}{remove\+\_\+transpose\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_ad14f680b6e3afb078d6d2211ced2e53f}{remove\+\_\+transpose} (T expression)
+\item 
+static \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a69dacf887c1ca2cf443865bd4668ccfe}{remove\+\_\+scalar\+\_\+mul\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_aaa1e5450c4103607193f591f900dbf68}{remove\+\_\+scalar\+\_\+mul} (T expression)
+\item 
+static \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_afa81b694f7f66b5974416f37e90b148f}{remove\+\_\+blas\+\_\+features\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a5c0da9d80709a4e1b3a408b9617e1d46}{remove\+\_\+blas\+\_\+modifiers} (T expression)
+\item 
+static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a0e9c6280e2c88c35604999b3bc717e99}{get\+\_\+scalar} (const T \&expression) -\/$>$ decltype(\hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__scalar__mul}{detail\+::remove\+\_\+scalar\+\_\+mul}$<$ T $>$\+::get\+\_\+scalar(expression))
+\item 
+{\footnotesize template$<$int Alpha, int Beta, class Stream $>$ }\\static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_ad6f0da96452eb001b28b15f5f17b38a3}{parse\+\_\+expression} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, T expression)
+\item 
+{\footnotesize template$<$class Stream , class Contents $>$ }\\static void \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a19657281871c89a178a6e47a7589acb4}{post\+\_\+parse\+\_\+expression\+\_\+evaluation} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, Contents contents)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a3222d695a5681e697ad05e73fd765be9}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a3222d695a5681e697ad05e73fd765be9}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}!is\+\_\+scalar\+\_\+multiplied@{is\+\_\+scalar\+\_\+multiplied}}
+\index{is\+\_\+scalar\+\_\+multiplied@{is\+\_\+scalar\+\_\+multiplied}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+scalar\+\_\+multiplied}{is\_scalar\_multiplied}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a3222d695a5681e697ad05e73fd765be9}{is\+\_\+scalar\+\_\+multiplied} =  \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{bc\+::traits\+::truth\+\_\+type}$<$ !std\+::is\+\_\+same$<$\hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a69dacf887c1ca2cf443865bd4668ccfe}{remove\+\_\+scalar\+\_\+mul\+\_\+type}, T$>$\+::value$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_ad944ad00fbdc044e06e7f90771514e3c}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_ad944ad00fbdc044e06e7f90771514e3c}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}!is\+\_\+transposed@{is\+\_\+transposed}}
+\index{is\+\_\+transposed@{is\+\_\+transposed}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{is\+\_\+transposed}{is\_transposed}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_ad944ad00fbdc044e06e7f90771514e3c}{is\+\_\+transposed} =  \hyperlink{namespacebc_1_1traits_ac91a9795000ae7f483efbaf74c9872e8}{bc\+::traits\+::truth\+\_\+type}$<$ !std\+::is\+\_\+same$<$\hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_afb08d790861ec86e53b6c53f46fbb826}{remove\+\_\+transpose\+\_\+type}, T$>$\+::value$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_afa81b694f7f66b5974416f37e90b148f}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_afa81b694f7f66b5974416f37e90b148f}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}!remove\+\_\+blas\+\_\+features\+\_\+type@{remove\+\_\+blas\+\_\+features\+\_\+type}}
+\index{remove\+\_\+blas\+\_\+features\+\_\+type@{remove\+\_\+blas\+\_\+features\+\_\+type}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{remove\+\_\+blas\+\_\+features\+\_\+type}{remove\_blas\_features\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_afa81b694f7f66b5974416f37e90b148f}{remove\+\_\+blas\+\_\+features\+\_\+type} =  typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__transpose}{detail\+::remove\+\_\+transpose}$<$\hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a69dacf887c1ca2cf443865bd4668ccfe}{remove\+\_\+scalar\+\_\+mul\+\_\+type}$>$\+::type}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a69dacf887c1ca2cf443865bd4668ccfe}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a69dacf887c1ca2cf443865bd4668ccfe}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}!remove\+\_\+scalar\+\_\+mul\+\_\+type@{remove\+\_\+scalar\+\_\+mul\+\_\+type}}
+\index{remove\+\_\+scalar\+\_\+mul\+\_\+type@{remove\+\_\+scalar\+\_\+mul\+\_\+type}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{remove\+\_\+scalar\+\_\+mul\+\_\+type}{remove\_scalar\_mul\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a69dacf887c1ca2cf443865bd4668ccfe}{remove\+\_\+scalar\+\_\+mul\+\_\+type} =  typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__scalar__mul}{detail\+::remove\+\_\+scalar\+\_\+mul}$<$T$>$\+::type}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_afb08d790861ec86e53b6c53f46fbb826}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_afb08d790861ec86e53b6c53f46fbb826}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}!remove\+\_\+transpose\+\_\+type@{remove\+\_\+transpose\+\_\+type}}
+\index{remove\+\_\+transpose\+\_\+type@{remove\+\_\+transpose\+\_\+type}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{remove\+\_\+transpose\+\_\+type}{remove\_transpose\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_afb08d790861ec86e53b6c53f46fbb826}{remove\+\_\+transpose\+\_\+type} =  typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__transpose}{detail\+::remove\+\_\+transpose}$<$T$>$\+::type}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_aa509762c89c44ab6036d4a067c52c714}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_aa509762c89c44ab6036d4a067c52c714}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}!requires\+\_\+greedy\+\_\+evaluation@{requires\+\_\+greedy\+\_\+evaluation}}
+\index{requires\+\_\+greedy\+\_\+evaluation@{requires\+\_\+greedy\+\_\+evaluation}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{requires\+\_\+greedy\+\_\+evaluation}{requires\_greedy\_evaluation}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_aa509762c89c44ab6036d4a067c52c714}{requires\+\_\+greedy\+\_\+evaluation} =  \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a0e9b0b3486b5ec529b2c622f14b688f9}{detail\+::query\+\_\+requires\+\_\+greedy\+\_\+evaluation}, T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_aa755439956950b30c1f850ade614ef72}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_aa755439956950b30c1f850ade614ef72}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}!scalar\+\_\+multiplier\+\_\+type@{scalar\+\_\+multiplier\+\_\+type}}
+\index{scalar\+\_\+multiplier\+\_\+type@{scalar\+\_\+multiplier\+\_\+type}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{scalar\+\_\+multiplier\+\_\+type}{scalar\_multiplier\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_aa755439956950b30c1f850ade614ef72}{scalar\+\_\+multiplier\+\_\+type} =  typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__scalar__mul}{detail\+::remove\+\_\+scalar\+\_\+mul}$<$T$>$\+::scalar\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a9de7efe501aa96461f4ae6185762cad9}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a9de7efe501aa96461f4ae6185762cad9}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}$<$ T $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a9de7efe501aa96461f4ae6185762cad9}{value\+\_\+type} =  typename T\+::value\+\_\+type}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a0e9c6280e2c88c35604999b3bc717e99}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a0e9c6280e2c88c35604999b3bc717e99}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}!get\+\_\+scalar@{get\+\_\+scalar}}
+\index{get\+\_\+scalar@{get\+\_\+scalar}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{get\+\_\+scalar()}{get\_scalar()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}$<$ T $>$\+::get\+\_\+scalar (\begin{DoxyParamCaption}\item[{const T \&}]{expression }\end{DoxyParamCaption}) -\/$>$ decltype(\hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__scalar__mul}{detail\+::remove\+\_\+scalar\+\_\+mul}$<$T$>$\+::get\+\_\+scalar(expression)) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_ad6f0da96452eb001b28b15f5f17b38a3}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_ad6f0da96452eb001b28b15f5f17b38a3}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}!parse\+\_\+expression@{parse\+\_\+expression}}
+\index{parse\+\_\+expression@{parse\+\_\+expression}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{parse\+\_\+expression()}{parse\_expression()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+template$<$int Alpha, int Beta, class Stream $>$ \\
+static auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}$<$ T $>$\+::parse\+\_\+expression (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{T}]{expression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a19657281871c89a178a6e47a7589acb4}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a19657281871c89a178a6e47a7589acb4}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}!post\+\_\+parse\+\_\+expression\+\_\+evaluation@{post\+\_\+parse\+\_\+expression\+\_\+evaluation}}
+\index{post\+\_\+parse\+\_\+expression\+\_\+evaluation@{post\+\_\+parse\+\_\+expression\+\_\+evaluation}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{post\+\_\+parse\+\_\+expression\+\_\+evaluation()}{post\_parse\_expression\_evaluation()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+template$<$class Stream , class Contents $>$ \\
+static void \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}$<$ T $>$\+::post\+\_\+parse\+\_\+expression\+\_\+evaluation (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{Contents}]{contents }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a5c0da9d80709a4e1b3a408b9617e1d46}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a5c0da9d80709a4e1b3a408b9617e1d46}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}!remove\+\_\+blas\+\_\+modifiers@{remove\+\_\+blas\+\_\+modifiers}}
+\index{remove\+\_\+blas\+\_\+modifiers@{remove\+\_\+blas\+\_\+modifiers}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{remove\+\_\+blas\+\_\+modifiers()}{remove\_blas\_modifiers()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+static \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_afa81b694f7f66b5974416f37e90b148f}{remove\+\_\+blas\+\_\+features\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}$<$ T $>$\+::remove\+\_\+blas\+\_\+modifiers (\begin{DoxyParamCaption}\item[{T}]{expression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_aaa1e5450c4103607193f591f900dbf68}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_aaa1e5450c4103607193f591f900dbf68}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}!remove\+\_\+scalar\+\_\+mul@{remove\+\_\+scalar\+\_\+mul}}
+\index{remove\+\_\+scalar\+\_\+mul@{remove\+\_\+scalar\+\_\+mul}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{remove\+\_\+scalar\+\_\+mul()}{remove\_scalar\_mul()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+static \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_a69dacf887c1ca2cf443865bd4668ccfe}{remove\+\_\+scalar\+\_\+mul\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}$<$ T $>$\+::remove\+\_\+scalar\+\_\+mul (\begin{DoxyParamCaption}\item[{T}]{expression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_ad14f680b6e3afb078d6d2211ced2e53f}\label{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_ad14f680b6e3afb078d6d2211ced2e53f}} 
+\index{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}!remove\+\_\+transpose@{remove\+\_\+transpose}}
+\index{remove\+\_\+transpose@{remove\+\_\+transpose}!bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits@{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}}
+\subsubsection{\texorpdfstring{remove\+\_\+transpose()}{remove\_transpose()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+static \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits_afb08d790861ec86e53b6c53f46fbb826}{remove\+\_\+transpose\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits}$<$ T $>$\+::remove\+\_\+transpose (\begin{DoxyParamCaption}\item[{T}]{expression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/tensors/expression\+\_\+templates/\hyperlink{blas__expression__template__traits_8h}{blas\+\_\+expression\+\_\+template\+\_\+traits.\+h}\end{DoxyCompactItemize}

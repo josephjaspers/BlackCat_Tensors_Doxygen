@@ -1,0 +1,7 @@
+<map id="bc::oper::Host_Atomic_Add" name="bc::oper::Host_Atomic_Add">
+<area shape="rect" id="node2" href="$structbc_1_1oper_1_1Add__Assign.html" title="bc::oper::Add_Assign" alt="" coords="105,259,252,285"/>
+<area shape="rect" id="node3" href="$structbc_1_1oper_1_1linear__assignment__operation.html" title="bc::oper::linear_assignment\l_operation" alt="" coords="87,169,270,211"/>
+<area shape="rect" id="node4" href="$structbc_1_1oper_1_1linear__operation.html" title="bc::oper::linear_operation" alt="" coords="5,87,173,114"/>
+<area shape="rect" id="node5" href="$structbc_1_1oper_1_1basic__operation.html" title="bc::oper::basic_operation" alt="" coords="95,5,263,32"/>
+<area shape="rect" id="node6" href="$structbc_1_1oper_1_1assignment__operation.html" title="bc::oper::assignment\l_operation" alt="" coords="197,80,341,121"/>
+</map>

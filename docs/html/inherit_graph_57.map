@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classbc_1_1nn_1_1Layer__Input__Base.html" title="bc::nn::Layer_Input\l_Base\&lt; InputTensorDescriptor \&gt;" alt="" coords="11,5,223,47"/>
+<area shape="rect" id="node2" href="$structbc_1_1nn_1_1Layer__Base.html" title="bc::nn::Layer_Base\l\&lt; DerivedLayer, InputTensor\lDescriptor, OutputTensorDescriptor \&gt;" alt="" coords="276,31,517,87"/>
+<area shape="rect" id="node3" href="$structbc_1_1nn_1_1Layer__Output__Base.html" title="bc::nn::Layer_Output\l_Base\&lt; OutputTensorDescriptor \&gt;" alt="" coords="5,71,228,112"/>
+</map>

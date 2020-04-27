@@ -1,0 +1,38 @@
+\hypertarget{structbc_1_1oper_1_1Max}{}\section{bc\+:\+:oper\+:\+:Max Struct Reference}
+\label{structbc_1_1oper_1_1Max}\index{bc\+::oper\+::\+Max@{bc\+::oper\+::\+Max}}
+
+
+{\ttfamily \#include $<$binary.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Lv , class Rv $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ auto \hyperlink{structbc_1_1oper_1_1Max_a40217402cdff8b6fc6aabc042c4ccf31}{operator()} (Lv \&\&lv, Rv \&\&rv) const -\/$>$ decltype(\hyperlink{structbc_1_1oper_1_1Max_a5679773915eae039e36b1eee4b9aae18}{apply}(lv, rv))
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Lv , class Rv $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ static \+\_\+\+\_\+device\+\_\+\+\_\+ auto \hyperlink{structbc_1_1oper_1_1Max_a5679773915eae039e36b1eee4b9aae18}{apply} (Lv \&\&lv, Rv \&\&rv) -\/$>$ decltype(lv $>$ rv ? lv \+:rv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1oper_1_1Max_a5679773915eae039e36b1eee4b9aae18}\label{structbc_1_1oper_1_1Max_a5679773915eae039e36b1eee4b9aae18}} 
+\index{bc\+::oper\+::\+Max@{bc\+::oper\+::\+Max}!apply@{apply}}
+\index{apply@{apply}!bc\+::oper\+::\+Max@{bc\+::oper\+::\+Max}}
+\subsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily template$<$class Lv , class Rv $>$ \\
+\+\_\+\+\_\+host\+\_\+\+\_\+ static \+\_\+\+\_\+device\+\_\+\+\_\+ auto bc\+::oper\+::\+Max\+::apply (\begin{DoxyParamCaption}\item[{Lv \&\&}]{lv,  }\item[{Rv \&\&}]{rv }\end{DoxyParamCaption}) -\/$>$ decltype( lv $>$ rv ? lv \+: rv ) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1oper_1_1Max_a40217402cdff8b6fc6aabc042c4ccf31}\label{structbc_1_1oper_1_1Max_a40217402cdff8b6fc6aabc042c4ccf31}} 
+\index{bc\+::oper\+::\+Max@{bc\+::oper\+::\+Max}!operator()@{operator()}}
+\index{operator()@{operator()}!bc\+::oper\+::\+Max@{bc\+::oper\+::\+Max}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$class Lv , class Rv $>$ \\
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ auto bc\+::oper\+::\+Max\+::operator() (\begin{DoxyParamCaption}\item[{Lv \&\&}]{lv,  }\item[{Rv \&\&}]{rv }\end{DoxyParamCaption}) const -\/$>$ decltype(\hyperlink{structbc_1_1oper_1_1Max_a5679773915eae039e36b1eee4b9aae18}{apply}(lv, rv)) \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/operations/\hyperlink{binary_8h}{binary.\+h}\end{DoxyCompactItemize}

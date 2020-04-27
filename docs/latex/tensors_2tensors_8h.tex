@@ -1,0 +1,48 @@
+\hypertarget{tensors_2tensors_8h}{}\section{blackcat/tensors/tensors.h File Reference}
+\label{tensors_2tensors_8h}\index{blackcat/tensors/tensors.\+h@{blackcat/tensors/tensors.\+h}}
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tensor\+\_\+base.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../allocator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tensor\+\_\+static\+\_\+functions.\+h\char`\"{}}\newline
+Include dependency graph for tensors.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tensors_2tensors_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{tensors_2tensors_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1tensors}{bc\+::tensors}
+\item 
+ \hyperlink{namespacebc_1_1tensors_1_1detail}{bc\+::tensors\+::detail}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1detail_a2f9f79ccf87ba1999f0d01623cf7e471}{bc\+::tensors\+::detail\+::default\+\_\+allocator} = \hyperlink{classbc_1_1allocators_1_1Allocator}{bc\+::\+Allocator}$<$ T, default\+\_\+system\+\_\+tag\+\_\+t $>$
+\item 
+{\footnotesize template$<$int X$>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1detail_aea990a08131aca54e30c234f68b18c73}{bc\+::tensors\+::detail\+::default\+\_\+shape} = \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ X $>$
+\item 
+{\footnotesize template$<$int dim, class Value\+Type , class Allocator  = tensors\+::detail\+::default\+\_\+allocator$<$\+Value\+Type$>$$>$ }\\using \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor} = \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{bc\+::\+Shape}$<$ dim $>$, Value\+Type, Allocator $>$ $>$
+\item 
+{\footnotesize template$<$class Value\+Type , class Allocator  = tensors\+::detail\+::default\+\_\+allocator$<$\+Value\+Type$>$$>$ }\\using \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{bc\+::\+Scalar} = Tensor$<$ 0, Value\+Type, Allocator $>$
+\item 
+{\footnotesize template$<$class Value\+Type , class Allocator  = tensors\+::detail\+::default\+\_\+allocator$<$\+Value\+Type$>$$>$ }\\using \hyperlink{namespacebc_a14d40e8e95957f92a57853921837a15d}{bc\+::\+Vector} = Tensor$<$ 1, Value\+Type, Allocator $>$
+\item 
+{\footnotesize template$<$class Value\+Type , class Allocator  = tensors\+::detail\+::default\+\_\+allocator$<$\+Value\+Type$>$$>$ }\\using \hyperlink{namespacebc_a92dd1e243183b382432a5fac3ed8b89f}{bc\+::\+Matrix} = Tensor$<$ 2, Value\+Type, Allocator $>$
+\item 
+{\footnotesize template$<$class Value\+Type , class Allocator  = tensors\+::detail\+::default\+\_\+allocator$<$\+Value\+Type$>$$>$ }\\using \hyperlink{namespacebc_a6fe72f55a3d16b9ee2e35beae746af90}{bc\+::\+Cube} = Tensor$<$ 3, Value\+Type, Allocator $>$
+\item 
+{\footnotesize template$<$class Value\+Type , class Allocator  = tensors\+::detail\+::default\+\_\+allocator$<$\+Value\+Type$>$$>$ }\\using \hyperlink{namespacebc_acb7a07eb9e2d0927fcb611a35d99dc5c}{bc\+::\+Vec\+List} = \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator $>$ $>$
+\end{DoxyCompactItemize}

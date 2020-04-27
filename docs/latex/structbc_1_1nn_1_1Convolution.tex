@@ -1,0 +1,272 @@
+\hypertarget{structbc_1_1nn_1_1Convolution}{}\section{bc\+:\+:nn\+:\+:Convolution$<$ System\+Tag, Value\+Type, Optimizer $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1Convolution}\index{bc\+::nn\+::\+Convolution$<$ System\+Tag, Value\+Type, Optimizer $>$@{bc\+::nn\+::\+Convolution$<$ System\+Tag, Value\+Type, Optimizer $>$}}
+
+
+{\ttfamily \#include $<$convolution.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:nn\+:\+:Convolution$<$ System\+Tag, Value\+Type, Optimizer $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Convolution__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Convolution$<$ System\+Tag, Value\+Type, Optimizer $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Convolution__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Convolution_aa4228d722aee390c2288f87ff676ee63}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1Convolution_ad57a7bb1413ba889d475bfafac3c8461}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Convolution_a5d5ef8c34e8495442aafdb752ae0b8b5}{allocator\+\_\+type} = \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{nn\+\_\+default\+\_\+allocator\+\_\+type}$<$ Value\+Type, System\+Tag $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Convolution_a32c8282bec07115a029de6a8c6a34edf}{optimizer\+\_\+type} = Optimizer
+\item 
+using \hyperlink{structbc_1_1nn_1_1Convolution_a53ebb74b7fab047c1ad45a1f03fc8dd9}{self\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Convolution}{Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Convolution_a01dcd0bf8ae2c1d94118a4f410b3e568}{input\+\_\+descriptor\+\_\+t} = \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$ Value\+Type, System\+Tag, \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$ 3 $>$ $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Convolution_a3a308c5508fc0aafdac299e87e87206c}{parent\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1Convolution_a53ebb74b7fab047c1ad45a1f03fc8dd9}{self\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Convolution_a01dcd0bf8ae2c1d94118a4f410b3e568}{input\+\_\+descriptor\+\_\+t} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Convolution_a4b9d52a3c24e2e44ae51e0e06819bf45}{input\+\_\+tensor\+\_\+dim} = \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$ 3 $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Convolution_a20d103087eb0fa4c47e9640eae02e401}{output\+\_\+tensor\+\_\+dim} = \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$ 3 $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Convolution_a5e9292df10095f5c69ef52837f523290}{greedy\+\_\+evaluate\+\_\+delta} = std\+::true\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Convolution_a084b2b7a45329f1a70aab1a9333829a6}{requires\+\_\+extra\+\_\+cache} = std\+::true\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Convolution_a10d2913efe2df593fd0491fc1cc39dc6}{defines\+\_\+single\+\_\+predict} = std\+::true\+\_\+type
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1Convolution_a597f57342a57ee7a76e48e2d55f8ec00}{Convolution} (\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$ img\+\_\+dims, \hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$ krnl\+\_\+dims, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ padding=\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0), \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ strides=\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1), \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ dilation=\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1))
+\item 
+{\footnotesize template$<$class X $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Convolution_a99ff4923bc1f445a1497bfb11914930f}{forward\+\_\+propagation} (const X \&x, \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&cache)
+\item 
+{\footnotesize template$<$class X $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Convolution_abad1b5837d3b22637c254d7dafecbb8c}{single\+\_\+predict} (const X \&x, \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&cache)
+\item 
+{\footnotesize template$<$class X , class Delta $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Convolution_afc07b8db150a19ecd72ad285009f6232}{back\+\_\+propagation} (const X \&x, const Delta \&dy, \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&cache)
+\item 
+\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$ \hyperlink{structbc_1_1nn_1_1Convolution_a2ea23e12ab647c85966cb8f86f85e8bf}{get\+\_\+batched\+\_\+column\+\_\+image\+\_\+shape} () const
+\item 
+\hyperlink{structbc_1_1Dim}{Dim}$<$ 4 $>$ \hyperlink{structbc_1_1nn_1_1Convolution_a881a726a100f7494eb190f7b24295c18}{get\+\_\+kernel\+\_\+shape} () const
+\item 
+void \hyperlink{structbc_1_1nn_1_1Convolution_a867b470dc738fb6b533d7c0065a858b9}{update\+\_\+weights} ()
+\item 
+void \hyperlink{structbc_1_1nn_1_1Convolution_a023bbc5d98a0a005a092b07353bd608a}{set\+\_\+learning\+\_\+rate} (\hyperlink{structbc_1_1nn_1_1Convolution_ad57a7bb1413ba889d475bfafac3c8461}{value\+\_\+type} lr)
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Convolution_adf118eb4b92ed6f2df1ba31a0ce9e6e0}{save} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader) const override
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Convolution_afb8adcb9bfa9854fba8b609987ff8809}{load} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader) override
+\item 
+auto \& \hyperlink{structbc_1_1nn_1_1Convolution_ae0b5315e9e47fe132ac6873fcc74bcb7}{get\+\_\+weights} () const
+\item 
+auto \& \hyperlink{structbc_1_1nn_1_1Convolution_ab289909aceb1a72033c611db85282688}{get\+\_\+weights} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a5d5ef8c34e8495442aafdb752ae0b8b5}\label{structbc_1_1nn_1_1Convolution_a5d5ef8c34e8495442aafdb752ae0b8b5}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1Convolution_a5d5ef8c34e8495442aafdb752ae0b8b5}{allocator\+\_\+type} =  \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{nn\+\_\+default\+\_\+allocator\+\_\+type}$<$Value\+Type, System\+Tag$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a10d2913efe2df593fd0491fc1cc39dc6}\label{structbc_1_1nn_1_1Convolution_a10d2913efe2df593fd0491fc1cc39dc6}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!defines\+\_\+single\+\_\+predict@{defines\+\_\+single\+\_\+predict}}
+\index{defines\+\_\+single\+\_\+predict@{defines\+\_\+single\+\_\+predict}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{defines\+\_\+single\+\_\+predict}{defines\_single\_predict}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1Convolution_a10d2913efe2df593fd0491fc1cc39dc6}{defines\+\_\+single\+\_\+predict} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a5e9292df10095f5c69ef52837f523290}\label{structbc_1_1nn_1_1Convolution_a5e9292df10095f5c69ef52837f523290}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!greedy\+\_\+evaluate\+\_\+delta@{greedy\+\_\+evaluate\+\_\+delta}}
+\index{greedy\+\_\+evaluate\+\_\+delta@{greedy\+\_\+evaluate\+\_\+delta}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{greedy\+\_\+evaluate\+\_\+delta}{greedy\_evaluate\_delta}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1Convolution_a5e9292df10095f5c69ef52837f523290}{greedy\+\_\+evaluate\+\_\+delta} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a01dcd0bf8ae2c1d94118a4f410b3e568}\label{structbc_1_1nn_1_1Convolution_a01dcd0bf8ae2c1d94118a4f410b3e568}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!input\+\_\+descriptor\+\_\+t@{input\+\_\+descriptor\+\_\+t}}
+\index{input\+\_\+descriptor\+\_\+t@{input\+\_\+descriptor\+\_\+t}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{input\+\_\+descriptor\+\_\+t}{input\_descriptor\_t}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1Convolution_a01dcd0bf8ae2c1d94118a4f410b3e568}{input\+\_\+descriptor\+\_\+t} =  \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$Value\+Type, System\+Tag, \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$3$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a4b9d52a3c24e2e44ae51e0e06819bf45}\label{structbc_1_1nn_1_1Convolution_a4b9d52a3c24e2e44ae51e0e06819bf45}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!input\+\_\+tensor\+\_\+dim@{input\+\_\+tensor\+\_\+dim}}
+\index{input\+\_\+tensor\+\_\+dim@{input\+\_\+tensor\+\_\+dim}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{input\+\_\+tensor\+\_\+dim}{input\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1Convolution_a4b9d52a3c24e2e44ae51e0e06819bf45}{input\+\_\+tensor\+\_\+dim} =  \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$3$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a32c8282bec07115a029de6a8c6a34edf}\label{structbc_1_1nn_1_1Convolution_a32c8282bec07115a029de6a8c6a34edf}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!optimizer\+\_\+type@{optimizer\+\_\+type}}
+\index{optimizer\+\_\+type@{optimizer\+\_\+type}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{optimizer\+\_\+type}{optimizer\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1Convolution_a32c8282bec07115a029de6a8c6a34edf}{optimizer\+\_\+type} =  Optimizer}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a20d103087eb0fa4c47e9640eae02e401}\label{structbc_1_1nn_1_1Convolution_a20d103087eb0fa4c47e9640eae02e401}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!output\+\_\+tensor\+\_\+dim@{output\+\_\+tensor\+\_\+dim}}
+\index{output\+\_\+tensor\+\_\+dim@{output\+\_\+tensor\+\_\+dim}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{output\+\_\+tensor\+\_\+dim}{output\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1Convolution_a20d103087eb0fa4c47e9640eae02e401}{output\+\_\+tensor\+\_\+dim} =  \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$3$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a3a308c5508fc0aafdac299e87e87206c}\label{structbc_1_1nn_1_1Convolution_a3a308c5508fc0aafdac299e87e87206c}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!parent\+\_\+type@{parent\+\_\+type}}
+\index{parent\+\_\+type@{parent\+\_\+type}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{parent\+\_\+type}{parent\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1Convolution_a3a308c5508fc0aafdac299e87e87206c}{parent\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$\hyperlink{structbc_1_1nn_1_1Convolution_a53ebb74b7fab047c1ad45a1f03fc8dd9}{self\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Convolution_a01dcd0bf8ae2c1d94118a4f410b3e568}{input\+\_\+descriptor\+\_\+t}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a084b2b7a45329f1a70aab1a9333829a6}\label{structbc_1_1nn_1_1Convolution_a084b2b7a45329f1a70aab1a9333829a6}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!requires\+\_\+extra\+\_\+cache@{requires\+\_\+extra\+\_\+cache}}
+\index{requires\+\_\+extra\+\_\+cache@{requires\+\_\+extra\+\_\+cache}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{requires\+\_\+extra\+\_\+cache}{requires\_extra\_cache}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1Convolution_a084b2b7a45329f1a70aab1a9333829a6}{requires\+\_\+extra\+\_\+cache} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a53ebb74b7fab047c1ad45a1f03fc8dd9}\label{structbc_1_1nn_1_1Convolution_a53ebb74b7fab047c1ad45a1f03fc8dd9}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!self\+\_\+type@{self\+\_\+type}}
+\index{self\+\_\+type@{self\+\_\+type}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{self\+\_\+type}{self\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1Convolution_a53ebb74b7fab047c1ad45a1f03fc8dd9}{self\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Convolution}{Convolution}$<$System\+Tag, Value\+Type, Optimizer$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_aa4228d722aee390c2288f87ff676ee63}\label{structbc_1_1nn_1_1Convolution_aa4228d722aee390c2288f87ff676ee63}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1Convolution_aa4228d722aee390c2288f87ff676ee63}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_ad57a7bb1413ba889d475bfafac3c8461}\label{structbc_1_1nn_1_1Convolution_ad57a7bb1413ba889d475bfafac3c8461}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1Convolution_ad57a7bb1413ba889d475bfafac3c8461}{value\+\_\+type} =  Value\+Type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a597f57342a57ee7a76e48e2d55f8ec00}\label{structbc_1_1nn_1_1Convolution_a597f57342a57ee7a76e48e2d55f8ec00}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!Convolution@{Convolution}}
+\index{Convolution@{Convolution}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{Convolution()}{Convolution()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+\hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::\hyperlink{structbc_1_1nn_1_1Convolution}{Convolution} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$}]{img\+\_\+dims,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$}]{krnl\+\_\+dims,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{padding = {\ttfamily \hyperlink{structbc_1_1Dim}{Dim}$<$2$>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(0)},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{strides = {\ttfamily \hyperlink{structbc_1_1Dim}{Dim}$<$2$>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1)},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{dilation = {\ttfamily \hyperlink{structbc_1_1Dim}{Dim}$<$2$>$().\hyperlink{tensor__iteralgos_8h_afd10a40f252abd24d1faa2752becdd53}{fill}(1)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_afc07b8db150a19ecd72ad285009f6232}\label{structbc_1_1nn_1_1Convolution_afc07b8db150a19ecd72ad285009f6232}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!back\+\_\+propagation@{back\+\_\+propagation}}
+\index{back\+\_\+propagation@{back\+\_\+propagation}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{back\+\_\+propagation()}{back\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+template$<$class X , class Delta $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::back\+\_\+propagation (\begin{DoxyParamCaption}\item[{const X \&}]{x,  }\item[{const Delta \&}]{dy,  }\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{cache }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a99ff4923bc1f445a1497bfb11914930f}\label{structbc_1_1nn_1_1Convolution_a99ff4923bc1f445a1497bfb11914930f}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+template$<$class X $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const X \&}]{x,  }\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{cache }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a2ea23e12ab647c85966cb8f86f85e8bf}\label{structbc_1_1nn_1_1Convolution_a2ea23e12ab647c85966cb8f86f85e8bf}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!get\+\_\+batched\+\_\+column\+\_\+image\+\_\+shape@{get\+\_\+batched\+\_\+column\+\_\+image\+\_\+shape}}
+\index{get\+\_\+batched\+\_\+column\+\_\+image\+\_\+shape@{get\+\_\+batched\+\_\+column\+\_\+image\+\_\+shape}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{get\+\_\+batched\+\_\+column\+\_\+image\+\_\+shape()}{get\_batched\_column\_image\_shape()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+\hyperlink{structbc_1_1Dim}{Dim}$<$3$>$ \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::get\+\_\+batched\+\_\+column\+\_\+image\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a881a726a100f7494eb190f7b24295c18}\label{structbc_1_1nn_1_1Convolution_a881a726a100f7494eb190f7b24295c18}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!get\+\_\+kernel\+\_\+shape@{get\+\_\+kernel\+\_\+shape}}
+\index{get\+\_\+kernel\+\_\+shape@{get\+\_\+kernel\+\_\+shape}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{get\+\_\+kernel\+\_\+shape()}{get\_kernel\_shape()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+\hyperlink{structbc_1_1Dim}{Dim}$<$4$>$ \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::get\+\_\+kernel\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_ae0b5315e9e47fe132ac6873fcc74bcb7}\label{structbc_1_1nn_1_1Convolution_ae0b5315e9e47fe132ac6873fcc74bcb7}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!get\+\_\+weights@{get\+\_\+weights}}
+\index{get\+\_\+weights@{get\+\_\+weights}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{get\+\_\+weights()}{get\_weights()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+auto\& \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::get\+\_\+weights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_ab289909aceb1a72033c611db85282688}\label{structbc_1_1nn_1_1Convolution_ab289909aceb1a72033c611db85282688}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!get\+\_\+weights@{get\+\_\+weights}}
+\index{get\+\_\+weights@{get\+\_\+weights}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{get\+\_\+weights()}{get\_weights()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+auto\& \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::get\+\_\+weights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_afb8adcb9bfa9854fba8b609987ff8809}\label{structbc_1_1nn_1_1Convolution_afb8adcb9bfa9854fba8b609987ff8809}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{structbc_1_1nn_1_1Layer__Base_a5b3a9854215815f810bef4922b74efaf}{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ Convolution$<$ System\+Tag, Value\+Type, Optimizer $>$, Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, bc\+::traits\+::\+Integer$<$ 3 $>$ $>$ $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_adf118eb4b92ed6f2df1ba31a0ce9e6e0}\label{structbc_1_1nn_1_1Convolution_adf118eb4b92ed6f2df1ba31a0ce9e6e0}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!save@{save}}
+\index{save@{save}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::save (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{structbc_1_1nn_1_1Layer__Base_a9613e51db3c27e64ced09e41d2e7f15c}{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ Convolution$<$ System\+Tag, Value\+Type, Optimizer $>$, Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, bc\+::traits\+::\+Integer$<$ 3 $>$ $>$ $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a023bbc5d98a0a005a092b07353bd608a}\label{structbc_1_1nn_1_1Convolution_a023bbc5d98a0a005a092b07353bd608a}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!set\+\_\+learning\+\_\+rate@{set\+\_\+learning\+\_\+rate}}
+\index{set\+\_\+learning\+\_\+rate@{set\+\_\+learning\+\_\+rate}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{set\+\_\+learning\+\_\+rate()}{set\_learning\_rate()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::set\+\_\+learning\+\_\+rate (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Convolution_ad57a7bb1413ba889d475bfafac3c8461}{value\+\_\+type}}]{lr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_abad1b5837d3b22637c254d7dafecbb8c}\label{structbc_1_1nn_1_1Convolution_abad1b5837d3b22637c254d7dafecbb8c}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!single\+\_\+predict@{single\+\_\+predict}}
+\index{single\+\_\+predict@{single\+\_\+predict}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{single\+\_\+predict()}{single\_predict()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+template$<$class X $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::single\+\_\+predict (\begin{DoxyParamCaption}\item[{const X \&}]{x,  }\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{cache }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Convolution_a867b470dc738fb6b533d7c0065a858b9}\label{structbc_1_1nn_1_1Convolution_a867b470dc738fb6b533d7c0065a858b9}} 
+\index{bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}!update\+\_\+weights@{update\+\_\+weights}}
+\index{update\+\_\+weights@{update\+\_\+weights}!bc\+::nn\+::\+Convolution@{bc\+::nn\+::\+Convolution}}
+\subsubsection{\texorpdfstring{update\+\_\+weights()}{update\_weights()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Convolution}{bc\+::nn\+::\+Convolution}$<$ System\+Tag, Value\+Type, Optimizer $>$\+::update\+\_\+weights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/layers/\hyperlink{convolution_8h}{convolution.\+h}\end{DoxyCompactItemize}

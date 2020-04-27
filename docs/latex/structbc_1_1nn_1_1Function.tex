@@ -1,0 +1,170 @@
+\hypertarget{structbc_1_1nn_1_1Function}{}\section{bc\+:\+:nn\+:\+:Function$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1Function}\index{bc\+::nn\+::\+Function$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$@{bc\+::nn\+::\+Function$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$}}
+
+
+{\ttfamily \#include $<$unaryfunction.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:nn\+:\+:Function$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Function__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Function$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Function__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Function_a7882db6732a438adaa9724bd80f57c13}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1Function_a960ffb695c734f905e72c911ee6f8b88}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Function_aeb0024acff31772fe200f6c609b17ff4}{allocator\+\_\+type} = \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{nn\+\_\+default\+\_\+allocator\+\_\+type}$<$ Value\+Type, System\+Tag $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Function_adece619f4fd89384525c9a38bfbb6446}{self\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Function}{Function}$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Function_a4851b2a44e4e723b04bc0fa85b5230e7}{input\+\_\+descriptor\+\_\+t} = \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$ Value\+Type, System\+Tag, Input\+Dimension $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Function_aac15eb912eb37278467558226f71fe65}{parent\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1Function_adece619f4fd89384525c9a38bfbb6446}{self\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Function_a4851b2a44e4e723b04bc0fa85b5230e7}{input\+\_\+descriptor\+\_\+t} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Function_a77caf4997c1a02816179a2c3773f487e}{input\+\_\+tensor\+\_\+dim} = Input\+Dimension
+\item 
+using \hyperlink{structbc_1_1nn_1_1Function_ab3450a09e41881b85f3f37112245b4f4}{output\+\_\+tensor\+\_\+dim} = Input\+Dimension
+\item 
+using \hyperlink{structbc_1_1nn_1_1Function_ab8cbdaad20a0270b2555a91676a79932}{shape\+\_\+type} = \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ input\+\_\+tensor\+\_\+dim\+::value $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1Function_a276e54e414ef1b95297d04bb1881b054}{Function} (\hyperlink{structbc_1_1nn_1_1Function_ab8cbdaad20a0270b2555a91676a79932}{shape\+\_\+type} inputs, Functor \hyperlink{structbc_1_1nn_1_1Function_a5fd3a0023d9abfe4ce4dc513863a6d06}{function}=Functor())
+\item 
+{\footnotesize template$<$class Matrix $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Function_a516b68e5ff7077887e30a2a6df73a64b}{forward\+\_\+propagation} (const \hyperlink{namespacebc_a92dd1e243183b382432a5fac3ed8b89f}{Matrix} \&x)
+\item 
+{\footnotesize template$<$class X , class Delta $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Function_a3e07048b3c63a0625f447d37002e49b2}{back\+\_\+propagation} (const X \&x, const Delta \&dy)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Functor \hyperlink{structbc_1_1nn_1_1Function_a5fd3a0023d9abfe4ce4dc513863a6d06}{function}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Function_aeb0024acff31772fe200f6c609b17ff4}\label{structbc_1_1nn_1_1Function_aeb0024acff31772fe200f6c609b17ff4}} 
+\index{bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Functor, class Input\+Dimension = bc\+::traits\+::\+Integer$<$1$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Function}{bc\+::nn\+::\+Function}$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$\+::\hyperlink{structbc_1_1nn_1_1Function_aeb0024acff31772fe200f6c609b17ff4}{allocator\+\_\+type} =  \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{nn\+\_\+default\+\_\+allocator\+\_\+type}$<$Value\+Type, System\+Tag$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Function_a4851b2a44e4e723b04bc0fa85b5230e7}\label{structbc_1_1nn_1_1Function_a4851b2a44e4e723b04bc0fa85b5230e7}} 
+\index{bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}!input\+\_\+descriptor\+\_\+t@{input\+\_\+descriptor\+\_\+t}}
+\index{input\+\_\+descriptor\+\_\+t@{input\+\_\+descriptor\+\_\+t}!bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}}
+\subsubsection{\texorpdfstring{input\+\_\+descriptor\+\_\+t}{input\_descriptor\_t}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Functor, class Input\+Dimension = bc\+::traits\+::\+Integer$<$1$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Function}{bc\+::nn\+::\+Function}$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$\+::\hyperlink{structbc_1_1nn_1_1Function_a4851b2a44e4e723b04bc0fa85b5230e7}{input\+\_\+descriptor\+\_\+t} =  \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$Value\+Type, System\+Tag, Input\+Dimension$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Function_a77caf4997c1a02816179a2c3773f487e}\label{structbc_1_1nn_1_1Function_a77caf4997c1a02816179a2c3773f487e}} 
+\index{bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}!input\+\_\+tensor\+\_\+dim@{input\+\_\+tensor\+\_\+dim}}
+\index{input\+\_\+tensor\+\_\+dim@{input\+\_\+tensor\+\_\+dim}!bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}}
+\subsubsection{\texorpdfstring{input\+\_\+tensor\+\_\+dim}{input\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Functor, class Input\+Dimension = bc\+::traits\+::\+Integer$<$1$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Function}{bc\+::nn\+::\+Function}$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$\+::\hyperlink{structbc_1_1nn_1_1Function_a77caf4997c1a02816179a2c3773f487e}{input\+\_\+tensor\+\_\+dim} =  Input\+Dimension}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Function_ab3450a09e41881b85f3f37112245b4f4}\label{structbc_1_1nn_1_1Function_ab3450a09e41881b85f3f37112245b4f4}} 
+\index{bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}!output\+\_\+tensor\+\_\+dim@{output\+\_\+tensor\+\_\+dim}}
+\index{output\+\_\+tensor\+\_\+dim@{output\+\_\+tensor\+\_\+dim}!bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}}
+\subsubsection{\texorpdfstring{output\+\_\+tensor\+\_\+dim}{output\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Functor, class Input\+Dimension = bc\+::traits\+::\+Integer$<$1$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Function}{bc\+::nn\+::\+Function}$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$\+::\hyperlink{structbc_1_1nn_1_1Function_ab3450a09e41881b85f3f37112245b4f4}{output\+\_\+tensor\+\_\+dim} =  Input\+Dimension}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Function_aac15eb912eb37278467558226f71fe65}\label{structbc_1_1nn_1_1Function_aac15eb912eb37278467558226f71fe65}} 
+\index{bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}!parent\+\_\+type@{parent\+\_\+type}}
+\index{parent\+\_\+type@{parent\+\_\+type}!bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}}
+\subsubsection{\texorpdfstring{parent\+\_\+type}{parent\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Functor, class Input\+Dimension = bc\+::traits\+::\+Integer$<$1$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Function}{bc\+::nn\+::\+Function}$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$\+::\hyperlink{structbc_1_1nn_1_1Function_aac15eb912eb37278467558226f71fe65}{parent\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$\hyperlink{structbc_1_1nn_1_1Function_adece619f4fd89384525c9a38bfbb6446}{self\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Function_a4851b2a44e4e723b04bc0fa85b5230e7}{input\+\_\+descriptor\+\_\+t}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Function_adece619f4fd89384525c9a38bfbb6446}\label{structbc_1_1nn_1_1Function_adece619f4fd89384525c9a38bfbb6446}} 
+\index{bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}!self\+\_\+type@{self\+\_\+type}}
+\index{self\+\_\+type@{self\+\_\+type}!bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}}
+\subsubsection{\texorpdfstring{self\+\_\+type}{self\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Functor, class Input\+Dimension = bc\+::traits\+::\+Integer$<$1$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Function}{bc\+::nn\+::\+Function}$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$\+::\hyperlink{structbc_1_1nn_1_1Function_adece619f4fd89384525c9a38bfbb6446}{self\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Function}{Function}$<$System\+Tag, Value\+Type, Functor,Input\+Dimension$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Function_ab8cbdaad20a0270b2555a91676a79932}\label{structbc_1_1nn_1_1Function_ab8cbdaad20a0270b2555a91676a79932}} 
+\index{bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}!shape\+\_\+type@{shape\+\_\+type}}
+\index{shape\+\_\+type@{shape\+\_\+type}!bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}}
+\subsubsection{\texorpdfstring{shape\+\_\+type}{shape\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Functor, class Input\+Dimension = bc\+::traits\+::\+Integer$<$1$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Function_ab8cbdaad20a0270b2555a91676a79932}{shape\+\_\+type} =  \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$input\+\_\+tensor\+\_\+dim\+::value$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Function_a7882db6732a438adaa9724bd80f57c13}\label{structbc_1_1nn_1_1Function_a7882db6732a438adaa9724bd80f57c13}} 
+\index{bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Functor, class Input\+Dimension = bc\+::traits\+::\+Integer$<$1$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Function}{bc\+::nn\+::\+Function}$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$\+::\hyperlink{structbc_1_1nn_1_1Function_a7882db6732a438adaa9724bd80f57c13}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Function_a960ffb695c734f905e72c911ee6f8b88}\label{structbc_1_1nn_1_1Function_a960ffb695c734f905e72c911ee6f8b88}} 
+\index{bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Functor, class Input\+Dimension = bc\+::traits\+::\+Integer$<$1$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Function}{bc\+::nn\+::\+Function}$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$\+::\hyperlink{structbc_1_1nn_1_1Function_a960ffb695c734f905e72c911ee6f8b88}{value\+\_\+type} =  Value\+Type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Function_a276e54e414ef1b95297d04bb1881b054}\label{structbc_1_1nn_1_1Function_a276e54e414ef1b95297d04bb1881b054}} 
+\index{bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}!Function@{Function}}
+\index{Function@{Function}!bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}}
+\subsubsection{\texorpdfstring{Function()}{Function()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Functor, class Input\+Dimension = bc\+::traits\+::\+Integer$<$1$>$$>$ \\
+\hyperlink{structbc_1_1nn_1_1Function}{bc\+::nn\+::\+Function}$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$\+::\hyperlink{structbc_1_1nn_1_1Function}{Function} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Function_ab8cbdaad20a0270b2555a91676a79932}{shape\+\_\+type}}]{inputs,  }\item[{Functor}]{function = {\ttfamily Functor()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Function_a3e07048b3c63a0625f447d37002e49b2}\label{structbc_1_1nn_1_1Function_a3e07048b3c63a0625f447d37002e49b2}} 
+\index{bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}!back\+\_\+propagation@{back\+\_\+propagation}}
+\index{back\+\_\+propagation@{back\+\_\+propagation}!bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}}
+\subsubsection{\texorpdfstring{back\+\_\+propagation()}{back\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Functor, class Input\+Dimension = bc\+::traits\+::\+Integer$<$1$>$$>$ \\
+template$<$class X , class Delta $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Function}{bc\+::nn\+::\+Function}$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$\+::back\+\_\+propagation (\begin{DoxyParamCaption}\item[{const X \&}]{x,  }\item[{const Delta \&}]{dy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Function_a516b68e5ff7077887e30a2a6df73a64b}\label{structbc_1_1nn_1_1Function_a516b68e5ff7077887e30a2a6df73a64b}} 
+\index{bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Functor, class Input\+Dimension = bc\+::traits\+::\+Integer$<$1$>$$>$ \\
+template$<$class Matrix $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Function}{bc\+::nn\+::\+Function}$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacebc_a92dd1e243183b382432a5fac3ed8b89f}{Matrix} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Function_a5fd3a0023d9abfe4ce4dc513863a6d06}\label{structbc_1_1nn_1_1Function_a5fd3a0023d9abfe4ce4dc513863a6d06}} 
+\index{bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}!function@{function}}
+\index{function@{function}!bc\+::nn\+::\+Function@{bc\+::nn\+::\+Function}}
+\subsubsection{\texorpdfstring{function}{function}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Functor, class Input\+Dimension = bc\+::traits\+::\+Integer$<$1$>$$>$ \\
+Functor \hyperlink{structbc_1_1nn_1_1Function}{bc\+::nn\+::\+Function}$<$ System\+Tag, Value\+Type, Functor, Input\+Dimension $>$\+::function}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/layers/\hyperlink{unaryfunction_8h}{unaryfunction.\+h}\end{DoxyCompactItemize}

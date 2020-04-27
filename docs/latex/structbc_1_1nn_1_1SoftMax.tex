@@ -1,0 +1,151 @@
+\hypertarget{structbc_1_1nn_1_1SoftMax}{}\section{bc\+:\+:nn\+:\+:Soft\+Max$<$ System\+Tag, Value\+Type $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1SoftMax}\index{bc\+::nn\+::\+Soft\+Max$<$ System\+Tag, Value\+Type $>$@{bc\+::nn\+::\+Soft\+Max$<$ System\+Tag, Value\+Type $>$}}
+
+
+{\ttfamily \#include $<$softmax.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:nn\+:\+:Soft\+Max$<$ System\+Tag, Value\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1SoftMax__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Soft\+Max$<$ System\+Tag, Value\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1SoftMax__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1SoftMax_a7a97d15ba35c8cb9de0322b8b446bc46}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1SoftMax_a7e53ef1c3b39ca65afa99d237b9353fa}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1SoftMax_acb201cfe27da9360a1b121e7d9ab190a}{input\+\_\+descriptor\+\_\+t} = \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$ Value\+Type, System\+Tag, \hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ 1 $>$ $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1SoftMax_afebb15c21a42f0eb4bb355c726a5a0d5}{parent\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1SoftMax}{Soft\+Max}$<$ System\+Tag, Value\+Type $>$, \hyperlink{structbc_1_1nn_1_1SoftMax_acb201cfe27da9360a1b121e7d9ab190a}{input\+\_\+descriptor\+\_\+t} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1SoftMax_ae3dde4631e85a7be9c8578e70f642dd5}{mat} = \hyperlink{namespacebc_a92dd1e243183b382432a5fac3ed8b89f}{bc\+::\+Matrix}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{bc\+::\+Allocator}$<$ Value\+Type, System\+Tag $>$ $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1SoftMax_acb0aee6fde514718c2f26eb711a0b710}{vec} = \hyperlink{namespacebc_a14d40e8e95957f92a57853921837a15d}{bc\+::\+Vector}$<$ Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{bc\+::\+Allocator}$<$ Value\+Type, System\+Tag $>$ $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1SoftMax_adb6fc880a69498f69e276f25adc24666}{Soft\+Max} (int inputs)
+\item 
+{\footnotesize template$<$class Allocator $>$ }\\const auto \& \hyperlink{structbc_1_1nn_1_1SoftMax_adab9740cba584dbda141a1324ffae83e}{forward\+\_\+propagation} (const \hyperlink{namespacebc_a92dd1e243183b382432a5fac3ed8b89f}{bc\+::\+Matrix}$<$ \hyperlink{structbc_1_1nn_1_1SoftMax_a7e53ef1c3b39ca65afa99d237b9353fa}{value\+\_\+type}, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$ \&x)
+\item 
+{\footnotesize template$<$class Allocator $>$ }\\auto \hyperlink{structbc_1_1nn_1_1SoftMax_a1cbc897440f74d9ef44179e3e3857afb}{forward\+\_\+propagation} (const \hyperlink{namespacebc_a14d40e8e95957f92a57853921837a15d}{bc\+::\+Vector}$<$ \hyperlink{structbc_1_1nn_1_1SoftMax_a7e53ef1c3b39ca65afa99d237b9353fa}{value\+\_\+type}, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$ \&x)
+\item 
+{\footnotesize template$<$class X , class Matrix $>$ }\\auto \hyperlink{structbc_1_1nn_1_1SoftMax_a61b74940e2e55753f7409cfd4af87c5c}{back\+\_\+propagation} (const X \&x, const \hyperlink{namespacebc_a92dd1e243183b382432a5fac3ed8b89f}{Matrix} \&dy)
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1SoftMax_a0c4652a0da9f1d44e23d8856ca7b8278}{set\+\_\+batch\+\_\+size\+\_\+hook} (int bs) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1SoftMax_acb201cfe27da9360a1b121e7d9ab190a}\label{structbc_1_1nn_1_1SoftMax_acb201cfe27da9360a1b121e7d9ab190a}} 
+\index{bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}!input\+\_\+descriptor\+\_\+t@{input\+\_\+descriptor\+\_\+t}}
+\index{input\+\_\+descriptor\+\_\+t@{input\+\_\+descriptor\+\_\+t}!bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}}
+\subsubsection{\texorpdfstring{input\+\_\+descriptor\+\_\+t}{input\_descriptor\_t}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+using \hyperlink{structbc_1_1nn_1_1SoftMax}{bc\+::nn\+::\+Soft\+Max}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1SoftMax_acb201cfe27da9360a1b121e7d9ab190a}{input\+\_\+descriptor\+\_\+t} =  \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$Value\+Type, System\+Tag, \hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$1$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1SoftMax_ae3dde4631e85a7be9c8578e70f642dd5}\label{structbc_1_1nn_1_1SoftMax_ae3dde4631e85a7be9c8578e70f642dd5}} 
+\index{bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}!mat@{mat}}
+\index{mat@{mat}!bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}}
+\subsubsection{\texorpdfstring{mat}{mat}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+using \hyperlink{structbc_1_1nn_1_1SoftMax}{bc\+::nn\+::\+Soft\+Max}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1SoftMax_ae3dde4631e85a7be9c8578e70f642dd5}{mat} =  \hyperlink{namespacebc_a92dd1e243183b382432a5fac3ed8b89f}{bc\+::\+Matrix}$<$Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{bc\+::\+Allocator}$<$Value\+Type, System\+Tag$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1SoftMax_afebb15c21a42f0eb4bb355c726a5a0d5}\label{structbc_1_1nn_1_1SoftMax_afebb15c21a42f0eb4bb355c726a5a0d5}} 
+\index{bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}!parent\+\_\+type@{parent\+\_\+type}}
+\index{parent\+\_\+type@{parent\+\_\+type}!bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}}
+\subsubsection{\texorpdfstring{parent\+\_\+type}{parent\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+using \hyperlink{structbc_1_1nn_1_1SoftMax}{bc\+::nn\+::\+Soft\+Max}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1SoftMax_afebb15c21a42f0eb4bb355c726a5a0d5}{parent\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$\hyperlink{structbc_1_1nn_1_1SoftMax}{Soft\+Max}$<$System\+Tag, Value\+Type$>$, \hyperlink{structbc_1_1nn_1_1SoftMax_acb201cfe27da9360a1b121e7d9ab190a}{input\+\_\+descriptor\+\_\+t}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1SoftMax_a7a97d15ba35c8cb9de0322b8b446bc46}\label{structbc_1_1nn_1_1SoftMax_a7a97d15ba35c8cb9de0322b8b446bc46}} 
+\index{bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+using \hyperlink{structbc_1_1nn_1_1SoftMax}{bc\+::nn\+::\+Soft\+Max}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1SoftMax_a7a97d15ba35c8cb9de0322b8b446bc46}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1SoftMax_a7e53ef1c3b39ca65afa99d237b9353fa}\label{structbc_1_1nn_1_1SoftMax_a7e53ef1c3b39ca65afa99d237b9353fa}} 
+\index{bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+using \hyperlink{structbc_1_1nn_1_1SoftMax}{bc\+::nn\+::\+Soft\+Max}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1SoftMax_a7e53ef1c3b39ca65afa99d237b9353fa}{value\+\_\+type} =  Value\+Type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1SoftMax_acb0aee6fde514718c2f26eb711a0b710}\label{structbc_1_1nn_1_1SoftMax_acb0aee6fde514718c2f26eb711a0b710}} 
+\index{bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}!vec@{vec}}
+\index{vec@{vec}!bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}}
+\subsubsection{\texorpdfstring{vec}{vec}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+using \hyperlink{structbc_1_1nn_1_1SoftMax}{bc\+::nn\+::\+Soft\+Max}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1SoftMax_acb0aee6fde514718c2f26eb711a0b710}{vec} =  \hyperlink{namespacebc_a14d40e8e95957f92a57853921837a15d}{bc\+::\+Vector}$<$Value\+Type, \hyperlink{classbc_1_1allocators_1_1Allocator}{bc\+::\+Allocator}$<$Value\+Type, System\+Tag$>$ $>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1SoftMax_adb6fc880a69498f69e276f25adc24666}\label{structbc_1_1nn_1_1SoftMax_adb6fc880a69498f69e276f25adc24666}} 
+\index{bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}!Soft\+Max@{Soft\+Max}}
+\index{Soft\+Max@{Soft\+Max}!bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}}
+\subsubsection{\texorpdfstring{Soft\+Max()}{SoftMax()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+\hyperlink{structbc_1_1nn_1_1SoftMax}{bc\+::nn\+::\+Soft\+Max}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1SoftMax}{Soft\+Max} (\begin{DoxyParamCaption}\item[{int}]{inputs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1SoftMax_a61b74940e2e55753f7409cfd4af87c5c}\label{structbc_1_1nn_1_1SoftMax_a61b74940e2e55753f7409cfd4af87c5c}} 
+\index{bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}!back\+\_\+propagation@{back\+\_\+propagation}}
+\index{back\+\_\+propagation@{back\+\_\+propagation}!bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}}
+\subsubsection{\texorpdfstring{back\+\_\+propagation()}{back\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+template$<$class X , class Matrix $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1SoftMax}{bc\+::nn\+::\+Soft\+Max}$<$ System\+Tag, Value\+Type $>$\+::back\+\_\+propagation (\begin{DoxyParamCaption}\item[{const X \&}]{x,  }\item[{const \hyperlink{namespacebc_a92dd1e243183b382432a5fac3ed8b89f}{Matrix} \&}]{dy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1SoftMax_adab9740cba584dbda141a1324ffae83e}\label{structbc_1_1nn_1_1SoftMax_adab9740cba584dbda141a1324ffae83e}} 
+\index{bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+template$<$class Allocator $>$ \\
+const auto\& \hyperlink{structbc_1_1nn_1_1SoftMax}{bc\+::nn\+::\+Soft\+Max}$<$ System\+Tag, Value\+Type $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacebc_a92dd1e243183b382432a5fac3ed8b89f}{bc\+::\+Matrix}$<$ \hyperlink{structbc_1_1nn_1_1SoftMax_a7e53ef1c3b39ca65afa99d237b9353fa}{value\+\_\+type}, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$ \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1SoftMax_a1cbc897440f74d9ef44179e3e3857afb}\label{structbc_1_1nn_1_1SoftMax_a1cbc897440f74d9ef44179e3e3857afb}} 
+\index{bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+template$<$class Allocator $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1SoftMax}{bc\+::nn\+::\+Soft\+Max}$<$ System\+Tag, Value\+Type $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacebc_a14d40e8e95957f92a57853921837a15d}{bc\+::\+Vector}$<$ \hyperlink{structbc_1_1nn_1_1SoftMax_a7e53ef1c3b39ca65afa99d237b9353fa}{value\+\_\+type}, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$ \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1SoftMax_a0c4652a0da9f1d44e23d8856ca7b8278}\label{structbc_1_1nn_1_1SoftMax_a0c4652a0da9f1d44e23d8856ca7b8278}} 
+\index{bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}!set\+\_\+batch\+\_\+size\+\_\+hook@{set\+\_\+batch\+\_\+size\+\_\+hook}}
+\index{set\+\_\+batch\+\_\+size\+\_\+hook@{set\+\_\+batch\+\_\+size\+\_\+hook}!bc\+::nn\+::\+Soft\+Max@{bc\+::nn\+::\+Soft\+Max}}
+\subsubsection{\texorpdfstring{set\+\_\+batch\+\_\+size\+\_\+hook()}{set\_batch\_size\_hook()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type $>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1SoftMax}{bc\+::nn\+::\+Soft\+Max}$<$ System\+Tag, Value\+Type $>$\+::set\+\_\+batch\+\_\+size\+\_\+hook (\begin{DoxyParamCaption}\item[{int}]{bs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{structbc_1_1nn_1_1Layer__Base_a8365fc3fc656aadeb0513d8e02b5fba0}{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ Soft\+Max$<$ System\+Tag, Value\+Type $>$, Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Integer$<$ 1 $>$ $>$ $>$}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/layers/\hyperlink{softmax_8h}{softmax.\+h}\end{DoxyCompactItemize}

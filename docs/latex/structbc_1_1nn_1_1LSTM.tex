@@ -1,0 +1,343 @@
+\hypertarget{structbc_1_1nn_1_1LSTM}{}\section{bc\+:\+:nn\+:\+:L\+S\+TM$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1LSTM}\index{bc\+::nn\+::\+L\+S\+T\+M$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$@{bc\+::nn\+::\+L\+S\+T\+M$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$}}
+
+
+{\ttfamily \#include $<$lstm.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:nn\+:\+:L\+S\+TM$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1LSTM__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:L\+S\+TM$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1LSTM__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1LSTM_a6a485b17d877d63d1fad2698584eb478}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1LSTM_a4f4948a22b62ff7975968bb2d38e79a2}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1LSTM_aab44654006b4410cc4a26d2a592776e1}{input\+\_\+descriptor\+\_\+t} = \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$ Value\+Type, System\+Tag, \hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ 1 $>$ $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1LSTM_af5aae30f99bb8b7706a748e660ba2975}{parent\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1LSTM}{L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$, \hyperlink{structbc_1_1nn_1_1LSTM_aab44654006b4410cc4a26d2a592776e1}{input\+\_\+descriptor\+\_\+t} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1LSTM_a860169e34fe01e7c9faef6186353f856}{allocator\+\_\+type} = \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{nn\+\_\+default\+\_\+allocator\+\_\+type}$<$ Value\+Type, System\+Tag $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1LSTM_adc4d4ca749708bacc70cf57547fd5c08}{optimizer\+\_\+type} = Optimizer
+\item 
+using \hyperlink{structbc_1_1nn_1_1LSTM_aa147016269d4e28e85e6ecfa224be9e0}{greedy\+\_\+evaluate\+\_\+delta} = std\+::true\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1LSTM_a0ed3ef008dd514399c0ad36e2093a47f}{forward\+\_\+requires\+\_\+outputs} = std\+::true\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1LSTM_aeb7cbe9394df31133663bd53c98650b7}{backward\+\_\+requires\+\_\+outputs} = std\+::true\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1LSTM_af443096fc604c2d9e06122298b9b0c8b}{requires\+\_\+extra\+\_\+cache} = std\+::true\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1LSTM_a55f56b2edacabda8d983e77692c03096}{is\+\_\+recurrent} = std\+::true\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1LSTM_af773cc2ae3cf395af8ce9e921db39ba1}{defines\+\_\+predict} = std\+::true\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1LSTM_adaf632d0c0b59449d7e4c2885abf96a8}{defines\+\_\+single\+\_\+predict} = std\+::true\+\_\+type
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1LSTM_acd8abe2e403ae4f8806b2a95d909a62a}{L\+S\+TM} (int inputs, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} outputs)
+\item 
+void \hyperlink{structbc_1_1nn_1_1LSTM_a6364991b3bdf2d2364c90fdcd7a63c3a}{randomize\+\_\+weights} ()
+\item 
+{\footnotesize template$<$class X , class Y $>$ }\\auto \hyperlink{structbc_1_1nn_1_1LSTM_a1b3698141f27e32587a7c1ed367df095}{forward\+\_\+propagation} (const X \&x, const Y \&y, \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&cache)
+\item 
+{\footnotesize template$<$class X , class Y $>$ }\\auto \hyperlink{structbc_1_1nn_1_1LSTM_a5351e27bb23773b3daa2376ab525d207}{predict} (const X \&x, const Y \&y, \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&cache)
+\item 
+{\footnotesize template$<$class X , class Y $>$ }\\auto \hyperlink{structbc_1_1nn_1_1LSTM_a98237c18f037ecedd25581a11433a476}{single\+\_\+predict} (const X \&x, const Y \&y, \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&cache)
+\item 
+{\footnotesize template$<$class X , class Y , class Delta $>$ }\\auto \hyperlink{structbc_1_1nn_1_1LSTM_a15dc1ca2bf577ae2a22c01f1f81771e4}{back\+\_\+propagation} (const X \&x, const Y \&y, const Delta \&delta\+\_\+outputs, class \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&cache)
+\item 
+void \hyperlink{structbc_1_1nn_1_1LSTM_a5d295f0329b63593da595a6bbf159959}{update\+\_\+weights} ()
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1LSTM_a772315b1deeaa862a59437d4a1ccf9a8}{set\+\_\+learning\+\_\+rate\+\_\+hook} (\hyperlink{structbc_1_1nn_1_1LSTM_a4f4948a22b62ff7975968bb2d38e79a2}{value\+\_\+type} lr) override final
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1LSTM_af58d155c9bf27beb39b9898270515507}{set\+\_\+batch\+\_\+size\+\_\+hook} (int bs) override final
+\item 
+void \hyperlink{structbc_1_1nn_1_1LSTM_a415bda3dd81d13f4e675ad182ab6bc27}{zero\+\_\+deltas} ()
+\item 
+void \hyperlink{structbc_1_1nn_1_1LSTM_ae8885e5fe317b5c485f64717e9037bb5}{zero\+\_\+gradients} ()
+\item 
+void \hyperlink{structbc_1_1nn_1_1LSTM_a0590ad585febcdcb70978238920881b2}{clear\+\_\+bp\+\_\+storage} (\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&m\+\_\+cache)
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1LSTM_ae74b5038cc10d0ad236be07704d2999a}{save} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader) const
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1LSTM_a270951d7af7ffcf061d02bbb046a4dc7}{save\+\_\+from\+\_\+cache} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader, const \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&cache) const override
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1LSTM_ae85ec6a90fe555a1088681159a0af466}{load} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader) override
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1LSTM_a145581143a450d11a870b3c59cc1d47f}{load\+\_\+to\+\_\+cache} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader, const \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&cache) override
+\item 
+void \hyperlink{structbc_1_1nn_1_1LSTM_a4ee041e97fa17ae5a17f143e4b28c077}{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict} (\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&cache, int batch\+\_\+index)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a860169e34fe01e7c9faef6186353f856}\label{structbc_1_1nn_1_1LSTM_a860169e34fe01e7c9faef6186353f856}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1LSTM_a860169e34fe01e7c9faef6186353f856}{allocator\+\_\+type} =  \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{nn\+\_\+default\+\_\+allocator\+\_\+type}$<$Value\+Type, System\+Tag$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_aeb7cbe9394df31133663bd53c98650b7}\label{structbc_1_1nn_1_1LSTM_aeb7cbe9394df31133663bd53c98650b7}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!backward\+\_\+requires\+\_\+outputs@{backward\+\_\+requires\+\_\+outputs}}
+\index{backward\+\_\+requires\+\_\+outputs@{backward\+\_\+requires\+\_\+outputs}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{backward\+\_\+requires\+\_\+outputs}{backward\_requires\_outputs}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1LSTM_aeb7cbe9394df31133663bd53c98650b7}{backward\+\_\+requires\+\_\+outputs} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_af773cc2ae3cf395af8ce9e921db39ba1}\label{structbc_1_1nn_1_1LSTM_af773cc2ae3cf395af8ce9e921db39ba1}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!defines\+\_\+predict@{defines\+\_\+predict}}
+\index{defines\+\_\+predict@{defines\+\_\+predict}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{defines\+\_\+predict}{defines\_predict}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1LSTM_af773cc2ae3cf395af8ce9e921db39ba1}{defines\+\_\+predict} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_adaf632d0c0b59449d7e4c2885abf96a8}\label{structbc_1_1nn_1_1LSTM_adaf632d0c0b59449d7e4c2885abf96a8}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!defines\+\_\+single\+\_\+predict@{defines\+\_\+single\+\_\+predict}}
+\index{defines\+\_\+single\+\_\+predict@{defines\+\_\+single\+\_\+predict}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{defines\+\_\+single\+\_\+predict}{defines\_single\_predict}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1LSTM_adaf632d0c0b59449d7e4c2885abf96a8}{defines\+\_\+single\+\_\+predict} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a0ed3ef008dd514399c0ad36e2093a47f}\label{structbc_1_1nn_1_1LSTM_a0ed3ef008dd514399c0ad36e2093a47f}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!forward\+\_\+requires\+\_\+outputs@{forward\+\_\+requires\+\_\+outputs}}
+\index{forward\+\_\+requires\+\_\+outputs@{forward\+\_\+requires\+\_\+outputs}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{forward\+\_\+requires\+\_\+outputs}{forward\_requires\_outputs}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1LSTM_a0ed3ef008dd514399c0ad36e2093a47f}{forward\+\_\+requires\+\_\+outputs} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_aa147016269d4e28e85e6ecfa224be9e0}\label{structbc_1_1nn_1_1LSTM_aa147016269d4e28e85e6ecfa224be9e0}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!greedy\+\_\+evaluate\+\_\+delta@{greedy\+\_\+evaluate\+\_\+delta}}
+\index{greedy\+\_\+evaluate\+\_\+delta@{greedy\+\_\+evaluate\+\_\+delta}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{greedy\+\_\+evaluate\+\_\+delta}{greedy\_evaluate\_delta}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1LSTM_aa147016269d4e28e85e6ecfa224be9e0}{greedy\+\_\+evaluate\+\_\+delta} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_aab44654006b4410cc4a26d2a592776e1}\label{structbc_1_1nn_1_1LSTM_aab44654006b4410cc4a26d2a592776e1}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!input\+\_\+descriptor\+\_\+t@{input\+\_\+descriptor\+\_\+t}}
+\index{input\+\_\+descriptor\+\_\+t@{input\+\_\+descriptor\+\_\+t}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{input\+\_\+descriptor\+\_\+t}{input\_descriptor\_t}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1LSTM_aab44654006b4410cc4a26d2a592776e1}{input\+\_\+descriptor\+\_\+t} =  \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$ Value\+Type, System\+Tag, \hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$1$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a55f56b2edacabda8d983e77692c03096}\label{structbc_1_1nn_1_1LSTM_a55f56b2edacabda8d983e77692c03096}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!is\+\_\+recurrent@{is\+\_\+recurrent}}
+\index{is\+\_\+recurrent@{is\+\_\+recurrent}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{is\+\_\+recurrent}{is\_recurrent}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1LSTM_a55f56b2edacabda8d983e77692c03096}{is\+\_\+recurrent} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_adc4d4ca749708bacc70cf57547fd5c08}\label{structbc_1_1nn_1_1LSTM_adc4d4ca749708bacc70cf57547fd5c08}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!optimizer\+\_\+type@{optimizer\+\_\+type}}
+\index{optimizer\+\_\+type@{optimizer\+\_\+type}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{optimizer\+\_\+type}{optimizer\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1LSTM_adc4d4ca749708bacc70cf57547fd5c08}{optimizer\+\_\+type} =  Optimizer}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_af5aae30f99bb8b7706a748e660ba2975}\label{structbc_1_1nn_1_1LSTM_af5aae30f99bb8b7706a748e660ba2975}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!parent\+\_\+type@{parent\+\_\+type}}
+\index{parent\+\_\+type@{parent\+\_\+type}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{parent\+\_\+type}{parent\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1LSTM_af5aae30f99bb8b7706a748e660ba2975}{parent\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1LSTM}{L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity$>$, \hyperlink{structbc_1_1nn_1_1LSTM_aab44654006b4410cc4a26d2a592776e1}{input\+\_\+descriptor\+\_\+t}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_af443096fc604c2d9e06122298b9b0c8b}\label{structbc_1_1nn_1_1LSTM_af443096fc604c2d9e06122298b9b0c8b}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!requires\+\_\+extra\+\_\+cache@{requires\+\_\+extra\+\_\+cache}}
+\index{requires\+\_\+extra\+\_\+cache@{requires\+\_\+extra\+\_\+cache}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{requires\+\_\+extra\+\_\+cache}{requires\_extra\_cache}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1LSTM_af443096fc604c2d9e06122298b9b0c8b}{requires\+\_\+extra\+\_\+cache} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a6a485b17d877d63d1fad2698584eb478}\label{structbc_1_1nn_1_1LSTM_a6a485b17d877d63d1fad2698584eb478}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1LSTM_a6a485b17d877d63d1fad2698584eb478}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a4f4948a22b62ff7975968bb2d38e79a2}\label{structbc_1_1nn_1_1LSTM_a4f4948a22b62ff7975968bb2d38e79a2}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1LSTM_a4f4948a22b62ff7975968bb2d38e79a2}{value\+\_\+type} =  Value\+Type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_acd8abe2e403ae4f8806b2a95d909a62a}\label{structbc_1_1nn_1_1LSTM_acd8abe2e403ae4f8806b2a95d909a62a}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!L\+S\+TM@{L\+S\+TM}}
+\index{L\+S\+TM@{L\+S\+TM}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{L\+S\+T\+M()}{LSTM()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+\hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1LSTM}{L\+S\+TM} (\begin{DoxyParamCaption}\item[{int}]{inputs,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{outputs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a15dc1ca2bf577ae2a22c01f1f81771e4}\label{structbc_1_1nn_1_1LSTM_a15dc1ca2bf577ae2a22c01f1f81771e4}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!back\+\_\+propagation@{back\+\_\+propagation}}
+\index{back\+\_\+propagation@{back\+\_\+propagation}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{back\+\_\+propagation()}{back\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+template$<$class X , class Y , class Delta $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::back\+\_\+propagation (\begin{DoxyParamCaption}\item[{const X \&}]{x,  }\item[{const Y \&}]{y,  }\item[{const Delta \&}]{delta\+\_\+outputs,  }\item[{class \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{cache }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a0590ad585febcdcb70978238920881b2}\label{structbc_1_1nn_1_1LSTM_a0590ad585febcdcb70978238920881b2}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!clear\+\_\+bp\+\_\+storage@{clear\+\_\+bp\+\_\+storage}}
+\index{clear\+\_\+bp\+\_\+storage@{clear\+\_\+bp\+\_\+storage}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{clear\+\_\+bp\+\_\+storage()}{clear\_bp\_storage()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+void \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::clear\+\_\+bp\+\_\+storage (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{m\+\_\+cache }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a4ee041e97fa17ae5a17f143e4b28c077}\label{structbc_1_1nn_1_1LSTM_a4ee041e97fa17ae5a17f143e4b28c077}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict@{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict}}
+\index{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict@{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict()}{copy\_training\_data\_to\_single\_predict()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+void \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{cache,  }\item[{int}]{batch\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a1b3698141f27e32587a7c1ed367df095}\label{structbc_1_1nn_1_1LSTM_a1b3698141f27e32587a7c1ed367df095}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+template$<$class X , class Y $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const X \&}]{x,  }\item[{const Y \&}]{y,  }\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{cache }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_ae85ec6a90fe555a1088681159a0af466}\label{structbc_1_1nn_1_1LSTM_ae85ec6a90fe555a1088681159a0af466}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{structbc_1_1nn_1_1Layer__Base_a5b3a9854215815f810bef4922b74efaf}{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ L\+S\+T\+M$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$, Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Integer$<$ 1 $>$ $>$ $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a145581143a450d11a870b3c59cc1d47f}\label{structbc_1_1nn_1_1LSTM_a145581143a450d11a870b3c59cc1d47f}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!load\+\_\+to\+\_\+cache@{load\+\_\+to\+\_\+cache}}
+\index{load\+\_\+to\+\_\+cache@{load\+\_\+to\+\_\+cache}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{load\+\_\+to\+\_\+cache()}{load\_to\_cache()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::load\+\_\+to\+\_\+cache (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader,  }\item[{const \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{cache }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{structbc_1_1nn_1_1Layer__Base_a6f479e0d594eca051dff122cdb3fe2a1}{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ L\+S\+T\+M$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$, Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Integer$<$ 1 $>$ $>$ $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a5351e27bb23773b3daa2376ab525d207}\label{structbc_1_1nn_1_1LSTM_a5351e27bb23773b3daa2376ab525d207}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!predict@{predict}}
+\index{predict@{predict}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{predict()}{predict()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+template$<$class X , class Y $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::predict (\begin{DoxyParamCaption}\item[{const X \&}]{x,  }\item[{const Y \&}]{y,  }\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{cache }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a6364991b3bdf2d2364c90fdcd7a63c3a}\label{structbc_1_1nn_1_1LSTM_a6364991b3bdf2d2364c90fdcd7a63c3a}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!randomize\+\_\+weights@{randomize\+\_\+weights}}
+\index{randomize\+\_\+weights@{randomize\+\_\+weights}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{randomize\+\_\+weights()}{randomize\_weights()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+void \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::randomize\+\_\+weights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_ae74b5038cc10d0ad236be07704d2999a}\label{structbc_1_1nn_1_1LSTM_ae74b5038cc10d0ad236be07704d2999a}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!save@{save}}
+\index{save@{save}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::save (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{structbc_1_1nn_1_1Layer__Base_a9613e51db3c27e64ced09e41d2e7f15c}{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ L\+S\+T\+M$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$, Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Integer$<$ 1 $>$ $>$ $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a270951d7af7ffcf061d02bbb046a4dc7}\label{structbc_1_1nn_1_1LSTM_a270951d7af7ffcf061d02bbb046a4dc7}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!save\+\_\+from\+\_\+cache@{save\+\_\+from\+\_\+cache}}
+\index{save\+\_\+from\+\_\+cache@{save\+\_\+from\+\_\+cache}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{save\+\_\+from\+\_\+cache()}{save\_from\_cache()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::save\+\_\+from\+\_\+cache (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader,  }\item[{const \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{cache }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{structbc_1_1nn_1_1Layer__Base_a7bcba1c84802ca8410ba4156c9bac64a}{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ L\+S\+T\+M$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$, Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Integer$<$ 1 $>$ $>$ $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_af58d155c9bf27beb39b9898270515507}\label{structbc_1_1nn_1_1LSTM_af58d155c9bf27beb39b9898270515507}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!set\+\_\+batch\+\_\+size\+\_\+hook@{set\+\_\+batch\+\_\+size\+\_\+hook}}
+\index{set\+\_\+batch\+\_\+size\+\_\+hook@{set\+\_\+batch\+\_\+size\+\_\+hook}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{set\+\_\+batch\+\_\+size\+\_\+hook()}{set\_batch\_size\_hook()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::set\+\_\+batch\+\_\+size\+\_\+hook (\begin{DoxyParamCaption}\item[{int}]{bs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{structbc_1_1nn_1_1Layer__Base_a8365fc3fc656aadeb0513d8e02b5fba0}{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ L\+S\+T\+M$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$, Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Integer$<$ 1 $>$ $>$ $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a772315b1deeaa862a59437d4a1ccf9a8}\label{structbc_1_1nn_1_1LSTM_a772315b1deeaa862a59437d4a1ccf9a8}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!set\+\_\+learning\+\_\+rate\+\_\+hook@{set\+\_\+learning\+\_\+rate\+\_\+hook}}
+\index{set\+\_\+learning\+\_\+rate\+\_\+hook@{set\+\_\+learning\+\_\+rate\+\_\+hook}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{set\+\_\+learning\+\_\+rate\+\_\+hook()}{set\_learning\_rate\_hook()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::set\+\_\+learning\+\_\+rate\+\_\+hook (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1LSTM_a4f4948a22b62ff7975968bb2d38e79a2}{value\+\_\+type}}]{lr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{structbc_1_1nn_1_1Layer__Base_a126da3cf45e1b4a24deeff82c93772ce}{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ L\+S\+T\+M$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$, Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Integer$<$ 1 $>$ $>$ $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a98237c18f037ecedd25581a11433a476}\label{structbc_1_1nn_1_1LSTM_a98237c18f037ecedd25581a11433a476}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!single\+\_\+predict@{single\+\_\+predict}}
+\index{single\+\_\+predict@{single\+\_\+predict}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{single\+\_\+predict()}{single\_predict()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+template$<$class X , class Y $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::single\+\_\+predict (\begin{DoxyParamCaption}\item[{const X \&}]{x,  }\item[{const Y \&}]{y,  }\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{cache }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a5d295f0329b63593da595a6bbf159959}\label{structbc_1_1nn_1_1LSTM_a5d295f0329b63593da595a6bbf159959}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!update\+\_\+weights@{update\+\_\+weights}}
+\index{update\+\_\+weights@{update\+\_\+weights}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{update\+\_\+weights()}{update\_weights()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+void \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::update\+\_\+weights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_a415bda3dd81d13f4e675ad182ab6bc27}\label{structbc_1_1nn_1_1LSTM_a415bda3dd81d13f4e675ad182ab6bc27}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!zero\+\_\+deltas@{zero\+\_\+deltas}}
+\index{zero\+\_\+deltas@{zero\+\_\+deltas}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{zero\+\_\+deltas()}{zero\_deltas()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+void \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::zero\+\_\+deltas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1LSTM_ae8885e5fe317b5c485f64717e9037bb5}\label{structbc_1_1nn_1_1LSTM_ae8885e5fe317b5c485f64717e9037bb5}} 
+\index{bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}!zero\+\_\+gradients@{zero\+\_\+gradients}}
+\index{zero\+\_\+gradients@{zero\+\_\+gradients}!bc\+::nn\+::\+L\+S\+TM@{bc\+::nn\+::\+L\+S\+TM}}
+\subsubsection{\texorpdfstring{zero\+\_\+gradients()}{zero\_gradients()}}
+{\footnotesize\ttfamily template$<$class System\+Tag , class Value\+Type , class Optimizer  = Stochastic\+\_\+\+Gradient\+\_\+\+Descent, class Forget\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Write\+Gate\+Nonlinearity  = bc\+::\+Tanh, class Input\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Output\+Gate\+Nonlinearity  = bc\+::\+Logistic, class Cell\+State\+Non\+Linearity  = bc\+::\+Tanh$>$ \\
+void \hyperlink{structbc_1_1nn_1_1LSTM}{bc\+::nn\+::\+L\+S\+TM}$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$\+::zero\+\_\+gradients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/layers/\hyperlink{lstm_8h}{lstm.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,30 @@
+\hypertarget{structbc_1_1nn_1_1LayerChain}{}\section{bc\+:\+:nn\+:\+:Layer\+Chain$<$ Index, Derived,... $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1LayerChain}\index{bc\+::nn\+::\+Layer\+Chain$<$ Index, Derived,... $>$@{bc\+::nn\+::\+Layer\+Chain$<$ Index, Derived,... $>$}}
+
+
+Layer\+\_\+\+Chain is an iterator-\/like object that connects different types of neural-\/network layers and defines convenient iterator-\/like methods.  
+
+
+
+
+{\ttfamily \#include $<$layer\+\_\+chain.\+h$>$}
+
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Index, class Derived, class...$>$\newline
+struct bc\+::nn\+::\+Layer\+Chain$<$ Index, Derived,... $>$}
+
+Layer\+\_\+\+Chain is an iterator-\/like object that connects different types of neural-\/network layers and defines convenient iterator-\/like methods. 
+
+It is tightly coupled with \hyperlink{structbc_1_1nn_1_1Layer__Manager}{Layer\+\_\+\+Manager} \hyperlink{structbc_1_1nn_1_1Layer__Manager}{Layer\+\_\+\+Manager} expects \hyperlink{structbc_1_1nn_1_1LayerChain}{Layer\+Chain} to derive from itself.
+
+This enables \hyperlink{structbc_1_1nn_1_1Layer__Manager}{Layer\+\_\+\+Manager} (which inherits from a neural-\/network layer) to cast-\/itself to the \hyperlink{structbc_1_1nn_1_1LayerChain}{Layer\+Chain} class and than access the other layers of the network.
+
+This enables \hyperlink{structbc_1_1nn_1_1Layer__Manager}{Layer\+\_\+\+Manager}\textquotesingle{}s to have acess to all other layer\textquotesingle{}s of the neural network.
+
+The Layer\+\_\+\+Chain simply acts as an iterator-\/like object. The \hyperlink{structbc_1_1nn_1_1Layer__Manager}{Layer\+\_\+\+Manager} handles memory and time\+\_\+indexes (for recurrent layers) for actual neural-\/network layers. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/\hyperlink{layer__chain_8h}{layer\+\_\+chain.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,169 @@
+\hypertarget{structbc_1_1allocators_1_1Logging__Allocator}{}\section{bc\+:\+:allocators\+:\+:Logging\+\_\+\+Allocator$<$ Allocator $>$ Struct Template Reference}
+\label{structbc_1_1allocators_1_1Logging__Allocator}\index{bc\+::allocators\+::\+Logging\+\_\+\+Allocator$<$ Allocator $>$@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator$<$ Allocator $>$}}
+
+
+{\ttfamily \#include $<$logging\+\_\+allocator.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:allocators\+:\+:Logging\+\_\+\+Allocator$<$ Allocator $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{structbc_1_1allocators_1_1Logging__Allocator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:allocators\+:\+:Logging\+\_\+\+Allocator$<$ Allocator $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{structbc_1_1allocators_1_1Logging__Allocator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1Logging__Allocator_1_1rebind}{rebind}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Logging__Allocator_a0ba4413e3f0e6957cd5806ae59511d38}{parent\+\_\+type} = \hyperlink{structbc_1_1allocators_1_1Allocator__Forwarder}{Allocator\+\_\+\+Forwarder}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Logging__Allocator_af0f639779c1d0d646bca2c077c34d7d3}{value\+\_\+type} = typename \hyperlink{structbc_1_1allocators_1_1Allocator__Forwarder_a3ac0b07579279c948a24ee6562510dc5}{parent\+\_\+type\+::value\+\_\+type}
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Logging__Allocator_abde1034a802fbcbac68098d8406b490f}{pointer} = typename \hyperlink{structbc_1_1allocators_1_1Allocator__Forwarder_ae9d48fbeb22a6686ad59128cf309d8bd}{parent\+\_\+type\+::pointer}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class U $>$ }\\\hyperlink{structbc_1_1allocators_1_1Logging__Allocator_a8ac5909883585f7187d60b21cdd870c6}{Logging\+\_\+\+Allocator} (const \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator}$<$ U $>$ \&other)
+\item 
+\hyperlink{structbc_1_1allocators_1_1Logging__Allocator_afbb758bbf6a7a81a11958d19bc7c5a43}{Logging\+\_\+\+Allocator} ()=default
+\item 
+\hyperlink{structbc_1_1allocators_1_1Logging__Allocator_aaa347dff3da29b3410e5d14e1db04d35}{Logging\+\_\+\+Allocator} (const \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator} \&)=default
+\item 
+\hyperlink{structbc_1_1allocators_1_1Logging__Allocator_aa10a2fc90f25c0a8c50d3614859d88e0}{Logging\+\_\+\+Allocator} (\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator} \&\&)=default
+\item 
+\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator} \& \hyperlink{structbc_1_1allocators_1_1Logging__Allocator_a94222880c322c2f72483f036692efae8}{operator=} (const \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator} \&)=default
+\item 
+\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator} \& \hyperlink{structbc_1_1allocators_1_1Logging__Allocator_ae9674620f0f49481649359486c765b00}{operator=} (\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator} \&\&)=default
+\item 
+\hyperlink{structbc_1_1allocators_1_1Allocator__Forwarder_ae9d48fbeb22a6686ad59128cf309d8bd}{pointer} \hyperlink{structbc_1_1allocators_1_1Logging__Allocator_ad2be32e15a233ea9aa8ea40fbed422f4}{allocate} (int size)
+\item 
+void \hyperlink{structbc_1_1allocators_1_1Logging__Allocator_a20f40b66932f9e0762a623ebac3415e2}{deallocate} (\hyperlink{structbc_1_1allocators_1_1Allocator__Forwarder_ae9d48fbeb22a6686ad59128cf309d8bd}{pointer} ptr, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} size)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1allocators_1_1detail_1_1log__info}{detail\+::log\+\_\+info} $>$ \hyperlink{structbc_1_1allocators_1_1Logging__Allocator_ab32f18018ee9b63af924090cbcc949bc}{info}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Logging__Allocator_a0ba4413e3f0e6957cd5806ae59511d38}\label{structbc_1_1allocators_1_1Logging__Allocator_a0ba4413e3f0e6957cd5806ae59511d38}} 
+\index{bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}!parent\+\_\+type@{parent\+\_\+type}}
+\index{parent\+\_\+type@{parent\+\_\+type}!bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{parent\+\_\+type}{parent\_type}}
+{\footnotesize\ttfamily template$<$class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Logging__Allocator_a0ba4413e3f0e6957cd5806ae59511d38}{parent\+\_\+type} =  \hyperlink{structbc_1_1allocators_1_1Allocator__Forwarder}{Allocator\+\_\+\+Forwarder}$<$\hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}$>$}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Logging__Allocator_abde1034a802fbcbac68098d8406b490f}\label{structbc_1_1allocators_1_1Logging__Allocator_abde1034a802fbcbac68098d8406b490f}} 
+\index{bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}!pointer@{pointer}}
+\index{pointer@{pointer}!bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Allocator__Forwarder_ae9d48fbeb22a6686ad59128cf309d8bd}{pointer} =  typename \hyperlink{structbc_1_1allocators_1_1Allocator__Forwarder_ae9d48fbeb22a6686ad59128cf309d8bd}{parent\+\_\+type\+::pointer}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Logging__Allocator_af0f639779c1d0d646bca2c077c34d7d3}\label{structbc_1_1allocators_1_1Logging__Allocator_af0f639779c1d0d646bca2c077c34d7d3}} 
+\index{bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class Allocator$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Allocator__Forwarder_a3ac0b07579279c948a24ee6562510dc5}{value\+\_\+type} =  typename \hyperlink{structbc_1_1allocators_1_1Allocator__Forwarder_a3ac0b07579279c948a24ee6562510dc5}{parent\+\_\+type\+::value\+\_\+type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Logging__Allocator_a8ac5909883585f7187d60b21cdd870c6}\label{structbc_1_1allocators_1_1Logging__Allocator_a8ac5909883585f7187d60b21cdd870c6}} 
+\index{bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}!Logging\+\_\+\+Allocator@{Logging\+\_\+\+Allocator}}
+\index{Logging\+\_\+\+Allocator@{Logging\+\_\+\+Allocator}!bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{Logging\+\_\+\+Allocator()}{Logging\_Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Allocator$>$ \\
+template$<$class U $>$ \\
+\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator} (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator}$<$ U $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Logging__Allocator_afbb758bbf6a7a81a11958d19bc7c5a43}\label{structbc_1_1allocators_1_1Logging__Allocator_afbb758bbf6a7a81a11958d19bc7c5a43}} 
+\index{bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}!Logging\+\_\+\+Allocator@{Logging\+\_\+\+Allocator}}
+\index{Logging\+\_\+\+Allocator@{Logging\+\_\+\+Allocator}!bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{Logging\+\_\+\+Allocator()}{Logging\_Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Allocator$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Logging__Allocator_aaa347dff3da29b3410e5d14e1db04d35}\label{structbc_1_1allocators_1_1Logging__Allocator_aaa347dff3da29b3410e5d14e1db04d35}} 
+\index{bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}!Logging\+\_\+\+Allocator@{Logging\+\_\+\+Allocator}}
+\index{Logging\+\_\+\+Allocator@{Logging\+\_\+\+Allocator}!bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{Logging\+\_\+\+Allocator()}{Logging\_Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Allocator$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator} (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Logging__Allocator_aa10a2fc90f25c0a8c50d3614859d88e0}\label{structbc_1_1allocators_1_1Logging__Allocator_aa10a2fc90f25c0a8c50d3614859d88e0}} 
+\index{bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}!Logging\+\_\+\+Allocator@{Logging\+\_\+\+Allocator}}
+\index{Logging\+\_\+\+Allocator@{Logging\+\_\+\+Allocator}!bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{Logging\+\_\+\+Allocator()}{Logging\_Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Allocator$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Logging__Allocator_ad2be32e15a233ea9aa8ea40fbed422f4}\label{structbc_1_1allocators_1_1Logging__Allocator_ad2be32e15a233ea9aa8ea40fbed422f4}} 
+\index{bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}!allocate@{allocate}}
+\index{allocate@{allocate}!bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}}
+{\footnotesize\ttfamily template$<$class Allocator$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Allocator__Forwarder_ae9d48fbeb22a6686ad59128cf309d8bd}{pointer} \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::allocate (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Logging__Allocator_a20f40b66932f9e0762a623ebac3415e2}\label{structbc_1_1allocators_1_1Logging__Allocator_a20f40b66932f9e0762a623ebac3415e2}} 
+\index{bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}}
+{\footnotesize\ttfamily template$<$class Allocator$>$ \\
+void \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::deallocate (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1allocators_1_1Allocator__Forwarder_ae9d48fbeb22a6686ad59128cf309d8bd}{pointer}}]{ptr,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Logging__Allocator_a94222880c322c2f72483f036692efae8}\label{structbc_1_1allocators_1_1Logging__Allocator_a94222880c322c2f72483f036692efae8}} 
+\index{bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Allocator$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator}\& \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Logging__Allocator_ae9674620f0f49481649359486c765b00}\label{structbc_1_1allocators_1_1Logging__Allocator_ae9674620f0f49481649359486c765b00}} 
+\index{bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Allocator$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator}\& \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$ \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Logging__Allocator_ab32f18018ee9b63af924090cbcc949bc}\label{structbc_1_1allocators_1_1Logging__Allocator_ab32f18018ee9b63af924090cbcc949bc}} 
+\index{bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}!info@{info}}
+\index{info@{info}!bc\+::allocators\+::\+Logging\+\_\+\+Allocator@{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{info}{info}}
+{\footnotesize\ttfamily template$<$class Allocator$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{structbc_1_1allocators_1_1detail_1_1log__info}{detail\+::log\+\_\+info}$>$ \hyperlink{structbc_1_1allocators_1_1Logging__Allocator}{bc\+::allocators\+::\+Logging\+\_\+\+Allocator}$<$ \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} $>$\+::info}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+        std::shared\_ptr<detail::log\_info>(\textcolor{keyword}{new} detail::log\_info \{0, 0\})
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/allocators/\hyperlink{logging__allocator_8h}{logging\+\_\+allocator.\+h}\end{DoxyCompactItemize}

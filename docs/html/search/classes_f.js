@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['random',['Random',['../structbc_1_1random_1_1Random.html',1,'bc::random']]],
+  ['random_3c_20host_5ftag_20_3e',['Random&lt; host_tag &gt;',['../structbc_1_1random_1_1Random_3_01host__tag_01_4.html',1,'bc::random']]],
+  ['range',['Range',['../structbc_1_1io_1_1Range.html',1,'bc::io']]],
+  ['rebind',['rebind',['../structbc_1_1allocators_1_1Device__Managed_1_1rebind.html',1,'bc::allocators::Device_Managed&lt; T &gt;::rebind&lt; altT &gt;'],['../structbc_1_1allocators_1_1Stack__Allocator_1_1rebind.html',1,'bc::allocators::Stack_Allocator&lt; ValueType, SystemTag &gt;::rebind&lt; T &gt;'],['../structbc_1_1allocators_1_1Allocator_3_01T_00_01device__tag_01_4_1_1rebind.html',1,'bc::allocators::Allocator&lt; T, device_tag &gt;::rebind&lt; altT &gt;'],['../structbc_1_1allocators_1_1Logging__Allocator_1_1rebind.html',1,'bc::allocators::Logging_Allocator&lt; Allocator &gt;::rebind&lt; altT &gt;'],['../structbc_1_1allocators_1_1Allocator__Forwarder_1_1rebind.html',1,'bc::allocators::Allocator_Forwarder&lt; Allocator &gt;::rebind&lt; AltValueType &gt;'],['../structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator_1_1rebind.html',1,'bc::allocators::pa_detail::Derived_Allocator&lt; Allocator &gt;::rebind&lt; altT &gt;'],['../structbc_1_1allocators_1_1Recycle__Allocator_1_1rebind.html',1,'bc::allocators::Recycle_Allocator&lt; T, SystemTag, AlternateAllocator &gt;::rebind&lt; altT &gt;'],['../structbc_1_1allocators_1_1Allocator_3_01T_00_01host__tag_01_4_1_1rebind.html',1,'bc::allocators::Allocator&lt; T, host_tag &gt;::rebind&lt; altT &gt;'],['../structbc_1_1allocators_1_1Thrust__Allocator__Forwarder_1_1rebind.html',1,'bc::allocators::Thrust_Allocator_Forwarder&lt; ValueType, Allocator &gt;::rebind&lt; AltValueType &gt;']]],
+  ['recurrent',['Recurrent',['../structbc_1_1nn_1_1Recurrent.html',1,'bc::nn']]],
+  ['recycle_5fallocator',['Recycle_Allocator',['../structbc_1_1allocators_1_1Recycle__Allocator.html',1,'bc::allocators']]],
+  ['recycle_5fallocator_3c_20valuetype_2c_20systemtag_20_3e',['Recycle_Allocator&lt; ValueType, SystemTag &gt;',['../structbc_1_1allocators_1_1Recycle__Allocator.html',1,'bc::allocators']]],
+  ['recycle_5fallocator_5fglobals',['Recycle_Allocator_Globals',['../structbc_1_1allocators_1_1Recycle__Allocator__Globals.html',1,'bc::allocators']]],
+  ['reduce',['Reduce',['../structbc_1_1tensors_1_1exprs_1_1functions_1_1Reduce.html',1,'bc::tensors::exprs::functions']]],
+  ['reduce_3c_20bc_3a_3ahost_5ftag_20_3e',['Reduce&lt; bc::host_tag &gt;',['../structbc_1_1tensors_1_1exprs_1_1functions_1_1Reduce_3_01bc_1_1host__tag_01_4.html',1,'bc::tensors::exprs::functions']]],
+  ['referenceiterator',['ReferenceIterator',['../structbc_1_1algorithms_1_1ReferenceIterator.html',1,'bc::algorithms']]],
+  ['referencelist',['ReferenceList',['../structbc_1_1algorithms_1_1ReferenceList.html',1,'bc::algorithms']]],
+  ['relu',['Relu',['../structbc_1_1oper_1_1cmath__functions_1_1Relu.html',1,'bc::oper::cmath_functions']]],
+  ['remainder',['Remainder',['../structbc_1_1oper_1_1cmath__functions_1_1Remainder.html',1,'bc::oper::cmath_functions']]],
+  ['remove_5fscalar_5fmul',['remove_scalar_mul',['../structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__scalar__mul.html',1,'bc::tensors::exprs::detail']]],
+  ['remove_5fscalar_5fmul_3c_20bin_5fop_3c_20oper_3a_3ascalar_5fmul_2c_20lv_2c_20rv_20_3e_20_3e',['remove_scalar_mul&lt; Bin_Op&lt; oper::Scalar_Mul, lv, rv &gt; &gt;',['../structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__scalar__mul_3_01Bin__Op_3_01oper_1_1Scalar__Mul_00_01lv_00_01rv_01_4_01_4.html',1,'bc::tensors::exprs::detail']]],
+  ['remove_5ftranspose',['remove_transpose',['../structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__transpose.html',1,'bc::tensors::exprs::detail']]],
+  ['remove_5ftranspose_3c_20bin_5fop_3c_20oper_3a_3ascalar_5fmul_2c_20lv_2c_20un_5fop_3c_20oper_3a_3atranspose_3c_20systemtag_20_3e_2c_20array_20_3e_20_3e_20_3e',['remove_transpose&lt; Bin_Op&lt; oper::Scalar_Mul, Lv, Un_Op&lt; oper::transpose&lt; SystemTag &gt;, Array &gt; &gt; &gt;',['../structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__transpose_3_01Bin__Op_3_01oper_1_1Scalar__Mul_66d4ba5d587ca66fdce7c61c9a3f28e3.html',1,'bc::tensors::exprs::detail']]],
+  ['remove_5ftranspose_3c_20bin_5fop_3c_20oper_3a_3ascalar_5fmul_2c_20un_5fop_3c_20oper_3a_3atranspose_3c_20systemtag_20_3e_2c_20array_20_3e_2c_20rv_20_3e_20_3e',['remove_transpose&lt; Bin_Op&lt; oper::Scalar_Mul, Un_Op&lt; oper::transpose&lt; SystemTag &gt;, Array &gt;, Rv &gt; &gt;',['../structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__transpose_3_01Bin__Op_3_01oper_1_1Scalar__Mul_6b5c3eb4d56201d2dc306da5aaee0671.html',1,'bc::tensors::exprs::detail']]],
+  ['remove_5ftranspose_3c_20un_5fop_3c_20oper_3a_3atranspose_3c_20systemtag_20_3e_2c_20array_20_3e_20_3e',['remove_transpose&lt; Un_Op&lt; oper::transpose&lt; SystemTag &gt;, Array &gt; &gt;',['../structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__transpose_3_01Un__Op_3_01oper_1_1transpose_3_0108540817e9a89440300c45967e20325.html',1,'bc::tensors::exprs::detail']]],
+  ['remquo',['Remquo',['../structbc_1_1oper_1_1cmath__functions_1_1Remquo.html',1,'bc::oper::cmath_functions']]],
+  ['rint',['Rint',['../structbc_1_1oper_1_1cmath__functions_1_1Rint.html',1,'bc::oper::cmath_functions']]],
+  ['root_5fmean_5fsquared_5ferror',['Root_Mean_Squared_Error',['../structbc_1_1nn_1_1Root__Mean__Squared__Error.html',1,'bc::nn']]],
+  ['round',['Round',['../structbc_1_1oper_1_1cmath__functions_1_1Round.html',1,'bc::oper::cmath_functions']]]
+];

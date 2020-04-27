@@ -1,0 +1,7 @@
+<map id="bc::Shape&lt; N &gt;" name="bc::Shape&lt; N &gt;">
+<area shape="rect" id="node2" href="$structbc_1_1tensors_1_1exprs_1_1Kernel__Array.html" title="bc::tensors::exprs\l::Kernel_Array\&lt; Shape,\l ValueType, SystemTag,\l Tags \&gt;" alt="" coords="177,5,343,76"/>
+<area shape="rect" id="node3" href="$structbc_1_1tensors_1_1exprs_1_1Kernel__Array.html" title="bc::tensors::exprs\l::Kernel_Array\&lt; Shape,\l Scalar, bc::allocator\l_traits\&lt; AllocatorType\l \&gt;::system_tag, Tags... \&gt;" alt="" coords="175,101,345,186"/>
+<area shape="rect" id="node5" href="$structbc_1_1tensors_1_1exprs_1_1Kernel__Array.html" title="bc::tensors::exprs\l::Kernel_Array\&lt; Shape,\l ValueType, bc::allocator\l_traits\&lt; Allocator \&gt;::system\l_tag, Tags... \&gt;" alt="" coords="168,210,352,295"/>
+<area shape="rect" id="node4" href="$structbc_1_1tensors_1_1exprs_1_1Array.html" title="bc::tensors::exprs\l::Array\&lt; Shape, Scalar,\l AllocatorType, Tags \&gt;" alt="" coords="400,115,559,171"/>
+<area shape="rect" id="node6" href="$classbc_1_1tensors_1_1exprs_1_1Array__Slice.html" title="bc::tensors::exprs\l::Array_Slice\&lt; Shape,\l ValueType, Allocator,\l Tags \&gt;" alt="" coords="404,217,555,288"/>
+</map>

@@ -1,0 +1,179 @@
+\hypertarget{structbc_1_1nn_1_1Logging__Output__Layer}{}\section{bc\+:\+:nn\+:\+:Logging\+\_\+\+Output\+\_\+\+Layer$<$ System\+Tag, Value\+Type, Error\+Function $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1Logging__Output__Layer}\index{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer$<$ System\+Tag, Value\+Type, Error\+Function $>$@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer$<$ System\+Tag, Value\+Type, Error\+Function $>$}}
+
+
+{\ttfamily \#include $<$logging\+\_\+output\+\_\+layer.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:nn\+:\+:Logging\+\_\+\+Output\+\_\+\+Layer$<$ System\+Tag, Value\+Type, Error\+Function $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Logging__Output__Layer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Logging\+\_\+\+Output\+\_\+\+Layer$<$ System\+Tag, Value\+Type, Error\+Function $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Logging__Output__Layer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_a877dc26708c5c343e59500647b73db36}{parent} = \hyperlink{structbc_1_1nn_1_1Output__Layer}{Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_abeeff813d295dfb5d7b764a41c6ce557}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_afc35d7b8c1f7d2f514a99a16845155ef}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_a4830f722f2588645f63804b804fe3879}{scalar} = \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{bc\+::\+Scalar}$<$ \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_afc35d7b8c1f7d2f514a99a16845155ef}{value\+\_\+type}, \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{nn\+\_\+default\+\_\+allocator\+\_\+type}$<$ \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_afc35d7b8c1f7d2f514a99a16845155ef}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_abeeff813d295dfb5d7b764a41c6ce557}{system\+\_\+tag} $>$ $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_a340a3b8698be1ed148f9c97e16731753}{Logging\+\_\+\+Output\+\_\+\+Layer} (std\+::ostream \&\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_acca4ad9c516221a5cc62cedf86e48ad1}{logger}, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} inputs, Error\+Function error\+\_\+function\+\_\+)
+\item 
+{\footnotesize template$<$class Tensor $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_a1462b0431b1b033ebb3e75f6fb90c865}{forward\+\_\+propagation} (const \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&x)
+\item 
+\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{Logging\+\_\+\+Output\+\_\+\+Layer} \& \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_ae71754132dbdde7afd6658651140d0ba}{skip\+\_\+every} (unsigned skip\+\_\+every\+\_\+n\+\_\+backprops\+\_\+)
+\item 
+\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{Logging\+\_\+\+Output\+\_\+\+Layer} \& \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_a7d2a157ebe7f1626cba1e4007828a11a}{enable\+\_\+logging} (bool enable\+\_\+logging=true)
+\item 
+{\footnotesize template$<$class TensorX , class TensorY $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_aed0550f4b95ebea0fe4182d316cf58ef}{back\+\_\+propagation} (const TensorX \&x, const TensorY \&y)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_a75fbe8edf25c7acbf1750a79f6beaaf3}{logging\+\_\+enabled} = true
+\item 
+unsigned \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_a46ff3180b1082cf438a0d0b8316942cd}{curr\+\_\+index} = 0
+\item 
+unsigned \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_a112dfc7bcd55a2e1691ab29c4894ae70}{skip\+\_\+every\+\_\+n\+\_\+backprops} = 10
+\item 
+Error\+Function \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_a26d5a94a63c60b17e5c9f96e87976775}{error\+\_\+function}
+\item 
+std\+::ostream $\ast$ \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_acca4ad9c516221a5cc62cedf86e48ad1}{logger}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Logging__Output__Layer_a877dc26708c5c343e59500647b73db36}\label{structbc_1_1nn_1_1Logging__Output__Layer_a877dc26708c5c343e59500647b73db36}} 
+\index{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}!parent@{parent}}
+\index{parent@{parent}!bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Error\+Function = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type, Error\+Function $>$\+::\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_a877dc26708c5c343e59500647b73db36}{parent} =  \hyperlink{structbc_1_1nn_1_1Output__Layer}{Output\+\_\+\+Layer}$<$System\+Tag,Value\+Type$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Logging__Output__Layer_a4830f722f2588645f63804b804fe3879}\label{structbc_1_1nn_1_1Logging__Output__Layer_a4830f722f2588645f63804b804fe3879}} 
+\index{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}!scalar@{scalar}}
+\index{scalar@{scalar}!bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{scalar}{scalar}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Error\+Function = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type, Error\+Function $>$\+::\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_a4830f722f2588645f63804b804fe3879}{scalar} =  \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{bc\+::\+Scalar}$<$\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_afc35d7b8c1f7d2f514a99a16845155ef}{value\+\_\+type}, \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{nn\+\_\+default\+\_\+allocator\+\_\+type}$<$\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_afc35d7b8c1f7d2f514a99a16845155ef}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_abeeff813d295dfb5d7b764a41c6ce557}{system\+\_\+tag}$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Logging__Output__Layer_abeeff813d295dfb5d7b764a41c6ce557}\label{structbc_1_1nn_1_1Logging__Output__Layer_abeeff813d295dfb5d7b764a41c6ce557}} 
+\index{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Error\+Function = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type, Error\+Function $>$\+::\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_abeeff813d295dfb5d7b764a41c6ce557}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Logging__Output__Layer_afc35d7b8c1f7d2f514a99a16845155ef}\label{structbc_1_1nn_1_1Logging__Output__Layer_afc35d7b8c1f7d2f514a99a16845155ef}} 
+\index{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Error\+Function = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type, Error\+Function $>$\+::\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer_afc35d7b8c1f7d2f514a99a16845155ef}{value\+\_\+type} =  Value\+Type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Logging__Output__Layer_a340a3b8698be1ed148f9c97e16731753}\label{structbc_1_1nn_1_1Logging__Output__Layer_a340a3b8698be1ed148f9c97e16731753}} 
+\index{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}!Logging\+\_\+\+Output\+\_\+\+Layer@{Logging\+\_\+\+Output\+\_\+\+Layer}}
+\index{Logging\+\_\+\+Output\+\_\+\+Layer@{Logging\+\_\+\+Output\+\_\+\+Layer}!bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{Logging\+\_\+\+Output\+\_\+\+Layer()}{Logging\_Output\_Layer()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Error\+Function = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type, Error\+Function $>$\+::\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{Logging\+\_\+\+Output\+\_\+\+Layer} (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{logger,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{inputs,  }\item[{Error\+Function}]{error\+\_\+function\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Logging__Output__Layer_aed0550f4b95ebea0fe4182d316cf58ef}\label{structbc_1_1nn_1_1Logging__Output__Layer_aed0550f4b95ebea0fe4182d316cf58ef}} 
+\index{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}!back\+\_\+propagation@{back\+\_\+propagation}}
+\index{back\+\_\+propagation@{back\+\_\+propagation}!bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{back\+\_\+propagation()}{back\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Error\+Function = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+template$<$class TensorX , class TensorY $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type, Error\+Function $>$\+::back\+\_\+propagation (\begin{DoxyParamCaption}\item[{const TensorX \&}]{x,  }\item[{const TensorY \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Logging__Output__Layer_a7d2a157ebe7f1626cba1e4007828a11a}\label{structbc_1_1nn_1_1Logging__Output__Layer_a7d2a157ebe7f1626cba1e4007828a11a}} 
+\index{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}!enable\+\_\+logging@{enable\+\_\+logging}}
+\index{enable\+\_\+logging@{enable\+\_\+logging}!bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{enable\+\_\+logging()}{enable\_logging()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Error\+Function = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{Logging\+\_\+\+Output\+\_\+\+Layer}\& \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type, Error\+Function $>$\+::enable\+\_\+logging (\begin{DoxyParamCaption}\item[{bool}]{enable\+\_\+logging = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Logging__Output__Layer_a1462b0431b1b033ebb3e75f6fb90c865}\label{structbc_1_1nn_1_1Logging__Output__Layer_a1462b0431b1b033ebb3e75f6fb90c865}} 
+\index{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Error\+Function = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+template$<$class Tensor $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type, Error\+Function $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{Tensor} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Logging__Output__Layer_ae71754132dbdde7afd6658651140d0ba}\label{structbc_1_1nn_1_1Logging__Output__Layer_ae71754132dbdde7afd6658651140d0ba}} 
+\index{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}!skip\+\_\+every@{skip\+\_\+every}}
+\index{skip\+\_\+every@{skip\+\_\+every}!bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{skip\+\_\+every()}{skip\_every()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Error\+Function = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+\hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{Logging\+\_\+\+Output\+\_\+\+Layer}\& \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type, Error\+Function $>$\+::skip\+\_\+every (\begin{DoxyParamCaption}\item[{unsigned}]{skip\+\_\+every\+\_\+n\+\_\+backprops\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Logging__Output__Layer_a46ff3180b1082cf438a0d0b8316942cd}\label{structbc_1_1nn_1_1Logging__Output__Layer_a46ff3180b1082cf438a0d0b8316942cd}} 
+\index{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}!curr\+\_\+index@{curr\+\_\+index}}
+\index{curr\+\_\+index@{curr\+\_\+index}!bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{curr\+\_\+index}{curr\_index}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Error\+Function = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+unsigned \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type, Error\+Function $>$\+::curr\+\_\+index = 0}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Logging__Output__Layer_a26d5a94a63c60b17e5c9f96e87976775}\label{structbc_1_1nn_1_1Logging__Output__Layer_a26d5a94a63c60b17e5c9f96e87976775}} 
+\index{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}!error\+\_\+function@{error\+\_\+function}}
+\index{error\+\_\+function@{error\+\_\+function}!bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{error\+\_\+function}{error\_function}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Error\+Function = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+Error\+Function \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type, Error\+Function $>$\+::error\+\_\+function}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Logging__Output__Layer_acca4ad9c516221a5cc62cedf86e48ad1}\label{structbc_1_1nn_1_1Logging__Output__Layer_acca4ad9c516221a5cc62cedf86e48ad1}} 
+\index{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}!logger@{logger}}
+\index{logger@{logger}!bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Error\+Function = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+std\+::ostream$\ast$ \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type, Error\+Function $>$\+::logger}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Logging__Output__Layer_a75fbe8edf25c7acbf1750a79f6beaaf3}\label{structbc_1_1nn_1_1Logging__Output__Layer_a75fbe8edf25c7acbf1750a79f6beaaf3}} 
+\index{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}!logging\+\_\+enabled@{logging\+\_\+enabled}}
+\index{logging\+\_\+enabled@{logging\+\_\+enabled}!bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{logging\+\_\+enabled}{logging\_enabled}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Error\+Function = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+bool \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type, Error\+Function $>$\+::logging\+\_\+enabled = true}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Logging__Output__Layer_a112dfc7bcd55a2e1691ab29c4894ae70}\label{structbc_1_1nn_1_1Logging__Output__Layer_a112dfc7bcd55a2e1691ab29c4894ae70}} 
+\index{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}!skip\+\_\+every\+\_\+n\+\_\+backprops@{skip\+\_\+every\+\_\+n\+\_\+backprops}}
+\index{skip\+\_\+every\+\_\+n\+\_\+backprops@{skip\+\_\+every\+\_\+n\+\_\+backprops}!bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer@{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}}
+\subsubsection{\texorpdfstring{skip\+\_\+every\+\_\+n\+\_\+backprops}{skip\_every\_n\_backprops}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Error\+Function = Mean\+\_\+\+Absolute\+\_\+\+Error$>$ \\
+unsigned \hyperlink{structbc_1_1nn_1_1Logging__Output__Layer}{bc\+::nn\+::\+Logging\+\_\+\+Output\+\_\+\+Layer}$<$ System\+Tag, Value\+Type, Error\+Function $>$\+::skip\+\_\+every\+\_\+n\+\_\+backprops = 10}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/layers/\hyperlink{logging__output__layer_8h}{logging\+\_\+output\+\_\+layer.\+h}\end{DoxyCompactItemize}

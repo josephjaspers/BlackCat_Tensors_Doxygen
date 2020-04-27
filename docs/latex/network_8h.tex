@@ -1,0 +1,45 @@
+\hypertarget{network_8h}{}\section{blackcat/neural\+\_\+networks/network.h File Reference}
+\label{network_8h}\index{blackcat/neural\+\_\+networks/network.\+h@{blackcat/neural\+\_\+networks/network.\+h}}
+{\ttfamily \#include \char`\"{}layers/layer\+\_\+traits.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}layer\+\_\+chain.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}layer\+\_\+loader.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+Include dependency graph for network.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{network_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{network_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1NeuralNetwork}{bc\+::nn\+::\+Neural\+Network$<$ Layers $>$}
+\begin{DoxyCompactList}\small\item\em the Neural\+\_\+\+Network \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1nn}{bc\+::nn}
+\item 
+ \hyperlink{namespacebc_1_1nn_1_1detail}{bc\+::nn\+::detail}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a05af00abf685410896e4af7ebfdc3929}{bc\+::nn\+::detail\+::is\+\_\+recurrent\+\_\+layer} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ detail\+::query\+\_\+forward\+\_\+requires\+\_\+outputs, T, std\+::false\+\_\+type $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class ... Layers$>$ }\\auto \hyperlink{namespacebc_1_1nn_aed1958e9d71be2ebdf0c51c26e97b947}{bc\+::nn\+::neuralnetwork} (Layers ... layers)
+\begin{DoxyCompactList}\small\item\em Factory method for creating neural\+\_\+networks. \end{DoxyCompactList}\end{DoxyCompactItemize}

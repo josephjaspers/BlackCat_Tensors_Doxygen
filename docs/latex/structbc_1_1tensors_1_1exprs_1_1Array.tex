@@ -1,0 +1,222 @@
+\hypertarget{structbc_1_1tensors_1_1exprs_1_1Array}{}\section{bc\+:\+:tensors\+:\+:exprs\+:\+:Array$<$ Shape, Scalar, Allocator\+Type, Tags $>$ Struct Template Reference}
+\label{structbc_1_1tensors_1_1exprs_1_1Array}\index{bc\+::tensors\+::exprs\+::\+Array$<$ Shape, Scalar, Allocator\+Type, Tags $>$@{bc\+::tensors\+::exprs\+::\+Array$<$ Shape, Scalar, Allocator\+Type, Tags $>$}}
+
+
+{\ttfamily \#include $<$array.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:tensors\+:\+:exprs\+:\+:Array$<$ Shape, Scalar, Allocator\+Type, Tags $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1tensors_1_1exprs_1_1Array__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:tensors\+:\+:exprs\+:\+:Array$<$ Shape, Scalar, Allocator\+Type, Tags $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1tensors_1_1exprs_1_1Array__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a116ffe7734f63cf0ca63b32b7cfb0506}{system\+\_\+tag} = typename \hyperlink{structbc_1_1allocators_1_1allocator__traits}{bc\+::allocator\+\_\+traits}$<$ Allocator\+Type $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a116ffe7734f63cf0ca63b32b7cfb0506}{system\+\_\+tag}
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a28b34dfcad3f0d35770d64a38f7187a0}{value\+\_\+type} = \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a990afcebe8817075d427f2653d197140}{allocator\+\_\+type} = Allocator\+Type
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_aba97273ba94fb140763e7db5da630ea0}{stream\+\_\+type} = \hyperlink{classbc_1_1streams_1_1Stream}{Stream}$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a116ffe7734f63cf0ca63b32b7cfb0506}{system\+\_\+tag} $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a67c96ea64a2899ba0593a6b81aa0868e}{shape\+\_\+type} = \hyperlink{structbc_1_1Shape}{Shape}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_aba97273ba94fb140763e7db5da630ea0}{stream\+\_\+type} \& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a1d6e547e956f8f7bbd2a94ad10bd64fa}{get\+\_\+stream} () const
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_aba97273ba94fb140763e7db5da630ea0}{stream\+\_\+type} \& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_adde068372455f066865b2395634f407b}{get\+\_\+stream} ()
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a990afcebe8817075d427f2653d197140}{allocator\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a23512d49fbc3734005e92d64ad31a3f8}{get\+\_\+allocator} () const
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_aee4d34e0da545cb3463a2359a2daf6d4}{Array} ()
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a404b48bf95a86c8cb6978a3bf0107ffe}{Array} (const \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array} \&array)
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a36469db9812dc419d20e87171a019998}{Array} (\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array} \&\&array)
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a86801946a99e3d104ee7d6569c97072c}{Array} (\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ \hyperlink{structbc_1_1Shape_a1f75fffa8b4aec4405025de308adb169}{shape\+\_\+type\+::tensor\+\_\+dim} $>$ \hyperlink{namespacebc_a1bc6dec532973ac024c738c0fd32cca3}{shape})
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_afdc66d4d061f95a91831044776e619a3}{Array} (\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ \hyperlink{structbc_1_1Shape_a1f75fffa8b4aec4405025de308adb169}{shape\+\_\+type\+::tensor\+\_\+dim} $>$ \hyperlink{namespacebc_a1bc6dec532973ac024c738c0fd32cca3}{shape}, \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a990afcebe8817075d427f2653d197140}{allocator\+\_\+type} allocator)
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a5fa294dbb5d9eccea7201c507c6f7004}{Array} (\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a67c96ea64a2899ba0593a6b81aa0868e}{shape\+\_\+type} \hyperlink{namespacebc_a1bc6dec532973ac024c738c0fd32cca3}{shape})
+\item 
+{\footnotesize template$<$class... Shape\+Dims, class  = std\+::enable\+\_\+if\+\_\+t$<$			traits\+::sequence\+\_\+of\+\_\+v$<$bc\+::size\+\_\+t, Shape\+Dims...$>$ \&\&			sizeof...(\+Shape\+Dims) == Shape\+::tensor\+\_\+dim$>$$>$ }\\\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a0bdfc60f9711f7334ed0850fd417109c}{Array} (const Shape\+Dims \&... shape\+\_\+dims)
+\item 
+{\footnotesize template$<$class Expression , class  = std\+::enable\+\_\+if\+\_\+t$<$			expression\+\_\+traits$<$\+Expression$>$\+::is\+\_\+array\+::value $\vert$$\vert$			expression\+\_\+traits$<$\+Expression$>$\+::is\+\_\+expr\+::value$>$$>$ }\\\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a33daff032fc7d980dc4c9e336570a718}{Array} (const Expression \&expression, \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a990afcebe8817075d427f2653d197140}{allocator\+\_\+type} allocator=\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a990afcebe8817075d427f2653d197140}{allocator\+\_\+type}())
+\item 
+{\footnotesize template$<$class Alt\+Shape , class... Slice\+Tags$>$ }\\\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a7cc7a7eb294c67d96f66c52598382991}{Array} (const \hyperlink{classbc_1_1tensors_1_1exprs_1_1Array__Slice}{Array\+\_\+\+Slice}$<$ Alt\+Shape, \hyperlink{structbc_1_1Shape_a52aafd6585a5eae8a3b82f650d3afc1c}{value\+\_\+type}, \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a990afcebe8817075d427f2653d197140}{allocator\+\_\+type}, Slice\+Tags... $>$ \&expression)
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array} \& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_ad5b1cbbee83ed001d18012df27ebdef8}{operator=} (\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array} \&\&array)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a3123e9466102d458b8bcf48bd926559c}{deallocate} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_a990afcebe8817075d427f2653d197140}\label{structbc_1_1tensors_1_1exprs_1_1Array_a990afcebe8817075d427f2653d197140}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a990afcebe8817075d427f2653d197140}{allocator\+\_\+type} =  Allocator\+Type}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_a67c96ea64a2899ba0593a6b81aa0868e}\label{structbc_1_1tensors_1_1exprs_1_1Array_a67c96ea64a2899ba0593a6b81aa0868e}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!shape\+\_\+type@{shape\+\_\+type}}
+\index{shape\+\_\+type@{shape\+\_\+type}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{shape\+\_\+type}{shape\_type}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a67c96ea64a2899ba0593a6b81aa0868e}{shape\+\_\+type} =  \hyperlink{structbc_1_1Shape}{Shape}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_aba97273ba94fb140763e7db5da630ea0}\label{structbc_1_1tensors_1_1exprs_1_1Array_aba97273ba94fb140763e7db5da630ea0}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!stream\+\_\+type@{stream\+\_\+type}}
+\index{stream\+\_\+type@{stream\+\_\+type}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{stream\+\_\+type}{stream\_type}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_aba97273ba94fb140763e7db5da630ea0}{stream\+\_\+type} =  \hyperlink{classbc_1_1streams_1_1Stream}{Stream}$<$\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a116ffe7734f63cf0ca63b32b7cfb0506}{system\+\_\+tag}$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_a116ffe7734f63cf0ca63b32b7cfb0506}\label{structbc_1_1tensors_1_1exprs_1_1Array_a116ffe7734f63cf0ca63b32b7cfb0506}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a116ffe7734f63cf0ca63b32b7cfb0506}{system\+\_\+tag} =  typename \hyperlink{structbc_1_1allocators_1_1allocator__traits}{bc\+::allocator\+\_\+traits}$<$Allocator\+Type$>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a116ffe7734f63cf0ca63b32b7cfb0506}{system\+\_\+tag}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_a28b34dfcad3f0d35770d64a38f7187a0}\label{structbc_1_1tensors_1_1exprs_1_1Array_a28b34dfcad3f0d35770d64a38f7187a0}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::\hyperlink{structbc_1_1Shape_a52aafd6585a5eae8a3b82f650d3afc1c}{value\+\_\+type} =  \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_aee4d34e0da545cb3463a2359a2daf6d4}\label{structbc_1_1tensors_1_1exprs_1_1Array_aee4d34e0da545cb3463a2359a2daf6d4}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [1/9]}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_a404b48bf95a86c8cb6978a3bf0107ffe}\label{structbc_1_1tensors_1_1exprs_1_1Array_a404b48bf95a86c8cb6978a3bf0107ffe}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [2/9]}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array} (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$ \&}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_a36469db9812dc419d20e87171a019998}\label{structbc_1_1tensors_1_1exprs_1_1Array_a36469db9812dc419d20e87171a019998}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [3/9]}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$ \&\&}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_a86801946a99e3d104ee7d6569c97072c}\label{structbc_1_1tensors_1_1exprs_1_1Array_a86801946a99e3d104ee7d6569c97072c}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [4/9]}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ \hyperlink{structbc_1_1Shape_a1f75fffa8b4aec4405025de308adb169}{shape\+\_\+type\+::tensor\+\_\+dim} $>$}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_afdc66d4d061f95a91831044776e619a3}\label{structbc_1_1tensors_1_1exprs_1_1Array_afdc66d4d061f95a91831044776e619a3}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [5/9]}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ \hyperlink{structbc_1_1Shape_a1f75fffa8b4aec4405025de308adb169}{shape\+\_\+type\+::tensor\+\_\+dim} $>$}]{shape,  }\item[{\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a990afcebe8817075d427f2653d197140}{allocator\+\_\+type}}]{allocator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_a5fa294dbb5d9eccea7201c507c6f7004}\label{structbc_1_1tensors_1_1exprs_1_1Array_a5fa294dbb5d9eccea7201c507c6f7004}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [6/9]}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a67c96ea64a2899ba0593a6b81aa0868e}{shape\+\_\+type}}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_a0bdfc60f9711f7334ed0850fd417109c}\label{structbc_1_1tensors_1_1exprs_1_1Array_a0bdfc60f9711f7334ed0850fd417109c}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [7/9]}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+template$<$class... Shape\+Dims, class  = std\+::enable\+\_\+if\+\_\+t$<$			traits\+::sequence\+\_\+of\+\_\+v$<$bc\+::size\+\_\+t, Shape\+Dims...$>$ \&\&			sizeof...(\+Shape\+Dims) == Shape\+::tensor\+\_\+dim$>$$>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array} (\begin{DoxyParamCaption}\item[{const Shape\+Dims \&...}]{shape\+\_\+dims }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_a33daff032fc7d980dc4c9e336570a718}\label{structbc_1_1tensors_1_1exprs_1_1Array_a33daff032fc7d980dc4c9e336570a718}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [8/9]}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+template$<$class Expression , class  = std\+::enable\+\_\+if\+\_\+t$<$			expression\+\_\+traits$<$\+Expression$>$\+::is\+\_\+array\+::value $\vert$$\vert$			expression\+\_\+traits$<$\+Expression$>$\+::is\+\_\+expr\+::value$>$$>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array} (\begin{DoxyParamCaption}\item[{const Expression \&}]{expression,  }\item[{\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a990afcebe8817075d427f2653d197140}{allocator\+\_\+type}}]{allocator = {\ttfamily \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a990afcebe8817075d427f2653d197140}{allocator\+\_\+type}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_a7cc7a7eb294c67d96f66c52598382991}\label{structbc_1_1tensors_1_1exprs_1_1Array_a7cc7a7eb294c67d96f66c52598382991}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [9/9]}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+template$<$class Alt\+Shape , class... Slice\+Tags$>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array} (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1tensors_1_1exprs_1_1Array__Slice}{Array\+\_\+\+Slice}$<$ Alt\+Shape, \hyperlink{structbc_1_1Shape_a52aafd6585a5eae8a3b82f650d3afc1c}{value\+\_\+type}, \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a990afcebe8817075d427f2653d197140}{allocator\+\_\+type}, Slice\+Tags... $>$ \&}]{expression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_a3123e9466102d458b8bcf48bd926559c}\label{structbc_1_1tensors_1_1exprs_1_1Array_a3123e9466102d458b8bcf48bd926559c}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::deallocate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_a23512d49fbc3734005e92d64ad31a3f8}\label{structbc_1_1tensors_1_1exprs_1_1Array_a23512d49fbc3734005e92d64ad31a3f8}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!get\+\_\+allocator@{get\+\_\+allocator}}
+\index{get\+\_\+allocator@{get\+\_\+allocator}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{get\+\_\+allocator()}{get\_allocator()}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_a990afcebe8817075d427f2653d197140}{allocator\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::get\+\_\+allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_a1d6e547e956f8f7bbd2a94ad10bd64fa}\label{structbc_1_1tensors_1_1exprs_1_1Array_a1d6e547e956f8f7bbd2a94ad10bd64fa}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!get\+\_\+stream@{get\+\_\+stream}}
+\index{get\+\_\+stream@{get\+\_\+stream}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{get\+\_\+stream()}{get\_stream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+const \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_aba97273ba94fb140763e7db5da630ea0}{stream\+\_\+type}\& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::get\+\_\+stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_adde068372455f066865b2395634f407b}\label{structbc_1_1tensors_1_1exprs_1_1Array_adde068372455f066865b2395634f407b}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!get\+\_\+stream@{get\+\_\+stream}}
+\index{get\+\_\+stream@{get\+\_\+stream}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{get\+\_\+stream()}{get\_stream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array_aba97273ba94fb140763e7db5da630ea0}{stream\+\_\+type}\& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::get\+\_\+stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Array_ad5b1cbbee83ed001d18012df27ebdef8}\label{structbc_1_1tensors_1_1exprs_1_1Array_ad5b1cbbee83ed001d18012df27ebdef8}} 
+\index{bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::tensors\+::exprs\+::\+Array@{bc\+::tensors\+::exprs\+::\+Array}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class Shape, class Scalar, class Allocator\+Type, class... Tags$>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array}\& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{bc\+::tensors\+::exprs\+::\+Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1tensors_1_1exprs_1_1Array}{Array}$<$ \hyperlink{structbc_1_1Shape}{Shape}, \hyperlink{namespacebc_aa12ac55ee2c43dc082894dd3859daee1}{Scalar}, Allocator\+Type, Tags $>$ \&\&}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/tensors/expression\+\_\+templates/\hyperlink{array_8h}{array.\+h}\end{DoxyCompactItemize}

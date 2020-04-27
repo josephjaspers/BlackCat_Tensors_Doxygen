@@ -1,0 +1,422 @@
+\hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector}{}\section{bc\+:\+:tensors\+:\+:exprs\+:\+:Vector$<$ Value\+Type, Allocator\+Type $>$ Struct Template Reference}
+\label{structbc_1_1tensors_1_1exprs_1_1Vector}\index{bc\+::tensors\+::exprs\+::\+Vector$<$ Value\+Type, Allocator\+Type $>$@{bc\+::tensors\+::exprs\+::\+Vector$<$ Value\+Type, Allocator\+Type $>$}}
+
+
+{\ttfamily \#include $<$vector.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a828fecb38556a2bd72fc88dab4eb9bfe}{system\+\_\+tag} = typename \hyperlink{structbc_1_1allocators_1_1allocator__traits}{bc\+::allocator\+\_\+traits}$<$ Allocator\+Type $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a828fecb38556a2bd72fc88dab4eb9bfe}{system\+\_\+tag}
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a6a9edbbd7f8743e3a303e64ac887e498}{stream\+\_\+type} = \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a828fecb38556a2bd72fc88dab4eb9bfe}{system\+\_\+tag} $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a94fd93f892cde60396b78ab67b180a19}{allocator\+\_\+type} = std\+::conditional\+\_\+t$<$ std\+::is\+\_\+same$<$ \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag}, \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a828fecb38556a2bd72fc88dab4eb9bfe}{system\+\_\+tag} $>$\+::value, \hyperlink{namespacebc_1_1allocators_ab6233c0d8d9d7391c3abdbdf1fded326}{bc\+::allocators\+::allocator\+\_\+to\+\_\+thrust\+\_\+allocator\+\_\+t}$<$ Allocator\+Type $>$, Allocator\+Type $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a73521248268e63ecefe36bca57afcf20}{array\+\_\+type} = std\+::conditional\+\_\+t$<$ std\+::is\+\_\+same$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a828fecb38556a2bd72fc88dab4eb9bfe}{system\+\_\+tag}, \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag} $>$\+::value, thrust\+::host\+\_\+vector$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type}, \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a94fd93f892cde60396b78ab67b180a19}{allocator\+\_\+type} $>$, thrust\+::device\+\_\+vector$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type}, \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a94fd93f892cde60396b78ab67b180a19}{allocator\+\_\+type} $>$ $>$
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a7a30191739439f338f709feca776585b}{expression\+\_\+template\+\_\+array\+\_\+type} = std\+::true\+\_\+type
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_ad7a2aba8225a81c05e95c2db13e2e939}{Vector} ()=default
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_ab46a08ed533ac62c54e2249d373a4b4d}{Vector} (const \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a73521248268e63ecefe36bca57afcf20}{array\+\_\+type} \&vector)
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_ac5fec84615ffd6518d962e9fa59000a5}{Vector} (\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a73521248268e63ecefe36bca57afcf20}{array\+\_\+type} \&\&vector)
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a20573e41b2964fbbb6a580016c2fcd27}{Vector} (\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 1 $>$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a15758a965721b43487a91aee601bc794}{dim})
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_aa8ca71378f0ab15b4dad2f3a01b5ab6b}{Vector} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a8a4b5dadd438ab523827426c806fe840}{size})
+\item 
+auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_af37170466c5c1d7e33ff4d09e0dc7c2d}{get\+\_\+shape} () const
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a8a4b5dadd438ab523827426c806fe840}{size} () const
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a33681a7db833cc8dd96cc286d6732b4e}{rows} () const
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a1f505852a87c5dc03d5efc97cbe39c41}{cols} () const
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a15758a965721b43487a91aee601bc794}{dim} (int i) const
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a1bc72dcd2b0ab03a431d32d7df9c6e04}{outer\+\_\+dim} () const
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_aab8ecb4d931af209675dacd7aeb01983}{leading\+\_\+dim} (int i=0) const
+\item 
+auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a46586fd464f9c39cc27acb99ce9442c0}{inner\+\_\+shape} () const
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{const\+\_\+expression\+\_\+template\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a30ea0e61d1f409c405cc29610241170e}{expression\+\_\+template} () const
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{expression\+\_\+template\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_ad5c1189f69b902afa3f7f64d7c5d052c}{expression\+\_\+template} ()
+\item 
+const \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a6a9edbbd7f8743e3a303e64ac887e498}{stream\+\_\+type} \& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a1efa78ba3b993bdbdbae6b0c35ad82b3}{get\+\_\+stream} () const
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a6a9edbbd7f8743e3a303e64ac887e498}{stream\+\_\+type} \& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a80c98aea7bfd223ce7edfffe41e0e1e1}{get\+\_\+stream} ()
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a94fd93f892cde60396b78ab67b180a19}{allocator\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_aeca332b35e2515e9d6dadbf03289f6cc}{get\+\_\+allocator} () const
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type} $\ast$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a85aed13ca9f7982a57086d5bd3fdcf19}{data} () const
+\item 
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type} $\ast$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a2484a59b041fafbbeb45b00a34e4702f}{data} ()
+\item 
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a646e8f07731bfbc89378974310eee5cc}{clear} ()
+\item 
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_acf3a12f0ddeed3faefeab349a1cebe0b}{reserve} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} reserve\+\_\+sz)
+\item 
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a71d51235cb50956b6965102466a7a338}{resize} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} new\+\_\+sz)
+\item 
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a18952a507b7ffe3364789a074642d0d5}{push\+\_\+back} (\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type} \&\&value)
+\item 
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a14256d71cab903b025cd211d2621ad0d}{push\+\_\+back} (const \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type} \&value)
+\item 
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a8d4843ec7993bc29a3c35f8af7faccef}{emplace\+\_\+back} (\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type} \&\&value)
+\item 
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a2e927c004523e23eda06fadc2fa9b836}{emplace\+\_\+back} (const \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type} \&value)
+\item 
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_af3c66b395bdbf48d12862d1c3a9c5c1c}{pop\+\_\+back} ()
+\item 
+auto \& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_ac6b16e6c0550d3298d31c8fac38047e5}{at} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} index) const
+\item 
+auto \& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a6eb567c4b4a0fdfdf5de8a8e6449a60f}{at} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} index)
+\item 
+bool \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_ad040ded42a1cd570993728cb4703cb05}{empty} () const
+\item 
+std\+::size\+\_\+t \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_aa2966322975b102857748f091090fea3}{max\+\_\+size} () const
+\item 
+std\+::size\+\_\+t \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a65f2772bac84cb1e6105c3880135d3fd}{capacity} () const
+\item 
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a5858c21a9567c5417e70ac58f5e4bef8}{shrink\+\_\+to\+\_\+fit} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr int \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_aa7ba3a9be7f59ccc379f5c585ef1e386}{tensor\+\_\+dim} = 1
+\item 
+static constexpr int \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_adc4340375cda2234ab5f9fbfec8af13a}{tensor\+\_\+iterator\+\_\+dim} = 1
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a33063c3d12ae3ce08ab16f1d74be3558}{deallocate} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a94fd93f892cde60396b78ab67b180a19}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a94fd93f892cde60396b78ab67b180a19}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a94fd93f892cde60396b78ab67b180a19}{allocator\+\_\+type} =  std\+::conditional\+\_\+t$<$ std\+::is\+\_\+same$<$\hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag}, \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a828fecb38556a2bd72fc88dab4eb9bfe}{system\+\_\+tag}$>$\+::value, \hyperlink{namespacebc_1_1allocators_ab6233c0d8d9d7391c3abdbdf1fded326}{bc\+::allocators\+::allocator\+\_\+to\+\_\+thrust\+\_\+allocator\+\_\+t}$<$Allocator\+Type$>$, Allocator\+Type$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a73521248268e63ecefe36bca57afcf20}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a73521248268e63ecefe36bca57afcf20}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!array\+\_\+type@{array\+\_\+type}}
+\index{array\+\_\+type@{array\+\_\+type}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{array\+\_\+type}{array\_type}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a73521248268e63ecefe36bca57afcf20}{array\+\_\+type} =  std\+::conditional\+\_\+t$<$ std\+::is\+\_\+same$<$\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a828fecb38556a2bd72fc88dab4eb9bfe}{system\+\_\+tag}, \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag}$>$\+::value, thrust\+::host\+\_\+vector$<$\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type}, \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a94fd93f892cde60396b78ab67b180a19}{allocator\+\_\+type}$>$, thrust\+::device\+\_\+vector$<$\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type}, \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a94fd93f892cde60396b78ab67b180a19}{allocator\+\_\+type}$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a7a30191739439f338f709feca776585b}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a7a30191739439f338f709feca776585b}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!expression\+\_\+template\+\_\+array\+\_\+type@{expression\+\_\+template\+\_\+array\+\_\+type}}
+\index{expression\+\_\+template\+\_\+array\+\_\+type@{expression\+\_\+template\+\_\+array\+\_\+type}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{expression\+\_\+template\+\_\+array\+\_\+type}{expression\_template\_array\_type}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a7a30191739439f338f709feca776585b}{expression\+\_\+template\+\_\+array\+\_\+type} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a6a9edbbd7f8743e3a303e64ac887e498}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a6a9edbbd7f8743e3a303e64ac887e498}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!stream\+\_\+type@{stream\+\_\+type}}
+\index{stream\+\_\+type@{stream\+\_\+type}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{stream\+\_\+type}{stream\_type}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a6a9edbbd7f8743e3a303e64ac887e498}{stream\+\_\+type} =  \hyperlink{classbc_1_1streams_1_1Stream}{bc\+::streams\+::\+Stream}$<$\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a828fecb38556a2bd72fc88dab4eb9bfe}{system\+\_\+tag}$>$}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a828fecb38556a2bd72fc88dab4eb9bfe}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a828fecb38556a2bd72fc88dab4eb9bfe}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a828fecb38556a2bd72fc88dab4eb9bfe}{system\+\_\+tag} =  typename \hyperlink{structbc_1_1allocators_1_1allocator__traits}{bc\+::allocator\+\_\+traits}$<$Allocator\+Type$>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a828fecb38556a2bd72fc88dab4eb9bfe}{system\+\_\+tag}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type} =  Value\+Type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_ad7a2aba8225a81c05e95c2db13e2e939}\label{structbc_1_1tensors_1_1exprs_1_1Vector_ad7a2aba8225a81c05e95c2db13e2e939}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{Vector} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_ab46a08ed533ac62c54e2249d373a4b4d}\label{structbc_1_1tensors_1_1exprs_1_1Vector_ab46a08ed533ac62c54e2249d373a4b4d}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{Vector} (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a73521248268e63ecefe36bca57afcf20}{array\+\_\+type} \&}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_ac5fec84615ffd6518d962e9fa59000a5}\label{structbc_1_1tensors_1_1exprs_1_1Vector_ac5fec84615ffd6518d962e9fa59000a5}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{Vector} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a73521248268e63ecefe36bca57afcf20}{array\+\_\+type} \&\&}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a20573e41b2964fbbb6a580016c2fcd27}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a20573e41b2964fbbb6a580016c2fcd27}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{Vector} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 1 $>$}]{dim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_aa8ca71378f0ab15b4dad2f3a01b5ab6b}\label{structbc_1_1tensors_1_1exprs_1_1Vector_aa8ca71378f0ab15b4dad2f3a01b5ab6b}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{Vector} (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_ac6b16e6c0550d3298d31c8fac38047e5}\label{structbc_1_1tensors_1_1exprs_1_1Vector_ac6b16e6c0550d3298d31c8fac38047e5}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!at@{at}}
+\index{at@{at}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+auto\& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::at (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a6eb567c4b4a0fdfdf5de8a8e6449a60f}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a6eb567c4b4a0fdfdf5de8a8e6449a60f}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!at@{at}}
+\index{at@{at}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+auto\& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::at (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a65f2772bac84cb1e6105c3880135d3fd}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a65f2772bac84cb1e6105c3880135d3fd}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!capacity@{capacity}}
+\index{capacity@{capacity}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{capacity()}{capacity()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+std\+::size\+\_\+t \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a646e8f07731bfbc89378974310eee5cc}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a646e8f07731bfbc89378974310eee5cc}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!clear@{clear}}
+\index{clear@{clear}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a1f505852a87c5dc03d5efc97cbe39c41}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a1f505852a87c5dc03d5efc97cbe39c41}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!cols@{cols}}
+\index{cols@{cols}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{cols()}{cols()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a85aed13ca9f7982a57086d5bd3fdcf19}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a85aed13ca9f7982a57086d5bd3fdcf19}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!data@{data}}
+\index{data@{data}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type}$\ast$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a2484a59b041fafbbeb45b00a34e4702f}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a2484a59b041fafbbeb45b00a34e4702f}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!data@{data}}
+\index{data@{data}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type}$\ast$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a33063c3d12ae3ce08ab16f1d74be3558}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a33063c3d12ae3ce08ab16f1d74be3558}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::deallocate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a15758a965721b43487a91aee601bc794}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a15758a965721b43487a91aee601bc794}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!dim@{dim}}
+\index{dim@{dim}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{dim()}{dim()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::dim (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a8d4843ec7993bc29a3c35f8af7faccef}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a8d4843ec7993bc29a3c35f8af7faccef}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!emplace\+\_\+back@{emplace\+\_\+back}}
+\index{emplace\+\_\+back@{emplace\+\_\+back}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{emplace\+\_\+back()}{emplace\_back()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::emplace\+\_\+back (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type} \&\&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a2e927c004523e23eda06fadc2fa9b836}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a2e927c004523e23eda06fadc2fa9b836}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!emplace\+\_\+back@{emplace\+\_\+back}}
+\index{emplace\+\_\+back@{emplace\+\_\+back}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{emplace\+\_\+back()}{emplace\_back()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::emplace\+\_\+back (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_ad040ded42a1cd570993728cb4703cb05}\label{structbc_1_1tensors_1_1exprs_1_1Vector_ad040ded42a1cd570993728cb4703cb05}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!empty@{empty}}
+\index{empty@{empty}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+bool \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a30ea0e61d1f409c405cc29610241170e}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a30ea0e61d1f409c405cc29610241170e}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!expression\+\_\+template@{expression\+\_\+template}}
+\index{expression\+\_\+template@{expression\+\_\+template}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{expression\+\_\+template()}{expression\_template()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{const\+\_\+expression\+\_\+template\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::expression\+\_\+template (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_ad5c1189f69b902afa3f7f64d7c5d052c}\label{structbc_1_1tensors_1_1exprs_1_1Vector_ad5c1189f69b902afa3f7f64d7c5d052c}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!expression\+\_\+template@{expression\+\_\+template}}
+\index{expression\+\_\+template@{expression\+\_\+template}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{expression\+\_\+template()}{expression\_template()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Kernel__Array}{expression\+\_\+template\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::expression\+\_\+template (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_aeca332b35e2515e9d6dadbf03289f6cc}\label{structbc_1_1tensors_1_1exprs_1_1Vector_aeca332b35e2515e9d6dadbf03289f6cc}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!get\+\_\+allocator@{get\+\_\+allocator}}
+\index{get\+\_\+allocator@{get\+\_\+allocator}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{get\+\_\+allocator()}{get\_allocator()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a94fd93f892cde60396b78ab67b180a19}{allocator\+\_\+type} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::get\+\_\+allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_af37170466c5c1d7e33ff4d09e0dc7c2d}\label{structbc_1_1tensors_1_1exprs_1_1Vector_af37170466c5c1d7e33ff4d09e0dc7c2d}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!get\+\_\+shape@{get\+\_\+shape}}
+\index{get\+\_\+shape@{get\+\_\+shape}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{get\+\_\+shape()}{get\_shape()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::get\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a1efa78ba3b993bdbdbae6b0c35ad82b3}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a1efa78ba3b993bdbdbae6b0c35ad82b3}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!get\+\_\+stream@{get\+\_\+stream}}
+\index{get\+\_\+stream@{get\+\_\+stream}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{get\+\_\+stream()}{get\_stream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+const \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a6a9edbbd7f8743e3a303e64ac887e498}{stream\+\_\+type}\& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::get\+\_\+stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a80c98aea7bfd223ce7edfffe41e0e1e1}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a80c98aea7bfd223ce7edfffe41e0e1e1}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!get\+\_\+stream@{get\+\_\+stream}}
+\index{get\+\_\+stream@{get\+\_\+stream}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{get\+\_\+stream()}{get\_stream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a6a9edbbd7f8743e3a303e64ac887e498}{stream\+\_\+type}\& \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::get\+\_\+stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a46586fd464f9c39cc27acb99ce9442c0}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a46586fd464f9c39cc27acb99ce9442c0}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!inner\+\_\+shape@{inner\+\_\+shape}}
+\index{inner\+\_\+shape@{inner\+\_\+shape}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{inner\+\_\+shape()}{inner\_shape()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::inner\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_aab8ecb4d931af209675dacd7aeb01983}\label{structbc_1_1tensors_1_1exprs_1_1Vector_aab8ecb4d931af209675dacd7aeb01983}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!leading\+\_\+dim@{leading\+\_\+dim}}
+\index{leading\+\_\+dim@{leading\+\_\+dim}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{leading\+\_\+dim()}{leading\_dim()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::leading\+\_\+dim (\begin{DoxyParamCaption}\item[{int}]{i = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_aa2966322975b102857748f091090fea3}\label{structbc_1_1tensors_1_1exprs_1_1Vector_aa2966322975b102857748f091090fea3}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!max\+\_\+size@{max\+\_\+size}}
+\index{max\+\_\+size@{max\+\_\+size}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{max\+\_\+size()}{max\_size()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+std\+::size\+\_\+t \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::max\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a1bc72dcd2b0ab03a431d32d7df9c6e04}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a1bc72dcd2b0ab03a431d32d7df9c6e04}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!outer\+\_\+dim@{outer\+\_\+dim}}
+\index{outer\+\_\+dim@{outer\+\_\+dim}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{outer\+\_\+dim()}{outer\_dim()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::outer\+\_\+dim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_af3c66b395bdbf48d12862d1c3a9c5c1c}\label{structbc_1_1tensors_1_1exprs_1_1Vector_af3c66b395bdbf48d12862d1c3a9c5c1c}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!pop\+\_\+back@{pop\+\_\+back}}
+\index{pop\+\_\+back@{pop\+\_\+back}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{pop\+\_\+back()}{pop\_back()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::pop\+\_\+back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a18952a507b7ffe3364789a074642d0d5}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a18952a507b7ffe3364789a074642d0d5}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{push\+\_\+back()}{push\_back()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type} \&\&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a14256d71cab903b025cd211d2621ad0d}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a14256d71cab903b025cd211d2621ad0d}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{push\+\_\+back()}{push\_back()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector_a61ba759af8b26329103ce2b0765dade5}{value\+\_\+type} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_acf3a12f0ddeed3faefeab349a1cebe0b}\label{structbc_1_1tensors_1_1exprs_1_1Vector_acf3a12f0ddeed3faefeab349a1cebe0b}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!reserve@{reserve}}
+\index{reserve@{reserve}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{reserve()}{reserve()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::reserve (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{reserve\+\_\+sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a71d51235cb50956b6965102466a7a338}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a71d51235cb50956b6965102466a7a338}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!resize@{resize}}
+\index{resize@{resize}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::resize (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{new\+\_\+sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a33681a7db833cc8dd96cc286d6732b4e}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a33681a7db833cc8dd96cc286d6732b4e}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!rows@{rows}}
+\index{rows@{rows}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{rows()}{rows()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a5858c21a9567c5417e70ac58f5e4bef8}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a5858c21a9567c5417e70ac58f5e4bef8}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!shrink\+\_\+to\+\_\+fit@{shrink\+\_\+to\+\_\+fit}}
+\index{shrink\+\_\+to\+\_\+fit@{shrink\+\_\+to\+\_\+fit}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{shrink\+\_\+to\+\_\+fit()}{shrink\_to\_fit()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+void \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::shrink\+\_\+to\+\_\+fit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_a8a4b5dadd438ab523827426c806fe840}\label{structbc_1_1tensors_1_1exprs_1_1Vector_a8a4b5dadd438ab523827426c806fe840}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!size@{size}}
+\index{size@{size}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_aa7ba3a9be7f59ccc379f5c585ef1e386}\label{structbc_1_1tensors_1_1exprs_1_1Vector_aa7ba3a9be7f59ccc379f5c585ef1e386}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!tensor\+\_\+dim@{tensor\+\_\+dim}}
+\index{tensor\+\_\+dim@{tensor\+\_\+dim}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{tensor\+\_\+dim}{tensor\_dim}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+constexpr int \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::tensor\+\_\+dim = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Vector_adc4340375cda2234ab5f9fbfec8af13a}\label{structbc_1_1tensors_1_1exprs_1_1Vector_adc4340375cda2234ab5f9fbfec8af13a}} 
+\index{bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}!tensor\+\_\+iterator\+\_\+dim@{tensor\+\_\+iterator\+\_\+dim}}
+\index{tensor\+\_\+iterator\+\_\+dim@{tensor\+\_\+iterator\+\_\+dim}!bc\+::tensors\+::exprs\+::\+Vector@{bc\+::tensors\+::exprs\+::\+Vector}}
+\subsubsection{\texorpdfstring{tensor\+\_\+iterator\+\_\+dim}{tensor\_iterator\_dim}}
+{\footnotesize\ttfamily template$<$class Value\+Type , class Allocator\+Type $>$ \\
+constexpr int \hyperlink{structbc_1_1tensors_1_1exprs_1_1Vector}{bc\+::tensors\+::exprs\+::\+Vector}$<$ Value\+Type, Allocator\+Type $>$\+::tensor\+\_\+iterator\+\_\+dim = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/tensors/expression\+\_\+templates/\hyperlink{vector_8h}{vector.\+h}\end{DoxyCompactItemize}

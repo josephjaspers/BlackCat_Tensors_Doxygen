@@ -1,0 +1,20 @@
+\hypertarget{namespacebc_1_1allocators_1_1pa__detail}{}\section{bc\+:\+:allocators\+:\+:pa\+\_\+detail Namespace Reference}
+\label{namespacebc_1_1allocators_1_1pa__detail}\index{bc\+::allocators\+::pa\+\_\+detail@{bc\+::allocators\+::pa\+\_\+detail}}
+
+
+Similar to the C++17 std\+::pmr\+::polymorphic\+\_\+allocator.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Allocator__Base}{Allocator\+\_\+\+Base}
+\item 
+struct \hyperlink{structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator}{Derived\+\_\+\+Allocator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Similar to the C++17 std\+::pmr\+::polymorphic\+\_\+allocator. 
+
+The polymorphic\+\_\+allocator accepts an \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} object on construction and uses polymorphism to create an expression\+\_\+template \textquotesingle{}allocator.\textquotesingle{} All calls of allocate/deallocate are forwarded to the stated allocator. The polymorphic\+\_\+allocator there-\/for, cannot be rebound. 

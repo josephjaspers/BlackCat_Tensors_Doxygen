@@ -1,0 +1,53 @@
+\hypertarget{structbc_1_1blas_1_1BLAS_3_01device__tag_01_4}{}\section{bc\+:\+:blas\+:\+:B\+L\+AS$<$ device\+\_\+tag $>$ Struct Template Reference}
+\label{structbc_1_1blas_1_1BLAS_3_01device__tag_01_4}\index{bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$}}
+
+
+{\ttfamily \#include $<$device.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Stream $>$ }\\static void \hyperlink{structbc_1_1blas_1_1BLAS_3_01device__tag_01_4_a60cfd2b05fbdfcd2d96e9c321c127c36}{gemm} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, bool transA, bool transB, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} m, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} n, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} k, const float $\ast$alpha, const float $\ast$A, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} lda, const float $\ast$B, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} ldb, const float $\ast$beta, float $\ast$C, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} ldc)
+\item 
+{\footnotesize template$<$class Stream $>$ }\\static void \hyperlink{structbc_1_1blas_1_1BLAS_3_01device__tag_01_4_a5fe75f9885e4b40249c5e624cf9fe335}{gemv} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, bool transA, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} m, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} n, const float $\ast$alpha, const float $\ast$A, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} lda, const float $\ast$X, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incX, const float $\ast$beta, float $\ast$Y, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incY)
+\item 
+{\footnotesize template$<$class Stream $>$ }\\static void \hyperlink{structbc_1_1blas_1_1BLAS_3_01device__tag_01_4_aebaf3d1509c53d5eff0d9670cd0de23d}{ger} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, int m, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} n, const float $\ast$alpha, const float $\ast$X, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incX, const float $\ast$Y, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incY, float $\ast$A, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} lda)
+\item 
+{\footnotesize template$<$class Stream $>$ }\\static void \hyperlink{structbc_1_1blas_1_1BLAS_3_01device__tag_01_4_a8cd7b3bf4300f025bb9ac8781bb5e043}{dot} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, int n, float $\ast$A, const float $\ast$x, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incX, const float $\ast$y, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incY)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1blas_1_1BLAS_3_01device__tag_01_4_a8cd7b3bf4300f025bb9ac8781bb5e043}\label{structbc_1_1blas_1_1BLAS_3_01device__tag_01_4_a8cd7b3bf4300f025bb9ac8781bb5e043}} 
+\index{bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$}!dot@{dot}}
+\index{dot@{dot}!bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{dot()}{dot()}}
+{\footnotesize\ttfamily template$<$class Stream $>$ \\
+static void \hyperlink{structbc_1_1blas_1_1BLAS}{bc\+::blas\+::\+B\+L\+AS}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::dot (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{int}]{n,  }\item[{float $\ast$}]{A,  }\item[{const float $\ast$}]{x,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incX,  }\item[{const float $\ast$}]{y,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1blas_1_1BLAS_3_01device__tag_01_4_a60cfd2b05fbdfcd2d96e9c321c127c36}\label{structbc_1_1blas_1_1BLAS_3_01device__tag_01_4_a60cfd2b05fbdfcd2d96e9c321c127c36}} 
+\index{bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$}!gemm@{gemm}}
+\index{gemm@{gemm}!bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{gemm()}{gemm()}}
+{\footnotesize\ttfamily template$<$class Stream $>$ \\
+static void \hyperlink{structbc_1_1blas_1_1BLAS}{bc\+::blas\+::\+B\+L\+AS}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::gemm (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{bool}]{transA,  }\item[{bool}]{transB,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{m,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{n,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{k,  }\item[{const float $\ast$}]{alpha,  }\item[{const float $\ast$}]{A,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{lda,  }\item[{const float $\ast$}]{B,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{ldb,  }\item[{const float $\ast$}]{beta,  }\item[{float $\ast$}]{C,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{ldc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1blas_1_1BLAS_3_01device__tag_01_4_a5fe75f9885e4b40249c5e624cf9fe335}\label{structbc_1_1blas_1_1BLAS_3_01device__tag_01_4_a5fe75f9885e4b40249c5e624cf9fe335}} 
+\index{bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$}!gemv@{gemv}}
+\index{gemv@{gemv}!bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{gemv()}{gemv()}}
+{\footnotesize\ttfamily template$<$class Stream $>$ \\
+static void \hyperlink{structbc_1_1blas_1_1BLAS}{bc\+::blas\+::\+B\+L\+AS}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::gemv (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{bool}]{transA,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{m,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{n,  }\item[{const float $\ast$}]{alpha,  }\item[{const float $\ast$}]{A,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{lda,  }\item[{const float $\ast$}]{X,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incX,  }\item[{const float $\ast$}]{beta,  }\item[{float $\ast$}]{Y,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1blas_1_1BLAS_3_01device__tag_01_4_aebaf3d1509c53d5eff0d9670cd0de23d}\label{structbc_1_1blas_1_1BLAS_3_01device__tag_01_4_aebaf3d1509c53d5eff0d9670cd0de23d}} 
+\index{bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$}!ger@{ger}}
+\index{ger@{ger}!bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ device\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{ger()}{ger()}}
+{\footnotesize\ttfamily template$<$class Stream $>$ \\
+static void \hyperlink{structbc_1_1blas_1_1BLAS}{bc\+::blas\+::\+B\+L\+AS}$<$ \hyperlink{structbc_1_1device__tag}{device\+\_\+tag} $>$\+::ger (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{int}]{m,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{n,  }\item[{const float $\ast$}]{alpha,  }\item[{const float $\ast$}]{X,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incX,  }\item[{const float $\ast$}]{Y,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incY,  }\item[{float $\ast$}]{A,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{lda }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/blas/\hyperlink{blas_2device_8h}{device.\+h}\end{DoxyCompactItemize}

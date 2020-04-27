@@ -1,0 +1,52 @@
+\hypertarget{tensor__iterator__defs_8h}{}\section{blackcat/tensors/tensor\+\_\+iterator\+\_\+defs.h File Reference}
+\label{tensor__iterator__defs_8h}\index{blackcat/tensors/tensor\+\_\+iterator\+\_\+defs.\+h@{blackcat/tensors/tensor\+\_\+iterator\+\_\+defs.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{tensor__iterator__defs_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{tensor__iterator__defs_8h_a90bb1a00685a1dd3560b5bb1fe2b10ed}{B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+I\+T\+ER}(suffix,  iter,  access)
+\item 
+\#define \hyperlink{tensor__iterator__defs_8h_a92fc156476b9e4a2c495607a57cdfa96}{B\+C\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R\+\_\+\+D\+EF}(suffix,  iterator\+\_\+name,  begin\+\_\+func,  end\+\_\+func)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{tensor__iterator__defs_8h_a90bb1a00685a1dd3560b5bb1fe2b10ed}\label{tensor__iterator__defs_8h_a90bb1a00685a1dd3560b5bb1fe2b10ed}} 
+\index{tensor\+\_\+iterator\+\_\+defs.\+h@{tensor\+\_\+iterator\+\_\+defs.\+h}!B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+I\+T\+ER@{B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+I\+T\+ER}}
+\index{B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+I\+T\+ER@{B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+I\+T\+ER}!tensor\+\_\+iterator\+\_\+defs.\+h@{tensor\+\_\+iterator\+\_\+defs.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+I\+T\+ER}{BC\_FORWARD\_ITER}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+F\+O\+R\+W\+A\+R\+D\+\_\+\+I\+T\+ER(\begin{DoxyParamCaption}\item[{}]{suffix,  }\item[{}]{iter,  }\item[{}]{access }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{auto} suffix##iter()\textcolor{keyword}{ const }\{                                \(\backslash\)
+        return iterators::iter\_##suffix##iter(access);     \(\backslash\)
+    \}                                                          \(\backslash\)
+    auto suffix##iter() \{                                      \(\backslash\)
+        return iterators::iter\_##suffix##iter(access);     \(\backslash\)
+    \}                                                          \(\backslash\)
+    auto suffix##c##iter()\textcolor{keyword}{ const }\{                             \(\backslash\)
+        return iterators::iter\_##suffix##iter(access);     \(\backslash\)
+    \}                                                          \(\backslash\)
+    auto suffix##r##iter()\textcolor{keyword}{ const }\{                             \(\backslash\)
+        return iterators::iter\_##suffix##r##iter(access);  \(\backslash\)
+    \}                                                          \(\backslash\)
+    auto suffix##r##iter() \{                                   \(\backslash\)
+        return iterators::iter\_##suffix##r##iter(access);  \(\backslash\)
+    \}                                                          \(\backslash\)
+    auto suffix##cr##iter()\textcolor{keyword}{ const }\{                            \(\backslash\)
+        return iterators::iter\_##suffix##r##iter(access);  \(\backslash\)
+    \}
+\end{DoxyCode}
+\mbox{\Hypertarget{tensor__iterator__defs_8h_a92fc156476b9e4a2c495607a57cdfa96}\label{tensor__iterator__defs_8h_a92fc156476b9e4a2c495607a57cdfa96}} 
+\index{tensor\+\_\+iterator\+\_\+defs.\+h@{tensor\+\_\+iterator\+\_\+defs.\+h}!B\+C\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R\+\_\+\+D\+EF@{B\+C\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R\+\_\+\+D\+EF}}
+\index{B\+C\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R\+\_\+\+D\+EF@{B\+C\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R\+\_\+\+D\+EF}!tensor\+\_\+iterator\+\_\+defs.\+h@{tensor\+\_\+iterator\+\_\+defs.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R\+\_\+\+D\+EF}{BC\_ITERATOR\_DEF}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{suffix,  }\item[{}]{iterator\+\_\+name,  }\item[{}]{begin\+\_\+func,  }\item[{}]{end\+\_\+func }\end{DoxyParamCaption})}
+

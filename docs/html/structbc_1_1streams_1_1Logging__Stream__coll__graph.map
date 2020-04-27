@@ -1,0 +1,5 @@
+<map id="bc::streams::Logging_Stream&lt; SystemTag &gt;" name="bc::streams::Logging_Stream&lt; SystemTag &gt;">
+<area shape="rect" id="node2" href="$structbc_1_1streams_1_1Logging__Stream__Base.html" title="A Logging_Stream object does not actually allocate any memory. " alt="" coords="257,5,456,47"/>
+<area shape="rect" id="node3" href="$structbc_1_1allocators_1_1Logging__Allocator.html" title="bc::allocators::Logging\l_Allocator\&lt; bc::allocators\l::Null_Allocator\&lt; bc::allocators\l::Byte, system_tag \&gt; \&gt;" alt="" coords="256,71,457,141"/>
+<area shape="rect" id="node4" href="$structbc_1_1allocators_1_1Allocator__Forwarder.html" title="bc::allocators::Allocator\l_Forwarder\&lt; bc::allocators\l::Null_Allocator\&lt; bc::allocators\l::Byte, system_tag \&gt; \&gt;" alt="" coords="5,71,207,141"/>
+</map>

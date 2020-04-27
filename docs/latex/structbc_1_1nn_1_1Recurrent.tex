@@ -1,0 +1,231 @@
+\hypertarget{structbc_1_1nn_1_1Recurrent}{}\section{bc\+:\+:nn\+:\+:Recurrent$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1Recurrent}\index{bc\+::nn\+::\+Recurrent$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$@{bc\+::nn\+::\+Recurrent$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$}}
+
+
+{\ttfamily \#include $<$recurrent.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:nn\+:\+:Recurrent$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Recurrent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Recurrent$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Recurrent__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Recurrent_a4342e7f5393c7fa645eb4f314a762906}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1Recurrent_a63e637ac6714329732170ad23e7b1b67}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Recurrent_ad327a3345cf6cc3199f0e5670a3d058d}{allocator\+\_\+type} = \hyperlink{classbc_1_1allocators_1_1Allocator}{bc\+::\+Allocator}$<$ Value\+Type, System\+Tag $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Recurrent_ab049bf64fd16f982e5b52b185669488d}{self\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Recurrent}{Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Recurrent_a5b3abbc190059309b64aff068cc38f6a}{input\+\_\+descriptor\+\_\+t} = \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$ Value\+Type, System\+Tag, \hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ 1 $>$ $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Recurrent_a8c8966c1c72d6a30be5b89408b78b105}{parent\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1Recurrent_ab049bf64fd16f982e5b52b185669488d}{self\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Recurrent_a5b3abbc190059309b64aff068cc38f6a}{input\+\_\+descriptor\+\_\+t} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Recurrent_a5d8408035c0c266c1f2b0f4172f7d842}{forward\+\_\+requires\+\_\+outputs} = std\+::true\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Recurrent_a3697ec607c320d6e7719764a299d8a54}{backward\+\_\+requires\+\_\+outputs} = std\+::true\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Recurrent_ab97457c29f8666ce83b9ea94b0ad1053}{greedy\+\_\+evaluate\+\_\+delta} = std\+::true\+\_\+type
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1Recurrent_a0c8df4208c137ac0b1c940a80daf0c45}{Recurrent} (int inputs, int outputs)
+\item 
+{\footnotesize template$<$class X $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Recurrent_ab01857476b3677586939ba2b39ab86d4}{forward\+\_\+propagation} (const X \&x)
+\item 
+{\footnotesize template$<$class X , class Y $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Recurrent_a6e9e827f94aa6b84614d5b84774dbb97}{forward\+\_\+propagation} (const X \&x, const Y \&y)
+\item 
+{\footnotesize template$<$class X , class Y , class Delta $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Recurrent_ac30d6edec8e456e06bc967acfc87f07e}{back\+\_\+propagation} (const X \&x, const Y \&y, const Delta \&dy)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Recurrent_adcbd0a7b6f9306df5eed70afcb62ef56}{update\+\_\+weights} ()
+\item 
+void \hyperlink{structbc_1_1nn_1_1Recurrent_a073803232421cd777c05be0362030630}{set\+\_\+batch\+\_\+size\+\_\+hook} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} bs)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Recurrent_a9be53cb4ab91cbcccb5f6ab855456b04}{zero\+\_\+deltas} ()
+\item 
+void \hyperlink{structbc_1_1nn_1_1Recurrent_ad1872c1a70b6fe5e576452b694c29153}{zero\+\_\+gradients} ()
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Recurrent_aef30615b19b63bfc5d965a5799b7ad2c}{save} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader) const override
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Recurrent_aa2b86788ec2841005afb5209b7eb7282}{load} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&loader)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_ad327a3345cf6cc3199f0e5670a3d058d}\label{structbc_1_1nn_1_1Recurrent_ad327a3345cf6cc3199f0e5670a3d058d}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1Recurrent_ad327a3345cf6cc3199f0e5670a3d058d}{allocator\+\_\+type} =  \hyperlink{classbc_1_1allocators_1_1Allocator}{bc\+::\+Allocator}$<$Value\+Type, System\+Tag$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_a3697ec607c320d6e7719764a299d8a54}\label{structbc_1_1nn_1_1Recurrent_a3697ec607c320d6e7719764a299d8a54}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!backward\+\_\+requires\+\_\+outputs@{backward\+\_\+requires\+\_\+outputs}}
+\index{backward\+\_\+requires\+\_\+outputs@{backward\+\_\+requires\+\_\+outputs}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{backward\+\_\+requires\+\_\+outputs}{backward\_requires\_outputs}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1Recurrent_a3697ec607c320d6e7719764a299d8a54}{backward\+\_\+requires\+\_\+outputs} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_a5d8408035c0c266c1f2b0f4172f7d842}\label{structbc_1_1nn_1_1Recurrent_a5d8408035c0c266c1f2b0f4172f7d842}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!forward\+\_\+requires\+\_\+outputs@{forward\+\_\+requires\+\_\+outputs}}
+\index{forward\+\_\+requires\+\_\+outputs@{forward\+\_\+requires\+\_\+outputs}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{forward\+\_\+requires\+\_\+outputs}{forward\_requires\_outputs}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1Recurrent_a5d8408035c0c266c1f2b0f4172f7d842}{forward\+\_\+requires\+\_\+outputs} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_ab97457c29f8666ce83b9ea94b0ad1053}\label{structbc_1_1nn_1_1Recurrent_ab97457c29f8666ce83b9ea94b0ad1053}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!greedy\+\_\+evaluate\+\_\+delta@{greedy\+\_\+evaluate\+\_\+delta}}
+\index{greedy\+\_\+evaluate\+\_\+delta@{greedy\+\_\+evaluate\+\_\+delta}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{greedy\+\_\+evaluate\+\_\+delta}{greedy\_evaluate\_delta}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1Recurrent_ab97457c29f8666ce83b9ea94b0ad1053}{greedy\+\_\+evaluate\+\_\+delta} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_a5b3abbc190059309b64aff068cc38f6a}\label{structbc_1_1nn_1_1Recurrent_a5b3abbc190059309b64aff068cc38f6a}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!input\+\_\+descriptor\+\_\+t@{input\+\_\+descriptor\+\_\+t}}
+\index{input\+\_\+descriptor\+\_\+t@{input\+\_\+descriptor\+\_\+t}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{input\+\_\+descriptor\+\_\+t}{input\_descriptor\_t}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1Recurrent_a5b3abbc190059309b64aff068cc38f6a}{input\+\_\+descriptor\+\_\+t} =  \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$Value\+Type, System\+Tag, \hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$1$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_a8c8966c1c72d6a30be5b89408b78b105}\label{structbc_1_1nn_1_1Recurrent_a8c8966c1c72d6a30be5b89408b78b105}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!parent\+\_\+type@{parent\+\_\+type}}
+\index{parent\+\_\+type@{parent\+\_\+type}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{parent\+\_\+type}{parent\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1Recurrent_a8c8966c1c72d6a30be5b89408b78b105}{parent\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$\hyperlink{structbc_1_1nn_1_1Recurrent_ab049bf64fd16f982e5b52b185669488d}{self\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Recurrent_a5b3abbc190059309b64aff068cc38f6a}{input\+\_\+descriptor\+\_\+t}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_ab049bf64fd16f982e5b52b185669488d}\label{structbc_1_1nn_1_1Recurrent_ab049bf64fd16f982e5b52b185669488d}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!self\+\_\+type@{self\+\_\+type}}
+\index{self\+\_\+type@{self\+\_\+type}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{self\+\_\+type}{self\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1Recurrent_ab049bf64fd16f982e5b52b185669488d}{self\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Recurrent}{Recurrent}$<$System\+Tag, Value\+Type, Recurrent\+Non\+Linearity$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_a4342e7f5393c7fa645eb4f314a762906}\label{structbc_1_1nn_1_1Recurrent_a4342e7f5393c7fa645eb4f314a762906}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1Recurrent_a4342e7f5393c7fa645eb4f314a762906}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_a63e637ac6714329732170ad23e7b1b67}\label{structbc_1_1nn_1_1Recurrent_a63e637ac6714329732170ad23e7b1b67}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1Recurrent_a63e637ac6714329732170ad23e7b1b67}{value\+\_\+type} =  Value\+Type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_a0c8df4208c137ac0b1c940a80daf0c45}\label{structbc_1_1nn_1_1Recurrent_a0c8df4208c137ac0b1c940a80daf0c45}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!Recurrent@{Recurrent}}
+\index{Recurrent@{Recurrent}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{Recurrent()}{Recurrent()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+\hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::\hyperlink{structbc_1_1nn_1_1Recurrent}{Recurrent} (\begin{DoxyParamCaption}\item[{int}]{inputs,  }\item[{int}]{outputs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_ac30d6edec8e456e06bc967acfc87f07e}\label{structbc_1_1nn_1_1Recurrent_ac30d6edec8e456e06bc967acfc87f07e}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!back\+\_\+propagation@{back\+\_\+propagation}}
+\index{back\+\_\+propagation@{back\+\_\+propagation}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{back\+\_\+propagation()}{back\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+template$<$class X , class Y , class Delta $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::back\+\_\+propagation (\begin{DoxyParamCaption}\item[{const X \&}]{x,  }\item[{const Y \&}]{y,  }\item[{const Delta \&}]{dy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_ab01857476b3677586939ba2b39ab86d4}\label{structbc_1_1nn_1_1Recurrent_ab01857476b3677586939ba2b39ab86d4}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+template$<$class X $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const X \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_a6e9e827f94aa6b84614d5b84774dbb97}\label{structbc_1_1nn_1_1Recurrent_a6e9e827f94aa6b84614d5b84774dbb97}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+template$<$class X , class Y $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const X \&}]{x,  }\item[{const Y \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_aa2b86788ec2841005afb5209b7eb7282}\label{structbc_1_1nn_1_1Recurrent_aa2b86788ec2841005afb5209b7eb7282}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{structbc_1_1nn_1_1Layer__Base_a5b3a9854215815f810bef4922b74efaf}{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ Recurrent$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$, Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Integer$<$ 1 $>$ $>$ $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_aef30615b19b63bfc5d965a5799b7ad2c}\label{structbc_1_1nn_1_1Recurrent_aef30615b19b63bfc5d965a5799b7ad2c}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!save@{save}}
+\index{save@{save}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::save (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{loader }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{structbc_1_1nn_1_1Layer__Base_a9613e51db3c27e64ced09e41d2e7f15c}{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ Recurrent$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$, Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Integer$<$ 1 $>$ $>$ $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_a073803232421cd777c05be0362030630}\label{structbc_1_1nn_1_1Recurrent_a073803232421cd777c05be0362030630}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!set\+\_\+batch\+\_\+size\+\_\+hook@{set\+\_\+batch\+\_\+size\+\_\+hook}}
+\index{set\+\_\+batch\+\_\+size\+\_\+hook@{set\+\_\+batch\+\_\+size\+\_\+hook}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{set\+\_\+batch\+\_\+size\+\_\+hook()}{set\_batch\_size\_hook()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::set\+\_\+batch\+\_\+size\+\_\+hook (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{bs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{structbc_1_1nn_1_1Layer__Base_a8365fc3fc656aadeb0513d8e02b5fba0}{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ Recurrent$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$, Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Integer$<$ 1 $>$ $>$ $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_adcbd0a7b6f9306df5eed70afcb62ef56}\label{structbc_1_1nn_1_1Recurrent_adcbd0a7b6f9306df5eed70afcb62ef56}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!update\+\_\+weights@{update\+\_\+weights}}
+\index{update\+\_\+weights@{update\+\_\+weights}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{update\+\_\+weights()}{update\_weights()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::update\+\_\+weights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_a9be53cb4ab91cbcccb5f6ab855456b04}\label{structbc_1_1nn_1_1Recurrent_a9be53cb4ab91cbcccb5f6ab855456b04}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!zero\+\_\+deltas@{zero\+\_\+deltas}}
+\index{zero\+\_\+deltas@{zero\+\_\+deltas}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{zero\+\_\+deltas()}{zero\_deltas()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::zero\+\_\+deltas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Recurrent_ad1872c1a70b6fe5e576452b694c29153}\label{structbc_1_1nn_1_1Recurrent_ad1872c1a70b6fe5e576452b694c29153}} 
+\index{bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}!zero\+\_\+gradients@{zero\+\_\+gradients}}
+\index{zero\+\_\+gradients@{zero\+\_\+gradients}!bc\+::nn\+::\+Recurrent@{bc\+::nn\+::\+Recurrent}}
+\subsubsection{\texorpdfstring{zero\+\_\+gradients()}{zero\_gradients()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type, class Recurrent\+Non\+Linearity = bc\+::\+Tanh$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Recurrent}{bc\+::nn\+::\+Recurrent}$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$\+::zero\+\_\+gradients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/layers/\hyperlink{recurrent_8h}{recurrent.\+h}\end{DoxyCompactItemize}

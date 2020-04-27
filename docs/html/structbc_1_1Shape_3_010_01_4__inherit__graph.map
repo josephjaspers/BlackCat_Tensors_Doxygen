@@ -1,0 +1,11 @@
+<map id="bc::Shape&lt; 0 &gt;" name="bc::Shape&lt; 0 &gt;">
+<area shape="rect" id="node2" href="$structbc_1_1tensors_1_1exprs_1_1Bin__Op_3_01oper_1_1dot_3_01SystemTag_01_4_00_01lv_00_01rv_01_4.html" title="bc::tensors::exprs\l::Bin_Op\&lt; oper::dot\l\&lt; SystemTag \&gt;, lv, rv \&gt;" alt="" coords="199,5,361,61"/>
+<area shape="rect" id="node3" href="$structbc_1_1tensors_1_1exprs_1_1Scalar__Constant__Base.html" title="bc::tensors::exprs\l::Scalar_Constant_Base\l\&lt; Derived \&gt;" alt="" coords="198,85,362,141"/>
+<area shape="rect" id="node4" href="$structbc_1_1tensors_1_1exprs_1_1Un__Op_3_01Sum_3_01SystemTag_01_4_00_01ArrayType_01_4.html" title="bc::tensors::exprs\l::Un_Op\&lt; Sum\&lt; SystemTag\l \&gt;, ArrayType \&gt;" alt="" coords="185,165,375,221"/>
+<area shape="rect" id="node5" href="$structbc_1_1tensors_1_1exprs_1_1Scalar__Constant__Base.html" title="bc::tensors::exprs\l::Scalar_Constant_Base\l\&lt; Constexpr_Scalar_Constant\l\&lt; Value, Scalar, bc::device_tag \&gt; \&gt;" alt="" coords="165,246,395,317"/>
+<area shape="rect" id="node7" href="$structbc_1_1tensors_1_1exprs_1_1Scalar__Constant__Base.html" title="bc::tensors::exprs\l::Scalar_Constant_Base\l\&lt; Constexpr_Scalar_Constant\l\&lt; Value, Scalar, bc::host_tag \&gt; \&gt;" alt="" coords="172,341,388,411"/>
+<area shape="rect" id="node9" href="$structbc_1_1tensors_1_1exprs_1_1Scalar__Constant__Base.html" title="bc::tensors::exprs\l::Scalar_Constant_Base\l\&lt; Scalar_Constant\&lt; Scalar,\l SystemTag \&gt; \&gt;" alt="" coords="188,435,372,506"/>
+<area shape="rect" id="node6" href="$structbc_1_1tensors_1_1exprs_1_1Constexpr__Scalar__Constant_3_01Value_00_01Scalar_00_01bc_1_1device__tag_01_4.html" title="bc::tensors::exprs\l::Constexpr_Scalar_Constant\l\&lt; Value, Scalar, bc::device_tag \&gt;" alt="" coords="443,253,660,309"/>
+<area shape="rect" id="node8" href="$structbc_1_1tensors_1_1exprs_1_1Constexpr__Scalar__Constant_3_01Value_00_01Scalar_00_01bc_1_1host__tag_01_4.html" title="bc::tensors::exprs\l::Constexpr_Scalar_Constant\l\&lt; Value, Scalar, bc::host_tag \&gt;" alt="" coords="449,348,653,404"/>
+<area shape="rect" id="node10" href="$structbc_1_1tensors_1_1exprs_1_1Scalar__Constant.html" title="bc::tensors::exprs\l::Scalar_Constant\&lt; Scalar,\l SystemTag \&gt;" alt="" coords="461,443,641,499"/>
+</map>

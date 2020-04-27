@@ -1,0 +1,3 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01bc_1_1oper_1_1Scalar__Mul_00_0179bec0862a78086fe62692cba7b203b3.html" title="scalar * blas_op(a, b) &#45;&gt; blas_op(a * scalar, b) || blas_op(a, b * scalar) " alt="" coords="5,5,201,135"/>
+</map>

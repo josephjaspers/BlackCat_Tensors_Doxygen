@@ -1,0 +1,183 @@
+\hypertarget{structbc_1_1nn_1_1Max__Pooling}{}\section{bc\+:\+:nn\+:\+:Max\+\_\+\+Pooling$<$ System\+Tag, Value\+Type $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1Max__Pooling}\index{bc\+::nn\+::\+Max\+\_\+\+Pooling$<$ System\+Tag, Value\+Type $>$@{bc\+::nn\+::\+Max\+\_\+\+Pooling$<$ System\+Tag, Value\+Type $>$}}
+
+
+{\ttfamily \#include $<$max\+\_\+pooling.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:nn\+:\+:Max\+\_\+\+Pooling$<$ System\+Tag, Value\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Max__Pooling__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Max\+\_\+\+Pooling$<$ System\+Tag, Value\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Max__Pooling__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling_a32c0d4c35a7d36fc7381dd21f40372de}{input\+\_\+tensor\+\_\+dim} = \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$ 3 $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling_a2b2694a45b89f4d8d73781817f2fa9b1}{output\+\_\+tensor\+\_\+dim} = \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$ 3 $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling_aea291f6353c358b1f851b83f0787d782}{input\+\_\+tensor\+\_\+descriptor\+\_\+t} = \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$ Value\+Type, System\+Tag, \hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ 3 $>$ $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling_a8051bc815bee4d25c7506dbe870b4fca}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling_ab25ed5aac84aa22b0278f2b9ece6a163}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling_a4cec43dcbb377793bea061155fbbca52}{self\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Max__Pooling}{Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling_aaa69267c6421bc73dea542fdf6617cf0}{parent\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1Max__Pooling_a4cec43dcbb377793bea061155fbbca52}{self\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Max__Pooling_aea291f6353c358b1f851b83f0787d782}{input\+\_\+tensor\+\_\+descriptor\+\_\+t} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling_a7e0efe21cc4544634801342f08b51a04}{allocator\+\_\+type} = \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{nn\+\_\+default\+\_\+allocator\+\_\+type}$<$ Value\+Type, System\+Tag $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling_aced0066829bfb298110f9de43ef27b93}{greedy\+\_\+evaluate\+\_\+delta} = std\+::true\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling_a79b30fd356ececeb223371dbed0fa83e}{requires\+\_\+extra\+\_\+cache} = std\+::true\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling_a5814b6009b1a7591e2ec281fbcc85e0a}{defines\+\_\+single\+\_\+predict} = std\+::true\+\_\+type
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1Max__Pooling_a69393077da5937894221f44aa7e2b2a8}{Max\+\_\+\+Pooling} (\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$ img\+\_\+dims, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ krnl\+\_\+dims=\{3, 3\}, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ padding=\{0, 0\}, \hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$ strides=\{-\/1,-\/1\})
+\item 
+{\footnotesize template$<$class Image $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Max__Pooling_adb17cec0e6f91755e663c42b74d2ad29}{forward\+\_\+propagation} (const Image \&image, \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&cache)
+\item 
+{\footnotesize template$<$class Image $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Max__Pooling_af6cbfd7b406742ea3ae1028497eedd5f}{single\+\_\+predict} (const Image \&image, \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&cache)
+\item 
+{\footnotesize template$<$class Image , class Delta $>$ }\\auto \hyperlink{structbc_1_1nn_1_1Max__Pooling_a77c095e97891545afd2a9d8ade1dc2a3}{back\+\_\+propagation} (const Image \&image, const Delta \&pooled\+\_\+delta, \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&cache)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Max__Pooling_a7e0efe21cc4544634801342f08b51a04}\label{structbc_1_1nn_1_1Max__Pooling_a7e0efe21cc4544634801342f08b51a04}} 
+\index{bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling}{bc\+::nn\+::\+Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Max__Pooling_a7e0efe21cc4544634801342f08b51a04}{allocator\+\_\+type} =  \hyperlink{namespacebc_1_1nn_a0025752fc3f47f988b3fae106c825860}{nn\+\_\+default\+\_\+allocator\+\_\+type}$<$Value\+Type, System\+Tag$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Max__Pooling_a5814b6009b1a7591e2ec281fbcc85e0a}\label{structbc_1_1nn_1_1Max__Pooling_a5814b6009b1a7591e2ec281fbcc85e0a}} 
+\index{bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}!defines\+\_\+single\+\_\+predict@{defines\+\_\+single\+\_\+predict}}
+\index{defines\+\_\+single\+\_\+predict@{defines\+\_\+single\+\_\+predict}!bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}}
+\subsubsection{\texorpdfstring{defines\+\_\+single\+\_\+predict}{defines\_single\_predict}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling}{bc\+::nn\+::\+Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Max__Pooling_a5814b6009b1a7591e2ec281fbcc85e0a}{defines\+\_\+single\+\_\+predict} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Max__Pooling_aced0066829bfb298110f9de43ef27b93}\label{structbc_1_1nn_1_1Max__Pooling_aced0066829bfb298110f9de43ef27b93}} 
+\index{bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}!greedy\+\_\+evaluate\+\_\+delta@{greedy\+\_\+evaluate\+\_\+delta}}
+\index{greedy\+\_\+evaluate\+\_\+delta@{greedy\+\_\+evaluate\+\_\+delta}!bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}}
+\subsubsection{\texorpdfstring{greedy\+\_\+evaluate\+\_\+delta}{greedy\_evaluate\_delta}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling}{bc\+::nn\+::\+Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Max__Pooling_aced0066829bfb298110f9de43ef27b93}{greedy\+\_\+evaluate\+\_\+delta} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Max__Pooling_aea291f6353c358b1f851b83f0787d782}\label{structbc_1_1nn_1_1Max__Pooling_aea291f6353c358b1f851b83f0787d782}} 
+\index{bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}!input\+\_\+tensor\+\_\+descriptor\+\_\+t@{input\+\_\+tensor\+\_\+descriptor\+\_\+t}}
+\index{input\+\_\+tensor\+\_\+descriptor\+\_\+t@{input\+\_\+tensor\+\_\+descriptor\+\_\+t}!bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}}
+\subsubsection{\texorpdfstring{input\+\_\+tensor\+\_\+descriptor\+\_\+t}{input\_tensor\_descriptor\_t}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling}{bc\+::nn\+::\+Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Max__Pooling_aea291f6353c358b1f851b83f0787d782}{input\+\_\+tensor\+\_\+descriptor\+\_\+t} =  \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{Tensor\+\_\+\+Descriptor}$<$Value\+Type, System\+Tag, \hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$3$>$ $>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Max__Pooling_a32c0d4c35a7d36fc7381dd21f40372de}\label{structbc_1_1nn_1_1Max__Pooling_a32c0d4c35a7d36fc7381dd21f40372de}} 
+\index{bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}!input\+\_\+tensor\+\_\+dim@{input\+\_\+tensor\+\_\+dim}}
+\index{input\+\_\+tensor\+\_\+dim@{input\+\_\+tensor\+\_\+dim}!bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}}
+\subsubsection{\texorpdfstring{input\+\_\+tensor\+\_\+dim}{input\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling}{bc\+::nn\+::\+Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Max__Pooling_a32c0d4c35a7d36fc7381dd21f40372de}{input\+\_\+tensor\+\_\+dim} =  \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$3$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Max__Pooling_a2b2694a45b89f4d8d73781817f2fa9b1}\label{structbc_1_1nn_1_1Max__Pooling_a2b2694a45b89f4d8d73781817f2fa9b1}} 
+\index{bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}!output\+\_\+tensor\+\_\+dim@{output\+\_\+tensor\+\_\+dim}}
+\index{output\+\_\+tensor\+\_\+dim@{output\+\_\+tensor\+\_\+dim}!bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}}
+\subsubsection{\texorpdfstring{output\+\_\+tensor\+\_\+dim}{output\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling}{bc\+::nn\+::\+Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Max__Pooling_a2b2694a45b89f4d8d73781817f2fa9b1}{output\+\_\+tensor\+\_\+dim} =  \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$3$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Max__Pooling_aaa69267c6421bc73dea542fdf6617cf0}\label{structbc_1_1nn_1_1Max__Pooling_aaa69267c6421bc73dea542fdf6617cf0}} 
+\index{bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}!parent\+\_\+type@{parent\+\_\+type}}
+\index{parent\+\_\+type@{parent\+\_\+type}!bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}}
+\subsubsection{\texorpdfstring{parent\+\_\+type}{parent\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling}{bc\+::nn\+::\+Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Max__Pooling_aaa69267c6421bc73dea542fdf6617cf0}{parent\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}$<$\hyperlink{structbc_1_1nn_1_1Max__Pooling_a4cec43dcbb377793bea061155fbbca52}{self\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Max__Pooling_aea291f6353c358b1f851b83f0787d782}{input\+\_\+tensor\+\_\+descriptor\+\_\+t}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Max__Pooling_a79b30fd356ececeb223371dbed0fa83e}\label{structbc_1_1nn_1_1Max__Pooling_a79b30fd356ececeb223371dbed0fa83e}} 
+\index{bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}!requires\+\_\+extra\+\_\+cache@{requires\+\_\+extra\+\_\+cache}}
+\index{requires\+\_\+extra\+\_\+cache@{requires\+\_\+extra\+\_\+cache}!bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}}
+\subsubsection{\texorpdfstring{requires\+\_\+extra\+\_\+cache}{requires\_extra\_cache}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling}{bc\+::nn\+::\+Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Max__Pooling_a79b30fd356ececeb223371dbed0fa83e}{requires\+\_\+extra\+\_\+cache} =  std\+::true\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Max__Pooling_a4cec43dcbb377793bea061155fbbca52}\label{structbc_1_1nn_1_1Max__Pooling_a4cec43dcbb377793bea061155fbbca52}} 
+\index{bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}!self\+\_\+type@{self\+\_\+type}}
+\index{self\+\_\+type@{self\+\_\+type}!bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}}
+\subsubsection{\texorpdfstring{self\+\_\+type}{self\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling}{bc\+::nn\+::\+Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Max__Pooling_a4cec43dcbb377793bea061155fbbca52}{self\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Max__Pooling}{Max\+\_\+\+Pooling}$<$System\+Tag, Value\+Type$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Max__Pooling_a8051bc815bee4d25c7506dbe870b4fca}\label{structbc_1_1nn_1_1Max__Pooling_a8051bc815bee4d25c7506dbe870b4fca}} 
+\index{bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling}{bc\+::nn\+::\+Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Max__Pooling_a8051bc815bee4d25c7506dbe870b4fca}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Max__Pooling_ab25ed5aac84aa22b0278f2b9ece6a163}\label{structbc_1_1nn_1_1Max__Pooling_ab25ed5aac84aa22b0278f2b9ece6a163}} 
+\index{bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Max__Pooling}{bc\+::nn\+::\+Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Max__Pooling_ab25ed5aac84aa22b0278f2b9ece6a163}{value\+\_\+type} =  Value\+Type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Max__Pooling_a69393077da5937894221f44aa7e2b2a8}\label{structbc_1_1nn_1_1Max__Pooling_a69393077da5937894221f44aa7e2b2a8}} 
+\index{bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}!Max\+\_\+\+Pooling@{Max\+\_\+\+Pooling}}
+\index{Max\+\_\+\+Pooling@{Max\+\_\+\+Pooling}!bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}}
+\subsubsection{\texorpdfstring{Max\+\_\+\+Pooling()}{Max\_Pooling()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type$>$ \\
+\hyperlink{structbc_1_1nn_1_1Max__Pooling}{bc\+::nn\+::\+Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Max__Pooling}{Max\+\_\+\+Pooling} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 3 $>$}]{img\+\_\+dims,  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{krnl\+\_\+dims = {\ttfamily \{3,3\}},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{padding = {\ttfamily \{0,0\}},  }\item[{\hyperlink{structbc_1_1Dim}{Dim}$<$ 2 $>$}]{strides = {\ttfamily \{-\/1,-\/1\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Max__Pooling_a77c095e97891545afd2a9d8ade1dc2a3}\label{structbc_1_1nn_1_1Max__Pooling_a77c095e97891545afd2a9d8ade1dc2a3}} 
+\index{bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}!back\+\_\+propagation@{back\+\_\+propagation}}
+\index{back\+\_\+propagation@{back\+\_\+propagation}!bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}}
+\subsubsection{\texorpdfstring{back\+\_\+propagation()}{back\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type$>$ \\
+template$<$class Image , class Delta $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Max__Pooling}{bc\+::nn\+::\+Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$\+::back\+\_\+propagation (\begin{DoxyParamCaption}\item[{const Image \&}]{image,  }\item[{const Delta \&}]{pooled\+\_\+delta,  }\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{cache }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Max__Pooling_adb17cec0e6f91755e663c42b74d2ad29}\label{structbc_1_1nn_1_1Max__Pooling_adb17cec0e6f91755e663c42b74d2ad29}} 
+\index{bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type$>$ \\
+template$<$class Image $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Max__Pooling}{bc\+::nn\+::\+Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const Image \&}]{image,  }\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{cache }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Max__Pooling_af6cbfd7b406742ea3ae1028497eedd5f}\label{structbc_1_1nn_1_1Max__Pooling_af6cbfd7b406742ea3ae1028497eedd5f}} 
+\index{bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}!single\+\_\+predict@{single\+\_\+predict}}
+\index{single\+\_\+predict@{single\+\_\+predict}!bc\+::nn\+::\+Max\+\_\+\+Pooling@{bc\+::nn\+::\+Max\+\_\+\+Pooling}}
+\subsubsection{\texorpdfstring{single\+\_\+predict()}{single\_predict()}}
+{\footnotesize\ttfamily template$<$class System\+Tag, class Value\+Type$>$ \\
+template$<$class Image $>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Max__Pooling}{bc\+::nn\+::\+Max\+\_\+\+Pooling}$<$ System\+Tag, Value\+Type $>$\+::single\+\_\+predict (\begin{DoxyParamCaption}\item[{const Image \&}]{image,  }\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{cache }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/layers/\hyperlink{max__pooling_8h}{max\+\_\+pooling.\+h}\end{DoxyCompactItemize}

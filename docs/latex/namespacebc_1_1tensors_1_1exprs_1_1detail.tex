@@ -1,0 +1,209 @@
+\hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail}{}\section{bc\+:\+:tensors\+:\+:exprs\+:\+:detail Namespace Reference}
+\label{namespacebc_1_1tensors_1_1exprs_1_1detail}\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory}{bin\+\_\+expr\+\_\+factory}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01Add_00_01Lv_00_01Un__Op_3_01Negation_00_01Rv_01_4_01_4}{bin\+\_\+expr\+\_\+factory$<$ Add, Lv, Un\+\_\+\+Op$<$ Negation, Rv $>$ $>$}
+\begin{DoxyCompactList}\small\item\em y + (-\/x) -\/$>$ y -\/ x \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01Add_00_01Un__Op_3_01Negation_00d86892bae805f04f4b10908e626a3cb5}{bin\+\_\+expr\+\_\+factory$<$ Add, Un\+\_\+\+Op$<$ Negation, Lv $>$, Un\+\_\+\+Op$<$ Negation, Rv $>$ $>$}
+\begin{DoxyCompactList}\small\item\em (-\/y) + (-\/x) -\/$>$ (-\/y) -\/ x //specialized to handle ambiguous overload \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01Add__Assign_00_01Lv_00_01Un__Op_3_01Negation_00_01Rv_01_4_01_4}{bin\+\_\+expr\+\_\+factory$<$ Add\+\_\+\+Assign, Lv, Un\+\_\+\+Op$<$ Negation, Rv $>$ $>$}
+\begin{DoxyCompactList}\small\item\em y += (-\/x) -\/$>$ y -\/= x \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01bc_1_1oper_1_1Scalar__Mul_00_0179bec0862a78086fe62692cba7b203b3}{bin\+\_\+expr\+\_\+factory$<$ bc\+::oper\+::\+Scalar\+\_\+\+Mul, Lv, Rv, std\+::enable\+\_\+if\+\_\+t$<$ expression\+\_\+traits$<$ Lv $>$\+::is\+\_\+blas\+\_\+expression\+::value !=expression\+\_\+traits$<$ Rv $>$\+::is\+\_\+blas\+\_\+expression\+::value $>$ $>$}
+\begin{DoxyCompactList}\small\item\em scalar $\ast$ blas\+\_\+op(a, b) -\/$>$ blas\+\_\+op(a $\ast$ scalar, b) $\vert$$\vert$ blas\+\_\+op(a, b $\ast$ scalar) \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01Sub_00_01Lv_00_01Un__Op_3_01Negation_00_01Rv_01_4_01_4}{bin\+\_\+expr\+\_\+factory$<$ Sub, Lv, Un\+\_\+\+Op$<$ Negation, Rv $>$ $>$}
+\begin{DoxyCompactList}\small\item\em y -\/ (-\/x) -\/$>$ y + x \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01Sub_00_01Un__Op_3_01Negation_00_01Lv_01_4_00_01Rv_01_4}{bin\+\_\+expr\+\_\+factory$<$ Sub, Un\+\_\+\+Op$<$ Negation, Lv $>$, Rv $>$}
+\begin{DoxyCompactList}\small\item\em (-\/y) + x -\/$>$ x -\/ y \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01Sub_00_01Un__Op_3_01Negation_004b0c12d341e754dc0e6fb842519b678e}{bin\+\_\+expr\+\_\+factory$<$ Sub, Un\+\_\+\+Op$<$ Negation, Lv $>$, Un\+\_\+\+Op$<$ Negation, Rv $>$ $>$}
+\begin{DoxyCompactList}\small\item\em (-\/y) -\/ (-\/x) -\/$>$ x -\/ y //specialized to handle ambiguous overload \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01Sub__Assign_00_01Lv_00_01Un__Op_3_01Negation_00_01Rv_01_4_01_4}{bin\+\_\+expr\+\_\+factory$<$ Sub\+\_\+\+Assign, Lv, Un\+\_\+\+Op$<$ Negation, Rv $>$ $>$}
+\begin{DoxyCompactList}\small\item\em y -\/= (-\/x) -\/$>$ y += x \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__scalar__mul}{remove\+\_\+scalar\+\_\+mul}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__scalar__mul_3_01Bin__Op_3_01oper_1_1Scalar__Mul_00_01lv_00_01rv_01_4_01_4}{remove\+\_\+scalar\+\_\+mul$<$ Bin\+\_\+\+Op$<$ oper\+::\+Scalar\+\_\+\+Mul, lv, rv $>$ $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__transpose}{remove\+\_\+transpose}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__transpose_3_01Bin__Op_3_01oper_1_1Scalar__Mul_66d4ba5d587ca66fdce7c61c9a3f28e3}{remove\+\_\+transpose$<$ Bin\+\_\+\+Op$<$ oper\+::\+Scalar\+\_\+\+Mul, Lv, Un\+\_\+\+Op$<$ oper\+::transpose$<$ System\+Tag $>$, Array $>$ $>$ $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__transpose_3_01Bin__Op_3_01oper_1_1Scalar__Mul_6b5c3eb4d56201d2dc306da5aaee0671}{remove\+\_\+transpose$<$ Bin\+\_\+\+Op$<$ oper\+::\+Scalar\+\_\+\+Mul, Un\+\_\+\+Op$<$ oper\+::transpose$<$ System\+Tag $>$, Array $>$, Rv $>$ $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1remove__transpose_3_01Un__Op_3_01oper_1_1transpose_3_0108540817e9a89440300c45967e20325}{remove\+\_\+transpose$<$ Un\+\_\+\+Op$<$ oper\+::transpose$<$ System\+Tag $>$, Array $>$ $>$}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa067b2ce78c8e7218f47bded8aec80a8}{query\+\_\+system\+\_\+tag} = typename T\+::system\+\_\+tag
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa60e0a71bcf8048661b38b904c620fb0}{query\+\_\+value\+\_\+type} = typename T\+::value\+\_\+type
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa48f3a00816d9b230e5f0ce720323f57}{query\+\_\+allocation\+\_\+type} = typename T\+::allocation\+\_\+type
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a48ce13185316802e0ca8ad8cee7d5870}{query\+\_\+copy\+\_\+assignable} = typename T\+::copy\+\_\+assignable
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_abac935bf36b4924c73532023e11f75c2}{query\+\_\+copy\+\_\+constructible} = typename T\+::copy\+\_\+constructible
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_ac325e0e2cef5518953db86853d9780fc}{query\+\_\+move\+\_\+assignable} = typename T\+::move\+\_\+assignable
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a19fd04baa3f6d8fcce66c01e51b7399d}{query\+\_\+move\+\_\+constructible} = typename T\+::move\+\_\+constructible
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a0e9b0b3486b5ec529b2c622f14b688f9}{query\+\_\+requires\+\_\+greedy\+\_\+evaluation} = typename T\+::requires\+\_\+greedy\+\_\+evaluation
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a35543bad82197de0bb8d50c079e7cbaf}{query\+\_\+stack\+\_\+allocated} = typename T\+::stack\+\_\+allocated
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_acc14ea393b9060eea11b720233170f80}{query\+\_\+optimizer\+\_\+temporary} = typename T\+::optimizer\+\_\+temporary
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a8daec353fcf1440e3e610f412a2228d8}{query\+\_\+expression\+\_\+template\+\_\+expression\+\_\+type} = typename T\+::expression\+\_\+template\+\_\+expression\+\_\+type
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a4f6ef9491d82383737761491907159ae}{query\+\_\+expression\+\_\+template\+\_\+array\+\_\+type} = typename T\+::expression\+\_\+template\+\_\+array\+\_\+type
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a6ed62ca06012f06dc8f6143998de1e9f}{query\+\_\+is\+\_\+view} = typename T\+::is\+\_\+view
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a701fb55d84ce81a94fc5552092b64138}{query\+\_\+is\+\_\+const\+\_\+view} = typename T\+::is\+\_\+const\+\_\+view
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a78329f6a449e413ac38baeaf0574e64d}{query\+\_\+is\+\_\+temporary\+\_\+value} = typename T\+::is\+\_\+temporary\+\_\+value
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa6d73fadec8691f52ebcd7254c6ec9bb}{query\+\_\+is\+\_\+noncontinuous\+\_\+in\+\_\+memory} = typename T\+::is\+\_\+noncontinuous\+\_\+in\+\_\+memory
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_af39d29f1c790dbc0fdcb388eb3764ce8}{query\+\_\+is\+\_\+view\+\_\+type} = typename T\+::is\+\_\+view\+\_\+type
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Op , class Lv , class Rv , class... Args$>$ }\\\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} auto \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a710acb08a5ec6aaac546f59ac5368231}{mk\+\_\+bin\+\_\+op} (Lv left, Rv right, Args \&\&... args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_aa48f3a00816d9b230e5f0ce720323f57}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_aa48f3a00816d9b230e5f0ce720323f57}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+allocation\+\_\+type@{query\+\_\+allocation\+\_\+type}}
+\index{query\+\_\+allocation\+\_\+type@{query\+\_\+allocation\+\_\+type}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+allocation\+\_\+type}{query\_allocation\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa48f3a00816d9b230e5f0ce720323f57}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+allocation\+\_\+type} = typedef typename T\+:: allocation\+\_\+type}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_a48ce13185316802e0ca8ad8cee7d5870}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_a48ce13185316802e0ca8ad8cee7d5870}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+copy\+\_\+assignable@{query\+\_\+copy\+\_\+assignable}}
+\index{query\+\_\+copy\+\_\+assignable@{query\+\_\+copy\+\_\+assignable}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+copy\+\_\+assignable}{query\_copy\_assignable}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a48ce13185316802e0ca8ad8cee7d5870}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+copy\+\_\+assignable} = typedef typename T\+:: copy\+\_\+assignable}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_abac935bf36b4924c73532023e11f75c2}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_abac935bf36b4924c73532023e11f75c2}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+copy\+\_\+constructible@{query\+\_\+copy\+\_\+constructible}}
+\index{query\+\_\+copy\+\_\+constructible@{query\+\_\+copy\+\_\+constructible}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+copy\+\_\+constructible}{query\_copy\_constructible}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_abac935bf36b4924c73532023e11f75c2}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+copy\+\_\+constructible} = typedef typename T\+:: copy\+\_\+constructible}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_a4f6ef9491d82383737761491907159ae}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_a4f6ef9491d82383737761491907159ae}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+expression\+\_\+template\+\_\+array\+\_\+type@{query\+\_\+expression\+\_\+template\+\_\+array\+\_\+type}}
+\index{query\+\_\+expression\+\_\+template\+\_\+array\+\_\+type@{query\+\_\+expression\+\_\+template\+\_\+array\+\_\+type}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+expression\+\_\+template\+\_\+array\+\_\+type}{query\_expression\_template\_array\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a4f6ef9491d82383737761491907159ae}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+expression\+\_\+template\+\_\+array\+\_\+type} = typedef typename T\+:: expression\+\_\+template\+\_\+array\+\_\+type}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_a8daec353fcf1440e3e610f412a2228d8}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_a8daec353fcf1440e3e610f412a2228d8}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+expression\+\_\+template\+\_\+expression\+\_\+type@{query\+\_\+expression\+\_\+template\+\_\+expression\+\_\+type}}
+\index{query\+\_\+expression\+\_\+template\+\_\+expression\+\_\+type@{query\+\_\+expression\+\_\+template\+\_\+expression\+\_\+type}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+expression\+\_\+template\+\_\+expression\+\_\+type}{query\_expression\_template\_expression\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a8daec353fcf1440e3e610f412a2228d8}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+expression\+\_\+template\+\_\+expression\+\_\+type} = typedef typename T\+:: expression\+\_\+template\+\_\+expression\+\_\+type}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_a701fb55d84ce81a94fc5552092b64138}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_a701fb55d84ce81a94fc5552092b64138}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+is\+\_\+const\+\_\+view@{query\+\_\+is\+\_\+const\+\_\+view}}
+\index{query\+\_\+is\+\_\+const\+\_\+view@{query\+\_\+is\+\_\+const\+\_\+view}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+is\+\_\+const\+\_\+view}{query\_is\_const\_view}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a701fb55d84ce81a94fc5552092b64138}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+is\+\_\+const\+\_\+view} = typedef typename T\+:: is\+\_\+const\+\_\+view}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_aa6d73fadec8691f52ebcd7254c6ec9bb}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_aa6d73fadec8691f52ebcd7254c6ec9bb}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+is\+\_\+noncontinuous\+\_\+in\+\_\+memory@{query\+\_\+is\+\_\+noncontinuous\+\_\+in\+\_\+memory}}
+\index{query\+\_\+is\+\_\+noncontinuous\+\_\+in\+\_\+memory@{query\+\_\+is\+\_\+noncontinuous\+\_\+in\+\_\+memory}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+is\+\_\+noncontinuous\+\_\+in\+\_\+memory}{query\_is\_noncontinuous\_in\_memory}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa6d73fadec8691f52ebcd7254c6ec9bb}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+is\+\_\+noncontinuous\+\_\+in\+\_\+memory} = typedef typename T\+:: is\+\_\+noncontinuous\+\_\+in\+\_\+memory}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_a78329f6a449e413ac38baeaf0574e64d}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_a78329f6a449e413ac38baeaf0574e64d}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+is\+\_\+temporary\+\_\+value@{query\+\_\+is\+\_\+temporary\+\_\+value}}
+\index{query\+\_\+is\+\_\+temporary\+\_\+value@{query\+\_\+is\+\_\+temporary\+\_\+value}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+is\+\_\+temporary\+\_\+value}{query\_is\_temporary\_value}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a78329f6a449e413ac38baeaf0574e64d}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+is\+\_\+temporary\+\_\+value} = typedef typename T\+:: is\+\_\+temporary\+\_\+value}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_a6ed62ca06012f06dc8f6143998de1e9f}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_a6ed62ca06012f06dc8f6143998de1e9f}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+is\+\_\+view@{query\+\_\+is\+\_\+view}}
+\index{query\+\_\+is\+\_\+view@{query\+\_\+is\+\_\+view}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+is\+\_\+view}{query\_is\_view}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a6ed62ca06012f06dc8f6143998de1e9f}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+is\+\_\+view} = typedef typename T\+:: is\+\_\+view}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_af39d29f1c790dbc0fdcb388eb3764ce8}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_af39d29f1c790dbc0fdcb388eb3764ce8}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+is\+\_\+view\+\_\+type@{query\+\_\+is\+\_\+view\+\_\+type}}
+\index{query\+\_\+is\+\_\+view\+\_\+type@{query\+\_\+is\+\_\+view\+\_\+type}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+is\+\_\+view\+\_\+type}{query\_is\_view\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_af39d29f1c790dbc0fdcb388eb3764ce8}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+is\+\_\+view\+\_\+type} = typedef typename T\+::is\+\_\+view\+\_\+type}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_ac325e0e2cef5518953db86853d9780fc}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_ac325e0e2cef5518953db86853d9780fc}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+move\+\_\+assignable@{query\+\_\+move\+\_\+assignable}}
+\index{query\+\_\+move\+\_\+assignable@{query\+\_\+move\+\_\+assignable}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+move\+\_\+assignable}{query\_move\_assignable}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_ac325e0e2cef5518953db86853d9780fc}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+move\+\_\+assignable} = typedef typename T\+:: move\+\_\+assignable}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_a19fd04baa3f6d8fcce66c01e51b7399d}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_a19fd04baa3f6d8fcce66c01e51b7399d}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+move\+\_\+constructible@{query\+\_\+move\+\_\+constructible}}
+\index{query\+\_\+move\+\_\+constructible@{query\+\_\+move\+\_\+constructible}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+move\+\_\+constructible}{query\_move\_constructible}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a19fd04baa3f6d8fcce66c01e51b7399d}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+move\+\_\+constructible} = typedef typename T\+:: move\+\_\+constructible}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_acc14ea393b9060eea11b720233170f80}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_acc14ea393b9060eea11b720233170f80}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+optimizer\+\_\+temporary@{query\+\_\+optimizer\+\_\+temporary}}
+\index{query\+\_\+optimizer\+\_\+temporary@{query\+\_\+optimizer\+\_\+temporary}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+optimizer\+\_\+temporary}{query\_optimizer\_temporary}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_acc14ea393b9060eea11b720233170f80}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+optimizer\+\_\+temporary} = typedef typename T\+:: optimizer\+\_\+temporary}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_a0e9b0b3486b5ec529b2c622f14b688f9}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_a0e9b0b3486b5ec529b2c622f14b688f9}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+requires\+\_\+greedy\+\_\+evaluation@{query\+\_\+requires\+\_\+greedy\+\_\+evaluation}}
+\index{query\+\_\+requires\+\_\+greedy\+\_\+evaluation@{query\+\_\+requires\+\_\+greedy\+\_\+evaluation}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+requires\+\_\+greedy\+\_\+evaluation}{query\_requires\_greedy\_evaluation}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a0e9b0b3486b5ec529b2c622f14b688f9}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+requires\+\_\+greedy\+\_\+evaluation} = typedef typename T\+:: requires\+\_\+greedy\+\_\+evaluation}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_a35543bad82197de0bb8d50c079e7cbaf}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_a35543bad82197de0bb8d50c079e7cbaf}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+stack\+\_\+allocated@{query\+\_\+stack\+\_\+allocated}}
+\index{query\+\_\+stack\+\_\+allocated@{query\+\_\+stack\+\_\+allocated}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+stack\+\_\+allocated}{query\_stack\_allocated}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a35543bad82197de0bb8d50c079e7cbaf}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+stack\+\_\+allocated} = typedef typename T\+:: stack\+\_\+allocated}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_aa067b2ce78c8e7218f47bded8aec80a8}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_aa067b2ce78c8e7218f47bded8aec80a8}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+system\+\_\+tag@{query\+\_\+system\+\_\+tag}}
+\index{query\+\_\+system\+\_\+tag@{query\+\_\+system\+\_\+tag}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+system\+\_\+tag}{query\_system\_tag}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa067b2ce78c8e7218f47bded8aec80a8}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+system\+\_\+tag} = typedef typename T\+:: system\+\_\+tag}
+
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_aa60e0a71bcf8048661b38b904c620fb0}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_aa60e0a71bcf8048661b38b904c620fb0}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!query\+\_\+value\+\_\+type@{query\+\_\+value\+\_\+type}}
+\index{query\+\_\+value\+\_\+type@{query\+\_\+value\+\_\+type}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+value\+\_\+type}{query\_value\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_aa60e0a71bcf8048661b38b904c620fb0}{bc\+::tensors\+::exprs\+::detail\+::query\+\_\+value\+\_\+type} = typedef typename T\+:: value\+\_\+type}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacebc_1_1tensors_1_1exprs_1_1detail_a710acb08a5ec6aaac546f59ac5368231}\label{namespacebc_1_1tensors_1_1exprs_1_1detail_a710acb08a5ec6aaac546f59ac5368231}} 
+\index{bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}!mk\+\_\+bin\+\_\+op@{mk\+\_\+bin\+\_\+op}}
+\index{mk\+\_\+bin\+\_\+op@{mk\+\_\+bin\+\_\+op}!bc\+::tensors\+::exprs\+::detail@{bc\+::tensors\+::exprs\+::detail}}
+\subsubsection{\texorpdfstring{mk\+\_\+bin\+\_\+op()}{mk\_bin\_op()}}
+{\footnotesize\ttfamily template$<$class Op , class Lv , class Rv , class... Args$>$ \\
+\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} auto bc\+::tensors\+::exprs\+::detail\+::mk\+\_\+bin\+\_\+op (\begin{DoxyParamCaption}\item[{Lv}]{left,  }\item[{Rv}]{right,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+

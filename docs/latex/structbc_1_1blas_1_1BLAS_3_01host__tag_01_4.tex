@@ -1,0 +1,89 @@
+\hypertarget{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4}{}\section{bc\+:\+:blas\+:\+:B\+L\+AS$<$ host\+\_\+tag $>$ Struct Template Reference}
+\label{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4}\index{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}}
+
+
+{\ttfamily \#include $<$host.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Stream $>$ }\\static void \hyperlink{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_a3a1d3f4f95612d92c0b9887df3afb3f4}{gemm} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, bool transA, bool transB, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} m, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} n, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} k, const float $\ast$alpha, const float $\ast$A, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} lda, const float $\ast$B, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} ldb, const float $\ast$beta, float $\ast$C, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} ldc)
+\item 
+{\footnotesize template$<$class Stream $>$ }\\static void \hyperlink{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_ad7ae94c23655e40a8f32f3c14bc54c86}{gemm} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, bool transA, bool transB, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} m, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} n, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} k, const double $\ast$alpha, const double $\ast$A, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} lda, const double $\ast$B, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} ldb, const double $\ast$beta, double $\ast$C, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} ldc)
+\item 
+{\footnotesize template$<$class Stream $>$ }\\static void \hyperlink{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_a19e15b20d59f7b6aa132be3afba78a88}{gemv} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, bool transA, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} m, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} n, const double $\ast$alpha, const double $\ast$A, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} lda, const double $\ast$X, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incX, const double $\ast$beta, double $\ast$Y, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incY)
+\item 
+{\footnotesize template$<$class Stream $>$ }\\static void \hyperlink{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_abbac6084a0a50374a81fe79e3ad303c4}{gemv} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, bool transA, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} m, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} n, const float $\ast$alpha, const float $\ast$A, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} lda, const float $\ast$X, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incX, const float $\ast$beta, float $\ast$Y, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incY)
+\item 
+{\footnotesize template$<$class Stream $>$ }\\static void \hyperlink{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_a19490f63f183da7d30a2e6bf5cf03a5e}{ger} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, int m, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} n, const double $\ast$alpha, const double $\ast$X, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incX, const double $\ast$Y, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incY, double $\ast$A, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} lda)
+\item 
+{\footnotesize template$<$class Stream $>$ }\\static void \hyperlink{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_ace9dcdd952c9215795acd4fda5188636}{ger} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, int m, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} n, const float $\ast$alpha, const float $\ast$X, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incX, const float $\ast$Y, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incY, float $\ast$A, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} lda)
+\item 
+{\footnotesize template$<$class Stream $>$ }\\static void \hyperlink{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_a2b190ef7608a582f3c99275db0347c9d}{dot} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, int n, double $\ast$A, const double $\ast$x, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incX, const double $\ast$y, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incY)
+\item 
+{\footnotesize template$<$class Stream $>$ }\\static void \hyperlink{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_a9e497c6a7b2588a5451c5f2492282392}{dot} (\hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream, int n, float $\ast$A, const float $\ast$x, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incX, const float $\ast$y, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} incY)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_a2b190ef7608a582f3c99275db0347c9d}\label{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_a2b190ef7608a582f3c99275db0347c9d}} 
+\index{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}!dot@{dot}}
+\index{dot@{dot}!bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{dot()}{dot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Stream $>$ \\
+static void \hyperlink{structbc_1_1blas_1_1BLAS}{bc\+::blas\+::\+B\+L\+AS}$<$ \hyperlink{structbc_1_1host__tag}{host\+\_\+tag} $>$\+::dot (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{int}]{n,  }\item[{double $\ast$}]{A,  }\item[{const double $\ast$}]{x,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incX,  }\item[{const double $\ast$}]{y,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_a9e497c6a7b2588a5451c5f2492282392}\label{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_a9e497c6a7b2588a5451c5f2492282392}} 
+\index{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}!dot@{dot}}
+\index{dot@{dot}!bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{dot()}{dot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Stream $>$ \\
+static void \hyperlink{structbc_1_1blas_1_1BLAS}{bc\+::blas\+::\+B\+L\+AS}$<$ \hyperlink{structbc_1_1host__tag}{host\+\_\+tag} $>$\+::dot (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{int}]{n,  }\item[{float $\ast$}]{A,  }\item[{const float $\ast$}]{x,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incX,  }\item[{const float $\ast$}]{y,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_a3a1d3f4f95612d92c0b9887df3afb3f4}\label{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_a3a1d3f4f95612d92c0b9887df3afb3f4}} 
+\index{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}!gemm@{gemm}}
+\index{gemm@{gemm}!bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{gemm()}{gemm()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Stream $>$ \\
+static void \hyperlink{structbc_1_1blas_1_1BLAS}{bc\+::blas\+::\+B\+L\+AS}$<$ \hyperlink{structbc_1_1host__tag}{host\+\_\+tag} $>$\+::gemm (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{bool}]{transA,  }\item[{bool}]{transB,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{m,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{n,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{k,  }\item[{const float $\ast$}]{alpha,  }\item[{const float $\ast$}]{A,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{lda,  }\item[{const float $\ast$}]{B,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{ldb,  }\item[{const float $\ast$}]{beta,  }\item[{float $\ast$}]{C,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{ldc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_ad7ae94c23655e40a8f32f3c14bc54c86}\label{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_ad7ae94c23655e40a8f32f3c14bc54c86}} 
+\index{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}!gemm@{gemm}}
+\index{gemm@{gemm}!bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{gemm()}{gemm()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Stream $>$ \\
+static void \hyperlink{structbc_1_1blas_1_1BLAS}{bc\+::blas\+::\+B\+L\+AS}$<$ \hyperlink{structbc_1_1host__tag}{host\+\_\+tag} $>$\+::gemm (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{bool}]{transA,  }\item[{bool}]{transB,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{m,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{n,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{k,  }\item[{const double $\ast$}]{alpha,  }\item[{const double $\ast$}]{A,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{lda,  }\item[{const double $\ast$}]{B,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{ldb,  }\item[{const double $\ast$}]{beta,  }\item[{double $\ast$}]{C,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{ldc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_a19e15b20d59f7b6aa132be3afba78a88}\label{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_a19e15b20d59f7b6aa132be3afba78a88}} 
+\index{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}!gemv@{gemv}}
+\index{gemv@{gemv}!bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{gemv()}{gemv()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Stream $>$ \\
+static void \hyperlink{structbc_1_1blas_1_1BLAS}{bc\+::blas\+::\+B\+L\+AS}$<$ \hyperlink{structbc_1_1host__tag}{host\+\_\+tag} $>$\+::gemv (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{bool}]{transA,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{m,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{n,  }\item[{const double $\ast$}]{alpha,  }\item[{const double $\ast$}]{A,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{lda,  }\item[{const double $\ast$}]{X,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incX,  }\item[{const double $\ast$}]{beta,  }\item[{double $\ast$}]{Y,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_abbac6084a0a50374a81fe79e3ad303c4}\label{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_abbac6084a0a50374a81fe79e3ad303c4}} 
+\index{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}!gemv@{gemv}}
+\index{gemv@{gemv}!bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{gemv()}{gemv()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Stream $>$ \\
+static void \hyperlink{structbc_1_1blas_1_1BLAS}{bc\+::blas\+::\+B\+L\+AS}$<$ \hyperlink{structbc_1_1host__tag}{host\+\_\+tag} $>$\+::gemv (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{bool}]{transA,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{m,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{n,  }\item[{const float $\ast$}]{alpha,  }\item[{const float $\ast$}]{A,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{lda,  }\item[{const float $\ast$}]{X,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incX,  }\item[{const float $\ast$}]{beta,  }\item[{float $\ast$}]{Y,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_a19490f63f183da7d30a2e6bf5cf03a5e}\label{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_a19490f63f183da7d30a2e6bf5cf03a5e}} 
+\index{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}!ger@{ger}}
+\index{ger@{ger}!bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{ger()}{ger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Stream $>$ \\
+static void \hyperlink{structbc_1_1blas_1_1BLAS}{bc\+::blas\+::\+B\+L\+AS}$<$ \hyperlink{structbc_1_1host__tag}{host\+\_\+tag} $>$\+::ger (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{int}]{m,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{n,  }\item[{const double $\ast$}]{alpha,  }\item[{const double $\ast$}]{X,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incX,  }\item[{const double $\ast$}]{Y,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incY,  }\item[{double $\ast$}]{A,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{lda }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_ace9dcdd952c9215795acd4fda5188636}\label{structbc_1_1blas_1_1BLAS_3_01host__tag_01_4_ace9dcdd952c9215795acd4fda5188636}} 
+\index{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}!ger@{ger}}
+\index{ger@{ger}!bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$@{bc\+::blas\+::\+B\+L\+A\+S$<$ host\+\_\+tag $>$}}
+\subsubsection{\texorpdfstring{ger()}{ger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Stream $>$ \\
+static void \hyperlink{structbc_1_1blas_1_1BLAS}{bc\+::blas\+::\+B\+L\+AS}$<$ \hyperlink{structbc_1_1host__tag}{host\+\_\+tag} $>$\+::ger (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream,  }\item[{int}]{m,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{n,  }\item[{const float $\ast$}]{alpha,  }\item[{const float $\ast$}]{X,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incX,  }\item[{const float $\ast$}]{Y,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{incY,  }\item[{float $\ast$}]{A,  }\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{lda }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/blas/\hyperlink{blas_2host_8h}{host.\+h}\end{DoxyCompactItemize}

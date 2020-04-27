@@ -1,0 +1,38 @@
+\hypertarget{structbc_1_1oper_1_1Min}{}\section{bc\+:\+:oper\+:\+:Min Struct Reference}
+\label{structbc_1_1oper_1_1Min}\index{bc\+::oper\+::\+Min@{bc\+::oper\+::\+Min}}
+
+
+{\ttfamily \#include $<$binary.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Lv , class Rv $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ auto \hyperlink{structbc_1_1oper_1_1Min_a1cb6ace7faa8b791d3ee2ae40c61dd7b}{operator()} (Lv \&\&lv, Rv \&\&rv) const -\/$>$ decltype(\hyperlink{structbc_1_1oper_1_1Min_abf39f4a93eff4b1a318265f4e9661b02}{apply}(lv, rv))
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Lv , class Rv $>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ static \+\_\+\+\_\+device\+\_\+\+\_\+ auto \hyperlink{structbc_1_1oper_1_1Min_abf39f4a93eff4b1a318265f4e9661b02}{apply} (Lv \&\&lv, Rv \&\&rv) -\/$>$ decltype(lv$<$ rv ? lv \+:rv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1oper_1_1Min_abf39f4a93eff4b1a318265f4e9661b02}\label{structbc_1_1oper_1_1Min_abf39f4a93eff4b1a318265f4e9661b02}} 
+\index{bc\+::oper\+::\+Min@{bc\+::oper\+::\+Min}!apply@{apply}}
+\index{apply@{apply}!bc\+::oper\+::\+Min@{bc\+::oper\+::\+Min}}
+\subsubsection{\texorpdfstring{apply()}{apply()}}
+{\footnotesize\ttfamily template$<$class Lv , class Rv $>$ \\
+\+\_\+\+\_\+host\+\_\+\+\_\+ static \+\_\+\+\_\+device\+\_\+\+\_\+ auto bc\+::oper\+::\+Min\+::apply (\begin{DoxyParamCaption}\item[{Lv \&\&}]{lv,  }\item[{Rv \&\&}]{rv }\end{DoxyParamCaption}) -\/$>$ decltype( lv $<$ rv ? lv \+: rv ) \hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1oper_1_1Min_a1cb6ace7faa8b791d3ee2ae40c61dd7b}\label{structbc_1_1oper_1_1Min_a1cb6ace7faa8b791d3ee2ae40c61dd7b}} 
+\index{bc\+::oper\+::\+Min@{bc\+::oper\+::\+Min}!operator()@{operator()}}
+\index{operator()@{operator()}!bc\+::oper\+::\+Min@{bc\+::oper\+::\+Min}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$class Lv , class Rv $>$ \\
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ auto bc\+::oper\+::\+Min\+::operator() (\begin{DoxyParamCaption}\item[{Lv \&\&}]{lv,  }\item[{Rv \&\&}]{rv }\end{DoxyParamCaption}) const -\/$>$ decltype(\hyperlink{structbc_1_1oper_1_1Min_abf39f4a93eff4b1a318265f4e9661b02}{apply}(lv, rv)) \hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/operations/\hyperlink{binary_8h}{binary.\+h}\end{DoxyCompactItemize}

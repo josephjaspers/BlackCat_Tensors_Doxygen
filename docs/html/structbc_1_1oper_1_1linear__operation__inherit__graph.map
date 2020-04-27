@@ -1,0 +1,12 @@
+<map id="bc::oper::linear_operation" name="bc::oper::linear_operation">
+<area shape="rect" id="node3" href="$structbc_1_1oper_1_1Add.html" title="bc::oper::Add" alt="" coords="479,23,579,49"/>
+<area shape="rect" id="node4" href="$structbc_1_1oper_1_1linear__assignment__operation.html" title="bc::oper::linear_assignment\l_operation" alt="" coords="437,74,620,115"/>
+<area shape="rect" id="node11" href="$structbc_1_1oper_1_1Sub.html" title="bc::oper::Sub" alt="" coords="479,140,579,167"/>
+<area shape="rect" id="node2" href="$structbc_1_1oper_1_1basic__operation.html" title="bc::oper::basic_operation" alt="" coords="5,81,173,108"/>
+<area shape="rect" id="node5" href="$structbc_1_1oper_1_1Add__Assign.html" title="bc::oper::Add_Assign" alt="" coords="668,56,815,83"/>
+<area shape="rect" id="node8" href="$structbc_1_1oper_1_1Sub__Assign.html" title="bc::oper::Sub_Assign" alt="" coords="668,107,815,133"/>
+<area shape="rect" id="node6" href="$structbc_1_1oper_1_1Device__Atomic__Add.html" title="bc::oper::Device_Atomic_Add" alt="" coords="863,5,1059,32"/>
+<area shape="rect" id="node7" href="$structbc_1_1oper_1_1Host__Atomic__Add.html" title="bc::oper::Host_Atomic_Add" alt="" coords="869,56,1052,83"/>
+<area shape="rect" id="node9" href="$structbc_1_1oper_1_1Device__Atomic__Sub.html" title="bc::oper::Device_Atomic_Sub" alt="" coords="863,107,1059,133"/>
+<area shape="rect" id="node10" href="$structbc_1_1oper_1_1Host__Atomic__Sub.html" title="bc::oper::Host_Atomic_Sub" alt="" coords="869,157,1052,184"/>
+</map>

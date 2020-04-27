@@ -1,0 +1,39 @@
+\hypertarget{structbc_1_1streams_1_1Logging__Stream__Base}{}\section{bc\+:\+:streams\+:\+:Logging\+\_\+\+Stream\+\_\+\+Base$<$ System\+Tag $>$ Struct Template Reference}
+\label{structbc_1_1streams_1_1Logging__Stream__Base}\index{bc\+::streams\+::\+Logging\+\_\+\+Stream\+\_\+\+Base$<$ System\+Tag $>$@{bc\+::streams\+::\+Logging\+\_\+\+Stream\+\_\+\+Base$<$ System\+Tag $>$}}
+
+
+A \hyperlink{structbc_1_1streams_1_1Logging__Stream}{Logging\+\_\+\+Stream} object does not actually allocate any memory.  
+
+
+
+
+{\ttfamily \#include $<$logging\+\_\+stream.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:streams\+:\+:Logging\+\_\+\+Stream\+\_\+\+Base$<$ System\+Tag $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{structbc_1_1streams_1_1Logging__Stream__Base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class System\+Tag$>$\newline
+struct bc\+::streams\+::\+Logging\+\_\+\+Stream\+\_\+\+Base$<$ System\+Tag $>$}
+
+A \hyperlink{structbc_1_1streams_1_1Logging__Stream}{Logging\+\_\+\+Stream} object does not actually allocate any memory. 
+
+It simply stores the required amount of memory that is has logged. It is used in conjunction with a stream object when parsing an expression.
+
+Once an entire expression is created, it first attempts to evaluate the expression while skipping all allocations and any of the enqueued functions.
+
+Once it has recorded all memory changes (allocations/deallocations) the logging allocator has calculated the max amount of memory required for this calculation. We than use this max\+\_\+allocated in our Workspace Allocator (inside a stream) to reserve the amount required.
+
+This ensures that the maximum number of allocations required per expression is 1. If the amount of memory reserved exceeds the required amount we do nothing. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/streams/\hyperlink{logging__stream_8h}{logging\+\_\+stream.\+h}\end{DoxyCompactItemize}

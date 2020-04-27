@@ -1,0 +1,5 @@
+<map id="bc::tensors::exprs::Scalar_Constant_Base&lt; Derived &gt;" name="bc::tensors::exprs::Scalar_Constant_Base&lt; Derived &gt;">
+<area shape="rect" id="node2" href="$structbc_1_1Shape_3_010_01_4.html" title="bc::Shape\&lt; 0 \&gt;" alt="" coords="5,124,117,151"/>
+<area shape="rect" id="node3" href="$structbc_1_1tensors_1_1exprs_1_1Kernel__Array__Base.html" title="bc::tensors::exprs\l::Kernel_Array_Base\l\&lt; Derived \&gt;" alt="" coords="141,109,283,165"/>
+<area shape="rect" id="node4" href="$structbc_1_1tensors_1_1exprs_1_1Expression__Template__Base.html" title="bc::tensors::exprs\l::Expression_Template\l_Base\&lt; Derived \&gt;" alt="" coords="134,5,290,61"/>
+</map>

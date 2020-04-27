@@ -1,0 +1,57 @@
+\hypertarget{classbc_1_1tensors_1_1exprs_1_1Evaluator}{}\section{bc\+:\+:tensors\+:\+:exprs\+:\+:Evaluator$<$ Is\+\_\+\+Sub\+Xpr $>$ Class Template Reference}
+\label{classbc_1_1tensors_1_1exprs_1_1Evaluator}\index{bc\+::tensors\+::exprs\+::\+Evaluator$<$ Is\+\_\+\+Sub\+Xpr $>$@{bc\+::tensors\+::exprs\+::\+Evaluator$<$ Is\+\_\+\+Sub\+Xpr $>$}}
+
+
+{\ttfamily \#include $<$tree\+\_\+evaluator.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class lv , class rv , class Stream , class Op $>$ }\\static std\+::enable\+\_\+if\+\_\+t$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer}{optimizer}$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{Bin\+\_\+\+Op}$<$ Op, lv, rv $>$ $>$\+::requires\+\_\+greedy\+\_\+eval \&\&\hyperlink{structbc_1_1oper_1_1operation__traits}{bc\+::oper\+::operation\+\_\+traits}$<$ Op $>$\+::is\+\_\+linear\+\_\+assignment\+\_\+operation $>$ \hyperlink{classbc_1_1tensors_1_1exprs_1_1Evaluator_a9a43e40f6f00a9e055b9d136a3120cab}{evaluate} (\hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{Bin\+\_\+\+Op}$<$ Op, lv, rv $>$ expression, \hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream)
+\item 
+{\footnotesize template$<$class lv , class rv , class Stream $>$ }\\static std\+::enable\+\_\+if\+\_\+t$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer}{optimizer}$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{Bin\+\_\+\+Op}$<$ \hyperlink{structbc_1_1oper_1_1Assign}{bc\+::oper\+::\+Assign}, lv, rv $>$ $>$\+::requires\+\_\+greedy\+\_\+eval $>$ \hyperlink{classbc_1_1tensors_1_1exprs_1_1Evaluator_abe5caeeb4304b39785a5bb0b9af8d4e2}{evaluate} (\hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{Bin\+\_\+\+Op}$<$ \hyperlink{structbc_1_1oper_1_1Assign}{oper\+::\+Assign}, lv, rv $>$ expression, \hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream)
+\item 
+{\footnotesize template$<$class lv , class rv , class Stream , class Op $>$ }\\static std\+::enable\+\_\+if\+\_\+t$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer}{optimizer}$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{Bin\+\_\+\+Op}$<$ Op, lv, rv $>$ $>$\+::requires\+\_\+greedy\+\_\+eval \&\&!\hyperlink{structbc_1_1oper_1_1operation__traits}{bc\+::oper\+::operation\+\_\+traits}$<$ Op $>$\+::is\+\_\+linear\+\_\+assignment\+\_\+operation $>$ \hyperlink{classbc_1_1tensors_1_1exprs_1_1Evaluator_a6e25e55959c4a3e33cc50116872c19da}{evaluate} (\hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{Bin\+\_\+\+Op}$<$ Op, lv, rv $>$ expression, \hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream)
+\item 
+{\footnotesize template$<$class Xpr , class Stream $>$ }\\static std\+::enable\+\_\+if\+\_\+t$<$!\hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer}{optimizer}$<$ Xpr $>$\+::requires\+\_\+greedy\+\_\+eval $>$ \hyperlink{classbc_1_1tensors_1_1exprs_1_1Evaluator_aff9a73b45c8d614326f1675e86970312}{evaluate} (Xpr expression, \hyperlink{classbc_1_1streams_1_1Stream}{Stream} stream)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbc_1_1tensors_1_1exprs_1_1Evaluator_a9a43e40f6f00a9e055b9d136a3120cab}\label{classbc_1_1tensors_1_1exprs_1_1Evaluator_a9a43e40f6f00a9e055b9d136a3120cab}} 
+\index{bc\+::tensors\+::exprs\+::\+Evaluator@{bc\+::tensors\+::exprs\+::\+Evaluator}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!bc\+::tensors\+::exprs\+::\+Evaluator@{bc\+::tensors\+::exprs\+::\+Evaluator}}
+\subsubsection{\texorpdfstring{evaluate()}{evaluate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Is\+\_\+\+Sub\+Xpr  = std\+::false\+\_\+type$>$ \\
+template$<$class lv , class rv , class Stream , class Op $>$ \\
+static std\+::enable\+\_\+if\+\_\+t$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer}{optimizer}$<$\hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{Bin\+\_\+\+Op}$<$Op, lv, rv$>$ $>$\+::requires\+\_\+greedy\+\_\+eval \&\& \hyperlink{structbc_1_1oper_1_1operation__traits}{bc\+::oper\+::operation\+\_\+traits}$<$Op$>$\+::is\+\_\+linear\+\_\+assignment\+\_\+operation$>$ \hyperlink{classbc_1_1tensors_1_1exprs_1_1Evaluator}{bc\+::tensors\+::exprs\+::\+Evaluator}$<$ Is\+\_\+\+Sub\+Xpr $>$\+::evaluate (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{Bin\+\_\+\+Op}$<$ Op, lv, rv $>$}]{expression,  }\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1exprs_1_1Evaluator_abe5caeeb4304b39785a5bb0b9af8d4e2}\label{classbc_1_1tensors_1_1exprs_1_1Evaluator_abe5caeeb4304b39785a5bb0b9af8d4e2}} 
+\index{bc\+::tensors\+::exprs\+::\+Evaluator@{bc\+::tensors\+::exprs\+::\+Evaluator}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!bc\+::tensors\+::exprs\+::\+Evaluator@{bc\+::tensors\+::exprs\+::\+Evaluator}}
+\subsubsection{\texorpdfstring{evaluate()}{evaluate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Is\+\_\+\+Sub\+Xpr  = std\+::false\+\_\+type$>$ \\
+template$<$class lv , class rv , class Stream $>$ \\
+static std\+::enable\+\_\+if\+\_\+t$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer}{optimizer}$<$\hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{Bin\+\_\+\+Op}$<$\hyperlink{structbc_1_1oper_1_1Assign}{bc\+::oper\+::\+Assign}, lv, rv$>$ $>$\+::requires\+\_\+greedy\+\_\+eval$>$ \hyperlink{classbc_1_1tensors_1_1exprs_1_1Evaluator}{bc\+::tensors\+::exprs\+::\+Evaluator}$<$ Is\+\_\+\+Sub\+Xpr $>$\+::evaluate (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{Bin\+\_\+\+Op}$<$ \hyperlink{structbc_1_1oper_1_1Assign}{oper\+::\+Assign}, lv, rv $>$}]{expression,  }\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1exprs_1_1Evaluator_a6e25e55959c4a3e33cc50116872c19da}\label{classbc_1_1tensors_1_1exprs_1_1Evaluator_a6e25e55959c4a3e33cc50116872c19da}} 
+\index{bc\+::tensors\+::exprs\+::\+Evaluator@{bc\+::tensors\+::exprs\+::\+Evaluator}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!bc\+::tensors\+::exprs\+::\+Evaluator@{bc\+::tensors\+::exprs\+::\+Evaluator}}
+\subsubsection{\texorpdfstring{evaluate()}{evaluate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Is\+\_\+\+Sub\+Xpr  = std\+::false\+\_\+type$>$ \\
+template$<$class lv , class rv , class Stream , class Op $>$ \\
+static std\+::enable\+\_\+if\+\_\+t$<$ \hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer}{optimizer}$<$\hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{Bin\+\_\+\+Op}$<$Op, lv, rv$>$ $>$\+::requires\+\_\+greedy\+\_\+eval \&\& !\hyperlink{structbc_1_1oper_1_1operation__traits}{bc\+::oper\+::operation\+\_\+traits}$<$Op$>$\+::is\+\_\+linear\+\_\+assignment\+\_\+operation$>$ \hyperlink{classbc_1_1tensors_1_1exprs_1_1Evaluator}{bc\+::tensors\+::exprs\+::\+Evaluator}$<$ Is\+\_\+\+Sub\+Xpr $>$\+::evaluate (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{Bin\+\_\+\+Op}$<$ Op, lv, rv $>$}]{expression,  }\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1exprs_1_1Evaluator_aff9a73b45c8d614326f1675e86970312}\label{classbc_1_1tensors_1_1exprs_1_1Evaluator_aff9a73b45c8d614326f1675e86970312}} 
+\index{bc\+::tensors\+::exprs\+::\+Evaluator@{bc\+::tensors\+::exprs\+::\+Evaluator}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!bc\+::tensors\+::exprs\+::\+Evaluator@{bc\+::tensors\+::exprs\+::\+Evaluator}}
+\subsubsection{\texorpdfstring{evaluate()}{evaluate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Is\+\_\+\+Sub\+Xpr  = std\+::false\+\_\+type$>$ \\
+template$<$class Xpr , class Stream $>$ \\
+static std\+::enable\+\_\+if\+\_\+t$<$!\hyperlink{structbc_1_1tensors_1_1exprs_1_1optimizer}{optimizer}$<$Xpr$>$\+::requires\+\_\+greedy\+\_\+eval$>$ \hyperlink{classbc_1_1tensors_1_1exprs_1_1Evaluator}{bc\+::tensors\+::exprs\+::\+Evaluator}$<$ Is\+\_\+\+Sub\+Xpr $>$\+::evaluate (\begin{DoxyParamCaption}\item[{Xpr}]{expression,  }\item[{\hyperlink{classbc_1_1streams_1_1Stream}{Stream}}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/tensors/expression\+\_\+templates/\hyperlink{tree__evaluator_8h}{tree\+\_\+evaluator.\+h}\end{DoxyCompactItemize}

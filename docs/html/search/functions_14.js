@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['wait_5fevent',['wait_event',['../classbc_1_1streams_1_1Stream_3_01device__tag_01_4.html#a47262ffd70637e5ed8efcde04cffc27b',1,'bc::streams::Stream&lt; device_tag &gt;::wait_event(Stream &amp;stream)'],['../classbc_1_1streams_1_1Stream_3_01device__tag_01_4.html#a3a96fec6eefed73405080be57b386d51',1,'bc::streams::Stream&lt; device_tag &gt;::wait_event(cudaEvent_t event)'],['../classbc_1_1streams_1_1Stream_3_01host__tag_01_4.html#ac02577226ce966ddce1faa09b572c3ca',1,'bc::streams::Stream&lt; host_tag &gt;::wait_event()'],['../structbc_1_1streams_1_1Logging__Stream.html#acffaf62d148bb839bb2700351cf8ce66',1,'bc::streams::Logging_Stream::wait_event()']]],
+  ['wait_5fstream',['wait_stream',['../classbc_1_1streams_1_1Stream_3_01device__tag_01_4.html#aa9fc028f6213e1d90ed9b464400f1551',1,'bc::streams::Stream&lt; device_tag &gt;::wait_stream()'],['../classbc_1_1streams_1_1Stream_3_01host__tag_01_4.html#a4fad8fd543a537f0990407c5e46ba5e2',1,'bc::streams::Stream&lt; host_tag &gt;::wait_stream()'],['../structbc_1_1streams_1_1Logging__Stream.html#ad42d7d3cc4c947190335dbea13e80fe2',1,'bc::streams::Logging_Stream::wait_stream()']]]
+];

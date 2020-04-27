@@ -1,0 +1,4 @@
+<map id="bc::tensors::exprs::optimizer&lt; Bin_Op&lt; op, lv, rv &gt;, std::enable_if_t&lt; expression_traits&lt; Bin_Op&lt; op, lv, rv &gt; &gt; ::requires_greedy_evaluation::value &gt; &gt;" name="bc::tensors::exprs::optimizer&lt; Bin_Op&lt; op, lv, rv &gt;, std::enable_if_t&lt; expression_traits&lt; Bin_Op&lt; op, lv, rv &gt; &gt; ::requires_greedy_evaluation::value &gt; &gt;">
+<area shape="rect" id="node2" href="$structbc_1_1tensors_1_1exprs_1_1binary__optimizer__default.html" title="bc::tensors::exprs\l::binary_optimizer_default\l\&lt; op, lv, rv \&gt;" alt="" coords="21,5,192,61"/>
+<area shape="rect" id="node3" href="$structbc_1_1tensors_1_1exprs_1_1optimizer__greedy__evaluations.html" title="bc::tensors::exprs\l::optimizer_greedy_evaluations\l\&lt; Bin_Op\&lt; op, lv, rv \&gt; \&gt;" alt="" coords="5,85,208,141"/>
+</map>

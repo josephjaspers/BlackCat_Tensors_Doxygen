@@ -1,0 +1,33 @@
+\hypertarget{namespacebc_1_1traits_1_1detail}{}\section{bc\+:\+:traits\+:\+:detail Namespace Reference}
+\label{namespacebc_1_1traits_1_1detail}\index{bc\+::traits\+::detail@{bc\+::traits\+::detail}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1traits_1_1detail_1_1DISABLE}{D\+I\+S\+A\+B\+LE}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Arg , class... Args$>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ auto \hyperlink{namespacebc_1_1traits_1_1detail_a7f1703c90df0f8695969542729765428}{get\+\_\+impl} (\hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ 0 $>$, Arg \&\&arg, Args \&\&... args) -\/$>$ decltype(std\+::forward$<$ Arg $>$(arg))
+\item 
+{\footnotesize template$<$int Index, class Arg , class... Args$>$ }\\\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ auto \hyperlink{namespacebc_1_1traits_1_1detail_a637e145f0095c679f44a1efcba22aa22}{get\+\_\+impl} (\hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ Index $>$, Arg \&\&, Args \&\&... args) -\/$>$ decltype(get\+\_\+impl(\hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ Index-\/1 $>$(), std\+::forward$<$ Args $>$(args)...))
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacebc_1_1traits_1_1detail_a7f1703c90df0f8695969542729765428}\label{namespacebc_1_1traits_1_1detail_a7f1703c90df0f8695969542729765428}} 
+\index{bc\+::traits\+::detail@{bc\+::traits\+::detail}!get\+\_\+impl@{get\+\_\+impl}}
+\index{get\+\_\+impl@{get\+\_\+impl}!bc\+::traits\+::detail@{bc\+::traits\+::detail}}
+\subsubsection{\texorpdfstring{get\+\_\+impl()}{get\_impl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Arg , class... Args$>$ \\
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ auto bc\+::traits\+::detail\+::get\+\_\+impl (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ 0 $>$}]{,  }\item[{Arg \&\&}]{arg,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption}) -\/$>$ decltype(std\+::forward$<$Arg$>$(arg))
+\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacebc_1_1traits_1_1detail_a637e145f0095c679f44a1efcba22aa22}\label{namespacebc_1_1traits_1_1detail_a637e145f0095c679f44a1efcba22aa22}} 
+\index{bc\+::traits\+::detail@{bc\+::traits\+::detail}!get\+\_\+impl@{get\+\_\+impl}}
+\index{get\+\_\+impl@{get\+\_\+impl}!bc\+::traits\+::detail@{bc\+::traits\+::detail}}
+\subsubsection{\texorpdfstring{get\+\_\+impl()}{get\_impl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int Index, class Arg , class... Args$>$ \\
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ auto bc\+::traits\+::detail\+::get\+\_\+impl (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$ Index $>$}]{,  }\item[{Arg \&\&}]{,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption}) -\/$>$ decltype(get\+\_\+impl(\hyperlink{structbc_1_1traits_1_1Integer}{Integer}$<$Index-\/1$>$(), std\+::forward$<$Args$>$(args)...))
+\hspace{0.3cm}{\ttfamily [inline]}}
+

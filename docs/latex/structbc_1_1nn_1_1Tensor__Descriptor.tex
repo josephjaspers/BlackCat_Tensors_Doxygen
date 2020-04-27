@@ -1,0 +1,71 @@
+\hypertarget{structbc_1_1nn_1_1Tensor__Descriptor}{}\section{bc\+:\+:nn\+:\+:Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Num\+Dimension, Allocator\+Type $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1Tensor__Descriptor}\index{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Num\+Dimension, Allocator\+Type $>$@{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor$<$ Value\+Type, System\+Tag, Num\+Dimension, Allocator\+Type $>$}}
+
+
+{\ttfamily \#include $<$common.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_a25a52c900dabe88f90eba926ff8de1cd}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_ac5c6e6bec82a01ad10cd2e6acc439532}{tensor\+\_\+dim} = Num\+Dimension
+\item 
+using \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_ad5bd24271db1a9fb05b06cb64cad55a3}{allocator\+\_\+type} = Allocator\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_a206ee1df4b7e175b426f8cdb32d0a342}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_a9a0efa6c050542ee479a59bb8a252230}{type} = \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$ tensor\+\_\+dim\+::value, \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_a25a52c900dabe88f90eba926ff8de1cd}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_ad5bd24271db1a9fb05b06cb64cad55a3}{allocator\+\_\+type} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_a5d27a53dccd4d6334aa3fd4092b07a9e}{batched\+\_\+type} = \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$ tensor\+\_\+dim\+::value+1, \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_a25a52c900dabe88f90eba926ff8de1cd}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_ad5bd24271db1a9fb05b06cb64cad55a3}{allocator\+\_\+type} $>$
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Tensor__Descriptor_ad5bd24271db1a9fb05b06cb64cad55a3}\label{structbc_1_1nn_1_1Tensor__Descriptor_ad5bd24271db1a9fb05b06cb64cad55a3}} 
+\index{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor@{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::nn\+::\+Tensor\+\_\+\+Descriptor@{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag, class Num\+Dimension, class Allocator\+Type = bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator$<$\+Value\+Type, System\+Tag$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}$<$ Value\+Type, System\+Tag, Num\+Dimension, Allocator\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_ad5bd24271db1a9fb05b06cb64cad55a3}{allocator\+\_\+type} =  Allocator\+Type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Tensor__Descriptor_a5d27a53dccd4d6334aa3fd4092b07a9e}\label{structbc_1_1nn_1_1Tensor__Descriptor_a5d27a53dccd4d6334aa3fd4092b07a9e}} 
+\index{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor@{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}!batched\+\_\+type@{batched\+\_\+type}}
+\index{batched\+\_\+type@{batched\+\_\+type}!bc\+::nn\+::\+Tensor\+\_\+\+Descriptor@{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}}
+\subsubsection{\texorpdfstring{batched\+\_\+type}{batched\_type}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag, class Num\+Dimension, class Allocator\+Type = bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator$<$\+Value\+Type, System\+Tag$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}$<$ Value\+Type, System\+Tag, Num\+Dimension, Allocator\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_a5d27a53dccd4d6334aa3fd4092b07a9e}{batched\+\_\+type} =  \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$tensor\+\_\+dim\+::value+1, \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_a25a52c900dabe88f90eba926ff8de1cd}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_ad5bd24271db1a9fb05b06cb64cad55a3}{allocator\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Tensor__Descriptor_a206ee1df4b7e175b426f8cdb32d0a342}\label{structbc_1_1nn_1_1Tensor__Descriptor_a206ee1df4b7e175b426f8cdb32d0a342}} 
+\index{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor@{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::\+Tensor\+\_\+\+Descriptor@{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag, class Num\+Dimension, class Allocator\+Type = bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator$<$\+Value\+Type, System\+Tag$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}$<$ Value\+Type, System\+Tag, Num\+Dimension, Allocator\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_a206ee1df4b7e175b426f8cdb32d0a342}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Tensor__Descriptor_ac5c6e6bec82a01ad10cd2e6acc439532}\label{structbc_1_1nn_1_1Tensor__Descriptor_ac5c6e6bec82a01ad10cd2e6acc439532}} 
+\index{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor@{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}!tensor\+\_\+dim@{tensor\+\_\+dim}}
+\index{tensor\+\_\+dim@{tensor\+\_\+dim}!bc\+::nn\+::\+Tensor\+\_\+\+Descriptor@{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}}
+\subsubsection{\texorpdfstring{tensor\+\_\+dim}{tensor\_dim}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag, class Num\+Dimension, class Allocator\+Type = bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator$<$\+Value\+Type, System\+Tag$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}$<$ Value\+Type, System\+Tag, Num\+Dimension, Allocator\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_ac5c6e6bec82a01ad10cd2e6acc439532}{tensor\+\_\+dim} =  Num\+Dimension}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Tensor__Descriptor_a9a0efa6c050542ee479a59bb8a252230}\label{structbc_1_1nn_1_1Tensor__Descriptor_a9a0efa6c050542ee479a59bb8a252230}} 
+\index{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor@{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}!type@{type}}
+\index{type@{type}!bc\+::nn\+::\+Tensor\+\_\+\+Descriptor@{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag, class Num\+Dimension, class Allocator\+Type = bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator$<$\+Value\+Type, System\+Tag$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}$<$ Value\+Type, System\+Tag, Num\+Dimension, Allocator\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_a9a0efa6c050542ee479a59bb8a252230}{type} =  \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$tensor\+\_\+dim\+::value, \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_a25a52c900dabe88f90eba926ff8de1cd}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_ad5bd24271db1a9fb05b06cb64cad55a3}{allocator\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Tensor__Descriptor_a25a52c900dabe88f90eba926ff8de1cd}\label{structbc_1_1nn_1_1Tensor__Descriptor_a25a52c900dabe88f90eba926ff8de1cd}} 
+\index{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor@{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Tensor\+\_\+\+Descriptor@{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag, class Num\+Dimension, class Allocator\+Type = bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator$<$\+Value\+Type, System\+Tag$>$$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Tensor__Descriptor}{bc\+::nn\+::\+Tensor\+\_\+\+Descriptor}$<$ Value\+Type, System\+Tag, Num\+Dimension, Allocator\+Type $>$\+::\hyperlink{structbc_1_1nn_1_1Tensor__Descriptor_a25a52c900dabe88f90eba926ff8de1cd}{value\+\_\+type} =  Value\+Type}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/\hyperlink{neural__networks_2common_8h}{common.\+h}\end{DoxyCompactItemize}

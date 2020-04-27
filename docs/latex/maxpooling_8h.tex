@@ -1,0 +1,31 @@
+\hypertarget{maxpooling_8h}{}\section{blackcat/neural\+\_\+networks/functions/maxpooling.h File Reference}
+\label{maxpooling_8h}\index{blackcat/neural\+\_\+networks/functions/maxpooling.\+h@{blackcat/neural\+\_\+networks/functions/maxpooling.\+h}}
+{\ttfamily \#include \char`\"{}common.\+h\char`\"{}}\newline
+Include dependency graph for maxpooling.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{maxpooling_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{maxpooling_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1caffe}{bc\+::caffe}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Dtype $>$ }\\void \hyperlink{namespacebc_1_1caffe_aba6971ea7a2796ad0ab683b9b63a9270}{bc\+::caffe\+::\+Max\+Pool\+Forward} (\hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag}, const Dtype $\ast$img\+\_\+data, const int num, const int channels, const int height, const int width, const int pool\+\_\+h, const int pool\+\_\+w, const int krnl\+\_\+h, const int krnl\+\_\+w, const int stride\+\_\+h, const int stride\+\_\+w, const int pad\+\_\+h, const int pad\+\_\+w, Dtype $\ast$out\+\_\+data, int $\ast$mask)
+\item 
+{\footnotesize template$<$typename Dtype $>$ }\\void \hyperlink{namespacebc_1_1caffe_a58b8b5cb4f1834cbf79a204f50776890}{bc\+::caffe\+::\+Max\+Pool\+Backward} (\hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag}, const Dtype $\ast$top\+\_\+diff, const int $\ast$mask, const int num, const int channels, const int height, const int width, const int pool\+\_\+h, const int pool\+\_\+w, const int krnl\+\_\+h, const int krnl\+\_\+w, const int stride\+\_\+h, const int stride\+\_\+w, const int pad\+\_\+h, const int pad\+\_\+w, Dtype $\ast$bottom\+\_\+diff)
+\end{DoxyCompactItemize}

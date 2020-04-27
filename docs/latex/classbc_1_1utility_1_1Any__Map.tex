@@ -1,0 +1,163 @@
+\hypertarget{classbc_1_1utility_1_1Any__Map}{}\section{bc\+:\+:utility\+:\+:Any\+\_\+\+Map Class Reference}
+\label{classbc_1_1utility_1_1Any__Map}\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+
+
+\hyperlink{classbc_1_1utility_1_1Any__Map}{Any\+\_\+\+Map} stores a buck of std\+::shared\+\_\+ptr$<$void$>$.  
+
+
+
+
+{\ttfamily \#include $<$any\+\_\+map.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class K , class V $>$ }\\bool \hyperlink{classbc_1_1utility_1_1Any__Map_a63086bc45ee54ef2ca5ebc4dc0989332}{contains} (\hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key}$<$ K, V $>$ key) const
+\item 
+{\footnotesize template$<$class K , class V $>$ }\\auto \& \hyperlink{classbc_1_1utility_1_1Any__Map_a8898f0b7810c617631176e8bafbd156d}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key}$<$ K, V $>$ key)
+\item 
+{\footnotesize template$<$class K , class V $>$ }\\auto \& \hyperlink{classbc_1_1utility_1_1Any__Map_aedde6d40e8c81b80d9f4f16a55c0fab2}{at} (\hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key}$<$ K, V $>$ key)
+\item 
+{\footnotesize template$<$class K , class V , class... Default\+Args$>$ }\\auto \& \hyperlink{classbc_1_1utility_1_1Any__Map_a45119ffc4e78ca50dc4790c63cc42590}{get} (\hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key}$<$ K, V $>$ key, Default\+Args \&\&... args)
+\item 
+{\footnotesize template$<$class K , class V $>$ }\\auto \& \hyperlink{classbc_1_1utility_1_1Any__Map_a14d3fe8ca3fc98def4e9b61d7aa082fa}{get} (\hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key}$<$ K, V $>$ key, V \&\&value)
+\item 
+{\footnotesize template$<$class K , class V , class... Args$>$ }\\auto \hyperlink{classbc_1_1utility_1_1Any__Map_a3e953570d8899b5fdcc0d17a86df085d}{emplace} (\hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key}$<$ K, V $>$ key, Args \&\&... args)
+\item 
+int \hyperlink{classbc_1_1utility_1_1Any__Map_a3ec5e27b12955483d9c44ac6ae3b657a}{empty} () const
+\item 
+int \hyperlink{classbc_1_1utility_1_1Any__Map_afb04f91ca1a089ac61df93cb86d9b9f8}{size} () const
+\item 
+int \hyperlink{classbc_1_1utility_1_1Any__Map_a69eeee0adc8cb8cdaeac754a7f81438c}{max\+\_\+size} () const
+\item 
+auto \hyperlink{classbc_1_1utility_1_1Any__Map_a2140500f599708a2eac39a6736df0c40}{begin} () const
+\item 
+auto \hyperlink{classbc_1_1utility_1_1Any__Map_ae0f081d0501c3d8edcd68174fdd49ba5}{end} () const
+\item 
+auto \hyperlink{classbc_1_1utility_1_1Any__Map_a10ee269a7bb8dc9ddf1476042a2b3eab}{begin} ()
+\item 
+auto \hyperlink{classbc_1_1utility_1_1Any__Map_ad4e665fb716c5fbaedd9e7146d79e991}{end} ()
+\item 
+auto \hyperlink{classbc_1_1utility_1_1Any__Map_a92726117ebfa4b927d17eb45215a3c01}{cbegin} ()
+\item 
+auto \hyperlink{classbc_1_1utility_1_1Any__Map_a34df567594568b3cf78190e4469e6491}{cend} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classbc_1_1utility_1_1Any__Map}{Any\+\_\+\+Map} stores a buck of std\+::shared\+\_\+ptr$<$void$>$. 
+
+Elements are retrieved through\+:
+
+my\+Map\mbox{[}\hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key$<$\+K, V$>$()}\mbox{]}
+
+It is recommended to use \char`\"{}\+Name\char`\"{} with \hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key} to emulate constexpr-\/strings
+
+my\+Map\mbox{[}\hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key}$<$\hyperlink{structbc_1_1utility_1_1Name}{Name}$<$\textquotesingle{}K\textquotesingle{},\textquotesingle{}E\textquotesingle{},\textquotesingle{}Y\textquotesingle{}$>$, Value\+Type$>$\mbox{]}
+
+Once C\+U\+DA supporst C++17 (which supports constexpr strings as template args) we will switch \hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key} to simply being a $<$String, Value\+Type$>$.
+
+The operator\mbox{[}\mbox{]} is a template argument, which enables casting to the correct type without any dynamic checks. This results in efficient access to \textquotesingle{}any\textquotesingle{} type within a pseudo-\/heterogeneous container. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbc_1_1utility_1_1Any__Map_aedde6d40e8c81b80d9f4f16a55c0fab2}\label{classbc_1_1utility_1_1Any__Map_aedde6d40e8c81b80d9f4f16a55c0fab2}} 
+\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}!at@{at}}
+\index{at@{at}!bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+auto\& bc\+::utility\+::\+Any\+\_\+\+Map\+::at (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key}$<$ K, V $>$}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1utility_1_1Any__Map_a2140500f599708a2eac39a6736df0c40}\label{classbc_1_1utility_1_1Any__Map_a2140500f599708a2eac39a6736df0c40}} 
+\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}!begin@{begin}}
+\index{begin@{begin}!bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily auto bc\+::utility\+::\+Any\+\_\+\+Map\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1utility_1_1Any__Map_a10ee269a7bb8dc9ddf1476042a2b3eab}\label{classbc_1_1utility_1_1Any__Map_a10ee269a7bb8dc9ddf1476042a2b3eab}} 
+\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}!begin@{begin}}
+\index{begin@{begin}!bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily auto bc\+::utility\+::\+Any\+\_\+\+Map\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1utility_1_1Any__Map_a92726117ebfa4b927d17eb45215a3c01}\label{classbc_1_1utility_1_1Any__Map_a92726117ebfa4b927d17eb45215a3c01}} 
+\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}!cbegin@{cbegin}}
+\index{cbegin@{cbegin}!bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+\subsubsection{\texorpdfstring{cbegin()}{cbegin()}}
+{\footnotesize\ttfamily auto bc\+::utility\+::\+Any\+\_\+\+Map\+::cbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1utility_1_1Any__Map_a34df567594568b3cf78190e4469e6491}\label{classbc_1_1utility_1_1Any__Map_a34df567594568b3cf78190e4469e6491}} 
+\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}!cend@{cend}}
+\index{cend@{cend}!bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+\subsubsection{\texorpdfstring{cend()}{cend()}}
+{\footnotesize\ttfamily auto bc\+::utility\+::\+Any\+\_\+\+Map\+::cend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1utility_1_1Any__Map_a63086bc45ee54ef2ca5ebc4dc0989332}\label{classbc_1_1utility_1_1Any__Map_a63086bc45ee54ef2ca5ebc4dc0989332}} 
+\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}!contains@{contains}}
+\index{contains@{contains}!bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+bool bc\+::utility\+::\+Any\+\_\+\+Map\+::contains (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key}$<$ K, V $>$}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1utility_1_1Any__Map_a3e953570d8899b5fdcc0d17a86df085d}\label{classbc_1_1utility_1_1Any__Map_a3e953570d8899b5fdcc0d17a86df085d}} 
+\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}!emplace@{emplace}}
+\index{emplace@{emplace}!bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+\subsubsection{\texorpdfstring{emplace()}{emplace()}}
+{\footnotesize\ttfamily template$<$class K , class V , class... Args$>$ \\
+auto bc\+::utility\+::\+Any\+\_\+\+Map\+::emplace (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key}$<$ K, V $>$}]{key,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1utility_1_1Any__Map_a3ec5e27b12955483d9c44ac6ae3b657a}\label{classbc_1_1utility_1_1Any__Map_a3ec5e27b12955483d9c44ac6ae3b657a}} 
+\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}!empty@{empty}}
+\index{empty@{empty}!bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily int bc\+::utility\+::\+Any\+\_\+\+Map\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1utility_1_1Any__Map_ae0f081d0501c3d8edcd68174fdd49ba5}\label{classbc_1_1utility_1_1Any__Map_ae0f081d0501c3d8edcd68174fdd49ba5}} 
+\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}!end@{end}}
+\index{end@{end}!bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily auto bc\+::utility\+::\+Any\+\_\+\+Map\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1utility_1_1Any__Map_ad4e665fb716c5fbaedd9e7146d79e991}\label{classbc_1_1utility_1_1Any__Map_ad4e665fb716c5fbaedd9e7146d79e991}} 
+\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}!end@{end}}
+\index{end@{end}!bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily auto bc\+::utility\+::\+Any\+\_\+\+Map\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1utility_1_1Any__Map_a45119ffc4e78ca50dc4790c63cc42590}\label{classbc_1_1utility_1_1Any__Map_a45119ffc4e78ca50dc4790c63cc42590}} 
+\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}!get@{get}}
+\index{get@{get}!bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+\subsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class K , class V , class... Default\+Args$>$ \\
+auto\& bc\+::utility\+::\+Any\+\_\+\+Map\+::get (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key}$<$ K, V $>$}]{key,  }\item[{Default\+Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1utility_1_1Any__Map_a14d3fe8ca3fc98def4e9b61d7aa082fa}\label{classbc_1_1utility_1_1Any__Map_a14d3fe8ca3fc98def4e9b61d7aa082fa}} 
+\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}!get@{get}}
+\index{get@{get}!bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+\subsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+auto\& bc\+::utility\+::\+Any\+\_\+\+Map\+::get (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key}$<$ K, V $>$}]{key,  }\item[{V \&\&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1utility_1_1Any__Map_a69eeee0adc8cb8cdaeac754a7f81438c}\label{classbc_1_1utility_1_1Any__Map_a69eeee0adc8cb8cdaeac754a7f81438c}} 
+\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}!max\+\_\+size@{max\+\_\+size}}
+\index{max\+\_\+size@{max\+\_\+size}!bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+\subsubsection{\texorpdfstring{max\+\_\+size()}{max\_size()}}
+{\footnotesize\ttfamily int bc\+::utility\+::\+Any\+\_\+\+Map\+::max\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1utility_1_1Any__Map_a8898f0b7810c617631176e8bafbd156d}\label{classbc_1_1utility_1_1Any__Map_a8898f0b7810c617631176e8bafbd156d}} 
+\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$class K , class V $>$ \\
+auto\& bc\+::utility\+::\+Any\+\_\+\+Map\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1utility_1_1Any__Key}{Any\+\_\+\+Key}$<$ K, V $>$}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1utility_1_1Any__Map_afb04f91ca1a089ac61df93cb86d9b9f8}\label{classbc_1_1utility_1_1Any__Map_afb04f91ca1a089ac61df93cb86d9b9f8}} 
+\index{bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}!size@{size}}
+\index{size@{size}!bc\+::utility\+::\+Any\+\_\+\+Map@{bc\+::utility\+::\+Any\+\_\+\+Map}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int bc\+::utility\+::\+Any\+\_\+\+Map\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/utility/\hyperlink{any__map_8h}{any\+\_\+map.\+h}\end{DoxyCompactItemize}

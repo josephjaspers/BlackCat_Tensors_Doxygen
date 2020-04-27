@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structbc_1_1allocators_1_1pa__detail_1_1Allocator__Base.html" title="bc::allocators::pa\l_detail::Allocator_Base\l\&lt; bc::allocator_traits\l\&lt; Allocator \&gt;::value_type,\l bc::allocator_traits\&lt; Allocator\l \&gt;::system_tag \&gt;" alt="" coords="5,5,201,105"/>
+<area shape="rect" id="node2" href="$structbc_1_1allocators_1_1pa__detail_1_1Derived__Allocator.html" title="bc::allocators::pa\l_detail::Derived_Allocator\l\&lt; Allocator \&gt;" alt="" coords="249,27,420,83"/>
+</map>

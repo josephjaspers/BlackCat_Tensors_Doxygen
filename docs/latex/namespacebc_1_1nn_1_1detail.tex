@@ -1,0 +1,152 @@
+\hypertarget{namespacebc_1_1nn_1_1detail}{}\section{bc\+:\+:nn\+:\+:detail Namespace Reference}
+\label{namespacebc_1_1nn_1_1detail}\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a2ce86e248ef50dbd6eefccc1333e7814}{query\+\_\+layer\+\_\+type} = typename T\+::layer\+\_\+type
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a93de41b72dd88c58d8f1d74276da87b3}{query\+\_\+forward\+\_\+requires\+\_\+inputs} = typename T\+::forward\+\_\+requires\+\_\+inputs
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a10314a67405b06863c6384de87e36bad}{query\+\_\+forward\+\_\+requires\+\_\+outputs} = typename T\+::forward\+\_\+requires\+\_\+outputs
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a51767bf55cf9cdf8cdff0f2929304390}{query\+\_\+forward\+\_\+requires\+\_\+extra\+\_\+cache} = typename T\+::forward\+\_\+requires\+\_\+extra\+\_\+cache
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_acb9ab0f627cee62dd68d673afc443608}{query\+\_\+backward\+\_\+requires\+\_\+inputs} = typename T\+::backward\+\_\+requires\+\_\+inputs
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_ad187de638865a7fbfe0e3c1db1511e4a}{query\+\_\+backward\+\_\+requires\+\_\+outputs} = typename T\+::backward\+\_\+requires\+\_\+outputs
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a1599626f3fdc7ffbe459d9abf8325465}{query\+\_\+backward\+\_\+requires\+\_\+extra\+\_\+cache} = typename T\+::backward\+\_\+requires\+\_\+extra\+\_\+cache
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a4bdf240452d0d96d1f433e7f0f5dd3e7}{query\+\_\+input\+\_\+tensor\+\_\+dim} = typename T\+::input\+\_\+tensor\+\_\+dim
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_aa16772b430fc14eb1bf4b82ad6f679fd}{query\+\_\+output\+\_\+tensor\+\_\+dim} = typename T\+::output\+\_\+tensor\+\_\+dim
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_aee17a95f5bdf1a2903f755a7de7ac632}{query\+\_\+greedy\+\_\+evaluate\+\_\+delta} = typename T\+::greedy\+\_\+evaluate\+\_\+delta
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a9348aef49158fa3a605fcc4eb9387c87}{query\+\_\+backwards\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached} = typename T\+::query\+\_\+backwards\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a7cfff1896ea5ef55f6410bb7c6ff3bf3}{query\+\_\+requires\+\_\+extra\+\_\+cache} = typename T\+::requires\+\_\+extra\+\_\+cache
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a0e5abd56399f408e7b9dc5bf91d70f6e}{query\+\_\+extra\+\_\+batched\+\_\+cache\+\_\+args} = typename T\+::extra\+\_\+batched\+\_\+cache\+\_\+args
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_aa141b344c5a584e16057d62b8b9cba6f}{query\+\_\+defines\+\_\+single\+\_\+predict} = typename T\+::defines\+\_\+single\+\_\+predict
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_ad39fb4d3bf636fece8bd359a3bca9579}{query\+\_\+defines\+\_\+predict} = typename T\+::defines\+\_\+predict
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a05af00abf685410896e4af7ebfdc3929}{is\+\_\+recurrent\+\_\+layer} = \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_a10314a67405b06863c6384de87e36bad}{detail\+::query\+\_\+forward\+\_\+requires\+\_\+outputs}, T, std\+::false\+\_\+type $>$
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_a05af00abf685410896e4af7ebfdc3929}\label{namespacebc_1_1nn_1_1detail_a05af00abf685410896e4af7ebfdc3929}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!is\+\_\+recurrent\+\_\+layer@{is\+\_\+recurrent\+\_\+layer}}
+\index{is\+\_\+recurrent\+\_\+layer@{is\+\_\+recurrent\+\_\+layer}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{is\+\_\+recurrent\+\_\+layer}{is\_recurrent\_layer}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_a05af00abf685410896e4af7ebfdc3929}{bc\+::nn\+::detail\+::is\+\_\+recurrent\+\_\+layer} = typedef \hyperlink{namespacebc_1_1traits_a1a6d378947ec32acd457890854bcd592}{bc\+::traits\+::conditional\+\_\+detected\+\_\+t}$<$ \hyperlink{namespacebc_1_1nn_1_1detail_a10314a67405b06863c6384de87e36bad}{detail\+::query\+\_\+forward\+\_\+requires\+\_\+outputs}, T, std\+::false\+\_\+type$>$}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_a1599626f3fdc7ffbe459d9abf8325465}\label{namespacebc_1_1nn_1_1detail_a1599626f3fdc7ffbe459d9abf8325465}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!query\+\_\+backward\+\_\+requires\+\_\+extra\+\_\+cache@{query\+\_\+backward\+\_\+requires\+\_\+extra\+\_\+cache}}
+\index{query\+\_\+backward\+\_\+requires\+\_\+extra\+\_\+cache@{query\+\_\+backward\+\_\+requires\+\_\+extra\+\_\+cache}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+backward\+\_\+requires\+\_\+extra\+\_\+cache}{query\_backward\_requires\_extra\_cache}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_a1599626f3fdc7ffbe459d9abf8325465}{bc\+::nn\+::detail\+::query\+\_\+backward\+\_\+requires\+\_\+extra\+\_\+cache} = typedef typename T\+::backward\+\_\+requires\+\_\+extra\+\_\+cache}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_acb9ab0f627cee62dd68d673afc443608}\label{namespacebc_1_1nn_1_1detail_acb9ab0f627cee62dd68d673afc443608}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!query\+\_\+backward\+\_\+requires\+\_\+inputs@{query\+\_\+backward\+\_\+requires\+\_\+inputs}}
+\index{query\+\_\+backward\+\_\+requires\+\_\+inputs@{query\+\_\+backward\+\_\+requires\+\_\+inputs}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+backward\+\_\+requires\+\_\+inputs}{query\_backward\_requires\_inputs}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_acb9ab0f627cee62dd68d673afc443608}{bc\+::nn\+::detail\+::query\+\_\+backward\+\_\+requires\+\_\+inputs} = typedef typename T\+::backward\+\_\+requires\+\_\+inputs}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_ad187de638865a7fbfe0e3c1db1511e4a}\label{namespacebc_1_1nn_1_1detail_ad187de638865a7fbfe0e3c1db1511e4a}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!query\+\_\+backward\+\_\+requires\+\_\+outputs@{query\+\_\+backward\+\_\+requires\+\_\+outputs}}
+\index{query\+\_\+backward\+\_\+requires\+\_\+outputs@{query\+\_\+backward\+\_\+requires\+\_\+outputs}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+backward\+\_\+requires\+\_\+outputs}{query\_backward\_requires\_outputs}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_ad187de638865a7fbfe0e3c1db1511e4a}{bc\+::nn\+::detail\+::query\+\_\+backward\+\_\+requires\+\_\+outputs} = typedef typename T\+::backward\+\_\+requires\+\_\+outputs}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_a9348aef49158fa3a605fcc4eb9387c87}\label{namespacebc_1_1nn_1_1detail_a9348aef49158fa3a605fcc4eb9387c87}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!query\+\_\+backwards\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached@{query\+\_\+backwards\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached}}
+\index{query\+\_\+backwards\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached@{query\+\_\+backwards\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+backwards\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached}{query\_backwards\_delta\_should\_be\_cached}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_a9348aef49158fa3a605fcc4eb9387c87}{bc\+::nn\+::detail\+::query\+\_\+backwards\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached} = typedef typename T\+::query\+\_\+backwards\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_ad39fb4d3bf636fece8bd359a3bca9579}\label{namespacebc_1_1nn_1_1detail_ad39fb4d3bf636fece8bd359a3bca9579}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!query\+\_\+defines\+\_\+predict@{query\+\_\+defines\+\_\+predict}}
+\index{query\+\_\+defines\+\_\+predict@{query\+\_\+defines\+\_\+predict}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+defines\+\_\+predict}{query\_defines\_predict}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_ad39fb4d3bf636fece8bd359a3bca9579}{bc\+::nn\+::detail\+::query\+\_\+defines\+\_\+predict} = typedef typename T\+::defines\+\_\+predict}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_aa141b344c5a584e16057d62b8b9cba6f}\label{namespacebc_1_1nn_1_1detail_aa141b344c5a584e16057d62b8b9cba6f}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!query\+\_\+defines\+\_\+single\+\_\+predict@{query\+\_\+defines\+\_\+single\+\_\+predict}}
+\index{query\+\_\+defines\+\_\+single\+\_\+predict@{query\+\_\+defines\+\_\+single\+\_\+predict}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+defines\+\_\+single\+\_\+predict}{query\_defines\_single\_predict}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_aa141b344c5a584e16057d62b8b9cba6f}{bc\+::nn\+::detail\+::query\+\_\+defines\+\_\+single\+\_\+predict} = typedef typename T\+::defines\+\_\+single\+\_\+predict}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_a0e5abd56399f408e7b9dc5bf91d70f6e}\label{namespacebc_1_1nn_1_1detail_a0e5abd56399f408e7b9dc5bf91d70f6e}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!query\+\_\+extra\+\_\+batched\+\_\+cache\+\_\+args@{query\+\_\+extra\+\_\+batched\+\_\+cache\+\_\+args}}
+\index{query\+\_\+extra\+\_\+batched\+\_\+cache\+\_\+args@{query\+\_\+extra\+\_\+batched\+\_\+cache\+\_\+args}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+extra\+\_\+batched\+\_\+cache\+\_\+args}{query\_extra\_batched\_cache\_args}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_a0e5abd56399f408e7b9dc5bf91d70f6e}{bc\+::nn\+::detail\+::query\+\_\+extra\+\_\+batched\+\_\+cache\+\_\+args} = typedef typename T\+::extra\+\_\+batched\+\_\+cache\+\_\+args}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_a51767bf55cf9cdf8cdff0f2929304390}\label{namespacebc_1_1nn_1_1detail_a51767bf55cf9cdf8cdff0f2929304390}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!query\+\_\+forward\+\_\+requires\+\_\+extra\+\_\+cache@{query\+\_\+forward\+\_\+requires\+\_\+extra\+\_\+cache}}
+\index{query\+\_\+forward\+\_\+requires\+\_\+extra\+\_\+cache@{query\+\_\+forward\+\_\+requires\+\_\+extra\+\_\+cache}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+forward\+\_\+requires\+\_\+extra\+\_\+cache}{query\_forward\_requires\_extra\_cache}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_a51767bf55cf9cdf8cdff0f2929304390}{bc\+::nn\+::detail\+::query\+\_\+forward\+\_\+requires\+\_\+extra\+\_\+cache} = typedef typename T\+::forward\+\_\+requires\+\_\+extra\+\_\+cache}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_a93de41b72dd88c58d8f1d74276da87b3}\label{namespacebc_1_1nn_1_1detail_a93de41b72dd88c58d8f1d74276da87b3}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!query\+\_\+forward\+\_\+requires\+\_\+inputs@{query\+\_\+forward\+\_\+requires\+\_\+inputs}}
+\index{query\+\_\+forward\+\_\+requires\+\_\+inputs@{query\+\_\+forward\+\_\+requires\+\_\+inputs}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+forward\+\_\+requires\+\_\+inputs}{query\_forward\_requires\_inputs}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_a93de41b72dd88c58d8f1d74276da87b3}{bc\+::nn\+::detail\+::query\+\_\+forward\+\_\+requires\+\_\+inputs} = typedef typename T\+::forward\+\_\+requires\+\_\+inputs}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_a10314a67405b06863c6384de87e36bad}\label{namespacebc_1_1nn_1_1detail_a10314a67405b06863c6384de87e36bad}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!query\+\_\+forward\+\_\+requires\+\_\+outputs@{query\+\_\+forward\+\_\+requires\+\_\+outputs}}
+\index{query\+\_\+forward\+\_\+requires\+\_\+outputs@{query\+\_\+forward\+\_\+requires\+\_\+outputs}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+forward\+\_\+requires\+\_\+outputs}{query\_forward\_requires\_outputs}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_a10314a67405b06863c6384de87e36bad}{bc\+::nn\+::detail\+::query\+\_\+forward\+\_\+requires\+\_\+outputs} = typedef typename T\+::forward\+\_\+requires\+\_\+outputs}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_aee17a95f5bdf1a2903f755a7de7ac632}\label{namespacebc_1_1nn_1_1detail_aee17a95f5bdf1a2903f755a7de7ac632}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!query\+\_\+greedy\+\_\+evaluate\+\_\+delta@{query\+\_\+greedy\+\_\+evaluate\+\_\+delta}}
+\index{query\+\_\+greedy\+\_\+evaluate\+\_\+delta@{query\+\_\+greedy\+\_\+evaluate\+\_\+delta}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+greedy\+\_\+evaluate\+\_\+delta}{query\_greedy\_evaluate\_delta}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_aee17a95f5bdf1a2903f755a7de7ac632}{bc\+::nn\+::detail\+::query\+\_\+greedy\+\_\+evaluate\+\_\+delta} = typedef typename T\+::greedy\+\_\+evaluate\+\_\+delta}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_a4bdf240452d0d96d1f433e7f0f5dd3e7}\label{namespacebc_1_1nn_1_1detail_a4bdf240452d0d96d1f433e7f0f5dd3e7}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!query\+\_\+input\+\_\+tensor\+\_\+dim@{query\+\_\+input\+\_\+tensor\+\_\+dim}}
+\index{query\+\_\+input\+\_\+tensor\+\_\+dim@{query\+\_\+input\+\_\+tensor\+\_\+dim}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+input\+\_\+tensor\+\_\+dim}{query\_input\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_a4bdf240452d0d96d1f433e7f0f5dd3e7}{bc\+::nn\+::detail\+::query\+\_\+input\+\_\+tensor\+\_\+dim} = typedef typename T\+::input\+\_\+tensor\+\_\+dim}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_a2ce86e248ef50dbd6eefccc1333e7814}\label{namespacebc_1_1nn_1_1detail_a2ce86e248ef50dbd6eefccc1333e7814}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!query\+\_\+layer\+\_\+type@{query\+\_\+layer\+\_\+type}}
+\index{query\+\_\+layer\+\_\+type@{query\+\_\+layer\+\_\+type}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+layer\+\_\+type}{query\_layer\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_a2ce86e248ef50dbd6eefccc1333e7814}{bc\+::nn\+::detail\+::query\+\_\+layer\+\_\+type} = typedef typename T\+::layer\+\_\+type}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_aa16772b430fc14eb1bf4b82ad6f679fd}\label{namespacebc_1_1nn_1_1detail_aa16772b430fc14eb1bf4b82ad6f679fd}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!query\+\_\+output\+\_\+tensor\+\_\+dim@{query\+\_\+output\+\_\+tensor\+\_\+dim}}
+\index{query\+\_\+output\+\_\+tensor\+\_\+dim@{query\+\_\+output\+\_\+tensor\+\_\+dim}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+output\+\_\+tensor\+\_\+dim}{query\_output\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_aa16772b430fc14eb1bf4b82ad6f679fd}{bc\+::nn\+::detail\+::query\+\_\+output\+\_\+tensor\+\_\+dim} = typedef typename T\+::output\+\_\+tensor\+\_\+dim}
+
+\mbox{\Hypertarget{namespacebc_1_1nn_1_1detail_a7cfff1896ea5ef55f6410bb7c6ff3bf3}\label{namespacebc_1_1nn_1_1detail_a7cfff1896ea5ef55f6410bb7c6ff3bf3}} 
+\index{bc\+::nn\+::detail@{bc\+::nn\+::detail}!query\+\_\+requires\+\_\+extra\+\_\+cache@{query\+\_\+requires\+\_\+extra\+\_\+cache}}
+\index{query\+\_\+requires\+\_\+extra\+\_\+cache@{query\+\_\+requires\+\_\+extra\+\_\+cache}!bc\+::nn\+::detail@{bc\+::nn\+::detail}}
+\subsubsection{\texorpdfstring{query\+\_\+requires\+\_\+extra\+\_\+cache}{query\_requires\_extra\_cache}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+using \hyperlink{namespacebc_1_1nn_1_1detail_a7cfff1896ea5ef55f6410bb7c6ff3bf3}{bc\+::nn\+::detail\+::query\+\_\+requires\+\_\+extra\+\_\+cache} = typedef typename T\+::requires\+\_\+extra\+\_\+cache}
+

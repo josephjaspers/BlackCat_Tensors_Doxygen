@@ -1,0 +1,140 @@
+\hypertarget{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{}\section{bc\+:\+:allocators\+:\+:detail\+:\+:Stack\+\_\+\+Allocator\+\_\+\+Base$<$ System\+Tag $>$ Class Template Reference}
+\label{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}\index{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base$<$ System\+Tag $>$@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base$<$ System\+Tag $>$}}
+
+
+{\ttfamily \#include $<$stack\+\_\+allocator.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a9f4146c2a38488a0eb4a0f1130b48ad1}{Stack\+\_\+\+Allocator\+\_\+\+Base} (std\+::size\+\_\+t sz=0)
+\item 
+void \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_aced4b40da5b731bdeaf38fcd73560c25}{reserve} (std\+::size\+\_\+t sz)
+\item 
+void \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a9163e65d72c5e36b150d3a5577024dda}{free} ()
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a364702acb7caa40de0a6db6d6be12424}{available\+\_\+bytes} () const
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_af04771f8573c5f9d4ee109d9d49bb111}{allocated\+\_\+bytes} () const
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a3a3ad3d03e52366dd62390030a805ee0}{reserved\+\_\+bytes} () const
+\item 
+{\footnotesize template$<$class Allocator $>$ }\\void \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_ace8c1d19b6675c7b02e4358c5d3a5964}{set\+\_\+allocator} (\hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} alloc)
+\item 
+\hyperlink{classbc_1_1allocators_1_1Byte}{Byte} $\ast$ \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a1d814bdc15336ebee7eca671a14fcbca}{allocate} (std\+::size\+\_\+t sz)
+\item 
+void \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a44e96917e9fbebc728b65bd1395bda01}{deallocate} (\hyperlink{classbc_1_1allocators_1_1Byte}{Byte} $\ast$data, std\+::size\+\_\+t sz)
+\item 
+void \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_aabb6b359c2099a9d4173ee0b0312f16e}{force\+\_\+deallocate} ()
+\item 
+{\footnotesize template$<$class T $>$ }\\T $\ast$ \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a76720c8bc1956f70c73e5455287e8543}{allocate} (std\+::size\+\_\+t sz)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a403f7f90c00193c56813beb564d140f4}{deallocate} (T $\ast$data, std\+::size\+\_\+t sz)
+\item 
+\hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_aa84ebfaaba078da0cc109ef10497fc0c}{$\sim$\+Stack\+\_\+\+Allocator\+\_\+\+Base} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a9f4146c2a38488a0eb4a0f1130b48ad1}\label{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a9f4146c2a38488a0eb4a0f1130b48ad1}} 
+\index{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}!Stack\+\_\+\+Allocator\+\_\+\+Base@{Stack\+\_\+\+Allocator\+\_\+\+Base}}
+\index{Stack\+\_\+\+Allocator\+\_\+\+Base@{Stack\+\_\+\+Allocator\+\_\+\+Base}!bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{Stack\+\_\+\+Allocator\+\_\+\+Base()}{Stack\_Allocator\_Base()}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+\hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}$<$ System\+Tag $>$\+::\hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{Stack\+\_\+\+Allocator\+\_\+\+Base} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{sz = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_aa84ebfaaba078da0cc109ef10497fc0c}\label{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_aa84ebfaaba078da0cc109ef10497fc0c}} 
+\index{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}!````~Stack\+\_\+\+Allocator\+\_\+\+Base@{$\sim$\+Stack\+\_\+\+Allocator\+\_\+\+Base}}
+\index{````~Stack\+\_\+\+Allocator\+\_\+\+Base@{$\sim$\+Stack\+\_\+\+Allocator\+\_\+\+Base}!bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+Stack\+\_\+\+Allocator\+\_\+\+Base()}{~Stack\_Allocator\_Base()}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+\hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}$<$ System\+Tag $>$\+::$\sim$\hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{Stack\+\_\+\+Allocator\+\_\+\+Base} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a1d814bdc15336ebee7eca671a14fcbca}\label{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a1d814bdc15336ebee7eca671a14fcbca}} 
+\index{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}!allocate@{allocate}}
+\index{allocate@{allocate}!bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+\hyperlink{classbc_1_1allocators_1_1Byte}{Byte}$\ast$ \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}$<$ System\+Tag $>$\+::allocate (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a76720c8bc1956f70c73e5455287e8543}\label{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a76720c8bc1956f70c73e5455287e8543}} 
+\index{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}!allocate@{allocate}}
+\index{allocate@{allocate}!bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+template$<$class T $>$ \\
+T$\ast$ \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}$<$ System\+Tag $>$\+::allocate (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_af04771f8573c5f9d4ee109d9d49bb111}\label{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_af04771f8573c5f9d4ee109d9d49bb111}} 
+\index{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}!allocated\+\_\+bytes@{allocated\+\_\+bytes}}
+\index{allocated\+\_\+bytes@{allocated\+\_\+bytes}!bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{allocated\+\_\+bytes()}{allocated\_bytes()}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}$<$ System\+Tag $>$\+::allocated\+\_\+bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a364702acb7caa40de0a6db6d6be12424}\label{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a364702acb7caa40de0a6db6d6be12424}} 
+\index{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}!available\+\_\+bytes@{available\+\_\+bytes}}
+\index{available\+\_\+bytes@{available\+\_\+bytes}!bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{available\+\_\+bytes()}{available\_bytes()}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}$<$ System\+Tag $>$\+::available\+\_\+bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a44e96917e9fbebc728b65bd1395bda01}\label{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a44e96917e9fbebc728b65bd1395bda01}} 
+\index{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+void \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}$<$ System\+Tag $>$\+::deallocate (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1allocators_1_1Byte}{Byte} $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a403f7f90c00193c56813beb564d140f4}\label{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a403f7f90c00193c56813beb564d140f4}} 
+\index{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+template$<$class T $>$ \\
+void \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}$<$ System\+Tag $>$\+::deallocate (\begin{DoxyParamCaption}\item[{T $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_aabb6b359c2099a9d4173ee0b0312f16e}\label{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_aabb6b359c2099a9d4173ee0b0312f16e}} 
+\index{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}!force\+\_\+deallocate@{force\+\_\+deallocate}}
+\index{force\+\_\+deallocate@{force\+\_\+deallocate}!bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{force\+\_\+deallocate()}{force\_deallocate()}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+void \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}$<$ System\+Tag $>$\+::force\+\_\+deallocate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a9163e65d72c5e36b150d3a5577024dda}\label{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a9163e65d72c5e36b150d3a5577024dda}} 
+\index{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}!free@{free}}
+\index{free@{free}!bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{free()}{free()}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+void \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}$<$ System\+Tag $>$\+::free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_aced4b40da5b731bdeaf38fcd73560c25}\label{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_aced4b40da5b731bdeaf38fcd73560c25}} 
+\index{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}!reserve@{reserve}}
+\index{reserve@{reserve}!bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{reserve()}{reserve()}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+void \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}$<$ System\+Tag $>$\+::reserve (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a3a3ad3d03e52366dd62390030a805ee0}\label{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_a3a3ad3d03e52366dd62390030a805ee0}} 
+\index{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}!reserved\+\_\+bytes@{reserved\+\_\+bytes}}
+\index{reserved\+\_\+bytes@{reserved\+\_\+bytes}!bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{reserved\+\_\+bytes()}{reserved\_bytes()}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{size\+\_\+t} \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}$<$ System\+Tag $>$\+::reserved\+\_\+bytes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_ace8c1d19b6675c7b02e4358c5d3a5964}\label{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base_ace8c1d19b6675c7b02e4358c5d3a5964}} 
+\index{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}!set\+\_\+allocator@{set\+\_\+allocator}}
+\index{set\+\_\+allocator@{set\+\_\+allocator}!bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base@{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+allocator()}{set\_allocator()}}
+{\footnotesize\ttfamily template$<$class System\+Tag $>$ \\
+template$<$class Allocator $>$ \\
+void \hyperlink{classbc_1_1allocators_1_1detail_1_1Stack__Allocator__Base}{bc\+::allocators\+::detail\+::\+Stack\+\_\+\+Allocator\+\_\+\+Base}$<$ System\+Tag $>$\+::set\+\_\+allocator (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}}]{alloc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/allocators/\hyperlink{stack__allocator_8h}{stack\+\_\+allocator.\+h}\end{DoxyCompactItemize}

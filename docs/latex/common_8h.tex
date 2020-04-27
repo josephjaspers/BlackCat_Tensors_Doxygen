@@ -1,0 +1,246 @@
+\hypertarget{common_8h}{}\section{blackcat/common.h File Reference}
+\label{common_8h}\index{blackcat/common.\+h@{blackcat/common.\+h}}
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cublas.\+h$>$}\newline
+Include dependency graph for common.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{common_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{common_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classbc_1_1system__tag__base}{bc\+::system\+\_\+tag\+\_\+base}
+\item 
+struct \hyperlink{structbc_1_1system__tag__type}{bc\+::system\+\_\+tag\+\_\+type$<$ Derived\+Tag $>$}
+\item 
+struct \hyperlink{structbc_1_1host__tag}{bc\+::host\+\_\+tag}
+\item 
+struct \hyperlink{structbc_1_1device__tag}{bc\+::device\+\_\+tag}
+\item 
+struct \hyperlink{structbc_1_1is__system__tag}{bc\+::is\+\_\+system\+\_\+tag$<$ T $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1detail}{bc\+::detail}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{common_8h_afe0743760bd7b796144b764d8c5ab66c}{B\+C\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+T\+AG}~host\+\_\+tag
+\item 
+\#define \hyperlink{common_8h_a86f4e2210c4647476c960638e87e390a}{B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA}(...)~\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+
+\item 
+\#define \hyperlink{common_8h_a66c9397d965d58d8082190779806bf75}{B\+C\+\_\+\+I\+F\+\_\+\+N\+O\+\_\+\+C\+U\+DA}(...)
+\item 
+\#define \hyperlink{common_8h_adf0d8d6bff3d32b4fa9fa91abebf4002}{B\+C\+H\+O\+S\+T\+D\+EV}~\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+
+\item 
+\#define \hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE}~\hyperlink{common_8h_adf0d8d6bff3d32b4fa9fa91abebf4002}{B\+C\+H\+O\+S\+T\+D\+EV} inline
+\item 
+\#define \hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT}~inline
+\item 
+\#define \hyperlink{common_8h_ad1e2e804ae91b8f8bff0231c8611d665}{B\+C\+\_\+\+N\+O\+\_\+\+U\+N\+I\+Q\+U\+E\+\_\+\+A\+D\+D\+R\+E\+SS}
+\item 
+\#define \hyperlink{common_8h_a10c3f2d709c196084b9220c465391b20}{B\+C\+\_\+\+A\+S\+S\+E\+RT}(condition,  message)~\{ \hyperlink{namespacebc_abd3d44d6c60359e43ce37fb8983291bf}{bc\+::bc\+\_\+assert}(condition, message, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+P\+R\+E\+T\+T\+Y\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+); \}
+\item 
+\#define \hyperlink{common_8h_a8defdcd387fc0ff898cc47b3ebe435a7}{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+A\+S\+S\+E\+RT}(...)~\{ B\+C\+\_\+cuda\+\_\+assert((\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+P\+R\+E\+T\+T\+Y\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+); \}
+\item 
+\#define \hyperlink{common_8h_a921195b66fbf04bafd8a1b5457af76fa}{B\+C\+\_\+omp\+\_\+async\+\_\+\+\_\+}(...)~\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+
+\item 
+\#define \hyperlink{common_8h_abceb30dbae586baf5a892aceb815e7a5}{B\+C\+\_\+omp\+\_\+parallel\+\_\+\+\_\+}
+\item 
+\#define \hyperlink{common_8h_a59805d4470b68d29be8775ebc31a8898}{B\+C\+\_\+omp\+\_\+atomic\+\_\+\+\_\+}
+\item 
+\#define \hyperlink{common_8h_aed02bf022c1bebbc3b15bd759120665e}{B\+C\+\_\+omp\+\_\+for\+\_\+\+\_\+}
+\item 
+\#define \hyperlink{common_8h_a2b3e38096874071b9dab11641462a96a}{B\+C\+\_\+omp\+\_\+bar\+\_\+\+\_\+}
+\item 
+\#define \hyperlink{common_8h_a85f1852593f4cc46744f43b81a607830}{B\+C\+\_\+omp\+\_\+for\+\_\+reduction\+\_\+\+\_\+}(oper,  value)
+\item 
+\#define \hyperlink{common_8h_acdefe12abd1a6411554628081ec6d6f2}{B\+C\+\_\+\+S\+I\+Z\+E\+\_\+T}~int
+\item 
+\#define \hyperlink{common_8h_a51a8e125a19271b0a7cb48acb6a808da}{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+\+X\+YZ}(i,  n,  xyz)
+\item 
+\#define \hyperlink{common_8h_ad72747f89348073accbf289d146d1686}{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+X}(i,  n)~\hyperlink{common_8h_a51a8e125a19271b0a7cb48acb6a808da}{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+\+X\+YZ}(i,n,x)
+\item 
+\#define \hyperlink{common_8h_ac63d4ebab0d083456bb4a40fa3e71736}{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+Y}(i,  n)~\hyperlink{common_8h_a51a8e125a19271b0a7cb48acb6a808da}{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+\+X\+YZ}(i,n,y)
+\item 
+\#define \hyperlink{common_8h_a6160e86d467af8bd1a4a87e417ec0a5c}{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+Z}(i,  n)~\hyperlink{common_8h_a51a8e125a19271b0a7cb48acb6a808da}{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+\+X\+YZ}(i,n,z)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacebc_afc523ebfb2766ca065901d60e7f58ede}{bc\+::default\+\_\+system\+\_\+tag\+\_\+t} = host\+\_\+tag
+\item 
+using \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} = int
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class R\+M\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+W\+A\+R\+N\+I\+NG  = void$>$ }\\void \hyperlink{namespacebc_a0990b0a9f4f36164af3631f2ab4ce0ab}{bc\+::set\+\_\+print\+\_\+stream} (std\+::ostream $\ast$ostream)
+\item 
+{\footnotesize template$<$class R\+M\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+W\+A\+R\+N\+I\+NG  = void$>$ }\\std\+::ostream $\ast$ \hyperlink{namespacebc_ad2f1d49225b5a0a25966864b54af8552}{bc\+::get\+\_\+print\+\_\+stream} ()
+\item 
+{\footnotesize template$<$class R\+M\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+W\+A\+R\+N\+I\+NG  = void$>$ }\\void \hyperlink{namespacebc_ad394a7001658f17912a9facdef966740}{bc\+::set\+\_\+error\+\_\+stream} (std\+::ostream $\ast$ostream)
+\item 
+{\footnotesize template$<$class R\+M\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+W\+A\+R\+N\+I\+NG  = void$>$ }\\std\+::ostream $\ast$ \hyperlink{namespacebc_a65f60b6b1712dcfdbd44d05873c98afe}{bc\+::get\+\_\+error\+\_\+stream} ()
+\item 
+{\footnotesize template$<$class T  = char$>$ }\\void \hyperlink{namespacebc_1_1detail_a5a7f3c0e4d0789597a73dd1206fc78b1}{bc\+::detail\+::print\+\_\+impl} (std\+::ostream $\ast$os, const T \&arg=\textquotesingle{}\textbackslash{}n\textquotesingle{})
+\item 
+{\footnotesize template$<$class T , class... Ts$>$ }\\void \hyperlink{namespacebc_1_1detail_ac686664816aa55a2e7164fee2b5fb170}{bc\+::detail\+::print\+\_\+impl} (std\+::ostream $\ast$os, const T \&arg, const Ts \&... args)
+\item 
+{\footnotesize template$<$class... Ts$>$ }\\void \hyperlink{namespacebc_ae22a53f8f6cd6e96082822fa69f5e97e}{bc\+::print} (const Ts \&... args)
+\item 
+{\footnotesize template$<$class... Ts$>$ }\\void \hyperlink{namespacebc_aa0e5d3f520d36704b31391c582e31959}{bc\+::printerr} (const Ts \&... args)
+\item 
+{\footnotesize template$<$class str\+\_\+type $>$ }\\void \hyperlink{namespacebc_abd3d44d6c60359e43ce37fb8983291bf}{bc\+::bc\+\_\+assert} (bool condition, str\+\_\+type msg, const char $\ast$file, const char $\ast$function, int line)
+\item 
+void \hyperlink{namespacebc_ae9d727e5d33877f786a3942677806c5b}{bc\+::\+B\+C\+\_\+cuda\+\_\+assert} (cuda\+Error\+\_\+t code, const char $\ast$file, const char $\ast$function, int line)
+\item 
+void \hyperlink{namespacebc_ae3bc34767cd244414df270a9cb1b558e}{bc\+::\+B\+C\+\_\+cuda\+\_\+assert} (cublas\+Status\+\_\+t code, const char $\ast$file, const char $\ast$function, int line)
+\item 
+{\footnotesize template$<$class T $>$ }\\const char $\ast$ \hyperlink{namespacebc_a10d0367c3c2e10f3f7c5d4f8b37c5270}{bc\+::bc\+\_\+get\+\_\+classname\+\_\+of} (const T \&arg)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{common_8h_a10c3f2d709c196084b9220c465391b20}\label{common_8h_a10c3f2d709c196084b9220c465391b20}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+\+A\+S\+S\+E\+RT@{B\+C\+\_\+\+A\+S\+S\+E\+RT}}
+\index{B\+C\+\_\+\+A\+S\+S\+E\+RT@{B\+C\+\_\+\+A\+S\+S\+E\+RT}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+A\+S\+S\+E\+RT}{BC\_ASSERT}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+A\+S\+S\+E\+RT(\begin{DoxyParamCaption}\item[{}]{condition,  }\item[{}]{message }\end{DoxyParamCaption})~\{ \hyperlink{namespacebc_abd3d44d6c60359e43ce37fb8983291bf}{bc\+::bc\+\_\+assert}(condition, message, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+P\+R\+E\+T\+T\+Y\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+); \}}
+
+\mbox{\Hypertarget{common_8h_a8defdcd387fc0ff898cc47b3ebe435a7}\label{common_8h_a8defdcd387fc0ff898cc47b3ebe435a7}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+A\+S\+S\+E\+RT@{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+A\+S\+S\+E\+RT}}
+\index{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+A\+S\+S\+E\+RT@{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+A\+S\+S\+E\+RT}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+A\+S\+S\+E\+RT}{BC\_CUDA\_ASSERT}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+A\+S\+S\+E\+RT(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\{ B\+C\+\_\+cuda\+\_\+assert((\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+), \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+P\+R\+E\+T\+T\+Y\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+); \}}
+
+\mbox{\Hypertarget{common_8h_ad72747f89348073accbf289d146d1686}\label{common_8h_ad72747f89348073accbf289d146d1686}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+X@{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+X}}
+\index{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+X@{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+X}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+X}{BC\_CUDA\_KERNEL\_LOOP\_X}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+X(\begin{DoxyParamCaption}\item[{}]{i,  }\item[{}]{n }\end{DoxyParamCaption})~\hyperlink{common_8h_a51a8e125a19271b0a7cb48acb6a808da}{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+\+X\+YZ}(i,n,x)}
+
+\mbox{\Hypertarget{common_8h_a51a8e125a19271b0a7cb48acb6a808da}\label{common_8h_a51a8e125a19271b0a7cb48acb6a808da}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+\+X\+YZ@{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+\+X\+YZ}}
+\index{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+\+X\+YZ@{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+\+X\+YZ}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+\+X\+YZ}{BC\_CUDA\_KERNEL\_LOOP\_XYZ}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+\+X\+YZ(\begin{DoxyParamCaption}\item[{}]{i,  }\item[{}]{n,  }\item[{}]{xyz }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = blockIdx.xyz * blockDim.xyz + threadIdx.xyz; \(\backslash\)
+        i < (n); \(\backslash\)
+        i += blockDim.xyz * gridDim.xyz)
+\end{DoxyCode}
+\mbox{\Hypertarget{common_8h_ac63d4ebab0d083456bb4a40fa3e71736}\label{common_8h_ac63d4ebab0d083456bb4a40fa3e71736}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+Y@{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+Y}}
+\index{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+Y@{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+Y}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+Y}{BC\_CUDA\_KERNEL\_LOOP\_Y}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+Y(\begin{DoxyParamCaption}\item[{}]{i,  }\item[{}]{n }\end{DoxyParamCaption})~\hyperlink{common_8h_a51a8e125a19271b0a7cb48acb6a808da}{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+\+X\+YZ}(i,n,y)}
+
+\mbox{\Hypertarget{common_8h_a6160e86d467af8bd1a4a87e417ec0a5c}\label{common_8h_a6160e86d467af8bd1a4a87e417ec0a5c}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+Z@{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+Z}}
+\index{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+Z@{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+Z}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+Z}{BC\_CUDA\_KERNEL\_LOOP\_Z}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+Z(\begin{DoxyParamCaption}\item[{}]{i,  }\item[{}]{n }\end{DoxyParamCaption})~\hyperlink{common_8h_a51a8e125a19271b0a7cb48acb6a808da}{B\+C\+\_\+\+C\+U\+D\+A\+\_\+\+K\+E\+R\+N\+E\+L\+\_\+\+L\+O\+O\+P\+\_\+\+X\+YZ}(i,n,z)}
+
+\mbox{\Hypertarget{common_8h_afe0743760bd7b796144b764d8c5ab66c}\label{common_8h_afe0743760bd7b796144b764d8c5ab66c}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+T\+AG@{B\+C\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+T\+AG}}
+\index{B\+C\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+T\+AG@{B\+C\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+T\+AG}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+T\+AG}{BC\_DEFAULT\_SYSTEM\_TAG}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+T\+AG~host\+\_\+tag}
+
+\mbox{\Hypertarget{common_8h_a86f4e2210c4647476c960638e87e390a}\label{common_8h_a86f4e2210c4647476c960638e87e390a}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA@{B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA}}
+\index{B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA@{B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA}{BC\_IF\_CUDA}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+I\+F\+\_\+\+C\+U\+DA(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{common_8h_a66c9397d965d58d8082190779806bf75}\label{common_8h_a66c9397d965d58d8082190779806bf75}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+\+I\+F\+\_\+\+N\+O\+\_\+\+C\+U\+DA@{B\+C\+\_\+\+I\+F\+\_\+\+N\+O\+\_\+\+C\+U\+DA}}
+\index{B\+C\+\_\+\+I\+F\+\_\+\+N\+O\+\_\+\+C\+U\+DA@{B\+C\+\_\+\+I\+F\+\_\+\+N\+O\+\_\+\+C\+U\+DA}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+I\+F\+\_\+\+N\+O\+\_\+\+C\+U\+DA}{BC\_IF\_NO\_CUDA}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+I\+F\+\_\+\+N\+O\+\_\+\+C\+U\+DA(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{common_8h_ad1e2e804ae91b8f8bff0231c8611d665}\label{common_8h_ad1e2e804ae91b8f8bff0231c8611d665}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+\+N\+O\+\_\+\+U\+N\+I\+Q\+U\+E\+\_\+\+A\+D\+D\+R\+E\+SS@{B\+C\+\_\+\+N\+O\+\_\+\+U\+N\+I\+Q\+U\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{B\+C\+\_\+\+N\+O\+\_\+\+U\+N\+I\+Q\+U\+E\+\_\+\+A\+D\+D\+R\+E\+SS@{B\+C\+\_\+\+N\+O\+\_\+\+U\+N\+I\+Q\+U\+E\+\_\+\+A\+D\+D\+R\+E\+SS}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+N\+O\+\_\+\+U\+N\+I\+Q\+U\+E\+\_\+\+A\+D\+D\+R\+E\+SS}{BC\_NO\_UNIQUE\_ADDRESS}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+N\+O\+\_\+\+U\+N\+I\+Q\+U\+E\+\_\+\+A\+D\+D\+R\+E\+SS}
+
+\mbox{\Hypertarget{common_8h_a921195b66fbf04bafd8a1b5457af76fa}\label{common_8h_a921195b66fbf04bafd8a1b5457af76fa}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+omp\+\_\+async\+\_\+\+\_\+@{B\+C\+\_\+omp\+\_\+async\+\_\+\+\_\+}}
+\index{B\+C\+\_\+omp\+\_\+async\+\_\+\+\_\+@{B\+C\+\_\+omp\+\_\+async\+\_\+\+\_\+}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+omp\+\_\+async\+\_\+\+\_\+}{BC\_omp\_async\_\_}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+omp\+\_\+async\+\_\+\+\_\+(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{common_8h_a59805d4470b68d29be8775ebc31a8898}\label{common_8h_a59805d4470b68d29be8775ebc31a8898}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+omp\+\_\+atomic\+\_\+\+\_\+@{B\+C\+\_\+omp\+\_\+atomic\+\_\+\+\_\+}}
+\index{B\+C\+\_\+omp\+\_\+atomic\+\_\+\+\_\+@{B\+C\+\_\+omp\+\_\+atomic\+\_\+\+\_\+}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+omp\+\_\+atomic\+\_\+\+\_\+}{BC\_omp\_atomic\_\_}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+omp\+\_\+atomic\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{common_8h_a2b3e38096874071b9dab11641462a96a}\label{common_8h_a2b3e38096874071b9dab11641462a96a}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+omp\+\_\+bar\+\_\+\+\_\+@{B\+C\+\_\+omp\+\_\+bar\+\_\+\+\_\+}}
+\index{B\+C\+\_\+omp\+\_\+bar\+\_\+\+\_\+@{B\+C\+\_\+omp\+\_\+bar\+\_\+\+\_\+}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+omp\+\_\+bar\+\_\+\+\_\+}{BC\_omp\_bar\_\_}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+omp\+\_\+bar\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{common_8h_aed02bf022c1bebbc3b15bd759120665e}\label{common_8h_aed02bf022c1bebbc3b15bd759120665e}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+omp\+\_\+for\+\_\+\+\_\+@{B\+C\+\_\+omp\+\_\+for\+\_\+\+\_\+}}
+\index{B\+C\+\_\+omp\+\_\+for\+\_\+\+\_\+@{B\+C\+\_\+omp\+\_\+for\+\_\+\+\_\+}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+omp\+\_\+for\+\_\+\+\_\+}{BC\_omp\_for\_\_}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+omp\+\_\+for\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{common_8h_a85f1852593f4cc46744f43b81a607830}\label{common_8h_a85f1852593f4cc46744f43b81a607830}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+omp\+\_\+for\+\_\+reduction\+\_\+\+\_\+@{B\+C\+\_\+omp\+\_\+for\+\_\+reduction\+\_\+\+\_\+}}
+\index{B\+C\+\_\+omp\+\_\+for\+\_\+reduction\+\_\+\+\_\+@{B\+C\+\_\+omp\+\_\+for\+\_\+reduction\+\_\+\+\_\+}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+omp\+\_\+for\+\_\+reduction\+\_\+\+\_\+}{BC\_omp\_for\_reduction\_\_}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+omp\+\_\+for\+\_\+reduction\+\_\+\+\_\+(\begin{DoxyParamCaption}\item[{}]{oper,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{common_8h_abceb30dbae586baf5a892aceb815e7a5}\label{common_8h_abceb30dbae586baf5a892aceb815e7a5}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+omp\+\_\+parallel\+\_\+\+\_\+@{B\+C\+\_\+omp\+\_\+parallel\+\_\+\+\_\+}}
+\index{B\+C\+\_\+omp\+\_\+parallel\+\_\+\+\_\+@{B\+C\+\_\+omp\+\_\+parallel\+\_\+\+\_\+}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+omp\+\_\+parallel\+\_\+\+\_\+}{BC\_omp\_parallel\_\_}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+omp\+\_\+parallel\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{common_8h_acdefe12abd1a6411554628081ec6d6f2}\label{common_8h_acdefe12abd1a6411554628081ec6d6f2}} 
+\index{common.\+h@{common.\+h}!B\+C\+\_\+\+S\+I\+Z\+E\+\_\+T@{B\+C\+\_\+\+S\+I\+Z\+E\+\_\+T}}
+\index{B\+C\+\_\+\+S\+I\+Z\+E\+\_\+T@{B\+C\+\_\+\+S\+I\+Z\+E\+\_\+T}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+\_\+\+S\+I\+Z\+E\+\_\+T}{BC\_SIZE\_T}}
+{\footnotesize\ttfamily \#define B\+C\+\_\+\+S\+I\+Z\+E\+\_\+T~int}
+
+\mbox{\Hypertarget{common_8h_adf0d8d6bff3d32b4fa9fa91abebf4002}\label{common_8h_adf0d8d6bff3d32b4fa9fa91abebf4002}} 
+\index{common.\+h@{common.\+h}!B\+C\+H\+O\+S\+T\+D\+EV@{B\+C\+H\+O\+S\+T\+D\+EV}}
+\index{B\+C\+H\+O\+S\+T\+D\+EV@{B\+C\+H\+O\+S\+T\+D\+EV}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+H\+O\+S\+T\+D\+EV}{BCHOSTDEV}}
+{\footnotesize\ttfamily \#define B\+C\+H\+O\+S\+T\+D\+EV~\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}\label{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}} 
+\index{common.\+h@{common.\+h}!B\+C\+H\+OT@{B\+C\+H\+OT}}
+\index{B\+C\+H\+OT@{B\+C\+H\+OT}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+H\+OT}{BCHOT}}
+{\footnotesize\ttfamily \#define B\+C\+H\+OT~inline}
+
+\mbox{\Hypertarget{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}\label{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}} 
+\index{common.\+h@{common.\+h}!B\+C\+I\+N\+L\+I\+NE@{B\+C\+I\+N\+L\+I\+NE}}
+\index{B\+C\+I\+N\+L\+I\+NE@{B\+C\+I\+N\+L\+I\+NE}!common.\+h@{common.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+I\+N\+L\+I\+NE}{BCINLINE}}
+{\footnotesize\ttfamily \#define B\+C\+I\+N\+L\+I\+NE~\hyperlink{common_8h_adf0d8d6bff3d32b4fa9fa91abebf4002}{B\+C\+H\+O\+S\+T\+D\+EV} inline}
+

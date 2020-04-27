@@ -1,0 +1,222 @@
+\hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{}\section{bc\+:\+:tensors\+:\+:exprs\+:\+:Bin\+\_\+\+Op$<$ Operation, Lv, Rv $>$ Struct Template Reference}
+\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op}\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op$<$ Operation, Lv, Rv $>$@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op$<$ Operation, Lv, Rv $>$}}
+
+
+{\ttfamily \#include $<$common.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:tensors\+:\+:exprs\+:\+:Bin\+\_\+\+Op$<$ Operation, Lv, Rv $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{structbc_1_1tensors_1_1exprs_1_1Bin__Op__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:tensors\+:\+:exprs\+:\+:Bin\+\_\+\+Op$<$ Operation, Lv, Rv $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{structbc_1_1tensors_1_1exprs_1_1Bin__Op__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a5e39aa2bb60266199be2fc701b0edaaf}{system\+\_\+tag} = typename Lv\+::system\+\_\+tag
+\item 
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a3928519ff927c73f5dd82ed3d4d00d6c}{value\+\_\+type} = std\+::decay\+\_\+t$<$ decltype(std\+::declval$<$ Operation $>$().operator()(std\+::declval$<$ typename Lv\+::value\+\_\+type $>$(), std\+::declval$<$ typename Rv\+::value\+\_\+type $>$()))$>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Operation \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a767518d5bd0acf986a00f69d044994f8}{get\+\_\+operation} () const
+\item 
+{\footnotesize template$<$class... Args$>$ }\\\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a573cf3bb0dda167af2e6ca585c584fd9}{Bin\+\_\+\+Op} (Lv lv, Rv rv, const Args \&... args)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a0034e76e2f2b0f48de36f38055336e4e}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} index) const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a4f15e91266888a28f787ed18ecbffe00}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} index)
+\item 
+{\footnotesize template$<$class... Integers, class  = std\+::enable\+\_\+if\+\_\+t$<$				(sizeof...(\+Integers)$>$=tensor\+\_\+iterator\+\_\+dim$>$ }\\\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a56599cd99d7f1dac59cada714a03018f}{operator()} (Integers... ints) const
+\item 
+{\footnotesize template$<$class... Integers, class  = std\+::enable\+\_\+if\+\_\+t$<$(				sizeof...(\+Integers)$>$=tensor\+\_\+iterator\+\_\+dim$>$ }\\\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a8465e6a42066c4ab94d564fedf33b475}{operator()} (Integers... ints)
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a78c087617de82b25b275e80d4171d096}{size} () const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a64a12bb5bea6788976aa13eb55dbde67}{rows} () const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_ae90cf0485e63626093ebbb6a6abf8f12}{cols} () const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_ae9ba3f351d29fa9852e90f35890127d6}{dim} (int i) const
+\item 
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a6d38ff7ba2dabc884373d141a0a2e924}{inner\+\_\+shape} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Lv \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a0fcb386ccdf770056af498257790126a}{left}
+\item 
+Rv \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a28b81329d59ce09f0260a76e5e0bd215}{right}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr int \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a36cea8ca02ccaecc1b8ce221b93a865a}{tensor\+\_\+dim}
+\item 
+static constexpr int \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_aec48bb277f9e8b990c6dbe790f13b782}{tensor\+\_\+iterator\+\_\+dim}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a5e39aa2bb60266199be2fc701b0edaaf}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a5e39aa2bb60266199be2fc701b0edaaf}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a5e39aa2bb60266199be2fc701b0edaaf}{system\+\_\+tag} =  typename Lv\+::system\+\_\+tag}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a3928519ff927c73f5dd82ed3d4d00d6c}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a3928519ff927c73f5dd82ed3d4d00d6c}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+using \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a3928519ff927c73f5dd82ed3d4d00d6c}{value\+\_\+type} =  std\+::decay\+\_\+t$<$decltype( std\+::declval$<$Operation$>$().operator()( std\+::declval$<$typename Lv\+::value\+\_\+type$>$(), std\+::declval$<$typename Rv\+::value\+\_\+type$>$()))$>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a573cf3bb0dda167af2e6ca585c584fd9}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a573cf3bb0dda167af2e6ca585c584fd9}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!Bin\+\_\+\+Op@{Bin\+\_\+\+Op}}
+\index{Bin\+\_\+\+Op@{Bin\+\_\+\+Op}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{Bin\+\_\+\+Op()}{Bin\_Op()}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+template$<$class... Args$>$ \\
+\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::\hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{Bin\+\_\+\+Op} (\begin{DoxyParamCaption}\item[{Lv}]{lv,  }\item[{Rv}]{rv,  }\item[{const Args \&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_ae90cf0485e63626093ebbb6a6abf8f12}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_ae90cf0485e63626093ebbb6a6abf8f12}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!cols@{cols}}
+\index{cols@{cols}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{cols()}{cols()}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_ae9ba3f351d29fa9852e90f35890127d6}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_ae9ba3f351d29fa9852e90f35890127d6}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!dim@{dim}}
+\index{dim@{dim}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{dim()}{dim()}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::dim (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a767518d5bd0acf986a00f69d044994f8}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a767518d5bd0acf986a00f69d044994f8}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!get\+\_\+operation@{get\+\_\+operation}}
+\index{get\+\_\+operation@{get\+\_\+operation}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{get\+\_\+operation()}{get\_operation()}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+Operation \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::get\+\_\+operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a6d38ff7ba2dabc884373d141a0a2e924}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a6d38ff7ba2dabc884373d141a0a2e924}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!inner\+\_\+shape@{inner\+\_\+shape}}
+\index{inner\+\_\+shape@{inner\+\_\+shape}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{inner\+\_\+shape()}{inner\_shape()}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::inner\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a56599cd99d7f1dac59cada714a03018f}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a56599cd99d7f1dac59cada714a03018f}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!operator()@{operator()}}
+\index{operator()@{operator()}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+template$<$class... Integers, class  = std\+::enable\+\_\+if\+\_\+t$<$				(sizeof...(\+Integers)$>$=tensor\+\_\+iterator\+\_\+dim$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::operator() (\begin{DoxyParamCaption}\item[{Integers...}]{ints }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a8465e6a42066c4ab94d564fedf33b475}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a8465e6a42066c4ab94d564fedf33b475}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!operator()@{operator()}}
+\index{operator()@{operator()}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+template$<$class... Integers, class  = std\+::enable\+\_\+if\+\_\+t$<$(				sizeof...(\+Integers)$>$=tensor\+\_\+iterator\+\_\+dim$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::operator() (\begin{DoxyParamCaption}\item[{Integers...}]{ints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a0034e76e2f2b0f48de36f38055336e4e}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a0034e76e2f2b0f48de36f38055336e4e}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a4f15e91266888a28f787ed18ecbffe00}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a4f15e91266888a28f787ed18ecbffe00}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} auto \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a64a12bb5bea6788976aa13eb55dbde67}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a64a12bb5bea6788976aa13eb55dbde67}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!rows@{rows}}
+\index{rows@{rows}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{rows()}{rows()}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a78c087617de82b25b275e80d4171d096}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a78c087617de82b25b275e80d4171d096}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!size@{size}}
+\index{size@{size}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+\hyperlink{common_8h_a6699e8b0449da5c0fafb878e59c1d4b1}{B\+C\+I\+N\+L\+I\+NE} \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a0fcb386ccdf770056af498257790126a}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a0fcb386ccdf770056af498257790126a}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!left@{left}}
+\index{left@{left}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{left}{left}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+Lv \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::left}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a28b81329d59ce09f0260a76e5e0bd215}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a28b81329d59ce09f0260a76e5e0bd215}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!right@{right}}
+\index{right@{right}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+Rv \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::right}
+
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a36cea8ca02ccaecc1b8ce221b93a865a}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_a36cea8ca02ccaecc1b8ce221b93a865a}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!tensor\+\_\+dim@{tensor\+\_\+dim}}
+\index{tensor\+\_\+dim@{tensor\+\_\+dim}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{tensor\+\_\+dim}{tensor\_dim}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+constexpr int \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::tensor\+\_\+dim\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+            bc::traits::max(Lv::tensor\_dim, Rv::tensor\_dim)
+\end{DoxyCode}
+\mbox{\Hypertarget{structbc_1_1tensors_1_1exprs_1_1Bin__Op_aec48bb277f9e8b990c6dbe790f13b782}\label{structbc_1_1tensors_1_1exprs_1_1Bin__Op_aec48bb277f9e8b990c6dbe790f13b782}} 
+\index{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}!tensor\+\_\+iterator\+\_\+dim@{tensor\+\_\+iterator\+\_\+dim}}
+\index{tensor\+\_\+iterator\+\_\+dim@{tensor\+\_\+iterator\+\_\+dim}!bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op@{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}}
+\subsubsection{\texorpdfstring{tensor\+\_\+iterator\+\_\+dim}{tensor\_iterator\_dim}}
+{\footnotesize\ttfamily template$<$class Operation, class Lv, class Rv$>$ \\
+constexpr int \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op}$<$ Operation, Lv, Rv $>$\+::tensor\+\_\+iterator\+\_\+dim\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+        is\_broadcast\_expression || !continuous\_mem\_layout ?
+            max\_dim :
+            max\_iterator
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/tensors/expression\+\_\+templates/blas\+\_\+expression\+\_\+parser/\hyperlink{tensors_2expression__templates_2blas__expression__parser_2common_8h}{common.\+h}\item 
+blackcat/tensors/expression\+\_\+templates/\hyperlink{expression__binary_8h}{expression\+\_\+binary.\+h}\end{DoxyCompactItemize}

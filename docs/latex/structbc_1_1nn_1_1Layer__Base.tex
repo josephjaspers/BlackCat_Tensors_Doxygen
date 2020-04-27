@@ -1,0 +1,539 @@
+\hypertarget{structbc_1_1nn_1_1Layer__Base}{}\section{bc\+:\+:nn\+:\+:Layer\+\_\+\+Base$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1Layer__Base}\index{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$@{bc\+::nn\+::\+Layer\+\_\+\+Base$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$}}
+
+
+{\ttfamily \#include $<$layer\+\_\+base.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:nn\+:\+:Layer\+\_\+\+Base$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Layer__Base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Layer\+\_\+\+Base$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Layer__Base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Base_a64df0ea9c50a4d6dcf59483cc797c393}{value\+\_\+type} = typename Input\+Tensor\+Descriptor\+::value\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Base_a17374088839df88dbc0c4b16fb678711}{system\+\_\+tag} = typename Input\+Tensor\+Descriptor\+::system\+\_\+tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Base_ab5858d575f0bddc2ef5fc1f9af287866}{allocator\+\_\+type} = typename Input\+Tensor\+Descriptor\+::allocator\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Base_a12d1f8cb3fac0409305a38b37ba1ccd2}{input\+\_\+tensor\+\_\+dim} = typename Input\+Tensor\+Descriptor\+::tensor\+\_\+dim
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Base_ab8cbdaad20a0270b2555a91676a79932}{shape\+\_\+type} = \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ input\+\_\+tensor\+\_\+dim\+::value $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Base_a0f7ef852a6ab48c732c099eb4108b43d}{input\+\_\+tensor\+\_\+type} = typename Input\+Tensor\+Descriptor\+::type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Base_abec4d65c97cd813612fc8e86657e1b81}{batched\+\_\+input\+\_\+tensor\+\_\+type} = typename Input\+Tensor\+Descriptor\+::batched\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Base_a599bd6711b2c80475d912ab4c4638170}{output\+\_\+value\+\_\+type} = typename Output\+Tensor\+Descriptor\+::value\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Base_a0a8227e1026be7581efc05cdc52fa052}{output\+\_\+system\+\_\+tag} = typename Output\+Tensor\+Descriptor\+::system\+\_\+tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Base_aca74d834a3499b69d2aa7f596a76a9c4}{output\+\_\+allocator\+\_\+type} = typename Output\+Tensor\+Descriptor\+::allocator\+\_\+type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Base_ad855e04b19ef691641857a3e03f9c171}{output\+\_\+tensor\+\_\+dim} = typename Output\+Tensor\+Descriptor\+::tensor\+\_\+dim
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Base_a09221e8c188d9635fdaf6bfb21ed2026}{output\+\_\+shape\+\_\+type} = \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ output\+\_\+tensor\+\_\+dim\+::value $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Base_a5e6970042ccdf89ae26040f527550314}{output\+\_\+tensor\+\_\+type} = typename Output\+Tensor\+Descriptor\+::type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Layer__Base_a5dbb24a3cc7949d33ca9f4edbfbe871a}{batched\+\_\+output\+\_\+tensor\+\_\+type} = typename Output\+Tensor\+Descriptor\+::batched\+\_\+type
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1Layer__Base_a7f39c80e492c9b0bd4bc5ebbeb629599}{Layer\+\_\+\+Base} (std\+::string \hyperlink{structbc_1_1nn_1_1Layer__Base_a3cae4e4c7061a12bb494886dc809c33b}{classname}, \hyperlink{structbc_1_1nn_1_1Layer__Base_ab8cbdaad20a0270b2555a91676a79932}{shape\+\_\+type} \hyperlink{classbc_1_1nn_1_1Layer__Input__Base_ab7d41ba8f59817a76ceecd13b47f101a}{input\+\_\+shape}, \hyperlink{structbc_1_1nn_1_1Layer__Output__Base_aa627047014ee5dff2b9cc1804c791815}{output\+\_\+shape\+\_\+type} \hyperlink{structbc_1_1nn_1_1Layer__Output__Base_a68e2547ad75da9ef3a3410a9aec85a5e}{output\+\_\+shape})
+\begin{DoxyCompactList}\small\item\em m\+\_\+classname should be initialized by supplying {\ttfamily \+\_\+\+\_\+func\+\_\+\+\_\+} to the first argument of the \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}. \end{DoxyCompactList}\item 
+\hyperlink{structbc_1_1nn_1_1Layer__Base_ae44170fd034038dcd6246a8726d2e109}{Layer\+\_\+\+Base} (std\+::string \hyperlink{structbc_1_1nn_1_1Layer__Base_a3cae4e4c7061a12bb494886dc809c33b}{classname}, \hyperlink{structbc_1_1nn_1_1Layer__Base_ab8cbdaad20a0270b2555a91676a79932}{shape\+\_\+type} \hyperlink{classbc_1_1nn_1_1Layer__Input__Base_ab7d41ba8f59817a76ceecd13b47f101a}{input\+\_\+shape})
+\item 
+virtual \hyperlink{structbc_1_1nn_1_1Layer__Base_a619861aa2a749d3eac142713765f1ead}{$\sim$\+Layer\+\_\+\+Base} ()
+\item 
+virtual \hyperlink{structbc_1_1nn_1_1Layer__Output__Base_aa627047014ee5dff2b9cc1804c791815}{output\+\_\+shape\+\_\+type} \hyperlink{structbc_1_1nn_1_1Layer__Base_aff66487c94bed067367631b29106a6d9}{get\+\_\+output\+\_\+shape} () const
+\item 
+virtual \hyperlink{structbc_1_1nn_1_1Layer__Base_ab8cbdaad20a0270b2555a91676a79932}{shape\+\_\+type} \hyperlink{structbc_1_1nn_1_1Layer__Base_a11ccc81c1df4b81149e2329e5b5c708a}{get\+\_\+input\+\_\+shape} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base_ae9e5a56e554fe06a071429670f6109dd}{get\+\_\+batched\+\_\+input\+\_\+shape} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base_ac202a8a70bb824497ad2be74b959e2a7}{get\+\_\+batched\+\_\+output\+\_\+shape} () const
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1Layer__Base_a215129f56ab675fb8249b82f8f859ac4}{input\+\_\+size} () const
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1Layer__Base_a1f5d7b9b3096649c0f2149c5917aec16}{output\+\_\+size} () const
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1Layer__Base_a2602afd12a449c9d1200254b9fce14f7}{batch\+\_\+size} () const
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1Layer__Base_a8beff5b62d525ca28e67d0c852e8a341}{batched\+\_\+input\+\_\+size} () const
+\item 
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1Layer__Base_ac4e28faccc21e1d9510821bcde89ed42}{batched\+\_\+output\+\_\+size} () const
+\item 
+void \hyperlink{structbc_1_1nn_1_1Layer__Base_a5a58881f4a7ffd91afea404227c2673c}{set\+\_\+batch\+\_\+size} (int \hyperlink{structbc_1_1nn_1_1Layer__Base_a2602afd12a449c9d1200254b9fce14f7}{batch\+\_\+size})
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Base_a8365fc3fc656aadeb0513d8e02b5fba0}{set\+\_\+batch\+\_\+size\+\_\+hook} (int \hyperlink{structbc_1_1nn_1_1Layer__Base_a2602afd12a449c9d1200254b9fce14f7}{batch\+\_\+size})
+\item 
+void \hyperlink{structbc_1_1nn_1_1Layer__Base_ae755158e9666fd592e1bdf419828ded1}{set\+\_\+learning\+\_\+rate} (\hyperlink{structbc_1_1nn_1_1Layer__Base_a64df0ea9c50a4d6dcf59483cc797c393}{value\+\_\+type} learning\+\_\+rate)
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Base_a126da3cf45e1b4a24deeff82c93772ce}{set\+\_\+learning\+\_\+rate\+\_\+hook} (\hyperlink{structbc_1_1nn_1_1Layer__Base_a64df0ea9c50a4d6dcf59483cc797c393}{value\+\_\+type} learning\+\_\+rate)
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base_a50dc1d02ae682257012f1ad5633f7d48}{get\+\_\+learning\+\_\+rate} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base_ae5fa2f2b97ec87c82cd98691dcb1ea91}{get\+\_\+batched\+\_\+learning\+\_\+rate} () const
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Base_a9613e51db3c27e64ced09e41d2e7f15c}{save} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&) const
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Base_a7bcba1c84802ca8410ba4156c9bac64a}{save\+\_\+from\+\_\+cache} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&, const \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&) const
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Base_a5b3a9854215815f810bef4922b74efaf}{load} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&)
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Base_a6f479e0d594eca051dff122cdb3fe2a1}{load\+\_\+to\+\_\+cache} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&, const \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Layer__Base_a2c4d5de71c469f678f929a9c02ee32a2}{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict} (\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&, int batch\+\_\+index)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Layer__Base_a301f77da633513064795475c390a07e7}{update\+\_\+weights} ()
+\item 
+void \hyperlink{structbc_1_1nn_1_1Layer__Base_a17fbc289c15125d52550d011d076149c}{clear\+\_\+bp\+\_\+storage} (\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&)
+\item 
+const std\+::string \& \hyperlink{structbc_1_1nn_1_1Layer__Base_a3cae4e4c7061a12bb494886dc809c33b}{classname} () const
+\begin{DoxyCompactList}\small\item\em Returns the derived\+\_\+classes class namepse. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int A\+DL = 0$>$ }\\std\+::string \hyperlink{structbc_1_1nn_1_1Layer__Base_ac29ced9ec2212afd843d87b8b661c036}{get\+\_\+string\+\_\+architecture} () const
+\item 
+virtual std\+::string \hyperlink{structbc_1_1nn_1_1Layer__Base_a0a1ff093d24d00868bc42419f75f181a}{get\+\_\+string\+\_\+architecture\+\_\+hook} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base_a93722bcd7c45ba6957645585fabab1f0}{default\+\_\+input\+\_\+tensor\+\_\+factory} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base_ad68e49c1f7a7b81c0ba5ac3537126414}{default\+\_\+output\+\_\+tensor\+\_\+factory} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base_a08bbf8b1b22ebc0e0f7e848a87b5d2db}{default\+\_\+batched\+\_\+input\+\_\+tensor\+\_\+factory} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base_a5d2f35ca3f66bc5606751c9c4e45f3df}{default\+\_\+batched\+\_\+output\+\_\+tensor\+\_\+factory} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{structbc_1_1nn_1_1Layer__Base_a1a046bb75106966abd0e0d02bfec7e16}{parse\+\_\+classname} (std\+::string \hyperlink{structbc_1_1nn_1_1Layer__Base_a3cae4e4c7061a12bb494886dc809c33b}{classname})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr \hyperlink{structbc_1_1nn_1_1Layer__Base_a64df0ea9c50a4d6dcf59483cc797c393}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Layer__Base_ac881324fe78f193bad68502be3640aa7}{default\+\_\+learning\+\_\+rate} = .\+01
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1Layer__Base_ab8cbdaad20a0270b2555a91676a79932}{shape\+\_\+type} \hyperlink{structbc_1_1nn_1_1Layer__Base_a177f9c08a4c38718cbfca7aac0df6d3f}{m\+\_\+input\+\_\+shape}
+\item 
+\hyperlink{structbc_1_1nn_1_1Layer__Output__Base_aa627047014ee5dff2b9cc1804c791815}{output\+\_\+shape\+\_\+type} \hyperlink{structbc_1_1nn_1_1Layer__Base_a01fc8358f70fd47ac93f87b437156da0}{m\+\_\+output\+\_\+shape}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_ab5858d575f0bddc2ef5fc1f9af287866}\label{structbc_1_1nn_1_1Layer__Base_ab5858d575f0bddc2ef5fc1f9af287866}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Base_ab5858d575f0bddc2ef5fc1f9af287866}{allocator\+\_\+type} =  typename Input\+Tensor\+Descriptor\+::allocator\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_abec4d65c97cd813612fc8e86657e1b81}\label{structbc_1_1nn_1_1Layer__Base_abec4d65c97cd813612fc8e86657e1b81}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!batched\+\_\+input\+\_\+tensor\+\_\+type@{batched\+\_\+input\+\_\+tensor\+\_\+type}}
+\index{batched\+\_\+input\+\_\+tensor\+\_\+type@{batched\+\_\+input\+\_\+tensor\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+input\+\_\+tensor\+\_\+type}{batched\_input\_tensor\_type}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::batched\+\_\+input\+\_\+tensor\+\_\+type =  typename Input\+Tensor\+Descriptor\+::batched\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a5dbb24a3cc7949d33ca9f4edbfbe871a}\label{structbc_1_1nn_1_1Layer__Base_a5dbb24a3cc7949d33ca9f4edbfbe871a}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!batched\+\_\+output\+\_\+tensor\+\_\+type@{batched\+\_\+output\+\_\+tensor\+\_\+type}}
+\index{batched\+\_\+output\+\_\+tensor\+\_\+type@{batched\+\_\+output\+\_\+tensor\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+output\+\_\+tensor\+\_\+type}{batched\_output\_tensor\_type}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Output__Base_a1de6ba739a49078d6cc6d169e85e8d4f}{batched\+\_\+output\+\_\+tensor\+\_\+type} =  typename Output\+Tensor\+Descriptor\+::batched\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a12d1f8cb3fac0409305a38b37ba1ccd2}\label{structbc_1_1nn_1_1Layer__Base_a12d1f8cb3fac0409305a38b37ba1ccd2}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!input\+\_\+tensor\+\_\+dim@{input\+\_\+tensor\+\_\+dim}}
+\index{input\+\_\+tensor\+\_\+dim@{input\+\_\+tensor\+\_\+dim}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{input\+\_\+tensor\+\_\+dim}{input\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::input\+\_\+tensor\+\_\+dim =  typename Input\+Tensor\+Descriptor\+::tensor\+\_\+dim}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a0f7ef852a6ab48c732c099eb4108b43d}\label{structbc_1_1nn_1_1Layer__Base_a0f7ef852a6ab48c732c099eb4108b43d}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!input\+\_\+tensor\+\_\+type@{input\+\_\+tensor\+\_\+type}}
+\index{input\+\_\+tensor\+\_\+type@{input\+\_\+tensor\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{input\+\_\+tensor\+\_\+type}{input\_tensor\_type}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::input\+\_\+tensor\+\_\+type =  typename Input\+Tensor\+Descriptor\+::type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_aca74d834a3499b69d2aa7f596a76a9c4}\label{structbc_1_1nn_1_1Layer__Base_aca74d834a3499b69d2aa7f596a76a9c4}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!output\+\_\+allocator\+\_\+type@{output\+\_\+allocator\+\_\+type}}
+\index{output\+\_\+allocator\+\_\+type@{output\+\_\+allocator\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+allocator\+\_\+type}{output\_allocator\_type}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Output__Base_a7cde98d6bf97cd5bc4aef4039ee26536}{output\+\_\+allocator\+\_\+type} =  typename Output\+Tensor\+Descriptor\+::allocator\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a09221e8c188d9635fdaf6bfb21ed2026}\label{structbc_1_1nn_1_1Layer__Base_a09221e8c188d9635fdaf6bfb21ed2026}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!output\+\_\+shape\+\_\+type@{output\+\_\+shape\+\_\+type}}
+\index{output\+\_\+shape\+\_\+type@{output\+\_\+shape\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+shape\+\_\+type}{output\_shape\_type}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Output__Base_aa627047014ee5dff2b9cc1804c791815}{output\+\_\+shape\+\_\+type} =  \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$output\+\_\+tensor\+\_\+dim\+::value$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a0a8227e1026be7581efc05cdc52fa052}\label{structbc_1_1nn_1_1Layer__Base_a0a8227e1026be7581efc05cdc52fa052}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!output\+\_\+system\+\_\+tag@{output\+\_\+system\+\_\+tag}}
+\index{output\+\_\+system\+\_\+tag@{output\+\_\+system\+\_\+tag}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+system\+\_\+tag}{output\_system\_tag}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Output__Base_ab95900f0cbd689cd1d2c187ac8d4ddd0}{output\+\_\+system\+\_\+tag} =  typename Output\+Tensor\+Descriptor\+::system\+\_\+tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_ad855e04b19ef691641857a3e03f9c171}\label{structbc_1_1nn_1_1Layer__Base_ad855e04b19ef691641857a3e03f9c171}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!output\+\_\+tensor\+\_\+dim@{output\+\_\+tensor\+\_\+dim}}
+\index{output\+\_\+tensor\+\_\+dim@{output\+\_\+tensor\+\_\+dim}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+tensor\+\_\+dim}{output\_tensor\_dim}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Output__Base_a52a461f65c3b8ae04ae445723a334e13}{output\+\_\+tensor\+\_\+dim} =  typename Output\+Tensor\+Descriptor\+::tensor\+\_\+dim}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a5e6970042ccdf89ae26040f527550314}\label{structbc_1_1nn_1_1Layer__Base_a5e6970042ccdf89ae26040f527550314}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!output\+\_\+tensor\+\_\+type@{output\+\_\+tensor\+\_\+type}}
+\index{output\+\_\+tensor\+\_\+type@{output\+\_\+tensor\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+tensor\+\_\+type}{output\_tensor\_type}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Output__Base_a57be15759728568401b4e551f8a8613b}{output\+\_\+tensor\+\_\+type} =  typename Output\+Tensor\+Descriptor\+::type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a599bd6711b2c80475d912ab4c4638170}\label{structbc_1_1nn_1_1Layer__Base_a599bd6711b2c80475d912ab4c4638170}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!output\+\_\+value\+\_\+type@{output\+\_\+value\+\_\+type}}
+\index{output\+\_\+value\+\_\+type@{output\+\_\+value\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+value\+\_\+type}{output\_value\_type}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Output__Base_acbef11226ebb0a194a319630a4f3c871}{output\+\_\+value\+\_\+type} =  typename Output\+Tensor\+Descriptor\+::value\+\_\+type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_ab8cbdaad20a0270b2555a91676a79932}\label{structbc_1_1nn_1_1Layer__Base_ab8cbdaad20a0270b2555a91676a79932}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!shape\+\_\+type@{shape\+\_\+type}}
+\index{shape\+\_\+type@{shape\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{shape\+\_\+type}{shape\_type}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Base_ab8cbdaad20a0270b2555a91676a79932}{shape\+\_\+type} =  \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$input\+\_\+tensor\+\_\+dim\+::value$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a17374088839df88dbc0c4b16fb678711}\label{structbc_1_1nn_1_1Layer__Base_a17374088839df88dbc0c4b16fb678711}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Base_a17374088839df88dbc0c4b16fb678711}{system\+\_\+tag} =  typename Input\+Tensor\+Descriptor\+::system\+\_\+tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a64df0ea9c50a4d6dcf59483cc797c393}\label{structbc_1_1nn_1_1Layer__Base_a64df0ea9c50a4d6dcf59483cc797c393}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Base_a64df0ea9c50a4d6dcf59483cc797c393}{value\+\_\+type} =  typename Input\+Tensor\+Descriptor\+::value\+\_\+type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a7f39c80e492c9b0bd4bc5ebbeb629599}\label{structbc_1_1nn_1_1Layer__Base_a7f39c80e492c9b0bd4bc5ebbeb629599}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!Layer\+\_\+\+Base@{Layer\+\_\+\+Base}}
+\index{Layer\+\_\+\+Base@{Layer\+\_\+\+Base}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{Layer\+\_\+\+Base()}{Layer\_Base()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+\hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base} (\begin{DoxyParamCaption}\item[{std\+::string}]{classname,  }\item[{\hyperlink{structbc_1_1nn_1_1Layer__Base_ab8cbdaad20a0270b2555a91676a79932}{shape\+\_\+type}}]{input\+\_\+shape,  }\item[{\hyperlink{structbc_1_1nn_1_1Layer__Output__Base_aa627047014ee5dff2b9cc1804c791815}{output\+\_\+shape\+\_\+type}}]{output\+\_\+shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+m\+\_\+classname should be initialized by supplying {\ttfamily \+\_\+\+\_\+func\+\_\+\+\_\+} to the first argument of the \hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base}. 
+
+{\ttfamily \hyperlink{structbc_1_1nn_1_1Layer__Base_a1a046bb75106966abd0e0d02bfec7e16}{parse\+\_\+classname()}} will normalize the string as {\ttfamily \+\_\+\+\_\+func\+\_\+\+\_\+} is compiler dependent. \mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_ae44170fd034038dcd6246a8726d2e109}\label{structbc_1_1nn_1_1Layer__Base_ae44170fd034038dcd6246a8726d2e109}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!Layer\+\_\+\+Base@{Layer\+\_\+\+Base}}
+\index{Layer\+\_\+\+Base@{Layer\+\_\+\+Base}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{Layer\+\_\+\+Base()}{Layer\_Base()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+\hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::\hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base} (\begin{DoxyParamCaption}\item[{std\+::string}]{classname,  }\item[{\hyperlink{structbc_1_1nn_1_1Layer__Base_ab8cbdaad20a0270b2555a91676a79932}{shape\+\_\+type}}]{input\+\_\+shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a619861aa2a749d3eac142713765f1ead}\label{structbc_1_1nn_1_1Layer__Base_a619861aa2a749d3eac142713765f1ead}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!````~Layer\+\_\+\+Base@{$\sim$\+Layer\+\_\+\+Base}}
+\index{````~Layer\+\_\+\+Base@{$\sim$\+Layer\+\_\+\+Base}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+Layer\+\_\+\+Base()}{~Layer\_Base()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+virtual \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::$\sim$\hyperlink{structbc_1_1nn_1_1Layer__Base}{Layer\+\_\+\+Base} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a2602afd12a449c9d1200254b9fce14f7}\label{structbc_1_1nn_1_1Layer__Base_a2602afd12a449c9d1200254b9fce14f7}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!batch\+\_\+size@{batch\+\_\+size}}
+\index{batch\+\_\+size@{batch\+\_\+size}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batch\+\_\+size()}{batch\_size()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::batch\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a8beff5b62d525ca28e67d0c852e8a341}\label{structbc_1_1nn_1_1Layer__Base_a8beff5b62d525ca28e67d0c852e8a341}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!batched\+\_\+input\+\_\+size@{batched\+\_\+input\+\_\+size}}
+\index{batched\+\_\+input\+\_\+size@{batched\+\_\+input\+\_\+size}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+input\+\_\+size()}{batched\_input\_size()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::batched\+\_\+input\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_ac4e28faccc21e1d9510821bcde89ed42}\label{structbc_1_1nn_1_1Layer__Base_ac4e28faccc21e1d9510821bcde89ed42}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!batched\+\_\+output\+\_\+size@{batched\+\_\+output\+\_\+size}}
+\index{batched\+\_\+output\+\_\+size@{batched\+\_\+output\+\_\+size}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+output\+\_\+size()}{batched\_output\_size()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::batched\+\_\+output\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a3cae4e4c7061a12bb494886dc809c33b}\label{structbc_1_1nn_1_1Layer__Base_a3cae4e4c7061a12bb494886dc809c33b}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!classname@{classname}}
+\index{classname@{classname}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{classname()}{classname()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+const std\+::string\& \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::classname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the derived\+\_\+classes class namepse. 
+
+Note\+: Architecture dependent \mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a17fbc289c15125d52550d011d076149c}\label{structbc_1_1nn_1_1Layer__Base_a17fbc289c15125d52550d011d076149c}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!clear\+\_\+bp\+\_\+storage@{clear\+\_\+bp\+\_\+storage}}
+\index{clear\+\_\+bp\+\_\+storage@{clear\+\_\+bp\+\_\+storage}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{clear\+\_\+bp\+\_\+storage()}{clear\_bp\_storage()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::clear\+\_\+bp\+\_\+storage (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a2c4d5de71c469f678f929a9c02ee32a2}\label{structbc_1_1nn_1_1Layer__Base_a2c4d5de71c469f678f929a9c02ee32a2}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict@{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict}}
+\index{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict@{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict()}{copy\_training\_data\_to\_single\_predict()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{,  }\item[{int}]{batch\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a08bbf8b1b22ebc0e0f7e848a87b5d2db}\label{structbc_1_1nn_1_1Layer__Base_a08bbf8b1b22ebc0e0f7e848a87b5d2db}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!default\+\_\+batched\+\_\+input\+\_\+tensor\+\_\+factory@{default\+\_\+batched\+\_\+input\+\_\+tensor\+\_\+factory}}
+\index{default\+\_\+batched\+\_\+input\+\_\+tensor\+\_\+factory@{default\+\_\+batched\+\_\+input\+\_\+tensor\+\_\+factory}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{default\+\_\+batched\+\_\+input\+\_\+tensor\+\_\+factory()}{default\_batched\_input\_tensor\_factory()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::default\+\_\+batched\+\_\+input\+\_\+tensor\+\_\+factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a5d2f35ca3f66bc5606751c9c4e45f3df}\label{structbc_1_1nn_1_1Layer__Base_a5d2f35ca3f66bc5606751c9c4e45f3df}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!default\+\_\+batched\+\_\+output\+\_\+tensor\+\_\+factory@{default\+\_\+batched\+\_\+output\+\_\+tensor\+\_\+factory}}
+\index{default\+\_\+batched\+\_\+output\+\_\+tensor\+\_\+factory@{default\+\_\+batched\+\_\+output\+\_\+tensor\+\_\+factory}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{default\+\_\+batched\+\_\+output\+\_\+tensor\+\_\+factory()}{default\_batched\_output\_tensor\_factory()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::default\+\_\+batched\+\_\+output\+\_\+tensor\+\_\+factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a93722bcd7c45ba6957645585fabab1f0}\label{structbc_1_1nn_1_1Layer__Base_a93722bcd7c45ba6957645585fabab1f0}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!default\+\_\+input\+\_\+tensor\+\_\+factory@{default\+\_\+input\+\_\+tensor\+\_\+factory}}
+\index{default\+\_\+input\+\_\+tensor\+\_\+factory@{default\+\_\+input\+\_\+tensor\+\_\+factory}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{default\+\_\+input\+\_\+tensor\+\_\+factory()}{default\_input\_tensor\_factory()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::default\+\_\+input\+\_\+tensor\+\_\+factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_ad68e49c1f7a7b81c0ba5ac3537126414}\label{structbc_1_1nn_1_1Layer__Base_ad68e49c1f7a7b81c0ba5ac3537126414}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!default\+\_\+output\+\_\+tensor\+\_\+factory@{default\+\_\+output\+\_\+tensor\+\_\+factory}}
+\index{default\+\_\+output\+\_\+tensor\+\_\+factory@{default\+\_\+output\+\_\+tensor\+\_\+factory}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{default\+\_\+output\+\_\+tensor\+\_\+factory()}{default\_output\_tensor\_factory()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::default\+\_\+output\+\_\+tensor\+\_\+factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_ae9e5a56e554fe06a071429670f6109dd}\label{structbc_1_1nn_1_1Layer__Base_ae9e5a56e554fe06a071429670f6109dd}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!get\+\_\+batched\+\_\+input\+\_\+shape@{get\+\_\+batched\+\_\+input\+\_\+shape}}
+\index{get\+\_\+batched\+\_\+input\+\_\+shape@{get\+\_\+batched\+\_\+input\+\_\+shape}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{get\+\_\+batched\+\_\+input\+\_\+shape()}{get\_batched\_input\_shape()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::get\+\_\+batched\+\_\+input\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_ae5fa2f2b97ec87c82cd98691dcb1ea91}\label{structbc_1_1nn_1_1Layer__Base_ae5fa2f2b97ec87c82cd98691dcb1ea91}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!get\+\_\+batched\+\_\+learning\+\_\+rate@{get\+\_\+batched\+\_\+learning\+\_\+rate}}
+\index{get\+\_\+batched\+\_\+learning\+\_\+rate@{get\+\_\+batched\+\_\+learning\+\_\+rate}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{get\+\_\+batched\+\_\+learning\+\_\+rate()}{get\_batched\_learning\_rate()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::get\+\_\+batched\+\_\+learning\+\_\+rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_ac202a8a70bb824497ad2be74b959e2a7}\label{structbc_1_1nn_1_1Layer__Base_ac202a8a70bb824497ad2be74b959e2a7}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!get\+\_\+batched\+\_\+output\+\_\+shape@{get\+\_\+batched\+\_\+output\+\_\+shape}}
+\index{get\+\_\+batched\+\_\+output\+\_\+shape@{get\+\_\+batched\+\_\+output\+\_\+shape}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{get\+\_\+batched\+\_\+output\+\_\+shape()}{get\_batched\_output\_shape()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::get\+\_\+batched\+\_\+output\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a11ccc81c1df4b81149e2329e5b5c708a}\label{structbc_1_1nn_1_1Layer__Base_a11ccc81c1df4b81149e2329e5b5c708a}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!get\+\_\+input\+\_\+shape@{get\+\_\+input\+\_\+shape}}
+\index{get\+\_\+input\+\_\+shape@{get\+\_\+input\+\_\+shape}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{get\+\_\+input\+\_\+shape()}{get\_input\_shape()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+virtual \hyperlink{structbc_1_1nn_1_1Layer__Base_ab8cbdaad20a0270b2555a91676a79932}{shape\+\_\+type} \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::get\+\_\+input\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a50dc1d02ae682257012f1ad5633f7d48}\label{structbc_1_1nn_1_1Layer__Base_a50dc1d02ae682257012f1ad5633f7d48}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!get\+\_\+learning\+\_\+rate@{get\+\_\+learning\+\_\+rate}}
+\index{get\+\_\+learning\+\_\+rate@{get\+\_\+learning\+\_\+rate}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{get\+\_\+learning\+\_\+rate()}{get\_learning\_rate()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::get\+\_\+learning\+\_\+rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_aff66487c94bed067367631b29106a6d9}\label{structbc_1_1nn_1_1Layer__Base_aff66487c94bed067367631b29106a6d9}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!get\+\_\+output\+\_\+shape@{get\+\_\+output\+\_\+shape}}
+\index{get\+\_\+output\+\_\+shape@{get\+\_\+output\+\_\+shape}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{get\+\_\+output\+\_\+shape()}{get\_output\_shape()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+virtual \hyperlink{structbc_1_1nn_1_1Layer__Output__Base_aa627047014ee5dff2b9cc1804c791815}{output\+\_\+shape\+\_\+type} \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::get\+\_\+output\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_ac29ced9ec2212afd843d87b8b661c036}\label{structbc_1_1nn_1_1Layer__Base_ac29ced9ec2212afd843d87b8b661c036}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!get\+\_\+string\+\_\+architecture@{get\+\_\+string\+\_\+architecture}}
+\index{get\+\_\+string\+\_\+architecture@{get\+\_\+string\+\_\+architecture}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{get\+\_\+string\+\_\+architecture()}{get\_string\_architecture()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+template$<$int A\+DL = 0$>$ \\
+std\+::string \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::get\+\_\+string\+\_\+architecture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a0a1ff093d24d00868bc42419f75f181a}\label{structbc_1_1nn_1_1Layer__Base_a0a1ff093d24d00868bc42419f75f181a}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!get\+\_\+string\+\_\+architecture\+\_\+hook@{get\+\_\+string\+\_\+architecture\+\_\+hook}}
+\index{get\+\_\+string\+\_\+architecture\+\_\+hook@{get\+\_\+string\+\_\+architecture\+\_\+hook}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{get\+\_\+string\+\_\+architecture\+\_\+hook()}{get\_string\_architecture\_hook()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+virtual std\+::string \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::get\+\_\+string\+\_\+architecture\+\_\+hook (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a215129f56ab675fb8249b82f8f859ac4}\label{structbc_1_1nn_1_1Layer__Base_a215129f56ab675fb8249b82f8f859ac4}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!input\+\_\+size@{input\+\_\+size}}
+\index{input\+\_\+size@{input\+\_\+size}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{input\+\_\+size()}{input\_size()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::input\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a5b3a9854215815f810bef4922b74efaf}\label{structbc_1_1nn_1_1Layer__Base_a5b3a9854215815f810bef4922b74efaf}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{structbc_1_1nn_1_1LSTM_ae85ec6a90fe555a1088681159a0af466}{bc\+::nn\+::\+L\+S\+T\+M$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$}, \hyperlink{structbc_1_1nn_1_1Convolution_afb8adcb9bfa9854fba8b609987ff8809}{bc\+::nn\+::\+Convolution$<$ System\+Tag, Value\+Type, Optimizer $>$}, \hyperlink{structbc_1_1nn_1_1Recurrent_aa2b86788ec2841005afb5209b7eb7282}{bc\+::nn\+::\+Recurrent$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$}, and \hyperlink{structbc_1_1nn_1_1FeedForward_a8fccd9e87dda10e01e74732ad8c71f3d}{bc\+::nn\+::\+Feed\+Forward$<$ System\+Tag, Value\+Type, Optimizer $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a6f479e0d594eca051dff122cdb3fe2a1}\label{structbc_1_1nn_1_1Layer__Base_a6f479e0d594eca051dff122cdb3fe2a1}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!load\+\_\+to\+\_\+cache@{load\+\_\+to\+\_\+cache}}
+\index{load\+\_\+to\+\_\+cache@{load\+\_\+to\+\_\+cache}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{load\+\_\+to\+\_\+cache()}{load\_to\_cache()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::load\+\_\+to\+\_\+cache (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{,  }\item[{const \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{structbc_1_1nn_1_1LSTM_a145581143a450d11a870b3c59cc1d47f}{bc\+::nn\+::\+L\+S\+T\+M$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a1f5d7b9b3096649c0f2149c5917aec16}\label{structbc_1_1nn_1_1Layer__Base_a1f5d7b9b3096649c0f2149c5917aec16}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!output\+\_\+size@{output\+\_\+size}}
+\index{output\+\_\+size@{output\+\_\+size}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+size()}{output\_size()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+\hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::output\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a1a046bb75106966abd0e0d02bfec7e16}\label{structbc_1_1nn_1_1Layer__Base_a1a046bb75106966abd0e0d02bfec7e16}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!parse\+\_\+classname@{parse\+\_\+classname}}
+\index{parse\+\_\+classname@{parse\+\_\+classname}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{parse\+\_\+classname()}{parse\_classname()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+static std\+::string \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::parse\+\_\+classname (\begin{DoxyParamCaption}\item[{std\+::string}]{classname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a9613e51db3c27e64ced09e41d2e7f15c}\label{structbc_1_1nn_1_1Layer__Base_a9613e51db3c27e64ced09e41d2e7f15c}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!save@{save}}
+\index{save@{save}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::save (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{structbc_1_1nn_1_1LSTM_ae74b5038cc10d0ad236be07704d2999a}{bc\+::nn\+::\+L\+S\+T\+M$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$}, \hyperlink{structbc_1_1nn_1_1Convolution_adf118eb4b92ed6f2df1ba31a0ce9e6e0}{bc\+::nn\+::\+Convolution$<$ System\+Tag, Value\+Type, Optimizer $>$}, \hyperlink{structbc_1_1nn_1_1Recurrent_aef30615b19b63bfc5d965a5799b7ad2c}{bc\+::nn\+::\+Recurrent$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$}, and \hyperlink{structbc_1_1nn_1_1FeedForward_afd962933712eacd56880bbba0fb5948b}{bc\+::nn\+::\+Feed\+Forward$<$ System\+Tag, Value\+Type, Optimizer $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a7bcba1c84802ca8410ba4156c9bac64a}\label{structbc_1_1nn_1_1Layer__Base_a7bcba1c84802ca8410ba4156c9bac64a}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!save\+\_\+from\+\_\+cache@{save\+\_\+from\+\_\+cache}}
+\index{save\+\_\+from\+\_\+cache@{save\+\_\+from\+\_\+cache}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{save\+\_\+from\+\_\+cache()}{save\_from\_cache()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::save\+\_\+from\+\_\+cache (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{,  }\item[{const \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{structbc_1_1nn_1_1LSTM_a270951d7af7ffcf061d02bbb046a4dc7}{bc\+::nn\+::\+L\+S\+T\+M$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a5a58881f4a7ffd91afea404227c2673c}\label{structbc_1_1nn_1_1Layer__Base_a5a58881f4a7ffd91afea404227c2673c}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!set\+\_\+batch\+\_\+size@{set\+\_\+batch\+\_\+size}}
+\index{set\+\_\+batch\+\_\+size@{set\+\_\+batch\+\_\+size}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+batch\+\_\+size()}{set\_batch\_size()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::set\+\_\+batch\+\_\+size (\begin{DoxyParamCaption}\item[{int}]{batch\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a8365fc3fc656aadeb0513d8e02b5fba0}\label{structbc_1_1nn_1_1Layer__Base_a8365fc3fc656aadeb0513d8e02b5fba0}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!set\+\_\+batch\+\_\+size\+\_\+hook@{set\+\_\+batch\+\_\+size\+\_\+hook}}
+\index{set\+\_\+batch\+\_\+size\+\_\+hook@{set\+\_\+batch\+\_\+size\+\_\+hook}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+batch\+\_\+size\+\_\+hook()}{set\_batch\_size\_hook()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::set\+\_\+batch\+\_\+size\+\_\+hook (\begin{DoxyParamCaption}\item[{int}]{batch\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{structbc_1_1nn_1_1LSTM_af58d155c9bf27beb39b9898270515507}{bc\+::nn\+::\+L\+S\+T\+M$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$}, \hyperlink{structbc_1_1nn_1_1Recurrent_a073803232421cd777c05be0362030630}{bc\+::nn\+::\+Recurrent$<$ System\+Tag, Value\+Type, Recurrent\+Non\+Linearity $>$}, and \hyperlink{structbc_1_1nn_1_1SoftMax_a0c4652a0da9f1d44e23d8856ca7b8278}{bc\+::nn\+::\+Soft\+Max$<$ System\+Tag, Value\+Type $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_ae755158e9666fd592e1bdf419828ded1}\label{structbc_1_1nn_1_1Layer__Base_ae755158e9666fd592e1bdf419828ded1}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!set\+\_\+learning\+\_\+rate@{set\+\_\+learning\+\_\+rate}}
+\index{set\+\_\+learning\+\_\+rate@{set\+\_\+learning\+\_\+rate}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+learning\+\_\+rate()}{set\_learning\_rate()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::set\+\_\+learning\+\_\+rate (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Base_a64df0ea9c50a4d6dcf59483cc797c393}{value\+\_\+type}}]{learning\+\_\+rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a126da3cf45e1b4a24deeff82c93772ce}\label{structbc_1_1nn_1_1Layer__Base_a126da3cf45e1b4a24deeff82c93772ce}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!set\+\_\+learning\+\_\+rate\+\_\+hook@{set\+\_\+learning\+\_\+rate\+\_\+hook}}
+\index{set\+\_\+learning\+\_\+rate\+\_\+hook@{set\+\_\+learning\+\_\+rate\+\_\+hook}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+learning\+\_\+rate\+\_\+hook()}{set\_learning\_rate\_hook()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::set\+\_\+learning\+\_\+rate\+\_\+hook (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Base_a64df0ea9c50a4d6dcf59483cc797c393}{value\+\_\+type}}]{learning\+\_\+rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{structbc_1_1nn_1_1LSTM_a772315b1deeaa862a59437d4a1ccf9a8}{bc\+::nn\+::\+L\+S\+T\+M$<$ System\+Tag, Value\+Type, Optimizer, Forget\+Gate\+Nonlinearity, Write\+Gate\+Nonlinearity, Input\+Gate\+Nonlinearity, Output\+Gate\+Nonlinearity, Cell\+State\+Non\+Linearity $>$}, and \hyperlink{structbc_1_1nn_1_1FeedForward_a9a3f78006d1796787166bd1bc278b13f}{bc\+::nn\+::\+Feed\+Forward$<$ System\+Tag, Value\+Type, Optimizer $>$}.
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a301f77da633513064795475c390a07e7}\label{structbc_1_1nn_1_1Layer__Base_a301f77da633513064795475c390a07e7}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!update\+\_\+weights@{update\+\_\+weights}}
+\index{update\+\_\+weights@{update\+\_\+weights}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{update\+\_\+weights()}{update\_weights()}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::update\+\_\+weights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_ac881324fe78f193bad68502be3640aa7}\label{structbc_1_1nn_1_1Layer__Base_ac881324fe78f193bad68502be3640aa7}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!default\+\_\+learning\+\_\+rate@{default\+\_\+learning\+\_\+rate}}
+\index{default\+\_\+learning\+\_\+rate@{default\+\_\+learning\+\_\+rate}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{default\+\_\+learning\+\_\+rate}{default\_learning\_rate}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+constexpr \hyperlink{structbc_1_1nn_1_1Layer__Base_a64df0ea9c50a4d6dcf59483cc797c393}{value\+\_\+type} \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::default\+\_\+learning\+\_\+rate = .\+01\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a177f9c08a4c38718cbfca7aac0df6d3f}\label{structbc_1_1nn_1_1Layer__Base_a177f9c08a4c38718cbfca7aac0df6d3f}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!m\+\_\+input\+\_\+shape@{m\+\_\+input\+\_\+shape}}
+\index{m\+\_\+input\+\_\+shape@{m\+\_\+input\+\_\+shape}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{m\+\_\+input\+\_\+shape}{m\_input\_shape}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+\hyperlink{structbc_1_1nn_1_1Layer__Base_ab8cbdaad20a0270b2555a91676a79932}{shape\+\_\+type} \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::m\+\_\+input\+\_\+shape\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Layer__Base_a01fc8358f70fd47ac93f87b437156da0}\label{structbc_1_1nn_1_1Layer__Base_a01fc8358f70fd47ac93f87b437156da0}} 
+\index{bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}!m\+\_\+output\+\_\+shape@{m\+\_\+output\+\_\+shape}}
+\index{m\+\_\+output\+\_\+shape@{m\+\_\+output\+\_\+shape}!bc\+::nn\+::\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{m\+\_\+output\+\_\+shape}{m\_output\_shape}}
+{\footnotesize\ttfamily template$<$class Derived\+Layer, class Input\+Tensor\+Descriptor, class Output\+Tensor\+Descriptor = Input\+Tensor\+Descriptor$>$ \\
+\hyperlink{structbc_1_1nn_1_1Layer__Output__Base_aa627047014ee5dff2b9cc1804c791815}{output\+\_\+shape\+\_\+type} \hyperlink{structbc_1_1nn_1_1Layer__Base}{bc\+::nn\+::\+Layer\+\_\+\+Base}$<$ Derived\+Layer, Input\+Tensor\+Descriptor, Output\+Tensor\+Descriptor $>$\+::m\+\_\+output\+\_\+shape\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/layers/\hyperlink{layer__base_8h}{layer\+\_\+base.\+h}\end{DoxyCompactItemize}

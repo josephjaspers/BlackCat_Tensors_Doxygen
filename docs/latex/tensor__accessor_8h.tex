@@ -1,0 +1,32 @@
+\hypertarget{tensor__accessor_8h}{}\section{blackcat/tensors/tensor\+\_\+accessor.h File Reference}
+\label{tensor__accessor_8h}\index{blackcat/tensors/tensor\+\_\+accessor.\+h@{blackcat/tensors/tensor\+\_\+accessor.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{tensor__accessor_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base$<$ Expression\+Template $>$}
+\item 
+class \hyperlink{classbc_1_1tensors_1_1Tensor__Accessor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Accessor\+\_\+\+Base$<$ Tensor\+Dimension, Derived $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1Scalar__Accessor}{bc\+::tensors\+::\+Scalar\+\_\+\+Accessor}
+\item 
+class \hyperlink{classbc_1_1tensors_1_1Tensor__Accessor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Accessor\+\_\+\+Base$<$ Tensor\+Dimension, Derived $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1tensors}{bc\+::tensors}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Expression\+Template $>$ }\\using \hyperlink{namespacebc_1_1tensors_ac97d14866c50588a3fd111f362caf9f1}{bc\+::tensors\+::\+Tensor\+\_\+\+Accessor} = std\+::conditional\+\_\+t$<$ Expression\+Template\+::tensor\+\_\+dim==0, Scalar\+\_\+\+Accessor, Tensor\+\_\+\+Accessor\+\_\+\+Base$<$ Expression\+Template\+::tensor\+\_\+dim, Tensor\+\_\+\+Base$<$ Expression\+Template $>$ $>$$>$
+\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+\hypertarget{array__slice_8h}{}\section{blackcat/tensors/expression\+\_\+templates/array\+\_\+slice.h File Reference}
+\label{array__slice_8h}\index{blackcat/tensors/expression\+\_\+templates/array\+\_\+slice.\+h@{blackcat/tensors/expression\+\_\+templates/array\+\_\+slice.\+h}}
+{\ttfamily \#include \char`\"{}expression\+\_\+template\+\_\+base.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}array\+\_\+kernel\+\_\+array.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}array.\+h\char`\"{}}\newline
+Include dependency graph for array\+\_\+slice.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{array__slice_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{array__slice_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{classbc_1_1tensors_1_1exprs_1_1Array__Slice}{bc\+::tensors\+::exprs\+::\+Array\+\_\+\+Slice$<$ Shape, Value\+Type, Allocator, Tags $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1tensors}{bc\+::tensors}
+\item 
+ \hyperlink{namespacebc_1_1tensors_1_1exprs}{bc\+::tensors\+::exprs}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Parent $>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1exprs_a303e3c65996497384fff7f60a1d49f43}{bc\+::tensors\+::exprs\+::make\+\_\+row} (Parent \&parent, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} index)
+\item 
+{\footnotesize template$<$class Parent $>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1exprs_a9a8865570da6e750497eed712f3f4ce6}{bc\+::tensors\+::exprs\+::make\+\_\+diagnol} (Parent \&parent, \hyperlink{namespacebc_aaf8e3fbf99b04b1b57c4f80c6f55d3c5}{bc\+::size\+\_\+t} diagnol\+\_\+index)
+\item 
+{\footnotesize template$<$class Parent , class Shape\+Like , class  = std\+::enable\+\_\+if\+\_\+t$<$\+Parent\+::tensor\+\_\+dim != 1$>$$>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1exprs_a2e5939ce461ae028e12be94821239785}{bc\+::tensors\+::exprs\+::make\+\_\+chunk} (Parent \&parent, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ Parent\+::tensor\+\_\+dim $>$ index\+\_\+points, Shape\+Like shape)
+\item 
+{\footnotesize template$<$class Parent , class Shape\+Like , class  = std\+::enable\+\_\+if\+\_\+t$<$\+Parent\+::tensor\+\_\+dim == 1$>$$>$ }\\auto \hyperlink{namespacebc_1_1tensors_1_1exprs_a08fc131daf9ebc11798cec3668ebfca8}{bc\+::tensors\+::exprs\+::make\+\_\+chunk} (Parent \&parent, \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ 1 $>$ index\+\_\+points, Shape\+Like shape)
+\end{DoxyCompactItemize}

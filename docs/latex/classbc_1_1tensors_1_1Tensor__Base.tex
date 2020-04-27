@@ -1,0 +1,673 @@
+\hypertarget{classbc_1_1tensors_1_1Tensor__Base}{}\section{bc\+:\+:tensors\+:\+:Tensor\+\_\+\+Base$<$ Expression\+Template $>$ Class Template Reference}
+\label{classbc_1_1tensors_1_1Tensor__Base}\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base$<$ Expression\+Template $>$@{bc\+::tensors\+::\+Tensor\+\_\+\+Base$<$ Expression\+Template $>$}}
+
+
+{\ttfamily \#include $<$cmath.\+h$>$}
+
+
+
+Inheritance diagram for bc\+:\+:tensors\+:\+:Tensor\+\_\+\+Base$<$ Expression\+Template $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbc_1_1tensors_1_1Tensor__Base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bc\+:\+:tensors\+:\+:Tensor\+\_\+\+Base$<$ Expression\+Template $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbc_1_1tensors_1_1Tensor__Base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1Tensor__Base_1_1Alias}{Alias}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1Tensor__Base_1_1nd__iterator__type}{nd\+\_\+iterator\+\_\+type}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1Tensor__Base_1_1nd__reverse__iterator__type}{nd\+\_\+reverse\+\_\+iterator\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ae7e5c0119f62f43ef74c5a463d3eaf13}{value\+\_\+type} = typename \hyperlink{classbc_1_1tensors_1_1Expression__Base_acda5b4e228c9b3cb9174258d5caf860a}{parent\+\_\+type\+::value\+\_\+type}
+\item 
+using \hyperlink{classbc_1_1tensors_1_1Tensor__Base_aef100d466be9075c6682ae9a2d2bd66d}{system\+\_\+tag} = typename \hyperlink{classbc_1_1tensors_1_1Expression__Base_a7c54328db22f61f881e7607b5a69b8e5}{parent\+\_\+type\+::system\+\_\+tag}
+\item 
+using \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a705cd4c3c18056c0633bd5dd7a2b6691}{move\+\_\+constructible} = typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a79f84851dcb50d4b56daa25301a3f9fb}{traits\+\_\+type\+::is\+\_\+move\+\_\+constructible}
+\item 
+using \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a08d8e4ba8980b44e1a3cf169a9c014b4}{copy\+\_\+constructible} = typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a79f84851dcb50d4b56daa25301a3f9fb}{traits\+\_\+type\+::is\+\_\+move\+\_\+constructible}
+\item 
+using \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ac337cf3053ee0fde4b954d99496598f2}{move\+\_\+assignable} = typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ae32e2d333f9a7eed4baee44455cf7b46}{traits\+\_\+type\+::is\+\_\+move\+\_\+assignable}
+\item 
+using \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ac2f69c5c3442940a65231923d6063544}{copy\+\_\+assignable} = typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ae5b90ffbe5ee242543685ac0905d8aec}{traits\+\_\+type\+::is\+\_\+copy\+\_\+assignable}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base_a9074ece5d8b8eb8206facadf8e5c1e70}{Tensor\+\_\+\+Base} ()
+\item 
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base_aabe1d25d808d5f66eb6b65a73284395b}{Tensor\+\_\+\+Base} (const expression\+\_\+type \&param)
+\item 
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base_aa410bdc31819c314f2beadc70512e914}{Tensor\+\_\+\+Base} (expression\+\_\+type \&\&param)
+\item 
+{\footnotesize template$<$class U $>$ }\\\hyperlink{classbc_1_1tensors_1_1Tensor__Base_a58644f3efe86d99dea9b7f4a8645f3b6}{Tensor\+\_\+\+Base} (const \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base}$<$ U $>$ \&tensor)
+\item 
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base_ab18c4eed615bfa6baa87c524c55a28ee}{Tensor\+\_\+\+Base} (tensor\+\_\+copy\+\_\+type tensor)
+\item 
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base_adc5d06f38b6ac0566735719a3531dfc9}{Tensor\+\_\+\+Base} (tensor\+\_\+move\+\_\+type tensor)
+\item 
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a63495fc3dadef768af28ba59e949cba3}{operator=} (tensor\+\_\+move\+\_\+type tensor) noexcept
+\item 
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a702f38f7ad53a727ef2a20ae30ca0ba0}{operator=} (tensor\+\_\+copy\+\_\+type param)
+\item 
+{\footnotesize template$<$class Value\+Type , class  = std\+::enable\+\_\+if\+\_\+t$<$std\+::is\+\_\+convertible$<$\+Value\+Type, value\+\_\+type$>$\+::value \&\& tensor\+\_\+dim==0$>$$>$ }\\\hyperlink{classbc_1_1tensors_1_1Tensor__Base_a84dd106fa62c225311f8454aa80ffb94}{Tensor\+\_\+\+Base} (Value\+Type scalar)
+\item 
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a180c98868c31934da3caa17e560fe941}{begin} () const
+\item 
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ac1cde08ed6a10c4f714cceb63c95b5e2}{begin} ()
+\item 
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a8cf2ebf74960d805544b77bb63d60581}{cbegin} () const
+\item 
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ac00d10e279006dbdd13345d73824424c}{rbegin} () const
+\item 
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a62eb4a1d5290265d64cccd58d69a89eb}{rbegin} ()
+\item 
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a9c01f2b26b657f8cfdc426c52c6d424a}{crbegin} () const
+\item 
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a07e6bf80344d58606a1e7e9cc0c86a09}{end} () const
+\item 
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a7fc3c7000d27c8861957bd40dad15b23}{end} ()
+\item 
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a36c4eaacee606e151ca6f70d9b41c26d}{cend} () const
+\item 
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a91727f32f3b0182772ebb7968259c5e1}{rend} () const
+\item 
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a667843a7f555dc076ae8db43a77d38b7}{rend} ()
+\item 
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_aed3b6743b9f37bc524d3819515b2f2f6}{crend} () const
+\item 
+{\footnotesize template$<$class... params$>$ }\\auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a976e88a1c2a72c4d8239f6667c55613c}{iter} (params... ps) const
+\item 
+{\footnotesize template$<$class... params$>$ }\\auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_aa8ac3b29d433a70e336e4b67779c700a}{iter} (params... ps)
+\item 
+{\footnotesize template$<$class... params$>$ }\\auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_aba4ea57d3cabe2b73af3087f310ed6bc}{const\+\_\+iter} (params... ps) const
+\item 
+{\footnotesize template$<$class... params$>$ }\\auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_aca9fe3360591d4220c579120e1d3bb2f}{reverse\+\_\+iter} (params... ps) const
+\item 
+{\footnotesize template$<$class... params$>$ }\\auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a26ec0cd51fdf965a59dcb79a0da7327f}{reverse\+\_\+iter} (params... ps)
+\item 
+{\footnotesize template$<$class... params$>$ }\\auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base_af4f68f420bf8b8f98addaf1ed8916ce3}{reverse\+\_\+const\+\_\+iter} (params... ps) const
+\item 
+{\footnotesize template$<$class Xpr $>$ }\\void \hyperlink{classbc_1_1tensors_1_1Tensor__Base_acbfafa3362eee3a444d847bbf23922df}{copy} (const \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base}$<$ Xpr $>$ \&rv)
+\item 
+std\+::string \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ae7c9eff826ecb4b78bd4bc23020201b6}{to\+\_\+string} (int precision=8, bool pretty=true, bool sparse=false) const
+\item 
+std\+::string \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a5545f38f28891235f7cf3595c8dcbb17}{to\+\_\+raw\+\_\+string} (int precision=8) const
+\item 
+void \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a0f01e3b10287208016ae202e823c619e}{print} (int precision=8, bool pretty=true, bool sparse=false) const
+\item 
+void \hyperlink{classbc_1_1tensors_1_1Tensor__Base_afb967f955b7d94975e0772708f9089f8}{print\+\_\+sparse} (int precision=8, bool pretty=true) const
+\item 
+void \hyperlink{classbc_1_1tensors_1_1Tensor__Base_af16daf441642b2c0bb573530f41190f1}{raw\+\_\+print} (int precision=0, bool sparse=false) const
+\item 
+void \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a383b38d30106f3c1a30faace2c4dc2f8}{print\+\_\+dims} () const
+\item 
+void \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a87110cc0533295db448dcd80e711de90}{print\+\_\+leading\+\_\+dims} () const
+\item 
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a7deaede9355e6081f561b90d1f6dee7c}{fill} (\hyperlink{classbc_1_1tensors_1_1Expression__Base_acda5b4e228c9b3cb9174258d5caf860a}{value\+\_\+type} value)
+\item 
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_abb334d0f7c42f2fefb945c59e24e9572}{zero} ()
+\item 
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a5a1eb24a1cfd808939b9782404ceccc4}{ones} ()
+\item 
+{\footnotesize template$<$class Function $>$ }\\void \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a9fe034c382e885af2cfe5d79fd71015c}{for\+\_\+each} (Function func) const
+\item 
+{\footnotesize template$<$class Function $>$ }\\void \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ae8e32bf8cf8d0c6da6310d4084d0e856}{for\+\_\+each} (Function func)
+\item 
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a49aec3b38b0206c5a738ffbfd1fd1777}{sort} ()
+\item 
+void \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ae49f60c020a5180113d54a379a886eb4}{randomize} (\hyperlink{classbc_1_1tensors_1_1Expression__Base_acda5b4e228c9b3cb9174258d5caf860a}{value\+\_\+type} lb=0, \hyperlink{classbc_1_1tensors_1_1Expression__Base_acda5b4e228c9b3cb9174258d5caf860a}{value\+\_\+type} ub=1)
+\item 
+{\footnotesize template$<$class Xpr $>$ }\\\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_abfe07c092882deebf54de9d4d1f0e570}{operator=} (const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Xpr $>$ \&param)
+\item 
+{\footnotesize template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ }\\\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a137e4c4646c288a963246df0e99f1c68}{operator=} (const Scalar\+Type \&param)
+\item 
+{\footnotesize template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ }\\\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_abe1b66e48596f43dfc7f474ce432efa3}{operator+=} (const Scalar\+Type \&param)
+\item 
+{\footnotesize template$<$class Xpr $>$ }\\\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a450511fb41ea6cd0e4462a0c5b76483f}{operator+=} (const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Xpr $>$ \&param)
+\item 
+{\footnotesize template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ }\\\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a6be23674b50827b24c31f65b331ff6af}{operator-\/=} (const Scalar\+Type \&param)
+\item 
+{\footnotesize template$<$class Xpr $>$ }\\\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ab20688e90b2046826b3fdbc7b0e6d58e}{operator-\/=} (const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Xpr $>$ \&param)
+\item 
+{\footnotesize template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ }\\\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a6864701fc5fb5078de073762d6af4344}{operator\%=} (const Scalar\+Type \&param)
+\item 
+{\footnotesize template$<$class Xpr $>$ }\\\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a3c14abdab393eadebaa55640dc26a4ee}{operator\%=} (const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Xpr $>$ \&param)
+\item 
+{\footnotesize template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ }\\\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ad80c7c925edbc5496de75d8ae6ad4d4f}{operator/=} (const Scalar\+Type \&param)
+\item 
+{\footnotesize template$<$class Xpr $>$ }\\\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type} \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_ad5855e66ed49a73164d6c88014e3dfa1}{operator/=} (const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Xpr $>$ \&param)
+\item 
+\hyperlink{structbc_1_1tensors_1_1Tensor__Base_1_1Alias}{Alias} \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a3012834f74d1604434380190c80633aa}{alias} ()
+\item 
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base_a8954fa91e95472bd16bf4922df97f5d4}{$\sim$\+Tensor\+\_\+\+Base} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr int \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a0061d78358d7085b63ee03309b4ac84f}{tensor\+\_\+dim} = parent\+\_\+type\+::tensor\+\_\+dim
+\item 
+static constexpr int \hyperlink{classbc_1_1tensors_1_1Tensor__Base_af0e5a8a4150e1345013cc05a6087d00b}{tensor\+\_\+iterator\+\_\+dim} = parent\+\_\+type\+::tensor\+\_\+iterator\+\_\+dim
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class $>$ }\\class \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a794d203bce037da65d945527a3fe4837}{Tensor\+\_\+\+Base}
+\item 
+struct \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a6d393379422d905c0c4b43a46e28e87f}{Alias}
+\item 
+std\+::ostream \& \hyperlink{classbc_1_1tensors_1_1Tensor__Base_a44788e503facb5a5c96020dac445a9a0}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base} \&self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_ac2f69c5c3442940a65231923d6063544}\label{classbc_1_1tensors_1_1Tensor__Base_ac2f69c5c3442940a65231923d6063544}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!copy\+\_\+assignable@{copy\+\_\+assignable}}
+\index{copy\+\_\+assignable@{copy\+\_\+assignable}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{copy\+\_\+assignable}{copy\_assignable}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+using \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::\hyperlink{classbc_1_1tensors_1_1Tensor__Base_ac2f69c5c3442940a65231923d6063544}{copy\+\_\+assignable} =  typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ae5b90ffbe5ee242543685ac0905d8aec}{traits\+\_\+type\+::is\+\_\+copy\+\_\+assignable}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a08d8e4ba8980b44e1a3cf169a9c014b4}\label{classbc_1_1tensors_1_1Tensor__Base_a08d8e4ba8980b44e1a3cf169a9c014b4}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!copy\+\_\+constructible@{copy\+\_\+constructible}}
+\index{copy\+\_\+constructible@{copy\+\_\+constructible}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{copy\+\_\+constructible}{copy\_constructible}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+using \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::\hyperlink{classbc_1_1tensors_1_1Tensor__Base_a08d8e4ba8980b44e1a3cf169a9c014b4}{copy\+\_\+constructible} =  typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a79f84851dcb50d4b56daa25301a3f9fb}{traits\+\_\+type\+::is\+\_\+move\+\_\+constructible}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_ac337cf3053ee0fde4b954d99496598f2}\label{classbc_1_1tensors_1_1Tensor__Base_ac337cf3053ee0fde4b954d99496598f2}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!move\+\_\+assignable@{move\+\_\+assignable}}
+\index{move\+\_\+assignable@{move\+\_\+assignable}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{move\+\_\+assignable}{move\_assignable}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+using \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::\hyperlink{classbc_1_1tensors_1_1Tensor__Base_ac337cf3053ee0fde4b954d99496598f2}{move\+\_\+assignable} =  typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_ae32e2d333f9a7eed4baee44455cf7b46}{traits\+\_\+type\+::is\+\_\+move\+\_\+assignable}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a705cd4c3c18056c0633bd5dd7a2b6691}\label{classbc_1_1tensors_1_1Tensor__Base_a705cd4c3c18056c0633bd5dd7a2b6691}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!move\+\_\+constructible@{move\+\_\+constructible}}
+\index{move\+\_\+constructible@{move\+\_\+constructible}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{move\+\_\+constructible}{move\_constructible}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+using \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::\hyperlink{classbc_1_1tensors_1_1Tensor__Base_a705cd4c3c18056c0633bd5dd7a2b6691}{move\+\_\+constructible} =  typename \hyperlink{structbc_1_1tensors_1_1exprs_1_1expression__traits_a79f84851dcb50d4b56daa25301a3f9fb}{traits\+\_\+type\+::is\+\_\+move\+\_\+constructible}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_aef100d466be9075c6682ae9a2d2bd66d}\label{classbc_1_1tensors_1_1Tensor__Base_aef100d466be9075c6682ae9a2d2bd66d}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+using \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::\hyperlink{classbc_1_1tensors_1_1Expression__Base_a7c54328db22f61f881e7607b5a69b8e5}{system\+\_\+tag} =  typename \hyperlink{classbc_1_1tensors_1_1Expression__Base_a7c54328db22f61f881e7607b5a69b8e5}{parent\+\_\+type\+::system\+\_\+tag}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_ae7e5c0119f62f43ef74c5a463d3eaf13}\label{classbc_1_1tensors_1_1Tensor__Base_ae7e5c0119f62f43ef74c5a463d3eaf13}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+using \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::\hyperlink{classbc_1_1tensors_1_1Expression__Base_acda5b4e228c9b3cb9174258d5caf860a}{value\+\_\+type} =  typename \hyperlink{classbc_1_1tensors_1_1Expression__Base_acda5b4e228c9b3cb9174258d5caf860a}{parent\+\_\+type\+::value\+\_\+type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a9074ece5d8b8eb8206facadf8e5c1e70}\label{classbc_1_1tensors_1_1Tensor__Base_a9074ece5d8b8eb8206facadf8e5c1e70}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}}
+\index{Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{Tensor\+\_\+\+Base()}{Tensor\_Base()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_aabe1d25d808d5f66eb6b65a73284395b}\label{classbc_1_1tensors_1_1Tensor__Base_aabe1d25d808d5f66eb6b65a73284395b}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}}
+\index{Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{Tensor\+\_\+\+Base()}{Tensor\_Base()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base} (\begin{DoxyParamCaption}\item[{const expression\+\_\+type \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_aa410bdc31819c314f2beadc70512e914}\label{classbc_1_1tensors_1_1Tensor__Base_aa410bdc31819c314f2beadc70512e914}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}}
+\index{Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{Tensor\+\_\+\+Base()}{Tensor\_Base()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base} (\begin{DoxyParamCaption}\item[{expression\+\_\+type \&\&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a58644f3efe86d99dea9b7f4a8645f3b6}\label{classbc_1_1tensors_1_1Tensor__Base_a58644f3efe86d99dea9b7f4a8645f3b6}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}}
+\index{Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{Tensor\+\_\+\+Base()}{Tensor\_Base()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class U $>$ \\
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base} (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base}$<$ U $>$ \&}]{tensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_ab18c4eed615bfa6baa87c524c55a28ee}\label{classbc_1_1tensors_1_1Tensor__Base_ab18c4eed615bfa6baa87c524c55a28ee}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}}
+\index{Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{Tensor\+\_\+\+Base()}{Tensor\_Base()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base} (\begin{DoxyParamCaption}\item[{tensor\+\_\+copy\+\_\+type}]{tensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_adc5d06f38b6ac0566735719a3531dfc9}\label{classbc_1_1tensors_1_1Tensor__Base_adc5d06f38b6ac0566735719a3531dfc9}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}}
+\index{Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{Tensor\+\_\+\+Base()}{Tensor\_Base()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base} (\begin{DoxyParamCaption}\item[{tensor\+\_\+move\+\_\+type}]{tensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a84dd106fa62c225311f8454aa80ffb94}\label{classbc_1_1tensors_1_1Tensor__Base_a84dd106fa62c225311f8454aa80ffb94}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}}
+\index{Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{Tensor\+\_\+\+Base()}{Tensor\_Base()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class Value\+Type , class  = std\+::enable\+\_\+if\+\_\+t$<$std\+::is\+\_\+convertible$<$\+Value\+Type, value\+\_\+type$>$\+::value \&\& tensor\+\_\+dim==0$>$$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base} (\begin{DoxyParamCaption}\item[{Value\+Type}]{scalar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a8954fa91e95472bd16bf4922df97f5d4}\label{classbc_1_1tensors_1_1Tensor__Base_a8954fa91e95472bd16bf4922df97f5d4}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!````~Tensor\+\_\+\+Base@{$\sim$\+Tensor\+\_\+\+Base}}
+\index{````~Tensor\+\_\+\+Base@{$\sim$\+Tensor\+\_\+\+Base}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+Tensor\+\_\+\+Base()}{~Tensor\_Base()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::$\sim$\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a3012834f74d1604434380190c80633aa}\label{classbc_1_1tensors_1_1Tensor__Base_a3012834f74d1604434380190c80633aa}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!alias@{alias}}
+\index{alias@{alias}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{alias()}{alias()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+\hyperlink{structbc_1_1tensors_1_1Tensor__Base_1_1Alias}{Alias} \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::alias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a180c98868c31934da3caa17e560fe941}\label{classbc_1_1tensors_1_1Tensor__Base_a180c98868c31934da3caa17e560fe941}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!begin@{begin}}
+\index{begin@{begin}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_ac1cde08ed6a10c4f714cceb63c95b5e2}\label{classbc_1_1tensors_1_1Tensor__Base_ac1cde08ed6a10c4f714cceb63c95b5e2}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!begin@{begin}}
+\index{begin@{begin}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a8cf2ebf74960d805544b77bb63d60581}\label{classbc_1_1tensors_1_1Tensor__Base_a8cf2ebf74960d805544b77bb63d60581}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!cbegin@{cbegin}}
+\index{cbegin@{cbegin}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{cbegin()}{cbegin()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::cbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a36c4eaacee606e151ca6f70d9b41c26d}\label{classbc_1_1tensors_1_1Tensor__Base_a36c4eaacee606e151ca6f70d9b41c26d}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!cend@{cend}}
+\index{cend@{cend}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{cend()}{cend()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::cend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_aba4ea57d3cabe2b73af3087f310ed6bc}\label{classbc_1_1tensors_1_1Tensor__Base_aba4ea57d3cabe2b73af3087f310ed6bc}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!const\+\_\+iter@{const\+\_\+iter}}
+\index{const\+\_\+iter@{const\+\_\+iter}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{const\+\_\+iter()}{const\_iter()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class... params$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::const\+\_\+iter (\begin{DoxyParamCaption}\item[{params...}]{ps }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_acbfafa3362eee3a444d847bbf23922df}\label{classbc_1_1tensors_1_1Tensor__Base_acbfafa3362eee3a444d847bbf23922df}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!copy@{copy}}
+\index{copy@{copy}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class Xpr $>$ \\
+void \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::copy (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base}$<$ Xpr $>$ \&}]{rv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a9c01f2b26b657f8cfdc426c52c6d424a}\label{classbc_1_1tensors_1_1Tensor__Base_a9c01f2b26b657f8cfdc426c52c6d424a}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!crbegin@{crbegin}}
+\index{crbegin@{crbegin}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{crbegin()}{crbegin()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::crbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_aed3b6743b9f37bc524d3819515b2f2f6}\label{classbc_1_1tensors_1_1Tensor__Base_aed3b6743b9f37bc524d3819515b2f2f6}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!crend@{crend}}
+\index{crend@{crend}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{crend()}{crend()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::crend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a07e6bf80344d58606a1e7e9cc0c86a09}\label{classbc_1_1tensors_1_1Tensor__Base_a07e6bf80344d58606a1e7e9cc0c86a09}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!end@{end}}
+\index{end@{end}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a7fc3c7000d27c8861957bd40dad15b23}\label{classbc_1_1tensors_1_1Tensor__Base_a7fc3c7000d27c8861957bd40dad15b23}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!end@{end}}
+\index{end@{end}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a7deaede9355e6081f561b90d1f6dee7c}\label{classbc_1_1tensors_1_1Tensor__Base_a7deaede9355e6081f561b90d1f6dee7c}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!fill@{fill}}
+\index{fill@{fill}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::fill (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1tensors_1_1Expression__Base_acda5b4e228c9b3cb9174258d5caf860a}{value\+\_\+type}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a9fe034c382e885af2cfe5d79fd71015c}\label{classbc_1_1tensors_1_1Tensor__Base_a9fe034c382e885af2cfe5d79fd71015c}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!for\+\_\+each@{for\+\_\+each}}
+\index{for\+\_\+each@{for\+\_\+each}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{for\+\_\+each()}{for\_each()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class Function $>$ \\
+void \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::for\+\_\+each (\begin{DoxyParamCaption}\item[{Function}]{func }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_ae8e32bf8cf8d0c6da6310d4084d0e856}\label{classbc_1_1tensors_1_1Tensor__Base_ae8e32bf8cf8d0c6da6310d4084d0e856}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!for\+\_\+each@{for\+\_\+each}}
+\index{for\+\_\+each@{for\+\_\+each}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{for\+\_\+each()}{for\_each()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class Function $>$ \\
+void \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::for\+\_\+each (\begin{DoxyParamCaption}\item[{Function}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_aa8ac3b29d433a70e336e4b67779c700a}\label{classbc_1_1tensors_1_1Tensor__Base_aa8ac3b29d433a70e336e4b67779c700a}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!iter@{iter}}
+\index{iter@{iter}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{iter()}{iter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class... params$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::iter (\begin{DoxyParamCaption}\item[{params...}]{ps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a976e88a1c2a72c4d8239f6667c55613c}\label{classbc_1_1tensors_1_1Tensor__Base_a976e88a1c2a72c4d8239f6667c55613c}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!iter@{iter}}
+\index{iter@{iter}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{iter()}{iter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class... params$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::iter (\begin{DoxyParamCaption}\item[{params...}]{ps }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a5a1eb24a1cfd808939b9782404ceccc4}\label{classbc_1_1tensors_1_1Tensor__Base_a5a1eb24a1cfd808939b9782404ceccc4}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!ones@{ones}}
+\index{ones@{ones}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{ones()}{ones()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::ones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a3c14abdab393eadebaa55640dc26a4ee}\label{classbc_1_1tensors_1_1Tensor__Base_a3c14abdab393eadebaa55640dc26a4ee}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!operator\%=@{operator\%=}}
+\index{operator\%=@{operator\%=}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{operator\%=()}{operator\%=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class Xpr $>$ \\
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::operator\%= (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Xpr $>$ \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a6864701fc5fb5078de073762d6af4344}\label{classbc_1_1tensors_1_1Tensor__Base_a6864701fc5fb5078de073762d6af4344}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!operator\%=@{operator\%=}}
+\index{operator\%=@{operator\%=}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{operator\%=()}{operator\%=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::operator\%= (\begin{DoxyParamCaption}\item[{const Scalar\+Type \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_abe1b66e48596f43dfc7f474ce432efa3}\label{classbc_1_1tensors_1_1Tensor__Base_abe1b66e48596f43dfc7f474ce432efa3}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const Scalar\+Type \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a450511fb41ea6cd0e4462a0c5b76483f}\label{classbc_1_1tensors_1_1Tensor__Base_a450511fb41ea6cd0e4462a0c5b76483f}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class Xpr $>$ \\
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Xpr $>$ \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a6be23674b50827b24c31f65b331ff6af}\label{classbc_1_1tensors_1_1Tensor__Base_a6be23674b50827b24c31f65b331ff6af}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{const Scalar\+Type \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_ab20688e90b2046826b3fdbc7b0e6d58e}\label{classbc_1_1tensors_1_1Tensor__Base_ab20688e90b2046826b3fdbc7b0e6d58e}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class Xpr $>$ \\
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Xpr $>$ \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_ad5855e66ed49a73164d6c88014e3dfa1}\label{classbc_1_1tensors_1_1Tensor__Base_ad5855e66ed49a73164d6c88014e3dfa1}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class Xpr $>$ \\
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::operator/= (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Xpr $>$ \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_ad80c7c925edbc5496de75d8ae6ad4d4f}\label{classbc_1_1tensors_1_1Tensor__Base_ad80c7c925edbc5496de75d8ae6ad4d4f}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::operator/= (\begin{DoxyParamCaption}\item[{const Scalar\+Type \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_abfe07c092882deebf54de9d4d1f0e570}\label{classbc_1_1tensors_1_1Tensor__Base_abfe07c092882deebf54de9d4d1f0e570}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class Xpr $>$ \\
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1tensors_1_1Expression__Base}{Expression\+\_\+\+Base}$<$ Xpr $>$ \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a137e4c4646c288a963246df0e99f1c68}\label{classbc_1_1tensors_1_1Tensor__Base_a137e4c4646c288a963246df0e99f1c68}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class Scalar\+Type , class  = enable\+\_\+if\+\_\+scalar$<$\+Scalar\+Type$>$$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::operator= (\begin{DoxyParamCaption}\item[{const Scalar\+Type \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a63495fc3dadef768af28ba59e949cba3}\label{classbc_1_1tensors_1_1Tensor__Base_a63495fc3dadef768af28ba59e949cba3}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::operator= (\begin{DoxyParamCaption}\item[{tensor\+\_\+move\+\_\+type}]{tensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a702f38f7ad53a727ef2a20ae30ca0ba0}\label{classbc_1_1tensors_1_1Tensor__Base_a702f38f7ad53a727ef2a20ae30ca0ba0}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::operator= (\begin{DoxyParamCaption}\item[{tensor\+\_\+copy\+\_\+type}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a0f01e3b10287208016ae202e823c619e}\label{classbc_1_1tensors_1_1Tensor__Base_a0f01e3b10287208016ae202e823c619e}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!print@{print}}
+\index{print@{print}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+void \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::print (\begin{DoxyParamCaption}\item[{int}]{precision = {\ttfamily 8},  }\item[{bool}]{pretty = {\ttfamily true},  }\item[{bool}]{sparse = {\ttfamily false} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a383b38d30106f3c1a30faace2c4dc2f8}\label{classbc_1_1tensors_1_1Tensor__Base_a383b38d30106f3c1a30faace2c4dc2f8}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!print\+\_\+dims@{print\+\_\+dims}}
+\index{print\+\_\+dims@{print\+\_\+dims}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{print\+\_\+dims()}{print\_dims()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+void \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::print\+\_\+dims (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a87110cc0533295db448dcd80e711de90}\label{classbc_1_1tensors_1_1Tensor__Base_a87110cc0533295db448dcd80e711de90}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!print\+\_\+leading\+\_\+dims@{print\+\_\+leading\+\_\+dims}}
+\index{print\+\_\+leading\+\_\+dims@{print\+\_\+leading\+\_\+dims}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{print\+\_\+leading\+\_\+dims()}{print\_leading\_dims()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+void \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::print\+\_\+leading\+\_\+dims (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_afb967f955b7d94975e0772708f9089f8}\label{classbc_1_1tensors_1_1Tensor__Base_afb967f955b7d94975e0772708f9089f8}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!print\+\_\+sparse@{print\+\_\+sparse}}
+\index{print\+\_\+sparse@{print\+\_\+sparse}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{print\+\_\+sparse()}{print\_sparse()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+void \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::print\+\_\+sparse (\begin{DoxyParamCaption}\item[{int}]{precision = {\ttfamily 8},  }\item[{bool}]{pretty = {\ttfamily true} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_ae49f60c020a5180113d54a379a886eb4}\label{classbc_1_1tensors_1_1Tensor__Base_ae49f60c020a5180113d54a379a886eb4}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!randomize@{randomize}}
+\index{randomize@{randomize}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{randomize()}{randomize()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+void \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::randomize (\begin{DoxyParamCaption}\item[{\hyperlink{classbc_1_1tensors_1_1Expression__Base_acda5b4e228c9b3cb9174258d5caf860a}{value\+\_\+type}}]{lb = {\ttfamily 0},  }\item[{\hyperlink{classbc_1_1tensors_1_1Expression__Base_acda5b4e228c9b3cb9174258d5caf860a}{value\+\_\+type}}]{ub = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_af16daf441642b2c0bb573530f41190f1}\label{classbc_1_1tensors_1_1Tensor__Base_af16daf441642b2c0bb573530f41190f1}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!raw\+\_\+print@{raw\+\_\+print}}
+\index{raw\+\_\+print@{raw\+\_\+print}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{raw\+\_\+print()}{raw\_print()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+void \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::raw\+\_\+print (\begin{DoxyParamCaption}\item[{int}]{precision = {\ttfamily 0},  }\item[{bool}]{sparse = {\ttfamily false} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a62eb4a1d5290265d64cccd58d69a89eb}\label{classbc_1_1tensors_1_1Tensor__Base_a62eb4a1d5290265d64cccd58d69a89eb}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{rbegin()}{rbegin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::rbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_ac00d10e279006dbdd13345d73824424c}\label{classbc_1_1tensors_1_1Tensor__Base_ac00d10e279006dbdd13345d73824424c}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{rbegin()}{rbegin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::rbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a667843a7f555dc076ae8db43a77d38b7}\label{classbc_1_1tensors_1_1Tensor__Base_a667843a7f555dc076ae8db43a77d38b7}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!rend@{rend}}
+\index{rend@{rend}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{rend()}{rend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::rend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a91727f32f3b0182772ebb7968259c5e1}\label{classbc_1_1tensors_1_1Tensor__Base_a91727f32f3b0182772ebb7968259c5e1}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!rend@{rend}}
+\index{rend@{rend}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{rend()}{rend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::rend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_af4f68f420bf8b8f98addaf1ed8916ce3}\label{classbc_1_1tensors_1_1Tensor__Base_af4f68f420bf8b8f98addaf1ed8916ce3}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!reverse\+\_\+const\+\_\+iter@{reverse\+\_\+const\+\_\+iter}}
+\index{reverse\+\_\+const\+\_\+iter@{reverse\+\_\+const\+\_\+iter}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{reverse\+\_\+const\+\_\+iter()}{reverse\_const\_iter()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class... params$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::reverse\+\_\+const\+\_\+iter (\begin{DoxyParamCaption}\item[{params...}]{ps }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a26ec0cd51fdf965a59dcb79a0da7327f}\label{classbc_1_1tensors_1_1Tensor__Base_a26ec0cd51fdf965a59dcb79a0da7327f}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!reverse\+\_\+iter@{reverse\+\_\+iter}}
+\index{reverse\+\_\+iter@{reverse\+\_\+iter}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{reverse\+\_\+iter()}{reverse\_iter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class... params$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::reverse\+\_\+iter (\begin{DoxyParamCaption}\item[{params...}]{ps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_aca9fe3360591d4220c579120e1d3bb2f}\label{classbc_1_1tensors_1_1Tensor__Base_aca9fe3360591d4220c579120e1d3bb2f}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!reverse\+\_\+iter@{reverse\+\_\+iter}}
+\index{reverse\+\_\+iter@{reverse\+\_\+iter}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{reverse\+\_\+iter()}{reverse\_iter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class... params$>$ \\
+auto \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::reverse\+\_\+iter (\begin{DoxyParamCaption}\item[{params...}]{ps }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a49aec3b38b0206c5a738ffbfd1fd1777}\label{classbc_1_1tensors_1_1Tensor__Base_a49aec3b38b0206c5a738ffbfd1fd1777}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!sort@{sort}}
+\index{sort@{sort}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::sort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a5545f38f28891235f7cf3595c8dcbb17}\label{classbc_1_1tensors_1_1Tensor__Base_a5545f38f28891235f7cf3595c8dcbb17}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!to\+\_\+raw\+\_\+string@{to\+\_\+raw\+\_\+string}}
+\index{to\+\_\+raw\+\_\+string@{to\+\_\+raw\+\_\+string}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{to\+\_\+raw\+\_\+string()}{to\_raw\_string()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+std\+::string \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::to\+\_\+raw\+\_\+string (\begin{DoxyParamCaption}\item[{int}]{precision = {\ttfamily 8} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_ae7c9eff826ecb4b78bd4bc23020201b6}\label{classbc_1_1tensors_1_1Tensor__Base_ae7c9eff826ecb4b78bd4bc23020201b6}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!to\+\_\+string@{to\+\_\+string}}
+\index{to\+\_\+string@{to\+\_\+string}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{to\+\_\+string()}{to\_string()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+std\+::string \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::to\+\_\+string (\begin{DoxyParamCaption}\item[{int}]{precision = {\ttfamily 8},  }\item[{bool}]{pretty = {\ttfamily true},  }\item[{bool}]{sparse = {\ttfamily false} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_abb334d0f7c42f2fefb945c59e24e9572}\label{classbc_1_1tensors_1_1Tensor__Base_abb334d0f7c42f2fefb945c59e24e9572}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!zero@{zero}}
+\index{zero@{zero}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{zero()}{zero()}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+\hyperlink{classbc_1_1tensors_1_1Expression__Base}{self\+\_\+type}\& \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a6d393379422d905c0c4b43a46e28e87f}\label{classbc_1_1tensors_1_1Tensor__Base_a6d393379422d905c0c4b43a46e28e87f}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!Alias@{Alias}}
+\index{Alias@{Alias}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{Alias}{Alias}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+friend struct \hyperlink{structbc_1_1tensors_1_1Tensor__Base_1_1Alias}{Alias}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a44788e503facb5a5c96020dac445a9a0}\label{classbc_1_1tensors_1_1Tensor__Base_a44788e503facb5a5c96020dac445a9a0}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base}$<$ Expression\+Template $>$ \&}]{self }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a794d203bce037da65d945527a3fe4837}\label{classbc_1_1tensors_1_1Tensor__Base_a794d203bce037da65d945527a3fe4837}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}}
+\index{Tensor\+\_\+\+Base@{Tensor\+\_\+\+Base}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{Tensor\+\_\+\+Base}{Tensor\_Base}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+template$<$class $>$ \\
+friend class \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{Tensor\+\_\+\+Base}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_a0061d78358d7085b63ee03309b4ac84f}\label{classbc_1_1tensors_1_1Tensor__Base_a0061d78358d7085b63ee03309b4ac84f}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!tensor\+\_\+dim@{tensor\+\_\+dim}}
+\index{tensor\+\_\+dim@{tensor\+\_\+dim}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{tensor\+\_\+dim}{tensor\_dim}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+constexpr int \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::tensor\+\_\+dim = parent\+\_\+type\+::tensor\+\_\+dim\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classbc_1_1tensors_1_1Tensor__Base_af0e5a8a4150e1345013cc05a6087d00b}\label{classbc_1_1tensors_1_1Tensor__Base_af0e5a8a4150e1345013cc05a6087d00b}} 
+\index{bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}!tensor\+\_\+iterator\+\_\+dim@{tensor\+\_\+iterator\+\_\+dim}}
+\index{tensor\+\_\+iterator\+\_\+dim@{tensor\+\_\+iterator\+\_\+dim}!bc\+::tensors\+::\+Tensor\+\_\+\+Base@{bc\+::tensors\+::\+Tensor\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{tensor\+\_\+iterator\+\_\+dim}{tensor\_iterator\_dim}}
+{\footnotesize\ttfamily template$<$class Expression\+Template$>$ \\
+constexpr int \hyperlink{classbc_1_1tensors_1_1Tensor__Base}{bc\+::tensors\+::\+Tensor\+\_\+\+Base}$<$ Expression\+Template $>$\+::tensor\+\_\+iterator\+\_\+dim = parent\+\_\+type\+::tensor\+\_\+iterator\+\_\+dim\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/operations/\hyperlink{cmath_8h}{cmath.\+h}\item 
+blackcat/tensors/\hyperlink{tensor__base_8h}{tensor\+\_\+base.\+h}\end{DoxyCompactItemize}

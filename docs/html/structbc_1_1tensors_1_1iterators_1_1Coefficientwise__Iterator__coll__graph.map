@@ -1,0 +1,10 @@
+<map id="bc::tensors::iterators::Coefficientwise_Iterator&lt; Direction, Tensor, enabler &gt;" name="bc::tensors::iterators::Coefficientwise_Iterator&lt; Direction, Tensor, enabler &gt;">
+<area shape="rect" id="node2" href="$classbc_1_1tensors_1_1Tensor__Base.html" title="bc::tensors::Tensor\l_Base\&lt; bc::tensors::\lexprs::Array\&lt; bc::Shape\l\&lt; dim \&gt;, ValueType, Allocator \&gt; \&gt;" alt="" coords="1225,140,1445,211"/>
+<area shape="rect" id="node3" href="$classbc_1_1tensors_1_1Expression__Base.html" title="bc::tensors::Expression\l_Base\&lt; bc::tensors::exprs\l::Array\&lt; bc::Shape\&lt; dim \&gt;\l, ValueType, Allocator \&gt; \&gt;" alt="" coords="981,61,1159,132"/>
+<area shape="rect" id="node4" href="$structbc_1_1tensors_1_1exprs_1_1Array.html" title="bc::tensors::exprs\l::Array\&lt; bc::Shape\&lt;\l dim \&gt;, ValueType, Allocator \&gt;" alt="" coords="715,69,915,125"/>
+<area shape="rect" id="node5" href="$classbc_1_1allocators_1_1Allocator.html" title="bc::allocators::Allocator\l\&lt; ValueType, SystemTag \&gt;" alt="" coords="483,28,665,69"/>
+<area shape="rect" id="node6" href="$structbc_1_1tensors_1_1exprs_1_1Kernel__Array.html" title="bc::tensors::exprs\l::Kernel_Array\&lt; bc::\lShape\&lt; dim \&gt;, ValueType,\l bc::allocator_traits\&lt;\l Allocator \&gt;::system_tag,\l Tags... \&gt;" alt="" coords="485,93,663,193"/>
+<area shape="rect" id="node7" href="$structbc_1_1tensors_1_1exprs_1_1Kernel__Array__Base.html" title="bc::tensors::exprs\l::Kernel_Array_Base\l\&lt; Kernel_Array\&lt; bc::Shape\l\&lt; dim \&gt;, ValueType, bc::\lallocator_traits\&lt; Allocator\l \&gt;::system_tag, Tags... \&gt; \&gt;" alt="" coords="251,5,433,105"/>
+<area shape="rect" id="node8" href="$structbc_1_1tensors_1_1exprs_1_1Expression__Template__Base.html" title="bc::tensors::exprs\l::Expression_Template\l_Base\&lt; Kernel_Array\&lt; bc\l::Shape\&lt; dim \&gt;, ValueType,\l bc::allocator_traits\&lt; Allocator\l \&gt;::system_tag, Tags... \&gt; \&gt;" alt="" coords="5,5,201,105"/>
+<area shape="rect" id="node9" href="$structbc_1_1Shape.html" title="bc::Shape\&lt; dim \&gt;" alt="" coords="279,130,405,157"/>
+</map>

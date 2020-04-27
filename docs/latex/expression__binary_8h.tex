@@ -1,0 +1,64 @@
+\hypertarget{expression__binary_8h}{}\section{blackcat/tensors/expression\+\_\+templates/expression\+\_\+binary.h File Reference}
+\label{expression__binary_8h}\index{blackcat/tensors/expression\+\_\+templates/expression\+\_\+binary.\+h@{blackcat/tensors/expression\+\_\+templates/expression\+\_\+binary.\+h}}
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include \char`\"{}expression\+\_\+template\+\_\+base.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}blas\+\_\+expression\+\_\+template\+\_\+traits.\+h\char`\"{}}\newline
+Include dependency graph for expression\+\_\+binary.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{expression__binary_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{expression__binary_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1Bin__Op}{bc\+::tensors\+::exprs\+::\+Bin\+\_\+\+Op$<$ Operation, Lv, Rv $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1blas__expression__traits}{bc\+::tensors\+::exprs\+::blas\+\_\+expression\+\_\+traits$<$ T $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory}{bc\+::tensors\+::exprs\+::detail\+::bin\+\_\+expr\+\_\+factory$<$ Op, Lv, Rv, class $>$}
+\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01Add_00_01Lv_00_01Un__Op_3_01Negation_00_01Rv_01_4_01_4}{bc\+::tensors\+::exprs\+::detail\+::bin\+\_\+expr\+\_\+factory$<$ Add, Lv, Un\+\_\+\+Op$<$ Negation, Rv $>$ $>$}
+\begin{DoxyCompactList}\small\item\em y + (-\/x) -\/$>$ y -\/ x \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01Sub_00_01Lv_00_01Un__Op_3_01Negation_00_01Rv_01_4_01_4}{bc\+::tensors\+::exprs\+::detail\+::bin\+\_\+expr\+\_\+factory$<$ Sub, Lv, Un\+\_\+\+Op$<$ Negation, Rv $>$ $>$}
+\begin{DoxyCompactList}\small\item\em y -\/ (-\/x) -\/$>$ y + x \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01Sub_00_01Un__Op_3_01Negation_00_01Lv_01_4_00_01Rv_01_4}{bc\+::tensors\+::exprs\+::detail\+::bin\+\_\+expr\+\_\+factory$<$ Sub, Un\+\_\+\+Op$<$ Negation, Lv $>$, Rv $>$}
+\begin{DoxyCompactList}\small\item\em (-\/y) + x -\/$>$ x -\/ y \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01Sub_00_01Un__Op_3_01Negation_004b0c12d341e754dc0e6fb842519b678e}{bc\+::tensors\+::exprs\+::detail\+::bin\+\_\+expr\+\_\+factory$<$ Sub, Un\+\_\+\+Op$<$ Negation, Lv $>$, Un\+\_\+\+Op$<$ Negation, Rv $>$ $>$}
+\begin{DoxyCompactList}\small\item\em (-\/y) -\/ (-\/x) -\/$>$ x -\/ y //specialized to handle ambiguous overload \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01Add_00_01Un__Op_3_01Negation_00d86892bae805f04f4b10908e626a3cb5}{bc\+::tensors\+::exprs\+::detail\+::bin\+\_\+expr\+\_\+factory$<$ Add, Un\+\_\+\+Op$<$ Negation, Lv $>$, Un\+\_\+\+Op$<$ Negation, Rv $>$ $>$}
+\begin{DoxyCompactList}\small\item\em (-\/y) + (-\/x) -\/$>$ (-\/y) -\/ x //specialized to handle ambiguous overload \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01Add__Assign_00_01Lv_00_01Un__Op_3_01Negation_00_01Rv_01_4_01_4}{bc\+::tensors\+::exprs\+::detail\+::bin\+\_\+expr\+\_\+factory$<$ Add\+\_\+\+Assign, Lv, Un\+\_\+\+Op$<$ Negation, Rv $>$ $>$}
+\begin{DoxyCompactList}\small\item\em y += (-\/x) -\/$>$ y -\/= x \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01Sub__Assign_00_01Lv_00_01Un__Op_3_01Negation_00_01Rv_01_4_01_4}{bc\+::tensors\+::exprs\+::detail\+::bin\+\_\+expr\+\_\+factory$<$ Sub\+\_\+\+Assign, Lv, Un\+\_\+\+Op$<$ Negation, Rv $>$ $>$}
+\begin{DoxyCompactList}\small\item\em y -\/= (-\/x) -\/$>$ y += x \end{DoxyCompactList}\item 
+struct \hyperlink{structbc_1_1tensors_1_1exprs_1_1detail_1_1bin__expr__factory_3_01bc_1_1oper_1_1Scalar__Mul_00_0179bec0862a78086fe62692cba7b203b3}{bc\+::tensors\+::exprs\+::detail\+::bin\+\_\+expr\+\_\+factory$<$ bc\+::oper\+::\+Scalar\+\_\+\+Mul, Lv, Rv, std\+::enable\+\_\+if\+\_\+t$<$ expression\+\_\+traits$<$ Lv $>$\+::is\+\_\+blas\+\_\+expression\+::value !=expression\+\_\+traits$<$ Rv $>$\+::is\+\_\+blas\+\_\+expression\+::value $>$ $>$}
+\begin{DoxyCompactList}\small\item\em scalar $\ast$ blas\+\_\+op(a, b) -\/$>$ blas\+\_\+op(a $\ast$ scalar, b) $\vert$$\vert$ blas\+\_\+op(a, b $\ast$ scalar) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1tensors}{bc\+::tensors}
+\item 
+ \hyperlink{namespacebc_1_1tensors_1_1exprs}{bc\+::tensors\+::exprs}
+\item 
+ \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail}{bc\+::tensors\+::exprs\+::detail}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Op , class Lv , class Rv , class... Args$>$ }\\\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} auto \hyperlink{namespacebc_1_1tensors_1_1exprs_1_1detail_a710acb08a5ec6aaac546f59ac5368231}{bc\+::tensors\+::exprs\+::detail\+::mk\+\_\+bin\+\_\+op} (Lv left, Rv right, Args \&\&... args)
+\item 
+{\footnotesize template$<$class Op , class Lv , class Rv $>$ }\\\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} auto \hyperlink{namespacebc_1_1tensors_1_1exprs_ab117a0b2ba90c87666962cbfd53db54b}{bc\+::tensors\+::exprs\+::make\+\_\+bin\+\_\+expr} (Lv left, Rv right, Op oper)
+\item 
+{\footnotesize template$<$class Op , class Lv , class Rv , class... Args$>$ }\\\hyperlink{common_8h_ac085f07cc309e3aac24aa3fc0a40f6d2}{B\+C\+H\+OT} auto \hyperlink{namespacebc_1_1tensors_1_1exprs_a364989ca47000094471fc531fcec0a2f}{bc\+::tensors\+::exprs\+::make\+\_\+bin\+\_\+expr} (Lv left, Rv right, Args \&\&... args)
+\end{DoxyCompactItemize}

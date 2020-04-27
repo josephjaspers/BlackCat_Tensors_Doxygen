@@ -1,0 +1,1060 @@
+\hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base}{}\section{bc\+:\+:nn\+:\+:Polymorphic\+\_\+\+Layer\+\_\+\+Base$<$ Dimension, Value\+Type, System\+Tag, Allocator, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$ Struct Template Reference}
+\label{structbc_1_1nn_1_1Polymorphic__Layer__Base}\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base$<$ Dimension, Value\+Type, System\+Tag, Allocator, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base$<$ Dimension, Value\+Type, System\+Tag, Allocator, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$}}
+
+
+{\ttfamily \#include $<$polymorphic\+\_\+layer\+\_\+base.\+h$>$}
+
+
+
+Collaboration diagram for bc\+:\+:nn\+:\+:Polymorphic\+\_\+\+Layer\+\_\+\+Base$<$ Dimension, Value\+Type, System\+Tag, Allocator, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structbc_1_1nn_1_1Polymorphic__Layer__Base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}{allocator\+\_\+type} = \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a038901ff126b59392a45ffb2d839b3b0}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9cf367e8f043b3bc7ac8ce8f5aeaa832}{input\+\_\+tensor\+\_\+dimension} = Dimension
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a5ad2ab7a9e1bef167adba39b581bdeac}{batched\+\_\+input\+\_\+tensor\+\_\+dimension} = \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$ Dimension\+::value+1 $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a099ec870d177606464f40dfb496d31a2}{output\+\_\+tensor\+\_\+dimension} = Output\+Dimension
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a012247fd372f38d7156bda51bdd74a70}{batched\+\_\+output\+\_\+tensor\+\_\+dimension} = \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$ Output\+Dimension\+::value+1 $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a15d1092569f56625cbdf8d7045e66391}{output\+\_\+value\+\_\+type} = Output\+Value\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aeb60d2b5eb18d542fecd5a34fc122bf0}{output\+\_\+system\+\_\+tag} = Output\+System\+Tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}{output\+\_\+allocator\+\_\+type} = Output\+Allocator
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a099ec870d177606464f40dfb496d31a2}{output\+\_\+tensor\+\_\+dimension}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a15d1092569f56625cbdf8d7045e66391}{output\+\_\+value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aeb60d2b5eb18d542fecd5a34fc122bf0}{output\+\_\+system\+\_\+tag} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9cf367e8f043b3bc7ac8ce8f5aeaa832}{input\+\_\+tensor\+\_\+dimension}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a038901ff126b59392a45ffb2d839b3b0}{system\+\_\+tag} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_accd9d828714e1abe620fa89aa1556757}{input\+\_\+tensor\+\_\+type} = \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$ input\+\_\+tensor\+\_\+dimension\+::value, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}{allocator\+\_\+type} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aaa3bdb6355a104df7c68d46fd4ffa15a}{output\+\_\+tensor\+\_\+type} = \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$ output\+\_\+tensor\+\_\+dimension\+::value, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}{output\+\_\+allocator\+\_\+type} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} = \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$ input\+\_\+tensor\+\_\+dimension\+::value+1, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}{allocator\+\_\+type} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} = \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$ output\+\_\+tensor\+\_\+dimension\+::value+1, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}{output\+\_\+allocator\+\_\+type} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6240b9012fcc8ed91d8a41f07d7c4bd9}{this\+\_\+layer\+\_\+pointer\+\_\+type} = std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6f8d2b06bb46d0ef96d0857df2544731}{next\+\_\+layer\+\_\+pointer\+\_\+type} = std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad69ba46ce14f9fbef88b834828052ab4}{input\+\_\+shape\+\_\+type} = \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ input\+\_\+tensor\+\_\+dimension\+::value $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a130df92a457150349fe554eeee4dd32a}{output\+\_\+shape\+\_\+type} = \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ output\+\_\+tensor\+\_\+dimension\+::value $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}{allocator\+\_\+type} = \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type} = Value\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a038901ff126b59392a45ffb2d839b3b0}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9cf367e8f043b3bc7ac8ce8f5aeaa832}{input\+\_\+tensor\+\_\+dimension} = Dimension
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a5ad2ab7a9e1bef167adba39b581bdeac}{batched\+\_\+input\+\_\+tensor\+\_\+dimension} = \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$ Dimension\+::value+1 $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a099ec870d177606464f40dfb496d31a2}{output\+\_\+tensor\+\_\+dimension} = Output\+Dimension
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a012247fd372f38d7156bda51bdd74a70}{batched\+\_\+output\+\_\+tensor\+\_\+dimension} = \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$ Output\+Dimension\+::value+1 $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a15d1092569f56625cbdf8d7045e66391}{output\+\_\+value\+\_\+type} = Output\+Value\+Type
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aeb60d2b5eb18d542fecd5a34fc122bf0}{output\+\_\+system\+\_\+tag} = Output\+System\+Tag
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}{output\+\_\+allocator\+\_\+type} = Output\+Allocator
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a099ec870d177606464f40dfb496d31a2}{output\+\_\+tensor\+\_\+dimension}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a15d1092569f56625cbdf8d7045e66391}{output\+\_\+value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aeb60d2b5eb18d542fecd5a34fc122bf0}{output\+\_\+system\+\_\+tag} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type} = \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9cf367e8f043b3bc7ac8ce8f5aeaa832}{input\+\_\+tensor\+\_\+dimension}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a038901ff126b59392a45ffb2d839b3b0}{system\+\_\+tag} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_accd9d828714e1abe620fa89aa1556757}{input\+\_\+tensor\+\_\+type} = \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$ input\+\_\+tensor\+\_\+dimension\+::value, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}{allocator\+\_\+type} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aaa3bdb6355a104df7c68d46fd4ffa15a}{output\+\_\+tensor\+\_\+type} = \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$ output\+\_\+tensor\+\_\+dimension\+::value, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}{output\+\_\+allocator\+\_\+type} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} = \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$ input\+\_\+tensor\+\_\+dimension\+::value+1, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}{allocator\+\_\+type} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} = \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$ output\+\_\+tensor\+\_\+dimension\+::value+1, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}{output\+\_\+allocator\+\_\+type} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6240b9012fcc8ed91d8a41f07d7c4bd9}{this\+\_\+layer\+\_\+pointer\+\_\+type} = std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6f8d2b06bb46d0ef96d0857df2544731}{next\+\_\+layer\+\_\+pointer\+\_\+type} = std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type} $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad69ba46ce14f9fbef88b834828052ab4}{input\+\_\+shape\+\_\+type} = \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ input\+\_\+tensor\+\_\+dimension\+::value $>$
+\item 
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a130df92a457150349fe554eeee4dd32a}{output\+\_\+shape\+\_\+type} = \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$ output\+\_\+tensor\+\_\+dimension\+::value $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1b02e9a8e1b085c3b1eda984de21ce93}{Polymorphic\+\_\+\+Layer\+\_\+\+Base} (std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a3a63312d3100e6a6c31ba6bd16578aa7}{classname})
+\item 
+virtual \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6d3d973826a90e84e1f1ef3127198388}{$\sim$\+Polymorphic\+\_\+\+Layer\+\_\+\+Base} ()=default
+\item 
+{\footnotesize template$<$int A\+DL = 0$>$ }\\std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a987b737aeb1b1000dcb1b67ea551087b}{get\+\_\+string\+\_\+architecture} () const
+\item 
+virtual \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a0dc71591b6ca387501c2cace61be3e78}{forward\+\_\+propagation} (const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \&inputs)=0
+\item 
+virtual \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae68fb249544a51c79be7aca6fb4a0727}{back\+\_\+propagation} (const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \&delta)=0
+\item 
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a71ab20a7baff5faf1c3d5ff16552a983}{fp} (const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \&inputs)
+\item 
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a317faf7f621b09947ac22385d26e61e4}{bp} (const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \&delta)
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac4e83d85cab03ae8ac5d918fe4e08df6}{update\+\_\+weights} ()
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a2259b176573690bfbbc93adc743212c9}{init} ()=0
+\item 
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4d11290c40096f27144a6ec9fa976b12}{set\+\_\+batch\+\_\+size} (int bs)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9ca5f068a02a1b132d8a90e2c307b4d9}{set\+\_\+learning\+\_\+rate} (double lr)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type} $>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aaecf0bed7f2e610b7b923dbc3d4a81d6}{prev} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type} $>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a0e55941ac286ccaf77b4c810a8f1cd09}{prev} () const
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type} $>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_afe77ff310be16c9357ea66bec8d6306b}{next} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type} $>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a042ca1b5f4e9c78fa9953e3f310972a5}{next} () const
+\item 
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4555d0376d65ee631208b5aa6f67d7f2}{set\+\_\+prev} (\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6240b9012fcc8ed91d8a41f07d7c4bd9}{this\+\_\+layer\+\_\+pointer\+\_\+type} prev\+\_\+layer)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a852126e97fd34bcc24c446615e3df3fa}{set\+\_\+next} (\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6f8d2b06bb46d0ef96d0857df2544731}{next\+\_\+layer\+\_\+pointer\+\_\+type} next\+\_\+layer)
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a107ffea414142eb7be7aa45f0387f966}{batch\+\_\+size} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1b07bace4eb7d7255881d13358c29d26}{learning\+\_\+rate} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4a592f412e5a7908293385d2e1f567d5}{batched\+\_\+learning\+\_\+rate} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad62346d67a5ad6fbf84999e9254455b8}{input\+\_\+shape} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa1e0b2c8f3de5576b73a27db6316b139}{output\+\_\+shape} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a362477a099ec16eeafcda0527ca711b2}{batched\+\_\+input\+\_\+shape} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a93154c06cdfce8282d48a114055d3e2a}{batched\+\_\+output\+\_\+shape} () const
+\item 
+std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a3a63312d3100e6a6c31ba6bd16578aa7}{classname} () const
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa3a70d0ea45bdd0d9f9932d7fafe3d3e}{save} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&) const =0
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a7ec52a754f51ae14d655de2e7ae2e1a6}{save\+\_\+from\+\_\+cache} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&, \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&) const
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ab22a722386024a1329715e738d57814c}{load} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&)=0
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a2e1cbfa3ead765b5eddcdbb617b08ecd}{load\+\_\+to\+\_\+cache} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&, \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1233eecaa679d32a0203c13870cbe564}{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict} (\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&, int batch\+\_\+index)
+\item 
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1b02e9a8e1b085c3b1eda984de21ce93}{Polymorphic\+\_\+\+Layer\+\_\+\+Base} (std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a3a63312d3100e6a6c31ba6bd16578aa7}{classname})
+\item 
+virtual \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6d3d973826a90e84e1f1ef3127198388}{$\sim$\+Polymorphic\+\_\+\+Layer\+\_\+\+Base} ()=default
+\item 
+{\footnotesize template$<$int A\+DL = 0$>$ }\\std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a987b737aeb1b1000dcb1b67ea551087b}{get\+\_\+string\+\_\+architecture} () const
+\item 
+virtual \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a0dc71591b6ca387501c2cace61be3e78}{forward\+\_\+propagation} (const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \&inputs)=0
+\item 
+virtual \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae68fb249544a51c79be7aca6fb4a0727}{back\+\_\+propagation} (const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \&delta)=0
+\item 
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a71ab20a7baff5faf1c3d5ff16552a983}{fp} (const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \&inputs)
+\item 
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a317faf7f621b09947ac22385d26e61e4}{bp} (const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \&delta)
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac4e83d85cab03ae8ac5d918fe4e08df6}{update\+\_\+weights} ()
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a2259b176573690bfbbc93adc743212c9}{init} ()=0
+\item 
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4d11290c40096f27144a6ec9fa976b12}{set\+\_\+batch\+\_\+size} (int bs)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9ca5f068a02a1b132d8a90e2c307b4d9}{set\+\_\+learning\+\_\+rate} (double lr)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type} $>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aaecf0bed7f2e610b7b923dbc3d4a81d6}{prev} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type} $>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a0e55941ac286ccaf77b4c810a8f1cd09}{prev} () const
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type} $>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_afe77ff310be16c9357ea66bec8d6306b}{next} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type} $>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a042ca1b5f4e9c78fa9953e3f310972a5}{next} () const
+\item 
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4555d0376d65ee631208b5aa6f67d7f2}{set\+\_\+prev} (\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6240b9012fcc8ed91d8a41f07d7c4bd9}{this\+\_\+layer\+\_\+pointer\+\_\+type} prev\+\_\+layer)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a852126e97fd34bcc24c446615e3df3fa}{set\+\_\+next} (\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6f8d2b06bb46d0ef96d0857df2544731}{next\+\_\+layer\+\_\+pointer\+\_\+type} next\+\_\+layer)
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a107ffea414142eb7be7aa45f0387f966}{batch\+\_\+size} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1b07bace4eb7d7255881d13358c29d26}{learning\+\_\+rate} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4a592f412e5a7908293385d2e1f567d5}{batched\+\_\+learning\+\_\+rate} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad62346d67a5ad6fbf84999e9254455b8}{input\+\_\+shape} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa1e0b2c8f3de5576b73a27db6316b139}{output\+\_\+shape} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a362477a099ec16eeafcda0527ca711b2}{batched\+\_\+input\+\_\+shape} () const
+\item 
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a93154c06cdfce8282d48a114055d3e2a}{batched\+\_\+output\+\_\+shape} () const
+\item 
+std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a3a63312d3100e6a6c31ba6bd16578aa7}{classname} () const
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa3a70d0ea45bdd0d9f9932d7fafe3d3e}{save} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&) const =0
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a7ec52a754f51ae14d655de2e7ae2e1a6}{save\+\_\+from\+\_\+cache} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&, \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&) const
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ab22a722386024a1329715e738d57814c}{load} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&)=0
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a2e1cbfa3ead765b5eddcdbb617b08ecd}{load\+\_\+to\+\_\+cache} (\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&, \hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&)
+\item 
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1233eecaa679d32a0203c13870cbe564}{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict} (\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&, int batch\+\_\+index)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac44549f47e2cac1e9b8e16a2ed2a7d41}{parse\+\_\+classname} (std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a3a63312d3100e6a6c31ba6bd16578aa7}{classname})
+\item 
+static std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac44549f47e2cac1e9b8e16a2ed2a7d41}{parse\+\_\+classname} (std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a3a63312d3100e6a6c31ba6bd16578aa7}{classname})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6f05310307def656069b64a7fb7cbf91}{y}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a21d145beb5e9f571e5e474171d47dff6}{set\+\_\+batch\+\_\+size\+\_\+hook} (int bs)
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_add15aef38db94de6066d048149723eea}{set\+\_\+learning\+\_\+rate\+\_\+hook} (double lr)
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a21d145beb5e9f571e5e474171d47dff6}{set\+\_\+batch\+\_\+size\+\_\+hook} (int bs)
+\item 
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_add15aef38db94de6066d048149723eea}{set\+\_\+learning\+\_\+rate\+\_\+hook} (double lr)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}{allocator\+\_\+type} $>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a871e8bf7f3ea5e729e00c6bb6ae6f769}{m\+\_\+allocator}
+\item 
+std\+::weak\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type} $>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_abf80deb81025924557a3f7eca809d4e3}{m\+\_\+input\+\_\+layer}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type} $>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9fed7a02ea5b0ea5bea55e8060e1ded2}{m\+\_\+output\+\_\+layer}
+\item 
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad69ba46ce14f9fbef88b834828052ab4}{input\+\_\+shape\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a0e1021b5d112fed042d030eb5d44b7c2}{m\+\_\+input\+\_\+shape}
+\item 
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a130df92a457150349fe554eeee4dd32a}{output\+\_\+shape\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6706ea4d62aee77f603a0c723e7088eb}{m\+\_\+output\+\_\+shape}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}{allocator\+\_\+type} =  \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!allocator\+\_\+type@{allocator\+\_\+type}}
+\index{allocator\+\_\+type@{allocator\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{allocator\+\_\+type}{allocator\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}{allocator\+\_\+type} =  \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a5ad2ab7a9e1bef167adba39b581bdeac}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a5ad2ab7a9e1bef167adba39b581bdeac}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batched\+\_\+input\+\_\+tensor\+\_\+dimension@{batched\+\_\+input\+\_\+tensor\+\_\+dimension}}
+\index{batched\+\_\+input\+\_\+tensor\+\_\+dimension@{batched\+\_\+input\+\_\+tensor\+\_\+dimension}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+input\+\_\+tensor\+\_\+dimension}{batched\_input\_tensor\_dimension}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a5ad2ab7a9e1bef167adba39b581bdeac}{batched\+\_\+input\+\_\+tensor\+\_\+dimension} =  \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$Dimension\+::value+1$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a5ad2ab7a9e1bef167adba39b581bdeac}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a5ad2ab7a9e1bef167adba39b581bdeac}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batched\+\_\+input\+\_\+tensor\+\_\+dimension@{batched\+\_\+input\+\_\+tensor\+\_\+dimension}}
+\index{batched\+\_\+input\+\_\+tensor\+\_\+dimension@{batched\+\_\+input\+\_\+tensor\+\_\+dimension}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+input\+\_\+tensor\+\_\+dimension}{batched\_input\_tensor\_dimension}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a5ad2ab7a9e1bef167adba39b581bdeac}{batched\+\_\+input\+\_\+tensor\+\_\+dimension} =  \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$Dimension\+::value+1$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batched\+\_\+input\+\_\+tensor\+\_\+type@{batched\+\_\+input\+\_\+tensor\+\_\+type}}
+\index{batched\+\_\+input\+\_\+tensor\+\_\+type@{batched\+\_\+input\+\_\+tensor\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+input\+\_\+tensor\+\_\+type}{batched\_input\_tensor\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} =  \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$input\+\_\+tensor\+\_\+dimension\+::value + 1, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}{allocator\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batched\+\_\+input\+\_\+tensor\+\_\+type@{batched\+\_\+input\+\_\+tensor\+\_\+type}}
+\index{batched\+\_\+input\+\_\+tensor\+\_\+type@{batched\+\_\+input\+\_\+tensor\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+input\+\_\+tensor\+\_\+type}{batched\_input\_tensor\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} =  \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$input\+\_\+tensor\+\_\+dimension\+::value + 1, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}{allocator\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a012247fd372f38d7156bda51bdd74a70}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a012247fd372f38d7156bda51bdd74a70}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batched\+\_\+output\+\_\+tensor\+\_\+dimension@{batched\+\_\+output\+\_\+tensor\+\_\+dimension}}
+\index{batched\+\_\+output\+\_\+tensor\+\_\+dimension@{batched\+\_\+output\+\_\+tensor\+\_\+dimension}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+output\+\_\+tensor\+\_\+dimension}{batched\_output\_tensor\_dimension}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a012247fd372f38d7156bda51bdd74a70}{batched\+\_\+output\+\_\+tensor\+\_\+dimension} =  \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$Output\+Dimension\+::value+1$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a012247fd372f38d7156bda51bdd74a70}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a012247fd372f38d7156bda51bdd74a70}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batched\+\_\+output\+\_\+tensor\+\_\+dimension@{batched\+\_\+output\+\_\+tensor\+\_\+dimension}}
+\index{batched\+\_\+output\+\_\+tensor\+\_\+dimension@{batched\+\_\+output\+\_\+tensor\+\_\+dimension}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+output\+\_\+tensor\+\_\+dimension}{batched\_output\_tensor\_dimension}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a012247fd372f38d7156bda51bdd74a70}{batched\+\_\+output\+\_\+tensor\+\_\+dimension} =  \hyperlink{structbc_1_1traits_1_1Integer}{bc\+::traits\+::\+Integer}$<$Output\+Dimension\+::value+1$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batched\+\_\+output\+\_\+tensor\+\_\+type@{batched\+\_\+output\+\_\+tensor\+\_\+type}}
+\index{batched\+\_\+output\+\_\+tensor\+\_\+type@{batched\+\_\+output\+\_\+tensor\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+output\+\_\+tensor\+\_\+type}{batched\_output\_tensor\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} =  \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$output\+\_\+tensor\+\_\+dimension\+::value + 1, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}{output\+\_\+allocator\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batched\+\_\+output\+\_\+tensor\+\_\+type@{batched\+\_\+output\+\_\+tensor\+\_\+type}}
+\index{batched\+\_\+output\+\_\+tensor\+\_\+type@{batched\+\_\+output\+\_\+tensor\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+output\+\_\+tensor\+\_\+type}{batched\_output\_tensor\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} =  \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$output\+\_\+tensor\+\_\+dimension\+::value + 1, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}{output\+\_\+allocator\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad69ba46ce14f9fbef88b834828052ab4}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad69ba46ce14f9fbef88b834828052ab4}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!input\+\_\+shape\+\_\+type@{input\+\_\+shape\+\_\+type}}
+\index{input\+\_\+shape\+\_\+type@{input\+\_\+shape\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{input\+\_\+shape\+\_\+type}{input\_shape\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad69ba46ce14f9fbef88b834828052ab4}{input\+\_\+shape\+\_\+type} =  \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$input\+\_\+tensor\+\_\+dimension\+::value$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad69ba46ce14f9fbef88b834828052ab4}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad69ba46ce14f9fbef88b834828052ab4}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!input\+\_\+shape\+\_\+type@{input\+\_\+shape\+\_\+type}}
+\index{input\+\_\+shape\+\_\+type@{input\+\_\+shape\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{input\+\_\+shape\+\_\+type}{input\_shape\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad69ba46ce14f9fbef88b834828052ab4}{input\+\_\+shape\+\_\+type} =  \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$input\+\_\+tensor\+\_\+dimension\+::value$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9cf367e8f043b3bc7ac8ce8f5aeaa832}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9cf367e8f043b3bc7ac8ce8f5aeaa832}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!input\+\_\+tensor\+\_\+dimension@{input\+\_\+tensor\+\_\+dimension}}
+\index{input\+\_\+tensor\+\_\+dimension@{input\+\_\+tensor\+\_\+dimension}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{input\+\_\+tensor\+\_\+dimension}{input\_tensor\_dimension}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9cf367e8f043b3bc7ac8ce8f5aeaa832}{input\+\_\+tensor\+\_\+dimension} =  Dimension}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9cf367e8f043b3bc7ac8ce8f5aeaa832}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9cf367e8f043b3bc7ac8ce8f5aeaa832}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!input\+\_\+tensor\+\_\+dimension@{input\+\_\+tensor\+\_\+dimension}}
+\index{input\+\_\+tensor\+\_\+dimension@{input\+\_\+tensor\+\_\+dimension}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{input\+\_\+tensor\+\_\+dimension}{input\_tensor\_dimension}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9cf367e8f043b3bc7ac8ce8f5aeaa832}{input\+\_\+tensor\+\_\+dimension} =  Dimension}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_accd9d828714e1abe620fa89aa1556757}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_accd9d828714e1abe620fa89aa1556757}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!input\+\_\+tensor\+\_\+type@{input\+\_\+tensor\+\_\+type}}
+\index{input\+\_\+tensor\+\_\+type@{input\+\_\+tensor\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{input\+\_\+tensor\+\_\+type}{input\_tensor\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_accd9d828714e1abe620fa89aa1556757}{input\+\_\+tensor\+\_\+type} =  \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$ input\+\_\+tensor\+\_\+dimension\+::value, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}{allocator\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_accd9d828714e1abe620fa89aa1556757}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_accd9d828714e1abe620fa89aa1556757}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!input\+\_\+tensor\+\_\+type@{input\+\_\+tensor\+\_\+type}}
+\index{input\+\_\+tensor\+\_\+type@{input\+\_\+tensor\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{input\+\_\+tensor\+\_\+type}{input\_tensor\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_accd9d828714e1abe620fa89aa1556757}{input\+\_\+tensor\+\_\+type} =  \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$ input\+\_\+tensor\+\_\+dimension\+::value, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}{allocator\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6f8d2b06bb46d0ef96d0857df2544731}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6f8d2b06bb46d0ef96d0857df2544731}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!next\+\_\+layer\+\_\+pointer\+\_\+type@{next\+\_\+layer\+\_\+pointer\+\_\+type}}
+\index{next\+\_\+layer\+\_\+pointer\+\_\+type@{next\+\_\+layer\+\_\+pointer\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{next\+\_\+layer\+\_\+pointer\+\_\+type}{next\_layer\_pointer\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6f8d2b06bb46d0ef96d0857df2544731}{next\+\_\+layer\+\_\+pointer\+\_\+type} =  std\+::shared\+\_\+ptr$<$\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6f8d2b06bb46d0ef96d0857df2544731}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6f8d2b06bb46d0ef96d0857df2544731}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!next\+\_\+layer\+\_\+pointer\+\_\+type@{next\+\_\+layer\+\_\+pointer\+\_\+type}}
+\index{next\+\_\+layer\+\_\+pointer\+\_\+type@{next\+\_\+layer\+\_\+pointer\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{next\+\_\+layer\+\_\+pointer\+\_\+type}{next\_layer\_pointer\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6f8d2b06bb46d0ef96d0857df2544731}{next\+\_\+layer\+\_\+pointer\+\_\+type} =  std\+::shared\+\_\+ptr$<$\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!next\+\_\+layer\+\_\+type@{next\+\_\+layer\+\_\+type}}
+\index{next\+\_\+layer\+\_\+type@{next\+\_\+layer\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{next\+\_\+layer\+\_\+type}{next\_layer\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a099ec870d177606464f40dfb496d31a2}{output\+\_\+tensor\+\_\+dimension}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a15d1092569f56625cbdf8d7045e66391}{output\+\_\+value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aeb60d2b5eb18d542fecd5a34fc122bf0}{output\+\_\+system\+\_\+tag}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!next\+\_\+layer\+\_\+type@{next\+\_\+layer\+\_\+type}}
+\index{next\+\_\+layer\+\_\+type@{next\+\_\+layer\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{next\+\_\+layer\+\_\+type}{next\_layer\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a099ec870d177606464f40dfb496d31a2}{output\+\_\+tensor\+\_\+dimension}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a15d1092569f56625cbdf8d7045e66391}{output\+\_\+value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aeb60d2b5eb18d542fecd5a34fc122bf0}{output\+\_\+system\+\_\+tag}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!output\+\_\+allocator\+\_\+type@{output\+\_\+allocator\+\_\+type}}
+\index{output\+\_\+allocator\+\_\+type@{output\+\_\+allocator\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+allocator\+\_\+type}{output\_allocator\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}{output\+\_\+allocator\+\_\+type} =  Output\+Allocator}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!output\+\_\+allocator\+\_\+type@{output\+\_\+allocator\+\_\+type}}
+\index{output\+\_\+allocator\+\_\+type@{output\+\_\+allocator\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+allocator\+\_\+type}{output\_allocator\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}{output\+\_\+allocator\+\_\+type} =  Output\+Allocator}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a130df92a457150349fe554eeee4dd32a}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a130df92a457150349fe554eeee4dd32a}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!output\+\_\+shape\+\_\+type@{output\+\_\+shape\+\_\+type}}
+\index{output\+\_\+shape\+\_\+type@{output\+\_\+shape\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+shape\+\_\+type}{output\_shape\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a130df92a457150349fe554eeee4dd32a}{output\+\_\+shape\+\_\+type} =  \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$output\+\_\+tensor\+\_\+dimension\+::value$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a130df92a457150349fe554eeee4dd32a}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a130df92a457150349fe554eeee4dd32a}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!output\+\_\+shape\+\_\+type@{output\+\_\+shape\+\_\+type}}
+\index{output\+\_\+shape\+\_\+type@{output\+\_\+shape\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+shape\+\_\+type}{output\_shape\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a130df92a457150349fe554eeee4dd32a}{output\+\_\+shape\+\_\+type} =  \hyperlink{structbc_1_1Dim}{bc\+::\+Dim}$<$output\+\_\+tensor\+\_\+dimension\+::value$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_aeb60d2b5eb18d542fecd5a34fc122bf0}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_aeb60d2b5eb18d542fecd5a34fc122bf0}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!output\+\_\+system\+\_\+tag@{output\+\_\+system\+\_\+tag}}
+\index{output\+\_\+system\+\_\+tag@{output\+\_\+system\+\_\+tag}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+system\+\_\+tag}{output\_system\_tag}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aeb60d2b5eb18d542fecd5a34fc122bf0}{output\+\_\+system\+\_\+tag} =  Output\+System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_aeb60d2b5eb18d542fecd5a34fc122bf0}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_aeb60d2b5eb18d542fecd5a34fc122bf0}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!output\+\_\+system\+\_\+tag@{output\+\_\+system\+\_\+tag}}
+\index{output\+\_\+system\+\_\+tag@{output\+\_\+system\+\_\+tag}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+system\+\_\+tag}{output\_system\_tag}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aeb60d2b5eb18d542fecd5a34fc122bf0}{output\+\_\+system\+\_\+tag} =  Output\+System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a099ec870d177606464f40dfb496d31a2}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a099ec870d177606464f40dfb496d31a2}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!output\+\_\+tensor\+\_\+dimension@{output\+\_\+tensor\+\_\+dimension}}
+\index{output\+\_\+tensor\+\_\+dimension@{output\+\_\+tensor\+\_\+dimension}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+tensor\+\_\+dimension}{output\_tensor\_dimension}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a099ec870d177606464f40dfb496d31a2}{output\+\_\+tensor\+\_\+dimension} =  Output\+Dimension}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a099ec870d177606464f40dfb496d31a2}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a099ec870d177606464f40dfb496d31a2}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!output\+\_\+tensor\+\_\+dimension@{output\+\_\+tensor\+\_\+dimension}}
+\index{output\+\_\+tensor\+\_\+dimension@{output\+\_\+tensor\+\_\+dimension}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+tensor\+\_\+dimension}{output\_tensor\_dimension}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a099ec870d177606464f40dfb496d31a2}{output\+\_\+tensor\+\_\+dimension} =  Output\+Dimension}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_aaa3bdb6355a104df7c68d46fd4ffa15a}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_aaa3bdb6355a104df7c68d46fd4ffa15a}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!output\+\_\+tensor\+\_\+type@{output\+\_\+tensor\+\_\+type}}
+\index{output\+\_\+tensor\+\_\+type@{output\+\_\+tensor\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+tensor\+\_\+type}{output\_tensor\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aaa3bdb6355a104df7c68d46fd4ffa15a}{output\+\_\+tensor\+\_\+type} =  \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$output\+\_\+tensor\+\_\+dimension\+::value, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}{output\+\_\+allocator\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_aaa3bdb6355a104df7c68d46fd4ffa15a}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_aaa3bdb6355a104df7c68d46fd4ffa15a}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!output\+\_\+tensor\+\_\+type@{output\+\_\+tensor\+\_\+type}}
+\index{output\+\_\+tensor\+\_\+type@{output\+\_\+tensor\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+tensor\+\_\+type}{output\_tensor\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aaa3bdb6355a104df7c68d46fd4ffa15a}{output\+\_\+tensor\+\_\+type} =  \hyperlink{namespacebc_a659391e47ab612be3ba6c18cf9c89159}{bc\+::\+Tensor}$<$output\+\_\+tensor\+\_\+dimension\+::value, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4bc904c1787b9da18e35d0c6b60ac59f}{output\+\_\+allocator\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a15d1092569f56625cbdf8d7045e66391}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a15d1092569f56625cbdf8d7045e66391}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!output\+\_\+value\+\_\+type@{output\+\_\+value\+\_\+type}}
+\index{output\+\_\+value\+\_\+type@{output\+\_\+value\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+value\+\_\+type}{output\_value\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a15d1092569f56625cbdf8d7045e66391}{output\+\_\+value\+\_\+type} =  Output\+Value\+Type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a15d1092569f56625cbdf8d7045e66391}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a15d1092569f56625cbdf8d7045e66391}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!output\+\_\+value\+\_\+type@{output\+\_\+value\+\_\+type}}
+\index{output\+\_\+value\+\_\+type@{output\+\_\+value\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+value\+\_\+type}{output\_value\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a15d1092569f56625cbdf8d7045e66391}{output\+\_\+value\+\_\+type} =  Output\+Value\+Type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a038901ff126b59392a45ffb2d839b3b0}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a038901ff126b59392a45ffb2d839b3b0}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a038901ff126b59392a45ffb2d839b3b0}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a038901ff126b59392a45ffb2d839b3b0}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a038901ff126b59392a45ffb2d839b3b0}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a038901ff126b59392a45ffb2d839b3b0}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6240b9012fcc8ed91d8a41f07d7c4bd9}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6240b9012fcc8ed91d8a41f07d7c4bd9}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!this\+\_\+layer\+\_\+pointer\+\_\+type@{this\+\_\+layer\+\_\+pointer\+\_\+type}}
+\index{this\+\_\+layer\+\_\+pointer\+\_\+type@{this\+\_\+layer\+\_\+pointer\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{this\+\_\+layer\+\_\+pointer\+\_\+type}{this\_layer\_pointer\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6240b9012fcc8ed91d8a41f07d7c4bd9}{this\+\_\+layer\+\_\+pointer\+\_\+type} =  std\+::shared\+\_\+ptr$<$\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6240b9012fcc8ed91d8a41f07d7c4bd9}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6240b9012fcc8ed91d8a41f07d7c4bd9}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!this\+\_\+layer\+\_\+pointer\+\_\+type@{this\+\_\+layer\+\_\+pointer\+\_\+type}}
+\index{this\+\_\+layer\+\_\+pointer\+\_\+type@{this\+\_\+layer\+\_\+pointer\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{this\+\_\+layer\+\_\+pointer\+\_\+type}{this\_layer\_pointer\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6240b9012fcc8ed91d8a41f07d7c4bd9}{this\+\_\+layer\+\_\+pointer\+\_\+type} =  std\+::shared\+\_\+ptr$<$\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!this\+\_\+layer\+\_\+type@{this\+\_\+layer\+\_\+type}}
+\index{this\+\_\+layer\+\_\+type@{this\+\_\+layer\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{this\+\_\+layer\+\_\+type}{this\_layer\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9cf367e8f043b3bc7ac8ce8f5aeaa832}{input\+\_\+tensor\+\_\+dimension}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a038901ff126b59392a45ffb2d839b3b0}{system\+\_\+tag}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!this\+\_\+layer\+\_\+type@{this\+\_\+layer\+\_\+type}}
+\index{this\+\_\+layer\+\_\+type@{this\+\_\+layer\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{this\+\_\+layer\+\_\+type}{this\_layer\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type} =  \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9cf367e8f043b3bc7ac8ce8f5aeaa832}{input\+\_\+tensor\+\_\+dimension}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type}, \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a038901ff126b59392a45ffb2d839b3b0}{system\+\_\+tag}$>$}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type} =  Value\+Type}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+using \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa7d46845ee0a4544003a6f8fe3b7f52a}{value\+\_\+type} =  Value\+Type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1b02e9a8e1b085c3b1eda984de21ce93}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1b02e9a8e1b085c3b1eda984de21ce93}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!Polymorphic\+\_\+\+Layer\+\_\+\+Base@{Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\index{Polymorphic\+\_\+\+Layer\+\_\+\+Base@{Polymorphic\+\_\+\+Layer\+\_\+\+Base}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{Polymorphic\+\_\+\+Layer\+\_\+\+Base()}{Polymorphic\_Layer\_Base()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{Polymorphic\+\_\+\+Layer\+\_\+\+Base} (\begin{DoxyParamCaption}\item[{std\+::string}]{classname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6d3d973826a90e84e1f1ef3127198388}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6d3d973826a90e84e1f1ef3127198388}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!````~Polymorphic\+\_\+\+Layer\+\_\+\+Base@{$\sim$\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\index{````~Polymorphic\+\_\+\+Layer\+\_\+\+Base@{$\sim$\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+Polymorphic\+\_\+\+Layer\+\_\+\+Base()}{~Polymorphic\_Layer\_Base()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::$\sim$\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{Polymorphic\+\_\+\+Layer\+\_\+\+Base} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1b02e9a8e1b085c3b1eda984de21ce93}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1b02e9a8e1b085c3b1eda984de21ce93}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!Polymorphic\+\_\+\+Layer\+\_\+\+Base@{Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\index{Polymorphic\+\_\+\+Layer\+\_\+\+Base@{Polymorphic\+\_\+\+Layer\+\_\+\+Base}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{Polymorphic\+\_\+\+Layer\+\_\+\+Base()}{Polymorphic\_Layer\_Base()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{Polymorphic\+\_\+\+Layer\+\_\+\+Base} (\begin{DoxyParamCaption}\item[{std\+::string}]{classname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6d3d973826a90e84e1f1ef3127198388}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6d3d973826a90e84e1f1ef3127198388}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!````~Polymorphic\+\_\+\+Layer\+\_\+\+Base@{$\sim$\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\index{````~Polymorphic\+\_\+\+Layer\+\_\+\+Base@{$\sim$\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+Polymorphic\+\_\+\+Layer\+\_\+\+Base()}{~Polymorphic\_Layer\_Base()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::$\sim$\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{Polymorphic\+\_\+\+Layer\+\_\+\+Base} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae68fb249544a51c79be7aca6fb4a0727}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae68fb249544a51c79be7aca6fb4a0727}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!back\+\_\+propagation@{back\+\_\+propagation}}
+\index{back\+\_\+propagation@{back\+\_\+propagation}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{back\+\_\+propagation()}{back\_propagation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::back\+\_\+propagation (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae68fb249544a51c79be7aca6fb4a0727}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae68fb249544a51c79be7aca6fb4a0727}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!back\+\_\+propagation@{back\+\_\+propagation}}
+\index{back\+\_\+propagation@{back\+\_\+propagation}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{back\+\_\+propagation()}{back\_propagation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::back\+\_\+propagation (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a107ffea414142eb7be7aa45f0387f966}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a107ffea414142eb7be7aa45f0387f966}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batch\+\_\+size@{batch\+\_\+size}}
+\index{batch\+\_\+size@{batch\+\_\+size}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batch\+\_\+size()}{batch\_size()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::batch\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a107ffea414142eb7be7aa45f0387f966}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a107ffea414142eb7be7aa45f0387f966}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batch\+\_\+size@{batch\+\_\+size}}
+\index{batch\+\_\+size@{batch\+\_\+size}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batch\+\_\+size()}{batch\_size()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::batch\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a362477a099ec16eeafcda0527ca711b2}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a362477a099ec16eeafcda0527ca711b2}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batched\+\_\+input\+\_\+shape@{batched\+\_\+input\+\_\+shape}}
+\index{batched\+\_\+input\+\_\+shape@{batched\+\_\+input\+\_\+shape}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+input\+\_\+shape()}{batched\_input\_shape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::batched\+\_\+input\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a362477a099ec16eeafcda0527ca711b2}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a362477a099ec16eeafcda0527ca711b2}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batched\+\_\+input\+\_\+shape@{batched\+\_\+input\+\_\+shape}}
+\index{batched\+\_\+input\+\_\+shape@{batched\+\_\+input\+\_\+shape}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+input\+\_\+shape()}{batched\_input\_shape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::batched\+\_\+input\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4a592f412e5a7908293385d2e1f567d5}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4a592f412e5a7908293385d2e1f567d5}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batched\+\_\+learning\+\_\+rate@{batched\+\_\+learning\+\_\+rate}}
+\index{batched\+\_\+learning\+\_\+rate@{batched\+\_\+learning\+\_\+rate}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+learning\+\_\+rate()}{batched\_learning\_rate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::batched\+\_\+learning\+\_\+rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4a592f412e5a7908293385d2e1f567d5}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4a592f412e5a7908293385d2e1f567d5}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batched\+\_\+learning\+\_\+rate@{batched\+\_\+learning\+\_\+rate}}
+\index{batched\+\_\+learning\+\_\+rate@{batched\+\_\+learning\+\_\+rate}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+learning\+\_\+rate()}{batched\_learning\_rate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::batched\+\_\+learning\+\_\+rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a93154c06cdfce8282d48a114055d3e2a}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a93154c06cdfce8282d48a114055d3e2a}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batched\+\_\+output\+\_\+shape@{batched\+\_\+output\+\_\+shape}}
+\index{batched\+\_\+output\+\_\+shape@{batched\+\_\+output\+\_\+shape}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+output\+\_\+shape()}{batched\_output\_shape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::batched\+\_\+output\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a93154c06cdfce8282d48a114055d3e2a}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a93154c06cdfce8282d48a114055d3e2a}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!batched\+\_\+output\+\_\+shape@{batched\+\_\+output\+\_\+shape}}
+\index{batched\+\_\+output\+\_\+shape@{batched\+\_\+output\+\_\+shape}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{batched\+\_\+output\+\_\+shape()}{batched\_output\_shape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::batched\+\_\+output\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a317faf7f621b09947ac22385d26e61e4}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a317faf7f621b09947ac22385d26e61e4}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!bp@{bp}}
+\index{bp@{bp}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{bp()}{bp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::bp (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a317faf7f621b09947ac22385d26e61e4}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a317faf7f621b09947ac22385d26e61e4}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!bp@{bp}}
+\index{bp@{bp}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{bp()}{bp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::bp (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \&}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a3a63312d3100e6a6c31ba6bd16578aa7}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a3a63312d3100e6a6c31ba6bd16578aa7}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!classname@{classname}}
+\index{classname@{classname}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{classname()}{classname()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::classname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a3a63312d3100e6a6c31ba6bd16578aa7}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a3a63312d3100e6a6c31ba6bd16578aa7}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!classname@{classname}}
+\index{classname@{classname}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{classname()}{classname()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::classname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1233eecaa679d32a0203c13870cbe564}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1233eecaa679d32a0203c13870cbe564}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict@{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict}}
+\index{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict@{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict()}{copy\_training\_data\_to\_single\_predict()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{,  }\item[{int}]{batch\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1233eecaa679d32a0203c13870cbe564}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1233eecaa679d32a0203c13870cbe564}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict@{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict}}
+\index{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict@{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict()}{copy\_training\_data\_to\_single\_predict()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::copy\+\_\+training\+\_\+data\+\_\+to\+\_\+single\+\_\+predict (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{,  }\item[{int}]{batch\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a0dc71591b6ca387501c2cace61be3e78}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a0dc71591b6ca387501c2cace61be3e78}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \&}]{inputs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a0dc71591b6ca387501c2cace61be3e78}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a0dc71591b6ca387501c2cace61be3e78}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!forward\+\_\+propagation@{forward\+\_\+propagation}}
+\index{forward\+\_\+propagation@{forward\+\_\+propagation}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{forward\+\_\+propagation()}{forward\_propagation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::forward\+\_\+propagation (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \&}]{inputs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a71ab20a7baff5faf1c3d5ff16552a983}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a71ab20a7baff5faf1c3d5ff16552a983}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!fp@{fp}}
+\index{fp@{fp}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{fp()}{fp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::fp (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \&}]{inputs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a71ab20a7baff5faf1c3d5ff16552a983}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a71ab20a7baff5faf1c3d5ff16552a983}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!fp@{fp}}
+\index{fp@{fp}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{fp()}{fp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::fp (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ae694b03dd73923ff973b0d2c9156e161}{batched\+\_\+input\+\_\+tensor\+\_\+type} \&}]{inputs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a987b737aeb1b1000dcb1b67ea551087b}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a987b737aeb1b1000dcb1b67ea551087b}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!get\+\_\+string\+\_\+architecture@{get\+\_\+string\+\_\+architecture}}
+\index{get\+\_\+string\+\_\+architecture@{get\+\_\+string\+\_\+architecture}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{get\+\_\+string\+\_\+architecture()}{get\_string\_architecture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+template$<$int A\+DL = 0$>$ \\
+std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::get\+\_\+string\+\_\+architecture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a987b737aeb1b1000dcb1b67ea551087b}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a987b737aeb1b1000dcb1b67ea551087b}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!get\+\_\+string\+\_\+architecture@{get\+\_\+string\+\_\+architecture}}
+\index{get\+\_\+string\+\_\+architecture@{get\+\_\+string\+\_\+architecture}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{get\+\_\+string\+\_\+architecture()}{get\_string\_architecture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+template$<$int A\+DL = 0$>$ \\
+std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::get\+\_\+string\+\_\+architecture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a2259b176573690bfbbc93adc743212c9}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a2259b176573690bfbbc93adc743212c9}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!init@{init}}
+\index{init@{init}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a2259b176573690bfbbc93adc743212c9}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a2259b176573690bfbbc93adc743212c9}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!init@{init}}
+\index{init@{init}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{init()}{init()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad62346d67a5ad6fbf84999e9254455b8}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad62346d67a5ad6fbf84999e9254455b8}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!input\+\_\+shape@{input\+\_\+shape}}
+\index{input\+\_\+shape@{input\+\_\+shape}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{input\+\_\+shape()}{input\_shape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::input\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad62346d67a5ad6fbf84999e9254455b8}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad62346d67a5ad6fbf84999e9254455b8}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!input\+\_\+shape@{input\+\_\+shape}}
+\index{input\+\_\+shape@{input\+\_\+shape}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{input\+\_\+shape()}{input\_shape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::input\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1b07bace4eb7d7255881d13358c29d26}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1b07bace4eb7d7255881d13358c29d26}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!learning\+\_\+rate@{learning\+\_\+rate}}
+\index{learning\+\_\+rate@{learning\+\_\+rate}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{learning\+\_\+rate()}{learning\_rate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::learning\+\_\+rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1b07bace4eb7d7255881d13358c29d26}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1b07bace4eb7d7255881d13358c29d26}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!learning\+\_\+rate@{learning\+\_\+rate}}
+\index{learning\+\_\+rate@{learning\+\_\+rate}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{learning\+\_\+rate()}{learning\_rate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::learning\+\_\+rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ab22a722386024a1329715e738d57814c}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ab22a722386024a1329715e738d57814c}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ab22a722386024a1329715e738d57814c}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ab22a722386024a1329715e738d57814c}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!load@{load}}
+\index{load@{load}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{load()}{load()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::load (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a2e1cbfa3ead765b5eddcdbb617b08ecd}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a2e1cbfa3ead765b5eddcdbb617b08ecd}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!load\+\_\+to\+\_\+cache@{load\+\_\+to\+\_\+cache}}
+\index{load\+\_\+to\+\_\+cache@{load\+\_\+to\+\_\+cache}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{load\+\_\+to\+\_\+cache()}{load\_to\_cache()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::load\+\_\+to\+\_\+cache (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{,  }\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a2e1cbfa3ead765b5eddcdbb617b08ecd}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a2e1cbfa3ead765b5eddcdbb617b08ecd}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!load\+\_\+to\+\_\+cache@{load\+\_\+to\+\_\+cache}}
+\index{load\+\_\+to\+\_\+cache@{load\+\_\+to\+\_\+cache}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{load\+\_\+to\+\_\+cache()}{load\_to\_cache()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::load\+\_\+to\+\_\+cache (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{,  }\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_afe77ff310be16c9357ea66bec8d6306b}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_afe77ff310be16c9357ea66bec8d6306b}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!next@{next}}
+\index{next@{next}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{next()}{next()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type}$>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_afe77ff310be16c9357ea66bec8d6306b}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_afe77ff310be16c9357ea66bec8d6306b}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!next@{next}}
+\index{next@{next}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{next()}{next()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type}$>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a042ca1b5f4e9c78fa9953e3f310972a5}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a042ca1b5f4e9c78fa9953e3f310972a5}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!next@{next}}
+\index{next@{next}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{next()}{next()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type}$>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a042ca1b5f4e9c78fa9953e3f310972a5}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a042ca1b5f4e9c78fa9953e3f310972a5}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!next@{next}}
+\index{next@{next}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{next()}{next()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type}$>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa1e0b2c8f3de5576b73a27db6316b139}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa1e0b2c8f3de5576b73a27db6316b139}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!output\+\_\+shape@{output\+\_\+shape}}
+\index{output\+\_\+shape@{output\+\_\+shape}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+shape()}{output\_shape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::output\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa1e0b2c8f3de5576b73a27db6316b139}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa1e0b2c8f3de5576b73a27db6316b139}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!output\+\_\+shape@{output\+\_\+shape}}
+\index{output\+\_\+shape@{output\+\_\+shape}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+shape()}{output\_shape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+auto \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::output\+\_\+shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac44549f47e2cac1e9b8e16a2ed2a7d41}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac44549f47e2cac1e9b8e16a2ed2a7d41}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!parse\+\_\+classname@{parse\+\_\+classname}}
+\index{parse\+\_\+classname@{parse\+\_\+classname}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{parse\+\_\+classname()}{parse\_classname()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+static std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::parse\+\_\+classname (\begin{DoxyParamCaption}\item[{std\+::string}]{classname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac44549f47e2cac1e9b8e16a2ed2a7d41}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac44549f47e2cac1e9b8e16a2ed2a7d41}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!parse\+\_\+classname@{parse\+\_\+classname}}
+\index{parse\+\_\+classname@{parse\+\_\+classname}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{parse\+\_\+classname()}{parse\_classname()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+static std\+::string \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::parse\+\_\+classname (\begin{DoxyParamCaption}\item[{std\+::string}]{classname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_aaecf0bed7f2e610b7b923dbc3d4a81d6}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_aaecf0bed7f2e610b7b923dbc3d4a81d6}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!prev@{prev}}
+\index{prev@{prev}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{prev()}{prev()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type}$>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::prev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_aaecf0bed7f2e610b7b923dbc3d4a81d6}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_aaecf0bed7f2e610b7b923dbc3d4a81d6}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!prev@{prev}}
+\index{prev@{prev}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{prev()}{prev()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type}$>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::prev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a0e55941ac286ccaf77b4c810a8f1cd09}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a0e55941ac286ccaf77b4c810a8f1cd09}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!prev@{prev}}
+\index{prev@{prev}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{prev()}{prev()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type}$>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::prev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a0e55941ac286ccaf77b4c810a8f1cd09}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a0e55941ac286ccaf77b4c810a8f1cd09}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!prev@{prev}}
+\index{prev@{prev}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{prev()}{prev()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type}$>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::prev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa3a70d0ea45bdd0d9f9932d7fafe3d3e}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa3a70d0ea45bdd0d9f9932d7fafe3d3e}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!save@{save}}
+\index{save@{save}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::save (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa3a70d0ea45bdd0d9f9932d7fafe3d3e}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_aa3a70d0ea45bdd0d9f9932d7fafe3d3e}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!save@{save}}
+\index{save@{save}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::save (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a7ec52a754f51ae14d655de2e7ae2e1a6}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a7ec52a754f51ae14d655de2e7ae2e1a6}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!save\+\_\+from\+\_\+cache@{save\+\_\+from\+\_\+cache}}
+\index{save\+\_\+from\+\_\+cache@{save\+\_\+from\+\_\+cache}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{save\+\_\+from\+\_\+cache()}{save\_from\_cache()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::save\+\_\+from\+\_\+cache (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{,  }\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a7ec52a754f51ae14d655de2e7ae2e1a6}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a7ec52a754f51ae14d655de2e7ae2e1a6}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!save\+\_\+from\+\_\+cache@{save\+\_\+from\+\_\+cache}}
+\index{save\+\_\+from\+\_\+cache@{save\+\_\+from\+\_\+cache}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{save\+\_\+from\+\_\+cache()}{save\_from\_cache()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::save\+\_\+from\+\_\+cache (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Layer__Loader}{Layer\+\_\+\+Loader} \&}]{,  }\item[{\hyperlink{structbc_1_1nn_1_1Cache}{Cache} \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4d11290c40096f27144a6ec9fa976b12}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4d11290c40096f27144a6ec9fa976b12}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!set\+\_\+batch\+\_\+size@{set\+\_\+batch\+\_\+size}}
+\index{set\+\_\+batch\+\_\+size@{set\+\_\+batch\+\_\+size}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+batch\+\_\+size()}{set\_batch\_size()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::set\+\_\+batch\+\_\+size (\begin{DoxyParamCaption}\item[{int}]{bs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4d11290c40096f27144a6ec9fa976b12}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4d11290c40096f27144a6ec9fa976b12}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!set\+\_\+batch\+\_\+size@{set\+\_\+batch\+\_\+size}}
+\index{set\+\_\+batch\+\_\+size@{set\+\_\+batch\+\_\+size}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+batch\+\_\+size()}{set\_batch\_size()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::set\+\_\+batch\+\_\+size (\begin{DoxyParamCaption}\item[{int}]{bs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a21d145beb5e9f571e5e474171d47dff6}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a21d145beb5e9f571e5e474171d47dff6}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!set\+\_\+batch\+\_\+size\+\_\+hook@{set\+\_\+batch\+\_\+size\+\_\+hook}}
+\index{set\+\_\+batch\+\_\+size\+\_\+hook@{set\+\_\+batch\+\_\+size\+\_\+hook}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+batch\+\_\+size\+\_\+hook()}{set\_batch\_size\_hook()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::set\+\_\+batch\+\_\+size\+\_\+hook (\begin{DoxyParamCaption}\item[{int}]{bs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a21d145beb5e9f571e5e474171d47dff6}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a21d145beb5e9f571e5e474171d47dff6}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!set\+\_\+batch\+\_\+size\+\_\+hook@{set\+\_\+batch\+\_\+size\+\_\+hook}}
+\index{set\+\_\+batch\+\_\+size\+\_\+hook@{set\+\_\+batch\+\_\+size\+\_\+hook}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+batch\+\_\+size\+\_\+hook()}{set\_batch\_size\_hook()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::set\+\_\+batch\+\_\+size\+\_\+hook (\begin{DoxyParamCaption}\item[{int}]{bs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9ca5f068a02a1b132d8a90e2c307b4d9}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9ca5f068a02a1b132d8a90e2c307b4d9}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!set\+\_\+learning\+\_\+rate@{set\+\_\+learning\+\_\+rate}}
+\index{set\+\_\+learning\+\_\+rate@{set\+\_\+learning\+\_\+rate}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+learning\+\_\+rate()}{set\_learning\_rate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::set\+\_\+learning\+\_\+rate (\begin{DoxyParamCaption}\item[{double}]{lr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9ca5f068a02a1b132d8a90e2c307b4d9}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9ca5f068a02a1b132d8a90e2c307b4d9}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!set\+\_\+learning\+\_\+rate@{set\+\_\+learning\+\_\+rate}}
+\index{set\+\_\+learning\+\_\+rate@{set\+\_\+learning\+\_\+rate}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+learning\+\_\+rate()}{set\_learning\_rate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::set\+\_\+learning\+\_\+rate (\begin{DoxyParamCaption}\item[{double}]{lr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_add15aef38db94de6066d048149723eea}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_add15aef38db94de6066d048149723eea}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!set\+\_\+learning\+\_\+rate\+\_\+hook@{set\+\_\+learning\+\_\+rate\+\_\+hook}}
+\index{set\+\_\+learning\+\_\+rate\+\_\+hook@{set\+\_\+learning\+\_\+rate\+\_\+hook}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+learning\+\_\+rate\+\_\+hook()}{set\_learning\_rate\_hook()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::set\+\_\+learning\+\_\+rate\+\_\+hook (\begin{DoxyParamCaption}\item[{double}]{lr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_add15aef38db94de6066d048149723eea}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_add15aef38db94de6066d048149723eea}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!set\+\_\+learning\+\_\+rate\+\_\+hook@{set\+\_\+learning\+\_\+rate\+\_\+hook}}
+\index{set\+\_\+learning\+\_\+rate\+\_\+hook@{set\+\_\+learning\+\_\+rate\+\_\+hook}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+learning\+\_\+rate\+\_\+hook()}{set\_learning\_rate\_hook()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::set\+\_\+learning\+\_\+rate\+\_\+hook (\begin{DoxyParamCaption}\item[{double}]{lr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a852126e97fd34bcc24c446615e3df3fa}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a852126e97fd34bcc24c446615e3df3fa}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!set\+\_\+next@{set\+\_\+next}}
+\index{set\+\_\+next@{set\+\_\+next}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+next()}{set\_next()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::set\+\_\+next (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6f8d2b06bb46d0ef96d0857df2544731}{next\+\_\+layer\+\_\+pointer\+\_\+type}}]{next\+\_\+layer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a852126e97fd34bcc24c446615e3df3fa}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a852126e97fd34bcc24c446615e3df3fa}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!set\+\_\+next@{set\+\_\+next}}
+\index{set\+\_\+next@{set\+\_\+next}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+next()}{set\_next()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::set\+\_\+next (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6f8d2b06bb46d0ef96d0857df2544731}{next\+\_\+layer\+\_\+pointer\+\_\+type}}]{next\+\_\+layer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4555d0376d65ee631208b5aa6f67d7f2}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4555d0376d65ee631208b5aa6f67d7f2}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!set\+\_\+prev@{set\+\_\+prev}}
+\index{set\+\_\+prev@{set\+\_\+prev}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+prev()}{set\_prev()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::set\+\_\+prev (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6240b9012fcc8ed91d8a41f07d7c4bd9}{this\+\_\+layer\+\_\+pointer\+\_\+type}}]{prev\+\_\+layer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4555d0376d65ee631208b5aa6f67d7f2}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a4555d0376d65ee631208b5aa6f67d7f2}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!set\+\_\+prev@{set\+\_\+prev}}
+\index{set\+\_\+prev@{set\+\_\+prev}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{set\+\_\+prev()}{set\_prev()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::set\+\_\+prev (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6240b9012fcc8ed91d8a41f07d7c4bd9}{this\+\_\+layer\+\_\+pointer\+\_\+type}}]{prev\+\_\+layer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac4e83d85cab03ae8ac5d918fe4e08df6}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac4e83d85cab03ae8ac5d918fe4e08df6}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!update\+\_\+weights@{update\+\_\+weights}}
+\index{update\+\_\+weights@{update\+\_\+weights}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{update\+\_\+weights()}{update\_weights()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::update\+\_\+weights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac4e83d85cab03ae8ac5d918fe4e08df6}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac4e83d85cab03ae8ac5d918fe4e08df6}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!update\+\_\+weights@{update\+\_\+weights}}
+\index{update\+\_\+weights@{update\+\_\+weights}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{update\+\_\+weights()}{update\_weights()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+virtual void \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::update\+\_\+weights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a871e8bf7f3ea5e729e00c6bb6ae6f769}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a871e8bf7f3ea5e729e00c6bb6ae6f769}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!m\+\_\+allocator@{m\+\_\+allocator}}
+\index{m\+\_\+allocator@{m\+\_\+allocator}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{m\+\_\+allocator}{m\_allocator}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a1414f8c37dea6254aebf63e4486ed818}{allocator\+\_\+type} $>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::m\+\_\+allocator\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_abf80deb81025924557a3f7eca809d4e3}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_abf80deb81025924557a3f7eca809d4e3}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!m\+\_\+input\+\_\+layer@{m\+\_\+input\+\_\+layer}}
+\index{m\+\_\+input\+\_\+layer@{m\+\_\+input\+\_\+layer}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{m\+\_\+input\+\_\+layer}{m\_input\_layer}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+std\+::weak\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6087076d2e0a31e6bbdc2c2039c3ab52}{this\+\_\+layer\+\_\+type} $>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::m\+\_\+input\+\_\+layer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a0e1021b5d112fed042d030eb5d44b7c2}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a0e1021b5d112fed042d030eb5d44b7c2}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!m\+\_\+input\+\_\+shape@{m\+\_\+input\+\_\+shape}}
+\index{m\+\_\+input\+\_\+shape@{m\+\_\+input\+\_\+shape}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{m\+\_\+input\+\_\+shape}{m\_input\_shape}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ad69ba46ce14f9fbef88b834828052ab4}{input\+\_\+shape\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::m\+\_\+input\+\_\+shape\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9fed7a02ea5b0ea5bea55e8060e1ded2}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a9fed7a02ea5b0ea5bea55e8060e1ded2}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!m\+\_\+output\+\_\+layer@{m\+\_\+output\+\_\+layer}}
+\index{m\+\_\+output\+\_\+layer@{m\+\_\+output\+\_\+layer}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{m\+\_\+output\+\_\+layer}{m\_output\_layer}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+std\+::shared\+\_\+ptr$<$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_ac7d70db83e8370d2975d05401713f677}{next\+\_\+layer\+\_\+type} $>$ \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::m\+\_\+output\+\_\+layer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6706ea4d62aee77f603a0c723e7088eb}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6706ea4d62aee77f603a0c723e7088eb}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!m\+\_\+output\+\_\+shape@{m\+\_\+output\+\_\+shape}}
+\index{m\+\_\+output\+\_\+shape@{m\+\_\+output\+\_\+shape}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{m\+\_\+output\+\_\+shape}{m\_output\_shape}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a130df92a457150349fe554eeee4dd32a}{output\+\_\+shape\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::m\+\_\+output\+\_\+shape\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6f05310307def656069b64a7fb7cbf91}\label{structbc_1_1nn_1_1Polymorphic__Layer__Base_a6f05310307def656069b64a7fb7cbf91}} 
+\index{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}!y@{y}}
+\index{y@{y}!bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base@{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily template$<$class Dimension , class Value\+Type , class System\+Tag , class Allocator  = layer\+\_\+default\+\_\+allocator$<$\+Value\+Type, System\+Tag$>$, class Output\+Dimension  = Dimension, class Output\+Value\+Type  = Value\+Type, class Output\+System\+Tag  = System\+Tag, class Output\+Allocator  = Allocator$>$ \\
+\hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base_a45ed57549be9c4e5c40c52168ca15ae9}{batched\+\_\+output\+\_\+tensor\+\_\+type} \hyperlink{structbc_1_1nn_1_1Polymorphic__Layer__Base}{bc\+::nn\+::\+Polymorphic\+\_\+\+Layer\+\_\+\+Base}$<$ Dimension, Value\+Type, System\+Tag, \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator}, Output\+Dimension, Output\+Value\+Type, Output\+System\+Tag, Output\+Allocator $>$\+::y}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/neural\+\_\+networks/layers/\hyperlink{layers_2polymorphic__layer__base_8h}{polymorphic\+\_\+layer\+\_\+base.\+h}\end{DoxyCompactItemize}

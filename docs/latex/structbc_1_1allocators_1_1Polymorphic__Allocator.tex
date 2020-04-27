@@ -1,0 +1,138 @@
+\hypertarget{structbc_1_1allocators_1_1Polymorphic__Allocator}{}\section{bc\+:\+:allocators\+:\+:Polymorphic\+\_\+\+Allocator$<$ Value\+Type, System\+Tag $>$ Struct Template Reference}
+\label{structbc_1_1allocators_1_1Polymorphic__Allocator}\index{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator$<$ Value\+Type, System\+Tag $>$@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator$<$ Value\+Type, System\+Tag $>$}}
+
+
+{\ttfamily \#include $<$polymorphic\+\_\+allocator.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a8036f2439226926f10176abbe9ef6f9d}{system\+\_\+tag} = System\+Tag
+\item 
+using \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a2655c4bc3c86364c42aa20639a1b7a44}{value\+\_\+type} = Value\+Type
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Allocator $>$ }\\\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a5a51c02d87ee89f98ed1a192e1a7fc31}{Polymorphic\+\_\+\+Allocator} (const \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} \&alloc)
+\item 
+\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a85b994bea749c2177e0d9701b80c04e7}{Polymorphic\+\_\+\+Allocator} ()
+\item 
+\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a6292876d2a1f87790a57a0382ff59659}{Polymorphic\+\_\+\+Allocator} (const \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator} \&pa)
+\item 
+\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator} \& \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_ab39a8d3c81d7cfee0936a6468a733457}{operator=} (const \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator} \&other)
+\item 
+\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator} \& \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a5154dccc457921adedc351e062f459df}{operator=} (\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator} \&\&other)
+\item 
+\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a2655c4bc3c86364c42aa20639a1b7a44}{value\+\_\+type} $\ast$ \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_aa6a9f6a990f5442fceac09a0c03c3c68}{allocate} (std\+::size\+\_\+t sz)
+\item 
+void \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a9935a902159810ea1e948df8c586d76e}{deallocate} (\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a2655c4bc3c86364c42aa20639a1b7a44}{value\+\_\+type} $\ast$data, std\+::size\+\_\+t sz)
+\item 
+{\footnotesize template$<$class Allocator $>$ }\\void \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_adfaa9129bea6203c411df03cd959fe3f}{set\+\_\+allocator} (const \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} \&alloc)
+\item 
+{\footnotesize template$<$class AltT $>$ }\\bool \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a2162c3db4209225f13a046270efa3086}{operator==} (const \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator}$<$ AltT, \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a8036f2439226926f10176abbe9ef6f9d}{system\+\_\+tag} $>$ \&other)
+\item 
+{\footnotesize template$<$class AltT $>$ }\\bool \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_aa1a0c441f9204498a7bae488884488a4}{operator!=} (const \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator}$<$ AltT, \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a8036f2439226926f10176abbe9ef6f9d}{system\+\_\+tag} $>$ \&other)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Polymorphic__Allocator_a8036f2439226926f10176abbe9ef6f9d}\label{structbc_1_1allocators_1_1Polymorphic__Allocator_a8036f2439226926f10176abbe9ef6f9d}} 
+\index{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}!system\+\_\+tag@{system\+\_\+tag}}
+\index{system\+\_\+tag@{system\+\_\+tag}!bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{system\+\_\+tag}{system\_tag}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a8036f2439226926f10176abbe9ef6f9d}{system\+\_\+tag} =  System\+Tag}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Polymorphic__Allocator_a2655c4bc3c86364c42aa20639a1b7a44}\label{structbc_1_1allocators_1_1Polymorphic__Allocator_a2655c4bc3c86364c42aa20639a1b7a44}} 
+\index{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+using \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a2655c4bc3c86364c42aa20639a1b7a44}{value\+\_\+type} =  Value\+Type}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Polymorphic__Allocator_a5a51c02d87ee89f98ed1a192e1a7fc31}\label{structbc_1_1allocators_1_1Polymorphic__Allocator_a5a51c02d87ee89f98ed1a192e1a7fc31}} 
+\index{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}!Polymorphic\+\_\+\+Allocator@{Polymorphic\+\_\+\+Allocator}}
+\index{Polymorphic\+\_\+\+Allocator@{Polymorphic\+\_\+\+Allocator}!bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{Polymorphic\+\_\+\+Allocator()}{Polymorphic\_Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+template$<$class Allocator $>$ \\
+\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator} (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} \&}]{alloc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Polymorphic__Allocator_a85b994bea749c2177e0d9701b80c04e7}\label{structbc_1_1allocators_1_1Polymorphic__Allocator_a85b994bea749c2177e0d9701b80c04e7}} 
+\index{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}!Polymorphic\+\_\+\+Allocator@{Polymorphic\+\_\+\+Allocator}}
+\index{Polymorphic\+\_\+\+Allocator@{Polymorphic\+\_\+\+Allocator}!bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{Polymorphic\+\_\+\+Allocator()}{Polymorphic\_Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Polymorphic__Allocator_a6292876d2a1f87790a57a0382ff59659}\label{structbc_1_1allocators_1_1Polymorphic__Allocator_a6292876d2a1f87790a57a0382ff59659}} 
+\index{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}!Polymorphic\+\_\+\+Allocator@{Polymorphic\+\_\+\+Allocator}}
+\index{Polymorphic\+\_\+\+Allocator@{Polymorphic\+\_\+\+Allocator}!bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{Polymorphic\+\_\+\+Allocator()}{Polymorphic\_Allocator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag $>$\+::\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator} (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag $>$ \&}]{pa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Polymorphic__Allocator_aa6a9f6a990f5442fceac09a0c03c3c68}\label{structbc_1_1allocators_1_1Polymorphic__Allocator_aa6a9f6a990f5442fceac09a0c03c3c68}} 
+\index{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}!allocate@{allocate}}
+\index{allocate@{allocate}!bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a2655c4bc3c86364c42aa20639a1b7a44}{value\+\_\+type}$\ast$ \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag $>$\+::allocate (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Polymorphic__Allocator_a9935a902159810ea1e948df8c586d76e}\label{structbc_1_1allocators_1_1Polymorphic__Allocator_a9935a902159810ea1e948df8c586d76e}} 
+\index{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{deallocate()}{deallocate()}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+void \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag $>$\+::deallocate (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a2655c4bc3c86364c42aa20639a1b7a44}{value\+\_\+type} $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Polymorphic__Allocator_aa1a0c441f9204498a7bae488884488a4}\label{structbc_1_1allocators_1_1Polymorphic__Allocator_aa1a0c441f9204498a7bae488884488a4}} 
+\index{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+template$<$class AltT $>$ \\
+bool \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator}$<$ AltT, \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a8036f2439226926f10176abbe9ef6f9d}{system\+\_\+tag} $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Polymorphic__Allocator_ab39a8d3c81d7cfee0936a6468a733457}\label{structbc_1_1allocators_1_1Polymorphic__Allocator_ab39a8d3c81d7cfee0936a6468a733457}} 
+\index{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator}\& \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Polymorphic__Allocator_a5154dccc457921adedc351e062f459df}\label{structbc_1_1allocators_1_1Polymorphic__Allocator_a5154dccc457921adedc351e062f459df}} 
+\index{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}!operator=@{operator=}}
+\index{operator=@{operator=}!bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator}\& \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag $>$ \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Polymorphic__Allocator_a2162c3db4209225f13a046270efa3086}\label{structbc_1_1allocators_1_1Polymorphic__Allocator_a2162c3db4209225f13a046270efa3086}} 
+\index{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}!operator==@{operator==}}
+\index{operator==@{operator==}!bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+template$<$class AltT $>$ \\
+bool \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{Polymorphic\+\_\+\+Allocator}$<$ AltT, \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator_a8036f2439226926f10176abbe9ef6f9d}{system\+\_\+tag} $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structbc_1_1allocators_1_1Polymorphic__Allocator_adfaa9129bea6203c411df03cd959fe3f}\label{structbc_1_1allocators_1_1Polymorphic__Allocator_adfaa9129bea6203c411df03cd959fe3f}} 
+\index{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}!set\+\_\+allocator@{set\+\_\+allocator}}
+\index{set\+\_\+allocator@{set\+\_\+allocator}!bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator@{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}}
+\subsubsection{\texorpdfstring{set\+\_\+allocator()}{set\_allocator()}}
+{\footnotesize\ttfamily template$<$class Value\+Type, class System\+Tag$>$ \\
+template$<$class Allocator $>$ \\
+void \hyperlink{structbc_1_1allocators_1_1Polymorphic__Allocator}{bc\+::allocators\+::\+Polymorphic\+\_\+\+Allocator}$<$ Value\+Type, System\+Tag $>$\+::set\+\_\+allocator (\begin{DoxyParamCaption}\item[{const \hyperlink{classbc_1_1allocators_1_1Allocator}{Allocator} \&}]{alloc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+blackcat/allocators/\hyperlink{polymorphic__allocator_8h}{polymorphic\+\_\+allocator.\+h}\end{DoxyCompactItemize}

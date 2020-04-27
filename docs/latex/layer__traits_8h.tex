@@ -1,0 +1,54 @@
+\hypertarget{layer__traits_8h}{}\section{blackcat/neural\+\_\+networks/layers/layer\+\_\+traits.h File Reference}
+\label{layer__traits_8h}\index{blackcat/neural\+\_\+networks/layers/layer\+\_\+traits.\+h@{blackcat/neural\+\_\+networks/layers/layer\+\_\+traits.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{layer__traits_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structbc_1_1nn_1_1layer__traits}{bc\+::nn\+::layer\+\_\+traits$<$ T $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacebc}{bc}
+\begin{DoxyCompactList}\small\item\em The Evaluator determines if an expression needs to be greedily optimized. \end{DoxyCompactList}\item 
+ \hyperlink{namespacebc_1_1nn}{bc\+::nn}
+\item 
+ \hyperlink{namespacebc_1_1nn_1_1detail}{bc\+::nn\+::detail}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a93de41b72dd88c58d8f1d74276da87b3}{bc\+::nn\+::detail\+::query\+\_\+forward\+\_\+requires\+\_\+inputs} = typename T\+::forward\+\_\+requires\+\_\+inputs
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a10314a67405b06863c6384de87e36bad}{bc\+::nn\+::detail\+::query\+\_\+forward\+\_\+requires\+\_\+outputs} = typename T\+::forward\+\_\+requires\+\_\+outputs
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a51767bf55cf9cdf8cdff0f2929304390}{bc\+::nn\+::detail\+::query\+\_\+forward\+\_\+requires\+\_\+extra\+\_\+cache} = typename T\+::forward\+\_\+requires\+\_\+extra\+\_\+cache
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_acb9ab0f627cee62dd68d673afc443608}{bc\+::nn\+::detail\+::query\+\_\+backward\+\_\+requires\+\_\+inputs} = typename T\+::backward\+\_\+requires\+\_\+inputs
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_ad187de638865a7fbfe0e3c1db1511e4a}{bc\+::nn\+::detail\+::query\+\_\+backward\+\_\+requires\+\_\+outputs} = typename T\+::backward\+\_\+requires\+\_\+outputs
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a1599626f3fdc7ffbe459d9abf8325465}{bc\+::nn\+::detail\+::query\+\_\+backward\+\_\+requires\+\_\+extra\+\_\+cache} = typename T\+::backward\+\_\+requires\+\_\+extra\+\_\+cache
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a4bdf240452d0d96d1f433e7f0f5dd3e7}{bc\+::nn\+::detail\+::query\+\_\+input\+\_\+tensor\+\_\+dim} = typename T\+::input\+\_\+tensor\+\_\+dim
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_aa16772b430fc14eb1bf4b82ad6f679fd}{bc\+::nn\+::detail\+::query\+\_\+output\+\_\+tensor\+\_\+dim} = typename T\+::output\+\_\+tensor\+\_\+dim
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_aee17a95f5bdf1a2903f755a7de7ac632}{bc\+::nn\+::detail\+::query\+\_\+greedy\+\_\+evaluate\+\_\+delta} = typename T\+::greedy\+\_\+evaluate\+\_\+delta
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a9348aef49158fa3a605fcc4eb9387c87}{bc\+::nn\+::detail\+::query\+\_\+backwards\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached} = typename T\+::query\+\_\+backwards\+\_\+delta\+\_\+should\+\_\+be\+\_\+cached
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a7cfff1896ea5ef55f6410bb7c6ff3bf3}{bc\+::nn\+::detail\+::query\+\_\+requires\+\_\+extra\+\_\+cache} = typename T\+::requires\+\_\+extra\+\_\+cache
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_a0e5abd56399f408e7b9dc5bf91d70f6e}{bc\+::nn\+::detail\+::query\+\_\+extra\+\_\+batched\+\_\+cache\+\_\+args} = typename T\+::extra\+\_\+batched\+\_\+cache\+\_\+args
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_aa141b344c5a584e16057d62b8b9cba6f}{bc\+::nn\+::detail\+::query\+\_\+defines\+\_\+single\+\_\+predict} = typename T\+::defines\+\_\+single\+\_\+predict
+\item 
+{\footnotesize template$<$class T $>$ }\\using \hyperlink{namespacebc_1_1nn_1_1detail_ad39fb4d3bf636fece8bd359a3bca9579}{bc\+::nn\+::detail\+::query\+\_\+defines\+\_\+predict} = typename T\+::defines\+\_\+predict
+\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$structbc_1_1nn_1_1Layer__Manager.html" title="bc::nn::Layer_Manager\l\&lt; LayerChain\&lt; Index,\l Derived, CurrentLayer,\l Layers... \&gt;, CurrentLayer \&gt;" alt="" coords="162,5,346,76"/>
+<area shape="rect" id="node3" href="$structbc_1_1nn_1_1LayerChain_3_01Index_00_01Derived_00_01CurrentLayer_00_01Layers_8_8_8_01_4.html" title="bc::nn::LayerChain\l\&lt; Index, Derived, CurrentLayer,\l Layers... \&gt;" alt="" coords="405,65,612,121"/>
+<area shape="rect" id="node4" href="$structbc_1_1nn_1_1LayerChain.html" title="bc::nn::LayerChain\l\&lt; bc::traits::Integer\l\&lt; Index::value+1 \&gt;, LayerChain\l\&lt; Index, Derived, CurrentLayer,\l Layers... \&gt;, Layers... \&gt;" alt="" coords="151,101,357,186"/>
+</map>
